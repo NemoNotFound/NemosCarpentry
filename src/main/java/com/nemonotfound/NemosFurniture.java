@@ -123,7 +123,7 @@ public class NemosFurniture implements ModInitializer {
 	private void addItemsToCustomItemGroup() {
 		ItemGroup ITEM_GROUP = FabricItemGroup.builder()
 				.icon(() -> new ItemStack(ModBlocks.WOODCUTTER_BLOCK))
-				.displayName(Text.translatable("Nemo's Woodcutter"))
+				.displayName(Text.translatable("Nemo's Furniture"))
 				.entries((context, entries) -> {
 					entries.add(ModBlocks.WOODCUTTER_BLOCK);
 					entries.add(ModBlocks.DARK_OAK_LADDER);
@@ -151,6 +151,6 @@ public class NemosFurniture implements ModInitializer {
 				})
 				.build();
 
-		Registry.register(Registries.ITEM_GROUP, new Identifier(MOD_ID, "woodcutter_group"), ITEM_GROUP);
+		Registry.register(Registries.ITEM_GROUP, new Identifier(MOD_ID, "furniture_group"), ITEM_GROUP);
 	}
 }

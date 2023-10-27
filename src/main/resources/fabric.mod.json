@@ -3,15 +3,14 @@
 	"id": "nemos-furniture",
 	"version": "${version}",
 	"name": "Nemo's Furniture",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Adds the Woodcutter from Nemo's Woodcutter and some furniture to Minecraft!",
 	"authors": [
-		"Me!"
+		"NemoNotFound"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://nemonotfound.com"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/nemos-furniture/icon.png",
 	"environment": "*",
 	"entrypoints": {
