@@ -25,3 +25,8 @@ feel free to give me your feedback!
     - Trapdoor
     - "The Classic" Table
     - Chair
+    - Trapdoor
+    - Door (requires two planks)
+    - Boat (requires two planks)
+    - Sign
+    - Button

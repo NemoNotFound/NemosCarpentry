@@ -1,6 +1,7 @@
 package com.nemonotfound;
 
 import com.nemonotfound.block.ModBlocks;
+import com.nemonotfound.entity.ChairEntity;
 import com.nemonotfound.recipe.WoodcutterSerializer;
 import com.nemonotfound.recipe.WoodcuttingRecipe;
 import com.nemonotfound.screen.WoodcutterScreenHandler;
@@ -8,6 +9,10 @@ import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;
+import net.minecraft.entity.EntityDimensions;
+import net.minecraft.entity.EntityType;
+import net.minecraft.entity.SpawnGroup;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemGroups;
@@ -30,6 +35,13 @@ public class NemosFurniture implements ModInitializer {
 			ScreenHandlerType.register(MOD_ID, WoodcutterScreenHandler::new);
 	public static RecipeType<WoodcuttingRecipe> WOODCUTTING;
 	public static WoodcutterSerializer WOODCUTTING_RECIPE_RECIPE_SERIALIZER;
+	public static final EntityType<ChairEntity> CHAIR_ENTITY = Registry.register(Registries.ENTITY_TYPE,
+			new Identifier(MOD_ID, "chair_entity"),
+			FabricEntityTypeBuilder.create(SpawnGroup.MISC, ChairEntity::new)
+					.dimensions(new EntityDimensions(0, 0, true))
+					.fireImmune()
+					.disableSummon()
+					.build());
 
 	@Override
 	public void onInitialize() {
@@ -66,6 +78,17 @@ public class NemosFurniture implements ModInitializer {
 		Registry.register(Registries.BLOCK, new Identifier(MOD_ID, "birch_table_the_classic"), ModBlocks.BIRCH_TABLE_THE_CLASSIC);
 		Registry.register(Registries.BLOCK, new Identifier(MOD_ID, "acacia_table_the_classic"), ModBlocks.ACACIA_TABLE_THE_CLASSIC);
 		Registry.register(Registries.BLOCK, new Identifier(MOD_ID, "jungle_table_the_classic"), ModBlocks.JUNGLE_TABLE_THE_CLASSIC);
+		Registry.register(Registries.BLOCK, new Identifier(MOD_ID, "oak_chair"), ModBlocks.OAK_CHAIR);
+		Registry.register(Registries.BLOCK, new Identifier(MOD_ID, "cherry_chair"), ModBlocks.CHERRY_CHAIR);
+		Registry.register(Registries.BLOCK, new Identifier(MOD_ID, "dark_oak_chair"), ModBlocks.DARK_OAK_CHAIR);
+		Registry.register(Registries.BLOCK, new Identifier(MOD_ID, "bamboo_chair"), ModBlocks.BAMBOO_CHAIR);
+		Registry.register(Registries.BLOCK, new Identifier(MOD_ID, "warped_chair"), ModBlocks.WARPED_CHAIR);
+		Registry.register(Registries.BLOCK, new Identifier(MOD_ID, "crimson_chair"), ModBlocks.CRIMSON_CHAIR);
+		Registry.register(Registries.BLOCK, new Identifier(MOD_ID, "mangrove_chair"), ModBlocks.MANGROVE_CHAIR);
+		Registry.register(Registries.BLOCK, new Identifier(MOD_ID, "spruce_chair"), ModBlocks.SPRUCE_CHAIR);
+		Registry.register(Registries.BLOCK, new Identifier(MOD_ID, "birch_chair"), ModBlocks.BIRCH_CHAIR);
+		Registry.register(Registries.BLOCK, new Identifier(MOD_ID, "acacia_chair"), ModBlocks.ACACIA_CHAIR);
+		Registry.register(Registries.BLOCK, new Identifier(MOD_ID, "jungle_chair"), ModBlocks.JUNGLE_CHAIR);
 	}
 
 	private void registerItems() {
@@ -92,6 +115,17 @@ public class NemosFurniture implements ModInitializer {
 		Registry.register(Registries.ITEM, new Identifier(MOD_ID, "birch_table_the_classic"), new BlockItem(ModBlocks.BIRCH_TABLE_THE_CLASSIC, new FabricItemSettings()));
 		Registry.register(Registries.ITEM, new Identifier(MOD_ID, "acacia_table_the_classic"), new BlockItem(ModBlocks.ACACIA_TABLE_THE_CLASSIC, new FabricItemSettings()));
 		Registry.register(Registries.ITEM, new Identifier(MOD_ID, "jungle_table_the_classic"), new BlockItem(ModBlocks.JUNGLE_TABLE_THE_CLASSIC, new FabricItemSettings()));
+		Registry.register(Registries.ITEM, new Identifier(MOD_ID, "oak_chair"), new BlockItem(ModBlocks.OAK_CHAIR, new FabricItemSettings()));
+		Registry.register(Registries.ITEM, new Identifier(MOD_ID, "cherry_chair"), new BlockItem(ModBlocks.CHERRY_CHAIR, new FabricItemSettings()));
+		Registry.register(Registries.ITEM, new Identifier(MOD_ID, "dark_oak_chair"), new BlockItem(ModBlocks.DARK_OAK_CHAIR, new FabricItemSettings()));
+		Registry.register(Registries.ITEM, new Identifier(MOD_ID, "bamboo_chair"), new BlockItem(ModBlocks.BAMBOO_CHAIR, new FabricItemSettings()));
+		Registry.register(Registries.ITEM, new Identifier(MOD_ID, "warped_chair"), new BlockItem(ModBlocks.WARPED_CHAIR, new FabricItemSettings()));
+		Registry.register(Registries.ITEM, new Identifier(MOD_ID, "crimson_chair"), new BlockItem(ModBlocks.CRIMSON_CHAIR, new FabricItemSettings()));
+		Registry.register(Registries.ITEM, new Identifier(MOD_ID, "mangrove_chair"), new BlockItem(ModBlocks.MANGROVE_CHAIR, new FabricItemSettings()));
+		Registry.register(Registries.ITEM, new Identifier(MOD_ID, "spruce_chair"), new BlockItem(ModBlocks.SPRUCE_CHAIR, new FabricItemSettings()));
+		Registry.register(Registries.ITEM, new Identifier(MOD_ID, "birch_chair"), new BlockItem(ModBlocks.BIRCH_CHAIR, new FabricItemSettings()));
+		Registry.register(Registries.ITEM, new Identifier(MOD_ID, "acacia_chair"), new BlockItem(ModBlocks.ACACIA_CHAIR, new FabricItemSettings()));
+		Registry.register(Registries.ITEM, new Identifier(MOD_ID, "jungle_chair"), new BlockItem(ModBlocks.JUNGLE_CHAIR, new FabricItemSettings()));
 	}
 
 	private void addItemsToItemGroup() {
@@ -118,6 +152,17 @@ public class NemosFurniture implements ModInitializer {
 		ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(content -> content.add(ModBlocks.BIRCH_TABLE_THE_CLASSIC));
 		ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(content -> content.add(ModBlocks.ACACIA_TABLE_THE_CLASSIC));
 		ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(content -> content.add(ModBlocks.JUNGLE_TABLE_THE_CLASSIC));
+		ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(content -> content.add(ModBlocks.OAK_CHAIR));
+		ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(content -> content.add(ModBlocks.CHERRY_CHAIR));
+		ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(content -> content.add(ModBlocks.DARK_OAK_CHAIR));
+		ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(content -> content.add(ModBlocks.BAMBOO_CHAIR));
+		ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(content -> content.add(ModBlocks.WARPED_CHAIR));
+		ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(content -> content.add(ModBlocks.CRIMSON_CHAIR));
+		ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(content -> content.add(ModBlocks.MANGROVE_CHAIR));
+		ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(content -> content.add(ModBlocks.SPRUCE_CHAIR));
+		ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(content -> content.add(ModBlocks.BIRCH_CHAIR));
+		ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(content -> content.add(ModBlocks.ACACIA_CHAIR));
+		ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(content -> content.add(ModBlocks.JUNGLE_CHAIR));
 	}
 
 	private void addItemsToCustomItemGroup() {
@@ -148,6 +193,17 @@ public class NemosFurniture implements ModInitializer {
 					entries.add(ModBlocks.BIRCH_TABLE_THE_CLASSIC);
 					entries.add(ModBlocks.ACACIA_TABLE_THE_CLASSIC);
 					entries.add(ModBlocks.JUNGLE_TABLE_THE_CLASSIC);
+					entries.add(ModBlocks.OAK_CHAIR);
+					entries.add(ModBlocks.CHERRY_CHAIR);
+					entries.add(ModBlocks.DARK_OAK_CHAIR);
+					entries.add(ModBlocks.BAMBOO_CHAIR);
+					entries.add(ModBlocks.WARPED_CHAIR);
+					entries.add(ModBlocks.CRIMSON_CHAIR);
+					entries.add(ModBlocks.MANGROVE_CHAIR);
+					entries.add(ModBlocks.SPRUCE_CHAIR);
+					entries.add(ModBlocks.BIRCH_CHAIR);
+					entries.add(ModBlocks.ACACIA_CHAIR);
+					entries.add(ModBlocks.JUNGLE_CHAIR);
 				})
 				.build();
 
