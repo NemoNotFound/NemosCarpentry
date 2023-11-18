@@ -22,5 +22,17 @@
   "block.nemos-furniture.spruce_table_the_classic": "Spruce Table \"The Classic\"",
   "block.nemos-furniture.birch_table_the_classic": "Birch Table \"The Classic\"",
   "block.nemos-furniture.acacia_table_the_classic": "Acacia Table \"The Classic\"",
-  "block.nemos-furniture.jungle_table_the_classic": "Jungle Table \"The Classic\""
+  "block.nemos-furniture.jungle_table_the_classic": "Jungle Table \"The Classic\"",
+  "block.nemos-furniture.oak_chair": "Oak Chair",
+  "block.nemos-furniture.cherry_chair": "Cherry Chair",
+  "block.nemos-furniture.dark_oak_chair": "Dark Oak Chair",
+  "block.nemos-furniture.bamboo_chair": "Bamboo Chair",
+  "block.nemos-furniture.warped_chair": "Warped Chair",
+  "block.nemos-furniture.crimson_chair": "Crimson Chair",
+  "block.nemos-furniture.mangrove_chair": "Mangrove Chair",
+  "block.nemos-furniture.spruce_chair": "Spruce Chair",
+  "block.nemos-furniture.birch_chair": "Birch Chair",
+  "block.nemos-furniture.acacia_chair": "Acacia Chair",
+  "block.nemos-furniture.jungle_chair": "Jungle Chair"
+
 }

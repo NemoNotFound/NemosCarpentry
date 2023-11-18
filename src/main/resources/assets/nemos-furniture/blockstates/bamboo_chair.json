@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "nemos-furniture:block/bamboo_chair",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "nemos-furniture:block/bamboo_chair"
+    },
+    "facing=south": {
+      "model": "nemos-furniture:block/bamboo_chair",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "nemos-furniture:block/bamboo_chair",
+      "y": 270
+    }
+  }
+}
