@@ -77,5 +77,10 @@
 				"down": {"uv": [0, 0, 2, 2], "texture": "#all"}
 			}
 		}
-	]
+	],
+	"display": {
+		"fixed": {
+			"translation": [0, 0, -6]
+		}
+	}
 }

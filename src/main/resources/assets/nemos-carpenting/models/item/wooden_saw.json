@@ -2,5 +2,27 @@
   "parent": "minecraft:item/handheld",
   "textures": {
     "layer0": "nemos-carpenting:item/wooden_saw"
+  },
+  "display": {
+    "firstperson_righthand": {
+      "rotation": [-110, -90, 0],
+      "translation": [-1, 2.25, -3.5]
+    },
+    "firstperson_lefthand": {
+      "rotation": [-110, 90, 0],
+      "translation": [-1, 2.25, -3.5]
+    },
+    "ground": {
+      "rotation": [180, 0, -43],
+      "scale": [0.5, 0.5, 0.5]
+    },
+    "gui": {
+      "rotation": [-180, -180, -90],
+      "translation": [0, 1.25, 0],
+      "scale": [0.9, 0.9, 0.9]
+    },
+    "fixed": {
+      "rotation": [-180, 0, -90]
+    }
   }
 }
