@@ -2,7 +2,6 @@ package com.nemonotfound.nemoscarpenting.recipe;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
-import net.minecraft.client.MinecraftClient;
 import net.minecraft.inventory.Inventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.network.PacketByteBuf;
@@ -138,7 +137,7 @@ public class CarpentingRecipe implements Recipe<Inventory> {
             for (Ingredient ingredient : recipe.getIngredients()) {
                 ingredient.write(buf);
             }
-            buf.writeItemStack(recipe.getOutput(MinecraftClient.getInstance().world.getRegistryManager()));
+            buf.writeItemStack(recipe.output);
             buf.writeString(recipe.getTool());
         }
     }
