@@ -123,7 +123,7 @@ public class CarpentingRecipe implements Recipe<Inventory> {
         public CarpentingRecipe read(Identifier id, PacketByteBuf buf) {
             Ingredient ingredient = Ingredient.fromPacket(buf);
             ItemStack itemStack = buf.readItemStack();
-            DefaultedList<Ingredient> ingredients = DefaultedList.ofSize(1, Ingredient.EMPTY);
+            DefaultedList<Ingredient> ingredients = DefaultedList.of();
             ingredients.add(ingredient);
             String tool = buf.readString();
 
