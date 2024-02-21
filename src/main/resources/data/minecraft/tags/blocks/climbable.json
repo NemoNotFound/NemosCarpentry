@@ -1,16 +1,16 @@
 {
   "replace": false,
   "values": [
-    "nemos-furniture:dark_oak_ladder",
-    "nemos-furniture:acacia_ladder",
-    "nemos-furniture:birch_ladder",
-    "nemos-furniture:spruce_ladder",
-    "nemos-furniture:warped_ladder",
-    "nemos-furniture:bamboo_ladder",
-    "nemos-furniture:crimson_ladder",
-    "nemos-furniture:mangrove_ladder",
-    "nemos-furniture:jungle_ladder",
-    "nemos-furniture:bound_bamboo_ladder",
-    "nemos-furniture:cherry_ladder"
+    "nemos-carpenting:dark_oak_ladder",
+    "nemos-carpenting:acacia_ladder",
+    "nemos-carpenting:birch_ladder",
+    "nemos-carpenting:spruce_ladder",
+    "nemos-carpenting:warped_ladder",
+    "nemos-carpenting:bamboo_ladder",
+    "nemos-carpenting:crimson_ladder",
+    "nemos-carpenting:mangrove_ladder",
+    "nemos-carpenting:jungle_ladder",
+    "nemos-carpenting:bound_bamboo_ladder",
+    "nemos-carpenting:cherry_ladder"
   ]
 }
