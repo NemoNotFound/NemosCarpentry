@@ -33,6 +33,17 @@
   "block.nemos-furniture.spruce_chair": "Spruce Chair",
   "block.nemos-furniture.birch_chair": "Birch Chair",
   "block.nemos-furniture.acacia_chair": "Acacia Chair",
-  "block.nemos-furniture.jungle_chair": "Jungle Chair"
+  "block.nemos-furniture.jungle_chair": "Jungle Chair",
+  "block.nemos-furniture.carpenting_table": "Carpenting Table",
 
+  "item.nemos-furniture.wooden_saw": "Wooden Saw",
+  "item.nemos-furniture.stone_saw": "Stone Saw",
+  "item.nemos-furniture.iron_saw": "Iron Saw",
+  "item.nemos-furniture.golden_saw": "Golden Saw",
+  "item.nemos-furniture.diamond_saw": "Diamond Saw",
+  "item.nemos-furniture.netherite_saw": "Netherite Saw",
+  "item.nemos-furniture.oak_chair_seat": "Oak Chair Seat",
+  "item.nemos-furniture.oak_chair_leg": "Oak Chair Leg",
+
+  "container.carpenting_table": "Carpenting Table"
 }

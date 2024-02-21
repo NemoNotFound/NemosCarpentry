@@ -2,7 +2,8 @@
   "type": "minecraft:woodcutting",
   "count": 1,
   "ingredient": {
-    "item": "minecraft:oak_planks"
+    "item": "minecraft:oak_planks",
+    "itemCount": 2
   },
   "result": "nemos-furniture:oak_chair"
 }

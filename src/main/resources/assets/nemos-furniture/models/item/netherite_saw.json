@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "nemos-furniture:item/netherite_saw"
+  }
+}
