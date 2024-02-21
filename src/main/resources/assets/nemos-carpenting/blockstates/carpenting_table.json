@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "nemos-carpenting:block/carpenting_table"
+    }
+  }
+}

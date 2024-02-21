@@ -4,7 +4,6 @@ import com.nemonotfound.nemoscarpenting.block.ModBlocks;
 import com.nemonotfound.nemoscarpenting.entity.ModEntities;
 import com.nemonotfound.nemoscarpenting.entity.renderer.ChairEntityRenderer;
 import com.nemonotfound.nemoscarpenting.screen.CarpentingScreen;
-import com.nemonotfound.nemoscarpenting.screen.WoodcutterScreen;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
@@ -18,9 +17,7 @@ public class NemosCarpentingClient implements ClientModInitializer {
 
     @Override
     public void onInitializeClient() {
-        HandledScreens.register(NemosCarpenting.WOODCUTTER_SCREEN_HANDLER, WoodcutterScreen::new);
         HandledScreens.register(NemosCarpenting.CARPENTING_SCREEN_HANDLER, CarpentingScreen::new);
-        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.WOODCUTTER_BLOCK, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.DARK_OAK_LADDER, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.ACACIA_LADDER, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.BIRCH_LADDER, RenderLayer.getCutout());

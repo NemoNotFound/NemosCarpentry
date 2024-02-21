@@ -25,12 +25,6 @@ import static net.minecraft.block.Blocks.*;
 
 public class ModBlocks {
 
-    public static final Block WOODCUTTER_BLOCK = registerBlock("woodcutter",
-            new WoodcutterBlock(AbstractBlock.Settings.create()
-                    .sounds(BlockSoundGroup.WOOD)
-                    .mapColor(MapColor.OAK_TAN)
-                    .instrument(Instrument.BASS)
-                    .strength(2.0f)), ItemGroups.FUNCTIONAL, ModItemGroups.NEMOS_FURNITURE);
     public static final Block DARK_OAK_LADDER = registerBlock("dark_oak_ladder",
             new LadderBlock(AbstractBlock.Settings.copy(LADDER)), ItemGroups.FUNCTIONAL, ModItemGroups.NEMOS_FURNITURE);
     public static final Block ACACIA_LADDER = registerBlock("acacia_ladder",
