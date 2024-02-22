@@ -1,0 +1,10 @@
+{
+  "type": "nemos-carpenting:carpenting",
+  "count": 2,
+  "ingredient": {
+    "item": "minecraft:acacia_planks",
+    "itemCount": 2
+  },
+  "tool": "saw",
+  "result": "nemos-carpenting:acacia_door_glass_front_frame"
+}
