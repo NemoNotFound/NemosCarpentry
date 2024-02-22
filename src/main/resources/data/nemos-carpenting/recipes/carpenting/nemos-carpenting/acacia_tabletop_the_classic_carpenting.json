@@ -1,0 +1,11 @@
+{
+  "type": "nemos-carpenting:carpenting",
+  "count": 2,
+  "ingredients": [
+    {
+      "item": "minecraft:acacia_planks"
+    }
+  ],
+  "tool": "saw",
+  "result": "nemos-carpenting:acacia_tabletop_the_classic"
+}

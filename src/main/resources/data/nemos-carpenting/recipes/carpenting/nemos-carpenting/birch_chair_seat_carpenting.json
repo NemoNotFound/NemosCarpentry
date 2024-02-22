@@ -1,0 +1,9 @@
+{
+  "type": "nemos-carpenting:carpenting",
+  "count": 1,
+  "ingredient": {
+    "item": "minecraft:birch_planks"
+  },
+  "tool": "saw",
+  "result": "nemos-carpenting:birch_chair_seat"
+}
