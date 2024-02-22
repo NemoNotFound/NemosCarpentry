@@ -1,0 +1,11 @@
+{
+  "type": "nemos-carpenting:carpenting",
+  "count": 2,
+  "ingredients": [
+    {
+      "item": "minecraft:bamboo_planks"
+    }
+  ],
+  "tool": "saw",
+  "result": "nemos-carpenting:bamboo_tabletop_the_classic"
+}

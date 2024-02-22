@@ -1,0 +1,11 @@
+{
+  "type": "nemos-carpenting:carpenting",
+  "count": 2,
+  "ingredients": [
+    {
+      "item": "minecraft:spruce_planks"
+    }
+  ],
+  "tool": "saw",
+  "result": "nemos-carpenting:spruce_tabletop_the_classic"
+}

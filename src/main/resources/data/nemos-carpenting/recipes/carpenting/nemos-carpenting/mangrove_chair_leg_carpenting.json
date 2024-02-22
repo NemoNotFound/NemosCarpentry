@@ -1,0 +1,9 @@
+{
+  "type": "nemos-carpenting:carpenting",
+  "count": 4,
+  "ingredient": {
+    "item": "minecraft:mangrove_planks"
+  },
+  "tool": "saw",
+  "result": "nemos-carpenting:mangrove_chair_leg"
+}
