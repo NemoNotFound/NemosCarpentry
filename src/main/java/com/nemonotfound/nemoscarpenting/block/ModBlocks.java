@@ -121,7 +121,7 @@ public class ModBlocks {
                     .mapColor(ACACIA_PLANKS.getDefaultMapColor()).instrument(Instrument.BASS)
                     .strength(3.0f).nonOpaque().burnable().pistonBehavior(PistonBehavior.DESTROY), BlockSetType.ACACIA),
             ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_FURNITURE);
-    public static final Block BAMBOO_DOOR_GLASS_FRONT = registerBlock("acacia_door_glass_front", new DoorBlock(FabricBlockSettings.create()
+    public static final Block BAMBOO_DOOR_GLASS_FRONT = registerBlock("bamboo_door_glass_front", new DoorBlock(FabricBlockSettings.create()
                     .mapColor(OAK_PLANKS.getDefaultMapColor()).instrument(Instrument.BASS)
                     .strength(3.0f).nonOpaque().burnable().pistonBehavior(PistonBehavior.DESTROY), BlockSetType.OAK),
             ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_FURNITURE);
