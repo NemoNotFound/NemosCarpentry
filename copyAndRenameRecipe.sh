@@ -2,6 +2,7 @@ path=$1
 oldName=$2
 newName=$3
 newFolderName=$4
+
 if [ -z "$newFolderName" ]; then
     newFolderName=$newName
 fi
