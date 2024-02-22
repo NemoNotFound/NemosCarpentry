@@ -1,0 +1,10 @@
+{
+  "type": "nemos-carpenting:carpenting",
+  "count": 2,
+  "ingredient": {
+    "item": "minecraft:mangrove_planks",
+    "itemCount": 2
+  },
+  "tool": "saw",
+  "result": "nemos-carpenting:mangrove_door_glass_front_frame"
+}

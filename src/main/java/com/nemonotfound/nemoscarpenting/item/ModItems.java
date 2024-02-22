@@ -118,6 +118,28 @@ public class ModItems {
             new Item(new FabricItemSettings()), ModItemGroups.NEMOS_FURNITURE);
     public static final Item WARPED_TABLE_LEG_THE_CLASSIC = registerItem("warped_table_leg_the_classic",
             new Item(new FabricItemSettings()), ModItemGroups.NEMOS_FURNITURE);
+    public static final Item ACACIA_DOOR_GLASS_FRONT_FRAME = registerItem("acacia_door_glass_front_frame",
+            new Item(new FabricItemSettings()), ModItemGroups.NEMOS_FURNITURE);
+    public static final Item BAMBOO_DOOR_GLASS_FRONT_FRAME = registerItem("bamboo_door_glass_front_frame",
+            new Item(new FabricItemSettings()), ModItemGroups.NEMOS_FURNITURE);
+    public static final Item BIRCH_DOOR_GLASS_FRONT_FRAME = registerItem("birch_door_glass_front_frame",
+            new Item(new FabricItemSettings()), ModItemGroups.NEMOS_FURNITURE);
+    public static final Item CHERRY_DOOR_GLASS_FRONT_FRAME = registerItem("cherry_door_glass_front_frame",
+            new Item(new FabricItemSettings()), ModItemGroups.NEMOS_FURNITURE);
+    public static final Item CRIMSON_DOOR_GLASS_FRONT_FRAME = registerItem("crimson_door_glass_front_frame",
+            new Item(new FabricItemSettings()), ModItemGroups.NEMOS_FURNITURE);
+    public static final Item DARK_OAK_DOOR_GLASS_FRONT_FRAME = registerItem("dark_oak_door_glass_front_frame",
+            new Item(new FabricItemSettings()), ModItemGroups.NEMOS_FURNITURE);
+    public static final Item JUNGLE_DOOR_GLASS_FRONT_FRAME = registerItem("jungle_door_glass_front_frame",
+            new Item(new FabricItemSettings()), ModItemGroups.NEMOS_FURNITURE);
+    public static final Item MANGROVE_DOOR_GLASS_FRONT_FRAME = registerItem("mangrove_door_glass_front_frame",
+            new Item(new FabricItemSettings()), ModItemGroups.NEMOS_FURNITURE);
+    public static final Item OAK_DOOR_GLASS_FRONT_FRAME = registerItem("oak_door_glass_front_frame",
+            new Item(new FabricItemSettings()), ModItemGroups.NEMOS_FURNITURE);
+    public static final Item SPRUCE_DOOR_GLASS_FRONT_FRAME = registerItem("spruce_door_glass_front_frame",
+            new Item(new FabricItemSettings()), ModItemGroups.NEMOS_FURNITURE);
+    public static final Item WARPED_DOOR_GLASS_FRONT_FRAME = registerItem("warped_door_glass_front_frame",
+            new Item(new FabricItemSettings()), ModItemGroups.NEMOS_FURNITURE);
 
     private static Item registerItem(String path, Item item, RegistryKey<ItemGroup>... itemGroups) {
         Item registeredItem = Registry.register(Registries.ITEM, new Identifier(MOD_ID, path), item);
