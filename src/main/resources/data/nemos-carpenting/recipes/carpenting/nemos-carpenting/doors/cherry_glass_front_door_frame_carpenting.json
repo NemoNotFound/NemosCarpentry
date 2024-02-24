@@ -1,0 +1,10 @@
+{
+  "type": "nemos-carpenting:carpenting",
+  "count": 2,
+  "ingredient": {
+    "item": "minecraft:cherry_planks",
+    "itemCount": 2
+  },
+  "tool": "saw",
+  "result": "nemos-carpenting:cherry_glass_front_door_frame"
+}

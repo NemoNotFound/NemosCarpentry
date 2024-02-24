@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "nemos-carpenting:item/doors/oak_glass_front_door_frame"
+  }
+}
