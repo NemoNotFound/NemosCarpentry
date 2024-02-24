@@ -117,47 +117,47 @@ public class ModBlocks {
             .strength(2.5f)
             .sounds(BlockSoundGroup.WOOD)
             .burnable()), ItemGroups.FUNCTIONAL, ModItemGroups.NEMOS_FURNITURE);
-    public static final Block ACACIA_DOOR_GLASS_FRONT = registerBlock("acacia_door_glass_front", new DoorBlock(FabricBlockSettings.create()
+    public static final Block ACACIA_GLASS_FRONT_DOOR = registerBlock("acacia_glass_front_door", new DoorBlock(FabricBlockSettings.create()
                     .mapColor(ACACIA_PLANKS.getDefaultMapColor()).instrument(Instrument.BASS)
                     .strength(3.0f).nonOpaque().burnable().pistonBehavior(PistonBehavior.DESTROY), BlockSetType.ACACIA),
             ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_FURNITURE);
-    public static final Block BAMBOO_DOOR_GLASS_FRONT = registerBlock("bamboo_door_glass_front", new DoorBlock(FabricBlockSettings.create()
+    public static final Block BAMBOO_GLASS_FRONT_DOOR = registerBlock("bamboo_glass_front_door", new DoorBlock(FabricBlockSettings.create()
                     .mapColor(OAK_PLANKS.getDefaultMapColor()).instrument(Instrument.BASS)
                     .strength(3.0f).nonOpaque().burnable().pistonBehavior(PistonBehavior.DESTROY), BlockSetType.OAK),
             ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_FURNITURE);
-    public static final Block BIRCH_DOOR_GLASS_FRONT = registerBlock("birch_door_glass_front", new DoorBlock(FabricBlockSettings.create()
+    public static final Block BIRCH_GLASS_FRONT_DOOR = registerBlock("birch_glass_front_door", new DoorBlock(FabricBlockSettings.create()
                     .mapColor(BIRCH_PLANKS.getDefaultMapColor()).instrument(Instrument.BASS)
                     .strength(3.0f).nonOpaque().burnable().pistonBehavior(PistonBehavior.DESTROY), BlockSetType.BIRCH),
             ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_FURNITURE);
-    public static final Block CHERRY_DOOR_GLASS_FRONT = registerBlock("cherry_door_glass_front", new DoorBlock(FabricBlockSettings.create()
+    public static final Block CHERRY_GLASS_FRONT_DOOR = registerBlock("cherry_glass_front_door", new DoorBlock(FabricBlockSettings.create()
                     .mapColor(CHERRY_PLANKS.getDefaultMapColor()).instrument(Instrument.BASS)
                     .strength(3.0f).nonOpaque().burnable().pistonBehavior(PistonBehavior.DESTROY), BlockSetType.CHERRY),
             ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_FURNITURE);
-    public static final Block CRIMSON_DOOR_GLASS_FRONT = registerBlock("crimson_door_glass_front", new DoorBlock(FabricBlockSettings.create()
+    public static final Block CRIMSON_GLASS_FRONT_DOOR = registerBlock("crimson_glass_front_door", new DoorBlock(FabricBlockSettings.create()
                     .mapColor(CRIMSON_PLANKS.getDefaultMapColor()).instrument(Instrument.BASS)
                     .strength(3.0f).nonOpaque().burnable().pistonBehavior(PistonBehavior.DESTROY), BlockSetType.CRIMSON),
             ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_FURNITURE);
-    public static final Block DARK_OAK_DOOR_GLASS_FRONT = registerBlock("dark_oak_door_glass_front", new DoorBlock(FabricBlockSettings.create()
+    public static final Block DARK_OAK_GLASS_FRONT_DOOR = registerBlock("dark_oak_glass_front_door", new DoorBlock(FabricBlockSettings.create()
                     .mapColor(DARK_OAK_PLANKS.getDefaultMapColor()).instrument(Instrument.BASS)
                     .strength(3.0f).nonOpaque().burnable().pistonBehavior(PistonBehavior.DESTROY), BlockSetType.DARK_OAK),
             ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_FURNITURE);
-    public static final Block JUNGLE_DOOR_GLASS_FRONT = registerBlock("jungle_door_glass_front", new DoorBlock(FabricBlockSettings.create()
+    public static final Block JUNGLE_GLASS_FRONT_DOOR = registerBlock("jungle_glass_front_door", new DoorBlock(FabricBlockSettings.create()
                     .mapColor(JUNGLE_PLANKS.getDefaultMapColor()).instrument(Instrument.BASS)
                     .strength(3.0f).nonOpaque().burnable().pistonBehavior(PistonBehavior.DESTROY), BlockSetType.JUNGLE),
             ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_FURNITURE);
-    public static final Block MANGROVE_DOOR_GLASS_FRONT = registerBlock("mangrove_door_glass_front", new DoorBlock(FabricBlockSettings.create()
+    public static final Block MANGROVE_GLASS_FRONT_DOOR = registerBlock("mangrove_glass_front_door", new DoorBlock(FabricBlockSettings.create()
                     .mapColor(MANGROVE_PLANKS.getDefaultMapColor()).instrument(Instrument.BASS)
                     .strength(3.0f).nonOpaque().burnable().pistonBehavior(PistonBehavior.DESTROY), BlockSetType.MANGROVE),
             ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_FURNITURE);
-    public static final Block OAK_DOOR_GLASS_FRONT = registerBlock("oak_door_glass_front", new DoorBlock(FabricBlockSettings.create()
+    public static final Block OAK_GLASS_FRONT_DOOR = registerBlock("oak_glass_front_door", new DoorBlock(FabricBlockSettings.create()
                     .mapColor(OAK_PLANKS.getDefaultMapColor()).instrument(Instrument.BASS)
                     .strength(3.0f).nonOpaque().burnable().pistonBehavior(PistonBehavior.DESTROY), BlockSetType.OAK),
             ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_FURNITURE);
-    public static final Block SPRUCE_DOOR_GLASS_FRONT = registerBlock("spruce_door_glass_front", new DoorBlock(FabricBlockSettings.create()
+    public static final Block SPRUCE_GLASS_FRONT_DOOR = registerBlock("spruce_glass_front_door", new DoorBlock(FabricBlockSettings.create()
                     .mapColor(SPRUCE_PLANKS.getDefaultMapColor()).instrument(Instrument.BASS)
                     .strength(3.0f).nonOpaque().burnable().pistonBehavior(PistonBehavior.DESTROY), BlockSetType.SPRUCE),
             ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_FURNITURE);
-    public static final Block WARPED_DOOR_GLASS_FRONT = registerBlock("warped_door_glass_front", new DoorBlock(FabricBlockSettings.create()
+    public static final Block WARPED_GLASS_FRONT_DOOR = registerBlock("warped_glass_front_door", new DoorBlock(FabricBlockSettings.create()
                     .mapColor(WARPED_PLANKS.getDefaultMapColor()).instrument(Instrument.BASS)
                     .strength(3.0f).nonOpaque().burnable().pistonBehavior(PistonBehavior.DESTROY), BlockSetType.WARPED),
             ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_FURNITURE);

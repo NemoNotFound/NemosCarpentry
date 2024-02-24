@@ -35,16 +35,16 @@
     "nemos-carpenting:acacia_chair",
     "nemos-carpenting:jungle_chair",
     "nemos-carpenting:carpenting_table",
-    "nemos-carpenting:acacia_door_glass_front",
-    "nemos-carpenting:bamboo_door_glass_front",
-    "nemos-carpenting:birch_door_glass_front",
-    "nemos-carpenting:cherry_door_glass_front",
-    "nemos-carpenting:crimson_door_glass_front",
-    "nemos-carpenting:dark_oak_door_glass_front",
-    "nemos-carpenting:jungle_door_glass_front",
-    "nemos-carpenting:mangrove_door_glass_front",
-    "nemos-carpenting:oak_door_glass_front",
-    "nemos-carpenting:spruce_door_glass_front",
-    "nemos-carpenting:warped_door_glass_front"
+    "nemos-carpenting:acacia_glass_front_door",
+    "nemos-carpenting:bamboo_glass_front_door",
+    "nemos-carpenting:birch_glass_front_door",
+    "nemos-carpenting:cherry_glass_front_door",
+    "nemos-carpenting:crimson_glass_front_door",
+    "nemos-carpenting:dark_oak_glass_front_door",
+    "nemos-carpenting:jungle_glass_front_door",
+    "nemos-carpenting:mangrove_glass_front_door",
+    "nemos-carpenting:oak_glass_front_door",
+    "nemos-carpenting:spruce_glass_front_door",
+    "nemos-carpenting:warped_glass_front_door"
   ]
 }

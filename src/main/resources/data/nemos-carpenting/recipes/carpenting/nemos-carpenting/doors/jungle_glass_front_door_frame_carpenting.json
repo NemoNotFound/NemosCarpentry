@@ -1,0 +1,10 @@
+{
+  "type": "nemos-carpenting:carpenting",
+  "count": 2,
+  "ingredient": {
+    "item": "minecraft:jungle_planks",
+    "itemCount": 2
+  },
+  "tool": "saw",
+  "result": "nemos-carpenting:jungle_glass_front_door_frame"
+}
