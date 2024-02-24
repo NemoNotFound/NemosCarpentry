@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_bamboo": {
+    "has_stick": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:bamboo"
+              "minecraft:stick"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "nemos-carpenting:bound_bamboo_ladder"
+        "recipe": "nemos-carpenting:wooden_saw"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_bamboo",
+      "has_stick",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "nemos-carpenting:bound_bamboo_ladder"
+      "nemos-carpenting:wooden_saw"
     ]
   },
   "sends_telemetry_event": false

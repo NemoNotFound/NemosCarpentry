@@ -1,13 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_bamboo": {
+    "has_cobblestone": {
       "conditions": {
         "items": [
           {
-            "items": [
-              "minecraft:bamboo"
-            ]
+            "tag": "minecraft:stone_tool_materials"
           }
         ]
       },
@@ -15,20 +13,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "nemos-carpenting:bound_bamboo_ladder"
+        "recipe": "nemos-carpenting:stone_saw"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_bamboo",
+      "has_cobblestone",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "nemos-carpenting:bound_bamboo_ladder"
+      "nemos-carpenting:stone_saw"
     ]
   },
   "sends_telemetry_event": false
