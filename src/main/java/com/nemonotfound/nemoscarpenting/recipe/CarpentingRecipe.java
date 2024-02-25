@@ -107,7 +107,8 @@ public class CarpentingRecipe implements Recipe<Inventory> {
             String result = JsonHelper.getString(json, "result");
             int resultCount = 1;
             if (JsonHelper.hasElement(json, "count")) {
-                resultCount = JsonHelper.getInt(json, "count");
+                int count = JsonHelper.getInt(json, "count");
+                resultCount = count > 0 ? count : 1;
             }
 
             ItemStack itemStack = new ItemStack(Registries.ITEM.get(new Identifier(result)), resultCount);
