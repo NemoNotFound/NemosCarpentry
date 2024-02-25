@@ -1,7 +1,9 @@
 package com.nemonotfound.nemoscarpenting.recipe;
 
-import com.google.gson.JsonArray;
-import com.google.gson.JsonObject;
+import com.mojang.serialization.Codec;
+import com.mojang.serialization.DataResult;
+import com.mojang.serialization.MapCodec;
+import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.minecraft.inventory.Inventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.network.PacketByteBuf;
@@ -11,24 +13,21 @@ import net.minecraft.recipe.RecipeSerializer;
 import net.minecraft.recipe.RecipeType;
 import net.minecraft.registry.DynamicRegistryManager;
 import net.minecraft.registry.Registries;
-import net.minecraft.util.Identifier;
-import net.minecraft.util.JsonHelper;
 import net.minecraft.util.collection.DefaultedList;
+import net.minecraft.util.dynamic.Codecs;
 import net.minecraft.world.World;
 
 import java.util.List;
 
 public class CarpentingRecipe implements Recipe<Inventory> {
 
-    private final Identifier ID;
     private final ItemStack result;
     private final List<Ingredient> ingredients;
     private final String tool;
 
-    public CarpentingRecipe(Identifier ID, ItemStack result, List<Ingredient> ingredients, String tool) {
+    public CarpentingRecipe(ItemStack result, List<Ingredient> ingredients, String tool) {
         this.result = result;
         this.ingredients = ingredients;
-        this.ID = ID;
         this.tool = tool;
     }
 
@@ -48,7 +47,7 @@ public class CarpentingRecipe implements Recipe<Inventory> {
     }
 
     @Override
-    public ItemStack getOutput(DynamicRegistryManager registryManager) {
+    public ItemStack getResult(DynamicRegistryManager registryManager) {
         return result;
     }
 
@@ -58,11 +57,6 @@ public class CarpentingRecipe implements Recipe<Inventory> {
         ingredients.addAll(this.ingredients);
 
         return ingredients;
-    }
-
-    @Override
-    public Identifier getId() {
-        return ID;
     }
 
     @Override
@@ -88,44 +82,31 @@ public class CarpentingRecipe implements Recipe<Inventory> {
 
         public static final Serializer INSTANCE = new Serializer();
         public static final String ID = "carpenting";
+        public static final Codec<CarpentingRecipe> CODEC = RecordCodecBuilder.create(instance -> instance.group(
+                getResultStackCodec().forGetter(recipe -> recipe.result),
+                validateAmount(Ingredient.DISALLOW_EMPTY_CODEC, 2).fieldOf("ingredients").forGetter(CarpentingRecipe::getIngredients),
+                Codecs.createStrictOptionalFieldCodec(Codec.STRING, "tool", "none").forGetter(recipe -> recipe.tool)
+        ).apply(instance, CarpentingRecipe::new));
 
-        @Override
-        public CarpentingRecipe read(Identifier id, JsonObject json) {
-            DefaultedList<Ingredient> ingredients = DefaultedList.ofSize(2, Ingredient.EMPTY);
-            if (JsonHelper.hasArray(json, "ingredients")) {
-                JsonArray jsonArray = JsonHelper.getArray(json, "ingredients");
+        private static MapCodec<ItemStack> getResultStackCodec() {
+            return RecordCodecBuilder.mapCodec((instance) ->
+                    instance.group(Registries.ITEM.getCodec().fieldOf("result").forGetter(ItemStack::getItem),
+                            Codec.INT.fieldOf("count").forGetter(ItemStack::getCount)).apply(instance, ItemStack::new));
+        }
 
-                for (int i = 0; i < jsonArray.size(); i++) {
-                    Ingredient ingredient = Ingredient.fromJson(jsonArray.get(i), false);
-                    ingredients.set(i, ingredient);
-                }
-            } else {
-                Ingredient ingredient = Ingredient.fromJson(JsonHelper.getObject(json, "ingredient"), false);
-                ingredients.set(0, ingredient);
-            }
-
-            String result = JsonHelper.getString(json, "result");
-            int resultCount = 1;
-            if (JsonHelper.hasElement(json, "count")) {
-                int count = JsonHelper.getInt(json, "count");
-                resultCount = count > 0 ? count : 1;
-            }
-
-            ItemStack itemStack = new ItemStack(Registries.ITEM.get(new Identifier(result)), resultCount);
-            String tool = "none";
-
-            if (JsonHelper.hasString(json, "tool")) {
-                String toolFromJson = JsonHelper.getString(json, "tool");
-                if (toolFromJson.equalsIgnoreCase("saw")) {
-                    tool = toolFromJson;
-                }
-            }
-
-            return new CarpentingRecipe(id, itemStack, ingredients, tool);
+        private static Codec<List<Ingredient>> validateAmount(Codec<Ingredient> delegate, int max) {
+            return Codecs.validate(Codecs.validate(
+                    delegate.listOf(), list -> list.size() > max ? DataResult.error(() -> "Recipe has too many ingredients!") : DataResult.success(list)
+            ), list -> list.isEmpty() ? DataResult.error(() -> "Recipe has no ingredients!") : DataResult.success(list));
         }
 
         @Override
-        public CarpentingRecipe read(Identifier id, PacketByteBuf buf) {
+        public Codec<CarpentingRecipe> codec() {
+            return CODEC;
+        }
+
+        @Override
+        public CarpentingRecipe read(PacketByteBuf buf) {
             Ingredient firstIngredient = Ingredient.fromPacket(buf);
             Ingredient secondIngredient = Ingredient.fromPacket(buf);
             ItemStack result = buf.readItemStack();
@@ -135,7 +116,7 @@ public class CarpentingRecipe implements Recipe<Inventory> {
             ingredients.add(firstIngredient);
             ingredients.add(secondIngredient);
 
-            return new CarpentingRecipe(id, result, ingredients, tool);
+            return new CarpentingRecipe(result, ingredients, tool);
         }
 
         @Override

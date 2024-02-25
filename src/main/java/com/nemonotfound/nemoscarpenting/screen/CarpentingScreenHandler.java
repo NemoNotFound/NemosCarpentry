@@ -14,6 +14,7 @@ import net.minecraft.inventory.SimpleInventory;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.recipe.Ingredient;
+import net.minecraft.recipe.RecipeEntry;
 import net.minecraft.screen.Property;
 import net.minecraft.screen.ScreenHandler;
 import net.minecraft.screen.slot.Slot;
@@ -34,7 +35,7 @@ public class CarpentingScreenHandler extends ScreenHandler {
     private final Property selectedRecipe = Property.create();
     private ItemStack inputStack = ItemStack.EMPTY;
     private ItemStack secondInputStack = ItemStack.EMPTY;
-    private List<CarpentingRecipe> availableRecipes = Lists.newArrayList();
+    private List<RecipeEntry<CarpentingRecipe>> availableRecipes = Lists.newArrayList();
     long lastTakeTime;
     final Slot inputSlotOne;
     final Slot inputSlotTwo;
@@ -79,7 +80,7 @@ public class CarpentingScreenHandler extends ScreenHandler {
 
             @Override
             public void onTakeItem(PlayerEntity player, ItemStack stack) {
-                CarpentingRecipe recipe = availableRecipes.get(selectedRecipe.get());
+                CarpentingRecipe recipe = availableRecipes.get(selectedRecipe.get()).value();
                 stack.onCraft(player.getWorld(), player, stack.getCount());
                 DefaultedList<Ingredient> ingredients = recipe.getIngredients();
 
@@ -104,7 +105,7 @@ public class CarpentingScreenHandler extends ScreenHandler {
                 int firstIngredientCount = ingredients.get(0).getMatchingStacks()[0].getCount();
                 ItemStack itemStack = CarpentingScreenHandler.this.inputSlotOne.takeStack(firstIngredientCount);
 
-                if (ingredients.get(1).getMatchingStacks().length > 0) {
+                if (ingredients.size() > 1) {
                     int secondIngredientCount = ingredients.get(1).getMatchingStacks()[0].getCount();
                     CarpentingScreenHandler.this.inputSlotTwo.takeStack(secondIngredientCount);
                 }
@@ -116,7 +117,7 @@ public class CarpentingScreenHandler extends ScreenHandler {
 
             @Override
             public boolean canTakeItems(PlayerEntity playerEntity) {
-                CarpentingRecipe recipe = availableRecipes.get(selectedRecipe.get());
+                CarpentingRecipe recipe = availableRecipes.get(selectedRecipe.get()).value();
                 if (recipe.getTool().equals("saw") && getOptionalSawSlot().isEmpty()) {
                     long l = world.getTime();
 
@@ -204,8 +205,8 @@ public class CarpentingScreenHandler extends ScreenHandler {
     private boolean isItemSecondIngredient(ItemStack firstIngredient, ItemStack secondIngredient) {
         return this.world.getRecipeManager().getAllMatches(NemosCarpenting.CARPENTING, new SimpleInventory(firstIngredient),
                         this.world).stream()
-                .anyMatch(recipe -> recipe.getIngredients().get(1).getMatchingStacks().length > 0 &&
-                        recipe.getIngredients().get(1).getMatchingStacks()[0].getItem().equals(secondIngredient.getItem()));
+                .anyMatch(recipe -> recipe.value().getIngredients().get(1).getMatchingStacks().length > 0 &&
+                        recipe.value().getIngredients().get(1).getMatchingStacks()[0].getItem().equals(secondIngredient.getItem()));
     }
 
     @Override
@@ -268,7 +269,7 @@ public class CarpentingScreenHandler extends ScreenHandler {
         return this.selectedRecipe.get();
     }
 
-    public List<CarpentingRecipe> getAvailableRecipes() {
+    public List<RecipeEntry<CarpentingRecipe>> getAvailableRecipes() {
         return this.availableRecipes;
     }
 
@@ -304,9 +305,8 @@ public class CarpentingScreenHandler extends ScreenHandler {
     }
 
     private boolean hasRecipeIngredients(int index) {
-        CarpentingRecipe recipe = availableRecipes.get(index);
+        CarpentingRecipe recipe = availableRecipes.get(index).value();
         DefaultedList<Ingredient> ingredients = recipe.getIngredients();
-        Ingredient secondIngredient = ingredients.get(1);
 
         ItemStack firstIngredientItemStack = ingredients.get(0).getMatchingStacks()[0];
         ItemStack firstInputItemStack = this.inputSlotOne.getStack();
@@ -315,7 +315,8 @@ public class CarpentingScreenHandler extends ScreenHandler {
                 && firstInputItemStack.getCount() >= firstIngredientItemStack.getCount();
         boolean hasSecondInputIngredient = true;
 
-        if (secondIngredient.getMatchingStacks().length > 0) {
+        if (ingredients.size() > 1) {
+            Ingredient secondIngredient = ingredients.get(1);
             ItemStack secondIngredientItemStack = secondIngredient.getMatchingStacks()[0];
             ItemStack secondInputItemStack = this.inputSlotTwo.getStack();
 
@@ -342,11 +343,12 @@ public class CarpentingScreenHandler extends ScreenHandler {
 
     void populateResult() {
         if (hasAvailableRecipes() && this.isInBounds(this.selectedRecipe.get()) && canCraftSelectedRecipe()) {
-            CarpentingRecipe recipe = this.availableRecipes.get(this.selectedRecipe.get());
+            RecipeEntry<CarpentingRecipe> recipeEntry = this.availableRecipes.get(this.selectedRecipe.get());
+            CarpentingRecipe recipe = recipeEntry.value();
             ItemStack itemStack = recipe.craft(this.input, this.world.getRegistryManager());
 
             if (itemStack.isItemEnabled(this.world.getEnabledFeatures())) {
-                this.output.setLastRecipe(recipe);
+                this.output.setLastRecipe(recipeEntry);
                 this.outputSlot.setStackNoCallbacks(itemStack);
             } else {
                 this.outputSlot.setStackNoCallbacks(ItemStack.EMPTY);

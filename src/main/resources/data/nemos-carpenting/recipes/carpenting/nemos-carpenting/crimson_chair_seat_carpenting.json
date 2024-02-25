@@ -1,9 +1,11 @@
 {
   "type": "nemos-carpenting:carpenting",
   "count": 1,
-  "ingredient": {
-    "item": "minecraft:crimson_planks"
-  },
+  "ingredients": [
+    {
+      "item": "minecraft:crimson_planks"
+    }
+  ],
   "tool": "saw",
   "result": "nemos-carpenting:crimson_chair_seat"
 }

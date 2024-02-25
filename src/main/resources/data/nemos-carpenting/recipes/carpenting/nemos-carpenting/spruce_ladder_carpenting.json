@@ -1,9 +1,11 @@
 {
   "type": "nemos-carpenting:carpenting",
   "count": 2,
-  "ingredient": {
-    "item": "minecraft:spruce_planks"
-  },
+  "ingredients": [
+    {
+      "item": "minecraft:spruce_planks"
+    }
+  ],
   "tool": "saw",
   "result": "nemos-carpenting:spruce_ladder"
 }
