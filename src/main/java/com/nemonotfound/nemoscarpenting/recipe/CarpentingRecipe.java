@@ -21,12 +21,12 @@ import java.util.List;
 public class CarpentingRecipe implements Recipe<Inventory> {
 
     private final Identifier ID;
-    private final ItemStack output;
+    private final ItemStack result;
     private final List<Ingredient> ingredients;
     private final String tool;
 
-    public CarpentingRecipe(Identifier ID, ItemStack output, List<Ingredient> ingredients, String tool) {
-        this.output = output;
+    public CarpentingRecipe(Identifier ID, ItemStack result, List<Ingredient> ingredients, String tool) {
+        this.result = result;
         this.ingredients = ingredients;
         this.ID = ID;
         this.tool = tool;
@@ -39,7 +39,7 @@ public class CarpentingRecipe implements Recipe<Inventory> {
 
     @Override
     public ItemStack craft(Inventory inventory, DynamicRegistryManager registryManager) {
-        return output.copy();
+        return result.copy();
     }
 
     @Override
@@ -49,7 +49,7 @@ public class CarpentingRecipe implements Recipe<Inventory> {
 
     @Override
     public ItemStack getOutput(DynamicRegistryManager registryManager) {
-        return output;
+        return result;
     }
 
     @Override
@@ -121,23 +121,24 @@ public class CarpentingRecipe implements Recipe<Inventory> {
 
         @Override
         public CarpentingRecipe read(Identifier id, PacketByteBuf buf) {
-            Ingredient ingredient = Ingredient.fromPacket(buf);
-            ItemStack itemStack = buf.readItemStack();
-            DefaultedList<Ingredient> ingredients = DefaultedList.of();
-            ingredients.add(ingredient);
+            Ingredient firstIngredient = Ingredient.fromPacket(buf);
+            Ingredient secondIngredient = Ingredient.fromPacket(buf);
+            ItemStack result = buf.readItemStack();
             String tool = buf.readString();
 
-            return new CarpentingRecipe(id, itemStack, ingredients, tool);
+            DefaultedList<Ingredient> ingredients = DefaultedList.of();
+            ingredients.add(firstIngredient);
+            ingredients.add(secondIngredient);
+
+            return new CarpentingRecipe(id, result, ingredients, tool);
         }
 
         @Override
         public void write(PacketByteBuf buf, CarpentingRecipe recipe) {
-            buf.writeInt(recipe.getIngredients().size());
-
             for (Ingredient ingredient : recipe.getIngredients()) {
                 ingredient.write(buf);
             }
-            buf.writeItemStack(recipe.output);
+            buf.writeItemStack(recipe.result);
             buf.writeString(recipe.getTool());
         }
     }
