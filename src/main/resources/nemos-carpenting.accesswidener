@@ -1,5 +1,3 @@
 accessWidener v2 named
 
 accessible method net/minecraft/screen/ScreenHandlerType register (Ljava/lang/String;Lnet/minecraft/screen/ScreenHandlerType$Factory;)Lnet/minecraft/screen/ScreenHandlerType;
-accessible class net/minecraft/recipe/Ingredient$Entry
-accessible method net/minecraft/recipe/Ingredient$StackEntry <init> (Lnet/minecraft/item/ItemStack;)V

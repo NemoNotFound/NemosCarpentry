@@ -4,7 +4,7 @@
   "ingredients": [
     {
       "item": "minecraft:acacia_planks",
-      "count": 2
+      "itemCount": 2
     }
   ],
   "tool": "saw",

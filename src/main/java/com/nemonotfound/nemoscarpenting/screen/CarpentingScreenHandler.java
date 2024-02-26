@@ -1,6 +1,7 @@
 package com.nemonotfound.nemoscarpenting.screen;
 
 import com.google.common.collect.Lists;
+import com.mojang.datafixers.util.Pair;
 import com.nemonotfound.NemosCarpenting;
 import com.nemonotfound.nemoscarpenting.item.SawItem;
 import com.nemonotfound.nemoscarpenting.recipe.CarpentingRecipe;
@@ -20,7 +21,6 @@ import net.minecraft.screen.ScreenHandler;
 import net.minecraft.screen.slot.Slot;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
-import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.world.World;
 
 import java.util.List;
@@ -82,7 +82,7 @@ public class CarpentingScreenHandler extends ScreenHandler {
             public void onTakeItem(PlayerEntity player, ItemStack stack) {
                 CarpentingRecipe recipe = availableRecipes.get(selectedRecipe.get()).value();
                 stack.onCraft(player.getWorld(), player, stack.getCount());
-                DefaultedList<Ingredient> ingredients = recipe.getIngredients();
+                List<Pair<Ingredient, Integer>> ingredients = recipe.getIngredientPairs();
 
                 takeStacksOfIngredients(ingredients);
 
@@ -101,12 +101,12 @@ public class CarpentingScreenHandler extends ScreenHandler {
                 super.onTakeItem(player, stack);
             }
 
-            private void takeStacksOfIngredients(DefaultedList<Ingredient> ingredients) {
-                int firstIngredientCount = ingredients.get(0).getMatchingStacks()[0].getCount();
+            private void takeStacksOfIngredients(List<Pair<Ingredient, Integer>> ingredientPairs) {
+                int firstIngredientCount = ingredientPairs.get(0).getSecond();
                 ItemStack itemStack = CarpentingScreenHandler.this.inputSlotOne.takeStack(firstIngredientCount);
 
-                if (ingredients.size() > 1) {
-                    int secondIngredientCount = ingredients.get(1).getMatchingStacks()[0].getCount();
+                if (ingredientPairs.size() > 1) {
+                    int secondIngredientCount = ingredientPairs.get(1).getSecond();
                     CarpentingScreenHandler.this.inputSlotTwo.takeStack(secondIngredientCount);
                 }
 
@@ -176,7 +176,8 @@ public class CarpentingScreenHandler extends ScreenHandler {
             }
 
             //TODO: REFACTOR
-            if (this.world.getRecipeManager().getFirstMatch(NemosCarpenting.CARPENTING, new SimpleInventory(this.slots.get(4).getStack()), this.world).isPresent() && isItemSecondIngredient(this.slots.get(4).getStack(), movingItemStack)) {
+            if (this.world.getRecipeManager().getFirstMatch(NemosCarpenting.CARPENTING, new SimpleInventory(
+                    this.slots.get(4).getStack()), this.world).isPresent() && isMovingItemSecondIngredient(this.slots.get(4).getStack(), movingItemStack)) {
                 if (!this.insertItem(movingItemStack, 5, 6, false)) {
                     return ItemStack.EMPTY;
                 } //TODO:REFACTOR
@@ -200,13 +201,18 @@ public class CarpentingScreenHandler extends ScreenHandler {
         }
         return itemStack;
     }
+    
+    private boolean isMovingItemSecondIngredient(ItemStack firstIngredient, ItemStack secondIngredient) {
+        List<RecipeEntry<CarpentingRecipe>> carpentingRecipe = this.world.getRecipeManager()
+                .getAllMatches(NemosCarpenting.CARPENTING, new SimpleInventory(firstIngredient), this.world);
 
-    //TODO: REFACTOR
-    private boolean isItemSecondIngredient(ItemStack firstIngredient, ItemStack secondIngredient) {
-        return this.world.getRecipeManager().getAllMatches(NemosCarpenting.CARPENTING, new SimpleInventory(firstIngredient),
-                        this.world).stream()
-                .anyMatch(recipe -> recipe.value().getIngredients().get(1).getMatchingStacks().length > 0 &&
-                        recipe.value().getIngredients().get(1).getMatchingStacks()[0].getItem().equals(secondIngredient.getItem()));
+        return carpentingRecipe.stream().anyMatch(recipe ->
+                isItemSecondIngredient(recipe.value().getIngredientPairs(), secondIngredient));
+    }
+
+    private boolean isItemSecondIngredient(List<Pair<Ingredient, Integer>> ingredientPairs, ItemStack secondIngredient) {
+        return ingredientPairs.size() >= 2 && ingredientPairs.get(1).getFirst()
+                .getMatchingStacks()[0].getItem().equals(secondIngredient.getItem());
     }
 
     @Override
@@ -306,22 +312,22 @@ public class CarpentingScreenHandler extends ScreenHandler {
 
     private boolean hasRecipeIngredients(int index) {
         CarpentingRecipe recipe = availableRecipes.get(index).value();
-        DefaultedList<Ingredient> ingredients = recipe.getIngredients();
+        List<Pair<Ingredient, Integer>> ingredientPairs = recipe.getIngredientPairs();
 
-        ItemStack firstIngredientItemStack = ingredients.get(0).getMatchingStacks()[0];
+        ItemStack firstIngredientItemStack = ingredientPairs.get(0).getFirst().getMatchingStacks()[0];
         ItemStack firstInputItemStack = this.inputSlotOne.getStack();
 
         boolean hasFirstInputIngredient = firstInputItemStack.getItem() == firstIngredientItemStack.getItem()
-                && firstInputItemStack.getCount() >= firstIngredientItemStack.getCount();
+                && firstInputItemStack.getCount() >= ingredientPairs.get(0).getSecond();
         boolean hasSecondInputIngredient = true;
 
-        if (ingredients.size() > 1) {
-            Ingredient secondIngredient = ingredients.get(1);
+        if (ingredientPairs.size() > 1) {
+            Ingredient secondIngredient = ingredientPairs.get(1).getFirst();
             ItemStack secondIngredientItemStack = secondIngredient.getMatchingStacks()[0];
             ItemStack secondInputItemStack = this.inputSlotTwo.getStack();
 
             hasSecondInputIngredient = secondInputItemStack.getItem() == secondIngredientItemStack.getItem() &&
-                    secondInputItemStack.getCount() >= secondIngredientItemStack.getCount();
+                    secondInputItemStack.getCount() >= ingredientPairs.get(1).getSecond();
         }
 
         return hasFirstInputIngredient && hasSecondInputIngredient;

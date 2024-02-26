@@ -30,8 +30,5 @@
 	"suggests": {
 		"another-mod": "*"
 	},
-	"accessWidener": "nemos-carpenting.accesswidener",
-	"mixins": [
-		"nemos-carpenting.mixins.json"
-	]
+	"accessWidener": "nemos-carpenting.accesswidener"
 }

@@ -1,5 +1,6 @@
 package com.nemonotfound.nemoscarpenting.recipe;
 
+import com.mojang.datafixers.util.Pair;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.DataResult;
 import com.mojang.serialization.MapCodec;
@@ -22,18 +23,22 @@ import java.util.List;
 public class CarpentingRecipe implements Recipe<Inventory> {
 
     private final ItemStack result;
-    private final List<Ingredient> ingredients;
+    private final List<Pair<Ingredient, Integer>> ingredientPairs;
     private final String tool;
 
-    public CarpentingRecipe(ItemStack result, List<Ingredient> ingredients, String tool) {
+    public CarpentingRecipe(ItemStack result, List<Pair<Ingredient, Integer>> ingredientPairs, String tool) {
         this.result = result;
-        this.ingredients = ingredients;
+        this.ingredientPairs = ingredientPairs;
         this.tool = tool;
     }
 
     @Override
     public boolean matches(Inventory inventory, World world) {
-        return ingredients.get(0).test(inventory.getStack(0));
+        return ingredientPairs.get(0).getFirst().test(inventory.getStack(0));
+    }
+
+    public List<Pair<Ingredient, Integer>> getIngredientPairs() {
+        return ingredientPairs;
     }
 
     @Override
@@ -49,14 +54,6 @@ public class CarpentingRecipe implements Recipe<Inventory> {
     @Override
     public ItemStack getResult(DynamicRegistryManager registryManager) {
         return result;
-    }
-
-    @Override
-    public DefaultedList<Ingredient> getIngredients() {
-        DefaultedList<Ingredient> ingredients = DefaultedList.ofSize(this.ingredients.size());
-        ingredients.addAll(this.ingredients);
-
-        return ingredients;
     }
 
     @Override
@@ -84,7 +81,8 @@ public class CarpentingRecipe implements Recipe<Inventory> {
         public static final String ID = "carpenting";
         public static final Codec<CarpentingRecipe> CODEC = RecordCodecBuilder.create(instance -> instance.group(
                 getResultStackCodec().forGetter(recipe -> recipe.result),
-                validateAmount(Ingredient.DISALLOW_EMPTY_CODEC, 2).fieldOf("ingredients").forGetter(CarpentingRecipe::getIngredients),
+                validateAmount(Codec.pair(Ingredient.DISALLOW_EMPTY_CODEC, Codec.INT.optionalFieldOf("itemCount", 1)
+                        .codec()), 2).fieldOf("ingredients").forGetter(CarpentingRecipe::getIngredientPairs),
                 Codecs.createStrictOptionalFieldCodec(Codec.STRING, "tool", "none").forGetter(recipe -> recipe.tool)
         ).apply(instance, CarpentingRecipe::new));
 
@@ -94,7 +92,7 @@ public class CarpentingRecipe implements Recipe<Inventory> {
                             Codec.INT.fieldOf("count").forGetter(ItemStack::getCount)).apply(instance, ItemStack::new));
         }
 
-        private static Codec<List<Ingredient>> validateAmount(Codec<Ingredient> delegate, int max) {
+        private static Codec<List<Pair<Ingredient, Integer>>> validateAmount(Codec<Pair<Ingredient, Integer>> delegate, int max) {
             return Codecs.validate(Codecs.validate(
                     delegate.listOf(), list -> list.size() > max ? DataResult.error(() -> "Recipe has too many ingredients!") : DataResult.success(list)
             ), list -> list.isEmpty() ? DataResult.error(() -> "Recipe has no ingredients!") : DataResult.success(list));
@@ -107,22 +105,32 @@ public class CarpentingRecipe implements Recipe<Inventory> {
 
         @Override
         public CarpentingRecipe read(PacketByteBuf buf) {
+            DefaultedList<Pair<Ingredient, Integer>> ingredientPairs = DefaultedList.of();
+            int ingredientCount = buf.readInt();
             Ingredient firstIngredient = Ingredient.fromPacket(buf);
-            Ingredient secondIngredient = Ingredient.fromPacket(buf);
+            int firstIngredientCount = buf.readInt();
+            ingredientPairs.add(Pair.of(firstIngredient, firstIngredientCount));
+
+            if (ingredientCount == 2) {
+                Ingredient secondIngredient = Ingredient.fromPacket(buf);
+                int secondIngredientCount = buf.readInt();
+
+                ingredientPairs.add(Pair.of(secondIngredient, secondIngredientCount));
+            }
+
             ItemStack result = buf.readItemStack();
             String tool = buf.readString();
 
-            DefaultedList<Ingredient> ingredients = DefaultedList.of();
-            ingredients.add(firstIngredient);
-            ingredients.add(secondIngredient);
-
-            return new CarpentingRecipe(result, ingredients, tool);
+            return new CarpentingRecipe(result, ingredientPairs, tool);
         }
 
         @Override
         public void write(PacketByteBuf buf, CarpentingRecipe recipe) {
-            for (Ingredient ingredient : recipe.getIngredients()) {
-                ingredient.write(buf);
+            List<Pair<Ingredient, Integer>> ingredientPairs = recipe.getIngredientPairs();
+            buf.writeInt(ingredientPairs.size());
+            for (Pair<Ingredient, Integer> ingredientPair : recipe.getIngredientPairs()) {
+                ingredientPair.getFirst().write(buf);
+                buf.writeInt(ingredientPair.getSecond());
             }
             buf.writeItemStack(recipe.result);
             buf.writeString(recipe.getTool());
