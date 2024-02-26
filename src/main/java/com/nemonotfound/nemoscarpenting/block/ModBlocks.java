@@ -123,7 +123,7 @@ public class ModBlocks {
             ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_FURNITURE);
     public static final Block BAMBOO_GLASS_FRONT_DOOR = registerBlock("bamboo_glass_front_door", new DoorBlock(FabricBlockSettings.create()
                     .mapColor(OAK_PLANKS.getDefaultMapColor()).instrument(Instrument.BASS)
-                    .strength(3.0f).nonOpaque().burnable().pistonBehavior(PistonBehavior.DESTROY), BlockSetType.OAK),
+                    .strength(3.0f).nonOpaque().burnable().pistonBehavior(PistonBehavior.DESTROY), BlockSetType.BAMBOO),
             ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_FURNITURE);
     public static final Block BIRCH_GLASS_FRONT_DOOR = registerBlock("birch_glass_front_door", new DoorBlock(FabricBlockSettings.create()
                     .mapColor(BIRCH_PLANKS.getDefaultMapColor()).instrument(Instrument.BASS)
