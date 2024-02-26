@@ -1,6 +1,7 @@
 package com.nemonotfound.nemoscarpenting.block;
 
 
+import com.mojang.serialization.MapCodec;
 import net.minecraft.block.*;
 import net.minecraft.fluid.FluidState;
 import net.minecraft.fluid.Fluids;
@@ -47,6 +48,11 @@ public class ChairBlock extends SitableBlock implements Waterloggable {
     protected ChairBlock(Settings settings) {
         super(settings);
         this.setDefaultState(this.stateManager.getDefaultState().with(FACING, Direction.NORTH).with(WATERLOGGED, false));
+    }
+
+    @Override
+    protected MapCodec<? extends HorizontalFacingBlock> getCodec() {
+        return null;
     }
 
     @Override

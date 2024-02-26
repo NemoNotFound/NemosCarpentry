@@ -81,7 +81,7 @@ public class CarpentingScreenHandler extends ScreenHandler {
             @Override
             public void onTakeItem(PlayerEntity player, ItemStack stack) {
                 CarpentingRecipe recipe = availableRecipes.get(selectedRecipe.get()).value();
-                stack.onCraft(player.getWorld(), player, stack.getCount());
+                stack.onCraftByPlayer(player.getWorld(), player, stack.getCount());
                 List<Pair<Ingredient, Integer>> ingredients = recipe.getIngredientPairs();
 
                 takeStacksOfIngredients(ingredients);
@@ -163,7 +163,7 @@ public class CarpentingScreenHandler extends ScreenHandler {
                 }
             }
             if (slotIndex == 6) {
-                item.onCraft(movingItemStack, player.getWorld(), player);
+                item.onCraft(movingItemStack, player.getWorld());
                 if (!this.insertItem(movingItemStack, 7, 43, true)) {
                     return ItemStack.EMPTY;
                 }

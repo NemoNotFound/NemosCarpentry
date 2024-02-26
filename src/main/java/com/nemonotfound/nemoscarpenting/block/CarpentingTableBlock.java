@@ -1,5 +1,6 @@
 package com.nemonotfound.nemoscarpenting.block;
 
+import com.mojang.serialization.MapCodec;
 import com.nemonotfound.nemoscarpenting.entity.CarpentingTableBlockEntity;
 import net.minecraft.block.BlockEntityProvider;
 import net.minecraft.block.BlockRenderType;
@@ -21,6 +22,11 @@ public class CarpentingTableBlock extends BlockWithEntity implements BlockEntity
 
     public CarpentingTableBlock(Settings settings) {
         super(settings);
+    }
+
+    @Override
+    protected MapCodec<? extends BlockWithEntity> getCodec() {
+        return null;
     }
 
     @Nullable
