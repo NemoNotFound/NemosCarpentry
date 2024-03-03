@@ -1,0 +1,14 @@
+{
+  "type": "nemos-carpenting:carpenting",
+  "count": 1,
+  "ingredients": [
+    {
+      "item": "nemos-carpenting:dark_oak_glass_front_door_frame"
+    },
+    {
+      "item": "minecraft:orange_stained_glass_pane",
+      "itemCount": 2
+  }
+  ],
+  "result": "nemos-carpenting:dark_oak_orange_stained_glass_door"
+}
