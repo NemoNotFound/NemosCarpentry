@@ -1,0 +1,9 @@
+{
+  "parent": "nemos-carpenting:block/doors/parent/door_bottom_left",
+  "textures": {
+    "bottom": "nemos-carpenting:block/doors/bamboo/bamboo_blue_stained_glass_door_bottom",
+    "lower": "nemos-carpenting:block/doors/bamboo_glass_front_door_bottom_lower",
+    "left": "nemos-carpenting:block/doors/bamboo_glass_front_door_bottom_left",
+    "right": "nemos-carpenting:block/doors/bamboo_glass_front_door_bottom_right"
+  }
+}
