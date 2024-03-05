@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "nemos-carpenting:item/doors/jungle/jungle_brown_stained_glass_door"
+  }
+}
