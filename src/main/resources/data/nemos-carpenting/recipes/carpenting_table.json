@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "tag": "minecraft:planks"
+    },
+    "s": {
+      "item": "nemos-carpenting:wooden_saw"
+    }
+  },
+  "pattern": [
+    "## ",
+    "##s"
+  ],
+  "result": {
+    "item": "nemos-carpenting:carpenting_table"
+  },
+  "show_notification": false
+}
