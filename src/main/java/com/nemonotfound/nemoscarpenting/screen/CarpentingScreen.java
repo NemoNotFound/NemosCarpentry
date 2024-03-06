@@ -181,11 +181,11 @@ public class CarpentingScreen extends HandledScreen<CarpentingScreenHandler> {
     }
 
     private boolean shouldScroll() {
-        return false;
+        return (this.handler).getAvailableRecipeCount() > 12;
     }
 
     protected int getMaxScroll() {
-        return 0;
+        return ((this.handler).getAvailableRecipeCount() + 4 - 1) / 4 - 3;
     }
 
     private void onInventoryChange() {
