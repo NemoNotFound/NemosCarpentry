@@ -2,8 +2,8 @@
   "parent": "nemos-carpenting:block/doors/parent/door_top_right_open",
   "textures": {
     "top": "nemos-carpenting:block/doors/mangrove/mangrove_black_stained_glass_door_top",
-    "upper": "nemos-carpenting:block/doors/mangrove_glass_front_door_top_upper",
-    "left": "nemos-carpenting:block/doors/mangrove_glass_front_door_top_left",
-    "right": "nemos-carpenting:block/doors/mangrove_glass_front_door_top_right"
+    "upper": "nemos-carpenting:block/doors/mangrove/mangrove_glass_front_door_top_upper",
+    "left": "nemos-carpenting:block/doors/mangrove/mangrove_glass_front_door_top_left",
+    "right": "nemos-carpenting:block/doors/mangrove/mangrove_glass_front_door_top_right"
   }
 }
