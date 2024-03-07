@@ -16,11 +16,18 @@ So if you use version 2.0.0 or higher and still want to use the Woodcutter, chec
 
 - New blocks
     - Carpenting Table
-    - Glass Front Doors for all wood types
+    - Glass doors for all wood types
+    - Stained glass doors for all wood types and colors
     - "The Classic" Table for all wood types
     - Chairs for all wood types
+- New tools
+  - Saw
+- New items
+  - Door frame for all wood types
 - New recipes for Crafting Table
     - Bound Bamboo Ladder
+    - Carpenting Table
+    - Saw
 - New recipes for Carpenting Table
     - Ladder
     - "The Classic" Tabletop
@@ -29,8 +36,9 @@ So if you use version 2.0.0 or higher and still want to use the Woodcutter, chec
     - Chair Seat
     - Chair Leg
     - Chair
-    - Glass Front Door Frame
-    - Glass Front Door
+    - Glass Door Frame
+    - Glass Door
+    - Stained Glass Door
 
 <br></br>
 If you need a Minecraft Server, go check out Kinetic Hosting and save 15% for your first month with the code "Nemo"! Just click here on the banner!
