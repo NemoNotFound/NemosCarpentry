@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "nemos-carpentry:item/doors/spruce/spruce_glass_front_door"
+    "layer0": "nemos-carpentry:item/doors/spruce/spruce_glass_door"
   }
 }

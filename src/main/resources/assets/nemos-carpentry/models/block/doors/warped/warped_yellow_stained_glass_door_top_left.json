@@ -2,8 +2,8 @@
   "parent": "nemos-carpentry:block/doors/parent/door_top_left",
   "textures": {
     "top": "nemos-carpentry:block/doors/warped/warped_yellow_stained_glass_door_top",
-    "upper": "nemos-carpentry:block/doors/warped/warped_glass_front_door_top_upper",
-    "left": "nemos-carpentry:block/doors/warped/warped_glass_front_door_top_left",
-    "right": "nemos-carpentry:block/doors/warped/warped_glass_front_door_top_right"
+    "upper": "nemos-carpentry:block/doors/warped/warped_glass_door_top_upper",
+    "left": "nemos-carpentry:block/doors/warped/warped_glass_door_top_left",
+    "right": "nemos-carpentry:block/doors/warped/warped_glass_door_top_right"
   }
 }

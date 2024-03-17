@@ -2,8 +2,8 @@
   "parent": "nemos-carpentry:block/doors/parent/door_bottom_right_open",
   "textures": {
     "bottom": "nemos-carpentry:block/doors/bamboo/bamboo_yellow_stained_glass_door_bottom",
-    "lower": "nemos-carpentry:block/doors/bamboo/bamboo_glass_front_door_bottom_lower",
-    "left": "nemos-carpentry:block/doors/bamboo/bamboo_glass_front_door_bottom_left",
-    "right": "nemos-carpentry:block/doors/bamboo/bamboo_glass_front_door_bottom_right"
+    "lower": "nemos-carpentry:block/doors/bamboo/bamboo_glass_door_bottom_lower",
+    "left": "nemos-carpentry:block/doors/bamboo/bamboo_glass_door_bottom_left",
+    "right": "nemos-carpentry:block/doors/bamboo/bamboo_glass_door_bottom_right"
   }
 }

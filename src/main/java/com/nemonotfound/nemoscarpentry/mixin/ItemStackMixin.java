@@ -21,8 +21,10 @@ public class ItemStackMixin {
                 splitId[0] = MOD_ID;
             }
 
-            if (splitId[1].equals("carpenting_table_block_entity")) {
-                splitId[1] = "carpenters_workbench_block_entity";
+            if (splitId[1].equals("carpenting_table")) {
+                splitId[1] = "carpenters_workbench";
+            } else if (splitId[1].contains("glass")) {
+                splitId[1] = splitId[1].replace("glass", "glass");
             }
 
             String newId = splitId[0] + ":" + splitId[1];

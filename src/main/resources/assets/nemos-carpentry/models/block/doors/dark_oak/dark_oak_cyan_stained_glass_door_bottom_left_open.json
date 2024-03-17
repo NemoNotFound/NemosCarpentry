@@ -2,8 +2,8 @@
   "parent": "nemos-carpentry:block/doors/parent/door_bottom_left_open",
   "textures": {
     "bottom": "nemos-carpentry:block/doors/dark_oak/dark_oak_cyan_stained_glass_door_bottom",
-    "lower": "nemos-carpentry:block/doors/dark_oak/dark_oak_glass_front_door_bottom_lower",
-    "left": "nemos-carpentry:block/doors/dark_oak/dark_oak_glass_front_door_bottom_left",
-    "right": "nemos-carpentry:block/doors/dark_oak/dark_oak_glass_front_door_bottom_right"
+    "lower": "nemos-carpentry:block/doors/dark_oak/dark_oak_glass_door_bottom_lower",
+    "left": "nemos-carpentry:block/doors/dark_oak/dark_oak_glass_door_bottom_left",
+    "right": "nemos-carpentry:block/doors/dark_oak/dark_oak_glass_door_bottom_right"
   }
 }
