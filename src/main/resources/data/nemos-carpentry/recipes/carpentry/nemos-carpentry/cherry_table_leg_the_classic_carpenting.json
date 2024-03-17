@@ -1,0 +1,11 @@
+{
+  "type": "nemos-carpentry:carpentry",
+  "count": 1,
+  "ingredients": [
+    {
+      "item": "minecraft:cherry_planks"
+    }
+  ],
+  "tool": "saw",
+  "result": "nemos-carpentry:cherry_table_leg_the_classic"
+}

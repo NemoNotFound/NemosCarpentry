@@ -1,0 +1,9 @@
+{
+  "parent": "nemos-carpentry:block/doors/parent/door_top_right",
+  "textures": {
+    "top": "nemos-carpentry:block/doors/spruce/spruce_white_stained_glass_door_top",
+    "upper": "nemos-carpentry:block/doors/spruce/spruce_glass_front_door_top_upper",
+    "left": "nemos-carpentry:block/doors/spruce/spruce_glass_front_door_top_left",
+    "right": "nemos-carpentry:block/doors/spruce/spruce_glass_front_door_top_right"
+  }
+}

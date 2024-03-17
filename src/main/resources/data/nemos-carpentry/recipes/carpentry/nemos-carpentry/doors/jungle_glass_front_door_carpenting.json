@@ -1,0 +1,14 @@
+{
+  "type": "nemos-carpentry:carpentry",
+  "count": 1,
+  "ingredients": [
+    {
+      "item": "nemos-carpentry:jungle_glass_front_door_frame"
+    },
+    {
+      "item": "minecraft:glass_pane",
+      "itemCount": 2
+  }
+  ],
+  "result": "nemos-carpentry:jungle_glass_front_door"
+}

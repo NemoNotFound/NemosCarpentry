@@ -1,0 +1,14 @@
+{
+  "type": "nemos-carpentry:carpentry",
+  "count": 1,
+  "ingredients": [
+    {
+      "item": "nemos-carpentry:acacia_glass_front_door_frame"
+    },
+    {
+      "item": "minecraft:green_stained_glass_pane",
+      "itemCount": 2
+  }
+  ],
+  "result": "nemos-carpentry:acacia_green_stained_glass_door"
+}

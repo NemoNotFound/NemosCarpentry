@@ -1,0 +1,11 @@
+{
+  "type": "nemos-carpentry:carpentry",
+  "count": 2,
+  "ingredients": [
+    {
+      "item": "minecraft:jungle_planks"
+    }
+  ],
+  "tool": "saw",
+  "result": "nemos-carpentry:jungle_tabletop_the_classic"
+}

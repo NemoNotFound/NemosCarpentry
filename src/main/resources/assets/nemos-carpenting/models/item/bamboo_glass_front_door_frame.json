@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "nemos-carpenting:item/doors/bamboo/bamboo_glass_front_door_frame"
-  }
-}

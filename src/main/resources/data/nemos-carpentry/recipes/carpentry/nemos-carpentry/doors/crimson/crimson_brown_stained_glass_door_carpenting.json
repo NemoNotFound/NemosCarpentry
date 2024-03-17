@@ -1,0 +1,14 @@
+{
+  "type": "nemos-carpentry:carpentry",
+  "count": 1,
+  "ingredients": [
+    {
+      "item": "nemos-carpentry:crimson_glass_front_door_frame"
+    },
+    {
+      "item": "minecraft:brown_stained_glass_pane",
+      "itemCount": 2
+  }
+  ],
+  "result": "nemos-carpentry:crimson_brown_stained_glass_door"
+}
