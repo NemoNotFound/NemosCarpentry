@@ -2,8 +2,8 @@
   "parent": "nemos-carpentry:block/doors/parent/door_top_left_open",
   "textures": {
     "top": "nemos-carpentry:block/doors/cherry/cherry_purple_stained_glass_door_top",
-    "upper": "nemos-carpentry:block/doors/cherry/cherry_glass_front_door_top_upper",
-    "left": "nemos-carpentry:block/doors/cherry/cherry_glass_front_door_top_left",
-    "right": "nemos-carpentry:block/doors/cherry/cherry_glass_front_door_top_right"
+    "upper": "nemos-carpentry:block/doors/cherry/cherry_glass_door_top_upper",
+    "left": "nemos-carpentry:block/doors/cherry/cherry_glass_door_top_left",
+    "right": "nemos-carpentry:block/doors/cherry/cherry_glass_door_top_right"
   }
 }

@@ -13,18 +13,18 @@
           "type": "minecraft:item",
           "conditions": [
             {
-              "block": "nemos-carpentry:mangrove_glass_front_door",
+              "block": "nemos-carpentry:mangrove_glass_door",
               "condition": "minecraft:block_state_property",
               "properties": {
                 "half": "lower"
               }
             }
           ],
-          "name": "nemos-carpentry:mangrove_glass_front_door"
+          "name": "nemos-carpentry:mangrove_glass_door"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "nemos-carpentry:blocks/mangrove_glass_front_door"
+  "random_sequence": "nemos-carpentry:blocks/mangrove_glass_door"
 }
