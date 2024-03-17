@@ -15,8 +15,8 @@ public class SimpleDefaultedRegistryMixin {
         @ModifyVariable(at = @At("HEAD"), method = "get(Lnet/minecraft/util/Identifier;)Ljava/lang/Object;", ordinal = 0, argsOnly = true)
         Identifier fixMissingFromRegistry(@Nullable Identifier id) {
         if (id != null) {
-            if (id.getPath().contains("glass")) {
-                return new Identifier(MOD_ID, id.getPath().replace("glass", "glass"));
+            if (id.getPath().contains("glass_front")) {
+                return new Identifier(MOD_ID, id.getPath().replace("glass_front", "glass"));
             }
             if (id.getPath().equals("carpenting_table")) {
                 return new Identifier(MOD_ID, "carpenters_workbench");
