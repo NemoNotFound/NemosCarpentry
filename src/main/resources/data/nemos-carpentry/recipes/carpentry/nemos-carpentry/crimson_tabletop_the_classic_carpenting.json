@@ -1,0 +1,11 @@
+{
+  "type": "nemos-carpentry:carpentry",
+  "count": 2,
+  "ingredients": [
+    {
+      "item": "minecraft:crimson_planks"
+    }
+  ],
+  "tool": "saw",
+  "result": "nemos-carpentry:crimson_tabletop_the_classic"
+}

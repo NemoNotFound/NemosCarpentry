@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "nemos-carpentry:block/carpenters_workbench_top",
+    "east": "nemos-carpentry:block/carpenters_workbench_side",
+    "north": "nemos-carpentry:block/carpenters_workbench_side",
+    "particle": "nemos-carpentry:block/carpenters_workbench_side",
+    "south": "nemos-carpentry:block/carpenters_workbench_side",
+    "up": "nemos-carpentry:block/carpenters_workbench_top",
+    "west": "nemos-carpentry:block/carpenters_workbench_side"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "nemos-carpentry:carpentry",
+  "count": 2,
+  "ingredient": {
+    "item": "minecraft:birch_planks",
+    "itemCount": 2
+  },
+  "tool": "saw",
+  "result": "nemos-carpentry:birch_glass_front_door_frame"
+}

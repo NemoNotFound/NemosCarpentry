@@ -1,9 +1,0 @@
-{
-  "type": "nemos-carpenting:carpenting",
-  "count": 2,
-  "ingredient": {
-    "item": "minecraft:warped_planks"
-  },
-  "tool": "saw",
-  "result": "nemos-carpenting:warped_ladder"
-}

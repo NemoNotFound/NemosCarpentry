@@ -1,0 +1,13 @@
+{
+  "type": "nemos-carpentry:carpentry",
+  "count": 1,
+  "ingredients": [
+    {
+      "item": "nemos-carpentry:acacia_tabletop_the_classic"
+    },
+    {
+      "item": "nemos-carpentry:acacia_table_leg_the_classic"
+    }
+  ],
+  "result": "nemos-carpentry:acacia_table_the_classic"
+}

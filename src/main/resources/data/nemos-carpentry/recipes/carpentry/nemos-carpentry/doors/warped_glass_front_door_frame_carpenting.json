@@ -1,0 +1,10 @@
+{
+  "type": "nemos-carpentry:carpentry",
+  "count": 2,
+  "ingredient": {
+    "item": "minecraft:warped_planks",
+    "itemCount": 2
+  },
+  "tool": "saw",
+  "result": "nemos-carpentry:warped_glass_front_door_frame"
+}

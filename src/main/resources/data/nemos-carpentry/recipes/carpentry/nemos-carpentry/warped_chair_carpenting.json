@@ -1,0 +1,14 @@
+{
+  "type": "nemos-carpentry:carpentry",
+  "count": 1,
+  "ingredients": [
+    {
+      "item": "nemos-carpentry:warped_chair_seat"
+    },
+    {
+      "item": "nemos-carpentry:warped_chair_leg",
+      "itemCount": 4
+  }
+  ],
+  "result": "nemos-carpentry:warped_chair"
+}

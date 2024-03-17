@@ -1,0 +1,9 @@
+{
+  "parent": "nemos-carpentry:block/doors/parent/door_bottom_right",
+  "textures": {
+    "bottom": "nemos-carpentry:block/doors/jungle/jungle_pink_stained_glass_door_bottom",
+    "lower": "nemos-carpentry:block/doors/jungle/jungle_glass_front_door_bottom_lower",
+    "left": "nemos-carpentry:block/doors/jungle/jungle_glass_front_door_bottom_left",
+    "right": "nemos-carpentry:block/doors/jungle/jungle_glass_front_door_bottom_right"
+  }
+}

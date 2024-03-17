@@ -1,6 +1,6 @@
 {
 	"schemaVersion": 1,
-	"id": "nemos-carpenting",
+	"id": "nemos-carpentry",
 	"version": "${version}",
 	"name": "Nemo's Furniture",
 	"description": "Adds the Woodcutter from Nemo's Woodcutter and some furniture to Minecraft!",
@@ -11,14 +11,14 @@
 		"homepage": "https://nemonotfound.com"
 	},
 	"license": "MIT",
-	"icon": "assets/nemos-carpenting/icon.png",
+	"icon": "assets/nemos-carpentry/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.nemonotfound.NemosCarpenting"
+			"com.nemonotfound.NemosCarpentry"
 		],
 		"client": [
-			"com.nemonotfound.NemosCarpentingClient"
+			"com.nemonotfound.NemosCarpentryClient"
 		]
 	},
 	"depends": {
@@ -27,11 +27,11 @@
 		"java": ">=17",
 		"fabric-api": "*"
 	},
+	"mixins": [
+		"nemos-carpentry.mixins.json"
+	],
 	"suggests": {
 		"another-mod": "*"
 	},
-	"accessWidener": "nemos-carpenting.accesswidener",
-	"mixins": [
-		"nemos-carpenting.mixins.json"
-	]
+	"accessWidener": "nemos-carpentry.accesswidener"
 }

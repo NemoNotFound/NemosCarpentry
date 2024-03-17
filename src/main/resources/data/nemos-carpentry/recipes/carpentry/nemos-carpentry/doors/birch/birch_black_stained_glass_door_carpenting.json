@@ -1,0 +1,14 @@
+{
+  "type": "nemos-carpentry:carpentry",
+  "count": 1,
+  "ingredients": [
+    {
+      "item": "nemos-carpentry:birch_glass_front_door_frame"
+    },
+    {
+      "item": "minecraft:black_stained_glass_pane",
+      "itemCount": 2
+  }
+  ],
+  "result": "nemos-carpentry:birch_black_stained_glass_door"
+}

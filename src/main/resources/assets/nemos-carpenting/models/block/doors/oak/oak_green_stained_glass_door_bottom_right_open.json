@@ -1,9 +1,0 @@
-{
-  "parent": "nemos-carpenting:block/doors/parent/door_bottom_right_open",
-  "textures": {
-    "bottom": "nemos-carpenting:block/doors/oak/oak_green_stained_glass_door_bottom",
-    "lower": "nemos-carpenting:block/doors/oak/oak_glass_front_door_bottom_lower",
-    "left": "nemos-carpenting:block/doors/oak/oak_glass_front_door_bottom_left",
-    "right": "nemos-carpenting:block/doors/oak/oak_glass_front_door_bottom_right"
-  }
-}

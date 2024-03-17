@@ -1,9 +1,0 @@
-{
-  "type": "nemos-carpenting:carpenting",
-  "count": 4,
-  "ingredient": {
-    "item": "minecraft:acacia_planks"
-  },
-  "tool": "saw",
-  "result": "nemos-carpenting:acacia_chair_leg"
-}
