@@ -64,31 +64,27 @@ public abstract class SitableBlock extends HorizontalFacingBlock {
     public ActionResult sitEntity(World world, BlockPos pos, BlockState state, Entity entityToSit) {
         double posX;
         double posZ;
-        if (state.getBlock() instanceof ChairBlock) {
-            Direction direction = state.get(FACING);
-            switch (direction) {
-                case EAST -> {
-                    posX = pos.getX() + 0.4;
-                    posZ = pos.getZ() + 0.5;
-                }
-                case WEST -> {
-                    posX = pos.getX() + 0.6;
-                    posZ = pos.getZ() + 0.5;
-                }
-                case SOUTH -> {
-                    posX = pos.getX() + 0.5;
-                    posZ = pos.getZ() + 0.4;
-                }
-                default -> {
-                    posX = pos.getX() + 0.5;
-                    posZ = pos.getZ() + 0.6;
-                }
-            }
 
-        } else {
-            posX = pos.getX() + 0.5;
-            posZ = pos.getZ() + 0.5;
+        Direction direction = state.get(FACING);
+        switch (direction) {
+            case EAST -> {
+                posX = pos.getX() + 0.4;
+                posZ = pos.getZ() + 0.5;
+            }
+            case WEST -> {
+                posX = pos.getX() + 0.6;
+                posZ = pos.getZ() + 0.5;
+            }
+            case SOUTH -> {
+                posX = pos.getX() + 0.5;
+                posZ = pos.getZ() + 0.4;
+            }
+            default -> {
+                posX = pos.getX() + 0.5;
+                posZ = pos.getZ() + 0.6;
+            }
         }
+
         double posY = pos.getY() + this.height;
         float yaw = state.get(FACING).asRotation();
         this.chairEntity = ModEntities.CHAIR_ENTITY.create(world);
