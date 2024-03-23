@@ -111,11 +111,38 @@ public class ModBlocks {
     public static final Block JUNGLE_CHAIR = registerBlock("jungle_chair",
             new ChairBlock(AbstractBlock.Settings.copy(JUNGLE_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
             ModItemGroups.NEMOS_CARPENTRY);
+    public static final Block ACACIA_CHAIR_FELIX = registerBlock("acacia_chair_felix",
+            new FelixChairBlock(AbstractBlock.Settings.copy(ACACIA_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
+            ModItemGroups.NEMOS_CARPENTRY);
+    public static final Block BAMBOO_CHAIR_FELIX = registerBlock("bamboo_chair_felix",
+            new FelixChairBlock(AbstractBlock.Settings.copy(BAMBOO_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
+            ModItemGroups.NEMOS_CARPENTRY);
+    public static final Block BIRCH_CHAIR_FELIX = registerBlock("birch_chair_felix",
+            new FelixChairBlock(AbstractBlock.Settings.copy(BIRCH_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
+            ModItemGroups.NEMOS_CARPENTRY);
+    public static final Block CHERRY_CHAIR_FELIX = registerBlock("cherry_chair_felix",
+            new FelixChairBlock(AbstractBlock.Settings.copy(CHERRY_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
+            ModItemGroups.NEMOS_CARPENTRY);
+    public static final Block CRIMSON_CHAIR_FELIX = registerBlock("crimson_chair_felix",
+            new FelixChairBlock(AbstractBlock.Settings.copy(CRIMSON_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
+            ModItemGroups.NEMOS_CARPENTRY);
+    public static final Block DARK_OAK_CHAIR_FELIX = registerBlock("dark_oak_chair_felix",
+            new FelixChairBlock(AbstractBlock.Settings.copy(DARK_OAK_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
+            ModItemGroups.NEMOS_CARPENTRY);
+    public static final Block JUNGLE_CHAIR_FELIX = registerBlock("jungle_chair_felix",
+            new FelixChairBlock(AbstractBlock.Settings.copy(JUNGLE_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
+            ModItemGroups.NEMOS_CARPENTRY);
+    public static final Block MANGROVE_CHAIR_FELIX = registerBlock("mangrove_chair_felix",
+            new FelixChairBlock(AbstractBlock.Settings.copy(MANGROVE_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
+            ModItemGroups.NEMOS_CARPENTRY);
     public static final Block OAK_CHAIR_FELIX = registerBlock("oak_chair_felix",
             new FelixChairBlock(AbstractBlock.Settings.copy(OAK_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
             ModItemGroups.NEMOS_CARPENTRY);
-    public static final Block BAMBOO_FLOOR_CHAIR_THE_CLASSIC = registerBlock("bamboo_floor_chair_the_classic",
-            new FloorChairBlock(AbstractBlock.Settings.copy(BAMBOO_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
+    public static final Block SPRUCE_CHAIR_FELIX = registerBlock("spruce_chair_felix",
+            new FelixChairBlock(AbstractBlock.Settings.copy(SPRUCE_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
+            ModItemGroups.NEMOS_CARPENTRY);
+    public static final Block WARPED_CHAIR_FELIX = registerBlock("warped_chair_felix",
+            new FelixChairBlock(AbstractBlock.Settings.copy(WARPED_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
             ModItemGroups.NEMOS_CARPENTRY);
     public static final Block CARPENTERS_WORKBENCH = registerBlock("carpenters_workbench", new CarpentryTableBlock(FabricBlockSettings.create()
             .mapColor(MapColor.OAK_TAN)
