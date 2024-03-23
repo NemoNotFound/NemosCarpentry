@@ -1,0 +1,11 @@
+{
+  "type": "nemos-carpentry:carpentry",
+  "count": 1,
+  "ingredients": [
+    {
+      "item": "minecraft:warped_planks"
+    }
+  ],
+  "tool": "saw",
+  "result": "nemos-carpentry:warped_floor_chair_the_classic"
+}

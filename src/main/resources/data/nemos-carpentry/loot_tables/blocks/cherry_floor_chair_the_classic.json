@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "nemos-carpentry:cherry_floor_chair_the_classic"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "nemos-carpentry:blocks/cherry_floor_chair_the_classic"
+}
