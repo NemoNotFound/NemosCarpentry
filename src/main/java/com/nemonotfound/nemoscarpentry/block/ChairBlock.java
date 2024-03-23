@@ -45,7 +45,7 @@ public class ChairBlock extends SitableBlock implements Waterloggable {
             Block.createCuboidShape(2, 0, 2, 4, 6, 4));
 
     protected ChairBlock(Settings settings) {
-        super(settings, 0.5f);
+        super(settings, 0.28f);
         this.setDefaultState(this.stateManager.getDefaultState().with(FACING, Direction.NORTH).with(WATERLOGGED, false));
     }
 

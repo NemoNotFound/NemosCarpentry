@@ -84,7 +84,7 @@ public class FelixChairBlock extends SitableBlock implements Waterloggable {
     ).reduce((v1, v2) -> VoxelShapes.combineAndSimplify(v1, v2, BooleanBiFunction.OR)).get();
 
     protected FelixChairBlock(AbstractBlock.Settings settings) {
-        super(settings, 0.4f);
+        super(settings, 0.18f);
         this.setDefaultState(this.stateManager.getDefaultState().with(FACING, Direction.NORTH).with(WATERLOGGED, false));
     }
 
