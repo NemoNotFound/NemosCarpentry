@@ -111,6 +111,9 @@ public class ModBlocks {
     public static final Block JUNGLE_CHAIR = registerBlock("jungle_chair",
             new ChairBlock(AbstractBlock.Settings.copy(JUNGLE_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
             ModItemGroups.NEMOS_CARPENTRY);
+    public static final Block OAK_CHAIR_FELIX = registerBlock("oak_chair_felix",
+            new FelixChairBlock(AbstractBlock.Settings.copy(OAK_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
+            ModItemGroups.NEMOS_CARPENTRY);
     public static final Block BAMBOO_FLOOR_CHAIR_THE_CLASSIC = registerBlock("bamboo_floor_chair_the_classic",
             new FloorChairBlock(AbstractBlock.Settings.copy(BAMBOO_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
             ModItemGroups.NEMOS_CARPENTRY);

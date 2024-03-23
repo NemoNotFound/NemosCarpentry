@@ -1,0 +1,9 @@
+{
+  "type": "nemos-carpentry:carpentry",
+  "count": 1,
+  "ingredient": {
+    "item": "minecraft:oak_planks"
+  },
+  "tool": "saw",
+  "result": "nemos-carpentry:oak_chair"
+}
