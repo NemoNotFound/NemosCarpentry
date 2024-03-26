@@ -49,7 +49,16 @@
   "block.nemos-carpentry.spruce_chair_felix": "Spruce Chair \"Felix\"",
   "block.nemos-carpentry.warped_chair_felix": "Warped Chair \"Felix\"",
 
+  "block.nemos-carpentry.acacia_log_seat": "Acacia Log Seat",
+  "block.nemos-carpentry.birch_log_seat": "Birch Log Seat",
+  "block.nemos-carpentry.cherry_log_seat": "Cherry Log Seat",
+  "block.nemos-carpentry.crimson_log_seat": "Crimson Log Seat",
+  "block.nemos-carpentry.dark_oak_log_seat": "Dark Oak Log Seat",
+  "block.nemos-carpentry.jungle_log_seat": "Jungle Log Seat",
+  "block.nemos-carpentry.mangrove_log_seat": "Mangrove Log Seat",
   "block.nemos-carpentry.oak_log_seat": "Oak Log Seat",
+  "block.nemos-carpentry.spruce_log_seat": "Spruce Log Seat",
+  "block.nemos-carpentry.warped_log_seat": "Warped Log Seat",
 
   "block.nemos-carpentry.carpenters_workbench": "Carpenter's Workbench",
   "block.nemos-carpentry.acacia_glass_door": "Acacia Glass Door",

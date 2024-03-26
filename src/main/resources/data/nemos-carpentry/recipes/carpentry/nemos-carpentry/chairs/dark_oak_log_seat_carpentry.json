@@ -1,0 +1,11 @@
+{
+  "type": "nemos-carpentry:carpentry",
+  "count": 2,
+  "ingredients": [
+    {
+      "item": "minecraft:dark_jungle_log"
+    }
+  ],
+  "tool": "saw",
+  "result": "nemos-carpentry:dark_jungle_log_seat"
+}

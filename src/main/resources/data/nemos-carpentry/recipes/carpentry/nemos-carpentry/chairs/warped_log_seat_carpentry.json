@@ -1,0 +1,11 @@
+{
+  "type": "nemos-carpentry:carpentry",
+  "count": 2,
+  "ingredients": [
+    {
+      "item": "minecraft:warped_log"
+    }
+  ],
+  "tool": "saw",
+  "result": "nemos-carpentry:warped_log_seat"
+}

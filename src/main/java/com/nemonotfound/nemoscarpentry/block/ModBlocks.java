@@ -144,8 +144,35 @@ public class ModBlocks {
     public static final Block WARPED_CHAIR_FELIX = registerBlock("warped_chair_felix",
             new FelixChairBlock(AbstractBlock.Settings.copy(WARPED_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
             ModItemGroups.NEMOS_CARPENTRY);
+    public static final Block ACACIA_LOG_SEAT = registerBlock("acacia_log_seat",
+            new LogSeat(AbstractBlock.Settings.copy(ACACIA_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
+            ModItemGroups.NEMOS_CARPENTRY);
+    public static final Block BIRCH_LOG_SEAT = registerBlock("birch_log_seat",
+            new LogSeat(AbstractBlock.Settings.copy(BIRCH_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
+            ModItemGroups.NEMOS_CARPENTRY);
+    public static final Block CHERRY_LOG_SEAT = registerBlock("cherry_log_seat",
+            new LogSeat(AbstractBlock.Settings.copy(CHERRY_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
+            ModItemGroups.NEMOS_CARPENTRY);
+    public static final Block CRIMSON_LOG_SEAT = registerBlock("crimson_log_seat",
+            new LogSeat(AbstractBlock.Settings.copy(CRIMSON_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
+            ModItemGroups.NEMOS_CARPENTRY);
+    public static final Block DARK_OAK_LOG_SEAT = registerBlock("dark_oak_log_seat",
+            new LogSeat(AbstractBlock.Settings.copy(DARK_OAK_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
+            ModItemGroups.NEMOS_CARPENTRY);
+    public static final Block JUNGLE_LOG_SEAT = registerBlock("jungle_log_seat",
+            new LogSeat(AbstractBlock.Settings.copy(JUNGLE_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
+            ModItemGroups.NEMOS_CARPENTRY);
+    public static final Block MANGROVE_LOG_SEAT = registerBlock("mangrove_log_seat",
+            new LogSeat(AbstractBlock.Settings.copy(MANGROVE_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
+            ModItemGroups.NEMOS_CARPENTRY);
     public static final Block OAK_LOG_SEAT = registerBlock("oak_log_seat",
             new LogSeat(AbstractBlock.Settings.copy(OAK_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
+            ModItemGroups.NEMOS_CARPENTRY);
+    public static final Block SPRUCE_LOG_SEAT = registerBlock("spruce_log_seat",
+            new LogSeat(AbstractBlock.Settings.copy(SPRUCE_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
+            ModItemGroups.NEMOS_CARPENTRY);
+    public static final Block WARPED_LOG_SEAT = registerBlock("warped_log_seat",
+            new LogSeat(AbstractBlock.Settings.copy(WARPED_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
             ModItemGroups.NEMOS_CARPENTRY);
     public static final Block CARPENTERS_WORKBENCH = registerBlock("carpenters_workbench", new CarpentryTableBlock(FabricBlockSettings.create()
             .mapColor(MapColor.OAK_TAN)
