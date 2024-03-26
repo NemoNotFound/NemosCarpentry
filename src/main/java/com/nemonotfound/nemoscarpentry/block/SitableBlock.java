@@ -25,7 +25,7 @@ import java.util.List;
 public abstract class SitableBlock extends HorizontalFacingBlock {
 
     public static final BooleanProperty WATERLOGGED = Properties.WATERLOGGED;
-    private ChairEntity chairEntity;
+    protected ChairEntity chairEntity;
 
     public SitableBlock(Settings settings, float height) {
         super(settings);
@@ -49,6 +49,7 @@ public abstract class SitableBlock extends HorizontalFacingBlock {
         List<ChairEntity> active = world.getEntitiesByClass(ChairEntity.class, new Box(pos), Entity::hasPassengers);
         List<Entity> hasPassenger = new ArrayList<>();
         active.forEach(chairEntity -> hasPassenger.add(chairEntity.getFirstPassenger()));
+
         if (!active.isEmpty() && hasPassenger.stream().anyMatch(Entity::isPlayer)) {
             return ActionResult.FAIL;
         } else if (!active.isEmpty()) {
@@ -57,11 +58,12 @@ public abstract class SitableBlock extends HorizontalFacingBlock {
         } else if (sitEntity(world, pos, state, player) == ActionResult.SUCCESS) {
             return ActionResult.SUCCESS;
         }
+
         return ActionResult.CONSUME;
     }
 
 
-    public ActionResult sitEntity(World world, BlockPos pos, BlockState state, Entity entityToSit) {
+    protected ActionResult sitEntity(World world, BlockPos pos, BlockState state, Entity entityToSit) {
         double posX;
         double posZ;
 
@@ -93,6 +95,7 @@ public abstract class SitableBlock extends HorizontalFacingBlock {
         chairEntity.setSilent(true);
         chairEntity.setInvisible(false);
         chairEntity.setInvulnerable(true);
+
         if (world.spawnEntity(chairEntity)) {
             entityToSit.setYaw(yaw);
             entityToSit.setBodyYaw(yaw);
