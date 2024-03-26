@@ -1,9 +1,9 @@
 {
 	"parent": "block/block",
 	"textures": {
-		"particle": "nemos-carpentry:block/warped_log_seat",
-		"log": "nemos-carpentry:block/warped_log_seat",
-		"top": "nemos-carpentry:block/warped_log_seat_top"
+		"particle": "nemos-carpentry:block/warped_stem_seat",
+		"log": "nemos-carpentry:block/warped_stem_seat",
+		"top": "nemos-carpentry:block/warped_stem_seat_top"
 	},
 	"elements": [
 		{

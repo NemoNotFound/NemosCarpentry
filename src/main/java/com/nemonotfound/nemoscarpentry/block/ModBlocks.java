@@ -153,7 +153,7 @@ public class ModBlocks {
     public static final Block CHERRY_LOG_SEAT = registerBlock("cherry_log_seat",
             new LogSeat(AbstractBlock.Settings.copy(CHERRY_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
             ModItemGroups.NEMOS_CARPENTRY);
-    public static final Block CRIMSON_LOG_SEAT = registerBlock("crimson_log_seat",
+    public static final Block CRIMSON_STEM_SEAT = registerBlock("crimson_stem_seat",
             new LogSeat(AbstractBlock.Settings.copy(CRIMSON_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
             ModItemGroups.NEMOS_CARPENTRY);
     public static final Block DARK_OAK_LOG_SEAT = registerBlock("dark_oak_log_seat",
@@ -171,7 +171,7 @@ public class ModBlocks {
     public static final Block SPRUCE_LOG_SEAT = registerBlock("spruce_log_seat",
             new LogSeat(AbstractBlock.Settings.copy(SPRUCE_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
             ModItemGroups.NEMOS_CARPENTRY);
-    public static final Block WARPED_LOG_SEAT = registerBlock("warped_log_seat",
+    public static final Block WARPED_STEM_SEAT = registerBlock("warped_stem_seat",
             new LogSeat(AbstractBlock.Settings.copy(WARPED_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
             ModItemGroups.NEMOS_CARPENTRY);
     public static final Block CARPENTERS_WORKBENCH = registerBlock("carpenters_workbench", new CarpentryTableBlock(FabricBlockSettings.create()
