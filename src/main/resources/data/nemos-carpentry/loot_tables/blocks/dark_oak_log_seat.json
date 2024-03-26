@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "nemos-carpentry:dark_jungle_log_seat"
+          "name": "nemos-carpentry:dark_oak_log_seat"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "nemos-carpentry:blocks/dark_jungle_log_seat"
+  "random_sequence": "nemos-carpentry:blocks/dark_oak_log_seat"
 }

@@ -3,9 +3,9 @@
   "count": 2,
   "ingredients": [
     {
-      "item": "minecraft:warped_log"
+      "item": "minecraft:crimson_stem"
     }
   ],
   "tool": "saw",
-  "result": "nemos-carpentry:warped_log_seat"
+  "result": "nemos-carpentry:crimson_stem_seat"
 }

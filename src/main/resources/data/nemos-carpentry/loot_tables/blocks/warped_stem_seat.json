@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "nemos-carpentry:crimson_log_seat"
+          "name": "nemos-carpentry:warped_stem_seat"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "nemos-carpentry:blocks/crimson_log_seat"
+  "random_sequence": "nemos-carpentry:blocks/warped_stem_seat"
 }
