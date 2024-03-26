@@ -144,6 +144,9 @@ public class ModBlocks {
     public static final Block WARPED_CHAIR_FELIX = registerBlock("warped_chair_felix",
             new FelixChairBlock(AbstractBlock.Settings.copy(WARPED_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
             ModItemGroups.NEMOS_CARPENTRY);
+    public static final Block OAK_LOG_SEAT = registerBlock("oak_log_seat",
+            new LogSeat(AbstractBlock.Settings.copy(OAK_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
+            ModItemGroups.NEMOS_CARPENTRY);
     public static final Block CARPENTERS_WORKBENCH = registerBlock("carpenters_workbench", new CarpentryTableBlock(FabricBlockSettings.create()
             .mapColor(MapColor.OAK_TAN)
             .instrument(Instrument.BASS)
