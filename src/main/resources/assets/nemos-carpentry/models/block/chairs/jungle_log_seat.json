@@ -1,0 +1,23 @@
+{
+	"parent": "block/block",
+	"textures": {
+		"particle": "nemos-carpentry:block/jungle_log_seat",
+		"log": "nemos-carpentry:block/jungle_log_seat",
+		"top": "nemos-carpentry:block/jungle_log_seat_top"
+	},
+	"elements": [
+		{
+			"from": [2, 0, 5],
+			"to": [14, 6, 11],
+			"color": 4,
+			"faces": {
+				"north": {"uv": [0, 0, 12, 6], "texture": "#log"},
+				"east": {"uv": [0, 0, 6, 6], "texture": "#top"},
+				"south": {"uv": [0, 0, 12, 6], "texture": "#log"},
+				"west": {"uv": [0, 0, 6, 6], "texture": "#top"},
+				"up": {"uv": [0, 0, 12, 6], "texture": "#log"},
+				"down": {"uv": [0, 0, 12, 6], "texture": "#log"}
+			}
+		}
+	]
+}
