@@ -18,7 +18,7 @@ import net.minecraft.util.Identifier;
 
 import java.util.Arrays;
 
-import static com.nemonotfound.NemosCarpentry.MOD_ID;
+import static com.nemonotfound.nemoscarpentry.NemosCarpentry.MOD_ID;
 import static net.minecraft.block.Blocks.*;
 
 public class ModBlocks {
@@ -928,6 +928,96 @@ public class ModBlocks {
             new DoorBlock(BlockSetType.WARPED, FabricBlockSettings.create().mapColor(WARPED_PLANKS.getDefaultMapColor()).instrument(Instrument.BASS)
                                 .strength(3.0f).nonOpaque().burnable().pistonBehavior(PistonBehavior.DESTROY)),
             ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_CARPENTRY);
+    public static final Block ACACIA_CAMPFIRE = registerBlock("acacia_campfire",
+            new CampfireBlock(true, 1, FabricBlockSettings.create().mapColor(ACACIA_LOG.getDefaultMapColor())
+                    .instrument(Instrument.BASS).strength(2.0f).sounds(BlockSoundGroup.WOOD)
+                    .luminance(Blocks.createLightLevelFromLitBlockState(15)).nonOpaque().burnable()),
+            ItemGroups.FUNCTIONAL, ModItemGroups.NEMOS_CARPENTRY);
+    public static final Block BIRCH_CAMPFIRE = registerBlock("birch_campfire",
+            new CampfireBlock(true, 1, FabricBlockSettings.create().mapColor(BIRCH_LOG.getDefaultMapColor())
+                    .instrument(Instrument.BASS).strength(2.0f).sounds(BlockSoundGroup.WOOD)
+                    .luminance(Blocks.createLightLevelFromLitBlockState(15)).nonOpaque().burnable()),
+            ItemGroups.FUNCTIONAL, ModItemGroups.NEMOS_CARPENTRY);
+    public static final Block CHERRY_CAMPFIRE = registerBlock("cherry_campfire",
+            new CampfireBlock(true, 1, FabricBlockSettings.create().mapColor(CHERRY_LOG.getDefaultMapColor())
+                    .instrument(Instrument.BASS).strength(2.0f).sounds(BlockSoundGroup.WOOD)
+                    .luminance(Blocks.createLightLevelFromLitBlockState(15)).nonOpaque().burnable()),
+            ItemGroups.FUNCTIONAL, ModItemGroups.NEMOS_CARPENTRY);
+    public static final Block CRIMSON_CAMPFIRE = registerBlock("crimson_campfire",
+            new CampfireBlock(true, 1, FabricBlockSettings.create().mapColor(CRIMSON_STEM.getDefaultMapColor())
+                    .instrument(Instrument.BASS).strength(2.0f).sounds(BlockSoundGroup.WOOD)
+                    .luminance(Blocks.createLightLevelFromLitBlockState(15)).nonOpaque().burnable()),
+            ItemGroups.FUNCTIONAL, ModItemGroups.NEMOS_CARPENTRY);
+    public static final Block DARK_OAK_CAMPFIRE = registerBlock("dark_oak_campfire",
+            new CampfireBlock(true, 1, FabricBlockSettings.create().mapColor(DARK_OAK_LOG.getDefaultMapColor())
+                    .instrument(Instrument.BASS).strength(2.0f).sounds(BlockSoundGroup.WOOD)
+                    .luminance(Blocks.createLightLevelFromLitBlockState(15)).nonOpaque().burnable()),
+            ItemGroups.FUNCTIONAL, ModItemGroups.NEMOS_CARPENTRY);
+    public static final Block JUNGLE_CAMPFIRE = registerBlock("jungle_campfire",
+            new CampfireBlock(true, 1, FabricBlockSettings.create().mapColor(JUNGLE_LOG.getDefaultMapColor())
+                    .instrument(Instrument.BASS).strength(2.0f).sounds(BlockSoundGroup.WOOD)
+                    .luminance(Blocks.createLightLevelFromLitBlockState(15)).nonOpaque().burnable()),
+            ItemGroups.FUNCTIONAL, ModItemGroups.NEMOS_CARPENTRY);
+    public static final Block MANGROVE_CAMPFIRE = registerBlock("mangrove_campfire",
+            new CampfireBlock(true, 1, FabricBlockSettings.create().mapColor(MANGROVE_LOG.getDefaultMapColor())
+                    .instrument(Instrument.BASS).strength(2.0f).sounds(BlockSoundGroup.WOOD)
+                    .luminance(Blocks.createLightLevelFromLitBlockState(15)).nonOpaque().burnable()),
+            ItemGroups.FUNCTIONAL, ModItemGroups.NEMOS_CARPENTRY);
+    public static final Block SPRUCE_CAMPFIRE = registerBlock("spruce_campfire",
+            new CampfireBlock(true, 1, FabricBlockSettings.create().mapColor(SPRUCE_LOG.getDefaultMapColor())
+                    .instrument(Instrument.BASS).strength(2.0f).sounds(BlockSoundGroup.WOOD)
+                    .luminance(Blocks.createLightLevelFromLitBlockState(15)).nonOpaque().burnable()),
+            ItemGroups.FUNCTIONAL, ModItemGroups.NEMOS_CARPENTRY);
+    public static final Block WARPED_CAMPFIRE = registerBlock("warped_campfire",
+            new CampfireBlock(true, 1, FabricBlockSettings.create().mapColor(WARPED_STEM.getDefaultMapColor())
+                    .instrument(Instrument.BASS).strength(2.0f).sounds(BlockSoundGroup.WOOD)
+                    .luminance(Blocks.createLightLevelFromLitBlockState(15)).nonOpaque().burnable()),
+            ItemGroups.FUNCTIONAL, ModItemGroups.NEMOS_CARPENTRY);
+    public static final Block ACACIA_SOUL_CAMPFIRE = registerBlock("acacia_soul_campfire",
+            new CampfireBlock(true, 1, FabricBlockSettings.create().mapColor(ACACIA_LOG.getDefaultMapColor())
+                    .instrument(Instrument.BASS).strength(2.0f).sounds(BlockSoundGroup.WOOD)
+                    .luminance(Blocks.createLightLevelFromLitBlockState(15)).nonOpaque().burnable()),
+            ItemGroups.FUNCTIONAL, ModItemGroups.NEMOS_CARPENTRY);
+    public static final Block BIRCH_SOUL_CAMPFIRE = registerBlock("birch_soul_campfire",
+            new CampfireBlock(true, 1, FabricBlockSettings.create().mapColor(BIRCH_LOG.getDefaultMapColor())
+                    .instrument(Instrument.BASS).strength(2.0f).sounds(BlockSoundGroup.WOOD)
+                    .luminance(Blocks.createLightLevelFromLitBlockState(15)).nonOpaque().burnable()),
+            ItemGroups.FUNCTIONAL, ModItemGroups.NEMOS_CARPENTRY);
+    public static final Block CHERRY_SOUL_CAMPFIRE = registerBlock("cherry_soul_campfire",
+            new CampfireBlock(true, 1, FabricBlockSettings.create().mapColor(CHERRY_LOG.getDefaultMapColor())
+                    .instrument(Instrument.BASS).strength(2.0f).sounds(BlockSoundGroup.WOOD)
+                    .luminance(Blocks.createLightLevelFromLitBlockState(15)).nonOpaque().burnable()),
+            ItemGroups.FUNCTIONAL, ModItemGroups.NEMOS_CARPENTRY);
+    public static final Block CRIMSON_SOUL_CAMPFIRE = registerBlock("crimson_soul_campfire",
+            new CampfireBlock(true, 1, FabricBlockSettings.create().mapColor(CRIMSON_STEM.getDefaultMapColor())
+                    .instrument(Instrument.BASS).strength(2.0f).sounds(BlockSoundGroup.WOOD)
+                    .luminance(Blocks.createLightLevelFromLitBlockState(15)).nonOpaque().burnable()),
+            ItemGroups.FUNCTIONAL, ModItemGroups.NEMOS_CARPENTRY);
+    public static final Block DARK_OAK_SOUL_CAMPFIRE = registerBlock("dark_oak_soul_campfire",
+            new CampfireBlock(true, 1, FabricBlockSettings.create().mapColor(DARK_OAK_LOG.getDefaultMapColor())
+                    .instrument(Instrument.BASS).strength(2.0f).sounds(BlockSoundGroup.WOOD)
+                    .luminance(Blocks.createLightLevelFromLitBlockState(15)).nonOpaque().burnable()),
+            ItemGroups.FUNCTIONAL, ModItemGroups.NEMOS_CARPENTRY);
+    public static final Block JUNGLE_SOUL_CAMPFIRE = registerBlock("jungle_soul_campfire",
+            new CampfireBlock(true, 1, FabricBlockSettings.create().mapColor(JUNGLE_LOG.getDefaultMapColor())
+                    .instrument(Instrument.BASS).strength(2.0f).sounds(BlockSoundGroup.WOOD)
+                    .luminance(Blocks.createLightLevelFromLitBlockState(15)).nonOpaque().burnable()),
+            ItemGroups.FUNCTIONAL, ModItemGroups.NEMOS_CARPENTRY);
+    public static final Block MANGROVE_SOUL_CAMPFIRE = registerBlock("mangrove_soul_campfire",
+            new CampfireBlock(true, 1, FabricBlockSettings.create().mapColor(MANGROVE_LOG.getDefaultMapColor())
+                    .instrument(Instrument.BASS).strength(2.0f).sounds(BlockSoundGroup.WOOD)
+                    .luminance(Blocks.createLightLevelFromLitBlockState(15)).nonOpaque().burnable()),
+            ItemGroups.FUNCTIONAL, ModItemGroups.NEMOS_CARPENTRY);
+    public static final Block SPRUCE_SOUL_CAMPFIRE = registerBlock("spruce_soul_campfire",
+            new CampfireBlock(true, 1, FabricBlockSettings.create().mapColor(SPRUCE_LOG.getDefaultMapColor())
+                    .instrument(Instrument.BASS).strength(2.0f).sounds(BlockSoundGroup.WOOD)
+                    .luminance(Blocks.createLightLevelFromLitBlockState(15)).nonOpaque().burnable()),
+            ItemGroups.FUNCTIONAL, ModItemGroups.NEMOS_CARPENTRY);
+    public static final Block WARPED_SOUL_CAMPFIRE = registerBlock("warped_soul_campfire",
+            new CampfireBlock(true, 1, FabricBlockSettings.create().mapColor(WARPED_STEM.getDefaultMapColor())
+                    .instrument(Instrument.BASS).strength(2.0f).sounds(BlockSoundGroup.WOOD)
+                    .luminance(Blocks.createLightLevelFromLitBlockState(15)).nonOpaque().burnable()),
+            ItemGroups.FUNCTIONAL, ModItemGroups.NEMOS_CARPENTRY);
 
     @SafeVarargs
     private static Block registerBlock(String path, Block block, RegistryKey<ItemGroup>... itemGroups) {

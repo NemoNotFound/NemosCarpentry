@@ -16,7 +16,7 @@ import net.minecraft.util.math.MathHelper;
 
 import java.util.List;
 
-import static com.nemonotfound.NemosCarpentry.MOD_ID;
+import static com.nemonotfound.nemoscarpentry.NemosCarpentry.MOD_ID;
 
 @Environment(value= EnvType.CLIENT)
 public class CarpentryScreen extends HandledScreen<CarpentryScreenHandler> {

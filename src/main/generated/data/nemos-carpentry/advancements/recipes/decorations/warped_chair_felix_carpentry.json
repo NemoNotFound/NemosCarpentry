@@ -1,0 +1,47 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:warped_chair_felix_carpentry"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_warped_chair_felix": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "nemos-carpentry:warped_chair_felix"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_warped_planks": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:warped_planks"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_warped_chair_felix",
+      "has_warped_planks"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:warped_chair_felix_carpentry"
+    ]
+  }
+}

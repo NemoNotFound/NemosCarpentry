@@ -1,0 +1,11 @@
+{
+  "type": "nemos-carpentry:carpentry",
+  "count": 2,
+  "ingredients": [
+    {
+      "item": "minecraft:crimson_stem"
+    }
+  ],
+  "result": "nemos-carpentry:crimson_stem_seat",
+  "tool": "saw"
+}

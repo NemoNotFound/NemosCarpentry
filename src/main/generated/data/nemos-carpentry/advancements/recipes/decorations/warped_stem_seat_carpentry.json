@@ -1,0 +1,47 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:warped_stem_seat_carpentry"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_warped_stem": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:warped_stem"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_warped_stem_seat": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "nemos-carpentry:warped_stem_seat"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_warped_stem_seat",
+      "has_warped_stem"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:warped_stem_seat_carpentry"
+    ]
+  }
+}
