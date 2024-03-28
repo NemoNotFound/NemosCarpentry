@@ -1,0 +1,11 @@
+{
+  "type": "nemos-carpentry:carpentry",
+  "count": 2,
+  "ingredients": [
+    {
+      "item": "minecraft:dark_oak_log"
+    }
+  ],
+  "result": "nemos-carpentry:dark_oak_log_seat",
+  "tool": "saw"
+}

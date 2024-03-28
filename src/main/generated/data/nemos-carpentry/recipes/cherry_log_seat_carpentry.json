@@ -1,0 +1,11 @@
+{
+  "type": "nemos-carpentry:carpentry",
+  "count": 2,
+  "ingredients": [
+    {
+      "item": "minecraft:cherry_log"
+    }
+  ],
+  "result": "nemos-carpentry:cherry_log_seat",
+  "tool": "saw"
+}

@@ -13,7 +13,7 @@ import net.minecraft.util.Identifier;
 
 import java.util.Arrays;
 
-import static com.nemonotfound.NemosCarpentry.MOD_ID;
+import static com.nemonotfound.nemoscarpentry.NemosCarpentry.MOD_ID;
 
 public class ModItems {
 

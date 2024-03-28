@@ -11,8 +11,8 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
-import static com.nemonotfound.NemosCarpentry.MOD_ID;
-import static com.nemonotfound.NemosCarpentry.log;
+import static com.nemonotfound.nemoscarpentry.NemosCarpentry.MOD_ID;
+import static com.nemonotfound.nemoscarpentry.NemosCarpentry.log;
 
 public class ModEntities {
 

@@ -11,7 +11,7 @@ import net.minecraft.registry.RegistryKeys;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
-import static com.nemonotfound.NemosCarpentry.MOD_ID;
+import static com.nemonotfound.nemoscarpentry.NemosCarpentry.MOD_ID;
 
 public class ModItemGroups {
 

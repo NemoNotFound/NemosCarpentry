@@ -1,7 +1,7 @@
 package com.nemonotfound.nemoscarpentry.screen;
 
 import com.google.common.collect.Lists;
-import com.nemonotfound.NemosCarpentry;
+import com.nemonotfound.nemoscarpentry.NemosCarpentry;
 import com.nemonotfound.nemoscarpentry.item.SawItem;
 import com.nemonotfound.nemoscarpentry.recipe.CarpentryRecipe;
 import com.nemonotfound.nemoscarpentry.screen.slots.ToolSlot;
@@ -25,7 +25,7 @@ import net.minecraft.world.World;
 import java.util.List;
 import java.util.Optional;
 
-import static com.nemonotfound.NemosCarpentry.CARPENTRY_SCREEN_HANDLER;
+import static com.nemonotfound.nemoscarpentry.NemosCarpentry.CARPENTRY_SCREEN_HANDLER;
 
 public class CarpentryScreenHandler extends ScreenHandler {
 
