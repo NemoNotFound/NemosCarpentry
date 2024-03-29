@@ -2,8 +2,8 @@
   "parent": "nemos-carpentry:block/template_campfire_variant",
   "textures": {
     "fire": "minecraft:block/soul_campfire_fire",
-    "lit_log": "nemos-carpentry:block/warped_soul_campfire_log_lit",
-    "particle": "nemos-carpentry:block/warped_campfire_log",
-    "log": "nemos-carpentry:block/warped_campfire_log"
+    "lit_log": "nemos-carpentry:block/warped_soul_campfire_stem_lit",
+    "particle": "nemos-carpentry:block/warped_campfire_stem",
+    "log": "nemos-carpentry:block/warped_campfire_stem"
   }
 }
