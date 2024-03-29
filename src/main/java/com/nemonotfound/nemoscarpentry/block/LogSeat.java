@@ -27,7 +27,7 @@ public class LogSeat extends SitableBlock implements Waterloggable {
     private static final VoxelShape EAST_SHAPE = Block.createCuboidShape(5, 0, 2, 11, 6, 14);
 
     protected LogSeat(Settings settings) {
-        super(settings, 0.4f);
+        super(settings, 0.16f);
         this.setDefaultState(this.stateManager.getDefaultState().with(FACING, Direction.NORTH).with(WATERLOGGED, false));
     }
 

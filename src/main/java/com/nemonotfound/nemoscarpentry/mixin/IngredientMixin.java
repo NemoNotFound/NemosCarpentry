@@ -1,4 +1,4 @@
-package com.nemonotfound.nemoscarpenting.mixin;
+package com.nemonotfound.nemoscarpentry.mixin;
 
 import com.google.gson.JsonObject;
 import com.llamalad7.mixinextras.injector.ModifyReturnValue;

@@ -5,7 +5,8 @@
   "mixins": [
     "BlockEntityMixin",
     "SimpleDefaultedRegistryMixin",
-    "ItemStackMixin"
+    "ItemStackMixin",
+    "IngredientMixin"
   ],
   "injectors": {
     "defaultRequire": 1
