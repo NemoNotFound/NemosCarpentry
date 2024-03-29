@@ -1,12 +1,11 @@
-# Changelog - v2.2.0
+# Changelog - v2.3.0
 
 ## Additions
-- New Chair "Felix" for all wood types
+- New log/stem seat for all log/stem types
+- New log/stem specific campfires
 
 ## Changes
-- Removed carpentry recipe for chair leg, seat, table leg, tabletop
-- Removed chair leg, seat, table leg, tabletop
-- Chairs & tables are now crafted by just using planks
+- Campfire can be crafted by oak logs only
 
 ### Downloads
 [CurseForge](https://www.curseforge.com/minecraft/mc-mods/nemos-carpentry) <br>

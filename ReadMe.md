@@ -18,27 +18,38 @@ So if you use version 2.0.0 or higher and still want to use the Woodcutter, chec
 
 - New blocks
     - Carpenter's Workbench
-    - Glass doors for all wood types
-    - Stained glass doors for all wood types and colors
-    - "The Classic" Table for all wood types
-    - Chairs for all wood types
-    - "Felix" Chairs for all wood types
+    - Seats
+      - Chairs for all wood types
+      - "Felix" Chairs for all wood types
+      - Log/Stem seats for all log/stem types
+    - Tables
+      - "The Classic" Table for all wood types
+    - Doors
+      - Glass doors for all wood types
+      - Stained glass doors for all wood types and colors
+    - Campfires for all log/stem types
 - New tools
   - Saw
 - New items
-  - Door frame for all wood types
+  - Glass door frame for all wood types
 - New recipes for Crafting Table
     - Bound Bamboo Ladder
     - Carpenter's Workbench
     - Saw
+    - Log/Stem specific Campfire
 - New recipes for Carpenter's Workbench
     - Ladder
-    - "The Classic" Table
-    - Chair
-    - Glass Door Frame
-    - Glass Door
-    - Stained Glass Door
-    - "Felix" Chair
+    - Seats
+      - Chair
+      - "Felix" Chair
+      - Log/Stem seat
+    - Tables
+      - "The Classic" Table
+    - Doors
+      - Glass Door Frame
+      - Glass Door
+      - Stained Glass Door
+      
 
 <br></br>
 If you need a Minecraft Server, go check out Kinetic Hosting and save 15% for your first month with the code "Nemo"! Just click here on the banner!
