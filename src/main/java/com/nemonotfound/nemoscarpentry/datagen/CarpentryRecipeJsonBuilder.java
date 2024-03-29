@@ -1,17 +1,11 @@
 package com.nemonotfound.nemoscarpentry.datagen;
 
 import com.mojang.datafixers.util.Pair;
-import com.nemonotfound.nemoscarpentry.recipe.CarpentryRecipe;
-import net.minecraft.advancement.Advancement;
 import net.minecraft.advancement.AdvancementCriterion;
-import net.minecraft.advancement.AdvancementRequirements;
-import net.minecraft.advancement.AdvancementRewards;
-import net.minecraft.advancement.criterion.RecipeUnlockedCriterion;
 import net.minecraft.data.server.recipe.CraftingRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemConvertible;
-import net.minecraft.item.ItemStack;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.util.Identifier;
@@ -79,17 +73,6 @@ public class CarpentryRecipeJsonBuilder implements CraftingRecipeJsonBuilder {
 
     @Override
     public void offerTo(RecipeExporter exporter, Identifier recipeId) {
-        this.validate(recipeId);
-        Advancement.Builder builder = exporter.getAdvancementBuilder().criterion("has_the_recipe", RecipeUnlockedCriterion.create(recipeId)).rewards(AdvancementRewards.Builder.recipe(recipeId)).criteriaMerger(AdvancementRequirements.CriterionMerger.OR);
-        this.advancementBuilder.forEach(builder::criterion);
-        CarpentryRecipe carpentryRecipe = new CarpentryRecipe(new ItemStack(this.output, this.count),
-                this.ingredientPairs, tool);
-        exporter.accept(recipeId, carpentryRecipe, builder.build(recipeId.withPrefixedPath("recipes/" + this.category.getName() + "/")));
-    }
 
-    private void validate(Identifier recipeId) {
-        if (this.advancementBuilder.isEmpty()) {
-            throw new IllegalStateException("No way of obtaining recipe " + recipeId);
-        }
     }
 }

@@ -1,6 +1,5 @@
 package com.nemonotfound.nemoscarpentry.block;
 
-import com.mojang.serialization.MapCodec;
 import com.nemonotfound.nemoscarpentry.entity.ModEntities;
 import net.minecraft.block.*;
 import net.minecraft.entity.Entity;
@@ -32,10 +31,6 @@ public class LogSeat extends SitableBlock implements Waterloggable {
         this.setDefaultState(this.stateManager.getDefaultState().with(FACING, Direction.NORTH).with(WATERLOGGED, false));
     }
 
-    @Override
-    protected MapCodec<? extends HorizontalFacingBlock> getCodec() {
-        return null;
-    }
 
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView view, BlockPos pos, ShapeContext context) {
