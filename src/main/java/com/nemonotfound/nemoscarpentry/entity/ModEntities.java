@@ -16,7 +16,7 @@ import static com.nemonotfound.nemoscarpentry.NemosCarpentry.log;
 
 public class ModEntities {
 
-    public static final BlockEntityType<CarpentryTableBlockEntity> carpenters_workbench_BLOCK_ENTITY =
+    public static final BlockEntityType<CarpentryTableBlockEntity> CARPENTERS_WORKBENCH_BLOCK_ENTITY =
             Registry.register(Registries.BLOCK_ENTITY_TYPE, new Identifier(MOD_ID, "carpenters_workbench_block_entity"),
                     FabricBlockEntityTypeBuilder.create(CarpentryTableBlockEntity::new, ModBlocks.CARPENTERS_WORKBENCH).build());
     public static final EntityType<ChairEntity> CHAIR_ENTITY = Registry.register(Registries.ENTITY_TYPE,

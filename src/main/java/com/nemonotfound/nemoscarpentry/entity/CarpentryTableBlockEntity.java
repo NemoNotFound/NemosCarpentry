@@ -20,7 +20,7 @@ public class CarpentryTableBlockEntity extends BlockEntity implements NamedScree
     private final DefaultedList<ItemStack> inventory = DefaultedList.ofSize(4, ItemStack.EMPTY);
 
     public CarpentryTableBlockEntity(BlockPos pos, BlockState state) {
-        super(ModEntities.carpenters_workbench_BLOCK_ENTITY, pos, state);
+        super(ModEntities.CARPENTERS_WORKBENCH_BLOCK_ENTITY, pos, state);
     }
 
     @Override
