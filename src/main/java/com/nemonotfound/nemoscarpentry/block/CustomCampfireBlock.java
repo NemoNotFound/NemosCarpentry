@@ -14,7 +14,6 @@ import net.minecraft.fluid.FluidState;
 import net.minecraft.fluid.Fluids;
 import net.minecraft.item.ItemStack;
 import net.minecraft.recipe.CampfireCookingRecipe;
-import net.minecraft.recipe.RecipeEntry;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.stat.Stats;
@@ -41,13 +40,13 @@ public class CustomCampfireBlock extends CampfireBlock {
     public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
         ItemStack itemStack;
         CustomCampfireBlockEntity customCampfireBlockEntity;
-        Optional<RecipeEntry<CampfireCookingRecipe>> optionalRecipe;
+        Optional<CampfireCookingRecipe>optionalRecipe;
         BlockEntity blockEntity = world.getBlockEntity(pos);
 
         if (blockEntity instanceof CustomCampfireBlockEntity && (optionalRecipe = (customCampfireBlockEntity =
                 (CustomCampfireBlockEntity)blockEntity).getRecipeFor(itemStack = player.getStackInHand(hand))).isPresent()) {
             if (!world.isClient && customCampfireBlockEntity.addItem(player, player.getAbilities().creativeMode ?
-                    itemStack.copy() : itemStack, optionalRecipe.get().value().getCookingTime())) {
+                    itemStack.copy() : itemStack, optionalRecipe.get().getCookTime())) {
                 player.incrementStat(Stats.INTERACT_WITH_CAMPFIRE);
                 return ActionResult.SUCCESS;
             }
@@ -107,15 +106,10 @@ public class CustomCampfireBlock extends CampfireBlock {
     @Nullable
     public <T extends BlockEntity> BlockEntityTicker<T> getTicker(World world, BlockState state, BlockEntityType<T> type) {
         if (world.isClient) {
-            if (state.get(LIT)) {
-                return CustomCampfireBlock.validateTicker(type, ModEntities.CUSTOM_CAMPFIRE_BLOCK_ENTITY, CustomCampfireBlockEntity::clientTick);
-            }
+            return state.get(LIT) ? checkType(type, ModEntities.CUSTOM_CAMPFIRE_BLOCK_ENTITY, CustomCampfireBlockEntity::clientTick) : null;
         } else {
-            if (state.get(LIT)) {
-                return CustomCampfireBlock.validateTicker(type, ModEntities.CUSTOM_CAMPFIRE_BLOCK_ENTITY, CustomCampfireBlockEntity::litServerTick);
-            }
-            return CustomCampfireBlock.validateTicker(type, ModEntities.CUSTOM_CAMPFIRE_BLOCK_ENTITY, CustomCampfireBlockEntity::unlitServerTick);
+            return state.get(LIT) ? checkType(type, ModEntities.CUSTOM_CAMPFIRE_BLOCK_ENTITY, CustomCampfireBlockEntity::litServerTick)
+                    : checkType(type, ModEntities.CUSTOM_CAMPFIRE_BLOCK_ENTITY, CustomCampfireBlockEntity::unlitServerTick);
         }
-        return null;
     }
 }
