@@ -1,11 +1,8 @@
-# Changelog - v2.3.0
+# Changelog - v2.3.1
 
-## Additions
-- New log/stem seat for all log/stem types
-- New log/stem specific campfires
-
-## Changes
-- Campfire can be crafted by oak logs only
+## Fixes
+- Campfire does not create smoke
+- Campfire does not display and cook meat
 
 ### Downloads
 [CurseForge](https://www.curseforge.com/minecraft/mc-mods/nemos-carpentry) <br>
