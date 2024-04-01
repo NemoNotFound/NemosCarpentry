@@ -27,6 +27,19 @@ public class ModEntities {
                     .disableSummon()
                     .build());
 
+    public static final BlockEntityType<CustomCampfireBlockEntity> CUSTOM_CAMPFIRE_BLOCK_ENTITY =
+            Registry.register(Registries.BLOCK_ENTITY_TYPE, new Identifier("custom_campfire_block_entity"),
+                    FabricBlockEntityTypeBuilder.create(CustomCampfireBlockEntity::new, ModBlocks.ACACIA_CAMPFIRE,
+                            ModBlocks.ACACIA_SOUL_CAMPFIRE, ModBlocks.BIRCH_CAMPFIRE,
+                            ModBlocks.BIRCH_SOUL_CAMPFIRE, ModBlocks.CHERRY_CAMPFIRE,
+                            ModBlocks.CHERRY_SOUL_CAMPFIRE, ModBlocks.CRIMSON_CAMPFIRE,
+                            ModBlocks.CRIMSON_SOUL_CAMPFIRE, ModBlocks.DARK_OAK_CAMPFIRE,
+                            ModBlocks.DARK_OAK_SOUL_CAMPFIRE, ModBlocks.JUNGLE_CAMPFIRE,
+                            ModBlocks.JUNGLE_SOUL_CAMPFIRE, ModBlocks.MANGROVE_CAMPFIRE,
+                            ModBlocks.MANGROVE_SOUL_CAMPFIRE, ModBlocks.SPRUCE_CAMPFIRE,
+                            ModBlocks.SPRUCE_SOUL_CAMPFIRE, ModBlocks.WARPED_CAMPFIRE,
+                            ModBlocks.WARPED_SOUL_CAMPFIRE).build());
+
     public static void registerEntities() {
         log.info("Registering entities");
     }
