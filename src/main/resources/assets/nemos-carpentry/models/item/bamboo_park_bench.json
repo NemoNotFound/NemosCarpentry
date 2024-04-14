@@ -1,0 +1,6 @@
+{
+  "parent": "nemos-carpentry:block/seats/parents/park_bench_full",
+  "textures": {
+    "all": "nemos-carpentry:block/seats/bamboo_park_bench"
+  }
+}
