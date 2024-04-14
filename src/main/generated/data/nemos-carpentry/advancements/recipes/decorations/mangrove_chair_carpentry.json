@@ -35,8 +35,8 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_mangrove_chair",
-      "has_mangrove_planks"
+      "has_mangrove_planks",
+      "has_mangrove_chair"
     ]
   ],
   "rewards": {

@@ -2,6 +2,7 @@ package com.nemonotfound.nemoscarpentry.datagen;
 
 import com.mojang.datafixers.util.Pair;
 import com.nemonotfound.nemoscarpentry.block.ModBlocks;
+import com.nemonotfound.nemoscarpentry.block.enums.CarpentryTools;
 import com.nemonotfound.nemoscarpentry.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
@@ -19,7 +20,6 @@ import net.minecraft.registry.tag.TagKey;
 import net.minecraft.util.Identifier;
 
 import java.util.List;
-import java.util.Map;
 
 public class RecipeGenerator extends FabricRecipeProvider {
 
@@ -29,8 +29,6 @@ public class RecipeGenerator extends FabricRecipeProvider {
 
     @Override
     public void generate(RecipeExporter exporter) {
-        createChairRecipes(exporter);
-
         createCampfireRecipe(exporter, ModBlocks.ACACIA_CAMPFIRE, ItemTags.ACACIA_LOGS);
         createCampfireRecipe(exporter, ModBlocks.BIRCH_CAMPFIRE, ItemTags.BIRCH_LOGS);
         createCampfireRecipe(exporter, ModBlocks.CHERRY_CAMPFIRE, ItemTags.CHERRY_LOGS);
@@ -51,38 +49,82 @@ public class RecipeGenerator extends FabricRecipeProvider {
         createSoulCampfireRecipe(exporter, ModBlocks.SPRUCE_SOUL_CAMPFIRE, ItemTags.SPRUCE_LOGS);
         createSoulCampfireRecipe(exporter, ModBlocks.WARPED_SOUL_CAMPFIRE, ItemTags.WARPED_STEMS);
 
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.ACACIA_PLANKS, 1)),
+                ModBlocks.ACACIA_CHAIR, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.BAMBOO_PLANKS, 1)),
+                ModBlocks.BAMBOO_CHAIR, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.BIRCH_PLANKS, 1)),
+                ModBlocks.BIRCH_CHAIR, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.CHERRY_PLANKS, 1)),
+                ModBlocks.CHERRY_CHAIR, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.CRIMSON_PLANKS, 1)),
+                ModBlocks.CRIMSON_CHAIR, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.DARK_OAK_PLANKS, 1)),
+                ModBlocks.DARK_OAK_CHAIR, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.JUNGLE_PLANKS, 1)),
+                ModBlocks.JUNGLE_CHAIR, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.MANGROVE_PLANKS, 1)),
+                ModBlocks.MANGROVE_CHAIR, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.OAK_PLANKS, 1)),
+                ModBlocks.OAK_CHAIR, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.SPRUCE_PLANKS, 1)),
+                ModBlocks.SPRUCE_CHAIR, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.WARPED_PLANKS, 1)),
+                ModBlocks.WARPED_CHAIR, 1, CarpentryTools.SAW.asString());
+
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.ACACIA_PLANKS, 1)),
+                ModBlocks.ACACIA_CHAIR_FELIX, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.BAMBOO_PLANKS, 1)),
+                ModBlocks.BAMBOO_CHAIR_FELIX, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.BIRCH_PLANKS, 1)),
+                ModBlocks.BIRCH_CHAIR_FELIX, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.CHERRY_PLANKS, 1)),
+                ModBlocks.CHERRY_CHAIR_FELIX, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.CRIMSON_PLANKS, 1)),
+                ModBlocks.CRIMSON_CHAIR_FELIX, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.DARK_OAK_PLANKS, 1)),
+                ModBlocks.DARK_OAK_CHAIR_FELIX, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.JUNGLE_PLANKS, 1)),
+                ModBlocks.JUNGLE_CHAIR_FELIX, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.MANGROVE_PLANKS, 1)),
+                ModBlocks.MANGROVE_CHAIR_FELIX, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.OAK_PLANKS, 1)),
+                ModBlocks.OAK_CHAIR_FELIX, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.SPRUCE_PLANKS, 1)),
+                ModBlocks.SPRUCE_CHAIR_FELIX, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.WARPED_PLANKS, 1)),
+                ModBlocks.WARPED_CHAIR_FELIX, 1, CarpentryTools.SAW.asString());
+
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.ACACIA_LOG, 1)),
+                ModBlocks.ACACIA_LOG_SEAT, 2, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.BIRCH_LOG, 1)),
+                ModBlocks.BIRCH_LOG_SEAT, 2, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.CHERRY_LOG, 1)),
+                ModBlocks.CHERRY_LOG_SEAT, 2, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.CRIMSON_STEM, 1)),
+                ModBlocks.CRIMSON_STEM_SEAT, 2, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.DARK_OAK_LOG, 1)),
+                ModBlocks.DARK_OAK_LOG_SEAT, 2, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.JUNGLE_LOG, 1)),
+                ModBlocks.JUNGLE_LOG_SEAT, 2, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.MANGROVE_LOG, 1)),
+                ModBlocks.MANGROVE_LOG_SEAT, 2, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.OAK_LOG, 1)),
+                ModBlocks.OAK_LOG_SEAT, 2, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.SPRUCE_LOG, 1)),
+                ModBlocks.SPRUCE_LOG_SEAT, 2, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.WARPED_STEM, 1)),
+                ModBlocks.WARPED_STEM_SEAT, 2, CarpentryTools.SAW.asString());
+
         createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.ACACIA_PLANKS, 2)),
-                ModBlocks.ACACIA_PARK_BENCH, 1, "saw");
+                ModBlocks.ACACIA_PARK_BENCH, 1, CarpentryTools.SAW.asString());
         createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.BAMBOO_PLANKS, 2)),
-                ModBlocks.BAMBOO_PARK_BENCH, 1, "saw");
+                ModBlocks.BAMBOO_PARK_BENCH, 1, CarpentryTools.SAW.asString());
         createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.OAK_PLANKS, 2)),
-                ModBlocks.OAK_PARK_BENCH, 1, "saw");
+                ModBlocks.OAK_PARK_BENCH, 1, CarpentryTools.SAW.asString());
 
-
-        CarpentryRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModItems.CHERRY_GLASS_DOOR_FRAME, 2, "saw")
-                .input(Ingredient.ofItems(Items.CHERRY_PLANKS), 2)
-                .criterion(FabricRecipeProvider.hasItem(ModItems.CHERRY_GLASS_DOOR_FRAME),
-                        conditionsFromItem(ModItems.CHERRY_GLASS_DOOR_FRAME)).criterion(hasItem(Blocks.CHERRY_PLANKS),
-                        conditionsFromItem(Blocks.CHERRY_PLANKS)).offerTo(exporter,
-                        new Identifier(getRecipeName(ModItems.CHERRY_GLASS_DOOR_FRAME) + "_carpentry"));
-    }
-
-    private void createChairRecipes(RecipeExporter exporter) {
-        List<Block> allWoodenPlanks = RecipeGenerationHelper.getAllWoodenPlanks();
-        List<Block> allLogs = RecipeGenerationHelper.getAllLogs();
-        Map<Block, Block> chairMap = RecipeGenerationHelper.getChairMap();
-        Map<Block, Block> felixChairMap = RecipeGenerationHelper.getFelixChairMap();
-        Map<Block, Block> logSeatMap = RecipeGenerationHelper.getLogSeatMap();
-        String tool = "saw";
-
-        for (Block planks:allWoodenPlanks) {
-            createCarpentryRecipeJson(exporter, planks, chairMap, 1, tool);
-            createCarpentryRecipeJson(exporter, planks, felixChairMap, 1, tool);
-        }
-
-        for (Block logs:allLogs) {
-            createCarpentryRecipeJson(exporter, logs, logSeatMap, 2, tool);
-        }
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.CHERRY_PLANKS, 2)),
+                ModItems.CHERRY_GLASS_DOOR_FRAME, 2, CarpentryTools.SAW.asString());
     }
 
     private void createCampfireRecipe(RecipeExporter exporter, Block result, TagKey<Item> log) {
@@ -101,27 +143,34 @@ public class RecipeGenerator extends FabricRecipeProvider {
                 .offerTo(exporter);
     }
 
-    private void createCarpentryRecipe(RecipeExporter exporter, List<Pair<Block, Integer>> ingredients, Block output, int outputCount, String tool) {
-        CarpentryRecipeJsonBuilder builder = CarpentryRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, output, outputCount, tool);
+    private void createCarpentryRecipe(RecipeExporter exporter, List<Pair<Block, Integer>> ingredients, Block output,
+                                       int outputCount, String tool) {
+        CarpentryRecipeJsonBuilder builder = CarpentryRecipeJsonBuilder
+                .create(RecipeCategory.DECORATIONS, output, outputCount, tool);
 
+        addIngredientsToRecipe(builder, ingredients);
+
+        builder.criterion(FabricRecipeProvider.hasItem(output), conditionsFromItem(output))
+                .offerTo(exporter, new Identifier(getRecipeName(output) + "_carpentry"));
+    }
+
+    private void createCarpentryRecipe(RecipeExporter exporter, List<Pair<Block, Integer>> ingredients, Item output,
+                                       int outputCount, String tool) {
+        CarpentryRecipeJsonBuilder builder = CarpentryRecipeJsonBuilder
+                .create(RecipeCategory.DECORATIONS, output, outputCount, tool);
+
+        addIngredientsToRecipe(builder, ingredients);
+
+        builder.criterion(FabricRecipeProvider.hasItem(output), conditionsFromItem(output))
+                .offerTo(exporter, new Identifier(getRecipeName(output) + "_carpentry"));
+    }
+
+    private void addIngredientsToRecipe(CarpentryRecipeJsonBuilder builder, List<Pair<Block, Integer>> ingredients) {
         for (Pair<Block, Integer> ingredientPair : ingredients) {
             Block ingredient = ingredientPair.getFirst();
 
             builder.input(Ingredient.ofItems(ingredient), ingredientPair.getSecond())
                     .criterion(hasItem(ingredient), conditionsFromItem(ingredient));
         }
-
-        builder.criterion(FabricRecipeProvider.hasItem(output), conditionsFromItem(output))
-                .offerTo(exporter, new Identifier(getRecipeName(output) + "_carpentry"));
-    }
-
-    private void createCarpentryRecipeJson(RecipeExporter exporter, Block block, Map<Block, Block> inputToOutputMap, int count, String tool) {
-        Block output = inputToOutputMap.get(block);
-
-        CarpentryRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, output, count, tool)
-                .input(Ingredient.ofItems(block))
-                .criterion(FabricRecipeProvider.hasItem(output),
-                        conditionsFromItem(output)).criterion(hasItem(block),
-                        conditionsFromItem(block)).offerTo(exporter, new Identifier(getRecipeName(output) + "_carpentry"));
     }
 }

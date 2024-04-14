@@ -35,8 +35,8 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_warped_chair",
-      "has_warped_planks"
+      "has_warped_planks",
+      "has_warped_chair"
     ]
   ],
   "rewards": {

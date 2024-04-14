@@ -35,8 +35,8 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_cherry_chair_felix",
-      "has_cherry_planks"
+      "has_cherry_planks",
+      "has_cherry_chair_felix"
     ]
   ],
   "rewards": {

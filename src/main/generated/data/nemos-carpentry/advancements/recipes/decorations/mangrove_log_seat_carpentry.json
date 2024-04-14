@@ -35,8 +35,8 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_mangrove_log_seat",
-      "has_mangrove_log"
+      "has_mangrove_log",
+      "has_mangrove_log_seat"
     ]
   ],
   "rewards": {

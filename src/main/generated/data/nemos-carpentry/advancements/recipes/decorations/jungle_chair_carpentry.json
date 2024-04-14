@@ -35,8 +35,8 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_jungle_chair",
-      "has_jungle_planks"
+      "has_jungle_planks",
+      "has_jungle_chair"
     ]
   ],
   "rewards": {

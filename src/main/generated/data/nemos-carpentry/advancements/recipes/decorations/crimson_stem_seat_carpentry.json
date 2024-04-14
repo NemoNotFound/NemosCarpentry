@@ -35,8 +35,8 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_crimson_stem_seat",
-      "has_crimson_stem"
+      "has_crimson_stem",
+      "has_crimson_stem_seat"
     ]
   ],
   "rewards": {
