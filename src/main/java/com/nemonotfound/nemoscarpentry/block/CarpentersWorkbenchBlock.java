@@ -17,10 +17,10 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
-public class CarpentryTableBlock extends BlockWithEntity implements BlockEntityProvider {
+public class CarpentersWorkbenchBlock extends BlockWithEntity implements BlockEntityProvider {
 
 
-    public CarpentryTableBlock(Settings settings) {
+    public CarpentersWorkbenchBlock(Settings settings) {
         super(settings);
     }
 
@@ -49,6 +49,7 @@ public class CarpentryTableBlock extends BlockWithEntity implements BlockEntityP
                 ItemScatterer.spawn(world, pos, (CarpentryTableBlockEntity) blockEntity);
                 world.updateComparators(pos, this);
             }
+
             super.onStateReplaced(state, world, pos, newState, moved);
         }
     }
