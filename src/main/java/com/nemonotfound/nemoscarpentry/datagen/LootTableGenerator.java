@@ -78,6 +78,16 @@ public class LootTableGenerator extends FabricBlockLootTableProvider {
                         .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1.0f))))));
 
         this.addDrop(ModBlocks.ACACIA_PARK_BENCH, this::benchDrops);
+        this.addDrop(ModBlocks.BAMBOO_PARK_BENCH, this::benchDrops);
+        this.addDrop(ModBlocks.BIRCH_PARK_BENCH, this::benchDrops);
+        this.addDrop(ModBlocks.CHERRY_PARK_BENCH, this::benchDrops);
+        this.addDrop(ModBlocks.CRIMSON_PARK_BENCH, this::benchDrops);
+        this.addDrop(ModBlocks.DARK_OAK_PARK_BENCH, this::benchDrops);
+        this.addDrop(ModBlocks.JUNGLE_PARK_BENCH, this::benchDrops);
+        this.addDrop(ModBlocks.MANGROVE_PARK_BENCH, this::benchDrops);
+        this.addDrop(ModBlocks.OAK_PARK_BENCH, this::benchDrops);
+        this.addDrop(ModBlocks.SPRUCE_PARK_BENCH, this::benchDrops);
+        this.addDrop(ModBlocks.WARPED_PARK_BENCH, this::benchDrops);
     }
 
     private LootTable.Builder benchDrops(Block block) {

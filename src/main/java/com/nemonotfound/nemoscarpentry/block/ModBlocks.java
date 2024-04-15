@@ -180,8 +180,32 @@ public class ModBlocks {
     public static final Block BAMBOO_PARK_BENCH = registerBlock("bamboo_park_bench",
             new ParkBenchBlock(AbstractBlock.Settings.copy(BAMBOO_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
             ModItemGroups.NEMOS_CARPENTRY);
+    public static final Block BIRCH_PARK_BENCH = registerBlock("birch_park_bench",
+            new ParkBenchBlock(AbstractBlock.Settings.copy(BIRCH_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
+            ModItemGroups.NEMOS_CARPENTRY);
+    public static final Block CHERRY_PARK_BENCH = registerBlock("cherry_park_bench",
+            new ParkBenchBlock(AbstractBlock.Settings.copy(CHERRY_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
+            ModItemGroups.NEMOS_CARPENTRY);
+    public static final Block CRIMSON_PARK_BENCH = registerBlock("crimson_park_bench",
+            new ParkBenchBlock(AbstractBlock.Settings.copy(CRIMSON_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
+            ModItemGroups.NEMOS_CARPENTRY);
+    public static final Block DARK_OAK_PARK_BENCH = registerBlock("dark_oak_park_bench",
+            new ParkBenchBlock(AbstractBlock.Settings.copy(DARK_OAK_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
+            ModItemGroups.NEMOS_CARPENTRY);
+    public static final Block JUNGLE_PARK_BENCH = registerBlock("jungle_park_bench",
+            new ParkBenchBlock(AbstractBlock.Settings.copy(JUNGLE_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
+            ModItemGroups.NEMOS_CARPENTRY);
+    public static final Block MANGROVE_PARK_BENCH = registerBlock("mangrove_park_bench",
+            new ParkBenchBlock(AbstractBlock.Settings.copy(MANGROVE_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
+            ModItemGroups.NEMOS_CARPENTRY);
     public static final Block OAK_PARK_BENCH = registerBlock("oak_park_bench",
             new ParkBenchBlock(AbstractBlock.Settings.copy(OAK_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
+            ModItemGroups.NEMOS_CARPENTRY);
+    public static final Block SPRUCE_PARK_BENCH = registerBlock("spruce_park_bench",
+            new ParkBenchBlock(AbstractBlock.Settings.copy(SPRUCE_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
+            ModItemGroups.NEMOS_CARPENTRY);
+    public static final Block WARPED_PARK_BENCH = registerBlock("warped_park_bench",
+            new ParkBenchBlock(AbstractBlock.Settings.copy(WARPED_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
             ModItemGroups.NEMOS_CARPENTRY);
     public static final Block CARPENTERS_WORKBENCH = registerBlock("carpenters_workbench", new CarpentersWorkbenchBlock(FabricBlockSettings.create()
             .mapColor(MapColor.OAK_TAN)

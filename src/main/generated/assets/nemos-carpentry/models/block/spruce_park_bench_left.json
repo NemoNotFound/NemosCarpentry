@@ -1,0 +1,7 @@
+{
+  "parent": "nemos-carpentry:block/seats/parents/park_bench_left",
+  "textures": {
+    "all": "nemos-carpentry:block/seats/spruce_park_bench_left",
+    "particle": "minecraft:block/spruce_planks"
+  }
+}

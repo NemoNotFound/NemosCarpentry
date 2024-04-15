@@ -1,7 +1,0 @@
-{
-	"parent": "nemos-carpentry:block/seats/parents/park_bench",
-	"textures": {
-		"particle": "block/oak_planks",
-		"all": "nemos-carpentry:block/seats/oak_park_bench"
-	}
-}

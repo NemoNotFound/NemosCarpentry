@@ -1,0 +1,6 @@
+{
+  "parent": "nemos-carpentry:item/seats/parents/park_bench_full",
+  "textures": {
+    "layer0": "nemos-carpentry:item/mangrove_park_bench"
+  }
+}

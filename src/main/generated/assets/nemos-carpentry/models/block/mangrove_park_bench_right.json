@@ -1,0 +1,7 @@
+{
+  "parent": "nemos-carpentry:block/seats/parents/park_bench_right",
+  "textures": {
+    "all": "nemos-carpentry:block/seats/mangrove_park_bench_right",
+    "particle": "minecraft:block/mangrove_planks"
+  }
+}

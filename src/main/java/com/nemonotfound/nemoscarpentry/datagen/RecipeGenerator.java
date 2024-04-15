@@ -120,8 +120,24 @@ public class RecipeGenerator extends FabricRecipeProvider {
                 ModBlocks.ACACIA_PARK_BENCH, 1, CarpentryTools.SAW.asString());
         createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.BAMBOO_PLANKS, 2)),
                 ModBlocks.BAMBOO_PARK_BENCH, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.BIRCH_PLANKS, 2)),
+                ModBlocks.BIRCH_PARK_BENCH, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.CHERRY_PLANKS, 2)),
+                ModBlocks.CHERRY_PARK_BENCH, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.CRIMSON_PLANKS, 2)),
+                ModBlocks.CRIMSON_PARK_BENCH, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.DARK_OAK_PLANKS, 2)),
+                ModBlocks.DARK_OAK_PARK_BENCH, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.JUNGLE_PLANKS, 2)),
+                ModBlocks.JUNGLE_PARK_BENCH, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.MANGROVE_PLANKS, 2)),
+                ModBlocks.MANGROVE_PARK_BENCH, 1, CarpentryTools.SAW.asString());
         createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.OAK_PLANKS, 2)),
                 ModBlocks.OAK_PARK_BENCH, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.SPRUCE_PLANKS, 2)),
+                ModBlocks.SPRUCE_PARK_BENCH, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.WARPED_PLANKS, 2)),
+                ModBlocks.WARPED_PARK_BENCH, 1, CarpentryTools.SAW.asString());
 
         createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.CHERRY_PLANKS, 2)),
                 ModItems.CHERRY_GLASS_DOOR_FRAME, 2, CarpentryTools.SAW.asString());
