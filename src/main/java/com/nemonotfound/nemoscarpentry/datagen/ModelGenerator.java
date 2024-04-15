@@ -1,11 +1,15 @@
 package com.nemonotfound.nemoscarpentry.datagen;
 
 import com.nemonotfound.nemoscarpentry.block.ModBlocks;
+import com.nemonotfound.nemoscarpentry.block.enums.BenchPart;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
-import net.minecraft.data.client.BlockStateModelGenerator;
-import net.minecraft.data.client.ItemModelGenerator;
-import net.minecraft.data.client.Models;
+import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
+import net.minecraft.data.client.*;
+import net.minecraft.util.Identifier;
+
+import static com.nemonotfound.nemoscarpentry.NemosCarpentry.MOD_ID;
 
 public class ModelGenerator extends FabricModelProvider {
 
@@ -15,6 +19,23 @@ public class ModelGenerator extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
+        generateParkBenchModel(blockStateModelGenerator, "acacia", Blocks.ACACIA_PLANKS, ModBlocks.ACACIA_PARK_BENCH);
+    }
+
+    private void generateParkBenchModel(BlockStateModelGenerator blockStateModelGenerator, String id, Block particleBlock,
+                                        Block textureBlock) {
+        TextureMap textureLeft = getParkBenchPartTexture(id, BenchPart.LEFT.asString(), particleBlock);
+        TextureMap textureRight = getParkBenchPartTexture(id, BenchPart.RIGHT.asString(), particleBlock);
+
+        ModModels.PARK_BENCH_LEFT.upload(textureBlock, "_left", textureLeft,
+                blockStateModelGenerator.modelCollector);
+        ModModels.PARK_BENCH_RIGHT.upload(textureBlock, "_right", textureRight,
+                blockStateModelGenerator.modelCollector);
+    }
+
+    private TextureMap getParkBenchPartTexture(String id, String part, Block particleBlock) {
+        return TextureMap.all(new Identifier(MOD_ID, "block/seats/" + id + "_park_bench_" + part))
+                .put(TextureKey.PARTICLE, TextureMap.getId(particleBlock));
     }
 
 
@@ -38,5 +59,9 @@ public class ModelGenerator extends FabricModelProvider {
         itemModelGenerator.register(ModBlocks.MANGROVE_SOUL_CAMPFIRE.asItem(), Models.GENERATED);
         itemModelGenerator.register(ModBlocks.SPRUCE_SOUL_CAMPFIRE.asItem(), Models.GENERATED);
         itemModelGenerator.register(ModBlocks.WARPED_SOUL_CAMPFIRE.asItem(), Models.GENERATED);
+
+        itemModelGenerator.register(ModBlocks.ACACIA_PARK_BENCH.asItem(), ModModels.PARK_BENCH);
+        itemModelGenerator.register(ModBlocks.BAMBOO_PARK_BENCH.asItem(), ModModels.PARK_BENCH);
+        itemModelGenerator.register(ModBlocks.OAK_PARK_BENCH.asItem(), ModModels.PARK_BENCH);
     }
 }
