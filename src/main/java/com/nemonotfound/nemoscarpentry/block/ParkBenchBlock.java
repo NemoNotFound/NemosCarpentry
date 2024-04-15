@@ -72,7 +72,7 @@ public class ParkBenchBlock extends SitableBlock implements Waterloggable {
                     Block.createCuboidShape(1, 14, 12, 31, 17, 13)
             ).reduce((v1, v2) -> VoxelShapes.combineAndSimplify(v1, v2, BooleanBiFunction.OR)).get()
     ).reduce((v1, v2) -> VoxelShapes.combineAndSimplify(v1, v2, BooleanBiFunction.OR)).get();
-    private static final VoxelShape EAST_SHAPE = Stream.of(
+    private static final VoxelShape EAST_SHAPE_LEFT = Stream.of(
             Block.createCuboidShape(11, 0, 12, 13, 8, 14),
             Block.createCuboidShape(4, 0, 12, 6, 8, 14),
             Block.createCuboidShape(4, 0, -14, 6, 8, -12),
@@ -89,6 +89,25 @@ public class ParkBenchBlock extends SitableBlock implements Waterloggable {
                     Block.createCuboidShape(2, 8, -11, 3, 16, -9),
                     Block.createCuboidShape(3, 10, -15, 4, 13, 15),
                     Block.createCuboidShape(3, 14, -15, 4, 17, 15)
+            ).reduce((v1, v2) -> VoxelShapes.combineAndSimplify(v1, v2, BooleanBiFunction.OR)).get()
+    ).reduce((v1, v2) -> VoxelShapes.combineAndSimplify(v1, v2, BooleanBiFunction.OR)).get();
+    private static final VoxelShape EAST_SHAPE_RIGHT = Stream.of(
+            Block.createCuboidShape(11, 0, 28, 13, 8, 30),
+            Block.createCuboidShape(4, 0, 28, 6, 8, 30),
+            Block.createCuboidShape(4, 0, 2, 6, 8, 4),
+            Block.createCuboidShape(11, 0, 2, 13, 8, 4),
+            Block.createCuboidShape(11, 8, 1, 14, 9, 31),
+            Block.createCuboidShape(7, 8, 1, 10, 9, 31),
+            Block.createCuboidShape(3, 8, 1, 6, 9, 31),
+            Block.createCuboidShape(6, 6, 2.5, 11, 8, 3.5),
+            Block.createCuboidShape(6, 6, 28.5, 11, 8, 29.5),
+            Block.createCuboidShape(11.5, 6, 4, 12.5, 8, 28),
+            Block.createCuboidShape(4.5, 6, 4, 5.5, 8, 28),
+            Stream.of(
+                    Block.createCuboidShape(2, 8, 25, 3, 16, 27),
+                    Block.createCuboidShape(2, 8, 5, 3, 16, 7),
+                    Block.createCuboidShape(3, 10, 1, 4, 13, 31),
+                    Block.createCuboidShape(3, 14, 1, 4, 17, 31)
             ).reduce((v1, v2) -> VoxelShapes.combineAndSimplify(v1, v2, BooleanBiFunction.OR)).get()
     ).reduce((v1, v2) -> VoxelShapes.combineAndSimplify(v1, v2, BooleanBiFunction.OR)).get();
     private static final VoxelShape SOUTH_SHAPE_LEFT = Stream.of(
@@ -129,7 +148,7 @@ public class ParkBenchBlock extends SitableBlock implements Waterloggable {
                     Block.createCuboidShape(-15, 14, 3, 15, 17, 4)
             ).reduce((v1, v2) -> VoxelShapes.combineAndSimplify(v1, v2, BooleanBiFunction.OR)).get()
     ).reduce((v1, v2) -> VoxelShapes.combineAndSimplify(v1, v2, BooleanBiFunction.OR)).get();
-    private static final VoxelShape WEST_SHAPE = Stream.of(
+    private static final VoxelShape WEST_SHAPE_LEFT = Stream.of(
             Block.createCuboidShape(3, 0, 2, 5, 8, 4),
             Block.createCuboidShape(10, 0, 2, 12, 8, 4),
             Block.createCuboidShape(10, 0, 28, 12, 8, 30),
@@ -146,6 +165,25 @@ public class ParkBenchBlock extends SitableBlock implements Waterloggable {
                     Block.createCuboidShape(13, 8, 25, 14, 16, 27),
                     Block.createCuboidShape(12, 10, 1, 13, 13, 31),
                     Block.createCuboidShape(12, 14, 1, 13, 17, 31)
+            ).reduce((v1, v2) -> VoxelShapes.combineAndSimplify(v1, v2, BooleanBiFunction.OR)).get()
+    ).reduce((v1, v2) -> VoxelShapes.combineAndSimplify(v1, v2, BooleanBiFunction.OR)).get();
+    private static final VoxelShape WEST_SHAPE_RIGHT = Stream.of(
+            Block.createCuboidShape(3, 0, -14, 5, 8, -12),
+            Block.createCuboidShape(10, 0, -14, 12, 8, -12),
+            Block.createCuboidShape(10, 0, 12, 12, 8, 14),
+            Block.createCuboidShape(3, 0, 12, 5, 8, 14),
+            Block.createCuboidShape(2, 8, -15, 5, 9, 15),
+            Block.createCuboidShape(6, 8, -15, 9, 9, 15),
+            Block.createCuboidShape(10, 8, -15, 13, 9, 15),
+            Block.createCuboidShape(5, 6, 12.5, 10, 8, 13.5),
+            Block.createCuboidShape(5, 6, -13.5, 10, 8, -12.5),
+            Block.createCuboidShape(3.5, 6, -12, 4.5, 8, 12),
+            Block.createCuboidShape(10.5, 6, -12, 11.5, 8, 12),
+            Stream.of(
+                    Block.createCuboidShape(13, 8, -11, 14, 16, -9),
+                    Block.createCuboidShape(13, 8, 9, 14, 16, 11),
+                    Block.createCuboidShape(12, 10, -15, 13, 13, 15),
+                    Block.createCuboidShape(12, 14, -15, 13, 17, 15)
             ).reduce((v1, v2) -> VoxelShapes.combineAndSimplify(v1, v2, BooleanBiFunction.OR)).get()
     ).reduce((v1, v2) -> VoxelShapes.combineAndSimplify(v1, v2, BooleanBiFunction.OR)).get();
 
@@ -181,10 +219,10 @@ public class ParkBenchBlock extends SitableBlock implements Waterloggable {
                 return isBenchPartLeft ? SOUTH_SHAPE_LEFT : SOUTH_SHAPE_RIGHT;
             }
             case EAST -> {
-                return EAST_SHAPE;
+                return isBenchPartLeft ? EAST_SHAPE_LEFT : EAST_SHAPE_RIGHT;
             }
             case WEST -> {
-                return WEST_SHAPE;
+                return isBenchPartLeft ? WEST_SHAPE_LEFT : WEST_SHAPE_RIGHT;
             }
         }
         return NORTH_SHAPE_LEFT;
@@ -203,6 +241,12 @@ public class ParkBenchBlock extends SitableBlock implements Waterloggable {
         if (state.get(WATERLOGGED)) {
             world.scheduleFluidTick(pos, Fluids.WATER, Fluids.WATER.getTickRate(world));
         }
+
+        if (direction == getDirectionToOtherBenchHalf(state.get(FACING), state.get(PART)) && (!neighborState.isOf(this) ||
+                neighborState.get(PART) == state.get(PART))) {
+            return Blocks.AIR.getDefaultState();
+        }
+
         return super.getStateForNeighborUpdate(state, direction, neighborState, world, pos, neighborPos);
     }
 
@@ -213,11 +257,28 @@ public class ParkBenchBlock extends SitableBlock implements Waterloggable {
 
     @Override
     public BlockState getPlacementState(ItemPlacementContext ctx) {
-        FluidState fluidState = ctx.getWorld().getFluidState(ctx.getBlockPos());
+        World world = ctx.getWorld();
+        BlockPos blockPos = ctx.getBlockPos();
+        Direction direction = ctx.getHorizontalPlayerFacing().getOpposite();
+        Direction directionToOtherBenchHalf = getDirectionToOtherBenchHalf(direction, BenchPart.LEFT);
+        BlockPos blockPosOfOtherBenchPart = blockPos.offset(directionToOtherBenchHalf);
 
-        return this.getDefaultState()
-                .with(FACING, ctx.getHorizontalPlayerFacing().getOpposite())
-                .with(WATERLOGGED, fluidState.getFluid() == Fluids.WATER);
+        if (canBlockBePlaced(world, blockPosOfOtherBenchPart, ctx)) {
+            FluidState fluidState = ctx.getWorld().getFluidState(ctx.getBlockPos());
+
+            return this.getDefaultState()
+                    .with(FACING, direction)
+                    .with(WATERLOGGED, fluidState.getFluid() == Fluids.WATER);
+        }
+
+        return null;
+    }
+
+    private boolean canBlockBePlaced(World world, BlockPos blockPos, ItemPlacementContext ctx) {
+        boolean canSecondBenchPartBePlaced = world.getBlockState(blockPos).canReplace(ctx);
+        boolean isSecondBenchPartInWorldBorder = world.getWorldBorder().contains(blockPos);
+
+        return canSecondBenchPartBePlaced && isSecondBenchPartInWorldBorder;
     }
 
     @Override
@@ -240,7 +301,7 @@ public class ParkBenchBlock extends SitableBlock implements Waterloggable {
         super.onPlaced(world, pos, state, placer, itemStack);
 
         if (!world.isClient) {
-            BlockPos blockPos = pos.offset(getDirectionOfOtherBenchHalf(state, BenchPart.LEFT));
+            BlockPos blockPos = pos.offset(getDirectionToOtherBenchHalf(state.get(FACING), BenchPart.LEFT));
             world.setBlockState(blockPos, state.with(PART, BenchPart.RIGHT), Block.NOTIFY_ALL);
             world.updateNeighbors(pos, Blocks.AIR);
             state.updateNeighbors(world, pos, Block.NOTIFY_ALL);
@@ -249,30 +310,32 @@ public class ParkBenchBlock extends SitableBlock implements Waterloggable {
 
     @Override
     public BlockState onBreak(World world, BlockPos pos, BlockState state, PlayerEntity player) {
-        if (!world.isClient) {
+        if (!world.isClient && player.isCreative()) {
             BenchPart benchPart = state.get(PART);
-            breakOtherBenchPart(world, pos, state, player, benchPart);
+            if (benchPart.equals(BenchPart.RIGHT)) {
+                breakOtherBenchPart(world, pos, state, player, benchPart);
+            }
         }
 
         return super.onBreak(world, pos, state, player);
     }
 
     private void breakOtherBenchPart(World world, BlockPos pos, BlockState state, PlayerEntity player, BenchPart benchPart) {
-        Direction directionOfRightBenchHalf = getDirectionOfOtherBenchHalf(state, benchPart);
-        BlockPos positionOfRightBenchHalf = pos.offset(directionOfRightBenchHalf);
-        BlockState stateOfRightBenchHalf = world.getBlockState(positionOfRightBenchHalf);
+        Direction directionOfOtherBenchHalf = getDirectionToOtherBenchHalf(state.get(FACING), benchPart);
+        BlockPos positionOfOtherBenchHalf = pos.offset(directionOfOtherBenchHalf);
+        BlockState stateOfOtherBenchHalf = world.getBlockState(positionOfOtherBenchHalf);
 
-        if (stateOfRightBenchHalf.isOf(this) && stateOfRightBenchHalf.get(PART) == BenchPart.getOppositeBenchPart(benchPart)) {
-            world.setBlockState(positionOfRightBenchHalf, Blocks.AIR.getDefaultState(), Block.NOTIFY_ALL | Block.SKIP_DROPS);
-            world.syncWorldEvent(player, WorldEvents.BLOCK_BROKEN, positionOfRightBenchHalf, Block.getRawIdFromState(stateOfRightBenchHalf));
+        if (stateOfOtherBenchHalf.isOf(this) && stateOfOtherBenchHalf.get(PART) == BenchPart.getOppositeBenchPart(benchPart)) {
+            world.setBlockState(positionOfOtherBenchHalf, Blocks.AIR.getDefaultState(), Block.NOTIFY_ALL | Block.SKIP_DROPS);
+            world.syncWorldEvent(player, WorldEvents.BLOCK_BROKEN, positionOfOtherBenchHalf, Block.getRawIdFromState(stateOfOtherBenchHalf));
         }
     }
 
-    private Direction getDirectionOfOtherBenchHalf(BlockState state, BenchPart benchPart) {
+    private Direction getDirectionToOtherBenchHalf(Direction direction, BenchPart benchPart) {
         Direction directionOfRightBenchHalf;
         boolean isBenchPartLeftHalf = benchPart.equals(BenchPart.LEFT);
 
-        switch (state.get(FACING)) {
+        switch (direction) {
             case NORTH -> directionOfRightBenchHalf = WEST;
             case SOUTH -> directionOfRightBenchHalf = EAST;
             case WEST -> directionOfRightBenchHalf = SOUTH;

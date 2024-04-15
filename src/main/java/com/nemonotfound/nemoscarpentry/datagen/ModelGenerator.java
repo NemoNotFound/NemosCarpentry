@@ -24,12 +24,14 @@ public class ModelGenerator extends FabricModelProvider {
 
     private void generateParkBenchModel(BlockStateModelGenerator blockStateModelGenerator, String id, Block particleBlock,
                                         Block textureBlock) {
-        TextureMap textureLeft = getParkBenchPartTexture(id, BenchPart.LEFT.asString(), particleBlock);
-        TextureMap textureRight = getParkBenchPartTexture(id, BenchPart.RIGHT.asString(), particleBlock);
+        String left = BenchPart.LEFT.asString();
+        String right = BenchPart.RIGHT.asString();
+        TextureMap textureLeft = getParkBenchPartTexture(id, left, particleBlock);
+        TextureMap textureRight = getParkBenchPartTexture(id, right, particleBlock);
 
-        ModModels.PARK_BENCH_LEFT.upload(textureBlock, "_left", textureLeft,
+        ModModels.PARK_BENCH_LEFT.upload(textureBlock, "_" + left, textureLeft,
                 blockStateModelGenerator.modelCollector);
-        ModModels.PARK_BENCH_RIGHT.upload(textureBlock, "_right", textureRight,
+        ModModels.PARK_BENCH_RIGHT.upload(textureBlock, "_" + right, textureRight,
                 blockStateModelGenerator.modelCollector);
     }
 
