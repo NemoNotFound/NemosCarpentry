@@ -188,7 +188,7 @@ public class ParkBenchBlock extends SitableBlock implements Waterloggable {
     ).reduce((v1, v2) -> VoxelShapes.combineAndSimplify(v1, v2, BooleanBiFunction.OR)).get();
 
     protected ParkBenchBlock(AbstractBlock.Settings settings) {
-        super(settings, 0.4f);
+        super(settings, 0.6f);
         this.setDefaultState(this.stateManager.getDefaultState().with(FACING, Direction.NORTH).with(WATERLOGGED, false).with(PART, BenchPart.LEFT));
     }
 

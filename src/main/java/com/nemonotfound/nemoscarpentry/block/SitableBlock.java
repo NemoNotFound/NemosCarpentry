@@ -118,5 +118,14 @@ public abstract class SitableBlock extends HorizontalFacingBlock {
             chairEntity.discard();
         }
     }
+
+    @Override
+    public void onStateReplaced(BlockState state, World world, BlockPos pos, BlockState newState, boolean moved) {
+        super.onStateReplaced(state, world, pos, newState, moved);
+
+        if (chairEntity != null && !state.isOf(newState.getBlock())) {
+            chairEntity.discard();
+        }
+    }
 }
 
