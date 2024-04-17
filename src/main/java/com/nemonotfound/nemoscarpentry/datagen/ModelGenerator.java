@@ -2,12 +2,15 @@ package com.nemonotfound.nemoscarpentry.datagen;
 
 import com.nemonotfound.nemoscarpentry.block.ModBlocks;
 import com.nemonotfound.nemoscarpentry.block.enums.BenchPart;
+import com.nemonotfound.nemoscarpentry.property.ModProperties;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.data.client.*;
+import net.minecraft.state.property.Properties;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.Direction;
 
 import static com.nemonotfound.nemoscarpentry.NemosCarpentry.MOD_ID;
 
@@ -19,6 +22,7 @@ public class ModelGenerator extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
+
         generateParkBenchModel(blockStateModelGenerator, "acacia", Blocks.ACACIA_PLANKS, ModBlocks.ACACIA_PARK_BENCH);
         generateParkBenchModel(blockStateModelGenerator, "bamboo", Blocks.BAMBOO_PLANKS, ModBlocks.BAMBOO_PARK_BENCH);
         generateParkBenchModel(blockStateModelGenerator, "birch", Blocks.BIRCH_PLANKS, ModBlocks.BIRCH_PARK_BENCH);
@@ -39,10 +43,12 @@ public class ModelGenerator extends FabricModelProvider {
         TextureMap textureLeft = getParkBenchPartTexture(id, left, particleBlock);
         TextureMap textureRight = getParkBenchPartTexture(id, right, particleBlock);
 
-        ModModels.PARK_BENCH_LEFT.upload(textureBlock, "_" + left, textureLeft,
+        Identifier parkBenchLeftModelId = ModModels.PARK_BENCH_LEFT.upload(textureBlock, "_" + left, textureLeft,
                 blockStateModelGenerator.modelCollector);
-        ModModels.PARK_BENCH_RIGHT.upload(textureBlock, "_" + right, textureRight,
+        Identifier parkBenchRightModelId = ModModels.PARK_BENCH_RIGHT.upload(textureBlock, "_" + right, textureRight,
                 blockStateModelGenerator.modelCollector);
+
+        blockStateModelGenerator.blockStateCollector.accept(createBenchBlockState(textureBlock, parkBenchLeftModelId, parkBenchRightModelId));
     }
 
     private TextureMap getParkBenchPartTexture(String id, String part, Block particleBlock) {
@@ -50,6 +56,34 @@ public class ModelGenerator extends FabricModelProvider {
                 .put(TextureKey.PARTICLE, TextureMap.getId(particleBlock));
     }
 
+    private static BlockStateSupplier createBenchBlockState(Block benchBlock, Identifier leftBenchModelId, Identifier rightBenchModelId) {
+        BlockStateVariantMap.DoubleProperty<Direction, BenchPart> blockStateVariantMap = BlockStateVariantMap
+                .create(Properties.HORIZONTAL_FACING, ModProperties.BENCH_BLOCK_PART);
+
+        return VariantsBlockStateSupplier.create(benchBlock)
+                .coordinate(fillBenchVariantMap(blockStateVariantMap, leftBenchModelId, rightBenchModelId));
+    }
+
+    private static BlockStateVariantMap.DoubleProperty<Direction, BenchPart> fillBenchVariantMap(BlockStateVariantMap.DoubleProperty<Direction, BenchPart> variantMap, Identifier leftBenchModelId, Identifier rightBenchModelId) {
+        return variantMap.register(Direction.EAST, BenchPart.LEFT, createRotatedBlockStateVariant(leftBenchModelId, VariantSettings.Rotation.R90))
+                .register(Direction.SOUTH, BenchPart.LEFT, createRotatedBlockStateVariant(leftBenchModelId, VariantSettings.Rotation.R180))
+                .register(Direction.WEST, BenchPart.LEFT, createRotatedBlockStateVariant(leftBenchModelId, VariantSettings.Rotation.R270))
+                .register(Direction.NORTH, BenchPart.LEFT, createBlockStateVariant(leftBenchModelId))
+                .register(Direction.EAST, BenchPart.RIGHT, createRotatedBlockStateVariant(rightBenchModelId, VariantSettings.Rotation.R90))
+                .register(Direction.SOUTH, BenchPart.RIGHT, createRotatedBlockStateVariant(rightBenchModelId, VariantSettings.Rotation.R180))
+                .register(Direction.WEST, BenchPart.RIGHT, createRotatedBlockStateVariant(rightBenchModelId, VariantSettings.Rotation.R270))
+                .register(Direction.NORTH, BenchPart.RIGHT, createBlockStateVariant(rightBenchModelId));
+    }
+
+    private static BlockStateVariant createRotatedBlockStateVariant(Identifier modelId, VariantSettings.Rotation rotation) {
+        return createBlockStateVariant(modelId)
+                .put(VariantSettings.Y, rotation);
+    }
+
+    private static BlockStateVariant createBlockStateVariant(Identifier modelId) {
+        return BlockStateVariant.create()
+                .put(VariantSettings.MODEL, modelId);
+    }
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
