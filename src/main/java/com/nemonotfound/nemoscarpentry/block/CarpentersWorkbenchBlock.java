@@ -1,7 +1,7 @@
 package com.nemonotfound.nemoscarpentry.block;
 
 import com.mojang.serialization.MapCodec;
-import com.nemonotfound.nemoscarpentry.entity.CarpentryTableBlockEntity;
+import com.nemonotfound.nemoscarpentry.entity.CarpentersWorkbenchBlockEntity;
 import net.minecraft.block.BlockEntityProvider;
 import net.minecraft.block.BlockRenderType;
 import net.minecraft.block.BlockState;
@@ -32,7 +32,7 @@ public class CarpentersWorkbenchBlock extends BlockWithEntity implements BlockEn
     @Nullable
     @Override
     public BlockEntity createBlockEntity(BlockPos pos, BlockState state) {
-        return new CarpentryTableBlockEntity(pos, state);
+        return new CarpentersWorkbenchBlockEntity(pos, state);
     }
 
     @Override
@@ -45,8 +45,8 @@ public class CarpentersWorkbenchBlock extends BlockWithEntity implements BlockEn
         if (state.getBlock() != newState.getBlock()) {
             BlockEntity blockEntity = world.getBlockEntity(pos);
 
-            if (blockEntity instanceof  CarpentryTableBlockEntity) {
-                ItemScatterer.spawn(world, pos, (CarpentryTableBlockEntity) blockEntity);
+            if (blockEntity instanceof CarpentersWorkbenchBlockEntity) {
+                ItemScatterer.spawn(world, pos, (CarpentersWorkbenchBlockEntity) blockEntity);
                 world.updateComparators(pos, this);
             }
 
@@ -57,7 +57,7 @@ public class CarpentersWorkbenchBlock extends BlockWithEntity implements BlockEn
     @Override
     public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
         if (!world.isClient) {
-            NamedScreenHandlerFactory screenHandlerFactory = (CarpentryTableBlockEntity) world.getBlockEntity(pos);
+            NamedScreenHandlerFactory screenHandlerFactory = (CarpentersWorkbenchBlockEntity) world.getBlockEntity(pos);
 
             if (screenHandlerFactory != null) {
                 player.openHandledScreen(screenHandlerFactory);

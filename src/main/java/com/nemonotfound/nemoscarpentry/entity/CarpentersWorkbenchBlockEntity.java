@@ -15,11 +15,11 @@ import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.util.math.BlockPos;
 import org.jetbrains.annotations.Nullable;
 
-public class CarpentryTableBlockEntity extends BlockEntity implements NamedScreenHandlerFactory, ImplementedInventory {
+public class CarpentersWorkbenchBlockEntity extends BlockEntity implements NamedScreenHandlerFactory, ImplementedInventory {
 
     private final DefaultedList<ItemStack> inventory = DefaultedList.ofSize(4, ItemStack.EMPTY);
 
-    public CarpentryTableBlockEntity(BlockPos pos, BlockState state) {
+    public CarpentersWorkbenchBlockEntity(BlockPos pos, BlockState state) {
         super(ModEntities.CARPENTERS_WORKBENCH_BLOCK_ENTITY, pos, state);
     }
 
