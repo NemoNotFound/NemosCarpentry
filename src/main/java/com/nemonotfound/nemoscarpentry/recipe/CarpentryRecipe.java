@@ -8,12 +8,15 @@ import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.minecraft.inventory.Inventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.network.PacketByteBuf;
+import net.minecraft.network.RegistryByteBuf;
+import net.minecraft.network.codec.PacketCodec;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.Recipe;
 import net.minecraft.recipe.RecipeSerializer;
 import net.minecraft.recipe.RecipeType;
 import net.minecraft.registry.DynamicRegistryManager;
 import net.minecraft.registry.Registries;
+import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.util.dynamic.Codecs;
 import net.minecraft.world.World;
@@ -37,14 +40,15 @@ public class CarpentryRecipe implements Recipe<Inventory> {
         return ingredientPairs.get(0).getFirst().test(inventory.getStack(0));
     }
 
+    @Override
+    public ItemStack craft(Inventory inventory, RegistryWrapper.WrapperLookup lookup) {
+        return result.copy();
+    }
+
     public List<Pair<Ingredient, Integer>> getIngredientPairs() {
         return ingredientPairs;
     }
 
-    @Override
-    public ItemStack craft(Inventory inventory, DynamicRegistryManager registryManager) {
-        return result.copy();
-    }
 
     @Override
     public boolean fits(int width, int height) {
@@ -52,7 +56,7 @@ public class CarpentryRecipe implements Recipe<Inventory> {
     }
 
     @Override
-    public ItemStack getResult(DynamicRegistryManager registryManager) {
+    public ItemStack getResult(RegistryWrapper.WrapperLookup registriesLookup) {
         return result;
     }
 
@@ -101,6 +105,11 @@ public class CarpentryRecipe implements Recipe<Inventory> {
         @Override
         public Codec<CarpentryRecipe> codec() {
             return CODEC;
+        }
+
+        @Override
+        public PacketCodec<RegistryByteBuf, CarpentryRecipe> packetCodec() {
+            return null;
         }
 
         @Override

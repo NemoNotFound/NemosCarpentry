@@ -87,8 +87,7 @@ public class CarpentryScreenHandler extends ScreenHandler {
                 takeStacksOfIngredients(ingredients);
 
                 if (recipe.getTool().equals("saw") && getOptionalSawSlot().isPresent()) {
-                    getOptionalSawSlot().get().getStack().damage(1, player, playerEntity ->
-                            playerEntity.sendEquipmentBreakStatus(EquipmentSlot.MAINHAND));
+                    getOptionalSawSlot().get().getStack().damage(1, player, EquipmentSlot.MAINHAND);
                 }
 
                 long l = world.getTime();

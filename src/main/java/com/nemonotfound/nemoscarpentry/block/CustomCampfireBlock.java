@@ -21,6 +21,7 @@ import net.minecraft.stat.Stats;
 import net.minecraft.state.property.Properties;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
+import net.minecraft.util.ItemActionResult;
 import net.minecraft.util.ItemScatterer;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
@@ -38,7 +39,7 @@ public class CustomCampfireBlock extends CampfireBlock {
     }
 
     @Override
-    public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
+    public ItemActionResult onUseWithItem(ItemStack stack, BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
         ItemStack itemStack;
         CustomCampfireBlockEntity customCampfireBlockEntity;
         Optional<RecipeEntry<CampfireCookingRecipe>> optionalRecipe;
@@ -49,11 +50,11 @@ public class CustomCampfireBlock extends CampfireBlock {
             if (!world.isClient && customCampfireBlockEntity.addItem(player, player.getAbilities().creativeMode ?
                     itemStack.copy() : itemStack, optionalRecipe.get().value().getCookingTime())) {
                 player.incrementStat(Stats.INTERACT_WITH_CAMPFIRE);
-                return ActionResult.SUCCESS;
+                return ItemActionResult.SUCCESS;
             }
-            return ActionResult.CONSUME;
+            return ItemActionResult.CONSUME;
         }
-        return ActionResult.PASS;
+        return ItemActionResult.PASS_TO_DEFAULT_BLOCK_INTERACTION;
     }
 
     @Override

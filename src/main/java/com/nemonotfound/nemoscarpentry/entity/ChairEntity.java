@@ -2,6 +2,7 @@ package com.nemonotfound.nemoscarpentry.entity;
 
 import com.google.common.collect.UnmodifiableIterator;
 import net.minecraft.entity.*;
+import net.minecraft.entity.data.DataTracker;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Box;
@@ -17,7 +18,7 @@ public class ChairEntity extends Entity {
     }
 
     @Override
-    protected void initDataTracker() {
+    protected void initDataTracker(DataTracker.Builder builder) {
 
     }
 
