@@ -1,10 +1,7 @@
 package com.nemonotfound.nemoscarpentry.entity;
 
 import com.nemonotfound.nemoscarpentry.block.ModBlocks;
-import net.fabricmc.fabric.api.object.builder.v1.block.entity.FabricBlockEntityTypeBuilder;
-import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;
 import net.minecraft.block.entity.BlockEntityType;
-import net.minecraft.entity.EntityDimensions;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.SpawnGroup;
 import net.minecraft.registry.Registries;
@@ -18,18 +15,19 @@ public class ModEntities {
 
     public static final BlockEntityType<CarpentersWorkbenchBlockEntity> CARPENTERS_WORKBENCH_BLOCK_ENTITY =
             Registry.register(Registries.BLOCK_ENTITY_TYPE, new Identifier(MOD_ID, "carpenters_workbench_block_entity"),
-                    FabricBlockEntityTypeBuilder.create(CarpentersWorkbenchBlockEntity::new, ModBlocks.CARPENTERS_WORKBENCH).build());
+                    BlockEntityType.Builder.create(CarpentersWorkbenchBlockEntity::new, ModBlocks.CARPENTERS_WORKBENCH)
+                            .build());
     public static final EntityType<ChairEntity> CHAIR_ENTITY = Registry.register(Registries.ENTITY_TYPE,
             new Identifier(MOD_ID, "chair_entity"),
-            FabricEntityTypeBuilder.create(SpawnGroup.MISC, ChairEntity::new)
-                    .dimensions(new EntityDimensions(0, 0, true))
-                    .fireImmune()
+            EntityType.Builder.create(ChairEntity::new, SpawnGroup.MISC)
+                    .dimensions(0, 0)
+                    .makeFireImmune()
                     .disableSummon()
                     .build());
 
     public static final BlockEntityType<CustomCampfireBlockEntity> CUSTOM_CAMPFIRE_BLOCK_ENTITY =
             Registry.register(Registries.BLOCK_ENTITY_TYPE, new Identifier("custom_campfire_block_entity"),
-                    FabricBlockEntityTypeBuilder.create(CustomCampfireBlockEntity::new, ModBlocks.ACACIA_CAMPFIRE,
+                    BlockEntityType.Builder.create(CustomCampfireBlockEntity::new, ModBlocks.ACACIA_CAMPFIRE,
                             ModBlocks.ACACIA_SOUL_CAMPFIRE, ModBlocks.BIRCH_CAMPFIRE,
                             ModBlocks.BIRCH_SOUL_CAMPFIRE, ModBlocks.CHERRY_CAMPFIRE,
                             ModBlocks.CHERRY_SOUL_CAMPFIRE, ModBlocks.CRIMSON_CAMPFIRE,

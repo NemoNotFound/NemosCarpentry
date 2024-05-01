@@ -18,6 +18,7 @@ import net.minecraft.recipe.CampfireCookingRecipe;
 import net.minecraft.recipe.RecipeEntry;
 import net.minecraft.recipe.RecipeManager;
 import net.minecraft.recipe.RecipeType;
+import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.util.Clearable;
 import net.minecraft.util.ItemScatterer;
 import net.minecraft.util.collection.DefaultedList;
@@ -100,11 +101,11 @@ public class CustomCampfireBlockEntity extends BlockEntity implements Clearable 
     }
 
     @Override
-    public void readNbt(NbtCompound nbt) {
+    public void readNbt(NbtCompound nbt, RegistryWrapper.WrapperLookup registryLookup) {
         int[] is;
-        super.readNbt(nbt);
+        super.readNbt(nbt, registryLookup);
         this.itemsBeingCooked.clear();
-        Inventories.readNbt(nbt, this.itemsBeingCooked);
+        Inventories.readNbt(nbt, this.itemsBeingCooked, registryLookup);
         if (nbt.contains("CookingTimes", NbtElement.INT_ARRAY_TYPE)) {
             is = nbt.getIntArray("CookingTimes");
             System.arraycopy(is, 0, this.cookingTimes, 0, Math.min(this.cookingTotalTimes.length, is.length));
@@ -116,9 +117,9 @@ public class CustomCampfireBlockEntity extends BlockEntity implements Clearable 
     }
 
     @Override
-    protected void writeNbt(NbtCompound nbt) {
-        super.writeNbt(nbt);
-        Inventories.writeNbt(nbt, this.itemsBeingCooked, true);
+    protected void writeNbt(NbtCompound nbt, RegistryWrapper.WrapperLookup registryLookup) {
+        super.writeNbt(nbt, registryLookup);
+        Inventories.writeNbt(nbt, this.itemsBeingCooked, true, registryLookup);
         nbt.putIntArray("CookingTimes", this.cookingTimes);
         nbt.putIntArray("CookingTotalTimes", this.cookingTotalTimes);
     }
@@ -128,9 +129,9 @@ public class CustomCampfireBlockEntity extends BlockEntity implements Clearable 
     }
 
     @Override
-    public NbtCompound toInitialChunkDataNbt() {
+    public NbtCompound toInitialChunkDataNbt(RegistryWrapper.WrapperLookup registryLookup) {
         NbtCompound nbtCompound = new NbtCompound();
-        Inventories.writeNbt(nbtCompound, this.itemsBeingCooked, true);
+        Inventories.writeNbt(nbtCompound, this.itemsBeingCooked, true, registryLookup);
         return nbtCompound;
     }
 
