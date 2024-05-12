@@ -35,8 +35,8 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_bamboo_chair",
-      "has_bamboo_planks"
+      "has_bamboo_planks",
+      "has_bamboo_chair"
     ]
   ],
   "rewards": {

@@ -35,8 +35,8 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_oak_chair_felix",
-      "has_oak_planks"
+      "has_oak_planks",
+      "has_oak_chair_felix"
     ]
   ],
   "rewards": {

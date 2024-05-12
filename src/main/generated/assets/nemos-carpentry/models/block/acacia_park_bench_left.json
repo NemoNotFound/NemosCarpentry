@@ -1,0 +1,7 @@
+{
+  "parent": "nemos-carpentry:block/seats/parents/park_bench_left",
+  "textures": {
+    "all": "nemos-carpentry:block/seats/acacia_park_bench_left",
+    "particle": "minecraft:block/acacia_planks"
+  }
+}

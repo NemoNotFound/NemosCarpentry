@@ -35,8 +35,8 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_cherry_log_seat",
-      "has_cherry_log"
+      "has_cherry_log",
+      "has_cherry_log_seat"
     ]
   ],
   "rewards": {

@@ -1,9 +1,11 @@
 {
   "type": "nemos-carpentry:carpentry",
   "count": 2,
-  "ingredient": {
-    "item": "minecraft:cherry_planks"
-  },
+  "ingredients": [
+    {
+      "item": "minecraft:cherry_planks"
+    }
+  ],
   "tool": "saw",
   "result": "nemos-carpentry:cherry_ladder"
 }

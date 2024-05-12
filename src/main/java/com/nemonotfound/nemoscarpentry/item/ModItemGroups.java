@@ -15,7 +15,7 @@ import static com.nemonotfound.nemoscarpentry.NemosCarpentry.MOD_ID;
 
 public class ModItemGroups {
 
-    public static String NEMOS_CARPENTRY_GROUP_ID = "nemos-carpeanting-blocks";
+    public static String NEMOS_CARPENTRY_GROUP_ID = "nemos-carpentry-group";
     public static final RegistryKey<ItemGroup> NEMOS_CARPENTRY =
             getItemGroup(NEMOS_CARPENTRY_GROUP_ID);
 

@@ -35,8 +35,8 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_warped_stem_seat",
-      "has_warped_stem"
+      "has_warped_stem",
+      "has_warped_stem_seat"
     ]
   ],
   "rewards": {

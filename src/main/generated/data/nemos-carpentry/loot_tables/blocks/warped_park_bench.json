@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "block": "nemos-carpentry:warped_park_bench",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "part": "left"
+              }
+            }
+          ],
+          "name": "nemos-carpentry:warped_park_bench"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ]
+}

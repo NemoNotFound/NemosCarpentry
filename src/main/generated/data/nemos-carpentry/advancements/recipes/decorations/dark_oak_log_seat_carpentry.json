@@ -35,8 +35,8 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_dark_oak_log_seat",
-      "has_dark_oak_log"
+      "has_dark_oak_log",
+      "has_dark_oak_log_seat"
     ]
   ],
   "rewards": {

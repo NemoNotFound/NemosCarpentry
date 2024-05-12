@@ -35,8 +35,8 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_acacia_chair_felix",
-      "has_acacia_planks"
+      "has_acacia_planks",
+      "has_acacia_chair_felix"
     ]
   ],
   "rewards": {

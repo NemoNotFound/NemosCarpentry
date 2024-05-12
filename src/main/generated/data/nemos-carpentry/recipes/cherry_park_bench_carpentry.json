@@ -1,0 +1,12 @@
+{
+  "type": "nemos-carpentry:carpentry",
+  "count": 1,
+  "ingredients": [
+    {
+      "item": "minecraft:cherry_planks",
+      "itemCount": 2
+    }
+  ],
+  "result": "nemos-carpentry:cherry_park_bench",
+  "tool": "saw"
+}

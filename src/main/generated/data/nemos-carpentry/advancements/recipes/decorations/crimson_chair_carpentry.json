@@ -35,8 +35,8 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_crimson_chair",
-      "has_crimson_planks"
+      "has_crimson_planks",
+      "has_crimson_chair"
     ]
   ],
   "rewards": {

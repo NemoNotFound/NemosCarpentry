@@ -1,0 +1,7 @@
+{
+  "parent": "nemos-carpentry:block/seats/parents/park_bench_right",
+  "textures": {
+    "all": "nemos-carpentry:block/seats/dark_oak_park_bench_right",
+    "particle": "minecraft:block/dark_oak_planks"
+  }
+}

@@ -22,6 +22,7 @@ So if you use version 2.0.0 or higher and still want to use the Woodcutter, chec
       - Chairs for all wood types
       - "Felix" Chairs for all wood types
       - Log/Stem seats for all log/stem types
+      - Park Bench for all wood types
     - Tables
       - "The Classic" Table for all wood types
     - Doors

@@ -35,8 +35,8 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_birch_log_seat",
-      "has_birch_log"
+      "has_birch_log",
+      "has_birch_log_seat"
     ]
   ],
   "rewards": {

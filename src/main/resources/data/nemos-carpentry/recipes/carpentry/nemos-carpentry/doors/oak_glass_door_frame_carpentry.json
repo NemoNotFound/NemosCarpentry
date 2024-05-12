@@ -1,10 +1,12 @@
 {
   "type": "nemos-carpentry:carpentry",
   "count": 2,
-  "ingredient": {
-    "item": "minecraft:oak_planks",
-    "itemCount": 2
-  },
+  "ingredients": [
+    {
+      "item": "minecraft:oak_planks",
+      "itemCount": 2
+    }
+  ],
   "tool": "saw",
   "result": "nemos-carpentry:oak_glass_door_frame"
 }

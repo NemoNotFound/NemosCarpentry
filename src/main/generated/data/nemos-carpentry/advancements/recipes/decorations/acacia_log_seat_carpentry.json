@@ -35,8 +35,8 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_acacia_log_seat",
-      "has_acacia_log"
+      "has_acacia_log",
+      "has_acacia_log_seat"
     ]
   ],
   "rewards": {

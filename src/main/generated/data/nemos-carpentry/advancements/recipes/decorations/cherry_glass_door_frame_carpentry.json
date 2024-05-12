@@ -35,8 +35,8 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_cherry_glass_door_frame",
-      "has_cherry_planks"
+      "has_cherry_planks",
+      "has_cherry_glass_door_frame"
     ]
   ],
   "rewards": {

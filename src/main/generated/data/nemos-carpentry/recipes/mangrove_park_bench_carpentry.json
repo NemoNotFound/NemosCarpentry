@@ -1,0 +1,12 @@
+{
+  "type": "nemos-carpentry:carpentry",
+  "count": 1,
+  "ingredients": [
+    {
+      "item": "minecraft:mangrove_planks",
+      "itemCount": 2
+    }
+  ],
+  "result": "nemos-carpentry:mangrove_park_bench",
+  "tool": "saw"
+}

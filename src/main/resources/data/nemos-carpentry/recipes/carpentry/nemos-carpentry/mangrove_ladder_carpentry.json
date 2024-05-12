@@ -1,9 +1,11 @@
 {
   "type": "nemos-carpentry:carpentry",
   "count": 2,
-  "ingredient": {
-    "item": "minecraft:mangrove_planks"
-  },
+  "ingredients": [
+    {
+      "item": "minecraft:mangrove_planks"
+    }
+  ],
   "tool": "saw",
   "result": "nemos-carpentry:mangrove_ladder"
 }
