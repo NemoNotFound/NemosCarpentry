@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "nemos-carpentry:acacia_chair_felix"
-            ]
+            "items": "nemos-carpentry:acacia_chair_felix"
           }
         ]
       },
@@ -17,9 +15,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "minecraft:acacia_planks"
-            ]
+            "items": "minecraft:acacia_planks"
           }
         ]
       },

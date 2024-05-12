@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "minecraft:crimson_stem"
-            ]
+            "items": "minecraft:crimson_stem"
           }
         ]
       },
@@ -17,9 +15,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "nemos-carpentry:crimson_stem_seat"
-            ]
+            "items": "nemos-carpentry:crimson_stem_seat"
           }
         ]
       },

@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "minecraft:jungle_log"
-            ]
+            "items": "minecraft:jungle_log"
           }
         ]
       },
@@ -17,9 +15,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "nemos-carpentry:jungle_log_seat"
-            ]
+            "items": "nemos-carpentry:jungle_log_seat"
           }
         ]
       },

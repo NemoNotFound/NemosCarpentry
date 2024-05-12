@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "minecraft:birch_log"
-            ]
+            "items": "minecraft:birch_log"
           }
         ]
       },
@@ -17,9 +15,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "nemos-carpentry:birch_log_seat"
-            ]
+            "items": "nemos-carpentry:birch_log_seat"
           }
         ]
       },

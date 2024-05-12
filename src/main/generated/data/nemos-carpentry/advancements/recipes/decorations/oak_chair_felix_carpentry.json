@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "nemos-carpentry:oak_chair_felix"
-            ]
+            "items": "nemos-carpentry:oak_chair_felix"
           }
         ]
       },
@@ -17,9 +15,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "minecraft:oak_planks"
-            ]
+            "items": "minecraft:oak_planks"
           }
         ]
       },

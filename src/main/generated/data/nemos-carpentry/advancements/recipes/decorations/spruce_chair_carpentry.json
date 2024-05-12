@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "nemos-carpentry:spruce_chair"
-            ]
+            "items": "nemos-carpentry:spruce_chair"
           }
         ]
       },
@@ -17,9 +15,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "minecraft:spruce_planks"
-            ]
+            "items": "minecraft:spruce_planks"
           }
         ]
       },

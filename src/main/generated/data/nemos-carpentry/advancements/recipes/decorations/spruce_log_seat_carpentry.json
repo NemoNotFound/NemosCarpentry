@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "minecraft:spruce_log"
-            ]
+            "items": "minecraft:spruce_log"
           }
         ]
       },
@@ -17,9 +15,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "nemos-carpentry:spruce_log_seat"
-            ]
+            "items": "nemos-carpentry:spruce_log_seat"
           }
         ]
       },

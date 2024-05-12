@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "nemos-carpentry:bamboo_chair_felix"
-            ]
+            "items": "nemos-carpentry:bamboo_chair_felix"
           }
         ]
       },
@@ -17,9 +15,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "minecraft:bamboo_planks"
-            ]
+            "items": "minecraft:bamboo_planks"
           }
         ]
       },

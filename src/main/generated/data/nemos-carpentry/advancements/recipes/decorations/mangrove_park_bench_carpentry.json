@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "nemos-carpentry:mangrove_park_bench"
-            ]
+            "items": "nemos-carpentry:mangrove_park_bench"
           }
         ]
       },
@@ -17,9 +15,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "minecraft:mangrove_planks"
-            ]
+            "items": "minecraft:mangrove_planks"
           }
         ]
       },

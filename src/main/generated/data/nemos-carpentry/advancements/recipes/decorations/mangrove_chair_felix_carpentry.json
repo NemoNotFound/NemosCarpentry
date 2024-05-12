@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "nemos-carpentry:mangrove_chair_felix"
-            ]
+            "items": "nemos-carpentry:mangrove_chair_felix"
           }
         ]
       },
@@ -17,9 +15,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "minecraft:mangrove_planks"
-            ]
+            "items": "minecraft:mangrove_planks"
           }
         ]
       },

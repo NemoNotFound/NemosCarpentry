@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "minecraft:acacia_log"
-            ]
+            "items": "minecraft:acacia_log"
           }
         ]
       },
@@ -17,9 +15,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "nemos-carpentry:acacia_log_seat"
-            ]
+            "items": "nemos-carpentry:acacia_log_seat"
           }
         ]
       },

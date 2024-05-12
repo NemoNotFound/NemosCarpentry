@@ -11,9 +11,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "nemos-carpentry:warped_park_bench"
-            ]
+            "items": "nemos-carpentry:warped_park_bench"
           }
         ]
       },
@@ -23,9 +21,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "minecraft:warped_planks"
-            ]
+            "items": "minecraft:warped_planks"
           }
         ]
       },
