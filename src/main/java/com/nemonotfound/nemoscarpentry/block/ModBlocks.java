@@ -45,38 +45,38 @@ public class ModBlocks {
             new LadderBlock(AbstractBlock.Settings.copy(LADDER)), ItemGroups.FUNCTIONAL, ModItemGroups.NEMOS_CARPENTRY);
     public static final Block CHERRY_LADDER = registerBlock("cherry_ladder",
             new LadderBlock(AbstractBlock.Settings.copy(LADDER)), ItemGroups.FUNCTIONAL, ModItemGroups.NEMOS_CARPENTRY);
-    public static final Block ACACIA_TABLE_THE_CLASSIC = registerBlock("acacia_table_the_classic",
-            new TableBlock(AbstractBlock.Settings.copy(ACACIA_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
-            ModItemGroups.NEMOS_CARPENTRY);
-    public static final Block BAMBOO_TABLE_THE_CLASSIC = registerBlock("bamboo_table_the_classic",
-            new TableBlock(AbstractBlock.Settings.copy(BAMBOO_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
-            ModItemGroups.NEMOS_CARPENTRY);
-    public static final Block BIRCH_TABLE_THE_CLASSIC = registerBlock("birch_table_the_classic",
-            new TableBlock(AbstractBlock.Settings.copy(BIRCH_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
+    public static final Block OAK_TABLE_THE_CLASSIC = registerBlock("oak_table_the_classic",
+            new TableBlock(AbstractBlock.Settings.copy(OAK_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
             ModItemGroups.NEMOS_CARPENTRY);
     public static final Block CHERRY_TABLE_THE_CLASSIC = registerBlock("cherry_table_the_classic",
             new TableBlock(AbstractBlock.Settings.copy(CHERRY_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
             ModItemGroups.NEMOS_CARPENTRY);
-    public static final Block CRIMSON_TABLE_THE_CLASSIC = registerBlock("crimson_table_the_classic",
-            new TableBlock(AbstractBlock.Settings.copy(CRIMSON_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
-            ModItemGroups.NEMOS_CARPENTRY);
     public static final Block DARK_OAK_TABLE_THE_CLASSIC = registerBlock("dark_oak_table_the_classic",
             new TableBlock(AbstractBlock.Settings.copy(DARK_OAK_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
             ModItemGroups.NEMOS_CARPENTRY);
-    public static final Block JUNGLE_TABLE_THE_CLASSIC = registerBlock("jungle_table_the_classic",
-            new TableBlock(AbstractBlock.Settings.copy(JUNGLE_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
+    public static final Block BAMBOO_TABLE_THE_CLASSIC = registerBlock("bamboo_table_the_classic",
+            new TableBlock(AbstractBlock.Settings.copy(BAMBOO_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
+            ModItemGroups.NEMOS_CARPENTRY);
+    public static final Block WARPED_TABLE_THE_CLASSIC = registerBlock("warped_table_the_classic",
+            new TableBlock(AbstractBlock.Settings.copy(WARPED_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
+            ModItemGroups.NEMOS_CARPENTRY);
+    public static final Block CRIMSON_TABLE_THE_CLASSIC = registerBlock("crimson_table_the_classic",
+            new TableBlock(AbstractBlock.Settings.copy(CRIMSON_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
             ModItemGroups.NEMOS_CARPENTRY);
     public static final Block MANGROVE_TABLE_THE_CLASSIC = registerBlock("mangrove_table_the_classic",
             new TableBlock(AbstractBlock.Settings.copy(MANGROVE_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
             ModItemGroups.NEMOS_CARPENTRY);
-    public static final Block OAK_TABLE_THE_CLASSIC = registerBlock("oak_table_the_classic",
-            new TableBlock(AbstractBlock.Settings.copy(OAK_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
-            ModItemGroups.NEMOS_CARPENTRY);
     public static final Block SPRUCE_TABLE_THE_CLASSIC = registerBlock("spruce_table_the_classic",
             new TableBlock(AbstractBlock.Settings.copy(SPRUCE_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
             ModItemGroups.NEMOS_CARPENTRY);
-    public static final Block WARPED_TABLE_THE_CLASSIC = registerBlock("warped_table_the_classic",
-            new TableBlock(AbstractBlock.Settings.copy(WARPED_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
+    public static final Block BIRCH_TABLE_THE_CLASSIC = registerBlock("birch_table_the_classic",
+            new TableBlock(AbstractBlock.Settings.copy(BIRCH_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
+            ModItemGroups.NEMOS_CARPENTRY);
+    public static final Block ACACIA_TABLE_THE_CLASSIC = registerBlock("acacia_table_the_classic",
+            new TableBlock(AbstractBlock.Settings.copy(ACACIA_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
+            ModItemGroups.NEMOS_CARPENTRY);
+    public static final Block JUNGLE_TABLE_THE_CLASSIC = registerBlock("jungle_table_the_classic",
+            new TableBlock(AbstractBlock.Settings.copy(JUNGLE_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
             ModItemGroups.NEMOS_CARPENTRY);
     public static final Block OAK_CHAIR = registerBlock("oak_chair",
             new ChairBlock(AbstractBlock.Settings.copy(OAK_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
@@ -174,16 +174,7 @@ public class ModBlocks {
     public static final Block WARPED_STEM_SEAT = registerBlock("warped_stem_seat",
             new LogSeat(AbstractBlock.Settings.copy(WARPED_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
             ModItemGroups.NEMOS_CARPENTRY);
-    public static final Block ACACIA_PARK_BENCH = registerBlock("acacia_park_bench",
-            new ParkBenchBlock(AbstractBlock.Settings.copy(ACACIA_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
-            ModItemGroups.NEMOS_CARPENTRY);
-    public static final Block BAMBOO_PARK_BENCH = registerBlock("bamboo_park_bench",
-            new ParkBenchBlock(AbstractBlock.Settings.copy(BAMBOO_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
-            ModItemGroups.NEMOS_CARPENTRY);
-    public static final Block OAK_PARK_BENCH = registerBlock("oak_park_bench",
-            new ParkBenchBlock(AbstractBlock.Settings.copy(OAK_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
-            ModItemGroups.NEMOS_CARPENTRY);
-    public static final Block CARPENTERS_WORKBENCH = registerBlock("carpenters_workbench", new CarpentersWorkbenchBlock(FabricBlockSettings.create()
+    public static final Block CARPENTERS_WORKBENCH = registerBlock("carpenters_workbench", new CarpentryTableBlock(FabricBlockSettings.create()
             .mapColor(MapColor.OAK_TAN)
             .instrument(Instrument.BASS)
             .strength(2.5f)

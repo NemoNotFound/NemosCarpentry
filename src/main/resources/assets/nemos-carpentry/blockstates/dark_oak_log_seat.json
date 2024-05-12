@@ -1,18 +1,18 @@
 {
   "variants": {
     "facing=east": {
-      "model": "nemos-carpentry:block/seats/dark_oak_log_seat",
+      "model": "nemos-carpentry:block/chairs/dark_oak_log_seat",
       "y": 90
     },
     "facing=north": {
-      "model": "nemos-carpentry:block/seats/dark_oak_log_seat"
+      "model": "nemos-carpentry:block/chairs/dark_oak_log_seat"
     },
     "facing=south": {
-      "model": "nemos-carpentry:block/seats/dark_oak_log_seat",
+      "model": "nemos-carpentry:block/chairs/dark_oak_log_seat",
       "y": 180
     },
     "facing=west": {
-      "model": "nemos-carpentry:block/seats/dark_oak_log_seat",
+      "model": "nemos-carpentry:block/chairs/dark_oak_log_seat",
       "y": 270
     }
   }

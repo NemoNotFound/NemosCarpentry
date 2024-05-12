@@ -1,6 +1,0 @@
-{
-  "parent": "nemos-carpentry:block/seats/parents/park_bench_full",
-  "textures": {
-    "all": "nemos-carpentry:block/seats/acacia_park_bench"
-  }
-}

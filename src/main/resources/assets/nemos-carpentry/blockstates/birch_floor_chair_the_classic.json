@@ -1,11 +1,11 @@
 {
   "variants": {
     "facing=east": {
-      "model": "nemos-carpentry:block/seats/birch_floor_chair_the_classic",
+      "model": "nemos-carpentry:block/chairs/birch_floor_chair_the_classic",
       "y": 90
     },
     "facing=north": {
-      "model": "nemos-carpentry:block/seats/birch_floor_chair_the_classic"
+      "model": "nemos-carpentry:block/chairs/birch_floor_chair_the_classic"
     },
     "facing=south": {
       "model": "nemos-carpentry:block/chairs/birch_floor_chair_the_classic",
