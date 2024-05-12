@@ -1,8 +1,7 @@
-# Changelog - v2.3.1
+# Changelog - v2.4.0
 
-## Fixes
-- Campfire does not create smoke
-- Campfire does not display and cook meat
+## Additions
+- Added Park Bench for every wood type
 
 ### Downloads
 [CurseForge](https://www.curseforge.com/minecraft/mc-mods/nemos-carpentry) <br>
