@@ -7,7 +7,7 @@
     "item": "nemos-carpentry:diamond_saw"
   },
   "result": {
-    "item": "nemos-carpentry:netherite_saw"
+    "id": "nemos-carpentry:netherite_saw"
   },
   "template": {
     "item": "minecraft:netherite_upgrade_smithing_template"

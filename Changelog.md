@@ -1,7 +1,7 @@
-# Changelog - v2.4.0
+# Changelog - v2.4.1
 
 ## Additions
-- Added Park Bench for every wood type
+- Fix recipes
 
 ### Downloads
 [CurseForge](https://www.curseforge.com/minecraft/mc-mods/nemos-carpentry) <br>

@@ -14,7 +14,7 @@
     "##s"
   ],
   "result": {
-    "item": "nemos-carpentry:carpenters_workbench"
+    "id": "nemos-carpentry:carpenters_workbench"
   },
   "show_notification": false
 }
