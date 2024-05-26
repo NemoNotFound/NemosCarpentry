@@ -146,11 +146,12 @@ public class RecipeGenerator extends FabricRecipeProvider {
     }
 
     private void createCampfireRecipe(RecipeExporter exporter, Block result, TagKey<Item> log) {
-        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, result).input('L',
-                        log).input('S', Items.STICK).input('C',
-                        ItemTags.COALS).pattern(" S ").pattern("SCS").pattern("LLL")
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, result)
+                .input('L', log).input('S', Items.STICK).input('C', ItemTags.COALS)
+                .pattern(" S ").pattern("SCS").pattern("LLL")
                 .criterion("has_stick", VanillaRecipeProvider.conditionsFromItem(Items.STICK))
-                .criterion("has_coal", VanillaRecipeProvider.conditionsFromTag(ItemTags.COALS)).offerTo(exporter);
+                .criterion("has_coal", VanillaRecipeProvider.conditionsFromTag(ItemTags.COALS))
+                .offerTo(exporter);
     }
 
     private void createSoulCampfireRecipe(RecipeExporter exporter, Block result, TagKey<Item> log) {
