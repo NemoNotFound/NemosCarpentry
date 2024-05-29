@@ -22,6 +22,18 @@ public class ModelGenerator extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
+        generateChairModel(blockStateModelGenerator, Blocks.ACACIA_PLANKS, Blocks.ACACIA_LOG, ModBlocks.ACACIA_CHAIR_LUKAS, ModModels.CHAIR_LUKAS);
+        generateChairModel(blockStateModelGenerator, Blocks.BAMBOO_PLANKS, ModBlocks.BAMBOO_CHAIR_LUKAS, ModModels.CHAIR_LUKAS);
+        generateChairModel(blockStateModelGenerator, Blocks.BIRCH_PLANKS, Blocks.BIRCH_LOG, ModBlocks.BIRCH_CHAIR_LUKAS, ModModels.CHAIR_LUKAS);
+        generateChairModel(blockStateModelGenerator, Blocks.CHERRY_PLANKS, Blocks.CHERRY_LOG, ModBlocks.CHERRY_CHAIR_LUKAS, ModModels.CHAIR_LUKAS);
+        generateChairModel(blockStateModelGenerator, Blocks.CRIMSON_PLANKS, Blocks.CRIMSON_STEM, ModBlocks.CRIMSON_CHAIR_LUKAS, ModModels.CHAIR_LUKAS);
+        generateChairModel(blockStateModelGenerator, Blocks.DARK_OAK_PLANKS, Blocks.DARK_OAK_LOG, ModBlocks.DARK_OAK_CHAIR_LUKAS, ModModels.CHAIR_LUKAS);
+        generateChairModel(blockStateModelGenerator, Blocks.JUNGLE_PLANKS, Blocks.JUNGLE_LOG, ModBlocks.JUNGLE_CHAIR_LUKAS, ModModels.CHAIR_LUKAS);
+        generateChairModel(blockStateModelGenerator, Blocks.MANGROVE_PLANKS, Blocks.MANGROVE_LOG, ModBlocks.MANGROVE_CHAIR_LUKAS, ModModels.CHAIR_LUKAS);
+        generateChairModel(blockStateModelGenerator, Blocks.OAK_PLANKS, Blocks.OAK_LOG, ModBlocks.OAK_CHAIR_LUKAS, ModModels.CHAIR_LUKAS);
+        generateChairModel(blockStateModelGenerator, Blocks.SPRUCE_PLANKS, Blocks.SPRUCE_LOG, ModBlocks.SPRUCE_CHAIR_LUKAS, ModModels.CHAIR_LUKAS);
+        generateChairModel(blockStateModelGenerator, Blocks.WARPED_PLANKS, Blocks.WARPED_STEM, ModBlocks.WARPED_CHAIR_LUKAS, ModModels.CHAIR_LUKAS);
+
         generateParkBenchModel(blockStateModelGenerator, "acacia", Blocks.ACACIA_PLANKS, ModBlocks.ACACIA_PARK_BENCH);
         generateParkBenchModel(blockStateModelGenerator, "bamboo", Blocks.BAMBOO_PLANKS, ModBlocks.BAMBOO_PARK_BENCH);
         generateParkBenchModel(blockStateModelGenerator, "birch", Blocks.BIRCH_PLANKS, ModBlocks.BIRCH_PARK_BENCH);
@@ -72,6 +84,40 @@ public class ModelGenerator extends FabricModelProvider {
                 .register(Direction.SOUTH, BenchPart.RIGHT, createRotatedBlockStateVariant(rightBenchModelId, VariantSettings.Rotation.R180))
                 .register(Direction.WEST, BenchPart.RIGHT, createRotatedBlockStateVariant(rightBenchModelId, VariantSettings.Rotation.R270))
                 .register(Direction.NORTH, BenchPart.RIGHT, createBlockStateVariant(rightBenchModelId));
+    }
+
+    private void generateChairModel(BlockStateModelGenerator blockStateModelGenerator, Block textureBlock, Block chairBlock, Model model) {
+        TextureMap textureMap = TextureMap.all(textureBlock)
+                .put(TextureKey.BOTTOM, TextureMap.getId(textureBlock))
+                .put(TextureKey.PARTICLE, TextureMap.getId(textureBlock));
+        Identifier chairModelId = model.upload(chairBlock, textureMap, blockStateModelGenerator.modelCollector);
+
+        blockStateModelGenerator.blockStateCollector.accept(createChairBlockState(chairBlock, chairModelId));
+    }
+
+    private void generateChairModel(BlockStateModelGenerator blockStateModelGenerator, Block textureBlock, Block secondTextureLog, Block chairBlock, Model model) {
+        TextureMap textureMap = TextureMap.all(textureBlock)
+                .put(TextureKey.BOTTOM, TextureMap.getId(secondTextureLog).withSuffixedPath("_top"))
+                .put(TextureKey.PARTICLE, TextureMap.getId(textureBlock));
+        Identifier chairModelId = model.upload(chairBlock, textureMap, blockStateModelGenerator.modelCollector);
+
+        blockStateModelGenerator.blockStateCollector.accept(createChairBlockState(chairBlock, chairModelId));
+    }
+
+    private static BlockStateSupplier createChairBlockState(Block block, Identifier chairModelId) {
+        BlockStateVariantMap.SingleProperty<Direction> blockStateVariantMap = BlockStateVariantMap
+                .create(Properties.HORIZONTAL_FACING);
+
+        return VariantsBlockStateSupplier.create(block)
+                .coordinate(fillChairVariantMap(blockStateVariantMap, chairModelId));
+    }
+
+    private static BlockStateVariantMap.SingleProperty<Direction> fillChairVariantMap
+            (BlockStateVariantMap.SingleProperty<Direction> blockStateVariantMap, Identifier chairModelId) {
+        return blockStateVariantMap.register(Direction.EAST, createRotatedBlockStateVariant(chairModelId, VariantSettings.Rotation.R90))
+                .register(Direction.SOUTH, createRotatedBlockStateVariant(chairModelId, VariantSettings.Rotation.R180))
+                .register(Direction.WEST, createRotatedBlockStateVariant(chairModelId, VariantSettings.Rotation.R270))
+                .register(Direction.NORTH, createBlockStateVariant(chairModelId));
     }
 
     private static BlockStateVariant createRotatedBlockStateVariant(Identifier modelId, VariantSettings.Rotation rotation) {
