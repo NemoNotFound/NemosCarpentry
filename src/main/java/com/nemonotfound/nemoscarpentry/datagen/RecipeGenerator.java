@@ -143,29 +143,6 @@ public class RecipeGenerator extends FabricRecipeProvider {
 
         createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.CHERRY_PLANKS, 2)),
                 ModItems.CHERRY_GLASS_DOOR_FRAME, 2, CarpentryTools.SAW.asString());
-
-        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.ACACIA_PLANKS, 2)),
-                ModItems.ACACIA_CHAIR_LUKAS, 1, CarpentryTools.SAW.asString());
-        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.BAMBOO_PLANKS, 2)),
-                ModItems.BAMBOO_CHAIR_LUKAS, 1, CarpentryTools.SAW.asString());
-        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.BIRCH_PLANKS, 2)),
-                ModItems.BIRCH_CHAIR_LUKAS, 1, CarpentryTools.SAW.asString());
-        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.CHERRY_PLANKS, 2)),
-                ModItems.CHERRY_CHAIR_LUKAS, 1, CarpentryTools.SAW.asString());
-        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.CRIMSON_PLANKS, 2)),
-                ModItems.CRIMSON_CHAIR_LUKAS, 1, CarpentryTools.SAW.asString());
-        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.DARK_OAK_PLANKS, 2)),
-                ModItems.DARK_OAK_CHAIR_LUKAS, 1, CarpentryTools.SAW.asString());
-        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.JUNGLE_PLANKS, 2)),
-                ModItems.JUNGLE_CHAIR_LUKAS, 1, CarpentryTools.SAW.asString());
-        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.MANGROVE_PLANKS, 2)),
-                ModItems.MANGROVE_CHAIR_LUKAS, 1, CarpentryTools.SAW.asString());
-        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.OAK_PLANKS, 2)),
-                ModItems.OAK_CHAIR_LUKAS, 1, CarpentryTools.SAW.asString());
-        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.SPRUCE_PLANKS, 2)),
-                ModItems.SPRUCE_CHAIR_LUKAS, 1, CarpentryTools.SAW.asString());
-        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.WARPED_PLANKS, 2)),
-                ModItems.WARPED_CHAIR_LUKAS, 1, CarpentryTools.SAW.asString());
     }
 
     private void createCampfireRecipe(RecipeExporter exporter, Block result, TagKey<Item> log) {

@@ -298,17 +298,5 @@
   "item.nemos-carpentry.spruce_glass_door_frame": "Spruce Glass Door Frame",
   "item.nemos-carpentry.warped_glass_door_frame": "Warped Glass Door Frame",
 
-  "container.carpenters_workbench": "Carpenter's Workbench",
-
-  "block.nemos-carpentry.acacia_chair_lukas": "Acacia Chair \"Lukas\"",
-  "block.nemos-carpentry.bamboo_chair_lukas": "Bamboo Chair \"Lukas\"",
-  "block.nemos-carpentry.birch_chair_lukas": "Birch Chair \"Lukas\"",
-  "block.nemos-carpentry.cherry_chair_lukas": "Cherry Chair \"Lukas\"",
-  "block.nemos-carpentry.crimson_chair_lukas": "Crimson Chair \"Lukas\"",
-  "block.nemos-carpentry.dark_oak_chair_lukas": "Dark Oak Chair \"Lukas\"",
-  "block.nemos-carpentry.jungle_chair_lukas": "Jungle Chair \"Lukas\"",
-  "block.nemos-carpentry.mangrove_chair_lukas": "Mangrove Chair \"Lukas\"",
-  "block.nemos-carpentry.oak_chair_lukas": "Oak Chair \"Lukas\"",
-  "block.nemos-carpentry.spruce_chair_lukas": "Spruce Chair \"Lukas\"",
-  "block.nemos-carpentry.warped_chair_lukas": "Warped Chair \"Lukas\""
+  "container.carpenters_workbench": "Carpenter's Workbench"
 }

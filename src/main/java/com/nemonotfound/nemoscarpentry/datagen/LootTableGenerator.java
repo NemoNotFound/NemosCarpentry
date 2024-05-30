@@ -1,10 +1,8 @@
 package com.nemonotfound.nemoscarpentry.datagen;
 
-import com.nemonotfound.nemoscarpentry.block.LukasChairBlock;
 import com.nemonotfound.nemoscarpentry.block.ModBlocks;
 import com.nemonotfound.nemoscarpentry.block.ParkBenchBlock;
 import com.nemonotfound.nemoscarpentry.block.enums.BenchPart;
-import com.nemonotfound.nemoscarpentry.block.enums.ChairPart;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.minecraft.block.Block;
@@ -93,25 +91,9 @@ public class LootTableGenerator extends FabricBlockLootTableProvider {
         this.addDrop(ModBlocks.OAK_PARK_BENCH, this::benchDrops);
         this.addDrop(ModBlocks.SPRUCE_PARK_BENCH, this::benchDrops);
         this.addDrop(ModBlocks.WARPED_PARK_BENCH, this::benchDrops);
-
-        this.addDrop(ModBlocks.ACACIA_CHAIR_LUKAS, this::chairDrops);
-        this.addDrop(ModBlocks.BAMBOO_CHAIR_LUKAS, this::chairDrops);
-        this.addDrop(ModBlocks.BIRCH_CHAIR_LUKAS, this::chairDrops);
-        this.addDrop(ModBlocks.CHERRY_CHAIR_LUKAS, this::chairDrops);
-        this.addDrop(ModBlocks.CRIMSON_CHAIR_LUKAS, this::chairDrops);
-        this.addDrop(ModBlocks.DARK_OAK_CHAIR_LUKAS, this::chairDrops);
-        this.addDrop(ModBlocks.JUNGLE_CHAIR_LUKAS, this::chairDrops);
-        this.addDrop(ModBlocks.MANGROVE_CHAIR_LUKAS, this::chairDrops);
-        this.addDrop(ModBlocks.OAK_CHAIR_LUKAS, this::chairDrops);
-        this.addDrop(ModBlocks.SPRUCE_CHAIR_LUKAS, this::chairDrops);
-        this.addDrop(ModBlocks.WARPED_CHAIR_LUKAS, this::chairDrops);
     }
 
     private LootTable.Builder benchDrops(Block block) {
         return this.dropsWithProperty(block, ParkBenchBlock.PART, BenchPart.LEFT);
-    }
-
-    private LootTable.Builder chairDrops(Block block) {
-        return this.dropsWithProperty(block, LukasChairBlock.PART, ChairPart.LOWER);
     }
 }

@@ -1,8 +1,0 @@
-{
-  "parent": "nemos-carpentry:block/seats/parents/chair_lukas",
-  "textures": {
-    "all": "minecraft:block/bamboo_planks",
-    "bottom": "minecraft:block/bamboo_planks",
-    "particle": "minecraft:block/bamboo_planks"
-  }
-}

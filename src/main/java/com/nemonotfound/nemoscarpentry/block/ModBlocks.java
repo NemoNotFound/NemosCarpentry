@@ -143,28 +143,6 @@ public class ModBlocks {
     public static final Block WARPED_CHAIR_FELIX = registerBlock("warped_chair_felix",
             new FelixChairBlock(AbstractBlock.Settings.copy(WARPED_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
             ModItemGroups.NEMOS_CARPENTRY);
-    public static final Block ACACIA_CHAIR_LUKAS = registerBlock("acacia_chair_lukas",
-            new LukasChairBlock(AbstractBlock.Settings.copy(ACACIA_PLANKS).nonOpaque()));
-    public static final Block BAMBOO_CHAIR_LUKAS = registerBlock("bamboo_chair_lukas",
-            new LukasChairBlock(AbstractBlock.Settings.copy(BAMBOO_PLANKS).nonOpaque()));
-    public static final Block BIRCH_CHAIR_LUKAS = registerBlock("birch_chair_lukas",
-            new LukasChairBlock(AbstractBlock.Settings.copy(BIRCH_PLANKS).nonOpaque()));
-    public static final Block CHERRY_CHAIR_LUKAS = registerBlock("cherry_chair_lukas",
-            new LukasChairBlock(AbstractBlock.Settings.copy(CHERRY_PLANKS).nonOpaque()));
-    public static final Block CRIMSON_CHAIR_LUKAS = registerBlock("crimson_chair_lukas",
-            new LukasChairBlock(AbstractBlock.Settings.copy(CRIMSON_PLANKS).nonOpaque()));
-    public static final Block DARK_OAK_CHAIR_LUKAS = registerBlock("dark_oak_chair_lukas",
-            new LukasChairBlock(AbstractBlock.Settings.copy(DARK_OAK_PLANKS).nonOpaque()));
-    public static final Block JUNGLE_CHAIR_LUKAS = registerBlock("jungle_chair_lukas",
-            new LukasChairBlock(AbstractBlock.Settings.copy(JUNGLE_PLANKS).nonOpaque()));
-    public static final Block MANGROVE_CHAIR_LUKAS = registerBlock("mangrove_chair_lukas",
-            new LukasChairBlock(AbstractBlock.Settings.copy(MANGROVE_PLANKS).nonOpaque()));
-    public static final Block OAK_CHAIR_LUKAS = registerBlock("oak_chair_lukas",
-            new LukasChairBlock(AbstractBlock.Settings.copy(OAK_PLANKS).nonOpaque()));
-    public static final Block SPRUCE_CHAIR_LUKAS = registerBlock("spruce_chair_lukas",
-            new LukasChairBlock(AbstractBlock.Settings.copy(SPRUCE_PLANKS).nonOpaque()));
-    public static final Block WARPED_CHAIR_LUKAS = registerBlock("warped_chair_lukas",
-            new LukasChairBlock(AbstractBlock.Settings.copy(WARPED_PLANKS).nonOpaque()));
     public static final Block ACACIA_LOG_SEAT = registerBlock("acacia_log_seat",
             new LogSeat(AbstractBlock.Settings.copy(ACACIA_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
             ModItemGroups.NEMOS_CARPENTRY);
@@ -1082,9 +1060,5 @@ public class ModBlocks {
                 .register(content -> content.add(block)));
 
         return registeredBlock;
-    }
-
-    private static Block registerBlock(String path, Block block) {
-        return Registry.register(Registries.BLOCK, new Identifier(MOD_ID, path), block);
     }
 }
