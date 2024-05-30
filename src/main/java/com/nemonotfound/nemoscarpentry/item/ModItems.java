@@ -38,6 +38,17 @@ public class ModItems {
     public static final Item MANGROVE_LADDER = registerBlockItem("mangrove_ladder", ModBlocks.MANGROVE_LADDER);
     public static final Item SPRUCE_LADDER = registerBlockItem("spruce_ladder", ModBlocks.SPRUCE_LADDER);
     public static final Item WARPED_LADDER = registerBlockItem("warped_ladder", ModBlocks.WARPED_LADDER);
+    public static final Item ACACIA_TABLE_THE_CLASSIC = registerBlockItem("acacia_table_the_classic", ModBlocks.ACACIA_TABLE_THE_CLASSIC);
+    public static final Item BAMBOO_TABLE_THE_CLASSIC = registerBlockItem("bamboo_table_the_classic", ModBlocks.BAMBOO_TABLE_THE_CLASSIC);
+    public static final Item BIRCH_TABLE_THE_CLASSIC = registerBlockItem("birch_table_the_classic", ModBlocks.BIRCH_TABLE_THE_CLASSIC);
+    public static final Item CHERRY_TABLE_THE_CLASSIC = registerBlockItem("cherry_table_the_classic", ModBlocks.CHERRY_TABLE_THE_CLASSIC);
+    public static final Item CRIMSON_TABLE_THE_CLASSIC = registerBlockItem("crimson_table_the_classic", ModBlocks.CRIMSON_TABLE_THE_CLASSIC);
+    public static final Item DARK_OAK_TABLE_THE_CLASSIC = registerBlockItem("dark_oak_table_the_classic", ModBlocks.DARK_OAK_TABLE_THE_CLASSIC);
+    public static final Item JUNGLE_TABLE_THE_CLASSIC = registerBlockItem("jungle_table_the_classic", ModBlocks.JUNGLE_TABLE_THE_CLASSIC);
+    public static final Item MANGROVE_TABLE_THE_CLASSIC = registerBlockItem("mangrove_table_the_classic", ModBlocks.MANGROVE_TABLE_THE_CLASSIC);
+    public static final Item OAK_TABLE_THE_CLASSIC = registerBlockItem("oak_table_the_classic", ModBlocks.OAK_TABLE_THE_CLASSIC);
+    public static final Item SPRUCE_TABLE_THE_CLASSIC = registerBlockItem("spruce_table_the_classic", ModBlocks.SPRUCE_TABLE_THE_CLASSIC);
+    public static final Item WARPED_TABLE_THE_CLASSIC = registerBlockItem("warped_table_the_classic", ModBlocks.WARPED_TABLE_THE_CLASSIC);
     public static final Item OAK_CHAIR_FELIX = registerBlockItem("oak_chair_felix", ModBlocks.OAK_CHAIR_FELIX);
     public static final Item ACACIA_CHAIR_LUKAS = registerBlockItem("acacia_chair_lukas", ModBlocks.ACACIA_CHAIR_LUKAS);
     public static final Item BAMBOO_CHAIR_LUKAS = registerBlockItem("bamboo_chair_lukas", ModBlocks.BAMBOO_CHAIR_LUKAS);

@@ -2,6 +2,7 @@ package com.nemonotfound.nemoscarpentry.datagen;
 
 import com.nemonotfound.nemoscarpentry.block.ModBlocks;
 import com.nemonotfound.nemoscarpentry.block.enums.BenchPart;
+import com.nemonotfound.nemoscarpentry.item.ModItems;
 import com.nemonotfound.nemoscarpentry.property.ModProperties;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
@@ -45,6 +46,27 @@ public class ModelGenerator extends FabricModelProvider {
         generateParkBenchModel(blockStateModelGenerator, "oak", Blocks.OAK_PLANKS, ModBlocks.OAK_PARK_BENCH);
         generateParkBenchModel(blockStateModelGenerator, "spruce", Blocks.SPRUCE_PLANKS, ModBlocks.SPRUCE_PARK_BENCH);
         generateParkBenchModel(blockStateModelGenerator, "warped", Blocks.WARPED_PLANKS, ModBlocks.WARPED_PARK_BENCH);
+
+        generateBlockModel(blockStateModelGenerator, ModBlocks.ACACIA_TABLE_THE_CLASSIC, Blocks.ACACIA_PLANKS);
+        generateBlockModel(blockStateModelGenerator, ModBlocks.BAMBOO_TABLE_THE_CLASSIC, Blocks.BAMBOO_PLANKS);
+        generateBlockModel(blockStateModelGenerator, ModBlocks.BIRCH_TABLE_THE_CLASSIC, Blocks.BIRCH_PLANKS);
+        generateBlockModel(blockStateModelGenerator, ModBlocks.CHERRY_TABLE_THE_CLASSIC, Blocks.CHERRY_PLANKS);
+        generateBlockModel(blockStateModelGenerator, ModBlocks.CRIMSON_TABLE_THE_CLASSIC, Blocks.CRIMSON_PLANKS);
+        generateBlockModel(blockStateModelGenerator, ModBlocks.DARK_OAK_TABLE_THE_CLASSIC, Blocks.DARK_OAK_PLANKS);
+        generateBlockModel(blockStateModelGenerator, ModBlocks.JUNGLE_TABLE_THE_CLASSIC, Blocks.JUNGLE_PLANKS);
+        generateBlockModel(blockStateModelGenerator, ModBlocks.MANGROVE_TABLE_THE_CLASSIC, Blocks.MANGROVE_PLANKS);
+        generateBlockModel(blockStateModelGenerator, ModBlocks.OAK_TABLE_THE_CLASSIC, Blocks.OAK_PLANKS);
+        generateBlockModel(blockStateModelGenerator, ModBlocks.SPRUCE_TABLE_THE_CLASSIC, Blocks.SPRUCE_PLANKS);
+        generateBlockModel(blockStateModelGenerator, ModBlocks.WARPED_TABLE_THE_CLASSIC, Blocks.WARPED_PLANKS);
+    }
+
+    private void generateBlockModel(BlockStateModelGenerator blockStateModelGenerator, Block block, Block textureBlock) {
+        TextureMap textureMap = TextureMap.all(textureBlock).put(TextureKey.PARTICLE, TextureMap.getId(textureBlock));
+        Identifier modelId = ModModels.TABLE_THE_CLASSIC
+                .upload(block, textureMap, blockStateModelGenerator.modelCollector);
+
+        blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier
+                .create(block, BlockStateVariant.create().put(VariantSettings.MODEL, modelId)));
     }
 
     private void generateParkBenchModel(BlockStateModelGenerator blockStateModelGenerator, String id, Block particleBlock,
@@ -162,5 +184,12 @@ public class ModelGenerator extends FabricModelProvider {
         itemModelGenerator.register(ModBlocks.OAK_PARK_BENCH.asItem(), ModModels.PARK_BENCH);
         itemModelGenerator.register(ModBlocks.SPRUCE_PARK_BENCH.asItem(), ModModels.PARK_BENCH);
         itemModelGenerator.register(ModBlocks.WARPED_PARK_BENCH.asItem(), ModModels.PARK_BENCH);
+
+        itemModelGenerator.register(ModItems.WOODEN_SAW, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.STONE_SAW, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.IRON_SAW, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.GOLDEN_SAW, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.DIAMOND_SAW, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.NETHERITE_SAW, Models.HANDHELD);
     }
 }

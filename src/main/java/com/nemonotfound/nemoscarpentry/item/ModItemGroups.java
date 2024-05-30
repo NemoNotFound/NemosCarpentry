@@ -21,6 +21,7 @@ public class ModItemGroups {
     public static void registerItemGroups() {
         registerItemGroup(ModItems.IRON_SAW);
         registerSeatsItemGroup(ModItems.OAK_CHAIR_FELIX);
+        registerTablesItemGroup(ModItems.OAK_TABLE_THE_CLASSIC);
         modifyFunctionalItemGroup();
         modifyToolItemGroup();
     }
@@ -59,6 +60,17 @@ public class ModItemGroups {
                     entries.add(ModItems.OAK_CHAIR_LUKAS);
                     entries.add(ModItems.SPRUCE_CHAIR_LUKAS);
                     entries.add(ModItems.WARPED_CHAIR_LUKAS);
+                    entries.add(ModItems.ACACIA_TABLE_THE_CLASSIC);
+                    entries.add(ModItems.BAMBOO_TABLE_THE_CLASSIC);
+                    entries.add(ModItems.BIRCH_TABLE_THE_CLASSIC);
+                    entries.add(ModItems.CHERRY_TABLE_THE_CLASSIC);
+                    entries.add(ModItems.CRIMSON_TABLE_THE_CLASSIC);
+                    entries.add(ModItems.DARK_OAK_TABLE_THE_CLASSIC);
+                    entries.add(ModItems.JUNGLE_TABLE_THE_CLASSIC);
+                    entries.add(ModItems.MANGROVE_TABLE_THE_CLASSIC);
+                    entries.add(ModItems.OAK_TABLE_THE_CLASSIC);
+                    entries.add(ModItems.SPRUCE_TABLE_THE_CLASSIC);
+                    entries.add(ModItems.WARPED_TABLE_THE_CLASSIC);
                 })
                 .build();
 
@@ -88,6 +100,28 @@ public class ModItemGroups {
         Registry.register(Registries.ITEM_GROUP, new Identifier(MOD_ID, NEMOS_CARPENTRY_GROUP_ID + "_seats"), ITEM_GROUP);
     }
 
+    private static void registerTablesItemGroup(Item iconItem) {
+        ItemGroup ITEM_GROUP = FabricItemGroup.builder()
+                .icon(() -> new ItemStack(iconItem))
+                .displayName(Text.translatable("Tables"))
+                .entries((context, entries) -> {
+                    entries.add(ModItems.ACACIA_TABLE_THE_CLASSIC);
+                    entries.add(ModItems.BAMBOO_TABLE_THE_CLASSIC);
+                    entries.add(ModItems.BIRCH_TABLE_THE_CLASSIC);
+                    entries.add(ModItems.CHERRY_TABLE_THE_CLASSIC);
+                    entries.add(ModItems.CRIMSON_TABLE_THE_CLASSIC);
+                    entries.add(ModItems.DARK_OAK_TABLE_THE_CLASSIC);
+                    entries.add(ModItems.JUNGLE_TABLE_THE_CLASSIC);
+                    entries.add(ModItems.MANGROVE_TABLE_THE_CLASSIC);
+                    entries.add(ModItems.OAK_TABLE_THE_CLASSIC);
+                    entries.add(ModItems.SPRUCE_TABLE_THE_CLASSIC);
+                    entries.add(ModItems.WARPED_TABLE_THE_CLASSIC);
+                })
+                .build();
+
+        Registry.register(Registries.ITEM_GROUP, new Identifier(MOD_ID, NEMOS_CARPENTRY_GROUP_ID + "_tables"), ITEM_GROUP);
+    }
+
     private static void modifyFunctionalItemGroup() {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(content -> {
             content.addBefore(Items.LADDER, ModItems.ACACIA_LADDER);
@@ -113,6 +147,17 @@ public class ModItemGroups {
             content.add(ModItems.OAK_CHAIR_LUKAS);
             content.add(ModItems.SPRUCE_CHAIR_LUKAS);
             content.add(ModItems.WARPED_CHAIR_LUKAS);
+            content.add(ModItems.ACACIA_TABLE_THE_CLASSIC);
+            content.add(ModItems.BAMBOO_TABLE_THE_CLASSIC);
+            content.add(ModItems.BIRCH_TABLE_THE_CLASSIC);
+            content.add(ModItems.CHERRY_TABLE_THE_CLASSIC);
+            content.add(ModItems.CRIMSON_TABLE_THE_CLASSIC);
+            content.add(ModItems.DARK_OAK_TABLE_THE_CLASSIC);
+            content.add(ModItems.JUNGLE_TABLE_THE_CLASSIC);
+            content.add(ModItems.MANGROVE_TABLE_THE_CLASSIC);
+            content.add(ModItems.OAK_TABLE_THE_CLASSIC);
+            content.add(ModItems.SPRUCE_TABLE_THE_CLASSIC);
+            content.add(ModItems.WARPED_TABLE_THE_CLASSIC);
         });
     }
 

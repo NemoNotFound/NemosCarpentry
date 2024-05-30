@@ -45,38 +45,27 @@ public class ModBlocks {
     public static final Block CHERRY_LADDER = registerBlock("cherry_ladder",
             new LadderBlock(AbstractBlock.Settings.copy(LADDER)));
     public static final Block ACACIA_TABLE_THE_CLASSIC = registerBlock("acacia_table_the_classic",
-            new TableBlock(AbstractBlock.Settings.copy(ACACIA_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
-            ModItemGroups.NEMOS_CARPENTRY);
+            new TableBlock(AbstractBlock.Settings.copy(ACACIA_PLANKS).nonOpaque()));
     public static final Block BAMBOO_TABLE_THE_CLASSIC = registerBlock("bamboo_table_the_classic",
-            new TableBlock(AbstractBlock.Settings.copy(BAMBOO_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
-            ModItemGroups.NEMOS_CARPENTRY);
+            new TableBlock(AbstractBlock.Settings.copy(BAMBOO_PLANKS).nonOpaque()));
     public static final Block BIRCH_TABLE_THE_CLASSIC = registerBlock("birch_table_the_classic",
-            new TableBlock(AbstractBlock.Settings.copy(BIRCH_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
-            ModItemGroups.NEMOS_CARPENTRY);
+            new TableBlock(AbstractBlock.Settings.copy(BIRCH_PLANKS).nonOpaque()));
     public static final Block CHERRY_TABLE_THE_CLASSIC = registerBlock("cherry_table_the_classic",
-            new TableBlock(AbstractBlock.Settings.copy(CHERRY_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
-            ModItemGroups.NEMOS_CARPENTRY);
+            new TableBlock(AbstractBlock.Settings.copy(CHERRY_PLANKS).nonOpaque()));
     public static final Block CRIMSON_TABLE_THE_CLASSIC = registerBlock("crimson_table_the_classic",
-            new TableBlock(AbstractBlock.Settings.copy(CRIMSON_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
-            ModItemGroups.NEMOS_CARPENTRY);
+            new TableBlock(AbstractBlock.Settings.copy(CRIMSON_PLANKS).nonOpaque()));
     public static final Block DARK_OAK_TABLE_THE_CLASSIC = registerBlock("dark_oak_table_the_classic",
-            new TableBlock(AbstractBlock.Settings.copy(DARK_OAK_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
-            ModItemGroups.NEMOS_CARPENTRY);
+            new TableBlock(AbstractBlock.Settings.copy(DARK_OAK_PLANKS).nonOpaque()));
     public static final Block JUNGLE_TABLE_THE_CLASSIC = registerBlock("jungle_table_the_classic",
-            new TableBlock(AbstractBlock.Settings.copy(JUNGLE_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
-            ModItemGroups.NEMOS_CARPENTRY);
+            new TableBlock(AbstractBlock.Settings.copy(JUNGLE_PLANKS).nonOpaque()));
     public static final Block MANGROVE_TABLE_THE_CLASSIC = registerBlock("mangrove_table_the_classic",
-            new TableBlock(AbstractBlock.Settings.copy(MANGROVE_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
-            ModItemGroups.NEMOS_CARPENTRY);
+            new TableBlock(AbstractBlock.Settings.copy(MANGROVE_PLANKS).nonOpaque()));
     public static final Block OAK_TABLE_THE_CLASSIC = registerBlock("oak_table_the_classic",
-            new TableBlock(AbstractBlock.Settings.copy(OAK_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
-            ModItemGroups.NEMOS_CARPENTRY);
+            new TableBlock(AbstractBlock.Settings.copy(OAK_PLANKS).nonOpaque()));
     public static final Block SPRUCE_TABLE_THE_CLASSIC = registerBlock("spruce_table_the_classic",
-            new TableBlock(AbstractBlock.Settings.copy(SPRUCE_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
-            ModItemGroups.NEMOS_CARPENTRY);
+            new TableBlock(AbstractBlock.Settings.copy(SPRUCE_PLANKS).nonOpaque()));
     public static final Block WARPED_TABLE_THE_CLASSIC = registerBlock("warped_table_the_classic",
-            new TableBlock(AbstractBlock.Settings.copy(WARPED_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
-            ModItemGroups.NEMOS_CARPENTRY);
+            new TableBlock(AbstractBlock.Settings.copy(WARPED_PLANKS).nonOpaque()));
     public static final Block ACACIA_CHAIR = registerBlock("acacia_chair",
             new ChairBlock(AbstractBlock.Settings.copy(ACACIA_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
             ModItemGroups.NEMOS_CARPENTRY);

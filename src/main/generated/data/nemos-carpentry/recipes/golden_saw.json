@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "minecraft:gold_ingot"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "#  ",
+    " #S",
+    " SS"
+  ],
+  "result": {
+    "count": 1,
+    "id": "nemos-carpentry:golden_saw"
+  }
+}

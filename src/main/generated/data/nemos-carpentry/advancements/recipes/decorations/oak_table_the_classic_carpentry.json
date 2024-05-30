@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_oak_planks": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:oak_planks"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_oak_table_the_classic": {
+      "conditions": {
+        "items": [
+          {
+            "items": "nemos-carpentry:oak_table_the_classic"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:oak_table_the_classic_carpentry"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_oak_planks",
+      "has_oak_table_the_classic"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:oak_table_the_classic_carpentry"
+    ]
+  }
+}
