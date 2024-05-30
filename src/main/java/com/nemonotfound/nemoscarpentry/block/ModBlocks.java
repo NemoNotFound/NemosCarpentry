@@ -23,27 +23,27 @@ import static net.minecraft.block.Blocks.*;
 public class ModBlocks {
 
     public static final Block DARK_OAK_LADDER = registerBlock("dark_oak_ladder",
-            new LadderBlock(AbstractBlock.Settings.copy(LADDER)), ItemGroups.FUNCTIONAL, ModItemGroups.NEMOS_CARPENTRY);
+            new LadderBlock(AbstractBlock.Settings.copy(LADDER)));
     public static final Block ACACIA_LADDER = registerBlock("acacia_ladder",
-            new LadderBlock(AbstractBlock.Settings.copy(LADDER)), ItemGroups.FUNCTIONAL, ModItemGroups.NEMOS_CARPENTRY);
+            new LadderBlock(AbstractBlock.Settings.copy(LADDER)));
     public static final Block BIRCH_LADDER = registerBlock("birch_ladder",
-            new LadderBlock(AbstractBlock.Settings.copy(LADDER)), ItemGroups.FUNCTIONAL, ModItemGroups.NEMOS_CARPENTRY);
+            new LadderBlock(AbstractBlock.Settings.copy(LADDER)));
     public static final Block SPRUCE_LADDER = registerBlock("spruce_ladder",
-            new LadderBlock(AbstractBlock.Settings.copy(LADDER)), ItemGroups.FUNCTIONAL, ModItemGroups.NEMOS_CARPENTRY);
+            new LadderBlock(AbstractBlock.Settings.copy(LADDER)));
     public static final Block WARPED_LADDER = registerBlock("warped_ladder",
-            new LadderBlock(AbstractBlock.Settings.copy(LADDER)), ItemGroups.FUNCTIONAL, ModItemGroups.NEMOS_CARPENTRY);
+            new LadderBlock(AbstractBlock.Settings.copy(LADDER)));
     public static final Block BAMBOO_LADDER = registerBlock("bamboo_ladder",
-            new LadderBlock(AbstractBlock.Settings.copy(LADDER)), ItemGroups.FUNCTIONAL, ModItemGroups.NEMOS_CARPENTRY);
+            new LadderBlock(AbstractBlock.Settings.copy(LADDER)));
     public static final Block CRIMSON_LADDER = registerBlock("crimson_ladder",
-            new LadderBlock(AbstractBlock.Settings.copy(LADDER)), ItemGroups.FUNCTIONAL, ModItemGroups.NEMOS_CARPENTRY);
+            new LadderBlock(AbstractBlock.Settings.copy(LADDER)));
     public static final Block MANGROVE_LADDER = registerBlock("mangrove_ladder",
-            new LadderBlock(AbstractBlock.Settings.copy(LADDER)), ItemGroups.FUNCTIONAL, ModItemGroups.NEMOS_CARPENTRY);
+            new LadderBlock(AbstractBlock.Settings.copy(LADDER)));
     public static final Block JUNGLE_LADDER = registerBlock("jungle_ladder",
-            new LadderBlock(AbstractBlock.Settings.copy(LADDER)), ItemGroups.FUNCTIONAL, ModItemGroups.NEMOS_CARPENTRY);
+            new LadderBlock(AbstractBlock.Settings.copy(LADDER)));
     public static final Block BOUND_BAMBOO_LADDER = registerBlock("bound_bamboo_ladder",
-            new LadderBlock(AbstractBlock.Settings.copy(LADDER)), ItemGroups.FUNCTIONAL, ModItemGroups.NEMOS_CARPENTRY);
+            new LadderBlock(AbstractBlock.Settings.copy(LADDER)));
     public static final Block CHERRY_LADDER = registerBlock("cherry_ladder",
-            new LadderBlock(AbstractBlock.Settings.copy(LADDER)), ItemGroups.FUNCTIONAL, ModItemGroups.NEMOS_CARPENTRY);
+            new LadderBlock(AbstractBlock.Settings.copy(LADDER)));
     public static final Block ACACIA_TABLE_THE_CLASSIC = registerBlock("acacia_table_the_classic",
             new TableBlock(AbstractBlock.Settings.copy(ACACIA_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
             ModItemGroups.NEMOS_CARPENTRY);
@@ -135,8 +135,7 @@ public class ModBlocks {
             new FelixChairBlock(AbstractBlock.Settings.copy(MANGROVE_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
             ModItemGroups.NEMOS_CARPENTRY);
     public static final Block OAK_CHAIR_FELIX = registerBlock("oak_chair_felix",
-            new FelixChairBlock(AbstractBlock.Settings.copy(OAK_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
-            ModItemGroups.NEMOS_CARPENTRY);
+            new FelixChairBlock(AbstractBlock.Settings.copy(OAK_PLANKS).nonOpaque()));
     public static final Block SPRUCE_CHAIR_FELIX = registerBlock("spruce_chair_felix",
             new FelixChairBlock(AbstractBlock.Settings.copy(SPRUCE_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
             ModItemGroups.NEMOS_CARPENTRY);

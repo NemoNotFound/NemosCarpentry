@@ -1,7 +1,11 @@
-# Changelog - v2.4.2
+# Changelog - v2.5
 
-## Fixes
-- Recipe for campfire and soul campfire works again with oak logs
+## Additions
+- Added Chair "Lukas"
+- Added ItemGroup Seats
+
+## Changes
+- Changed position of items in ItemGroups
 
 ### Downloads
 [CurseForge](https://www.curseforge.com/minecraft/mc-mods/nemos-carpentry) <br>

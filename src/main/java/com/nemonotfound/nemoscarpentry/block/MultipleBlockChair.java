@@ -167,10 +167,25 @@ public class MultipleBlockChair extends SitableBlock implements Waterloggable {
 
         if (!world.isClient) {
             BlockPos blockPos = pos.offset(UP);
-            world.setBlockState(blockPos, state.with(PART, ChairPart.UPPER), Block.NOTIFY_ALL);
+            world.setBlockState(blockPos, getNewBlockState(world, blockPos, state), Block.NOTIFY_ALL);
             world.updateNeighbors(pos, Blocks.AIR);
             state.updateNeighbors(world, pos, Block.NOTIFY_ALL);
         }
+    }
+
+    private BlockState getNewBlockState(World world, BlockPos blockPos, BlockState state) {
+        BlockState newBlockState = this.getDefaultState().with(PART, ChairPart.UPPER)
+                .with(FACING, state.get(FACING));
+
+        if (isStillWater(world.getBlockState(blockPos))) {
+            return newBlockState.with(WATERLOGGED, true);
+        }
+
+        return newBlockState;
+    }
+
+    private boolean isStillWater(BlockState blockState) {
+        return blockState.isOf(Blocks.WATER) && blockState.getFluidState().isStill();
     }
 
     @Override
@@ -190,7 +205,9 @@ public class MultipleBlockChair extends SitableBlock implements Waterloggable {
         BlockState stateOfOtherChairPart = world.getBlockState(positionOfOtherChairPart);
 
         if (stateOfOtherChairPart.isOf(this) && stateOfOtherChairPart.get(PART) == ChairPart.getOppositeChairPart(chairPart)) {
-            world.setBlockState(positionOfOtherChairPart, Blocks.AIR.getDefaultState(), Block.NOTIFY_ALL | Block.SKIP_DROPS);
+            BlockState newBlockState = world.getBlockState(positionOfOtherChairPart).get(WATERLOGGED)
+                    ? Blocks.WATER.getDefaultState() : Blocks.AIR.getDefaultState();
+            world.setBlockState(positionOfOtherChairPart, newBlockState, Block.NOTIFY_ALL | Block.SKIP_DROPS);
             world.syncWorldEvent(player, WorldEvents.BLOCK_BROKEN, positionOfOtherChairPart, Block.getRawIdFromState(stateOfOtherChairPart));
         }
     }

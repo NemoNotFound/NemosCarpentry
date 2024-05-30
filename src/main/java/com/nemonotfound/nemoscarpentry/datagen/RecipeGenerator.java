@@ -31,6 +31,8 @@ public class RecipeGenerator extends FabricRecipeProvider {
 
     @Override
     public void generate(RecipeExporter exporter) {
+        createBambooLadderReceipe(exporter);
+
         createCampfireRecipe(exporter, ModBlocks.ACACIA_CAMPFIRE, ItemTags.ACACIA_LOGS);
         createCampfireRecipe(exporter, ModBlocks.BIRCH_CAMPFIRE, ItemTags.BIRCH_LOGS);
         createCampfireRecipe(exporter, ModBlocks.CHERRY_CAMPFIRE, ItemTags.CHERRY_LOGS);
@@ -91,7 +93,7 @@ public class RecipeGenerator extends FabricRecipeProvider {
         createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.MANGROVE_PLANKS, 1)),
                 ModBlocks.MANGROVE_CHAIR_FELIX, 1, CarpentryTools.SAW.asString());
         createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.OAK_PLANKS, 1)),
-                ModBlocks.OAK_CHAIR_FELIX, 1, CarpentryTools.SAW.asString());
+                ModItems.OAK_CHAIR_FELIX, 1, CarpentryTools.SAW.asString());
         createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.SPRUCE_PLANKS, 1)),
                 ModBlocks.SPRUCE_CHAIR_FELIX, 1, CarpentryTools.SAW.asString());
         createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.WARPED_PLANKS, 1)),
@@ -140,10 +142,6 @@ public class RecipeGenerator extends FabricRecipeProvider {
                 ModBlocks.SPRUCE_PARK_BENCH, 1, CarpentryTools.SAW.asString());
         createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.WARPED_PLANKS, 2)),
                 ModBlocks.WARPED_PARK_BENCH, 1, CarpentryTools.SAW.asString());
-
-        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.CHERRY_PLANKS, 2)),
-                ModItems.CHERRY_GLASS_DOOR_FRAME, 2, CarpentryTools.SAW.asString());
-
         createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.ACACIA_PLANKS, 2)),
                 ModItems.ACACIA_CHAIR_LUKAS, 1, CarpentryTools.SAW.asString());
         createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.BAMBOO_PLANKS, 2)),
@@ -166,6 +164,9 @@ public class RecipeGenerator extends FabricRecipeProvider {
                 ModItems.SPRUCE_CHAIR_LUKAS, 1, CarpentryTools.SAW.asString());
         createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.WARPED_PLANKS, 2)),
                 ModItems.WARPED_CHAIR_LUKAS, 1, CarpentryTools.SAW.asString());
+
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.CHERRY_PLANKS, 2)),
+                ModItems.CHERRY_GLASS_DOOR_FRAME, 2, CarpentryTools.SAW.asString());
     }
 
     private void createCampfireRecipe(RecipeExporter exporter, Block result, TagKey<Item> log) {
@@ -214,5 +215,13 @@ public class RecipeGenerator extends FabricRecipeProvider {
             builder.input(Ingredient.ofItems(ingredient), ingredientPair.getSecond())
                     .criterion(hasItem(ingredient), conditionsFromItem(ingredient));
         }
+    }
+
+    private void createBambooLadderReceipe(RecipeExporter exporter) {
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.BOUND_BAMBOO_LADDER, 3)
+                .input('B', Items.BAMBOO).input('S', Items.STRING)
+                .pattern("B B").pattern("BSB").pattern("B B")
+                .criterion("has_bamboo", VanillaRecipeProvider.conditionsFromItem(Items.BAMBOO))
+                .offerTo(exporter);
     }
 }
