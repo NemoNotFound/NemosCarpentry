@@ -1,5 +1,5 @@
 {
-  "parent": "nemos-carpentry:block/seats/parents/chair_lukas",
+  "parent": "nemos-carpentry:block/seats/chair_lukas",
   "textures": {
     "all": "minecraft:block/crimson_planks",
     "bottom": "minecraft:block/crimson_stem_top",

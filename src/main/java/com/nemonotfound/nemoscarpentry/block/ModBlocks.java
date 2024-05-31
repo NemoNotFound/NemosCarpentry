@@ -67,38 +67,27 @@ public class ModBlocks {
     public static final Block WARPED_TABLE_THE_CLASSIC = registerBlock("warped_table_the_classic",
             new TableBlock(AbstractBlock.Settings.copy(WARPED_PLANKS).nonOpaque()));
     public static final Block ACACIA_CHAIR = registerBlock("acacia_chair",
-            new ChairBlock(AbstractBlock.Settings.copy(ACACIA_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
-            ModItemGroups.NEMOS_CARPENTRY);
+            new ChairBlock(AbstractBlock.Settings.copy(ACACIA_PLANKS).nonOpaque()));
     public static final Block BAMBOO_CHAIR = registerBlock("bamboo_chair",
-            new ChairBlock(AbstractBlock.Settings.copy(BAMBOO_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
-            ModItemGroups.NEMOS_CARPENTRY);
+            new ChairBlock(AbstractBlock.Settings.copy(BAMBOO_PLANKS).nonOpaque()));
     public static final Block BIRCH_CHAIR = registerBlock("birch_chair",
-            new ChairBlock(AbstractBlock.Settings.copy(BIRCH_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
-            ModItemGroups.NEMOS_CARPENTRY);
+            new ChairBlock(AbstractBlock.Settings.copy(BIRCH_PLANKS).nonOpaque()));
     public static final Block CHERRY_CHAIR = registerBlock("cherry_chair",
-            new ChairBlock(AbstractBlock.Settings.copy(CHERRY_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
-            ModItemGroups.NEMOS_CARPENTRY);
+            new ChairBlock(AbstractBlock.Settings.copy(CHERRY_PLANKS).nonOpaque()));
     public static final Block CRIMSON_CHAIR = registerBlock("crimson_chair",
-            new ChairBlock(AbstractBlock.Settings.copy(CRIMSON_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
-            ModItemGroups.NEMOS_CARPENTRY);
+            new ChairBlock(AbstractBlock.Settings.copy(CRIMSON_PLANKS).nonOpaque()));
     public static final Block DARK_OAK_CHAIR = registerBlock("dark_oak_chair",
-            new ChairBlock(AbstractBlock.Settings.copy(DARK_OAK_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
-            ModItemGroups.NEMOS_CARPENTRY);
+            new ChairBlock(AbstractBlock.Settings.copy(DARK_OAK_PLANKS).nonOpaque()));
     public static final Block JUNGLE_CHAIR = registerBlock("jungle_chair",
-            new ChairBlock(AbstractBlock.Settings.copy(JUNGLE_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
-            ModItemGroups.NEMOS_CARPENTRY);
+            new ChairBlock(AbstractBlock.Settings.copy(JUNGLE_PLANKS).nonOpaque()));
     public static final Block MANGROVE_CHAIR = registerBlock("mangrove_chair",
-            new ChairBlock(AbstractBlock.Settings.copy(MANGROVE_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
-            ModItemGroups.NEMOS_CARPENTRY);
+            new ChairBlock(AbstractBlock.Settings.copy(MANGROVE_PLANKS).nonOpaque()));
     public static final Block OAK_CHAIR = registerBlock("oak_chair",
-            new ChairBlock(AbstractBlock.Settings.copy(OAK_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
-            ModItemGroups.NEMOS_CARPENTRY);
+            new ChairBlock(AbstractBlock.Settings.copy(OAK_PLANKS).nonOpaque()));
     public static final Block SPRUCE_CHAIR = registerBlock("spruce_chair",
-            new ChairBlock(AbstractBlock.Settings.copy(SPRUCE_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
-            ModItemGroups.NEMOS_CARPENTRY);
+            new ChairBlock(AbstractBlock.Settings.copy(SPRUCE_PLANKS).nonOpaque()));
     public static final Block WARPED_CHAIR = registerBlock("warped_chair",
-            new ChairBlock(AbstractBlock.Settings.copy(WARPED_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
-            ModItemGroups.NEMOS_CARPENTRY);
+            new ChairBlock(AbstractBlock.Settings.copy(WARPED_PLANKS).nonOpaque()));
     public static final Block ACACIA_CHAIR_FELIX = registerBlock("acacia_chair_felix",
             new FelixChairBlock(AbstractBlock.Settings.copy(ACACIA_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
             ModItemGroups.NEMOS_CARPENTRY);

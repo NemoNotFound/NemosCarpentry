@@ -49,6 +49,17 @@ public class ModItems {
     public static final Item OAK_TABLE_THE_CLASSIC = registerBlockItem("oak_table_the_classic", ModBlocks.OAK_TABLE_THE_CLASSIC);
     public static final Item SPRUCE_TABLE_THE_CLASSIC = registerBlockItem("spruce_table_the_classic", ModBlocks.SPRUCE_TABLE_THE_CLASSIC);
     public static final Item WARPED_TABLE_THE_CLASSIC = registerBlockItem("warped_table_the_classic", ModBlocks.WARPED_TABLE_THE_CLASSIC);
+    public static final Item ACACIA_CHAIR = registerBlockItem("acacia_chair", ModBlocks.ACACIA_CHAIR);
+    public static final Item BAMBOO_CHAIR = registerBlockItem("bamboo_chair", ModBlocks.BAMBOO_CHAIR);
+    public static final Item BIRCH_CHAIR = registerBlockItem("birch_chair", ModBlocks.BIRCH_CHAIR);
+    public static final Item CHERRY_CHAIR = registerBlockItem("cherry_chair", ModBlocks.CHERRY_CHAIR);
+    public static final Item CRIMSON_CHAIR = registerBlockItem("crimson_chair", ModBlocks.CRIMSON_CHAIR);
+    public static final Item DARK_OAK_CHAIR = registerBlockItem("dark_oak_chair", ModBlocks.DARK_OAK_CHAIR);
+    public static final Item JUNGLE_CHAIR = registerBlockItem("jungle_chair", ModBlocks.JUNGLE_CHAIR);
+    public static final Item MANGROVE_CHAIR = registerBlockItem("mangrove_chair", ModBlocks.MANGROVE_CHAIR);
+    public static final Item OAK_CHAIR = registerBlockItem("oak_chair", ModBlocks.OAK_CHAIR);
+    public static final Item SPRUCE_CHAIR = registerBlockItem("spruce_chair", ModBlocks.SPRUCE_CHAIR);
+    public static final Item WARPED_CHAIR = registerBlockItem("warped_chair", ModBlocks.WARPED_CHAIR);
     public static final Item OAK_CHAIR_FELIX = registerBlockItem("oak_chair_felix", ModBlocks.OAK_CHAIR_FELIX);
     public static final Item ACACIA_CHAIR_LUKAS = registerBlockItem("acacia_chair_lukas", ModBlocks.ACACIA_CHAIR_LUKAS);
     public static final Item BAMBOO_CHAIR_LUKAS = registerBlockItem("bamboo_chair_lukas", ModBlocks.BAMBOO_CHAIR_LUKAS);

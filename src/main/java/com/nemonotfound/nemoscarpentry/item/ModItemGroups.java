@@ -19,14 +19,14 @@ public class ModItemGroups {
             getItemGroup(NEMOS_CARPENTRY_GROUP_ID);
 
     public static void registerItemGroups() {
-        registerItemGroup(ModItems.IRON_SAW);
+        registerNemosCarpentryItemGroup(ModItems.IRON_SAW);
         registerSeatsItemGroup(ModItems.OAK_CHAIR_FELIX);
         registerTablesItemGroup(ModItems.OAK_TABLE_THE_CLASSIC);
         modifyFunctionalItemGroup();
         modifyToolItemGroup();
     }
 
-    private static void registerItemGroup(Item iconItem) {
+    private static void registerNemosCarpentryItemGroup(Item iconItem) {
         ItemGroup ITEM_GROUP = FabricItemGroup.builder()
                 .icon(() -> new ItemStack(iconItem))
                 .displayName(Text.translatable("Nemo's Carpentry"))
@@ -48,6 +48,17 @@ public class ModItemGroups {
                     entries.add(ModItems.MANGROVE_LADDER);
                     entries.add(ModItems.SPRUCE_LADDER);
                     entries.add(ModItems.WARPED_LADDER);
+                    entries.add(ModItems.ACACIA_CHAIR);
+                    entries.add(ModItems.BAMBOO_CHAIR);
+                    entries.add(ModItems.BIRCH_CHAIR);
+                    entries.add(ModItems.CHERRY_CHAIR);
+                    entries.add(ModItems.CRIMSON_CHAIR);
+                    entries.add(ModItems.DARK_OAK_CHAIR);
+                    entries.add(ModItems.JUNGLE_CHAIR);
+                    entries.add(ModItems.MANGROVE_CHAIR);
+                    entries.add(ModItems.OAK_CHAIR);
+                    entries.add(ModItems.SPRUCE_CHAIR);
+                    entries.add(ModItems.WARPED_CHAIR);
                     entries.add(ModItems.OAK_CHAIR_FELIX);
                     entries.add(ModItems.ACACIA_CHAIR_LUKAS);
                     entries.add(ModItems.BAMBOO_CHAIR_LUKAS);
@@ -82,6 +93,17 @@ public class ModItemGroups {
                 .icon(() -> new ItemStack(iconItem))
                 .displayName(Text.translatable("Seats"))
                 .entries((context, entries) -> {
+                    entries.add(ModItems.ACACIA_CHAIR);
+                    entries.add(ModItems.BAMBOO_CHAIR);
+                    entries.add(ModItems.BIRCH_CHAIR);
+                    entries.add(ModItems.CHERRY_CHAIR);
+                    entries.add(ModItems.CRIMSON_CHAIR);
+                    entries.add(ModItems.DARK_OAK_CHAIR);
+                    entries.add(ModItems.JUNGLE_CHAIR);
+                    entries.add(ModItems.MANGROVE_CHAIR);
+                    entries.add(ModItems.OAK_CHAIR);
+                    entries.add(ModItems.SPRUCE_CHAIR);
+                    entries.add(ModItems.WARPED_CHAIR);
                     entries.add(ModItems.OAK_CHAIR_FELIX);
                     entries.add(ModItems.ACACIA_CHAIR_LUKAS);
                     entries.add(ModItems.BAMBOO_CHAIR_LUKAS);
@@ -135,6 +157,17 @@ public class ModItemGroups {
             content.addBefore(Items.LADDER, ModItems.MANGROVE_LADDER);
             content.addBefore(Items.LADDER, ModItems.SPRUCE_LADDER);
             content.addBefore(Items.LADDER, ModItems.WARPED_LADDER);
+            content.add(ModItems.ACACIA_CHAIR);
+            content.add(ModItems.BAMBOO_CHAIR);
+            content.add(ModItems.BIRCH_CHAIR);
+            content.add(ModItems.CHERRY_CHAIR);
+            content.add(ModItems.CRIMSON_CHAIR);
+            content.add(ModItems.DARK_OAK_CHAIR);
+            content.add(ModItems.JUNGLE_CHAIR);
+            content.add(ModItems.MANGROVE_CHAIR);
+            content.add(ModItems.OAK_CHAIR);
+            content.add(ModItems.SPRUCE_CHAIR);
+            content.add(ModItems.WARPED_CHAIR);
             content.add(ModItems.OAK_CHAIR_FELIX);
             content.add(ModItems.ACACIA_CHAIR_LUKAS);
             content.add(ModItems.BAMBOO_CHAIR_LUKAS);

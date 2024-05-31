@@ -23,17 +23,17 @@ public class ModelGenerator extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
-        generateChairModel(blockStateModelGenerator, Blocks.ACACIA_PLANKS, Blocks.ACACIA_LOG, ModBlocks.ACACIA_CHAIR_LUKAS, ModModels.CHAIR_LUKAS);
-        generateChairModel(blockStateModelGenerator, Blocks.BAMBOO_PLANKS, ModBlocks.BAMBOO_CHAIR_LUKAS, ModModels.CHAIR_LUKAS);
-        generateChairModel(blockStateModelGenerator, Blocks.BIRCH_PLANKS, Blocks.BIRCH_LOG, ModBlocks.BIRCH_CHAIR_LUKAS, ModModels.CHAIR_LUKAS);
-        generateChairModel(blockStateModelGenerator, Blocks.CHERRY_PLANKS, Blocks.CHERRY_LOG, ModBlocks.CHERRY_CHAIR_LUKAS, ModModels.CHAIR_LUKAS);
-        generateChairModel(blockStateModelGenerator, Blocks.CRIMSON_PLANKS, Blocks.CRIMSON_STEM, ModBlocks.CRIMSON_CHAIR_LUKAS, ModModels.CHAIR_LUKAS);
-        generateChairModel(blockStateModelGenerator, Blocks.DARK_OAK_PLANKS, Blocks.DARK_OAK_LOG, ModBlocks.DARK_OAK_CHAIR_LUKAS, ModModels.CHAIR_LUKAS);
-        generateChairModel(blockStateModelGenerator, Blocks.JUNGLE_PLANKS, Blocks.JUNGLE_LOG, ModBlocks.JUNGLE_CHAIR_LUKAS, ModModels.CHAIR_LUKAS);
-        generateChairModel(blockStateModelGenerator, Blocks.MANGROVE_PLANKS, Blocks.MANGROVE_LOG, ModBlocks.MANGROVE_CHAIR_LUKAS, ModModels.CHAIR_LUKAS);
-        generateChairModel(blockStateModelGenerator, Blocks.OAK_PLANKS, Blocks.OAK_LOG, ModBlocks.OAK_CHAIR_LUKAS, ModModels.CHAIR_LUKAS);
-        generateChairModel(blockStateModelGenerator, Blocks.SPRUCE_PLANKS, Blocks.SPRUCE_LOG, ModBlocks.SPRUCE_CHAIR_LUKAS, ModModels.CHAIR_LUKAS);
-        generateChairModel(blockStateModelGenerator, Blocks.WARPED_PLANKS, Blocks.WARPED_STEM, ModBlocks.WARPED_CHAIR_LUKAS, ModModels.CHAIR_LUKAS);
+        generateChairLukasModel(blockStateModelGenerator, Blocks.ACACIA_PLANKS, Blocks.ACACIA_LOG, ModBlocks.ACACIA_CHAIR_LUKAS, ModModels.CHAIR_LUKAS);
+        generateChairLukasModel(blockStateModelGenerator, Blocks.BAMBOO_PLANKS, ModBlocks.BAMBOO_CHAIR_LUKAS, ModModels.CHAIR_LUKAS);
+        generateChairLukasModel(blockStateModelGenerator, Blocks.BIRCH_PLANKS, Blocks.BIRCH_LOG, ModBlocks.BIRCH_CHAIR_LUKAS, ModModels.CHAIR_LUKAS);
+        generateChairLukasModel(blockStateModelGenerator, Blocks.CHERRY_PLANKS, Blocks.CHERRY_LOG, ModBlocks.CHERRY_CHAIR_LUKAS, ModModels.CHAIR_LUKAS);
+        generateChairLukasModel(blockStateModelGenerator, Blocks.CRIMSON_PLANKS, Blocks.CRIMSON_STEM, ModBlocks.CRIMSON_CHAIR_LUKAS, ModModels.CHAIR_LUKAS);
+        generateChairLukasModel(blockStateModelGenerator, Blocks.DARK_OAK_PLANKS, Blocks.DARK_OAK_LOG, ModBlocks.DARK_OAK_CHAIR_LUKAS, ModModels.CHAIR_LUKAS);
+        generateChairLukasModel(blockStateModelGenerator, Blocks.JUNGLE_PLANKS, Blocks.JUNGLE_LOG, ModBlocks.JUNGLE_CHAIR_LUKAS, ModModels.CHAIR_LUKAS);
+        generateChairLukasModel(blockStateModelGenerator, Blocks.MANGROVE_PLANKS, Blocks.MANGROVE_LOG, ModBlocks.MANGROVE_CHAIR_LUKAS, ModModels.CHAIR_LUKAS);
+        generateChairLukasModel(blockStateModelGenerator, Blocks.OAK_PLANKS, Blocks.OAK_LOG, ModBlocks.OAK_CHAIR_LUKAS, ModModels.CHAIR_LUKAS);
+        generateChairLukasModel(blockStateModelGenerator, Blocks.SPRUCE_PLANKS, Blocks.SPRUCE_LOG, ModBlocks.SPRUCE_CHAIR_LUKAS, ModModels.CHAIR_LUKAS);
+        generateChairLukasModel(blockStateModelGenerator, Blocks.WARPED_PLANKS, Blocks.WARPED_STEM, ModBlocks.WARPED_CHAIR_LUKAS, ModModels.CHAIR_LUKAS);
 
         generateParkBenchModel(blockStateModelGenerator, "acacia", Blocks.ACACIA_PLANKS, ModBlocks.ACACIA_PARK_BENCH);
         generateParkBenchModel(blockStateModelGenerator, "bamboo", Blocks.BAMBOO_PLANKS, ModBlocks.BAMBOO_PARK_BENCH);
@@ -47,23 +47,46 @@ public class ModelGenerator extends FabricModelProvider {
         generateParkBenchModel(blockStateModelGenerator, "spruce", Blocks.SPRUCE_PLANKS, ModBlocks.SPRUCE_PARK_BENCH);
         generateParkBenchModel(blockStateModelGenerator, "warped", Blocks.WARPED_PLANKS, ModBlocks.WARPED_PARK_BENCH);
 
-        generateBlockModel(blockStateModelGenerator, ModBlocks.ACACIA_TABLE_THE_CLASSIC, Blocks.ACACIA_PLANKS);
-        generateBlockModel(blockStateModelGenerator, ModBlocks.BAMBOO_TABLE_THE_CLASSIC, Blocks.BAMBOO_PLANKS);
-        generateBlockModel(blockStateModelGenerator, ModBlocks.BIRCH_TABLE_THE_CLASSIC, Blocks.BIRCH_PLANKS);
-        generateBlockModel(blockStateModelGenerator, ModBlocks.CHERRY_TABLE_THE_CLASSIC, Blocks.CHERRY_PLANKS);
-        generateBlockModel(blockStateModelGenerator, ModBlocks.CRIMSON_TABLE_THE_CLASSIC, Blocks.CRIMSON_PLANKS);
-        generateBlockModel(blockStateModelGenerator, ModBlocks.DARK_OAK_TABLE_THE_CLASSIC, Blocks.DARK_OAK_PLANKS);
-        generateBlockModel(blockStateModelGenerator, ModBlocks.JUNGLE_TABLE_THE_CLASSIC, Blocks.JUNGLE_PLANKS);
-        generateBlockModel(blockStateModelGenerator, ModBlocks.MANGROVE_TABLE_THE_CLASSIC, Blocks.MANGROVE_PLANKS);
-        generateBlockModel(blockStateModelGenerator, ModBlocks.OAK_TABLE_THE_CLASSIC, Blocks.OAK_PLANKS);
-        generateBlockModel(blockStateModelGenerator, ModBlocks.SPRUCE_TABLE_THE_CLASSIC, Blocks.SPRUCE_PLANKS);
-        generateBlockModel(blockStateModelGenerator, ModBlocks.WARPED_TABLE_THE_CLASSIC, Blocks.WARPED_PLANKS);
+        generateBlockModel(blockStateModelGenerator, ModBlocks.ACACIA_TABLE_THE_CLASSIC, Blocks.ACACIA_PLANKS, ModModels.TABLE_THE_CLASSIC);
+        generateBlockModel(blockStateModelGenerator, ModBlocks.BAMBOO_TABLE_THE_CLASSIC, Blocks.BAMBOO_PLANKS, ModModels.TABLE_THE_CLASSIC);
+        generateBlockModel(blockStateModelGenerator, ModBlocks.BIRCH_TABLE_THE_CLASSIC, Blocks.BIRCH_PLANKS, ModModels.TABLE_THE_CLASSIC);
+        generateBlockModel(blockStateModelGenerator, ModBlocks.CHERRY_TABLE_THE_CLASSIC, Blocks.CHERRY_PLANKS, ModModels.TABLE_THE_CLASSIC);
+        generateBlockModel(blockStateModelGenerator, ModBlocks.CRIMSON_TABLE_THE_CLASSIC, Blocks.CRIMSON_PLANKS, ModModels.TABLE_THE_CLASSIC);
+        generateBlockModel(blockStateModelGenerator, ModBlocks.DARK_OAK_TABLE_THE_CLASSIC, Blocks.DARK_OAK_PLANKS, ModModels.TABLE_THE_CLASSIC);
+        generateBlockModel(blockStateModelGenerator, ModBlocks.JUNGLE_TABLE_THE_CLASSIC, Blocks.JUNGLE_PLANKS, ModModels.TABLE_THE_CLASSIC);
+        generateBlockModel(blockStateModelGenerator, ModBlocks.MANGROVE_TABLE_THE_CLASSIC, Blocks.MANGROVE_PLANKS, ModModels.TABLE_THE_CLASSIC);
+        generateBlockModel(blockStateModelGenerator, ModBlocks.OAK_TABLE_THE_CLASSIC, Blocks.OAK_PLANKS, ModModels.TABLE_THE_CLASSIC);
+        generateBlockModel(blockStateModelGenerator, ModBlocks.SPRUCE_TABLE_THE_CLASSIC, Blocks.SPRUCE_PLANKS, ModModels.TABLE_THE_CLASSIC);
+        generateBlockModel(blockStateModelGenerator, ModBlocks.WARPED_TABLE_THE_CLASSIC, Blocks.WARPED_PLANKS, ModModels.TABLE_THE_CLASSIC);
+
+        generateChairModel(blockStateModelGenerator, ModBlocks.ACACIA_CHAIR, Blocks.ACACIA_PLANKS, ModModels.CHAIR);
+        generateChairModel(blockStateModelGenerator, ModBlocks.BAMBOO_CHAIR, Blocks.BAMBOO_PLANKS, ModModels.CHAIR);
+        generateChairModel(blockStateModelGenerator, ModBlocks.BIRCH_CHAIR, Blocks.BIRCH_PLANKS, ModModels.CHAIR);
+        generateChairModel(blockStateModelGenerator, ModBlocks.CHERRY_CHAIR, Blocks.CHERRY_PLANKS, ModModels.CHAIR);
+        generateChairModel(blockStateModelGenerator, ModBlocks.CRIMSON_CHAIR, Blocks.CRIMSON_PLANKS, ModModels.CHAIR);
+        generateChairModel(blockStateModelGenerator, ModBlocks.DARK_OAK_CHAIR, Blocks.DARK_OAK_PLANKS, ModModels.CHAIR);
+        generateChairModel(blockStateModelGenerator, ModBlocks.JUNGLE_CHAIR, Blocks.JUNGLE_PLANKS, ModModels.CHAIR);
+        generateChairModel(blockStateModelGenerator, ModBlocks.MANGROVE_CHAIR, Blocks.MANGROVE_PLANKS, ModModels.CHAIR);
+        generateChairModel(blockStateModelGenerator, ModBlocks.OAK_CHAIR, Blocks.OAK_PLANKS, ModModels.CHAIR);
+        generateChairModel(blockStateModelGenerator, ModBlocks.SPRUCE_CHAIR, Blocks.SPRUCE_PLANKS, ModModels.CHAIR);
+        generateChairModel(blockStateModelGenerator, ModBlocks.WARPED_CHAIR, Blocks.WARPED_PLANKS, ModModels.CHAIR);
+
+        generateChairModel(blockStateModelGenerator, ModBlocks.ACACIA_CHAIR_FELIX, Blocks.ACACIA_PLANKS, ModModels.CHAIR_FELIX);
+        generateChairModel(blockStateModelGenerator, ModBlocks.BAMBOO_CHAIR_FELIX, Blocks.BAMBOO_PLANKS, ModModels.CHAIR_FELIX);
+        generateChairModel(blockStateModelGenerator, ModBlocks.BIRCH_CHAIR_FELIX, Blocks.BIRCH_PLANKS, ModModels.CHAIR_FELIX);
+        generateChairModel(blockStateModelGenerator, ModBlocks.CHERRY_CHAIR_FELIX, Blocks.CHERRY_PLANKS, ModModels.CHAIR_FELIX);
+        generateChairModel(blockStateModelGenerator, ModBlocks.CRIMSON_CHAIR_FELIX, Blocks.CRIMSON_PLANKS, ModModels.CHAIR_FELIX);
+        generateChairModel(blockStateModelGenerator, ModBlocks.DARK_OAK_CHAIR_FELIX, Blocks.DARK_OAK_PLANKS, ModModels.CHAIR_FELIX);
+        generateChairModel(blockStateModelGenerator, ModBlocks.JUNGLE_CHAIR_FELIX, Blocks.JUNGLE_PLANKS, ModModels.CHAIR_FELIX);
+        generateChairModel(blockStateModelGenerator, ModBlocks.MANGROVE_CHAIR_FELIX, Blocks.MANGROVE_PLANKS, ModModels.CHAIR_FELIX);
+        generateChairModel(blockStateModelGenerator, ModBlocks.OAK_CHAIR_FELIX, Blocks.OAK_PLANKS, ModModels.CHAIR_FELIX);
+        generateChairModel(blockStateModelGenerator, ModBlocks.SPRUCE_CHAIR_FELIX, Blocks.SPRUCE_PLANKS, ModModels.CHAIR_FELIX);
+        generateChairModel(blockStateModelGenerator, ModBlocks.WARPED_CHAIR_FELIX, Blocks.WARPED_PLANKS, ModModels.CHAIR_FELIX);
     }
 
-    private void generateBlockModel(BlockStateModelGenerator blockStateModelGenerator, Block block, Block textureBlock) {
+    private void generateBlockModel(BlockStateModelGenerator blockStateModelGenerator, Block block, Block textureBlock, Model model) {
         TextureMap textureMap = TextureMap.all(textureBlock).put(TextureKey.PARTICLE, TextureMap.getId(textureBlock));
-        Identifier modelId = ModModels.TABLE_THE_CLASSIC
-                .upload(block, textureMap, blockStateModelGenerator.modelCollector);
+        Identifier modelId = model.upload(block, textureMap, blockStateModelGenerator.modelCollector);
 
         blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier
                 .create(block, BlockStateVariant.create().put(VariantSettings.MODEL, modelId)));
@@ -108,7 +131,7 @@ public class ModelGenerator extends FabricModelProvider {
                 .register(Direction.NORTH, BenchPart.RIGHT, createBlockStateVariant(rightBenchModelId));
     }
 
-    private void generateChairModel(BlockStateModelGenerator blockStateModelGenerator, Block textureBlock, Block chairBlock, Model model) {
+    private void generateChairLukasModel(BlockStateModelGenerator blockStateModelGenerator, Block textureBlock, Block chairBlock, Model model) {
         TextureMap textureMap = TextureMap.all(textureBlock)
                 .put(TextureKey.BOTTOM, TextureMap.getId(textureBlock))
                 .put(TextureKey.PARTICLE, TextureMap.getId(textureBlock));
@@ -117,13 +140,20 @@ public class ModelGenerator extends FabricModelProvider {
         blockStateModelGenerator.blockStateCollector.accept(createChairBlockState(chairBlock, chairModelId));
     }
 
-    private void generateChairModel(BlockStateModelGenerator blockStateModelGenerator, Block textureBlock, Block secondTextureLog, Block chairBlock, Model model) {
+    private void generateChairLukasModel(BlockStateModelGenerator blockStateModelGenerator, Block textureBlock, Block secondTextureLog, Block chairBlock, Model model) {
         TextureMap textureMap = TextureMap.all(textureBlock)
                 .put(TextureKey.BOTTOM, TextureMap.getId(secondTextureLog).withSuffixedPath("_top"))
                 .put(TextureKey.PARTICLE, TextureMap.getId(textureBlock));
         Identifier chairModelId = model.upload(chairBlock, textureMap, blockStateModelGenerator.modelCollector);
 
         blockStateModelGenerator.blockStateCollector.accept(createChairBlockState(chairBlock, chairModelId));
+    }
+
+    private void generateChairModel(BlockStateModelGenerator blockStateModelGenerator, Block block, Block textureBlock, Model model) {
+        TextureMap textureMap = TextureMap.all(textureBlock).put(TextureKey.PARTICLE, TextureMap.getId(textureBlock));
+        Identifier modelId = model.upload(block, textureMap, blockStateModelGenerator.modelCollector);
+
+        blockStateModelGenerator.blockStateCollector.accept(createChairBlockState(block, modelId));
     }
 
     private static BlockStateSupplier createChairBlockState(Block block, Identifier chairModelId) {
