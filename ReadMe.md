@@ -2,10 +2,11 @@
 <br><br>
 
 <p align="center">
-  Nemo's Carpentry brings some furniture to Minecraft, which can be crafted with the Carpenter's Workbench. <br>
+  Nemo's Carpentry brings some furniture to Minecraft, <br>which can be crafted with the Carpenter's Workbench. <br>
   It's every carpenter's dream! <br> 
   At least, so I tell myself...<br><br>
-  I love to create mods for Minecraft and wish to live off it one day, so I hope you like what I do.
+  Big thanks to <a href="https://x.com/LukasDZN_Design">Lukas</a>, who created a few of the models <br><br>
+  I love to create mods for Minecraft and wish to live off it one day, so I hope you like what I do. <br>
   Either way feel free to give me your feedback and suggestions, either in the comments or on my <a href="https://discord.com/invite/yxs9dga">Discord</a> :) 
   <br><br>
   For more information check the <a href="https://www.nemonotfound.com/minecraft-mods/nemos-carpentry">wiki</a>.
