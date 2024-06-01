@@ -82,6 +82,24 @@ public class ModelGenerator extends FabricModelProvider {
         generateChairModel(blockStateModelGenerator, ModBlocks.OAK_CHAIR_FELIX, Blocks.OAK_PLANKS, ModModels.CHAIR_FELIX);
         generateChairModel(blockStateModelGenerator, ModBlocks.SPRUCE_CHAIR_FELIX, Blocks.SPRUCE_PLANKS, ModModels.CHAIR_FELIX);
         generateChairModel(blockStateModelGenerator, ModBlocks.WARPED_CHAIR_FELIX, Blocks.WARPED_PLANKS, ModModels.CHAIR_FELIX);
+
+        generateLadderBlockModel(ModBlocks.ACACIA_LADDER, blockStateModelGenerator);
+        generateLadderBlockModel(ModBlocks.BAMBOO_LADDER, blockStateModelGenerator);
+        generateLadderBlockModel(ModBlocks.BOUND_BAMBOO_LADDER, blockStateModelGenerator);
+        generateLadderBlockModel(ModBlocks.BIRCH_LADDER, blockStateModelGenerator);
+        generateLadderBlockModel(ModBlocks.CHERRY_LADDER, blockStateModelGenerator);
+        generateLadderBlockModel(ModBlocks.CRIMSON_LADDER, blockStateModelGenerator);
+        generateLadderBlockModel(ModBlocks.DARK_OAK_LADDER, blockStateModelGenerator);
+        generateLadderBlockModel(ModBlocks.JUNGLE_LADDER, blockStateModelGenerator);
+        generateLadderBlockModel(ModBlocks.MANGROVE_LADDER, blockStateModelGenerator);
+        generateLadderBlockModel(ModBlocks.SPRUCE_LADDER, blockStateModelGenerator);
+        generateLadderBlockModel(ModBlocks.WARPED_LADDER, blockStateModelGenerator);
+    }
+
+    private void generateLadderBlockModel(Block block, BlockStateModelGenerator blockStateModelGenerator) {
+        TextureMap textureMap = TextureMap.texture(block).put(TextureKey.PARTICLE, TextureMap.getId(block));
+        ModModels.LADDER.upload(block, textureMap, blockStateModelGenerator.modelCollector);
+        blockStateModelGenerator.registerNorthDefaultHorizontalRotation(block);
     }
 
     private void generateBlockModel(BlockStateModelGenerator blockStateModelGenerator, Block block, Block textureBlock, Model model) {
@@ -137,7 +155,7 @@ public class ModelGenerator extends FabricModelProvider {
                 .put(TextureKey.PARTICLE, TextureMap.getId(textureBlock));
         Identifier chairModelId = model.upload(chairBlock, textureMap, blockStateModelGenerator.modelCollector);
 
-        blockStateModelGenerator.blockStateCollector.accept(createChairBlockState(chairBlock, chairModelId));
+        blockStateModelGenerator.blockStateCollector.accept(createDirectionalBlockState(chairBlock, chairModelId));
     }
 
     private void generateChairLukasModel(BlockStateModelGenerator blockStateModelGenerator, Block textureBlock, Block secondTextureLog, Block chairBlock, Model model) {
@@ -146,30 +164,30 @@ public class ModelGenerator extends FabricModelProvider {
                 .put(TextureKey.PARTICLE, TextureMap.getId(textureBlock));
         Identifier chairModelId = model.upload(chairBlock, textureMap, blockStateModelGenerator.modelCollector);
 
-        blockStateModelGenerator.blockStateCollector.accept(createChairBlockState(chairBlock, chairModelId));
+        blockStateModelGenerator.blockStateCollector.accept(createDirectionalBlockState(chairBlock, chairModelId));
     }
 
     private void generateChairModel(BlockStateModelGenerator blockStateModelGenerator, Block block, Block textureBlock, Model model) {
         TextureMap textureMap = TextureMap.all(textureBlock).put(TextureKey.PARTICLE, TextureMap.getId(textureBlock));
         Identifier modelId = model.upload(block, textureMap, blockStateModelGenerator.modelCollector);
 
-        blockStateModelGenerator.blockStateCollector.accept(createChairBlockState(block, modelId));
+        blockStateModelGenerator.blockStateCollector.accept(createDirectionalBlockState(block, modelId));
     }
 
-    private static BlockStateSupplier createChairBlockState(Block block, Identifier chairModelId) {
+    private static BlockStateSupplier createDirectionalBlockState(Block block, Identifier modelId) {
         BlockStateVariantMap.SingleProperty<Direction> blockStateVariantMap = BlockStateVariantMap
                 .create(Properties.HORIZONTAL_FACING);
 
         return VariantsBlockStateSupplier.create(block)
-                .coordinate(fillChairVariantMap(blockStateVariantMap, chairModelId));
+                .coordinate(fillDirectionalVariantMap(blockStateVariantMap, modelId));
     }
 
-    private static BlockStateVariantMap.SingleProperty<Direction> fillChairVariantMap
-            (BlockStateVariantMap.SingleProperty<Direction> blockStateVariantMap, Identifier chairModelId) {
-        return blockStateVariantMap.register(Direction.EAST, createRotatedBlockStateVariant(chairModelId, VariantSettings.Rotation.R90))
-                .register(Direction.SOUTH, createRotatedBlockStateVariant(chairModelId, VariantSettings.Rotation.R180))
-                .register(Direction.WEST, createRotatedBlockStateVariant(chairModelId, VariantSettings.Rotation.R270))
-                .register(Direction.NORTH, createBlockStateVariant(chairModelId));
+    private static BlockStateVariantMap.SingleProperty<Direction> fillDirectionalVariantMap
+            (BlockStateVariantMap.SingleProperty<Direction> blockStateVariantMap, Identifier modelId) {
+        return blockStateVariantMap.register(Direction.EAST, createRotatedBlockStateVariant(modelId, VariantSettings.Rotation.R90))
+                .register(Direction.SOUTH, createRotatedBlockStateVariant(modelId, VariantSettings.Rotation.R180))
+                .register(Direction.WEST, createRotatedBlockStateVariant(modelId, VariantSettings.Rotation.R270))
+                .register(Direction.NORTH, createBlockStateVariant(modelId));
     }
 
     private static BlockStateVariant createRotatedBlockStateVariant(Identifier modelId, VariantSettings.Rotation rotation) {
@@ -184,6 +202,18 @@ public class ModelGenerator extends FabricModelProvider {
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
+        registerGeneratedBlockModel(ModBlocks.ACACIA_LADDER, itemModelGenerator);
+        registerGeneratedBlockModel(ModBlocks.BAMBOO_LADDER, itemModelGenerator);
+        registerGeneratedBlockModel(ModBlocks.BOUND_BAMBOO_LADDER, itemModelGenerator);
+        registerGeneratedBlockModel(ModBlocks.BIRCH_LADDER, itemModelGenerator);
+        registerGeneratedBlockModel(ModBlocks.CHERRY_LADDER, itemModelGenerator);
+        registerGeneratedBlockModel(ModBlocks.CRIMSON_LADDER, itemModelGenerator);
+        registerGeneratedBlockModel(ModBlocks.DARK_OAK_LADDER, itemModelGenerator);
+        registerGeneratedBlockModel(ModBlocks.JUNGLE_LADDER, itemModelGenerator);
+        registerGeneratedBlockModel(ModBlocks.MANGROVE_LADDER, itemModelGenerator);
+        registerGeneratedBlockModel(ModBlocks.SPRUCE_LADDER, itemModelGenerator);
+        registerGeneratedBlockModel(ModBlocks.WARPED_LADDER, itemModelGenerator);
+
         itemModelGenerator.register(ModBlocks.ACACIA_CAMPFIRE.asItem(), Models.GENERATED);
         itemModelGenerator.register(ModBlocks.BIRCH_CAMPFIRE.asItem(), Models.GENERATED);
         itemModelGenerator.register(ModBlocks.CHERRY_CAMPFIRE.asItem(), Models.GENERATED);
@@ -221,5 +251,9 @@ public class ModelGenerator extends FabricModelProvider {
         itemModelGenerator.register(ModItems.GOLDEN_SAW, Models.HANDHELD);
         itemModelGenerator.register(ModItems.DIAMOND_SAW, Models.HANDHELD);
         itemModelGenerator.register(ModItems.NETHERITE_SAW, Models.HANDHELD);
+    }
+
+    private void registerGeneratedBlockModel(Block block, ItemModelGenerator itemModelGenerator) {
+        Models.GENERATED.upload(ModelIds.getItemModelId(block.asItem()), TextureMap.layer0(block), itemModelGenerator.writer);
     }
 }
