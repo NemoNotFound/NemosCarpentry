@@ -15,6 +15,7 @@ import static com.nemonotfound.nemoscarpentry.NemosCarpentry.MOD_ID;
 
 public class ModItems {
 
+    public static final Item CARPENTERS_WORKBENCH = registerBlockItem("carpenters_workbench", ModBlocks.CARPENTERS_WORKBENCH);
     public static final Item WOODEN_SAW = registerItem("wooden_saw", new SawItem(ToolMaterials.WOOD,
             new Item.Settings()));
     public static final Item STONE_SAW = registerItem("stone_saw", new SawItem(ToolMaterials.STONE,
@@ -60,7 +61,17 @@ public class ModItems {
     public static final Item OAK_CHAIR = registerBlockItem("oak_chair", ModBlocks.OAK_CHAIR);
     public static final Item SPRUCE_CHAIR = registerBlockItem("spruce_chair", ModBlocks.SPRUCE_CHAIR);
     public static final Item WARPED_CHAIR = registerBlockItem("warped_chair", ModBlocks.WARPED_CHAIR);
+    public static final Item ACACIA_CHAIR_FELIX = registerBlockItem("acacia_chair_felix", ModBlocks.ACACIA_CHAIR_FELIX);
+    public static final Item BAMBOO_CHAIR_FELIX = registerBlockItem("bamboo_chair_felix", ModBlocks.BAMBOO_CHAIR_FELIX);
+    public static final Item BIRCH_CHAIR_FELIX = registerBlockItem("birch_chair_felix", ModBlocks.BIRCH_CHAIR_FELIX);
+    public static final Item CHERRY_CHAIR_FELIX = registerBlockItem("cherry_chair_felix", ModBlocks.CHERRY_CHAIR_FELIX);
+    public static final Item CRIMSON_CHAIR_FELIX = registerBlockItem("crimson_chair_felix", ModBlocks.CRIMSON_CHAIR_FELIX);
+    public static final Item DARK_OAK_CHAIR_FELIX = registerBlockItem("dark_oak_chair_felix", ModBlocks.DARK_OAK_CHAIR_FELIX);
+    public static final Item JUNGLE_CHAIR_FELIX = registerBlockItem("jungle_chair_felix", ModBlocks.JUNGLE_CHAIR_FELIX);
+    public static final Item MANGROVE_CHAIR_FELIX = registerBlockItem("mangrove_chair_felix", ModBlocks.MANGROVE_CHAIR_FELIX);
     public static final Item OAK_CHAIR_FELIX = registerBlockItem("oak_chair_felix", ModBlocks.OAK_CHAIR_FELIX);
+    public static final Item SPRUCE_CHAIR_FELIX = registerBlockItem("spruce_chair_felix", ModBlocks.SPRUCE_CHAIR_FELIX);
+    public static final Item WARPED_CHAIR_FELIX = registerBlockItem("warped_chair_felix", ModBlocks.WARPED_CHAIR_FELIX);
     public static final Item ACACIA_CHAIR_LUKAS = registerBlockItem("acacia_chair_lukas", ModBlocks.ACACIA_CHAIR_LUKAS);
     public static final Item BAMBOO_CHAIR_LUKAS = registerBlockItem("bamboo_chair_lukas", ModBlocks.BAMBOO_CHAIR_LUKAS);
     public static final Item BIRCH_CHAIR_LUKAS = registerBlockItem("birch_chair_lukas", ModBlocks.BIRCH_CHAIR_LUKAS);
@@ -72,6 +83,45 @@ public class ModItems {
     public static final Item OAK_CHAIR_LUKAS = registerBlockItem("oak_chair_lukas", ModBlocks.OAK_CHAIR_LUKAS);
     public static final Item SPRUCE_CHAIR_LUKAS = registerBlockItem("spruce_chair_lukas", ModBlocks.SPRUCE_CHAIR_LUKAS);
     public static final Item WARPED_CHAIR_LUKAS = registerBlockItem("warped_chair_lukas", ModBlocks.WARPED_CHAIR_LUKAS);
+    public static final Item ACACIA_PARK_BENCH = registerBlockItem("acacia_park_bench", ModBlocks.ACACIA_PARK_BENCH);
+    public static final Item BAMBOO_PARK_BENCH = registerBlockItem("bamboo_park_bench", ModBlocks.BAMBOO_PARK_BENCH);
+    public static final Item BIRCH_PARK_BENCH = registerBlockItem("birch_park_bench", ModBlocks.BIRCH_PARK_BENCH);
+    public static final Item CHERRY_PARK_BENCH = registerBlockItem("cherry_park_bench", ModBlocks.CHERRY_PARK_BENCH);
+    public static final Item CRIMSON_PARK_BENCH = registerBlockItem("crimson_park_bench", ModBlocks.CRIMSON_PARK_BENCH);
+    public static final Item DARK_OAK_PARK_BENCH = registerBlockItem("dark_oak_park_bench", ModBlocks.DARK_OAK_PARK_BENCH);
+    public static final Item JUNGLE_PARK_BENCH = registerBlockItem("jungle_park_bench", ModBlocks.JUNGLE_PARK_BENCH);
+    public static final Item MANGROVE_PARK_BENCH = registerBlockItem("mangrove_park_bench", ModBlocks.MANGROVE_PARK_BENCH);
+    public static final Item OAK_PARK_BENCH = registerBlockItem("oak_park_bench", ModBlocks.OAK_PARK_BENCH);
+    public static final Item SPRUCE_PARK_BENCH = registerBlockItem("spruce_park_bench", ModBlocks.SPRUCE_PARK_BENCH);
+    public static final Item WARPED_PARK_BENCH = registerBlockItem("warped_park_bench", ModBlocks.WARPED_PARK_BENCH);
+    public static final Item ACACIA_LOG_SEAT = registerBlockItem("acacia_log_seat", ModBlocks.ACACIA_LOG_SEAT);
+    public static final Item BIRCH_LOG_SEAT = registerBlockItem("birch_log_seat", ModBlocks.BIRCH_LOG_SEAT);
+    public static final Item CHERRY_LOG_SEAT = registerBlockItem("cherry_log_seat", ModBlocks.CHERRY_LOG_SEAT);
+    public static final Item CRIMSON_STEM_SEAT = registerBlockItem("crimson_stem_seat", ModBlocks.CRIMSON_STEM_SEAT);
+    public static final Item DARK_OAK_LOG_SEAT = registerBlockItem("dark_oak_log_seat", ModBlocks.DARK_OAK_LOG_SEAT);
+    public static final Item JUNGLE_LOG_SEAT = registerBlockItem("jungle_log_seat", ModBlocks.JUNGLE_LOG_SEAT);
+    public static final Item MANGROVE_LOG_SEAT = registerBlockItem("mangrove_log_seat", ModBlocks.MANGROVE_LOG_SEAT);
+    public static final Item OAK_LOG_SEAT = registerBlockItem("oak_log_seat", ModBlocks.OAK_LOG_SEAT);
+    public static final Item SPRUCE_LOG_SEAT = registerBlockItem("spruce_log_seat", ModBlocks.SPRUCE_LOG_SEAT);
+    public static final Item WARPED_STEM_SEAT = registerBlockItem("warped_stem_seat", ModBlocks.WARPED_STEM_SEAT);
+    public static final Item ACACIA_CAMPFIRE = registerBlockItem("acacia_campfire", ModBlocks.ACACIA_CAMPFIRE);
+    public static final Item BIRCH_CAMPFIRE = registerBlockItem("birch_campfire", ModBlocks.BIRCH_CAMPFIRE);
+    public static final Item CHERRY_CAMPFIRE = registerBlockItem("cherry_campfire", ModBlocks.CHERRY_CAMPFIRE);
+    public static final Item CRIMSON_CAMPFIRE = registerBlockItem("crimson_campfire", ModBlocks.CRIMSON_CAMPFIRE);
+    public static final Item DARK_OAK_CAMPFIRE = registerBlockItem("dark_oak_campfire", ModBlocks.DARK_OAK_CAMPFIRE);
+    public static final Item JUNGLE_CAMPFIRE = registerBlockItem("jungle_campfire", ModBlocks.JUNGLE_CAMPFIRE);
+    public static final Item MANGROVE_CAMPFIRE = registerBlockItem("mangrove_campfire", ModBlocks.MANGROVE_CAMPFIRE);
+    public static final Item SPRUCE_CAMPFIRE = registerBlockItem("spruce_campfire", ModBlocks.SPRUCE_CAMPFIRE);
+    public static final Item WARPED_CAMPFIRE = registerBlockItem("warped_campfire", ModBlocks.WARPED_CAMPFIRE);
+    public static final Item ACACIA_SOUL_CAMPFIRE = registerBlockItem("acacia_soul_campfire", ModBlocks.ACACIA_SOUL_CAMPFIRE);
+    public static final Item BIRCH_SOUL_CAMPFIRE = registerBlockItem("birch_soul_campfire", ModBlocks.BIRCH_SOUL_CAMPFIRE);
+    public static final Item CHERRY_SOUL_CAMPFIRE = registerBlockItem("cherry_soul_campfire", ModBlocks.CHERRY_SOUL_CAMPFIRE);
+    public static final Item CRIMSON_SOUL_CAMPFIRE = registerBlockItem("crimson_soul_campfire", ModBlocks.CRIMSON_SOUL_CAMPFIRE);
+    public static final Item DARK_OAK_SOUL_CAMPFIRE = registerBlockItem("dark_oak_soul_campfire", ModBlocks.DARK_OAK_SOUL_CAMPFIRE);
+    public static final Item JUNGLE_SOUL_CAMPFIRE = registerBlockItem("jungle_soul_campfire", ModBlocks.JUNGLE_SOUL_CAMPFIRE);
+    public static final Item MANGROVE_SOUL_CAMPFIRE = registerBlockItem("mangrove_soul_campfire", ModBlocks.MANGROVE_SOUL_CAMPFIRE);
+    public static final Item SPRUCE_SOUL_CAMPFIRE = registerBlockItem("spruce_soul_campfire", ModBlocks.SPRUCE_SOUL_CAMPFIRE);
+    public static final Item WARPED_SOUL_CAMPFIRE = registerBlockItem("warped_soul_campfire", ModBlocks.WARPED_SOUL_CAMPFIRE);
     public static final Item ACACIA_GLASS_DOOR_FRAME = registerItem("acacia_glass_door_frame",
             new Item(new Item.Settings()), ModItemGroups.NEMOS_CARPENTRY);
     public static final Item BAMBOO_GLASS_DOOR_FRAME = registerItem("bamboo_glass_door_frame",

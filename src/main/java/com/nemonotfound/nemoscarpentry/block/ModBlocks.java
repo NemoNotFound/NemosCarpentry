@@ -89,37 +89,27 @@ public class ModBlocks {
     public static final Block WARPED_CHAIR = registerBlock("warped_chair",
             new ChairBlock(AbstractBlock.Settings.copy(WARPED_PLANKS).nonOpaque()));
     public static final Block ACACIA_CHAIR_FELIX = registerBlock("acacia_chair_felix",
-            new FelixChairBlock(AbstractBlock.Settings.copy(ACACIA_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
-            ModItemGroups.NEMOS_CARPENTRY);
+            new FelixChairBlock(AbstractBlock.Settings.copy(ACACIA_PLANKS).nonOpaque()));
     public static final Block BAMBOO_CHAIR_FELIX = registerBlock("bamboo_chair_felix",
-            new FelixChairBlock(AbstractBlock.Settings.copy(BAMBOO_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
-            ModItemGroups.NEMOS_CARPENTRY);
+            new FelixChairBlock(AbstractBlock.Settings.copy(BAMBOO_PLANKS).nonOpaque()));
     public static final Block BIRCH_CHAIR_FELIX = registerBlock("birch_chair_felix",
-            new FelixChairBlock(AbstractBlock.Settings.copy(BIRCH_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
-            ModItemGroups.NEMOS_CARPENTRY);
+            new FelixChairBlock(AbstractBlock.Settings.copy(BIRCH_PLANKS).nonOpaque()));
     public static final Block CHERRY_CHAIR_FELIX = registerBlock("cherry_chair_felix",
-            new FelixChairBlock(AbstractBlock.Settings.copy(CHERRY_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
-            ModItemGroups.NEMOS_CARPENTRY);
+            new FelixChairBlock(AbstractBlock.Settings.copy(CHERRY_PLANKS).nonOpaque()));
     public static final Block CRIMSON_CHAIR_FELIX = registerBlock("crimson_chair_felix",
-            new FelixChairBlock(AbstractBlock.Settings.copy(CRIMSON_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
-            ModItemGroups.NEMOS_CARPENTRY);
+            new FelixChairBlock(AbstractBlock.Settings.copy(CRIMSON_PLANKS).nonOpaque()));
     public static final Block DARK_OAK_CHAIR_FELIX = registerBlock("dark_oak_chair_felix",
-            new FelixChairBlock(AbstractBlock.Settings.copy(DARK_OAK_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
-            ModItemGroups.NEMOS_CARPENTRY);
+            new FelixChairBlock(AbstractBlock.Settings.copy(DARK_OAK_PLANKS).nonOpaque()));
     public static final Block JUNGLE_CHAIR_FELIX = registerBlock("jungle_chair_felix",
-            new FelixChairBlock(AbstractBlock.Settings.copy(JUNGLE_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
-            ModItemGroups.NEMOS_CARPENTRY);
+            new FelixChairBlock(AbstractBlock.Settings.copy(JUNGLE_PLANKS).nonOpaque()));
     public static final Block MANGROVE_CHAIR_FELIX = registerBlock("mangrove_chair_felix",
-            new FelixChairBlock(AbstractBlock.Settings.copy(MANGROVE_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
-            ModItemGroups.NEMOS_CARPENTRY);
+            new FelixChairBlock(AbstractBlock.Settings.copy(MANGROVE_PLANKS).nonOpaque()));
     public static final Block OAK_CHAIR_FELIX = registerBlock("oak_chair_felix",
             new FelixChairBlock(AbstractBlock.Settings.copy(OAK_PLANKS).nonOpaque()));
     public static final Block SPRUCE_CHAIR_FELIX = registerBlock("spruce_chair_felix",
-            new FelixChairBlock(AbstractBlock.Settings.copy(SPRUCE_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
-            ModItemGroups.NEMOS_CARPENTRY);
+            new FelixChairBlock(AbstractBlock.Settings.copy(SPRUCE_PLANKS).nonOpaque()));
     public static final Block WARPED_CHAIR_FELIX = registerBlock("warped_chair_felix",
-            new FelixChairBlock(AbstractBlock.Settings.copy(WARPED_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
-            ModItemGroups.NEMOS_CARPENTRY);
+            new FelixChairBlock(AbstractBlock.Settings.copy(WARPED_PLANKS).nonOpaque()));
     public static final Block ACACIA_CHAIR_LUKAS = registerBlock("acacia_chair_lukas",
             new LukasChairBlock(AbstractBlock.Settings.copy(ACACIA_PLANKS).nonOpaque()));
     public static final Block BAMBOO_CHAIR_LUKAS = registerBlock("bamboo_chair_lukas",
@@ -143,74 +133,53 @@ public class ModBlocks {
     public static final Block WARPED_CHAIR_LUKAS = registerBlock("warped_chair_lukas",
             new LukasChairBlock(AbstractBlock.Settings.copy(WARPED_PLANKS).nonOpaque()));
     public static final Block ACACIA_LOG_SEAT = registerBlock("acacia_log_seat",
-            new LogSeat(AbstractBlock.Settings.copy(ACACIA_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
-            ModItemGroups.NEMOS_CARPENTRY);
+            new LogSeat(AbstractBlock.Settings.copy(ACACIA_PLANKS).nonOpaque()));
     public static final Block BIRCH_LOG_SEAT = registerBlock("birch_log_seat",
-            new LogSeat(AbstractBlock.Settings.copy(BIRCH_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
-            ModItemGroups.NEMOS_CARPENTRY);
+            new LogSeat(AbstractBlock.Settings.copy(BIRCH_PLANKS).nonOpaque()));
     public static final Block CHERRY_LOG_SEAT = registerBlock("cherry_log_seat",
-            new LogSeat(AbstractBlock.Settings.copy(CHERRY_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
-            ModItemGroups.NEMOS_CARPENTRY);
+            new LogSeat(AbstractBlock.Settings.copy(CHERRY_PLANKS).nonOpaque()));
     public static final Block CRIMSON_STEM_SEAT = registerBlock("crimson_stem_seat",
-            new LogSeat(AbstractBlock.Settings.copy(CRIMSON_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
-            ModItemGroups.NEMOS_CARPENTRY);
+            new LogSeat(AbstractBlock.Settings.copy(CRIMSON_PLANKS).nonOpaque()));
     public static final Block DARK_OAK_LOG_SEAT = registerBlock("dark_oak_log_seat",
-            new LogSeat(AbstractBlock.Settings.copy(DARK_OAK_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
-            ModItemGroups.NEMOS_CARPENTRY);
+            new LogSeat(AbstractBlock.Settings.copy(DARK_OAK_PLANKS).nonOpaque()));
     public static final Block JUNGLE_LOG_SEAT = registerBlock("jungle_log_seat",
-            new LogSeat(AbstractBlock.Settings.copy(JUNGLE_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
-            ModItemGroups.NEMOS_CARPENTRY);
+            new LogSeat(AbstractBlock.Settings.copy(JUNGLE_PLANKS).nonOpaque()));
     public static final Block MANGROVE_LOG_SEAT = registerBlock("mangrove_log_seat",
-            new LogSeat(AbstractBlock.Settings.copy(MANGROVE_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
-            ModItemGroups.NEMOS_CARPENTRY);
+            new LogSeat(AbstractBlock.Settings.copy(MANGROVE_PLANKS).nonOpaque()));
     public static final Block OAK_LOG_SEAT = registerBlock("oak_log_seat",
-            new LogSeat(AbstractBlock.Settings.copy(OAK_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
-            ModItemGroups.NEMOS_CARPENTRY);
+            new LogSeat(AbstractBlock.Settings.copy(OAK_PLANKS).nonOpaque()));
     public static final Block SPRUCE_LOG_SEAT = registerBlock("spruce_log_seat",
-            new LogSeat(AbstractBlock.Settings.copy(SPRUCE_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
-            ModItemGroups.NEMOS_CARPENTRY);
+            new LogSeat(AbstractBlock.Settings.copy(SPRUCE_PLANKS).nonOpaque()));
     public static final Block WARPED_STEM_SEAT = registerBlock("warped_stem_seat",
-            new LogSeat(AbstractBlock.Settings.copy(WARPED_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
-            ModItemGroups.NEMOS_CARPENTRY);
+            new LogSeat(AbstractBlock.Settings.copy(WARPED_PLANKS).nonOpaque()));
     public static final Block ACACIA_PARK_BENCH = registerBlock("acacia_park_bench",
-            new ParkBenchBlock(AbstractBlock.Settings.copy(ACACIA_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
-            ModItemGroups.NEMOS_CARPENTRY);
+            new ParkBenchBlock(AbstractBlock.Settings.copy(ACACIA_PLANKS).nonOpaque()));
     public static final Block BAMBOO_PARK_BENCH = registerBlock("bamboo_park_bench",
-            new ParkBenchBlock(AbstractBlock.Settings.copy(BAMBOO_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
-            ModItemGroups.NEMOS_CARPENTRY);
+            new ParkBenchBlock(AbstractBlock.Settings.copy(BAMBOO_PLANKS).nonOpaque()));
     public static final Block BIRCH_PARK_BENCH = registerBlock("birch_park_bench",
-            new ParkBenchBlock(AbstractBlock.Settings.copy(BIRCH_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
-            ModItemGroups.NEMOS_CARPENTRY);
+            new ParkBenchBlock(AbstractBlock.Settings.copy(BIRCH_PLANKS).nonOpaque()));
     public static final Block CHERRY_PARK_BENCH = registerBlock("cherry_park_bench",
-            new ParkBenchBlock(AbstractBlock.Settings.copy(CHERRY_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
-            ModItemGroups.NEMOS_CARPENTRY);
+            new ParkBenchBlock(AbstractBlock.Settings.copy(CHERRY_PLANKS).nonOpaque()));
     public static final Block CRIMSON_PARK_BENCH = registerBlock("crimson_park_bench",
-            new ParkBenchBlock(AbstractBlock.Settings.copy(CRIMSON_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
-            ModItemGroups.NEMOS_CARPENTRY);
+            new ParkBenchBlock(AbstractBlock.Settings.copy(CRIMSON_PLANKS).nonOpaque()));
     public static final Block DARK_OAK_PARK_BENCH = registerBlock("dark_oak_park_bench",
-            new ParkBenchBlock(AbstractBlock.Settings.copy(DARK_OAK_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
-            ModItemGroups.NEMOS_CARPENTRY);
+            new ParkBenchBlock(AbstractBlock.Settings.copy(DARK_OAK_PLANKS).nonOpaque()));
     public static final Block JUNGLE_PARK_BENCH = registerBlock("jungle_park_bench",
-            new ParkBenchBlock(AbstractBlock.Settings.copy(JUNGLE_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
-            ModItemGroups.NEMOS_CARPENTRY);
+            new ParkBenchBlock(AbstractBlock.Settings.copy(JUNGLE_PLANKS).nonOpaque()));
     public static final Block MANGROVE_PARK_BENCH = registerBlock("mangrove_park_bench",
-            new ParkBenchBlock(AbstractBlock.Settings.copy(MANGROVE_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
-            ModItemGroups.NEMOS_CARPENTRY);
+            new ParkBenchBlock(AbstractBlock.Settings.copy(MANGROVE_PLANKS).nonOpaque()));
     public static final Block OAK_PARK_BENCH = registerBlock("oak_park_bench",
-            new ParkBenchBlock(AbstractBlock.Settings.copy(OAK_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
-            ModItemGroups.NEMOS_CARPENTRY);
+            new ParkBenchBlock(AbstractBlock.Settings.copy(OAK_PLANKS).nonOpaque()));
     public static final Block SPRUCE_PARK_BENCH = registerBlock("spruce_park_bench",
-            new ParkBenchBlock(AbstractBlock.Settings.copy(SPRUCE_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
-            ModItemGroups.NEMOS_CARPENTRY);
+            new ParkBenchBlock(AbstractBlock.Settings.copy(SPRUCE_PLANKS).nonOpaque()));
     public static final Block WARPED_PARK_BENCH = registerBlock("warped_park_bench",
-            new ParkBenchBlock(AbstractBlock.Settings.copy(WARPED_PLANKS).nonOpaque()), ItemGroups.FUNCTIONAL,
-            ModItemGroups.NEMOS_CARPENTRY);
+            new ParkBenchBlock(AbstractBlock.Settings.copy(WARPED_PLANKS).nonOpaque()));
     public static final Block CARPENTERS_WORKBENCH = registerBlock("carpenters_workbench", new CarpentersWorkbenchBlock(AbstractBlock.Settings.create()
             .mapColor(MapColor.OAK_TAN)
             .instrument(Instrument.BASS)
             .strength(2.5f)
             .sounds(BlockSoundGroup.WOOD)
-            .burnable()), ItemGroups.FUNCTIONAL, ModItemGroups.NEMOS_CARPENTRY);
+            .burnable()));
     public static final Block ACACIA_GLASS_DOOR = registerBlock("acacia_glass_door", new DoorBlock(BlockSetType.ACACIA, AbstractBlock.Settings.create()
                     .mapColor(ACACIA_PLANKS.getDefaultMapColor()).instrument(Instrument.BASS)
                     .strength(3.0f).nonOpaque().burnable().pistonBehavior(PistonBehavior.DESTROY)),
@@ -962,93 +931,75 @@ public class ModBlocks {
     public static final Block ACACIA_CAMPFIRE = registerBlock("acacia_campfire",
             new CustomCampfireBlock(true, 1, AbstractBlock.Settings.create().mapColor(ACACIA_LOG.getDefaultMapColor())
                     .instrument(Instrument.BASS).strength(2.0f).sounds(BlockSoundGroup.WOOD)
-                    .luminance(Blocks.createLightLevelFromLitBlockState(15)).nonOpaque().burnable()),
-            ItemGroups.FUNCTIONAL, ModItemGroups.NEMOS_CARPENTRY);
+                    .luminance(Blocks.createLightLevelFromLitBlockState(15)).nonOpaque().burnable()));
     public static final Block BIRCH_CAMPFIRE = registerBlock("birch_campfire",
             new CustomCampfireBlock(true, 1, AbstractBlock.Settings.create().mapColor(BIRCH_LOG.getDefaultMapColor())
                     .instrument(Instrument.BASS).strength(2.0f).sounds(BlockSoundGroup.WOOD)
-                    .luminance(Blocks.createLightLevelFromLitBlockState(15)).nonOpaque().burnable()),
-            ItemGroups.FUNCTIONAL, ModItemGroups.NEMOS_CARPENTRY);
+                    .luminance(Blocks.createLightLevelFromLitBlockState(15)).nonOpaque().burnable()));
     public static final Block CHERRY_CAMPFIRE = registerBlock("cherry_campfire",
             new CustomCampfireBlock(true, 1, AbstractBlock.Settings.create().mapColor(CHERRY_LOG.getDefaultMapColor())
                     .instrument(Instrument.BASS).strength(2.0f).sounds(BlockSoundGroup.WOOD)
-                    .luminance(Blocks.createLightLevelFromLitBlockState(15)).nonOpaque().burnable()),
-            ItemGroups.FUNCTIONAL, ModItemGroups.NEMOS_CARPENTRY);
+                    .luminance(Blocks.createLightLevelFromLitBlockState(15)).nonOpaque().burnable()));
     public static final Block CRIMSON_CAMPFIRE = registerBlock("crimson_campfire",
             new CustomCampfireBlock(true, 1, AbstractBlock.Settings.create().mapColor(CRIMSON_STEM.getDefaultMapColor())
                     .instrument(Instrument.BASS).strength(2.0f).sounds(BlockSoundGroup.WOOD)
-                    .luminance(Blocks.createLightLevelFromLitBlockState(15)).nonOpaque().burnable()),
-            ItemGroups.FUNCTIONAL, ModItemGroups.NEMOS_CARPENTRY);
+                    .luminance(Blocks.createLightLevelFromLitBlockState(15)).nonOpaque().burnable()));
     public static final Block DARK_OAK_CAMPFIRE = registerBlock("dark_oak_campfire",
             new CustomCampfireBlock(true, 1, AbstractBlock.Settings.create().mapColor(DARK_OAK_LOG.getDefaultMapColor())
                     .instrument(Instrument.BASS).strength(2.0f).sounds(BlockSoundGroup.WOOD)
-                    .luminance(Blocks.createLightLevelFromLitBlockState(15)).nonOpaque().burnable()),
-            ItemGroups.FUNCTIONAL, ModItemGroups.NEMOS_CARPENTRY);
+                    .luminance(Blocks.createLightLevelFromLitBlockState(15)).nonOpaque().burnable()));
     public static final Block JUNGLE_CAMPFIRE = registerBlock("jungle_campfire",
             new CustomCampfireBlock(true, 1, AbstractBlock.Settings.create().mapColor(JUNGLE_LOG.getDefaultMapColor())
                     .instrument(Instrument.BASS).strength(2.0f).sounds(BlockSoundGroup.WOOD)
-                    .luminance(Blocks.createLightLevelFromLitBlockState(15)).nonOpaque().burnable()),
-            ItemGroups.FUNCTIONAL, ModItemGroups.NEMOS_CARPENTRY);
+                    .luminance(Blocks.createLightLevelFromLitBlockState(15)).nonOpaque().burnable()));
     public static final Block MANGROVE_CAMPFIRE = registerBlock("mangrove_campfire",
             new CustomCampfireBlock(true, 1, AbstractBlock.Settings.create().mapColor(MANGROVE_LOG.getDefaultMapColor())
                     .instrument(Instrument.BASS).strength(2.0f).sounds(BlockSoundGroup.WOOD)
-                    .luminance(Blocks.createLightLevelFromLitBlockState(15)).nonOpaque().burnable()),
-            ItemGroups.FUNCTIONAL, ModItemGroups.NEMOS_CARPENTRY);
+                    .luminance(Blocks.createLightLevelFromLitBlockState(15)).nonOpaque().burnable()));
     public static final Block SPRUCE_CAMPFIRE = registerBlock("spruce_campfire",
             new CustomCampfireBlock(true, 1, AbstractBlock.Settings.create().mapColor(SPRUCE_LOG.getDefaultMapColor())
                     .instrument(Instrument.BASS).strength(2.0f).sounds(BlockSoundGroup.WOOD)
-                    .luminance(Blocks.createLightLevelFromLitBlockState(15)).nonOpaque().burnable()),
-            ItemGroups.FUNCTIONAL, ModItemGroups.NEMOS_CARPENTRY);
+                    .luminance(Blocks.createLightLevelFromLitBlockState(15)).nonOpaque().burnable()));
     public static final Block WARPED_CAMPFIRE = registerBlock("warped_campfire",
             new CustomCampfireBlock(true, 1, AbstractBlock.Settings.create().mapColor(WARPED_STEM.getDefaultMapColor())
                     .instrument(Instrument.BASS).strength(2.0f).sounds(BlockSoundGroup.WOOD)
-                    .luminance(Blocks.createLightLevelFromLitBlockState(15)).nonOpaque().burnable()),
-            ItemGroups.FUNCTIONAL, ModItemGroups.NEMOS_CARPENTRY);
+                    .luminance(Blocks.createLightLevelFromLitBlockState(15)).nonOpaque().burnable()));
     public static final Block ACACIA_SOUL_CAMPFIRE = registerBlock("acacia_soul_campfire",
             new CustomCampfireBlock(true, 1, AbstractBlock.Settings.create().mapColor(ACACIA_LOG.getDefaultMapColor())
                     .instrument(Instrument.BASS).strength(2.0f).sounds(BlockSoundGroup.WOOD)
-                    .luminance(Blocks.createLightLevelFromLitBlockState(15)).nonOpaque().burnable()),
-            ItemGroups.FUNCTIONAL, ModItemGroups.NEMOS_CARPENTRY);
+                    .luminance(Blocks.createLightLevelFromLitBlockState(15)).nonOpaque().burnable()));
     public static final Block BIRCH_SOUL_CAMPFIRE = registerBlock("birch_soul_campfire",
             new CustomCampfireBlock(true, 1, AbstractBlock.Settings.create().mapColor(BIRCH_LOG.getDefaultMapColor())
                     .instrument(Instrument.BASS).strength(2.0f).sounds(BlockSoundGroup.WOOD)
-                    .luminance(Blocks.createLightLevelFromLitBlockState(15)).nonOpaque().burnable()),
-            ItemGroups.FUNCTIONAL, ModItemGroups.NEMOS_CARPENTRY);
+                    .luminance(Blocks.createLightLevelFromLitBlockState(15)).nonOpaque().burnable()));
     public static final Block CHERRY_SOUL_CAMPFIRE = registerBlock("cherry_soul_campfire",
             new CustomCampfireBlock(true, 1, AbstractBlock.Settings.create().mapColor(CHERRY_LOG.getDefaultMapColor())
                     .instrument(Instrument.BASS).strength(2.0f).sounds(BlockSoundGroup.WOOD)
-                    .luminance(Blocks.createLightLevelFromLitBlockState(15)).nonOpaque().burnable()),
-            ItemGroups.FUNCTIONAL, ModItemGroups.NEMOS_CARPENTRY);
+                    .luminance(Blocks.createLightLevelFromLitBlockState(15)).nonOpaque().burnable()));
     public static final Block CRIMSON_SOUL_CAMPFIRE = registerBlock("crimson_soul_campfire",
             new CustomCampfireBlock(true, 1, AbstractBlock.Settings.create().mapColor(CRIMSON_STEM.getDefaultMapColor())
                     .instrument(Instrument.BASS).strength(2.0f).sounds(BlockSoundGroup.WOOD)
-                    .luminance(Blocks.createLightLevelFromLitBlockState(15)).nonOpaque().burnable()),
-            ItemGroups.FUNCTIONAL, ModItemGroups.NEMOS_CARPENTRY);
+                    .luminance(Blocks.createLightLevelFromLitBlockState(15)).nonOpaque().burnable()));
     public static final Block DARK_OAK_SOUL_CAMPFIRE = registerBlock("dark_oak_soul_campfire",
             new CustomCampfireBlock(true, 1, AbstractBlock.Settings.create().mapColor(DARK_OAK_LOG.getDefaultMapColor())
                     .instrument(Instrument.BASS).strength(2.0f).sounds(BlockSoundGroup.WOOD)
-                    .luminance(Blocks.createLightLevelFromLitBlockState(15)).nonOpaque().burnable()),
-            ItemGroups.FUNCTIONAL, ModItemGroups.NEMOS_CARPENTRY);
+                    .luminance(Blocks.createLightLevelFromLitBlockState(15)).nonOpaque().burnable()));
     public static final Block JUNGLE_SOUL_CAMPFIRE = registerBlock("jungle_soul_campfire",
             new CustomCampfireBlock(true, 1, AbstractBlock.Settings.create().mapColor(JUNGLE_LOG.getDefaultMapColor())
                     .instrument(Instrument.BASS).strength(2.0f).sounds(BlockSoundGroup.WOOD)
-                    .luminance(Blocks.createLightLevelFromLitBlockState(15)).nonOpaque().burnable()),
-            ItemGroups.FUNCTIONAL, ModItemGroups.NEMOS_CARPENTRY);
+                    .luminance(Blocks.createLightLevelFromLitBlockState(15)).nonOpaque().burnable()));
     public static final Block MANGROVE_SOUL_CAMPFIRE = registerBlock("mangrove_soul_campfire",
             new CustomCampfireBlock(true, 1, AbstractBlock.Settings.create().mapColor(MANGROVE_LOG.getDefaultMapColor())
                     .instrument(Instrument.BASS).strength(2.0f).sounds(BlockSoundGroup.WOOD)
-                    .luminance(Blocks.createLightLevelFromLitBlockState(15)).nonOpaque().burnable()),
-            ItemGroups.FUNCTIONAL, ModItemGroups.NEMOS_CARPENTRY);
+                    .luminance(Blocks.createLightLevelFromLitBlockState(15)).nonOpaque().burnable()));
     public static final Block SPRUCE_SOUL_CAMPFIRE = registerBlock("spruce_soul_campfire",
             new CustomCampfireBlock(true, 1, AbstractBlock.Settings.create().mapColor(SPRUCE_LOG.getDefaultMapColor())
                     .instrument(Instrument.BASS).strength(2.0f).sounds(BlockSoundGroup.WOOD)
-                    .luminance(Blocks.createLightLevelFromLitBlockState(15)).nonOpaque().burnable()),
-            ItemGroups.FUNCTIONAL, ModItemGroups.NEMOS_CARPENTRY);
+                    .luminance(Blocks.createLightLevelFromLitBlockState(15)).nonOpaque().burnable()));
     public static final Block WARPED_SOUL_CAMPFIRE = registerBlock("warped_soul_campfire",
             new CustomCampfireBlock(true, 1, AbstractBlock.Settings.create().mapColor(WARPED_STEM.getDefaultMapColor())
                     .instrument(Instrument.BASS).strength(2.0f).sounds(BlockSoundGroup.WOOD)
-                    .luminance(Blocks.createLightLevelFromLitBlockState(15)).nonOpaque().burnable()),
-            ItemGroups.FUNCTIONAL, ModItemGroups.NEMOS_CARPENTRY);
+                    .luminance(Blocks.createLightLevelFromLitBlockState(15)).nonOpaque().burnable()));
 
     @SafeVarargs
     private static Block registerBlock(String path, Block block, RegistryKey<ItemGroup>... itemGroups) {

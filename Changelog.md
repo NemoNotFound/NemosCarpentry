@@ -1,11 +1,15 @@
 # Changelog - v2.5
 
 ## Additions
-- Added Chair "Lukas"
-- Added ItemGroup Seats
+- Added Seats
+  - Chair "Lukas"
+- Added ItemGroups
+  - Seats
+  - Tables
+  - Outdoor
 
 ## Changes
-- Changed position of items in ItemGroups
+- Changed order of items in ItemGroups
 
 ### Downloads
 [CurseForge](https://www.curseforge.com/minecraft/mc-mods/nemos-carpentry) <br>
