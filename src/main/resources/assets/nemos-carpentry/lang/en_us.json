@@ -310,5 +310,17 @@
   "block.nemos-carpentry.mangrove_chair_lukas": "Mangrove Chair \"Lukas\"",
   "block.nemos-carpentry.oak_chair_lukas": "Oak Chair \"Lukas\"",
   "block.nemos-carpentry.spruce_chair_lukas": "Spruce Chair \"Lukas\"",
-  "block.nemos-carpentry.warped_chair_lukas": "Warped Chair \"Lukas\""
+  "block.nemos-carpentry.warped_chair_lukas": "Warped Chair \"Lukas\"",
+
+  "block.nemos-carpentry.acacia_chair_lukas_natural": "Acacia Chair \"Lukas\" - Natural",
+  "block.nemos-carpentry.bamboo_chair_lukas_natural": "Bamboo Chair \"Lukas\" - Natural",
+  "block.nemos-carpentry.birch_chair_lukas_natural": "Birch Chair \"Lukas\" - Natural",
+  "block.nemos-carpentry.cherry_chair_lukas_natural": "Cherry Chair \"Lukas\" - Natural",
+  "block.nemos-carpentry.crimson_chair_lukas_natural": "Crimson Chair \"Lukas\" - Natural",
+  "block.nemos-carpentry.dark_oak_chair_lukas_natural": "Dark Oak Chair \"Lukas\" - Natural",
+  "block.nemos-carpentry.jungle_chair_lukas_natural": "Jungle Chair \"Lukas\"",
+  "block.nemos-carpentry.mangrove_chair_lukas_natural": "Mangrove Chair \"Lukas\" - Natural",
+  "block.nemos-carpentry.oak_chair_lukas_natural": "Oak Chair \"Lukas\" - Natural",
+  "block.nemos-carpentry.spruce_chair_lukas_natural": "Spruce Chair \"Lukas\" - Natural",
+  "block.nemos-carpentry.warped_chair_lukas_natural": "Warped Chair \"Lukas\" - Natural"
 }

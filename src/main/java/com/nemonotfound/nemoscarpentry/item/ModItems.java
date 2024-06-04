@@ -83,6 +83,17 @@ public class ModItems {
     public static final Item OAK_CHAIR_LUKAS = registerBlockItem("oak_chair_lukas", ModBlocks.OAK_CHAIR_LUKAS);
     public static final Item SPRUCE_CHAIR_LUKAS = registerBlockItem("spruce_chair_lukas", ModBlocks.SPRUCE_CHAIR_LUKAS);
     public static final Item WARPED_CHAIR_LUKAS = registerBlockItem("warped_chair_lukas", ModBlocks.WARPED_CHAIR_LUKAS);
+    public static final Item ACACIA_CHAIR_LUKAS_NATURAL = registerBlockItem("acacia_chair_lukas_natural", ModBlocks.ACACIA_CHAIR_LUKAS_NATURAL);
+    public static final Item BAMBOO_CHAIR_LUKAS_NATURAL = registerBlockItem("bamboo_chair_lukas_natural", ModBlocks.BAMBOO_CHAIR_LUKAS_NATURAL);
+    public static final Item BIRCH_CHAIR_LUKAS_NATURAL = registerBlockItem("birch_chair_lukas_natural", ModBlocks.BIRCH_CHAIR_LUKAS_NATURAL);
+    public static final Item CHERRY_CHAIR_LUKAS_NATURAL = registerBlockItem("cherry_chair_lukas_natural", ModBlocks.CHERRY_CHAIR_LUKAS_NATURAL);
+    public static final Item CRIMSON_CHAIR_LUKAS_NATURAL = registerBlockItem("crimson_chair_lukas_natural", ModBlocks.CRIMSON_CHAIR_LUKAS_NATURAL);
+    public static final Item DARK_OAK_CHAIR_LUKAS_NATURAL = registerBlockItem("dark_oak_chair_lukas_natural", ModBlocks.DARK_OAK_CHAIR_LUKAS_NATURAL);
+    public static final Item JUNGLE_CHAIR_LUKAS_NATURAL = registerBlockItem("jungle_chair_lukas_natural", ModBlocks.JUNGLE_CHAIR_LUKAS_NATURAL);
+    public static final Item MANGROVE_CHAIR_LUKAS_NATURAL = registerBlockItem("mangrove_chair_lukas_natural", ModBlocks.MANGROVE_CHAIR_LUKAS_NATURAL);
+    public static final Item OAK_CHAIR_LUKAS_NATURAL = registerBlockItem("oak_chair_lukas_natural", ModBlocks.OAK_CHAIR_LUKAS_NATURAL);
+    public static final Item SPRUCE_CHAIR_LUKAS_NATURAL = registerBlockItem("spruce_chair_lukas_natural", ModBlocks.SPRUCE_CHAIR_LUKAS_NATURAL);
+    public static final Item WARPED_CHAIR_LUKAS_NATURAL = registerBlockItem("warped_chair_lukas_natural", ModBlocks.WARPED_CHAIR_LUKAS_NATURAL);
     public static final Item ACACIA_PARK_BENCH = registerBlockItem("acacia_park_bench", ModBlocks.ACACIA_PARK_BENCH);
     public static final Item BAMBOO_PARK_BENCH = registerBlockItem("bamboo_park_bench", ModBlocks.BAMBOO_PARK_BENCH);
     public static final Item BIRCH_PARK_BENCH = registerBlockItem("birch_park_bench", ModBlocks.BIRCH_PARK_BENCH);

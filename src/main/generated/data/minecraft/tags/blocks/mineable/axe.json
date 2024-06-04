@@ -280,6 +280,17 @@
     "nemos-carpentry:mangrove_chair_lukas",
     "nemos-carpentry:oak_chair_lukas",
     "nemos-carpentry:spruce_chair_lukas",
-    "nemos-carpentry:warped_chair_lukas"
+    "nemos-carpentry:warped_chair_lukas",
+    "nemos-carpentry:acacia_chair_lukas_natural",
+    "nemos-carpentry:bamboo_chair_lukas_natural",
+    "nemos-carpentry:birch_chair_lukas_natural",
+    "nemos-carpentry:cherry_chair_lukas_natural",
+    "nemos-carpentry:crimson_chair_lukas_natural",
+    "nemos-carpentry:dark_oak_chair_lukas_natural",
+    "nemos-carpentry:jungle_chair_lukas_natural",
+    "nemos-carpentry:mangrove_chair_lukas_natural",
+    "nemos-carpentry:oak_chair_lukas_natural",
+    "nemos-carpentry:spruce_chair_lukas_natural",
+    "nemos-carpentry:warped_chair_lukas_natural"
   ]
 }

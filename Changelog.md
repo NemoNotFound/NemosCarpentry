@@ -3,6 +3,7 @@
 ## Additions
 - Added Seats
   - Chair "Lukas"
+  - Chair "Lukas" - Natural
 - Added ItemGroups
   - Seats
   - Tables

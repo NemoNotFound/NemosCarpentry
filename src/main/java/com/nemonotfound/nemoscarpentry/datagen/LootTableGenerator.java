@@ -153,6 +153,18 @@ public class LootTableGenerator extends FabricBlockLootTableProvider {
         this.addDrop(ModBlocks.OAK_CHAIR_LUKAS, this::chairDrops);
         this.addDrop(ModBlocks.SPRUCE_CHAIR_LUKAS, this::chairDrops);
         this.addDrop(ModBlocks.WARPED_CHAIR_LUKAS, this::chairDrops);
+
+        this.addDrop(ModBlocks.ACACIA_CHAIR_LUKAS_NATURAL, this::chairDrops);
+        this.addDrop(ModBlocks.BAMBOO_CHAIR_LUKAS_NATURAL, this::chairDrops);
+        this.addDrop(ModBlocks.BIRCH_CHAIR_LUKAS_NATURAL, this::chairDrops);
+        this.addDrop(ModBlocks.CHERRY_CHAIR_LUKAS_NATURAL, this::chairDrops);
+        this.addDrop(ModBlocks.CRIMSON_CHAIR_LUKAS_NATURAL, this::chairDrops);
+        this.addDrop(ModBlocks.DARK_OAK_CHAIR_LUKAS_NATURAL, this::chairDrops);
+        this.addDrop(ModBlocks.JUNGLE_CHAIR_LUKAS_NATURAL, this::chairDrops);
+        this.addDrop(ModBlocks.MANGROVE_CHAIR_LUKAS_NATURAL, this::chairDrops);
+        this.addDrop(ModBlocks.OAK_CHAIR_LUKAS_NATURAL, this::chairDrops);
+        this.addDrop(ModBlocks.SPRUCE_CHAIR_LUKAS_NATURAL, this::chairDrops);
+        this.addDrop(ModBlocks.WARPED_CHAIR_LUKAS_NATURAL, this::chairDrops);
     }
 
     private LootTable.Builder benchDrops(Block block) {

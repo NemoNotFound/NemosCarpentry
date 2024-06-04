@@ -76,7 +76,8 @@
 	],
 	"display": {
 		"fixed": {
-			"translation": [0, 0, -6]
+			"translation": [0, 0, -2.75],
+			"scale": [0.54, 0.54, 0.54]
 		}
 	}
 }
