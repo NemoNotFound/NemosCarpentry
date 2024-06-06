@@ -1,4 +1,4 @@
-package com.nemonotfound.nemoscarpentry.block;
+package com.nemonotfound.nemoscarpentry.block.seats;
 
 import com.mojang.serialization.MapCodec;
 import com.nemonotfound.nemoscarpentry.block.enums.BenchPart;
@@ -187,7 +187,7 @@ public class ParkBenchBlock extends SitableBlock implements Waterloggable {
             ).reduce((v1, v2) -> VoxelShapes.combineAndSimplify(v1, v2, BooleanBiFunction.OR)).get()
     ).reduce((v1, v2) -> VoxelShapes.combineAndSimplify(v1, v2, BooleanBiFunction.OR)).get();
 
-    protected ParkBenchBlock(AbstractBlock.Settings settings) {
+    public ParkBenchBlock(AbstractBlock.Settings settings) {
         super(settings, 0.6f);
         this.setDefaultState(this.stateManager.getDefaultState().with(FACING, Direction.NORTH).with(WATERLOGGED, false).with(PART, BenchPart.LEFT));
     }

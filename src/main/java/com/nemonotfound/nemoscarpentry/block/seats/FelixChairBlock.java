@@ -1,4 +1,4 @@
-package com.nemonotfound.nemoscarpentry.block;
+package com.nemonotfound.nemoscarpentry.block.seats;
 
 import com.mojang.serialization.MapCodec;
 import net.minecraft.block.*;
@@ -84,7 +84,7 @@ public class FelixChairBlock extends SitableBlock implements Waterloggable {
             Block.createCuboidShape(4, 2, 2.5, 12, 4, 3.5)
     ).reduce((v1, v2) -> VoxelShapes.combineAndSimplify(v1, v2, BooleanBiFunction.OR)).get();
 
-    protected FelixChairBlock(AbstractBlock.Settings settings) {
+    public FelixChairBlock(AbstractBlock.Settings settings) {
         super(settings, 0.4f);
         this.setDefaultState(this.stateManager.getDefaultState().with(FACING, Direction.NORTH).with(WATERLOGGED, false));
     }
@@ -115,7 +115,7 @@ public class FelixChairBlock extends SitableBlock implements Waterloggable {
 
     @Override
     public FluidState getFluidState(BlockState state) {
-        if (state.get(WATERLOGGED).booleanValue()) {
+        if (state.get(WATERLOGGED)) {
             return Fluids.WATER.getStill(false);
         }
         return super.getFluidState(state);
@@ -123,7 +123,7 @@ public class FelixChairBlock extends SitableBlock implements Waterloggable {
 
     @Override
     public BlockState getStateForNeighborUpdate(BlockState state, Direction direction, BlockState neighborState, WorldAccess world, BlockPos pos, BlockPos neighborPos) {
-        if (state.get(WATERLOGGED).booleanValue()) {
+        if (state.get(WATERLOGGED)) {
             world.scheduleFluidTick(pos, Fluids.WATER, Fluids.WATER.getTickRate(world));
         }
         return super.getStateForNeighborUpdate(state, direction, neighborState, world, pos, neighborPos);

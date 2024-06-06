@@ -1,8 +1,8 @@
 package com.nemonotfound.nemoscarpentry.datagen;
 
-import com.nemonotfound.nemoscarpentry.block.LukasChairBlock;
+import com.nemonotfound.nemoscarpentry.block.seats.LukasChairBlock;
 import com.nemonotfound.nemoscarpentry.block.ModBlocks;
-import com.nemonotfound.nemoscarpentry.block.ParkBenchBlock;
+import com.nemonotfound.nemoscarpentry.block.seats.ParkBenchBlock;
 import com.nemonotfound.nemoscarpentry.block.enums.BenchPart;
 import com.nemonotfound.nemoscarpentry.block.enums.ChairPart;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;

@@ -1,4 +1,4 @@
-package com.nemonotfound.nemoscarpentry.block;
+package com.nemonotfound.nemoscarpentry.block.seats;
 
 import com.mojang.serialization.MapCodec;
 import com.nemonotfound.nemoscarpentry.block.enums.ChairPart;

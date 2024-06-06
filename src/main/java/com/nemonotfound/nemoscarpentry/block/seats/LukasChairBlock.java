@@ -1,4 +1,4 @@
-package com.nemonotfound.nemoscarpentry.block;
+package com.nemonotfound.nemoscarpentry.block.seats;
 
 import com.nemonotfound.nemoscarpentry.block.enums.ChairPart;
 import com.nemonotfound.nemoscarpentry.property.ModProperties;
@@ -80,7 +80,7 @@ public class LukasChairBlock extends MultipleBlockChair implements Waterloggable
             ).reduce((v1, v2) -> VoxelShapes.combineAndSimplify(v1, v2, BooleanBiFunction.OR)).get()
 ).reduce((v1, v2) -> VoxelShapes.combineAndSimplify(v1, v2, BooleanBiFunction.OR)).get();
 
-    protected LukasChairBlock(Settings settings) {
+    public LukasChairBlock(Settings settings) {
         super(settings, 0.58f, NORTH_SHAPE, EAST_SHAPE, SOUTH_SHAPE, WEST_SHAPE);
         this.setDefaultState(this.stateManager.getDefaultState().with(FACING, Direction.NORTH)
                 .with(WATERLOGGED, false).with(PART, ChairPart.LOWER));

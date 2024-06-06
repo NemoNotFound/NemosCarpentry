@@ -1,4 +1,4 @@
-package com.nemonotfound.nemoscarpentry.block;
+package com.nemonotfound.nemoscarpentry.block.seats;
 
 import com.nemonotfound.nemoscarpentry.entity.ChairEntity;
 import com.nemonotfound.nemoscarpentry.entity.ModEntities;
@@ -10,12 +10,10 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.state.property.BooleanProperty;
 import net.minecraft.state.property.Properties;
 import net.minecraft.util.ActionResult;
-import net.minecraft.util.Hand;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Box;
 import net.minecraft.util.math.Direction;
-import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 import net.minecraft.world.WorldAccess;
 

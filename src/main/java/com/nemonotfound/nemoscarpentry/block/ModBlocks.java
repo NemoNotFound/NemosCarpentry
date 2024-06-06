@@ -1,5 +1,6 @@
 package com.nemonotfound.nemoscarpentry.block;
 
+import com.nemonotfound.nemoscarpentry.block.seats.*;
 import com.nemonotfound.nemoscarpentry.block.tables.CoffeeTableBlock;
 import com.nemonotfound.nemoscarpentry.block.tables.TableBlock;
 import com.nemonotfound.nemoscarpentry.item.ModItemGroups;
