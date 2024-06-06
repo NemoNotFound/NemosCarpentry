@@ -308,6 +308,17 @@ public class BlockTagGenerator extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.MANGROVE_CHAIR_LUKAS_NATURAL)
                 .add(ModBlocks.OAK_CHAIR_LUKAS_NATURAL)
                 .add(ModBlocks.SPRUCE_CHAIR_LUKAS_NATURAL)
-                .add(ModBlocks.WARPED_CHAIR_LUKAS_NATURAL);
+                .add(ModBlocks.WARPED_CHAIR_LUKAS_NATURAL)
+                .add(ModBlocks.ACACIA_COFFEE_TABLE)
+                .add(ModBlocks.BAMBOO_COFFEE_TABLE)
+                .add(ModBlocks.BIRCH_COFFEE_TABLE)
+                .add(ModBlocks.CHERRY_COFFEE_TABLE)
+                .add(ModBlocks.CRIMSON_COFFEE_TABLE)
+                .add(ModBlocks.DARK_OAK_COFFEE_TABLE)
+                .add(ModBlocks.JUNGLE_COFFEE_TABLE)
+                .add(ModBlocks.MANGROVE_COFFEE_TABLE)
+                .add(ModBlocks.OAK_COFFEE_TABLE)
+                .add(ModBlocks.SPRUCE_COFFEE_TABLE)
+                .add(ModBlocks.WARPED_COFFEE_TABLE);
     }
 }

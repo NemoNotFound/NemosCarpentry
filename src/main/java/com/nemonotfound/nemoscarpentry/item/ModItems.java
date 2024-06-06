@@ -155,6 +155,17 @@ public class ModItems {
             new Item(new Item.Settings()), ModItemGroups.NEMOS_CARPENTRY);
     public static final Item WARPED_GLASS_DOOR_FRAME = registerItem("warped_glass_door_frame",
             new Item(new Item.Settings()), ModItemGroups.NEMOS_CARPENTRY);
+    public static final Item ACACIA_COFFEE_TABLE = registerBlockItem("acacia_coffee_table", ModBlocks.ACACIA_COFFEE_TABLE);
+    public static final Item BAMBOO_COFFEE_TABLE = registerBlockItem("bamboo_coffee_table", ModBlocks.BAMBOO_COFFEE_TABLE);
+    public static final Item BIRCH_COFFEE_TABLE = registerBlockItem("birch_coffee_table", ModBlocks.BIRCH_COFFEE_TABLE);
+    public static final Item CHERRY_COFFEE_TABLE = registerBlockItem("cherry_coffee_table", ModBlocks.CHERRY_COFFEE_TABLE);
+    public static final Item CRIMSON_COFFEE_TABLE = registerBlockItem("crimson_coffee_table", ModBlocks.CRIMSON_COFFEE_TABLE);
+    public static final Item DARK_OAK_COFFEE_TABLE = registerBlockItem("dark_oak_coffee_table", ModBlocks.DARK_OAK_COFFEE_TABLE);
+    public static final Item JUNGLE_COFFEE_TABLE = registerBlockItem("jungle_coffee_table", ModBlocks.JUNGLE_COFFEE_TABLE);
+    public static final Item MANGROVE_COFFEE_TABLE = registerBlockItem("mangrove_coffee_table", ModBlocks.MANGROVE_COFFEE_TABLE);
+    public static final Item OAK_COFFEE_TABLE = registerBlockItem("oak_coffee_table", ModBlocks.OAK_COFFEE_TABLE);
+    public static final Item SPRUCE_COFFEE_TABLE = registerBlockItem("spruce_coffee_table", ModBlocks.SPRUCE_COFFEE_TABLE);
+    public static final Item WARPED_COFFEE_TABLE = registerBlockItem("warped_coffee_table", ModBlocks.WARPED_COFFEE_TABLE);
 
     @SafeVarargs
     private static Item registerItem(String path, Item item, RegistryKey<ItemGroup>... itemGroups) {

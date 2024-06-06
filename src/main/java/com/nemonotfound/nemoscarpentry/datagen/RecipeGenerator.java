@@ -203,6 +203,7 @@ public class RecipeGenerator extends FabricRecipeProvider {
                 ModItems.CHERRY_GLASS_DOOR_FRAME, 2, CarpentryTools.SAW.asString());
 
         createChairLukasNaturalRecipes(exporter);
+        createCoffeeTableRecipes(exporter);
     }
 
     private void createTableTheClassicRecipes(RecipeExporter exporter) {
@@ -253,6 +254,31 @@ public class RecipeGenerator extends FabricRecipeProvider {
                 ModItems.SPRUCE_CHAIR_LUKAS_NATURAL, 1, CarpentryTools.SAW.asString());
         createCarpentryRecipe(exporter, Pair.of(Blocks.WARPED_PLANKS, 1), Pair.of(ItemTags.WARPED_STEMS, 1),
                 ModItems.WARPED_CHAIR_LUKAS_NATURAL, 1, CarpentryTools.SAW.asString());
+    }
+
+    private void createCoffeeTableRecipes(RecipeExporter exporter) {
+        createCarpentryRecipe(exporter, Pair.of(Blocks.ACACIA_PLANKS, 1), Pair.of(ItemTags.ACACIA_LOGS, 1),
+                ModItems.ACACIA_COFFEE_TABLE, 2, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, Pair.of(Blocks.BAMBOO_PLANKS, 1), Pair.of(ItemTags.BAMBOO_BLOCKS, 1),
+                ModItems.BAMBOO_COFFEE_TABLE, 2, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, Pair.of(Blocks.BIRCH_PLANKS, 1), Pair.of(ItemTags.BIRCH_LOGS, 1),
+                ModItems.BIRCH_COFFEE_TABLE, 2, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, Pair.of(Blocks.CHERRY_PLANKS, 1), Pair.of(ItemTags.CHERRY_LOGS, 1),
+                ModItems.CHERRY_COFFEE_TABLE, 2, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, Pair.of(Blocks.CRIMSON_PLANKS, 1), Pair.of(ItemTags.CRIMSON_STEMS, 1),
+                ModItems.CRIMSON_COFFEE_TABLE, 2, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, Pair.of(Blocks.DARK_OAK_PLANKS, 1), Pair.of(ItemTags.DARK_OAK_LOGS, 1),
+                ModItems.DARK_OAK_COFFEE_TABLE, 2, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, Pair.of(Blocks.JUNGLE_PLANKS, 1), Pair.of(ItemTags.JUNGLE_LOGS, 1),
+                ModItems.JUNGLE_COFFEE_TABLE, 2, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, Pair.of(Blocks.MANGROVE_PLANKS, 1), Pair.of(ItemTags.MANGROVE_LOGS, 1),
+                ModItems.MANGROVE_COFFEE_TABLE, 2, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, Pair.of(Blocks.OAK_PLANKS, 1), Pair.of(ItemTags.OAK_LOGS, 1),
+                ModItems.OAK_COFFEE_TABLE, 2, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, Pair.of(Blocks.SPRUCE_PLANKS, 1), Pair.of(ItemTags.SPRUCE_LOGS, 1),
+                ModItems.SPRUCE_COFFEE_TABLE, 2, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, Pair.of(Blocks.WARPED_PLANKS, 1), Pair.of(ItemTags.WARPED_STEMS, 1),
+                ModItems.WARPED_COFFEE_TABLE, 2, CarpentryTools.SAW.asString());
     }
 
     private void createSawRecipe(RecipeExporter exporter) {

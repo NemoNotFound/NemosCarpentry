@@ -1,5 +1,7 @@
 package com.nemonotfound.nemoscarpentry.block;
 
+import com.nemonotfound.nemoscarpentry.block.tables.CoffeeTableBlock;
+import com.nemonotfound.nemoscarpentry.block.tables.TableBlock;
 import com.nemonotfound.nemoscarpentry.item.ModItemGroups;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.*;
@@ -1022,6 +1024,28 @@ public class ModBlocks {
             new CustomCampfireBlock(true, 1, AbstractBlock.Settings.create().mapColor(WARPED_STEM.getDefaultMapColor())
                     .instrument(Instrument.BASS).strength(2.0f).sounds(BlockSoundGroup.WOOD)
                     .luminance(Blocks.createLightLevelFromLitBlockState(15)).nonOpaque().burnable()));
+    public static final Block ACACIA_COFFEE_TABLE = registerBlock("acacia_coffee_table",
+            new CoffeeTableBlock(AbstractBlock.Settings.copy(ACACIA_PLANKS).nonOpaque()));
+    public static final Block BAMBOO_COFFEE_TABLE = registerBlock("bamboo_coffee_table",
+            new CoffeeTableBlock(AbstractBlock.Settings.copy(BAMBOO_PLANKS).nonOpaque()));
+    public static final Block BIRCH_COFFEE_TABLE = registerBlock("birch_coffee_table",
+            new CoffeeTableBlock(AbstractBlock.Settings.copy(BIRCH_PLANKS).nonOpaque()));
+    public static final Block CHERRY_COFFEE_TABLE = registerBlock("cherry_coffee_table",
+            new CoffeeTableBlock(AbstractBlock.Settings.copy(CHERRY_PLANKS).nonOpaque()));
+    public static final Block CRIMSON_COFFEE_TABLE = registerBlock("crimson_coffee_table",
+            new CoffeeTableBlock(AbstractBlock.Settings.copy(CRIMSON_PLANKS).nonOpaque()));
+    public static final Block DARK_OAK_COFFEE_TABLE = registerBlock("dark_oak_coffee_table",
+            new CoffeeTableBlock(AbstractBlock.Settings.copy(DARK_OAK_PLANKS).nonOpaque()));
+    public static final Block JUNGLE_COFFEE_TABLE = registerBlock("jungle_coffee_table",
+            new CoffeeTableBlock(AbstractBlock.Settings.copy(JUNGLE_PLANKS).nonOpaque()));
+    public static final Block MANGROVE_COFFEE_TABLE = registerBlock("mangrove_coffee_table",
+            new CoffeeTableBlock(AbstractBlock.Settings.copy(MANGROVE_PLANKS).nonOpaque()));
+    public static final Block OAK_COFFEE_TABLE = registerBlock("oak_coffee_table",
+            new CoffeeTableBlock(AbstractBlock.Settings.copy(OAK_PLANKS).nonOpaque()));
+    public static final Block SPRUCE_COFFEE_TABLE = registerBlock("spruce_coffee_table",
+            new CoffeeTableBlock(AbstractBlock.Settings.copy(SPRUCE_PLANKS).nonOpaque()));
+    public static final Block WARPED_COFFEE_TABLE = registerBlock("warped_coffee_table",
+            new CoffeeTableBlock(AbstractBlock.Settings.copy(WARPED_PLANKS).nonOpaque()));
 
     @SafeVarargs
     private static Block registerBlock(String path, Block block, RegistryKey<ItemGroup>... itemGroups) {

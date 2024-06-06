@@ -107,6 +107,18 @@ public class ModelGenerator extends FabricModelProvider {
         generateLadderBlockModel(ModBlocks.MANGROVE_LADDER, blockStateModelGenerator);
         generateLadderBlockModel(ModBlocks.SPRUCE_LADDER, blockStateModelGenerator);
         generateLadderBlockModel(ModBlocks.WARPED_LADDER, blockStateModelGenerator);
+
+        generateBlockModel(blockStateModelGenerator, Blocks.ACACIA_PLANKS, Blocks.ACACIA_LOG, ModBlocks.ACACIA_COFFEE_TABLE, ModModels.COFFEE_TABLE);
+        generateBlockModelForBamboo(blockStateModelGenerator, Blocks.BAMBOO_PLANKS, Blocks.BAMBOO_BLOCK, ModBlocks.BAMBOO_COFFEE_TABLE, ModModels.COFFEE_TABLE);
+        generateBlockModel(blockStateModelGenerator, Blocks.BIRCH_PLANKS, Blocks.BIRCH_LOG, ModBlocks.BIRCH_COFFEE_TABLE, ModModels.COFFEE_TABLE);
+        generateBlockModel(blockStateModelGenerator, Blocks.CHERRY_PLANKS, Blocks.CHERRY_LOG, ModBlocks.CHERRY_COFFEE_TABLE, ModModels.COFFEE_TABLE);
+        generateBlockModel(blockStateModelGenerator, Blocks.CRIMSON_PLANKS, Blocks.CRIMSON_STEM, ModBlocks.CRIMSON_COFFEE_TABLE, ModModels.COFFEE_TABLE);
+        generateBlockModel(blockStateModelGenerator, Blocks.DARK_OAK_PLANKS, Blocks.DARK_OAK_LOG, ModBlocks.DARK_OAK_COFFEE_TABLE, ModModels.COFFEE_TABLE);
+        generateBlockModel(blockStateModelGenerator, Blocks.JUNGLE_PLANKS, Blocks.JUNGLE_LOG, ModBlocks.JUNGLE_COFFEE_TABLE, ModModels.COFFEE_TABLE);
+        generateBlockModel(blockStateModelGenerator, Blocks.MANGROVE_PLANKS, Blocks.MANGROVE_LOG, ModBlocks.MANGROVE_COFFEE_TABLE, ModModels.COFFEE_TABLE);
+        generateBlockModel(blockStateModelGenerator, Blocks.OAK_PLANKS, Blocks.OAK_LOG, ModBlocks.OAK_COFFEE_TABLE, ModModels.COFFEE_TABLE);
+        generateBlockModel(blockStateModelGenerator, Blocks.SPRUCE_PLANKS, Blocks.SPRUCE_LOG, ModBlocks.SPRUCE_COFFEE_TABLE, ModModels.COFFEE_TABLE);
+        generateBlockModel(blockStateModelGenerator, Blocks.WARPED_PLANKS, Blocks.WARPED_STEM, ModBlocks.WARPED_COFFEE_TABLE, ModModels.COFFEE_TABLE);
     }
 
     private void generateLadderBlockModel(Block block, BlockStateModelGenerator blockStateModelGenerator) {
@@ -117,6 +129,28 @@ public class ModelGenerator extends FabricModelProvider {
 
     private void generateBlockModel(BlockStateModelGenerator blockStateModelGenerator, Block block, Block textureBlock, Model model) {
         TextureMap textureMap = TextureMap.all(textureBlock).put(TextureKey.PARTICLE, TextureMap.getId(textureBlock));
+        Identifier modelId = model.upload(block, textureMap, blockStateModelGenerator.modelCollector);
+
+        blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier
+                .create(block, BlockStateVariant.create().put(VariantSettings.MODEL, modelId)));
+    }
+
+    private void generateBlockModel(BlockStateModelGenerator blockStateModelGenerator, Block textureBlock, Block secondTextureBlock, Block block, Model model) {
+        TextureMap textureMap = TextureMap.all(textureBlock)
+                .put(TextureKey.TEXTURE, TextureMap.getId(secondTextureBlock))
+                .put(TextureKey.BOTTOM, TextureMap.getId(secondTextureBlock).withSuffixedPath("_top"))
+                .put(TextureKey.PARTICLE, TextureMap.getId(textureBlock));
+        Identifier modelId = model.upload(block, textureMap, blockStateModelGenerator.modelCollector);
+
+        blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier
+                .create(block, BlockStateVariant.create().put(VariantSettings.MODEL, modelId)));
+    }
+
+    private void generateBlockModelForBamboo(BlockStateModelGenerator blockStateModelGenerator, Block textureBlock, Block secondTextureBlock, Block block, Model model) {
+        TextureMap textureMap = TextureMap.all(textureBlock)
+                .put(TextureKey.TEXTURE, TextureMap.getId(secondTextureBlock))
+                .put(TextureKey.BOTTOM, TextureMap.getId(secondTextureBlock))
+                .put(TextureKey.PARTICLE, TextureMap.getId(textureBlock));
         Identifier modelId = model.upload(block, textureMap, blockStateModelGenerator.modelCollector);
 
         blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier
@@ -193,7 +227,7 @@ public class ModelGenerator extends FabricModelProvider {
     private void generateChairLukasNaturalBambooModel(BlockStateModelGenerator blockStateModelGenerator, Block textureBlock, Block secondTextureLog, Block chairBlock, Model model) {
         TextureMap textureMap = TextureMap.all(textureBlock)
                 .put(TextureKey.TEXTURE, TextureMap.getId(secondTextureLog))
-                .put(TextureKey.BOTTOM, TextureMap.getId(textureBlock))
+                .put(TextureKey.BOTTOM, TextureMap.getId(secondTextureLog))
                 .put(TextureKey.PARTICLE, TextureMap.getId(textureBlock));
         Identifier chairModelId = model.upload(chairBlock, textureMap, blockStateModelGenerator.modelCollector);
 

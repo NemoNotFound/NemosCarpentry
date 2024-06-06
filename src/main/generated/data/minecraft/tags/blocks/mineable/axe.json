@@ -291,6 +291,17 @@
     "nemos-carpentry:mangrove_chair_lukas_natural",
     "nemos-carpentry:oak_chair_lukas_natural",
     "nemos-carpentry:spruce_chair_lukas_natural",
-    "nemos-carpentry:warped_chair_lukas_natural"
+    "nemos-carpentry:warped_chair_lukas_natural",
+    "nemos-carpentry:acacia_coffee_table",
+    "nemos-carpentry:bamboo_coffee_table",
+    "nemos-carpentry:birch_coffee_table",
+    "nemos-carpentry:cherry_coffee_table",
+    "nemos-carpentry:crimson_coffee_table",
+    "nemos-carpentry:dark_oak_coffee_table",
+    "nemos-carpentry:jungle_coffee_table",
+    "nemos-carpentry:mangrove_coffee_table",
+    "nemos-carpentry:oak_coffee_table",
+    "nemos-carpentry:spruce_coffee_table",
+    "nemos-carpentry:warped_coffee_table"
   ]
 }

@@ -1,0 +1,54 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_bamboo_coffee_table": {
+      "conditions": {
+        "items": [
+          {
+            "items": "nemos-carpentry:bamboo_coffee_table"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_bamboo_planks": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:bamboo_planks"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_logs": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#minecraft:bamboo_blocks"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:bamboo_coffee_table_carpentry"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_bamboo_planks",
+      "has_logs",
+      "has_bamboo_coffee_table"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:bamboo_coffee_table_carpentry"
+    ]
+  }
+}
