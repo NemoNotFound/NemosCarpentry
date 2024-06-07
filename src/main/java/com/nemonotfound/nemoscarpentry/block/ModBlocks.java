@@ -1,5 +1,10 @@
 package com.nemonotfound.nemoscarpentry.block;
 
+import com.nemonotfound.nemoscarpentry.block.seats.ChairBlock;
+import com.nemonotfound.nemoscarpentry.block.seats.FelixChairBlock;
+import com.nemonotfound.nemoscarpentry.block.seats.LogSeat;
+import com.nemonotfound.nemoscarpentry.block.seats.ParkBenchBlock;
+import com.nemonotfound.nemoscarpentry.block.tables.TableBlock;
 import com.nemonotfound.nemoscarpentry.item.ModItemGroups;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.*;

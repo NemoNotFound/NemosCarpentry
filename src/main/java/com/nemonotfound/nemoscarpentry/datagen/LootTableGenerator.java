@@ -1,8 +1,8 @@
 package com.nemonotfound.nemoscarpentry.datagen;
 
 import com.nemonotfound.nemoscarpentry.block.ModBlocks;
-import com.nemonotfound.nemoscarpentry.block.ParkBenchBlock;
 import com.nemonotfound.nemoscarpentry.block.enums.BenchPart;
+import com.nemonotfound.nemoscarpentry.block.seats.ParkBenchBlock;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.minecraft.block.Block;
@@ -77,6 +77,54 @@ public class LootTableGenerator extends FabricBlockLootTableProvider {
         this.addDrop(ModBlocks.WARPED_SOUL_CAMPFIRE, (Block block) -> this.dropsWithSilkTouch(block,
                 this.addSurvivesExplosionCondition(block, ItemEntry.builder(Items.SOUL_SOIL)
                         .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1.0f))))));
+
+        this.addDrop(ModBlocks.ACACIA_LADDER);
+        this.addDrop(ModBlocks.BAMBOO_LADDER);
+        this.addDrop(ModBlocks.BOUND_BAMBOO_LADDER);
+        this.addDrop(ModBlocks.BIRCH_LADDER);
+        this.addDrop(ModBlocks.CHERRY_LADDER);
+        this.addDrop(ModBlocks.CRIMSON_LADDER);
+        this.addDrop(ModBlocks.DARK_OAK_LADDER);
+        this.addDrop(ModBlocks.JUNGLE_LADDER);
+        this.addDrop(ModBlocks.MANGROVE_LADDER);
+        this.addDrop(ModBlocks.SPRUCE_LADDER);
+        this.addDrop(ModBlocks.WARPED_LADDER);
+
+        this.addDrop(ModBlocks.ACACIA_TABLE_THE_CLASSIC);
+        this.addDrop(ModBlocks.BAMBOO_TABLE_THE_CLASSIC);
+        this.addDrop(ModBlocks.BIRCH_TABLE_THE_CLASSIC);
+        this.addDrop(ModBlocks.CHERRY_TABLE_THE_CLASSIC);
+        this.addDrop(ModBlocks.CRIMSON_TABLE_THE_CLASSIC);
+        this.addDrop(ModBlocks.DARK_OAK_TABLE_THE_CLASSIC);
+        this.addDrop(ModBlocks.JUNGLE_TABLE_THE_CLASSIC);
+        this.addDrop(ModBlocks.MANGROVE_TABLE_THE_CLASSIC);
+        this.addDrop(ModBlocks.OAK_TABLE_THE_CLASSIC);
+        this.addDrop(ModBlocks.SPRUCE_TABLE_THE_CLASSIC);
+        this.addDrop(ModBlocks.WARPED_TABLE_THE_CLASSIC);
+
+        this.addDrop(ModBlocks.ACACIA_CHAIR);
+        this.addDrop(ModBlocks.BAMBOO_CHAIR);
+        this.addDrop(ModBlocks.BIRCH_CHAIR);
+        this.addDrop(ModBlocks.CHERRY_CHAIR);
+        this.addDrop(ModBlocks.CRIMSON_CHAIR);
+        this.addDrop(ModBlocks.DARK_OAK_CHAIR);
+        this.addDrop(ModBlocks.JUNGLE_CHAIR);
+        this.addDrop(ModBlocks.MANGROVE_CHAIR);
+        this.addDrop(ModBlocks.OAK_CHAIR);
+        this.addDrop(ModBlocks.SPRUCE_CHAIR);
+        this.addDrop(ModBlocks.WARPED_CHAIR);
+
+        this.addDrop(ModBlocks.ACACIA_CHAIR_FELIX);
+        this.addDrop(ModBlocks.BAMBOO_CHAIR_FELIX);
+        this.addDrop(ModBlocks.BIRCH_CHAIR_FELIX);
+        this.addDrop(ModBlocks.CHERRY_CHAIR_FELIX);
+        this.addDrop(ModBlocks.CRIMSON_CHAIR_FELIX);
+        this.addDrop(ModBlocks.DARK_OAK_CHAIR_FELIX);
+        this.addDrop(ModBlocks.JUNGLE_CHAIR_FELIX);
+        this.addDrop(ModBlocks.MANGROVE_CHAIR_FELIX);
+        this.addDrop(ModBlocks.OAK_CHAIR_FELIX);
+        this.addDrop(ModBlocks.SPRUCE_CHAIR_FELIX);
+        this.addDrop(ModBlocks.WARPED_CHAIR_FELIX);
 
         this.addDrop(ModBlocks.ACACIA_PARK_BENCH, this::benchDrops);
         this.addDrop(ModBlocks.BAMBOO_PARK_BENCH, this::benchDrops);

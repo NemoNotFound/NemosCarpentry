@@ -12,6 +12,7 @@ import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.VanillaRecipeProvider;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
@@ -31,6 +32,15 @@ public class RecipeGenerator extends FabricRecipeProvider {
 
     @Override
     public void generate(RecipeExporter exporter) {
+        createBoundBambooLadderReceipe(exporter);
+
+        createSawRecipe(exporter);
+        createSawRecipe(exporter, ModItems.STONE_SAW, Items.COBBLESTONE);
+        createSawRecipe(exporter, ModItems.IRON_SAW, Items.IRON_INGOT);
+        createSawRecipe(exporter, ModItems.GOLDEN_SAW, Items.GOLD_INGOT);
+        createSawRecipe(exporter, ModItems.DIAMOND_SAW, Items.DIAMOND);
+        VanillaRecipeProvider.offerNetheriteUpgradeRecipe(exporter, ModItems.DIAMOND_SAW, RecipeCategory.TOOLS, ModItems.NETHERITE_SAW);
+
         createCampfireRecipe(exporter, ModBlocks.ACACIA_CAMPFIRE, ItemTags.ACACIA_LOGS);
         createCampfireRecipe(exporter, ModBlocks.BIRCH_CAMPFIRE, ItemTags.BIRCH_LOGS);
         createCampfireRecipe(exporter, ModBlocks.CHERRY_CAMPFIRE, ItemTags.CHERRY_LOGS);
@@ -50,6 +60,29 @@ public class RecipeGenerator extends FabricRecipeProvider {
         createSoulCampfireRecipe(exporter, ModBlocks.MANGROVE_SOUL_CAMPFIRE, ItemTags.MANGROVE_LOGS);
         createSoulCampfireRecipe(exporter, ModBlocks.SPRUCE_SOUL_CAMPFIRE, ItemTags.SPRUCE_LOGS);
         createSoulCampfireRecipe(exporter, ModBlocks.WARPED_SOUL_CAMPFIRE, ItemTags.WARPED_STEMS);
+
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.ACACIA_PLANKS, 1)),
+                ModBlocks.ACACIA_LADDER, 2, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.BAMBOO_PLANKS, 1)),
+                ModBlocks.BAMBOO_LADDER, 2, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.BIRCH_PLANKS, 1)),
+                ModBlocks.BIRCH_LADDER, 2, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.CHERRY_PLANKS, 1)),
+                ModBlocks.CHERRY_LADDER, 2, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.CRIMSON_PLANKS, 1)),
+                ModBlocks.CRIMSON_LADDER, 2, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.DARK_OAK_PLANKS, 1)),
+                ModBlocks.DARK_OAK_LADDER, 2, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.JUNGLE_PLANKS, 1)),
+                ModBlocks.JUNGLE_LADDER, 2, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.MANGROVE_PLANKS, 1)),
+                ModBlocks.MANGROVE_LADDER, 2, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.MANGROVE_PLANKS, 1)),
+                Blocks.LADDER, 2, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.SPRUCE_PLANKS, 1)),
+                ModBlocks.SPRUCE_LADDER, 2, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.WARPED_PLANKS, 1)),
+                ModBlocks.WARPED_LADDER, 2, CarpentryTools.SAW.asString());
 
         createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.ACACIA_PLANKS, 1)),
                 ModBlocks.ACACIA_CHAIR, 1, CarpentryTools.SAW.asString());
@@ -141,8 +174,53 @@ public class RecipeGenerator extends FabricRecipeProvider {
         createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.WARPED_PLANKS, 2)),
                 ModBlocks.WARPED_PARK_BENCH, 1, CarpentryTools.SAW.asString());
 
+        createTableTheClassicRecipes(exporter);
+
         createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.CHERRY_PLANKS, 2)),
                 ModItems.CHERRY_GLASS_DOOR_FRAME, 2, CarpentryTools.SAW.asString());
+    }
+
+    private void createTableTheClassicRecipes(RecipeExporter exporter) {
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.ACACIA_PLANKS, 1)),
+                ModBlocks.ACACIA_TABLE_THE_CLASSIC, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.BAMBOO_PLANKS, 1)),
+                ModBlocks.BAMBOO_TABLE_THE_CLASSIC, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.BIRCH_PLANKS, 1)),
+                ModBlocks.BIRCH_TABLE_THE_CLASSIC, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.CHERRY_PLANKS, 1)),
+                ModBlocks.CHERRY_TABLE_THE_CLASSIC, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.CRIMSON_PLANKS, 1)),
+                ModBlocks.CRIMSON_TABLE_THE_CLASSIC, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.DARK_OAK_PLANKS, 1)),
+                ModBlocks.DARK_OAK_TABLE_THE_CLASSIC, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.JUNGLE_PLANKS, 1)),
+                ModBlocks.JUNGLE_TABLE_THE_CLASSIC, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.MANGROVE_PLANKS, 1)),
+                ModBlocks.MANGROVE_TABLE_THE_CLASSIC, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.OAK_PLANKS, 1)),
+                ModBlocks.OAK_TABLE_THE_CLASSIC, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.SPRUCE_PLANKS, 1)),
+                ModBlocks.SPRUCE_TABLE_THE_CLASSIC, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.WARPED_PLANKS, 1)),
+                ModBlocks.WARPED_TABLE_THE_CLASSIC, 1, CarpentryTools.SAW.asString());
+    }
+
+    private void createSawRecipe(RecipeExporter exporter) {
+        TagKey<Item> planks = ItemTags.PLANKS;
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.WOODEN_SAW, 1)
+                .input('#', planks).input('S', Items.STICK)
+                .pattern("#  ").pattern(" #S").pattern(" SS")
+                .criterion("has_planks", VanillaRecipeProvider.conditionsFromTag(planks))
+                .offerTo(exporter);
+    }
+
+    private void createSawRecipe(RecipeExporter exporter, Item saw, Item input) {
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, saw, 1)
+                .input('#', input).input('S', Items.STICK)
+                .pattern("#  ").pattern(" #S").pattern(" SS")
+                .criterion(FabricRecipeProvider.hasItem(input), VanillaRecipeProvider.conditionsFromItem(input))
+                .offerTo(exporter);
     }
 
     private void createCampfireRecipe(RecipeExporter exporter, Block result, TagKey<Item> log) {
@@ -162,7 +240,7 @@ public class RecipeGenerator extends FabricRecipeProvider {
                 .offerTo(exporter);
     }
 
-    private void createCarpentryRecipe(RecipeExporter exporter, List<Pair<Block, Integer>> ingredients, Block output,
+    private void createCarpentryRecipe(RecipeExporter exporter, List<Pair<Block, Integer>> ingredients, ItemConvertible output,
                                        int outputCount, String tool) {
         CarpentryRecipeJsonBuilder builder = CarpentryRecipeJsonBuilder
                 .create(RecipeCategory.DECORATIONS, output, outputCount, tool);
@@ -173,12 +251,18 @@ public class RecipeGenerator extends FabricRecipeProvider {
                 .offerTo(exporter, Identifier.of(getRecipeName(output) + "_carpentry"));
     }
 
-    private void createCarpentryRecipe(RecipeExporter exporter, List<Pair<Block, Integer>> ingredients, Item output,
+    private void createCarpentryRecipe(RecipeExporter exporter, Pair<Block, Integer> ingredientPair,
+                                       Pair<TagKey<Item>, Integer> secondIngredientPair, ItemConvertible output,
                                        int outputCount, String tool) {
-        CarpentryRecipeJsonBuilder builder = CarpentryRecipeJsonBuilder
-                .create(RecipeCategory.DECORATIONS, output, outputCount, tool);
+        Block firstIngredient = ingredientPair.getFirst();
+        TagKey<Item> secondIngredient = secondIngredientPair.getFirst();
 
-        addIngredientsToRecipe(builder, ingredients);
+        CarpentryRecipeJsonBuilder builder = CarpentryRecipeJsonBuilder
+                .create(RecipeCategory.DECORATIONS, output, outputCount, tool)
+                .input(Ingredient.ofItems(firstIngredient), ingredientPair.getSecond())
+                .criterion(hasItem(firstIngredient), conditionsFromItem(firstIngredient))
+                .input(Ingredient.fromTag(secondIngredientPair.getFirst()), secondIngredientPair.getSecond())
+                .criterion("has_logs", conditionsFromTag(secondIngredient));
 
         builder.criterion(FabricRecipeProvider.hasItem(output), conditionsFromItem(output))
                 .offerTo(exporter, Identifier.of(getRecipeName(output) + "_carpentry"));
@@ -191,5 +275,13 @@ public class RecipeGenerator extends FabricRecipeProvider {
             builder.input(Ingredient.ofItems(ingredient), ingredientPair.getSecond())
                     .criterion(hasItem(ingredient), conditionsFromItem(ingredient));
         }
+    }
+
+    private void createBoundBambooLadderReceipe(RecipeExporter exporter) {
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.BOUND_BAMBOO_LADDER, 3)
+                .input('B', Items.BAMBOO).input('S', Items.STRING)
+                .pattern("B B").pattern("BSB").pattern("B B")
+                .criterion("has_bamboo", VanillaRecipeProvider.conditionsFromItem(Items.BAMBOO))
+                .offerTo(exporter);
     }
 }
