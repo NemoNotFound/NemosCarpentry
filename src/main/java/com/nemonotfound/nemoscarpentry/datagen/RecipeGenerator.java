@@ -170,7 +170,7 @@ public class RecipeGenerator extends FabricRecipeProvider {
         addIngredientsToRecipe(builder, ingredients);
 
         builder.criterion(FabricRecipeProvider.hasItem(output), conditionsFromItem(output))
-                .offerTo(exporter, new Identifier(getRecipeName(output) + "_carpentry"));
+                .offerTo(exporter, Identifier.of(getRecipeName(output) + "_carpentry"));
     }
 
     private void createCarpentryRecipe(RecipeExporter exporter, List<Pair<Block, Integer>> ingredients, Item output,
@@ -181,7 +181,7 @@ public class RecipeGenerator extends FabricRecipeProvider {
         addIngredientsToRecipe(builder, ingredients);
 
         builder.criterion(FabricRecipeProvider.hasItem(output), conditionsFromItem(output))
-                .offerTo(exporter, new Identifier(getRecipeName(output) + "_carpentry"));
+                .offerTo(exporter, Identifier.of(getRecipeName(output) + "_carpentry"));
     }
 
     private void addIngredientsToRecipe(CarpentryRecipeJsonBuilder builder, List<Pair<Block, Integer>> ingredients) {

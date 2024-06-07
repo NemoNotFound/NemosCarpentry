@@ -14,11 +14,11 @@ import static com.nemonotfound.nemoscarpentry.NemosCarpentry.log;
 public class ModEntities {
 
     public static final BlockEntityType<CarpentersWorkbenchBlockEntity> CARPENTERS_WORKBENCH_BLOCK_ENTITY =
-            Registry.register(Registries.BLOCK_ENTITY_TYPE, new Identifier(MOD_ID, "carpenters_workbench_block_entity"),
+            Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(MOD_ID, "carpenters_workbench_block_entity"),
                     BlockEntityType.Builder.create(CarpentersWorkbenchBlockEntity::new, ModBlocks.CARPENTERS_WORKBENCH)
                             .build());
     public static final EntityType<ChairEntity> CHAIR_ENTITY = Registry.register(Registries.ENTITY_TYPE,
-            new Identifier(MOD_ID, "chair_entity"),
+            Identifier.of(MOD_ID, "chair_entity"),
             EntityType.Builder.create(ChairEntity::new, SpawnGroup.MISC)
                     .dimensions(0, 0)
                     .makeFireImmune()
@@ -26,7 +26,7 @@ public class ModEntities {
                     .build());
 
     public static final BlockEntityType<CustomCampfireBlockEntity> CUSTOM_CAMPFIRE_BLOCK_ENTITY =
-            Registry.register(Registries.BLOCK_ENTITY_TYPE, new Identifier("custom_campfire_block_entity"),
+            Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of("custom_campfire_block_entity"),
                     BlockEntityType.Builder.create(CustomCampfireBlockEntity::new, ModBlocks.ACACIA_CAMPFIRE,
                             ModBlocks.ACACIA_SOUL_CAMPFIRE, ModBlocks.BIRCH_CAMPFIRE,
                             ModBlocks.BIRCH_SOUL_CAMPFIRE, ModBlocks.CHERRY_CAMPFIRE,

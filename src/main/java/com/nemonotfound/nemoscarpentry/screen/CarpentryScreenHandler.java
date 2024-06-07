@@ -16,6 +16,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.RecipeEntry;
+import net.minecraft.recipe.input.SingleStackRecipeInput;
 import net.minecraft.screen.Property;
 import net.minecraft.screen.ScreenHandler;
 import net.minecraft.screen.slot.Slot;
@@ -175,13 +176,13 @@ public class CarpentryScreenHandler extends ScreenHandler {
             }
 
             //TODO: REFACTOR
-            if (this.world.getRecipeManager().getFirstMatch(NemosCarpentry.CARPENTRY, new SimpleInventory(
+            if (this.world.getRecipeManager().getFirstMatch(NemosCarpentry.CARPENTRY, new SingleStackRecipeInput(
                     this.slots.get(4).getStack()), this.world).isPresent() && isMovingItemSecondIngredient(this.slots.get(4).getStack(), movingItemStack)) {
                 if (!this.insertItem(movingItemStack, 5, 6, false)) {
                     return ItemStack.EMPTY;
                 } //TODO:REFACTOR
             } else if ((this.world.getRecipeManager().getFirstMatch(NemosCarpentry.CARPENTRY,
-                    new SimpleInventory(movingItemStack),
+                    new SingleStackRecipeInput(movingItemStack),
                     this.world).isPresent() ? !this.insertItem(movingItemStack, 4, 5, false) :
                     (slotIndex >= 7 && slotIndex < 34 ? !this.insertItem(movingItemStack, 34, 43, false) :
                             slotIndex >= 34 && slotIndex < 43 && !this.insertItem(movingItemStack, 7, 34, false)))) {
@@ -200,10 +201,10 @@ public class CarpentryScreenHandler extends ScreenHandler {
         }
         return itemStack;
     }
-    
+
     private boolean isMovingItemSecondIngredient(ItemStack firstIngredient, ItemStack secondIngredient) {
         List<RecipeEntry<CarpentryRecipe>> carpentryRecipe = this.world.getRecipeManager()
-                .getAllMatches(NemosCarpentry.CARPENTRY, new SimpleInventory(firstIngredient), this.world);
+                .getAllMatches(NemosCarpentry.CARPENTRY, new SingleStackRecipeInput(firstIngredient), this.world);
 
         return carpentryRecipe.stream().anyMatch(recipe ->
                 isItemSecondIngredient(recipe.value().getIngredientPairs(), secondIngredient));
@@ -260,13 +261,17 @@ public class CarpentryScreenHandler extends ScreenHandler {
         }
     }
 
+    private static SingleStackRecipeInput createRecipeInput(Inventory inventory) {
+        return new SingleStackRecipeInput(inventory.getStack(0));
+    }
+
     private void updateInput(Inventory inventory, ItemStack firstIngredient) {
         this.availableRecipes.clear();
         this.selectedRecipe.set(-1);
         this.outputSlot.setStackNoCallbacks(ItemStack.EMPTY);
 
         if (!firstIngredient.isEmpty()) {
-            this.availableRecipes = this.world.getRecipeManager().getAllMatches(NemosCarpentry.CARPENTRY, inventory, this.world);
+            this.availableRecipes = this.world.getRecipeManager().getAllMatches(NemosCarpentry.CARPENTRY, createRecipeInput(inventory), this.world);
         }
     }
 
@@ -350,7 +355,7 @@ public class CarpentryScreenHandler extends ScreenHandler {
         if (hasAvailableRecipes() && this.isInBounds(this.selectedRecipe.get()) && canCraftSelectedRecipe()) {
             RecipeEntry<CarpentryRecipe> recipeEntry = this.availableRecipes.get(this.selectedRecipe.get());
             CarpentryRecipe recipe = recipeEntry.value();
-            ItemStack itemStack = recipe.craft(this.input, this.world.getRegistryManager());
+            ItemStack itemStack = recipe.craft(createRecipeInput(this.input), this.world.getRegistryManager());
 
             if (itemStack.isItemEnabled(this.world.getEnabledFeatures())) {
                 this.output.setLastRecipe(recipeEntry);

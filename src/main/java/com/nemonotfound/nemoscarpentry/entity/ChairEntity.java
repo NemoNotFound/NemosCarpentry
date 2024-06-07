@@ -1,6 +1,5 @@
 package com.nemonotfound.nemoscarpentry.entity;
 
-import com.google.common.collect.UnmodifiableIterator;
 import net.minecraft.entity.*;
 import net.minecraft.entity.data.DataTracker;
 import net.minecraft.nbt.NbtCompound;
@@ -53,16 +52,11 @@ public class ChairEntity extends Entity {
             int[][] is = Dismounting.getDismountOffsets(direction);
             BlockPos blockPos = this.getBlockPos();
             BlockPos.Mutable mutable = new BlockPos.Mutable();
-            UnmodifiableIterator var6 = passenger.getPoses().iterator();
 
-            while(var6.hasNext()) {
-                EntityPose entityPose = (EntityPose)var6.next();
+            for (EntityPose entityPose : passenger.getPoses()) {
                 Box box = passenger.getBoundingBox(entityPose);
-                int[][] var9 = is;
-                int var10 = is.length;
 
-                for(int var11 = 0; var11 < var10; ++var11) {
-                    int[] js = var9[var11];
+                for (int[] js : is) {
                     mutable.set(blockPos.getX() + js[0], blockPos.getY() + 0.3, blockPos.getZ() + js[1]);
                     double d = this.getWorld().getDismountHeight(mutable);
                     if (Dismounting.canDismountInBlock(d)) {

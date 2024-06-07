@@ -7,8 +7,6 @@ import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.block.entity.CampfireBlockEntity;
 import net.minecraft.entity.Entity;
 import net.minecraft.inventory.Inventories;
-import net.minecraft.inventory.Inventory;
-import net.minecraft.inventory.SimpleInventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.nbt.NbtElement;
@@ -18,6 +16,7 @@ import net.minecraft.recipe.CampfireCookingRecipe;
 import net.minecraft.recipe.RecipeEntry;
 import net.minecraft.recipe.RecipeManager;
 import net.minecraft.recipe.RecipeType;
+import net.minecraft.recipe.input.SingleStackRecipeInput;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.util.Clearable;
 import net.minecraft.util.ItemScatterer;
@@ -37,7 +36,7 @@ public class CustomCampfireBlockEntity extends BlockEntity implements Clearable 
     private final DefaultedList<ItemStack> itemsBeingCooked = DefaultedList.ofSize(4, ItemStack.EMPTY);
     private final int[] cookingTimes = new int[4];
     private final int[] cookingTotalTimes = new int[4];
-    private final RecipeManager.MatchGetter<Inventory, CampfireCookingRecipe> matchGetter = RecipeManager.createCachedMatchGetter(RecipeType.CAMPFIRE_COOKING);
+    private final RecipeManager.MatchGetter<SingleStackRecipeInput, CampfireCookingRecipe> matchGetter = RecipeManager.createCachedMatchGetter(RecipeType.CAMPFIRE_COOKING);
 
     public CustomCampfireBlockEntity(BlockPos pos, BlockState state) {
         super(ModEntities.CUSTOM_CAMPFIRE_BLOCK_ENTITY, pos, state);
@@ -46,13 +45,13 @@ public class CustomCampfireBlockEntity extends BlockEntity implements Clearable 
     public static void litServerTick(World world, BlockPos pos, BlockState state, CustomCampfireBlockEntity campfire) {
         boolean bl = false;
         for (int i = 0; i < campfire.itemsBeingCooked.size(); ++i) {
-            SimpleInventory inventory;
+            SingleStackRecipeInput singleStackRecipeInput;
             ItemStack itemStack2;
             ItemStack itemStack = campfire.itemsBeingCooked.get(i);
             if (itemStack.isEmpty()) continue;
             bl = true;
             campfire.cookingTimes[i] = campfire.cookingTimes[i] + 1;
-            if (campfire.cookingTimes[i] < campfire.cookingTotalTimes[i] || !(itemStack2 = campfire.matchGetter.getFirstMatch(inventory = new SimpleInventory(itemStack), world).map(recipe -> recipe.value().craft(inventory, world.getRegistryManager())).orElse(itemStack)).isItemEnabled(world.getEnabledFeatures())) continue;
+            if (campfire.cookingTimes[i] < campfire.cookingTotalTimes[i] || !(itemStack2 = campfire.matchGetter.getFirstMatch(singleStackRecipeInput = new SingleStackRecipeInput(itemStack), world).map(recipe -> recipe.value().craft(singleStackRecipeInput, world.getRegistryManager())).orElse(itemStack)).isItemEnabled(world.getEnabledFeatures())) continue;
             ItemScatterer.spawn(world, pos.getX(), pos.getY(), pos.getZ(), itemStack2);
             campfire.itemsBeingCooked.set(i, ItemStack.EMPTY);
             world.updateListeners(pos, state, state, Block.NOTIFY_ALL);
@@ -139,7 +138,7 @@ public class CustomCampfireBlockEntity extends BlockEntity implements Clearable 
         if (this.itemsBeingCooked.stream().noneMatch(ItemStack::isEmpty)) {
             return Optional.empty();
         }
-        return this.matchGetter.getFirstMatch(new SimpleInventory(stack), this.world);
+        return this.matchGetter.getFirstMatch(new SingleStackRecipeInput(stack), this.world);
     }
 
     public boolean addItem(@Nullable Entity user, ItemStack stack, int cookTime) {

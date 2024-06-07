@@ -5,7 +5,6 @@ import com.mojang.serialization.Codec;
 import com.mojang.serialization.DataResult;
 import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
-import net.minecraft.inventory.Inventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.network.RegistryByteBuf;
 import net.minecraft.network.codec.PacketCodec;
@@ -13,6 +12,7 @@ import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.Recipe;
 import net.minecraft.recipe.RecipeSerializer;
 import net.minecraft.recipe.RecipeType;
+import net.minecraft.recipe.input.SingleStackRecipeInput;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.util.collection.DefaultedList;
@@ -20,7 +20,7 @@ import net.minecraft.world.World;
 
 import java.util.List;
 
-public class CarpentryRecipe implements Recipe<Inventory> {
+public class CarpentryRecipe implements Recipe<SingleStackRecipeInput> {
 
     private final ItemStack result;
     private final List<Pair<Ingredient, Integer>> ingredientPairs;
@@ -33,12 +33,12 @@ public class CarpentryRecipe implements Recipe<Inventory> {
     }
 
     @Override
-    public boolean matches(Inventory inventory, World world) {
-        return ingredientPairs.get(0).getFirst().test(inventory.getStack(0));
+    public boolean matches(SingleStackRecipeInput inventory, World world) {
+        return ingredientPairs.get(0).getFirst().test(inventory.getStackInSlot(0));
     }
 
     @Override
-    public ItemStack craft(Inventory inventory, RegistryWrapper.WrapperLookup lookup) {
+    public ItemStack craft(SingleStackRecipeInput inventory, RegistryWrapper.WrapperLookup lookup) {
         return result.copy();
     }
 

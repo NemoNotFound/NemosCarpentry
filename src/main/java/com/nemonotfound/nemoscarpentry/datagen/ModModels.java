@@ -15,14 +15,14 @@ public class ModModels {
     public static final Model PARK_BENCH_RIGHT = block("seats/parents/park_bench_right", TextureKey.ALL, TextureKey.PARTICLE);
 
     private static Model block(String parent, TextureKey... requiredTextureKeys) {
-        return new Model(Optional.of(new Identifier(MOD_ID, "block/" + parent)), Optional.empty(), requiredTextureKeys);
+        return new Model(Optional.of(Identifier.of(MOD_ID, "block/" + parent)), Optional.empty(), requiredTextureKeys);
     }
 
     private static Model item(String parent, TextureKey ... requiredTextureKeys) {
-        return new Model(Optional.of(new Identifier(MOD_ID, "item/" + parent)), Optional.empty(), requiredTextureKeys);
+        return new Model(Optional.of(Identifier.of(MOD_ID, "item/" + parent)), Optional.empty(), requiredTextureKeys);
     }
 
     private static Model block(String parent, String variant, TextureKey ... requiredTextureKeys) {
-        return new Model(Optional.of(new Identifier(MOD_ID, "block/" + parent)), Optional.of(variant), requiredTextureKeys);
+        return new Model(Optional.of(Identifier.of(MOD_ID, "block/" + parent)), Optional.of(variant), requiredTextureKeys);
     }
 }

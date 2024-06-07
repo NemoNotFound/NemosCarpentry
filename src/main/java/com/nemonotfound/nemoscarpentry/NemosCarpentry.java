@@ -25,8 +25,8 @@ public class NemosCarpentry implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		log.info("Thank you for using Nemo's Carpentry!");
-		CARPENTRY = Registry.register(Registries.RECIPE_TYPE, new Identifier(MOD_ID, CarpentryRecipe.Type.ID), CarpentryRecipe.Type.INSTANCE);
-		Registry.register(Registries.RECIPE_SERIALIZER, new Identifier(MOD_ID, CarpentryRecipe.Serializer.ID), CarpentryRecipe.Serializer.INSTANCE);
+		CARPENTRY = Registry.register(Registries.RECIPE_TYPE, Identifier.of(MOD_ID, CarpentryRecipe.Type.ID), CarpentryRecipe.Type.INSTANCE);
+		Registry.register(Registries.RECIPE_SERIALIZER, Identifier.of(MOD_ID, CarpentryRecipe.Serializer.ID), CarpentryRecipe.Serializer.INSTANCE);
 		ModItemGroups.registerItemGroups();
 		ModEntities.registerEntities();
 	}

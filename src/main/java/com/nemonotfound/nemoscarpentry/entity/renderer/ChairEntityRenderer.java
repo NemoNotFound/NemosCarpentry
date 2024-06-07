@@ -7,7 +7,8 @@ import net.minecraft.client.render.entity.EntityRendererFactory;
 import net.minecraft.util.Identifier;
 
 public class ChairEntityRenderer extends EntityRenderer<ChairEntity> {
-    private static final Identifier EMPTY_TEXTURE = new Identifier("minecraft:textures/block/stone.png");
+
+    private static final Identifier EMPTY_TEXTURE = Identifier.ofVanilla("textures/block/stone.png");
     public ChairEntityRenderer(EntityRendererFactory.Context context) {
         super(context);
     }

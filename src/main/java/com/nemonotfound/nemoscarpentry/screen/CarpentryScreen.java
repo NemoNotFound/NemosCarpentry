@@ -21,7 +21,7 @@ import static com.nemonotfound.nemoscarpentry.NemosCarpentry.MOD_ID;
 @Environment(value= EnvType.CLIENT)
 public class CarpentryScreen extends HandledScreen<CarpentryScreenHandler> {
 
-    private static final Identifier TEXTURE = new Identifier(MOD_ID, "textures/gui/container/carpenters_workbench.png");
+    private static final Identifier TEXTURE = Identifier.of(MOD_ID, "textures/gui/container/carpenters_workbench.png");
     private float scrollAmount;
     private int scrollOffset;
     private boolean mouseClicked;

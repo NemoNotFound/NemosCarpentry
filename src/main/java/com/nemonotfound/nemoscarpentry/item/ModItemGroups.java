@@ -29,10 +29,10 @@ public class ModItemGroups {
                 .displayName(Text.translatable(displayName))
                 .build();
 
-        Registry.register(Registries.ITEM_GROUP, new Identifier(MOD_ID, path), ITEM_GROUP);
+        Registry.register(Registries.ITEM_GROUP, Identifier.of(MOD_ID, path), ITEM_GROUP);
     }
 
     private static RegistryKey<ItemGroup> getItemGroup(String path) {
-        return RegistryKey.of(RegistryKeys.ITEM_GROUP, new Identifier(MOD_ID, path));
+        return RegistryKey.of(RegistryKeys.ITEM_GROUP, Identifier.of(MOD_ID, path));
     }
 }

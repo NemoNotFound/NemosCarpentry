@@ -6,8 +6,6 @@ import com.nemonotfound.nemoscarpentry.block.enums.BenchPart;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.minecraft.block.Block;
-import net.minecraft.data.server.loottable.BlockLootTableGenerator;
-import net.minecraft.data.server.loottable.vanilla.VanillaBlockLootTableGenerator;
 import net.minecraft.item.Items;
 import net.minecraft.loot.LootTable;
 import net.minecraft.loot.entry.ItemEntry;
@@ -25,58 +23,58 @@ public class LootTableGenerator extends FabricBlockLootTableProvider {
 
     @Override
     public void generate() {
-        this.addDrop(ModBlocks.ACACIA_CAMPFIRE, (Block block) -> BlockLootTableGenerator.dropsWithSilkTouch(block,
+        this.addDrop(ModBlocks.ACACIA_CAMPFIRE, (Block block) -> this.dropsWithSilkTouch(block,
                 this.addSurvivesExplosionCondition(block, ItemEntry.builder(Items.CHARCOAL)
                         .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(2.0f))))));
-        this.addDrop(ModBlocks.BIRCH_CAMPFIRE, (Block block) -> BlockLootTableGenerator.dropsWithSilkTouch(block,
+        this.addDrop(ModBlocks.BIRCH_CAMPFIRE, (Block block) -> this.dropsWithSilkTouch(block,
                 this.addSurvivesExplosionCondition(block, ItemEntry.builder(Items.CHARCOAL)
                         .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(2.0f))))));
-        this.addDrop(ModBlocks.CHERRY_CAMPFIRE, (Block block) -> BlockLootTableGenerator.dropsWithSilkTouch(block,
+        this.addDrop(ModBlocks.CHERRY_CAMPFIRE, (Block block) -> this.dropsWithSilkTouch(block,
                 this.addSurvivesExplosionCondition(block, ItemEntry.builder(Items.CHARCOAL)
                         .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(2.0f))))));
-        this.addDrop(ModBlocks.CRIMSON_CAMPFIRE, (Block block) -> BlockLootTableGenerator.dropsWithSilkTouch(block,
+        this.addDrop(ModBlocks.CRIMSON_CAMPFIRE, (Block block) -> this.dropsWithSilkTouch(block,
                 this.addSurvivesExplosionCondition(block, ItemEntry.builder(Items.CHARCOAL)
                         .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(2.0f))))));
-        this.addDrop(ModBlocks.DARK_OAK_CAMPFIRE, (Block block) -> BlockLootTableGenerator.dropsWithSilkTouch(block,
+        this.addDrop(ModBlocks.DARK_OAK_CAMPFIRE, (Block block) -> this.dropsWithSilkTouch(block,
                 this.addSurvivesExplosionCondition(block, ItemEntry.builder(Items.CHARCOAL)
                         .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(2.0f))))));
-        this.addDrop(ModBlocks.JUNGLE_CAMPFIRE, (Block block) -> BlockLootTableGenerator.dropsWithSilkTouch(block,
+        this.addDrop(ModBlocks.JUNGLE_CAMPFIRE, (Block block) -> this.dropsWithSilkTouch(block,
                 this.addSurvivesExplosionCondition(block, ItemEntry.builder(Items.CHARCOAL)
                         .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(2.0f))))));
-        this.addDrop(ModBlocks.MANGROVE_CAMPFIRE, (Block block) -> BlockLootTableGenerator.dropsWithSilkTouch(block,
+        this.addDrop(ModBlocks.MANGROVE_CAMPFIRE, (Block block) -> this.dropsWithSilkTouch(block,
                 this.addSurvivesExplosionCondition(block, ItemEntry.builder(Items.CHARCOAL)
                         .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(2.0f))))));
-        this.addDrop(ModBlocks.SPRUCE_CAMPFIRE, (Block block) -> BlockLootTableGenerator.dropsWithSilkTouch(block,
+        this.addDrop(ModBlocks.SPRUCE_CAMPFIRE, (Block block) -> this.dropsWithSilkTouch(block,
                 this.addSurvivesExplosionCondition(block, ItemEntry.builder(Items.CHARCOAL)
                         .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(2.0f))))));
-        this.addDrop(ModBlocks.WARPED_CAMPFIRE, (Block block) -> BlockLootTableGenerator.dropsWithSilkTouch(block,
+        this.addDrop(ModBlocks.WARPED_CAMPFIRE, (Block block) -> this.dropsWithSilkTouch(block,
                 this.addSurvivesExplosionCondition(block, ItemEntry.builder(Items.CHARCOAL)
                         .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(2.0f))))));
-        this.addDrop(ModBlocks.ACACIA_SOUL_CAMPFIRE, (Block block) -> VanillaBlockLootTableGenerator.dropsWithSilkTouch(block,
+        this.addDrop(ModBlocks.ACACIA_SOUL_CAMPFIRE, (Block block) -> this.dropsWithSilkTouch(block,
                 this.addSurvivesExplosionCondition(block, ItemEntry.builder(Items.SOUL_SOIL)
                         .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1.0f))))));
-        this.addDrop(ModBlocks.BIRCH_SOUL_CAMPFIRE, (Block block) -> VanillaBlockLootTableGenerator.dropsWithSilkTouch(block,
+        this.addDrop(ModBlocks.BIRCH_SOUL_CAMPFIRE, (Block block) -> this.dropsWithSilkTouch(block,
                 this.addSurvivesExplosionCondition(block, ItemEntry.builder(Items.SOUL_SOIL)
                         .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1.0f))))));
-        this.addDrop(ModBlocks.CHERRY_SOUL_CAMPFIRE, (Block block) -> VanillaBlockLootTableGenerator.dropsWithSilkTouch(block,
+        this.addDrop(ModBlocks.CHERRY_SOUL_CAMPFIRE, (Block block) -> this.dropsWithSilkTouch(block,
                 this.addSurvivesExplosionCondition(block, ItemEntry.builder(Items.SOUL_SOIL)
                         .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1.0f))))));
-        this.addDrop(ModBlocks.CRIMSON_SOUL_CAMPFIRE, (Block block) -> VanillaBlockLootTableGenerator.dropsWithSilkTouch(block,
+        this.addDrop(ModBlocks.CRIMSON_SOUL_CAMPFIRE, (Block block) -> this.dropsWithSilkTouch(block,
                 this.addSurvivesExplosionCondition(block, ItemEntry.builder(Items.SOUL_SOIL)
                         .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1.0f))))));
-        this.addDrop(ModBlocks.DARK_OAK_SOUL_CAMPFIRE, (Block block) -> VanillaBlockLootTableGenerator.dropsWithSilkTouch(block,
+        this.addDrop(ModBlocks.DARK_OAK_SOUL_CAMPFIRE, (Block block) -> this.dropsWithSilkTouch(block,
                 this.addSurvivesExplosionCondition(block, ItemEntry.builder(Items.SOUL_SOIL)
                         .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1.0f))))));
-        this.addDrop(ModBlocks.JUNGLE_SOUL_CAMPFIRE, (Block block) -> VanillaBlockLootTableGenerator.dropsWithSilkTouch(block,
+        this.addDrop(ModBlocks.JUNGLE_SOUL_CAMPFIRE, (Block block) -> this.dropsWithSilkTouch(block,
                 this.addSurvivesExplosionCondition(block, ItemEntry.builder(Items.SOUL_SOIL)
                         .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1.0f))))));
-        this.addDrop(ModBlocks.MANGROVE_SOUL_CAMPFIRE, (Block block) -> VanillaBlockLootTableGenerator.dropsWithSilkTouch(block,
+        this.addDrop(ModBlocks.MANGROVE_SOUL_CAMPFIRE, (Block block) -> this.dropsWithSilkTouch(block,
                 this.addSurvivesExplosionCondition(block, ItemEntry.builder(Items.SOUL_SOIL)
                         .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1.0f))))));
-        this.addDrop(ModBlocks.SPRUCE_SOUL_CAMPFIRE, (Block block) -> VanillaBlockLootTableGenerator.dropsWithSilkTouch(block,
+        this.addDrop(ModBlocks.SPRUCE_SOUL_CAMPFIRE, (Block block) -> this.dropsWithSilkTouch(block,
                 this.addSurvivesExplosionCondition(block, ItemEntry.builder(Items.SOUL_SOIL)
                         .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1.0f))))));
-        this.addDrop(ModBlocks.WARPED_SOUL_CAMPFIRE, (Block block) -> VanillaBlockLootTableGenerator.dropsWithSilkTouch(block,
+        this.addDrop(ModBlocks.WARPED_SOUL_CAMPFIRE, (Block block) -> this.dropsWithSilkTouch(block,
                 this.addSurvivesExplosionCondition(block, ItemEntry.builder(Items.SOUL_SOIL)
                         .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1.0f))))));
 

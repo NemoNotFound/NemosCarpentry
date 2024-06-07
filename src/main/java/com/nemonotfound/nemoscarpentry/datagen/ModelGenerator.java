@@ -51,7 +51,7 @@ public class ModelGenerator extends FabricModelProvider {
     }
 
     private TextureMap getParkBenchPartTexture(String id, String part, Block particleBlock) {
-        return TextureMap.all(new Identifier(MOD_ID, "block/seats/" + id + "_park_bench_" + part))
+        return TextureMap.all(Identifier.of(MOD_ID, "block/seats/" + id + "_park_bench_" + part))
                 .put(TextureKey.PARTICLE, TextureMap.getId(particleBlock));
     }
 
