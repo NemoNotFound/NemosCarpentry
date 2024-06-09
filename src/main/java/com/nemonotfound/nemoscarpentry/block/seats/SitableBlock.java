@@ -86,7 +86,7 @@ public abstract class SitableBlock extends HorizontalFacingBlock {
         }
 
         double posY = pos.getY() + this.height;
-        float yaw = state.get(FACING).asRotation();
+        float yaw = entityToSit.getYaw();
         this.chairEntity = ModEntities.CHAIR_ENTITY.create(world);
         chairEntity.refreshPositionAndAngles(posX, posY, posZ, yaw, 0);
         chairEntity.setNoGravity(true);

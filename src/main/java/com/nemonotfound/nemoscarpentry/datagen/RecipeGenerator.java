@@ -204,6 +204,7 @@ public class RecipeGenerator extends FabricRecipeProvider {
 
         createChairLukasNaturalRecipes(exporter);
         createCoffeeTableRecipes(exporter);
+        createBarrelSeatRecipes(exporter);
     }
 
     private void createTableTheClassicRecipes(RecipeExporter exporter) {
@@ -281,6 +282,31 @@ public class RecipeGenerator extends FabricRecipeProvider {
                 ModItems.WARPED_COFFEE_TABLE, 2, CarpentryTools.SAW.asString());
     }
 
+    private void createBarrelSeatRecipes(RecipeExporter exporter) {
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.ACACIA_PLANKS, 1), Pair.of(Items.IRON_INGOT, 1)),
+                ModItems.ACACIA_BARREL_SEAT, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.BAMBOO_PLANKS, 1), Pair.of(Items.IRON_INGOT, 1)),
+                ModItems.BAMBOO_BARREL_SEAT, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.BIRCH_PLANKS, 1), Pair.of(Items.IRON_INGOT, 1)),
+                ModItems.BIRCH_BARREL_SEAT, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.CHERRY_PLANKS, 1), Pair.of(Items.IRON_INGOT, 1)),
+                ModItems.CHERRY_BARREL_SEAT, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.CRIMSON_PLANKS, 1), Pair.of(Items.IRON_INGOT, 1)),
+                ModItems.CRIMSON_BARREL_SEAT, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.DARK_OAK_PLANKS, 1), Pair.of(Items.IRON_INGOT, 1)),
+                ModItems.DARK_OAK_BARREL_SEAT, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.JUNGLE_PLANKS, 1), Pair.of(Items.IRON_INGOT, 1)),
+                ModItems.JUNGLE_BARREL_SEAT, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.MANGROVE_PLANKS, 1), Pair.of(Items.IRON_INGOT, 1)),
+                ModItems.MANGROVE_BARREL_SEAT, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.OAK_PLANKS, 1), Pair.of(Items.IRON_INGOT, 1)),
+                ModItems.OAK_BARREL_SEAT, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.SPRUCE_PLANKS, 1), Pair.of(Items.IRON_INGOT, 1)),
+                ModItems.SPRUCE_BARREL_SEAT, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.WARPED_PLANKS, 1), Pair.of(Items.IRON_INGOT, 1)),
+                ModItems.WARPED_BARREL_SEAT, 1, CarpentryTools.SAW.asString());
+    }
+
     private void createSawRecipe(RecipeExporter exporter) {
         TagKey<Item> planks = ItemTags.PLANKS;
 
@@ -316,7 +342,7 @@ public class RecipeGenerator extends FabricRecipeProvider {
                 .offerTo(exporter);
     }
 
-    private void createCarpentryRecipe(RecipeExporter exporter, List<Pair<Block, Integer>> ingredients, ItemConvertible output,
+    private void createCarpentryRecipe(RecipeExporter exporter, List<Pair<ItemConvertible, Integer>> ingredients, ItemConvertible output,
                                        int outputCount, String tool) {
         CarpentryRecipeJsonBuilder builder = CarpentryRecipeJsonBuilder
                 .create(RecipeCategory.DECORATIONS, output, outputCount, tool);
@@ -327,10 +353,10 @@ public class RecipeGenerator extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(getRecipeName(output) + "_carpentry"));
     }
 
-    private void createCarpentryRecipe(RecipeExporter exporter, Pair<Block, Integer> ingredientPair,
+    private void createCarpentryRecipe(RecipeExporter exporter, Pair<ItemConvertible, Integer> ingredientPair,
                                        Pair<TagKey<Item>, Integer> secondIngredientPair, ItemConvertible output,
                                        int outputCount, String tool) {
-        Block firstIngredient = ingredientPair.getFirst();
+        ItemConvertible firstIngredient = ingredientPair.getFirst();
         TagKey<Item> secondIngredient = secondIngredientPair.getFirst();
 
         CarpentryRecipeJsonBuilder builder = CarpentryRecipeJsonBuilder
@@ -344,9 +370,9 @@ public class RecipeGenerator extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(getRecipeName(output) + "_carpentry"));
     }
 
-    private void addIngredientsToRecipe(CarpentryRecipeJsonBuilder builder, List<Pair<Block, Integer>> ingredients) {
-        for (Pair<Block, Integer> ingredientPair : ingredients) {
-            Block ingredient = ingredientPair.getFirst();
+    private void addIngredientsToRecipe(CarpentryRecipeJsonBuilder builder, List<Pair<ItemConvertible, Integer>> ingredients) {
+        for (Pair<ItemConvertible, Integer> ingredientPair : ingredients) {
+            ItemConvertible ingredient = ingredientPair.getFirst();
 
             builder.input(Ingredient.ofItems(ingredient), ingredientPair.getSecond())
                     .criterion(hasItem(ingredient), conditionsFromItem(ingredient));

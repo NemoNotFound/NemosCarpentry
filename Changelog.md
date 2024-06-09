@@ -4,6 +4,7 @@
 - Added Seats
   - Chair "Lukas"
   - Chair "Lukas" - Natural
+  - Barrel Seats
 - Added ItemGroups
   - Seats
   - Tables
@@ -11,6 +12,7 @@
 
 ## Changes
 - Changed order of items in ItemGroups
+- Sitting on a chair won't change the player's yaw anymore
 
 ### Downloads
 [CurseForge](https://www.curseforge.com/minecraft/mc-mods/nemos-carpentry) <br>

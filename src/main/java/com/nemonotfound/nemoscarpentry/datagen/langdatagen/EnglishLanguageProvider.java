@@ -28,6 +28,17 @@ public class EnglishLanguageProvider extends FabricLanguageProvider {
         translationBuilder.add(ModBlocks.OAK_COFFEE_TABLE, "Oak Coffee Table");
         translationBuilder.add(ModBlocks.SPRUCE_COFFEE_TABLE, "Spruce Coffee Table");
         translationBuilder.add(ModBlocks.WARPED_COFFEE_TABLE, "Warped Coffee Table");
+        translationBuilder.add(ModBlocks.ACACIA_BARREL_SEAT, "Acacia Barrel Seats");
+        translationBuilder.add(ModBlocks.BAMBOO_BARREL_SEAT, "Bamboo Barrel Seats");
+        translationBuilder.add(ModBlocks.BIRCH_BARREL_SEAT, "Birch Barrel Seats");
+        translationBuilder.add(ModBlocks.CHERRY_BARREL_SEAT, "Cherry Barrel Seats");
+        translationBuilder.add(ModBlocks.CRIMSON_BARREL_SEAT, "Crimson Barrel Seats");
+        translationBuilder.add(ModBlocks.DARK_OAK_BARREL_SEAT, "Dark_Oak Barrel Seats");
+        translationBuilder.add(ModBlocks.JUNGLE_BARREL_SEAT, "Jungle Barrel Seats");
+        translationBuilder.add(ModBlocks.MANGROVE_BARREL_SEAT, "Mangrove Barrel Seats");
+        translationBuilder.add(ModBlocks.OAK_BARREL_SEAT, "Oak Barrel Seats");
+        translationBuilder.add(ModBlocks.SPRUCE_BARREL_SEAT, "Spruce Barrel Seats");
+        translationBuilder.add(ModBlocks.WARPED_BARREL_SEAT, "Warped Barrel Seats");
 
         try {
             Optional<Path> optionalPath = dataOutput.getModContainer().findPath("en_us.json");

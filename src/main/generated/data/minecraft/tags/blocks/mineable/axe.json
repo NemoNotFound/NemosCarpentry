@@ -1,5 +1,16 @@
 {
   "values": [
+    "nemos-carpentry:acacia_barrel_seat",
+    "nemos-carpentry:bamboo_barrel_seat",
+    "nemos-carpentry:birch_barrel_seat",
+    "nemos-carpentry:cherry_barrel_seat",
+    "nemos-carpentry:crimson_barrel_seat",
+    "nemos-carpentry:dark_oak_barrel_seat",
+    "nemos-carpentry:jungle_barrel_seat",
+    "nemos-carpentry:mangrove_barrel_seat",
+    "nemos-carpentry:oak_barrel_seat",
+    "nemos-carpentry:spruce_barrel_seat",
+    "nemos-carpentry:warped_barrel_seat",
     "nemos-carpentry:acacia_ladder",
     "nemos-carpentry:bamboo_ladder",
     "nemos-carpentry:birch_ladder",

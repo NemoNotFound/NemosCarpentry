@@ -115,6 +115,17 @@ public class ModItems {
     public static final Item OAK_LOG_SEAT = registerBlockItem("oak_log_seat", ModBlocks.OAK_LOG_SEAT);
     public static final Item SPRUCE_LOG_SEAT = registerBlockItem("spruce_log_seat", ModBlocks.SPRUCE_LOG_SEAT);
     public static final Item WARPED_STEM_SEAT = registerBlockItem("warped_stem_seat", ModBlocks.WARPED_STEM_SEAT);
+    public static final Item ACACIA_BARREL_SEAT = registerBlockItem("acacia_barrel_seat", ModBlocks.ACACIA_BARREL_SEAT);
+    public static final Item BAMBOO_BARREL_SEAT = registerBlockItem("bamboo_barrel_seat", ModBlocks.BAMBOO_BARREL_SEAT);
+    public static final Item BIRCH_BARREL_SEAT = registerBlockItem("birch_barrel_seat", ModBlocks.BIRCH_BARREL_SEAT);
+    public static final Item CHERRY_BARREL_SEAT = registerBlockItem("cherry_barrel_seat", ModBlocks.CHERRY_BARREL_SEAT);
+    public static final Item CRIMSON_BARREL_SEAT = registerBlockItem("crimson_barrel_seat", ModBlocks.CRIMSON_BARREL_SEAT);
+    public static final Item DARK_OAK_BARREL_SEAT = registerBlockItem("dark_oak_barrel_seat", ModBlocks.DARK_OAK_BARREL_SEAT);
+    public static final Item JUNGLE_BARREL_SEAT = registerBlockItem("jungle_barrel_seat", ModBlocks.JUNGLE_BARREL_SEAT);
+    public static final Item MANGROVE_BARREL_SEAT = registerBlockItem("mangrove_barrel_seat", ModBlocks.MANGROVE_BARREL_SEAT);
+    public static final Item OAK_BARREL_SEAT = registerBlockItem("oak_barrel_seat", ModBlocks.OAK_BARREL_SEAT);
+    public static final Item SPRUCE_BARREL_SEAT = registerBlockItem("spruce_barrel_seat", ModBlocks.SPRUCE_BARREL_SEAT);
+    public static final Item WARPED_BARREL_SEAT = registerBlockItem("warped_barrel_seat", ModBlocks.WARPED_BARREL_SEAT);
     public static final Item ACACIA_CAMPFIRE = registerBlockItem("acacia_campfire", ModBlocks.ACACIA_CAMPFIRE);
     public static final Item BIRCH_CAMPFIRE = registerBlockItem("birch_campfire", ModBlocks.BIRCH_CAMPFIRE);
     public static final Item CHERRY_CAMPFIRE = registerBlockItem("cherry_campfire", ModBlocks.CHERRY_CAMPFIRE);

@@ -9,6 +9,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.data.client.*;
+import net.minecraft.registry.Registries;
 import net.minecraft.state.property.Properties;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.Direction;
@@ -119,12 +120,34 @@ public class ModelGenerator extends FabricModelProvider {
         generateBlockModel(blockStateModelGenerator, Blocks.OAK_PLANKS, Blocks.OAK_LOG, ModBlocks.OAK_COFFEE_TABLE, ModModels.COFFEE_TABLE);
         generateBlockModel(blockStateModelGenerator, Blocks.SPRUCE_PLANKS, Blocks.SPRUCE_LOG, ModBlocks.SPRUCE_COFFEE_TABLE, ModModels.COFFEE_TABLE);
         generateBlockModel(blockStateModelGenerator, Blocks.WARPED_PLANKS, Blocks.WARPED_STEM, ModBlocks.WARPED_COFFEE_TABLE, ModModels.COFFEE_TABLE);
+
+        generateBarrelSeatModel(blockStateModelGenerator, ModBlocks.ACACIA_BARREL_SEAT, Blocks.ACACIA_PLANKS, ModModels.BARREL_SEAT);
+        generateBarrelSeatModel(blockStateModelGenerator, ModBlocks.BAMBOO_BARREL_SEAT, Blocks.BAMBOO_PLANKS, ModModels.BARREL_SEAT);
+        generateBarrelSeatModel(blockStateModelGenerator, ModBlocks.BIRCH_BARREL_SEAT, Blocks.BIRCH_PLANKS, ModModels.BARREL_SEAT);
+        generateBarrelSeatModel(blockStateModelGenerator, ModBlocks.CHERRY_BARREL_SEAT, Blocks.CHERRY_PLANKS, ModModels.BARREL_SEAT);
+        generateBarrelSeatModel(blockStateModelGenerator, ModBlocks.CRIMSON_BARREL_SEAT, Blocks.CRIMSON_PLANKS, ModModels.BARREL_SEAT);
+        generateBarrelSeatModel(blockStateModelGenerator, ModBlocks.DARK_OAK_BARREL_SEAT, Blocks.DARK_OAK_PLANKS, ModModels.BARREL_SEAT);
+        generateBarrelSeatModel(blockStateModelGenerator, ModBlocks.JUNGLE_BARREL_SEAT, Blocks.JUNGLE_PLANKS, ModModels.BARREL_SEAT);
+        generateBarrelSeatModel(blockStateModelGenerator, ModBlocks.MANGROVE_BARREL_SEAT, Blocks.MANGROVE_PLANKS, ModModels.BARREL_SEAT);
+        generateBarrelSeatModel(blockStateModelGenerator, ModBlocks.OAK_BARREL_SEAT, Blocks.OAK_PLANKS, ModModels.BARREL_SEAT);
+        generateBarrelSeatModel(blockStateModelGenerator, ModBlocks.SPRUCE_BARREL_SEAT, Blocks.SPRUCE_PLANKS, ModModels.BARREL_SEAT);
+        generateBarrelSeatModel(blockStateModelGenerator, ModBlocks.WARPED_BARREL_SEAT, Blocks.WARPED_PLANKS, ModModels.BARREL_SEAT);
     }
 
     private void generateLadderBlockModel(Block block, BlockStateModelGenerator blockStateModelGenerator) {
         TextureMap textureMap = TextureMap.texture(block).put(TextureKey.PARTICLE, TextureMap.getId(block));
         ModModels.LADDER.upload(block, textureMap, blockStateModelGenerator.modelCollector);
         blockStateModelGenerator.registerNorthDefaultHorizontalRotation(block);
+    }
+
+    private void generateBarrelSeatModel(BlockStateModelGenerator blockStateModelGenerator, Block block, Block textureBlock, Model model) {
+        Identifier identifier = Registries.BLOCK.getId(block);
+        TextureMap textureMap = TextureMap.texture(textureBlock).put(TextureKey.SIDE, identifier
+                        .withPath("block/dark_iron_block")).put(TextureKey.PARTICLE, TextureMap.getId(textureBlock));
+        Identifier modelId = model.upload(block, textureMap, blockStateModelGenerator.modelCollector);
+
+        blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier
+                .create(block, BlockStateVariant.create().put(VariantSettings.MODEL, modelId)));
     }
 
     private void generateBlockModel(BlockStateModelGenerator blockStateModelGenerator, Block block, Block textureBlock, Model model) {

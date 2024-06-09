@@ -20,6 +20,7 @@ public class ModModels {
     public static final Model CHAIR_FELIX = block("seats/chair_felix", TextureKey.ALL, TextureKey.PARTICLE);
     public static final Model LADDER = block("ladders/ladder", TextureKey.TEXTURE, TextureKey.PARTICLE);
     public static final Model COFFEE_TABLE = block("tables/coffee_table", TextureKey.ALL, TextureKey.TEXTURE, TextureKey.BOTTOM, TextureKey.PARTICLE);
+    public static final Model BARREL_SEAT = block("seats/barrel_seat", TextureKey.TEXTURE, TextureKey.SIDE, TextureKey.PARTICLE);
 
     private static Model block(String parent, TextureKey... requiredTextureKeys) {
         return new Model(Optional.of(new Identifier(MOD_ID, "block/" + parent)), Optional.empty(), requiredTextureKeys);

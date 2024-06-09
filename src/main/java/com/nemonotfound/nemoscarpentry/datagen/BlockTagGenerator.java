@@ -17,6 +17,17 @@ public class BlockTagGenerator extends FabricTagProvider.BlockTagProvider {
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
         getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)
+                .add(ModBlocks.ACACIA_BARREL_SEAT)
+                .add(ModBlocks.BAMBOO_BARREL_SEAT)
+                .add(ModBlocks.BIRCH_BARREL_SEAT)
+                .add(ModBlocks.CHERRY_BARREL_SEAT)
+                .add(ModBlocks.CRIMSON_BARREL_SEAT)
+                .add(ModBlocks.DARK_OAK_BARREL_SEAT)
+                .add(ModBlocks.JUNGLE_BARREL_SEAT)
+                .add(ModBlocks.MANGROVE_BARREL_SEAT)
+                .add(ModBlocks.OAK_BARREL_SEAT)
+                .add(ModBlocks.SPRUCE_BARREL_SEAT)
+                .add(ModBlocks.WARPED_BARREL_SEAT)
                 .add(ModBlocks.ACACIA_LADDER)
                 .add(ModBlocks.BAMBOO_LADDER)
                 .add(ModBlocks.BIRCH_LADDER)

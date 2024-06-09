@@ -199,6 +199,28 @@ public class ModBlocks {
             new ParkBenchBlock(AbstractBlock.Settings.copy(SPRUCE_PLANKS).nonOpaque()));
     public static final Block WARPED_PARK_BENCH = registerBlock("warped_park_bench",
             new ParkBenchBlock(AbstractBlock.Settings.copy(WARPED_PLANKS).nonOpaque()));
+    public static final Block ACACIA_BARREL_SEAT = registerBlock("acacia_barrel_seat",
+            new BarrelSeatBlock(AbstractBlock.Settings.copy(ACACIA_PLANKS).nonOpaque()));
+    public static final Block BAMBOO_BARREL_SEAT = registerBlock("bamboo_barrel_seat",
+            new BarrelSeatBlock(AbstractBlock.Settings.copy(BAMBOO_PLANKS).nonOpaque()));
+    public static final Block BIRCH_BARREL_SEAT = registerBlock("birch_barrel_seat",
+            new BarrelSeatBlock(AbstractBlock.Settings.copy(BIRCH_PLANKS).nonOpaque()));
+    public static final Block CHERRY_BARREL_SEAT = registerBlock("cherry_barrel_seat",
+            new BarrelSeatBlock(AbstractBlock.Settings.copy(CHERRY_PLANKS).nonOpaque()));
+    public static final Block CRIMSON_BARREL_SEAT = registerBlock("crimson_barrel_seat",
+            new BarrelSeatBlock(AbstractBlock.Settings.copy(CRIMSON_PLANKS).nonOpaque()));
+    public static final Block DARK_OAK_BARREL_SEAT = registerBlock("dark_oak_barrel_seat",
+            new BarrelSeatBlock(AbstractBlock.Settings.copy(DARK_OAK_PLANKS).nonOpaque()));
+    public static final Block JUNGLE_BARREL_SEAT = registerBlock("jungle_barrel_seat",
+            new BarrelSeatBlock(AbstractBlock.Settings.copy(JUNGLE_PLANKS).nonOpaque()));
+    public static final Block MANGROVE_BARREL_SEAT = registerBlock("mangrove_barrel_seat",
+            new BarrelSeatBlock(AbstractBlock.Settings.copy(MANGROVE_PLANKS).nonOpaque()));
+    public static final Block OAK_BARREL_SEAT = registerBlock("oak_barrel_seat",
+            new BarrelSeatBlock(AbstractBlock.Settings.copy(OAK_PLANKS).nonOpaque()));
+    public static final Block SPRUCE_BARREL_SEAT = registerBlock("spruce_barrel_seat",
+            new BarrelSeatBlock(AbstractBlock.Settings.copy(SPRUCE_PLANKS).nonOpaque()));
+    public static final Block WARPED_BARREL_SEAT = registerBlock("warped_barrel_seat",
+            new BarrelSeatBlock(AbstractBlock.Settings.copy(WARPED_PLANKS).nonOpaque()));
     public static final Block CARPENTERS_WORKBENCH = registerBlock("carpenters_workbench", new CarpentersWorkbenchBlock(AbstractBlock.Settings.create()
             .mapColor(MapColor.OAK_TAN)
             .instrument(Instrument.BASS)

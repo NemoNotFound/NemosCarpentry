@@ -177,6 +177,18 @@ public class LootTableGenerator extends FabricBlockLootTableProvider {
         this.addDrop(ModBlocks.OAK_COFFEE_TABLE);
         this.addDrop(ModBlocks.SPRUCE_COFFEE_TABLE);
         this.addDrop(ModBlocks.WARPED_COFFEE_TABLE);
+
+        this.addDrop(ModBlocks.ACACIA_BARREL_SEAT);
+        this.addDrop(ModBlocks.BAMBOO_BARREL_SEAT);
+        this.addDrop(ModBlocks.BIRCH_BARREL_SEAT);
+        this.addDrop(ModBlocks.CHERRY_BARREL_SEAT);
+        this.addDrop(ModBlocks.CRIMSON_BARREL_SEAT);
+        this.addDrop(ModBlocks.DARK_OAK_BARREL_SEAT);
+        this.addDrop(ModBlocks.JUNGLE_BARREL_SEAT);
+        this.addDrop(ModBlocks.MANGROVE_BARREL_SEAT);
+        this.addDrop(ModBlocks.OAK_BARREL_SEAT);
+        this.addDrop(ModBlocks.SPRUCE_BARREL_SEAT);
+        this.addDrop(ModBlocks.WARPED_BARREL_SEAT);
     }
 
     private LootTable.Builder benchDrops(Block block) {
