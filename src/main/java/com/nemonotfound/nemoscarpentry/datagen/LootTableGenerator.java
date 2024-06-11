@@ -1,10 +1,10 @@
 package com.nemonotfound.nemoscarpentry.datagen;
 
-import com.nemonotfound.nemoscarpentry.block.seats.LukasChairBlock;
 import com.nemonotfound.nemoscarpentry.block.ModBlocks;
-import com.nemonotfound.nemoscarpentry.block.seats.ParkBenchBlock;
 import com.nemonotfound.nemoscarpentry.block.enums.BenchPart;
 import com.nemonotfound.nemoscarpentry.block.enums.ChairPart;
+import com.nemonotfound.nemoscarpentry.block.seats.ParkBenchBlock;
+import com.nemonotfound.nemoscarpentry.property.ModProperties;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.minecraft.block.Block;
@@ -166,6 +166,30 @@ public class LootTableGenerator extends FabricBlockLootTableProvider {
         this.addDrop(ModBlocks.SPRUCE_CHAIR_LUKAS_NATURAL, this::chairDrops);
         this.addDrop(ModBlocks.WARPED_CHAIR_LUKAS_NATURAL, this::chairDrops);
 
+        this.addDrop(ModBlocks.ACACIA_CHAIR_TOMMY, this::chairDrops);
+        this.addDrop(ModBlocks.BAMBOO_CHAIR_TOMMY, this::chairDrops);
+        this.addDrop(ModBlocks.BIRCH_CHAIR_TOMMY, this::chairDrops);
+        this.addDrop(ModBlocks.CHERRY_CHAIR_TOMMY, this::chairDrops);
+        this.addDrop(ModBlocks.CRIMSON_CHAIR_TOMMY, this::chairDrops);
+        this.addDrop(ModBlocks.DARK_OAK_CHAIR_TOMMY, this::chairDrops);
+        this.addDrop(ModBlocks.JUNGLE_CHAIR_TOMMY, this::chairDrops);
+        this.addDrop(ModBlocks.MANGROVE_CHAIR_TOMMY, this::chairDrops);
+        this.addDrop(ModBlocks.OAK_CHAIR_TOMMY, this::chairDrops);
+        this.addDrop(ModBlocks.SPRUCE_CHAIR_TOMMY, this::chairDrops);
+        this.addDrop(ModBlocks.WARPED_CHAIR_TOMMY, this::chairDrops);
+
+        this.addDrop(ModBlocks.ACACIA_CHAIR_TOMMY_NATURAL, this::chairDrops);
+        this.addDrop(ModBlocks.BAMBOO_CHAIR_TOMMY_NATURAL, this::chairDrops);
+        this.addDrop(ModBlocks.BIRCH_CHAIR_TOMMY_NATURAL, this::chairDrops);
+        this.addDrop(ModBlocks.CHERRY_CHAIR_TOMMY_NATURAL, this::chairDrops);
+        this.addDrop(ModBlocks.CRIMSON_CHAIR_TOMMY_NATURAL, this::chairDrops);
+        this.addDrop(ModBlocks.DARK_OAK_CHAIR_TOMMY_NATURAL, this::chairDrops);
+        this.addDrop(ModBlocks.JUNGLE_CHAIR_TOMMY_NATURAL, this::chairDrops);
+        this.addDrop(ModBlocks.MANGROVE_CHAIR_TOMMY_NATURAL, this::chairDrops);
+        this.addDrop(ModBlocks.OAK_CHAIR_TOMMY_NATURAL, this::chairDrops);
+        this.addDrop(ModBlocks.SPRUCE_CHAIR_TOMMY_NATURAL, this::chairDrops);
+        this.addDrop(ModBlocks.WARPED_CHAIR_TOMMY_NATURAL, this::chairDrops);
+
         this.addDrop(ModBlocks.ACACIA_COFFEE_TABLE);
         this.addDrop(ModBlocks.BAMBOO_COFFEE_TABLE);
         this.addDrop(ModBlocks.BIRCH_COFFEE_TABLE);
@@ -196,6 +220,6 @@ public class LootTableGenerator extends FabricBlockLootTableProvider {
     }
 
     private LootTable.Builder chairDrops(Block block) {
-        return this.dropsWithProperty(block, LukasChairBlock.PART, ChairPart.LOWER);
+        return this.dropsWithProperty(block, ModProperties.CHAIR_PART, ChairPart.LOWER);
     }
 }

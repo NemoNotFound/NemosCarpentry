@@ -39,6 +39,30 @@ public class EnglishLanguageProvider extends FabricLanguageProvider {
         translationBuilder.add(ModBlocks.OAK_BARREL_SEAT, "Oak Barrel Seats");
         translationBuilder.add(ModBlocks.SPRUCE_BARREL_SEAT, "Spruce Barrel Seats");
         translationBuilder.add(ModBlocks.WARPED_BARREL_SEAT, "Warped Barrel Seats");
+        
+        translationBuilder.add(ModBlocks.ACACIA_CHAIR_TOMMY, "Acacia Chair \"Tommy\"");
+        translationBuilder.add(ModBlocks.BAMBOO_CHAIR_TOMMY, "Bamboo Chair \"Tommy\"");
+        translationBuilder.add(ModBlocks.BIRCH_CHAIR_TOMMY, "Birch Chair \"Tommy\"");
+        translationBuilder.add(ModBlocks.CHERRY_CHAIR_TOMMY, "Cherry Chair \"Tommy\"");
+        translationBuilder.add(ModBlocks.CRIMSON_CHAIR_TOMMY, "Crimson Chair \"Tommy\"");
+        translationBuilder.add(ModBlocks.DARK_OAK_CHAIR_TOMMY, "Dark Oak Chair \"Tommy\"");
+        translationBuilder.add(ModBlocks.JUNGLE_CHAIR_TOMMY, "Jungle Chair \"Tommy\"");
+        translationBuilder.add(ModBlocks.MANGROVE_CHAIR_TOMMY, "Mangrove Chair \"Tommy\"");
+        translationBuilder.add(ModBlocks.OAK_CHAIR_TOMMY, "Oak Chair \"Tommy\"");
+        translationBuilder.add(ModBlocks.SPRUCE_CHAIR_TOMMY, "Spruce Chair \"Tommy\"");
+        translationBuilder.add(ModBlocks.WARPED_CHAIR_TOMMY, "Warped Chair \"Tommy\"");
+
+        translationBuilder.add(ModBlocks.ACACIA_CHAIR_TOMMY_NATURAL, "Acacia Chair \"Tommy\" - Natural");
+        translationBuilder.add(ModBlocks.BAMBOO_CHAIR_TOMMY_NATURAL, "Bamboo Chair \"Tommy\" - Natural");
+        translationBuilder.add(ModBlocks.BIRCH_CHAIR_TOMMY_NATURAL, "Birch Chair \"Tommy\" - Natural");
+        translationBuilder.add(ModBlocks.CHERRY_CHAIR_TOMMY_NATURAL, "Cherry Chair \"Tommy\" - Natural");
+        translationBuilder.add(ModBlocks.CRIMSON_CHAIR_TOMMY_NATURAL, "Crimson Chair \"Tommy\" - Natural");
+        translationBuilder.add(ModBlocks.DARK_OAK_CHAIR_TOMMY_NATURAL, "Dark Oak Chair \"Tommy\" - Natural");
+        translationBuilder.add(ModBlocks.JUNGLE_CHAIR_TOMMY_NATURAL, "Jungle Chair \"Tommy\" - Natural");
+        translationBuilder.add(ModBlocks.MANGROVE_CHAIR_TOMMY_NATURAL, "Mangrove Chair \"Tommy\" - Natural");
+        translationBuilder.add(ModBlocks.OAK_CHAIR_TOMMY_NATURAL, "Oak Chair \"Tommy\" - Natural");
+        translationBuilder.add(ModBlocks.SPRUCE_CHAIR_TOMMY_NATURAL, "Spruce Chair \"Tommy\" - Natural");
+        translationBuilder.add(ModBlocks.WARPED_CHAIR_TOMMY_NATURAL, "Warped Chair \"Tommy\" - Natural");
 
         try {
             Optional<Path> optionalPath = dataOutput.getModContainer().findPath("en_us.json");

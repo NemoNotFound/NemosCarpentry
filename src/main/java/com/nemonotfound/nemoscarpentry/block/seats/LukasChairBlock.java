@@ -1,23 +1,14 @@
 package com.nemonotfound.nemoscarpentry.block.seats;
 
-import com.nemonotfound.nemoscarpentry.block.enums.ChairPart;
-import com.nemonotfound.nemoscarpentry.property.ModProperties;
 import net.minecraft.block.Block;
-import net.minecraft.block.HorizontalFacingBlock;
 import net.minecraft.block.Waterloggable;
-import net.minecraft.state.property.DirectionProperty;
-import net.minecraft.state.property.EnumProperty;
 import net.minecraft.util.function.BooleanBiFunction;
-import net.minecraft.util.math.Direction;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
 
 import java.util.stream.Stream;
 
 public class LukasChairBlock extends MultipleBlockChair implements Waterloggable {
-
-    private static final DirectionProperty FACING = HorizontalFacingBlock.FACING;
-    public static final EnumProperty<ChairPart> PART = ModProperties.CHAIR_PART;
 
     private static final VoxelShape NORTH_SHAPE = Stream.of(
             Block.createCuboidShape(12, 0, 12, 14, 7, 14),
@@ -82,7 +73,5 @@ public class LukasChairBlock extends MultipleBlockChair implements Waterloggable
 
     public LukasChairBlock(Settings settings) {
         super(settings, 0.58f, NORTH_SHAPE, EAST_SHAPE, SOUTH_SHAPE, WEST_SHAPE);
-        this.setDefaultState(this.stateManager.getDefaultState().with(FACING, Direction.NORTH)
-                .with(WATERLOGGED, false).with(PART, ChairPart.LOWER));
     }
 }

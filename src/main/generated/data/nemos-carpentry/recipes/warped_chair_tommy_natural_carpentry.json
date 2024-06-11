@@ -1,0 +1,14 @@
+{
+  "type": "nemos-carpentry:carpentry",
+  "count": 1,
+  "ingredients": [
+    {
+      "item": "minecraft:warped_planks"
+    },
+    {
+      "tag": "minecraft:warped_stems"
+    }
+  ],
+  "result": "nemos-carpentry:warped_chair_tommy_natural",
+  "tool": "saw"
+}

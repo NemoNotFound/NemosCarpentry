@@ -3,7 +3,7 @@
   "count": 2,
   "ingredients": [
     {
-      "item": "minecraft:mangrove_planks"
+      "item": "minecraft:oak_planks"
     }
   ],
   "result": "minecraft:ladder",

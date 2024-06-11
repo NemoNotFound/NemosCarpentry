@@ -11,11 +11,11 @@
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_mangrove_planks": {
+    "has_oak_planks": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:mangrove_planks"
+            "items": "minecraft:oak_planks"
           }
         ]
       },
@@ -31,7 +31,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_mangrove_planks",
+      "has_oak_planks",
       "has_ladder"
     ]
   ],

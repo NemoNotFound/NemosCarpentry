@@ -49,6 +49,30 @@ public class ModelGenerator extends FabricModelProvider {
         generateChairLukasNaturalModel(blockStateModelGenerator, Blocks.SPRUCE_PLANKS, Blocks.SPRUCE_LOG, ModBlocks.SPRUCE_CHAIR_LUKAS_NATURAL, ModModels.CHAIR_LUKAS_NATURAL);
         generateChairLukasNaturalModel(blockStateModelGenerator, Blocks.WARPED_PLANKS, Blocks.WARPED_STEM, ModBlocks.WARPED_CHAIR_LUKAS_NATURAL, ModModels.CHAIR_LUKAS_NATURAL);
 
+        generateChairLukasModel(blockStateModelGenerator, Blocks.ACACIA_PLANKS, Blocks.ACACIA_LOG, ModBlocks.ACACIA_CHAIR_TOMMY, ModModels.CHAIR_TOMMY);
+        generateChairLukasModel(blockStateModelGenerator, Blocks.BAMBOO_PLANKS, ModBlocks.BAMBOO_CHAIR_TOMMY, ModModels.CHAIR_TOMMY);
+        generateChairLukasModel(blockStateModelGenerator, Blocks.BIRCH_PLANKS, Blocks.BIRCH_LOG, ModBlocks.BIRCH_CHAIR_TOMMY, ModModels.CHAIR_TOMMY);
+        generateChairLukasModel(blockStateModelGenerator, Blocks.CHERRY_PLANKS, Blocks.CHERRY_LOG, ModBlocks.CHERRY_CHAIR_TOMMY, ModModels.CHAIR_TOMMY);
+        generateChairLukasModel(blockStateModelGenerator, Blocks.CRIMSON_PLANKS, Blocks.CRIMSON_STEM, ModBlocks.CRIMSON_CHAIR_TOMMY, ModModels.CHAIR_TOMMY);
+        generateChairLukasModel(blockStateModelGenerator, Blocks.DARK_OAK_PLANKS, Blocks.DARK_OAK_LOG, ModBlocks.DARK_OAK_CHAIR_TOMMY, ModModels.CHAIR_TOMMY);
+        generateChairLukasModel(blockStateModelGenerator, Blocks.JUNGLE_PLANKS, Blocks.JUNGLE_LOG, ModBlocks.JUNGLE_CHAIR_TOMMY, ModModels.CHAIR_TOMMY);
+        generateChairLukasModel(blockStateModelGenerator, Blocks.MANGROVE_PLANKS, Blocks.MANGROVE_LOG, ModBlocks.MANGROVE_CHAIR_TOMMY, ModModels.CHAIR_TOMMY);
+        generateChairLukasModel(blockStateModelGenerator, Blocks.OAK_PLANKS, Blocks.OAK_LOG, ModBlocks.OAK_CHAIR_TOMMY, ModModels.CHAIR_TOMMY);
+        generateChairLukasModel(blockStateModelGenerator, Blocks.SPRUCE_PLANKS, Blocks.SPRUCE_LOG, ModBlocks.SPRUCE_CHAIR_TOMMY, ModModels.CHAIR_TOMMY);
+        generateChairLukasModel(blockStateModelGenerator, Blocks.WARPED_PLANKS, Blocks.WARPED_STEM, ModBlocks.WARPED_CHAIR_TOMMY, ModModels.CHAIR_TOMMY);
+
+        generateChairLukasNaturalModel(blockStateModelGenerator, Blocks.ACACIA_PLANKS, Blocks.ACACIA_LOG, ModBlocks.ACACIA_CHAIR_TOMMY_NATURAL, ModModels.CHAIR_TOMMY_NATURAL);
+        generateChairLukasNaturalBambooModel(blockStateModelGenerator, Blocks.BAMBOO_PLANKS, Blocks.BAMBOO_BLOCK, ModBlocks.BAMBOO_CHAIR_TOMMY_NATURAL, ModModels.CHAIR_TOMMY_NATURAL);
+        generateChairLukasNaturalModel(blockStateModelGenerator, Blocks.BIRCH_PLANKS, Blocks.BIRCH_LOG, ModBlocks.BIRCH_CHAIR_TOMMY_NATURAL, ModModels.CHAIR_TOMMY_NATURAL);
+        generateChairLukasNaturalModel(blockStateModelGenerator, Blocks.CHERRY_PLANKS, Blocks.CHERRY_LOG, ModBlocks.CHERRY_CHAIR_TOMMY_NATURAL, ModModels.CHAIR_TOMMY_NATURAL);
+        generateChairLukasNaturalModel(blockStateModelGenerator, Blocks.CRIMSON_PLANKS, Blocks.CRIMSON_STEM, ModBlocks.CRIMSON_CHAIR_TOMMY_NATURAL, ModModels.CHAIR_TOMMY_NATURAL);
+        generateChairLukasNaturalModel(blockStateModelGenerator, Blocks.DARK_OAK_PLANKS, Blocks.DARK_OAK_LOG, ModBlocks.DARK_OAK_CHAIR_TOMMY_NATURAL, ModModels.CHAIR_TOMMY_NATURAL);
+        generateChairLukasNaturalModel(blockStateModelGenerator, Blocks.JUNGLE_PLANKS, Blocks.JUNGLE_LOG, ModBlocks.JUNGLE_CHAIR_TOMMY_NATURAL, ModModels.CHAIR_TOMMY_NATURAL);
+        generateChairLukasNaturalModel(blockStateModelGenerator, Blocks.MANGROVE_PLANKS, Blocks.MANGROVE_LOG, ModBlocks.MANGROVE_CHAIR_TOMMY_NATURAL, ModModels.CHAIR_TOMMY_NATURAL);
+        generateChairLukasNaturalModel(blockStateModelGenerator, Blocks.OAK_PLANKS, Blocks.OAK_LOG, ModBlocks.OAK_CHAIR_TOMMY_NATURAL, ModModels.CHAIR_TOMMY_NATURAL);
+        generateChairLukasNaturalModel(blockStateModelGenerator, Blocks.SPRUCE_PLANKS, Blocks.SPRUCE_LOG, ModBlocks.SPRUCE_CHAIR_TOMMY_NATURAL, ModModels.CHAIR_TOMMY_NATURAL);
+        generateChairLukasNaturalModel(blockStateModelGenerator, Blocks.WARPED_PLANKS, Blocks.WARPED_STEM, ModBlocks.WARPED_CHAIR_TOMMY_NATURAL, ModModels.CHAIR_TOMMY_NATURAL);
+
         generateParkBenchModel(blockStateModelGenerator, "acacia", Blocks.ACACIA_PLANKS, ModBlocks.ACACIA_PARK_BENCH);
         generateParkBenchModel(blockStateModelGenerator, "bamboo", Blocks.BAMBOO_PLANKS, ModBlocks.BAMBOO_PARK_BENCH);
         generateParkBenchModel(blockStateModelGenerator, "birch", Blocks.BIRCH_PLANKS, ModBlocks.BIRCH_PARK_BENCH);

@@ -14,7 +14,9 @@ public class ModModels {
     public static final Model PARK_BENCH_LEFT = block("seats/park_bench_left", TextureKey.ALL, TextureKey.PARTICLE);
     public static final Model PARK_BENCH_RIGHT = block("seats/park_bench_right", TextureKey.ALL, TextureKey.PARTICLE);
     public static final Model CHAIR_LUKAS = block("seats/chair_lukas", TextureKey.ALL, TextureKey.BOTTOM, TextureKey.PARTICLE);
+    public static final Model CHAIR_TOMMY = block("seats/chair_tommy", TextureKey.ALL, TextureKey.BOTTOM, TextureKey.PARTICLE);
     public static final Model CHAIR_LUKAS_NATURAL = block("seats/chair_lukas_natural", TextureKey.ALL, TextureKey.TEXTURE, TextureKey.BOTTOM, TextureKey.PARTICLE);
+    public static final Model CHAIR_TOMMY_NATURAL = block("seats/chair_tommy_natural", TextureKey.ALL, TextureKey.TEXTURE, TextureKey.BOTTOM, TextureKey.PARTICLE);
     public static final Model TABLE_THE_CLASSIC = block("tables/table_the_classic", TextureKey.ALL, TextureKey.PARTICLE);
     public static final Model CHAIR = block("seats/chair", TextureKey.ALL, TextureKey.PARTICLE);
     public static final Model CHAIR_FELIX = block("seats/chair_felix", TextureKey.ALL, TextureKey.PARTICLE);
