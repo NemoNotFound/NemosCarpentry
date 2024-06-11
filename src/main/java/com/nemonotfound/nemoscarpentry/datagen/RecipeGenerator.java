@@ -32,7 +32,7 @@ public class RecipeGenerator extends FabricRecipeProvider {
 
     @Override
     public void generate(RecipeExporter exporter) {
-        createBambooLadderReceipe(exporter);
+        createBoundBambooLadderReceipe(exporter);
 
         createSawRecipe(exporter);
         createSawRecipe(exporter, ModItems.STONE_SAW, Items.COBBLESTONE);
@@ -431,7 +431,7 @@ public class RecipeGenerator extends FabricRecipeProvider {
         }
     }
 
-    private void createBambooLadderReceipe(RecipeExporter exporter) {
+    private void createBoundBambooLadderReceipe(RecipeExporter exporter) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.BOUND_BAMBOO_LADDER, 3)
                 .input('B', Items.BAMBOO).input('S', Items.STRING)
                 .pattern("B B").pattern("BSB").pattern("B B")

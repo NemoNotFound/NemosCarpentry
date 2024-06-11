@@ -29,7 +29,7 @@ public class CarpentryRecipeJsonBuilder implements CraftingRecipeJsonBuilder {
     private final int count;
     private final List<Pair<Ingredient, Integer>> ingredientPairs = new ArrayList<>();
     private final String tool;
-    private final Map<String, AdvancementCriterion<?>> advancementBuilder = new LinkedHashMap();
+    private final Map<String, AdvancementCriterion<?>> advancementBuilder = new LinkedHashMap<>();
 
     public CarpentryRecipeJsonBuilder(RecipeCategory category, ItemConvertible output, int count, String tool) {
         this.category = category;
@@ -38,21 +38,8 @@ public class CarpentryRecipeJsonBuilder implements CraftingRecipeJsonBuilder {
         this.tool = tool.equals("saw") ? tool : "none";
     }
 
-    public static CarpentryRecipeJsonBuilder create(RecipeCategory category, ItemConvertible output) {
-        return new CarpentryRecipeJsonBuilder(category, output, 1, "none");
-    }
-
-    public static CarpentryRecipeJsonBuilder create(RecipeCategory category, ItemConvertible output, String tool) {
-        return new CarpentryRecipeJsonBuilder(category, output, 1, tool);
-    }
-
     public static CarpentryRecipeJsonBuilder create(RecipeCategory category, ItemConvertible output, int count, String tool) {
         return new CarpentryRecipeJsonBuilder(category, output, count, tool);
-    }
-
-
-    public CarpentryRecipeJsonBuilder input(Ingredient ingredient) {
-        return this.input(ingredient, 1);
     }
 
     public CarpentryRecipeJsonBuilder input(Ingredient ingredient, int ingredientCount) {

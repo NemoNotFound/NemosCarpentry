@@ -353,5 +353,38 @@ public class BlockTagGenerator extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.OAK_COFFEE_TABLE)
                 .add(ModBlocks.SPRUCE_COFFEE_TABLE)
                 .add(ModBlocks.WARPED_COFFEE_TABLE);
+
+        getOrCreateTagBuilder(BlockTags.CLIMBABLE)
+                .add(ModBlocks.ACACIA_LADDER)
+                .add(ModBlocks.BAMBOO_LADDER)
+                .add(ModBlocks.BIRCH_LADDER)
+                .add(ModBlocks.BOUND_BAMBOO_LADDER)
+                .add(ModBlocks.CHERRY_LADDER)
+                .add(ModBlocks.CRIMSON_LADDER)
+                .add(ModBlocks.DARK_OAK_LADDER)
+                .add(ModBlocks.JUNGLE_LADDER)
+                .add(ModBlocks.MANGROVE_LADDER)
+                .add(ModBlocks.SPRUCE_LADDER)
+                .add(ModBlocks.WARPED_LADDER);
+
+        getOrCreateTagBuilder(BlockTags.CAMPFIRES)
+                .add(ModBlocks.ACACIA_CAMPFIRE)
+                .add(ModBlocks.ACACIA_SOUL_CAMPFIRE)
+                .add(ModBlocks.BIRCH_CAMPFIRE)
+                .add(ModBlocks.BIRCH_SOUL_CAMPFIRE)
+                .add(ModBlocks.CHERRY_CAMPFIRE)
+                .add(ModBlocks.CHERRY_SOUL_CAMPFIRE)
+                .add(ModBlocks.CRIMSON_CAMPFIRE)
+                .add(ModBlocks.CRIMSON_SOUL_CAMPFIRE)
+                .add(ModBlocks.DARK_OAK_CAMPFIRE)
+                .add(ModBlocks.DARK_OAK_SOUL_CAMPFIRE)
+                .add(ModBlocks.JUNGLE_CAMPFIRE)
+                .add(ModBlocks.JUNGLE_SOUL_CAMPFIRE)
+                .add(ModBlocks.MANGROVE_CAMPFIRE)
+                .add(ModBlocks.MANGROVE_SOUL_CAMPFIRE)
+                .add(ModBlocks.SPRUCE_CAMPFIRE)
+                .add(ModBlocks.SPRUCE_SOUL_CAMPFIRE)
+                .add(ModBlocks.WARPED_CAMPFIRE)
+                .add(ModBlocks.WARPED_SOUL_CAMPFIRE);
     }
 }
