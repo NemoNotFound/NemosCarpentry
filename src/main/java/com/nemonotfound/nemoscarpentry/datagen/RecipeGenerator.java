@@ -77,7 +77,7 @@ public class RecipeGenerator extends FabricRecipeProvider {
                 ModBlocks.JUNGLE_LADDER, 2, CarpentryTools.SAW.asString());
         createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.MANGROVE_PLANKS, 1)),
                 ModBlocks.MANGROVE_LADDER, 2, CarpentryTools.SAW.asString());
-        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.MANGROVE_PLANKS, 1)),
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.OAK_PLANKS, 1)),
                 Blocks.LADDER, 2, CarpentryTools.SAW.asString());
         createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.SPRUCE_PLANKS, 1)),
                 ModBlocks.SPRUCE_LADDER, 2, CarpentryTools.SAW.asString());
