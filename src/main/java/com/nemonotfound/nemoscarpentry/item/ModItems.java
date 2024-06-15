@@ -116,6 +116,17 @@ public class ModItems {
     public static final Item OAK_CHAIR_TOMMY_NATURAL = registerBlockItem("oak_chair_tommy_natural", ModBlocks.OAK_CHAIR_TOMMY_NATURAL);
     public static final Item SPRUCE_CHAIR_TOMMY_NATURAL = registerBlockItem("spruce_chair_tommy_natural", ModBlocks.SPRUCE_CHAIR_TOMMY_NATURAL);
     public static final Item WARPED_CHAIR_TOMMY_NATURAL = registerBlockItem("warped_chair_tommy_natural", ModBlocks.WARPED_CHAIR_TOMMY_NATURAL);
+    public static final Item ACACIA_CHAIR_GREGORY = registerBlockItem("acacia_chair_gregory", ModBlocks.ACACIA_CHAIR_GREGORY);
+    public static final Item BAMBOO_CHAIR_GREGORY = registerBlockItem("bamboo_chair_gregory", ModBlocks.BAMBOO_CHAIR_GREGORY);
+    public static final Item BIRCH_CHAIR_GREGORY = registerBlockItem("birch_chair_gregory", ModBlocks.BIRCH_CHAIR_GREGORY);
+    public static final Item CHERRY_CHAIR_GREGORY = registerBlockItem("cherry_chair_gregory", ModBlocks.CHERRY_CHAIR_GREGORY);
+    public static final Item CRIMSON_CHAIR_GREGORY = registerBlockItem("crimson_chair_gregory", ModBlocks.CRIMSON_CHAIR_GREGORY);
+    public static final Item DARK_OAK_CHAIR_GREGORY = registerBlockItem("dark_oak_chair_gregory", ModBlocks.DARK_OAK_CHAIR_GREGORY);
+    public static final Item JUNGLE_CHAIR_GREGORY = registerBlockItem("jungle_chair_gregory", ModBlocks.JUNGLE_CHAIR_GREGORY);
+    public static final Item MANGROVE_CHAIR_GREGORY = registerBlockItem("mangrove_chair_gregory", ModBlocks.MANGROVE_CHAIR_GREGORY);
+    public static final Item OAK_CHAIR_GREGORY = registerBlockItem("oak_chair_gregory", ModBlocks.OAK_CHAIR_GREGORY);
+    public static final Item SPRUCE_CHAIR_GREGORY = registerBlockItem("spruce_chair_gregory", ModBlocks.SPRUCE_CHAIR_GREGORY);
+    public static final Item WARPED_CHAIR_GREGORY = registerBlockItem("warped_chair_gregory", ModBlocks.WARPED_CHAIR_GREGORY);
     public static final Item ACACIA_PARK_BENCH = registerBlockItem("acacia_park_bench", ModBlocks.ACACIA_PARK_BENCH);
     public static final Item BAMBOO_PARK_BENCH = registerBlockItem("bamboo_park_bench", ModBlocks.BAMBOO_PARK_BENCH);
     public static final Item BIRCH_PARK_BENCH = registerBlockItem("birch_park_bench", ModBlocks.BIRCH_PARK_BENCH);

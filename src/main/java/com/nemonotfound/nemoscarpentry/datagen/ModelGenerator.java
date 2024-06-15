@@ -37,17 +37,17 @@ public class ModelGenerator extends FabricModelProvider {
         generateChairLukasModel(blockStateModelGenerator, Blocks.SPRUCE_PLANKS, Blocks.SPRUCE_LOG, ModBlocks.SPRUCE_CHAIR_LUKAS, ModModels.CHAIR_LUKAS);
         generateChairLukasModel(blockStateModelGenerator, Blocks.WARPED_PLANKS, Blocks.WARPED_STEM, ModBlocks.WARPED_CHAIR_LUKAS, ModModels.CHAIR_LUKAS);
 
-        generateChairLukasNaturalModel(blockStateModelGenerator, Blocks.ACACIA_PLANKS, Blocks.ACACIA_LOG, ModBlocks.ACACIA_CHAIR_LUKAS_NATURAL, ModModels.CHAIR_LUKAS_NATURAL);
-        generateChairLukasNaturalBambooModel(blockStateModelGenerator, Blocks.BAMBOO_PLANKS, Blocks.BAMBOO_BLOCK, ModBlocks.BAMBOO_CHAIR_LUKAS_NATURAL, ModModels.CHAIR_LUKAS_NATURAL);
-        generateChairLukasNaturalModel(blockStateModelGenerator, Blocks.BIRCH_PLANKS, Blocks.BIRCH_LOG, ModBlocks.BIRCH_CHAIR_LUKAS_NATURAL, ModModels.CHAIR_LUKAS_NATURAL);
-        generateChairLukasNaturalModel(blockStateModelGenerator, Blocks.CHERRY_PLANKS, Blocks.CHERRY_LOG, ModBlocks.CHERRY_CHAIR_LUKAS_NATURAL, ModModels.CHAIR_LUKAS_NATURAL);
-        generateChairLukasNaturalModel(blockStateModelGenerator, Blocks.CRIMSON_PLANKS, Blocks.CRIMSON_STEM, ModBlocks.CRIMSON_CHAIR_LUKAS_NATURAL, ModModels.CHAIR_LUKAS_NATURAL);
-        generateChairLukasNaturalModel(blockStateModelGenerator, Blocks.DARK_OAK_PLANKS, Blocks.DARK_OAK_LOG, ModBlocks.DARK_OAK_CHAIR_LUKAS_NATURAL, ModModels.CHAIR_LUKAS_NATURAL);
-        generateChairLukasNaturalModel(blockStateModelGenerator, Blocks.JUNGLE_PLANKS, Blocks.JUNGLE_LOG, ModBlocks.JUNGLE_CHAIR_LUKAS_NATURAL, ModModels.CHAIR_LUKAS_NATURAL);
-        generateChairLukasNaturalModel(blockStateModelGenerator, Blocks.MANGROVE_PLANKS, Blocks.MANGROVE_LOG, ModBlocks.MANGROVE_CHAIR_LUKAS_NATURAL, ModModels.CHAIR_LUKAS_NATURAL);
-        generateChairLukasNaturalModel(blockStateModelGenerator, Blocks.OAK_PLANKS, Blocks.OAK_LOG, ModBlocks.OAK_CHAIR_LUKAS_NATURAL, ModModels.CHAIR_LUKAS_NATURAL);
-        generateChairLukasNaturalModel(blockStateModelGenerator, Blocks.SPRUCE_PLANKS, Blocks.SPRUCE_LOG, ModBlocks.SPRUCE_CHAIR_LUKAS_NATURAL, ModModels.CHAIR_LUKAS_NATURAL);
-        generateChairLukasNaturalModel(blockStateModelGenerator, Blocks.WARPED_PLANKS, Blocks.WARPED_STEM, ModBlocks.WARPED_CHAIR_LUKAS_NATURAL, ModModels.CHAIR_LUKAS_NATURAL);
+        generateAllTextureBottomModelModelWithSuffixedPath(blockStateModelGenerator, Blocks.ACACIA_PLANKS, Blocks.ACACIA_LOG, ModBlocks.ACACIA_CHAIR_LUKAS_NATURAL, ModModels.CHAIR_LUKAS_NATURAL);
+        generateAllTextureBottomModelModelWithoutSuffixedPath(blockStateModelGenerator, Blocks.BAMBOO_PLANKS, Blocks.BAMBOO_BLOCK, ModBlocks.BAMBOO_CHAIR_LUKAS_NATURAL, ModModels.CHAIR_LUKAS_NATURAL);
+        generateAllTextureBottomModelModelWithSuffixedPath(blockStateModelGenerator, Blocks.BIRCH_PLANKS, Blocks.BIRCH_LOG, ModBlocks.BIRCH_CHAIR_LUKAS_NATURAL, ModModels.CHAIR_LUKAS_NATURAL);
+        generateAllTextureBottomModelModelWithSuffixedPath(blockStateModelGenerator, Blocks.CHERRY_PLANKS, Blocks.CHERRY_LOG, ModBlocks.CHERRY_CHAIR_LUKAS_NATURAL, ModModels.CHAIR_LUKAS_NATURAL);
+        generateAllTextureBottomModelModelWithSuffixedPath(blockStateModelGenerator, Blocks.CRIMSON_PLANKS, Blocks.CRIMSON_STEM, ModBlocks.CRIMSON_CHAIR_LUKAS_NATURAL, ModModels.CHAIR_LUKAS_NATURAL);
+        generateAllTextureBottomModelModelWithSuffixedPath(blockStateModelGenerator, Blocks.DARK_OAK_PLANKS, Blocks.DARK_OAK_LOG, ModBlocks.DARK_OAK_CHAIR_LUKAS_NATURAL, ModModels.CHAIR_LUKAS_NATURAL);
+        generateAllTextureBottomModelModelWithSuffixedPath(blockStateModelGenerator, Blocks.JUNGLE_PLANKS, Blocks.JUNGLE_LOG, ModBlocks.JUNGLE_CHAIR_LUKAS_NATURAL, ModModels.CHAIR_LUKAS_NATURAL);
+        generateAllTextureBottomModelModelWithSuffixedPath(blockStateModelGenerator, Blocks.MANGROVE_PLANKS, Blocks.MANGROVE_LOG, ModBlocks.MANGROVE_CHAIR_LUKAS_NATURAL, ModModels.CHAIR_LUKAS_NATURAL);
+        generateAllTextureBottomModelModelWithSuffixedPath(blockStateModelGenerator, Blocks.OAK_PLANKS, Blocks.OAK_LOG, ModBlocks.OAK_CHAIR_LUKAS_NATURAL, ModModels.CHAIR_LUKAS_NATURAL);
+        generateAllTextureBottomModelModelWithSuffixedPath(blockStateModelGenerator, Blocks.SPRUCE_PLANKS, Blocks.SPRUCE_LOG, ModBlocks.SPRUCE_CHAIR_LUKAS_NATURAL, ModModels.CHAIR_LUKAS_NATURAL);
+        generateAllTextureBottomModelModelWithSuffixedPath(blockStateModelGenerator, Blocks.WARPED_PLANKS, Blocks.WARPED_STEM, ModBlocks.WARPED_CHAIR_LUKAS_NATURAL, ModModels.CHAIR_LUKAS_NATURAL);
 
         generateChairLukasModel(blockStateModelGenerator, Blocks.ACACIA_PLANKS, Blocks.ACACIA_LOG, ModBlocks.ACACIA_CHAIR_TOMMY, ModModels.CHAIR_TOMMY);
         generateChairLukasModel(blockStateModelGenerator, Blocks.BAMBOO_PLANKS, ModBlocks.BAMBOO_CHAIR_TOMMY, ModModels.CHAIR_TOMMY);
@@ -61,17 +61,29 @@ public class ModelGenerator extends FabricModelProvider {
         generateChairLukasModel(blockStateModelGenerator, Blocks.SPRUCE_PLANKS, Blocks.SPRUCE_LOG, ModBlocks.SPRUCE_CHAIR_TOMMY, ModModels.CHAIR_TOMMY);
         generateChairLukasModel(blockStateModelGenerator, Blocks.WARPED_PLANKS, Blocks.WARPED_STEM, ModBlocks.WARPED_CHAIR_TOMMY, ModModels.CHAIR_TOMMY);
 
-        generateChairLukasNaturalModel(blockStateModelGenerator, Blocks.ACACIA_PLANKS, Blocks.ACACIA_LOG, ModBlocks.ACACIA_CHAIR_TOMMY_NATURAL, ModModels.CHAIR_TOMMY_NATURAL);
-        generateChairLukasNaturalBambooModel(blockStateModelGenerator, Blocks.BAMBOO_PLANKS, Blocks.BAMBOO_BLOCK, ModBlocks.BAMBOO_CHAIR_TOMMY_NATURAL, ModModels.CHAIR_TOMMY_NATURAL);
-        generateChairLukasNaturalModel(blockStateModelGenerator, Blocks.BIRCH_PLANKS, Blocks.BIRCH_LOG, ModBlocks.BIRCH_CHAIR_TOMMY_NATURAL, ModModels.CHAIR_TOMMY_NATURAL);
-        generateChairLukasNaturalModel(blockStateModelGenerator, Blocks.CHERRY_PLANKS, Blocks.CHERRY_LOG, ModBlocks.CHERRY_CHAIR_TOMMY_NATURAL, ModModels.CHAIR_TOMMY_NATURAL);
-        generateChairLukasNaturalModel(blockStateModelGenerator, Blocks.CRIMSON_PLANKS, Blocks.CRIMSON_STEM, ModBlocks.CRIMSON_CHAIR_TOMMY_NATURAL, ModModels.CHAIR_TOMMY_NATURAL);
-        generateChairLukasNaturalModel(blockStateModelGenerator, Blocks.DARK_OAK_PLANKS, Blocks.DARK_OAK_LOG, ModBlocks.DARK_OAK_CHAIR_TOMMY_NATURAL, ModModels.CHAIR_TOMMY_NATURAL);
-        generateChairLukasNaturalModel(blockStateModelGenerator, Blocks.JUNGLE_PLANKS, Blocks.JUNGLE_LOG, ModBlocks.JUNGLE_CHAIR_TOMMY_NATURAL, ModModels.CHAIR_TOMMY_NATURAL);
-        generateChairLukasNaturalModel(blockStateModelGenerator, Blocks.MANGROVE_PLANKS, Blocks.MANGROVE_LOG, ModBlocks.MANGROVE_CHAIR_TOMMY_NATURAL, ModModels.CHAIR_TOMMY_NATURAL);
-        generateChairLukasNaturalModel(blockStateModelGenerator, Blocks.OAK_PLANKS, Blocks.OAK_LOG, ModBlocks.OAK_CHAIR_TOMMY_NATURAL, ModModels.CHAIR_TOMMY_NATURAL);
-        generateChairLukasNaturalModel(blockStateModelGenerator, Blocks.SPRUCE_PLANKS, Blocks.SPRUCE_LOG, ModBlocks.SPRUCE_CHAIR_TOMMY_NATURAL, ModModels.CHAIR_TOMMY_NATURAL);
-        generateChairLukasNaturalModel(blockStateModelGenerator, Blocks.WARPED_PLANKS, Blocks.WARPED_STEM, ModBlocks.WARPED_CHAIR_TOMMY_NATURAL, ModModels.CHAIR_TOMMY_NATURAL);
+        generateAllTextureBottomModelModelWithSuffixedPath(blockStateModelGenerator, Blocks.ACACIA_PLANKS, Blocks.ACACIA_LOG, ModBlocks.ACACIA_CHAIR_TOMMY_NATURAL, ModModels.CHAIR_TOMMY_NATURAL);
+        generateAllTextureBottomModelModelWithoutSuffixedPath(blockStateModelGenerator, Blocks.BAMBOO_PLANKS, Blocks.BAMBOO_BLOCK, ModBlocks.BAMBOO_CHAIR_TOMMY_NATURAL, ModModels.CHAIR_TOMMY_NATURAL);
+        generateAllTextureBottomModelModelWithSuffixedPath(blockStateModelGenerator, Blocks.BIRCH_PLANKS, Blocks.BIRCH_LOG, ModBlocks.BIRCH_CHAIR_TOMMY_NATURAL, ModModels.CHAIR_TOMMY_NATURAL);
+        generateAllTextureBottomModelModelWithSuffixedPath(blockStateModelGenerator, Blocks.CHERRY_PLANKS, Blocks.CHERRY_LOG, ModBlocks.CHERRY_CHAIR_TOMMY_NATURAL, ModModels.CHAIR_TOMMY_NATURAL);
+        generateAllTextureBottomModelModelWithSuffixedPath(blockStateModelGenerator, Blocks.CRIMSON_PLANKS, Blocks.CRIMSON_STEM, ModBlocks.CRIMSON_CHAIR_TOMMY_NATURAL, ModModels.CHAIR_TOMMY_NATURAL);
+        generateAllTextureBottomModelModelWithSuffixedPath(blockStateModelGenerator, Blocks.DARK_OAK_PLANKS, Blocks.DARK_OAK_LOG, ModBlocks.DARK_OAK_CHAIR_TOMMY_NATURAL, ModModels.CHAIR_TOMMY_NATURAL);
+        generateAllTextureBottomModelModelWithSuffixedPath(blockStateModelGenerator, Blocks.JUNGLE_PLANKS, Blocks.JUNGLE_LOG, ModBlocks.JUNGLE_CHAIR_TOMMY_NATURAL, ModModels.CHAIR_TOMMY_NATURAL);
+        generateAllTextureBottomModelModelWithSuffixedPath(blockStateModelGenerator, Blocks.MANGROVE_PLANKS, Blocks.MANGROVE_LOG, ModBlocks.MANGROVE_CHAIR_TOMMY_NATURAL, ModModels.CHAIR_TOMMY_NATURAL);
+        generateAllTextureBottomModelModelWithSuffixedPath(blockStateModelGenerator, Blocks.OAK_PLANKS, Blocks.OAK_LOG, ModBlocks.OAK_CHAIR_TOMMY_NATURAL, ModModels.CHAIR_TOMMY_NATURAL);
+        generateAllTextureBottomModelModelWithSuffixedPath(blockStateModelGenerator, Blocks.SPRUCE_PLANKS, Blocks.SPRUCE_LOG, ModBlocks.SPRUCE_CHAIR_TOMMY_NATURAL, ModModels.CHAIR_TOMMY_NATURAL);
+        generateAllTextureBottomModelModelWithSuffixedPath(blockStateModelGenerator, Blocks.WARPED_PLANKS, Blocks.WARPED_STEM, ModBlocks.WARPED_CHAIR_TOMMY_NATURAL, ModModels.CHAIR_TOMMY_NATURAL);
+
+        generateAllTextureBottomModelModelWithSuffixedPath(blockStateModelGenerator, Blocks.ACACIA_PLANKS, Blocks.ACACIA_LOG, ModBlocks.ACACIA_CHAIR_GREGORY, ModModels.CHAIR_GREGORY);
+        generateAllTextureBottomModelModelWithoutSuffixedPath(blockStateModelGenerator, Blocks.BAMBOO_PLANKS, Blocks.BAMBOO_BLOCK, ModBlocks.BAMBOO_CHAIR_GREGORY, ModModels.CHAIR_GREGORY);
+        generateAllTextureBottomModelModelWithSuffixedPath(blockStateModelGenerator, Blocks.BIRCH_PLANKS, Blocks.BIRCH_LOG, ModBlocks.BIRCH_CHAIR_GREGORY, ModModels.CHAIR_GREGORY);
+        generateAllTextureBottomModelModelWithSuffixedPath(blockStateModelGenerator, Blocks.CHERRY_PLANKS, Blocks.CHERRY_LOG, ModBlocks.CHERRY_CHAIR_GREGORY, ModModels.CHAIR_GREGORY);
+        generateAllTextureBottomModelModelWithSuffixedPath(blockStateModelGenerator, Blocks.CRIMSON_PLANKS, Blocks.CRIMSON_STEM, ModBlocks.CRIMSON_CHAIR_GREGORY, ModModels.CHAIR_GREGORY);
+        generateAllTextureBottomModelModelWithSuffixedPath(blockStateModelGenerator, Blocks.DARK_OAK_PLANKS, Blocks.DARK_OAK_LOG, ModBlocks.DARK_OAK_CHAIR_GREGORY, ModModels.CHAIR_GREGORY);
+        generateAllTextureBottomModelModelWithSuffixedPath(blockStateModelGenerator, Blocks.JUNGLE_PLANKS, Blocks.JUNGLE_LOG, ModBlocks.JUNGLE_CHAIR_GREGORY, ModModels.CHAIR_GREGORY);
+        generateAllTextureBottomModelModelWithSuffixedPath(blockStateModelGenerator, Blocks.MANGROVE_PLANKS, Blocks.MANGROVE_LOG, ModBlocks.MANGROVE_CHAIR_GREGORY, ModModels.CHAIR_GREGORY);
+        generateAllTextureBottomModelModelWithSuffixedPath(blockStateModelGenerator, Blocks.OAK_PLANKS, Blocks.OAK_LOG, ModBlocks.OAK_CHAIR_GREGORY, ModModels.CHAIR_GREGORY);
+        generateAllTextureBottomModelModelWithSuffixedPath(blockStateModelGenerator, Blocks.SPRUCE_PLANKS, Blocks.SPRUCE_LOG, ModBlocks.SPRUCE_CHAIR_GREGORY, ModModels.CHAIR_GREGORY);
+        generateAllTextureBottomModelModelWithSuffixedPath(blockStateModelGenerator, Blocks.WARPED_PLANKS, Blocks.WARPED_STEM, ModBlocks.WARPED_CHAIR_GREGORY, ModModels.CHAIR_GREGORY);
 
         generateParkBenchModel(blockStateModelGenerator, "acacia", Blocks.ACACIA_PLANKS, ModBlocks.ACACIA_PARK_BENCH);
         generateParkBenchModel(blockStateModelGenerator, "bamboo", Blocks.BAMBOO_PLANKS, ModBlocks.BAMBOO_PARK_BENCH);
@@ -261,7 +273,7 @@ public class ModelGenerator extends FabricModelProvider {
         blockStateModelGenerator.blockStateCollector.accept(createDirectionalBlockState(chairBlock, chairModelId));
     }
 
-    private void generateChairLukasNaturalModel(BlockStateModelGenerator blockStateModelGenerator, Block textureBlock, Block secondTextureLog, Block chairBlock, Model model) {
+    private void generateAllTextureBottomModelModelWithSuffixedPath(BlockStateModelGenerator blockStateModelGenerator, Block textureBlock, Block secondTextureLog, Block chairBlock, Model model) {
         TextureMap textureMap = TextureMap.all(textureBlock)
                 .put(TextureKey.TEXTURE, TextureMap.getId(secondTextureLog))
                 .put(TextureKey.BOTTOM, TextureMap.getId(secondTextureLog).withSuffixedPath("_top"))
@@ -271,7 +283,7 @@ public class ModelGenerator extends FabricModelProvider {
         blockStateModelGenerator.blockStateCollector.accept(createDirectionalBlockState(chairBlock, chairModelId));
     }
 
-    private void generateChairLukasNaturalBambooModel(BlockStateModelGenerator blockStateModelGenerator, Block textureBlock, Block secondTextureLog, Block chairBlock, Model model) {
+    private void generateAllTextureBottomModelModelWithoutSuffixedPath(BlockStateModelGenerator blockStateModelGenerator, Block textureBlock, Block secondTextureLog, Block chairBlock, Model model) {
         TextureMap textureMap = TextureMap.all(textureBlock)
                 .put(TextureKey.TEXTURE, TextureMap.getId(secondTextureLog))
                 .put(TextureKey.BOTTOM, TextureMap.getId(secondTextureLog))

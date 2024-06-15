@@ -201,6 +201,28 @@ public class ModBlocks {
             new TommyChairBlock(AbstractBlock.Settings.copy(SPRUCE_PLANKS).nonOpaque()));
     public static final Block WARPED_CHAIR_TOMMY_NATURAL = registerBlock("warped_chair_tommy_natural",
             new TommyChairBlock(AbstractBlock.Settings.copy(WARPED_PLANKS).nonOpaque()));
+    public static final Block ACACIA_CHAIR_GREGORY = registerBlock("acacia_chair_gregory",
+            new GregoryChairBlock(AbstractBlock.Settings.copy(ACACIA_PLANKS).nonOpaque()));
+    public static final Block BAMBOO_CHAIR_GREGORY = registerBlock("bamboo_chair_gregory",
+            new GregoryChairBlock(AbstractBlock.Settings.copy(BAMBOO_PLANKS).nonOpaque()));
+    public static final Block BIRCH_CHAIR_GREGORY = registerBlock("birch_chair_gregory",
+            new GregoryChairBlock(AbstractBlock.Settings.copy(BIRCH_PLANKS).nonOpaque()));
+    public static final Block CHERRY_CHAIR_GREGORY = registerBlock("cherry_chair_gregory",
+            new GregoryChairBlock(AbstractBlock.Settings.copy(CHERRY_PLANKS).nonOpaque()));
+    public static final Block CRIMSON_CHAIR_GREGORY = registerBlock("crimson_chair_gregory",
+            new GregoryChairBlock(AbstractBlock.Settings.copy(CRIMSON_PLANKS).nonOpaque()));
+    public static final Block DARK_OAK_CHAIR_GREGORY = registerBlock("dark_oak_chair_gregory",
+            new GregoryChairBlock(AbstractBlock.Settings.copy(DARK_OAK_PLANKS).nonOpaque()));
+    public static final Block JUNGLE_CHAIR_GREGORY = registerBlock("jungle_chair_gregory",
+            new GregoryChairBlock(AbstractBlock.Settings.copy(JUNGLE_PLANKS).nonOpaque()));
+    public static final Block MANGROVE_CHAIR_GREGORY = registerBlock("mangrove_chair_gregory",
+            new GregoryChairBlock(AbstractBlock.Settings.copy(MANGROVE_PLANKS).nonOpaque()));
+    public static final Block OAK_CHAIR_GREGORY = registerBlock("oak_chair_gregory",
+            new GregoryChairBlock(AbstractBlock.Settings.copy(OAK_PLANKS).nonOpaque()));
+    public static final Block SPRUCE_CHAIR_GREGORY = registerBlock("spruce_chair_gregory",
+            new GregoryChairBlock(AbstractBlock.Settings.copy(SPRUCE_PLANKS).nonOpaque()));
+    public static final Block WARPED_CHAIR_GREGORY = registerBlock("warped_chair_gregory",
+            new GregoryChairBlock(AbstractBlock.Settings.copy(WARPED_PLANKS).nonOpaque()));
     public static final Block ACACIA_LOG_SEAT = registerBlock("acacia_log_seat",
             new LogSeat(AbstractBlock.Settings.copy(ACACIA_PLANKS).nonOpaque()));
     public static final Block BIRCH_LOG_SEAT = registerBlock("birch_log_seat",

@@ -190,6 +190,18 @@ public class LootTableGenerator extends FabricBlockLootTableProvider {
         this.addDrop(ModBlocks.SPRUCE_CHAIR_TOMMY_NATURAL, this::chairDrops);
         this.addDrop(ModBlocks.WARPED_CHAIR_TOMMY_NATURAL, this::chairDrops);
 
+        this.addDrop(ModBlocks.ACACIA_CHAIR_GREGORY, this::chairDrops);
+        this.addDrop(ModBlocks.BAMBOO_CHAIR_GREGORY, this::chairDrops);
+        this.addDrop(ModBlocks.BIRCH_CHAIR_GREGORY, this::chairDrops);
+        this.addDrop(ModBlocks.CHERRY_CHAIR_GREGORY, this::chairDrops);
+        this.addDrop(ModBlocks.CRIMSON_CHAIR_GREGORY, this::chairDrops);
+        this.addDrop(ModBlocks.DARK_OAK_CHAIR_GREGORY, this::chairDrops);
+        this.addDrop(ModBlocks.JUNGLE_CHAIR_GREGORY, this::chairDrops);
+        this.addDrop(ModBlocks.MANGROVE_CHAIR_GREGORY, this::chairDrops);
+        this.addDrop(ModBlocks.OAK_CHAIR_GREGORY, this::chairDrops);
+        this.addDrop(ModBlocks.SPRUCE_CHAIR_GREGORY, this::chairDrops);
+        this.addDrop(ModBlocks.WARPED_CHAIR_GREGORY, this::chairDrops);
+
         this.addDrop(ModBlocks.ACACIA_COFFEE_TABLE);
         this.addDrop(ModBlocks.BAMBOO_COFFEE_TABLE);
         this.addDrop(ModBlocks.BIRCH_COFFEE_TABLE);

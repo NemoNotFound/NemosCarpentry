@@ -64,6 +64,18 @@ public class EnglishLanguageProvider extends FabricLanguageProvider {
         translationBuilder.add(ModBlocks.SPRUCE_CHAIR_TOMMY_NATURAL, "Spruce Chair \"Tommy\" - Natural");
         translationBuilder.add(ModBlocks.WARPED_CHAIR_TOMMY_NATURAL, "Warped Chair \"Tommy\" - Natural");
 
+        translationBuilder.add(ModBlocks.ACACIA_CHAIR_GREGORY, "Acacia Chair \"Gregory\"");
+        translationBuilder.add(ModBlocks.BAMBOO_CHAIR_GREGORY, "Bamboo Chair \"Gregory\"");
+        translationBuilder.add(ModBlocks.BIRCH_CHAIR_GREGORY, "Birch Chair \"Gregory\"");
+        translationBuilder.add(ModBlocks.CHERRY_CHAIR_GREGORY, "Cherry Chair \"Gregory\"");
+        translationBuilder.add(ModBlocks.CRIMSON_CHAIR_GREGORY, "Crimson Chair \"Gregory\"");
+        translationBuilder.add(ModBlocks.DARK_OAK_CHAIR_GREGORY, "Dark Oak Chair \"Gregory\"");
+        translationBuilder.add(ModBlocks.JUNGLE_CHAIR_GREGORY, "Jungle Chair \"Gregory\"");
+        translationBuilder.add(ModBlocks.MANGROVE_CHAIR_GREGORY, "Mangrove Chair \"Gregory\"");
+        translationBuilder.add(ModBlocks.OAK_CHAIR_GREGORY, "Oak Chair \"Gregory\"");
+        translationBuilder.add(ModBlocks.SPRUCE_CHAIR_GREGORY, "Spruce Chair \"Gregory\"");
+        translationBuilder.add(ModBlocks.WARPED_CHAIR_GREGORY, "Warped Chair \"Gregory\"");
+
         try {
             Optional<Path> optionalPath = dataOutput.getModContainer().findPath("en_us.json");
 

@@ -5,6 +5,9 @@
   - Chair "Lukas"
   - Chair "Lukas" - Natural
   - Barrel Seats
+  - Chair "Tommy"
+  - Chair "Tommy" - Natural
+  - Chair "Gregory"
 - Added ItemGroups
   - Seats
   - Tables

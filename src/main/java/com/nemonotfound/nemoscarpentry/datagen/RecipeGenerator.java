@@ -207,6 +207,7 @@ public class RecipeGenerator extends FabricRecipeProvider {
         createBarrelSeatRecipes(exporter);
         createChairTommyRecipes(exporter);
         createChairTommyNaturalRecipes(exporter);
+        createChairGregoryRecipes(exporter);
     }
 
     private void createTableTheClassicRecipes(RecipeExporter exporter) {
@@ -357,6 +358,31 @@ public class RecipeGenerator extends FabricRecipeProvider {
                 ModItems.SPRUCE_BARREL_SEAT, 1, CarpentryTools.SAW.asString());
         createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.WARPED_PLANKS, 1), Pair.of(Items.IRON_INGOT, 1)),
                 ModItems.WARPED_BARREL_SEAT, 1, CarpentryTools.SAW.asString());
+    }
+
+    private void createChairGregoryRecipes(RecipeExporter exporter) {
+        createCarpentryRecipe(exporter, Pair.of(Blocks.ACACIA_PLANKS, 1), Pair.of(ItemTags.ACACIA_LOGS, 1),
+                ModItems.ACACIA_CHAIR_GREGORY, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, Pair.of(Blocks.BAMBOO_PLANKS, 1), Pair.of(ItemTags.BAMBOO_BLOCKS, 1),
+                ModItems.BAMBOO_CHAIR_GREGORY, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, Pair.of(Blocks.BIRCH_PLANKS, 1), Pair.of(ItemTags.BIRCH_LOGS, 1),
+                ModItems.BIRCH_CHAIR_GREGORY, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, Pair.of(Blocks.CHERRY_PLANKS, 1), Pair.of(ItemTags.CHERRY_LOGS, 1),
+                ModItems.CHERRY_CHAIR_GREGORY, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, Pair.of(Blocks.CRIMSON_PLANKS, 1), Pair.of(ItemTags.CRIMSON_STEMS, 1),
+                ModItems.CRIMSON_CHAIR_GREGORY, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, Pair.of(Blocks.DARK_OAK_PLANKS, 1), Pair.of(ItemTags.DARK_OAK_LOGS, 1),
+                ModItems.DARK_OAK_CHAIR_GREGORY, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, Pair.of(Blocks.JUNGLE_PLANKS, 1), Pair.of(ItemTags.JUNGLE_LOGS, 1),
+                ModItems.JUNGLE_CHAIR_GREGORY, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, Pair.of(Blocks.MANGROVE_PLANKS, 1), Pair.of(ItemTags.MANGROVE_LOGS, 1),
+                ModItems.MANGROVE_CHAIR_GREGORY, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, Pair.of(Blocks.OAK_PLANKS, 1), Pair.of(ItemTags.OAK_LOGS, 1),
+                ModItems.OAK_CHAIR_GREGORY, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, Pair.of(Blocks.SPRUCE_PLANKS, 1), Pair.of(ItemTags.SPRUCE_LOGS, 1),
+                ModItems.SPRUCE_CHAIR_GREGORY, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, Pair.of(Blocks.WARPED_PLANKS, 1), Pair.of(ItemTags.WARPED_STEMS, 1),
+                ModItems.WARPED_CHAIR_GREGORY, 1, CarpentryTools.SAW.asString());
     }
 
     private void createSawRecipe(RecipeExporter exporter) {
