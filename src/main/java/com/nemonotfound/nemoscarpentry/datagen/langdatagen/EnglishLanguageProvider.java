@@ -17,6 +17,18 @@ public class EnglishLanguageProvider extends FabricLanguageProvider {
 
     @Override
     public void generateTranslations(RegistryWrapper.WrapperLookup registryLookup, TranslationBuilder translationBuilder) {
+        translationBuilder.add(ModBlocks.ACACIA_TABLE_THE_CLASSIC, "Acacia Table \"The Classic\"");
+        translationBuilder.add(ModBlocks.BAMBOO_TABLE_THE_CLASSIC, "Bamboo Table \"The Classic\"");
+        translationBuilder.add(ModBlocks.BIRCH_TABLE_THE_CLASSIC, "Birch Table \"The Classic\"");
+        translationBuilder.add(ModBlocks.CHERRY_TABLE_THE_CLASSIC, "Cherry Table \"The Classic\"");
+        translationBuilder.add(ModBlocks.CRIMSON_TABLE_THE_CLASSIC, "Crimson Table \"The Classic\"");
+        translationBuilder.add(ModBlocks.DARK_OAK_TABLE_THE_CLASSIC, "Dark_Oak Table \"The Classic\"");
+        translationBuilder.add(ModBlocks.JUNGLE_TABLE_THE_CLASSIC, "Jungle Table \"The Classic\"");
+        translationBuilder.add(ModBlocks.MANGROVE_TABLE_THE_CLASSIC, "Mangrove Table \"The Classic\"");
+        translationBuilder.add(ModBlocks.OAK_TABLE_THE_CLASSIC, "Oak Table \"The Classic\"");
+        translationBuilder.add(ModBlocks.SPRUCE_TABLE_THE_CLASSIC, "Spruce Table \"The Classic\"");
+        translationBuilder.add(ModBlocks.WARPED_TABLE_THE_CLASSIC, "Warped Table \"The Classic\"");
+
         translationBuilder.add(ModBlocks.ACACIA_COFFEE_TABLE, "Acacia Coffee Table");
         translationBuilder.add(ModBlocks.BAMBOO_COFFEE_TABLE, "Bamboo Coffee Table");
         translationBuilder.add(ModBlocks.BIRCH_COFFEE_TABLE, "Birch Coffee Table");
@@ -28,6 +40,19 @@ public class EnglishLanguageProvider extends FabricLanguageProvider {
         translationBuilder.add(ModBlocks.OAK_COFFEE_TABLE, "Oak Coffee Table");
         translationBuilder.add(ModBlocks.SPRUCE_COFFEE_TABLE, "Spruce Coffee Table");
         translationBuilder.add(ModBlocks.WARPED_COFFEE_TABLE, "Warped Coffee Table");
+
+        translationBuilder.add(ModBlocks.ACACIA_STANDING_TABLE, "Acacia Standing Table");
+        translationBuilder.add(ModBlocks.BAMBOO_STANDING_TABLE, "Bamboo Standing Table");
+        translationBuilder.add(ModBlocks.BIRCH_STANDING_TABLE, "Birch Standing Table");
+        translationBuilder.add(ModBlocks.CHERRY_STANDING_TABLE, "Cherry Standing Table");
+        translationBuilder.add(ModBlocks.CRIMSON_STANDING_TABLE, "Crimson Standing Table");
+        translationBuilder.add(ModBlocks.DARK_OAK_STANDING_TABLE, "Dark_Oak Standing Table");
+        translationBuilder.add(ModBlocks.JUNGLE_STANDING_TABLE, "Jungle Standing Table");
+        translationBuilder.add(ModBlocks.MANGROVE_STANDING_TABLE, "Mangrove Standing Table");
+        translationBuilder.add(ModBlocks.OAK_STANDING_TABLE, "Oak Standing Table");
+        translationBuilder.add(ModBlocks.SPRUCE_STANDING_TABLE, "Spruce Standing Table");
+        translationBuilder.add(ModBlocks.WARPED_STANDING_TABLE, "Warped Standing Table");
+
         translationBuilder.add(ModBlocks.ACACIA_BARREL_SEAT, "Acacia Barrel Seats");
         translationBuilder.add(ModBlocks.BAMBOO_BARREL_SEAT, "Bamboo Barrel Seats");
         translationBuilder.add(ModBlocks.BIRCH_BARREL_SEAT, "Birch Barrel Seats");

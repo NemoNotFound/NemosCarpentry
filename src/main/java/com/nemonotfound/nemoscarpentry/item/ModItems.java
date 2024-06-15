@@ -50,6 +50,17 @@ public class ModItems {
     public static final Item OAK_TABLE_THE_CLASSIC = registerBlockItem("oak_table_the_classic", ModBlocks.OAK_TABLE_THE_CLASSIC);
     public static final Item SPRUCE_TABLE_THE_CLASSIC = registerBlockItem("spruce_table_the_classic", ModBlocks.SPRUCE_TABLE_THE_CLASSIC);
     public static final Item WARPED_TABLE_THE_CLASSIC = registerBlockItem("warped_table_the_classic", ModBlocks.WARPED_TABLE_THE_CLASSIC);
+    public static final Item ACACIA_STANDING_TABLE = registerBlockItem("acacia_standing_table", ModBlocks.ACACIA_STANDING_TABLE);
+    public static final Item BAMBOO_STANDING_TABLE = registerBlockItem("bamboo_standing_table", ModBlocks.BAMBOO_STANDING_TABLE);
+    public static final Item BIRCH_STANDING_TABLE = registerBlockItem("birch_standing_table", ModBlocks.BIRCH_STANDING_TABLE);
+    public static final Item CHERRY_STANDING_TABLE = registerBlockItem("cherry_standing_table", ModBlocks.CHERRY_STANDING_TABLE);
+    public static final Item CRIMSON_STANDING_TABLE = registerBlockItem("crimson_standing_table", ModBlocks.CRIMSON_STANDING_TABLE);
+    public static final Item DARK_OAK_STANDING_TABLE = registerBlockItem("dark_oak_standing_table", ModBlocks.DARK_OAK_STANDING_TABLE);
+    public static final Item JUNGLE_STANDING_TABLE = registerBlockItem("jungle_standing_table", ModBlocks.JUNGLE_STANDING_TABLE);
+    public static final Item MANGROVE_STANDING_TABLE = registerBlockItem("mangrove_standing_table", ModBlocks.MANGROVE_STANDING_TABLE);
+    public static final Item OAK_STANDING_TABLE = registerBlockItem("oak_standing_table", ModBlocks.OAK_STANDING_TABLE);
+    public static final Item SPRUCE_STANDING_TABLE = registerBlockItem("spruce_standing_table", ModBlocks.SPRUCE_STANDING_TABLE);
+    public static final Item WARPED_STANDING_TABLE = registerBlockItem("warped_standing_table", ModBlocks.WARPED_STANDING_TABLE);
     public static final Item ACACIA_CHAIR = registerBlockItem("acacia_chair", ModBlocks.ACACIA_CHAIR);
     public static final Item BAMBOO_CHAIR = registerBlockItem("bamboo_chair", ModBlocks.BAMBOO_CHAIR);
     public static final Item BIRCH_CHAIR = registerBlockItem("birch_chair", ModBlocks.BIRCH_CHAIR);

@@ -1,6 +1,7 @@
 package com.nemonotfound.nemoscarpentry.block;
 
 import com.nemonotfound.nemoscarpentry.block.seats.*;
+import com.nemonotfound.nemoscarpentry.block.tables.StandingTableBlock;
 import com.nemonotfound.nemoscarpentry.block.tables.CoffeeTableBlock;
 import com.nemonotfound.nemoscarpentry.block.tables.TableBlock;
 import com.nemonotfound.nemoscarpentry.item.ModItemGroups;
@@ -69,6 +70,28 @@ public class ModBlocks {
             new TableBlock(AbstractBlock.Settings.copy(SPRUCE_PLANKS).nonOpaque()));
     public static final Block WARPED_TABLE_THE_CLASSIC = registerBlock("warped_table_the_classic",
             new TableBlock(AbstractBlock.Settings.copy(WARPED_PLANKS).nonOpaque()));
+    public static final Block ACACIA_STANDING_TABLE = registerBlock("acacia_standing_table",
+            new StandingTableBlock(AbstractBlock.Settings.copy(ACACIA_PLANKS).nonOpaque()));
+    public static final Block BAMBOO_STANDING_TABLE = registerBlock("bamboo_standing_table",
+            new StandingTableBlock(AbstractBlock.Settings.copy(BAMBOO_PLANKS).nonOpaque()));
+    public static final Block BIRCH_STANDING_TABLE = registerBlock("birch_standing_table",
+            new StandingTableBlock(AbstractBlock.Settings.copy(BIRCH_PLANKS).nonOpaque()));
+    public static final Block CHERRY_STANDING_TABLE = registerBlock("cherry_standing_table",
+            new StandingTableBlock(AbstractBlock.Settings.copy(CHERRY_PLANKS).nonOpaque()));
+    public static final Block CRIMSON_STANDING_TABLE = registerBlock("crimson_standing_table",
+            new StandingTableBlock(AbstractBlock.Settings.copy(CRIMSON_PLANKS).nonOpaque()));
+    public static final Block DARK_OAK_STANDING_TABLE = registerBlock("dark_oak_standing_table",
+            new StandingTableBlock(AbstractBlock.Settings.copy(DARK_OAK_PLANKS).nonOpaque()));
+    public static final Block JUNGLE_STANDING_TABLE = registerBlock("jungle_standing_table",
+            new StandingTableBlock(AbstractBlock.Settings.copy(JUNGLE_PLANKS).nonOpaque()));
+    public static final Block MANGROVE_STANDING_TABLE = registerBlock("mangrove_standing_table",
+            new StandingTableBlock(AbstractBlock.Settings.copy(MANGROVE_PLANKS).nonOpaque()));
+    public static final Block OAK_STANDING_TABLE = registerBlock("oak_standing_table",
+            new StandingTableBlock(AbstractBlock.Settings.copy(OAK_PLANKS).nonOpaque()));
+    public static final Block SPRUCE_STANDING_TABLE = registerBlock("spruce_standing_table",
+            new StandingTableBlock(AbstractBlock.Settings.copy(SPRUCE_PLANKS).nonOpaque()));
+    public static final Block WARPED_STANDING_TABLE = registerBlock("warped_standing_table",
+            new StandingTableBlock(AbstractBlock.Settings.copy(WARPED_PLANKS).nonOpaque()));
     public static final Block ACACIA_CHAIR = registerBlock("acacia_chair",
             new ChairBlock(AbstractBlock.Settings.copy(ACACIA_PLANKS).nonOpaque()));
     public static final Block BAMBOO_CHAIR = registerBlock("bamboo_chair",

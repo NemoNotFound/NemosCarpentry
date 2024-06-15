@@ -171,6 +171,17 @@ public class ModItemGroups {
                     entries.add(ModItems.OAK_TABLE_THE_CLASSIC);
                     entries.add(ModItems.SPRUCE_TABLE_THE_CLASSIC);
                     entries.add(ModItems.WARPED_TABLE_THE_CLASSIC);
+                    entries.add(ModItems.ACACIA_STANDING_TABLE);
+                    entries.add(ModItems.BAMBOO_STANDING_TABLE);
+                    entries.add(ModItems.BIRCH_STANDING_TABLE);
+                    entries.add(ModItems.CHERRY_STANDING_TABLE);
+                    entries.add(ModItems.CRIMSON_STANDING_TABLE);
+                    entries.add(ModItems.DARK_OAK_STANDING_TABLE);
+                    entries.add(ModItems.JUNGLE_STANDING_TABLE);
+                    entries.add(ModItems.MANGROVE_STANDING_TABLE);
+                    entries.add(ModItems.OAK_STANDING_TABLE);
+                    entries.add(ModItems.SPRUCE_STANDING_TABLE);
+                    entries.add(ModItems.WARPED_STANDING_TABLE);
                     entries.add(ModItems.ACACIA_COFFEE_TABLE);
                     entries.add(ModItems.BAMBOO_COFFEE_TABLE);
                     entries.add(ModItems.BIRCH_COFFEE_TABLE);
@@ -353,6 +364,17 @@ public class ModItemGroups {
                     entries.add(ModItems.OAK_COFFEE_TABLE);
                     entries.add(ModItems.SPRUCE_COFFEE_TABLE);
                     entries.add(ModItems.WARPED_COFFEE_TABLE);
+                    entries.add(ModItems.ACACIA_STANDING_TABLE);
+                    entries.add(ModItems.BAMBOO_STANDING_TABLE);
+                    entries.add(ModItems.BIRCH_STANDING_TABLE);
+                    entries.add(ModItems.CHERRY_STANDING_TABLE);
+                    entries.add(ModItems.CRIMSON_STANDING_TABLE);
+                    entries.add(ModItems.DARK_OAK_STANDING_TABLE);
+                    entries.add(ModItems.JUNGLE_STANDING_TABLE);
+                    entries.add(ModItems.MANGROVE_STANDING_TABLE);
+                    entries.add(ModItems.OAK_STANDING_TABLE);
+                    entries.add(ModItems.SPRUCE_STANDING_TABLE);
+                    entries.add(ModItems.WARPED_STANDING_TABLE);
                 })
                 .build();
 
@@ -565,6 +587,17 @@ public class ModItemGroups {
             entries.add(ModItems.OAK_COFFEE_TABLE);
             entries.add(ModItems.SPRUCE_COFFEE_TABLE);
             entries.add(ModItems.WARPED_COFFEE_TABLE);
+            entries.add(ModItems.ACACIA_STANDING_TABLE);
+            entries.add(ModItems.BAMBOO_STANDING_TABLE);
+            entries.add(ModItems.BIRCH_STANDING_TABLE);
+            entries.add(ModItems.CHERRY_STANDING_TABLE);
+            entries.add(ModItems.CRIMSON_STANDING_TABLE);
+            entries.add(ModItems.DARK_OAK_STANDING_TABLE);
+            entries.add(ModItems.JUNGLE_STANDING_TABLE);
+            entries.add(ModItems.MANGROVE_STANDING_TABLE);
+            entries.add(ModItems.OAK_STANDING_TABLE);
+            entries.add(ModItems.SPRUCE_STANDING_TABLE);
+            entries.add(ModItems.WARPED_STANDING_TABLE);
             entries.addBefore(Items.CAMPFIRE, ModItems.ACACIA_CAMPFIRE);
             entries.addBefore(Items.CAMPFIRE, ModItems.ACACIA_SOUL_CAMPFIRE);
             entries.addBefore(Items.CAMPFIRE, ModItems.BIRCH_CAMPFIRE);

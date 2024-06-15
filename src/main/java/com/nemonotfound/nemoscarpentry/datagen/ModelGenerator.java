@@ -168,6 +168,18 @@ public class ModelGenerator extends FabricModelProvider {
         generateBarrelSeatModel(blockStateModelGenerator, ModBlocks.OAK_BARREL_SEAT, Blocks.OAK_PLANKS, ModModels.BARREL_SEAT);
         generateBarrelSeatModel(blockStateModelGenerator, ModBlocks.SPRUCE_BARREL_SEAT, Blocks.SPRUCE_PLANKS, ModModels.BARREL_SEAT);
         generateBarrelSeatModel(blockStateModelGenerator, ModBlocks.WARPED_BARREL_SEAT, Blocks.WARPED_PLANKS, ModModels.BARREL_SEAT);
+
+        generateTextureBottomModelModel(blockStateModelGenerator, Blocks.ACACIA_LOG, Blocks.ACACIA_PLANKS, ModBlocks.ACACIA_STANDING_TABLE, ModModels.STANDING_TABLE);
+        generateTextureBottomModelModel(blockStateModelGenerator, Blocks.BAMBOO_BLOCK, Blocks.BAMBOO_PLANKS, ModBlocks.BAMBOO_STANDING_TABLE, ModModels.STANDING_TABLE);
+        generateTextureBottomModelModel(blockStateModelGenerator, Blocks.BIRCH_LOG, Blocks.BIRCH_PLANKS, ModBlocks.BIRCH_STANDING_TABLE, ModModels.STANDING_TABLE);
+        generateTextureBottomModelModel(blockStateModelGenerator, Blocks.CHERRY_LOG, Blocks.CHERRY_PLANKS, ModBlocks.CHERRY_STANDING_TABLE, ModModels.STANDING_TABLE);
+        generateTextureBottomModelModel(blockStateModelGenerator, Blocks.CRIMSON_STEM, Blocks.CRIMSON_PLANKS, ModBlocks.CRIMSON_STANDING_TABLE, ModModels.STANDING_TABLE);
+        generateTextureBottomModelModel(blockStateModelGenerator, Blocks.DARK_OAK_LOG, Blocks.DARK_OAK_PLANKS, ModBlocks.DARK_OAK_STANDING_TABLE, ModModels.STANDING_TABLE);
+        generateTextureBottomModelModel(blockStateModelGenerator, Blocks.JUNGLE_LOG, Blocks.JUNGLE_PLANKS, ModBlocks.JUNGLE_STANDING_TABLE, ModModels.STANDING_TABLE);
+        generateTextureBottomModelModel(blockStateModelGenerator, Blocks.MANGROVE_LOG, Blocks.MANGROVE_PLANKS, ModBlocks.MANGROVE_STANDING_TABLE, ModModels.STANDING_TABLE);
+        generateTextureBottomModelModel(blockStateModelGenerator, Blocks.OAK_LOG, Blocks.OAK_PLANKS, ModBlocks.OAK_STANDING_TABLE, ModModels.STANDING_TABLE);
+        generateTextureBottomModelModel(blockStateModelGenerator, Blocks.SPRUCE_LOG, Blocks.SPRUCE_PLANKS, ModBlocks.SPRUCE_STANDING_TABLE, ModModels.STANDING_TABLE);
+        generateTextureBottomModelModel(blockStateModelGenerator, Blocks.WARPED_STEM, Blocks.WARPED_PLANKS, ModBlocks.WARPED_STANDING_TABLE, ModModels.STANDING_TABLE);
     }
 
     private void generateLadderBlockModel(Block block, BlockStateModelGenerator blockStateModelGenerator) {
@@ -273,14 +285,24 @@ public class ModelGenerator extends FabricModelProvider {
         blockStateModelGenerator.blockStateCollector.accept(createDirectionalBlockState(chairBlock, chairModelId));
     }
 
-    private void generateAllTextureBottomModelModelWithSuffixedPath(BlockStateModelGenerator blockStateModelGenerator, Block textureBlock, Block secondTextureLog, Block chairBlock, Model model) {
+    private void generateTextureBottomModelModel(BlockStateModelGenerator blockStateModelGenerator, Block textureBlock, Block secondTextureLog, Block block, Model model) {
+        TextureMap textureMap = TextureMap.all(textureBlock)
+                .put(TextureKey.TEXTURE, TextureMap.getId(secondTextureLog))
+                .put(TextureKey.PARTICLE, TextureMap.getId(textureBlock));
+        Identifier modelId = model.upload(block, textureMap, blockStateModelGenerator.modelCollector);
+
+        blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier
+                .create(block, BlockStateVariant.create().put(VariantSettings.MODEL, modelId)));
+    }
+
+    private void generateAllTextureBottomModelModelWithSuffixedPath(BlockStateModelGenerator blockStateModelGenerator, Block textureBlock, Block secondTextureLog, Block block, Model model) {
         TextureMap textureMap = TextureMap.all(textureBlock)
                 .put(TextureKey.TEXTURE, TextureMap.getId(secondTextureLog))
                 .put(TextureKey.BOTTOM, TextureMap.getId(secondTextureLog).withSuffixedPath("_top"))
                 .put(TextureKey.PARTICLE, TextureMap.getId(textureBlock));
-        Identifier chairModelId = model.upload(chairBlock, textureMap, blockStateModelGenerator.modelCollector);
+        Identifier modelId = model.upload(block, textureMap, blockStateModelGenerator.modelCollector);
 
-        blockStateModelGenerator.blockStateCollector.accept(createDirectionalBlockState(chairBlock, chairModelId));
+        blockStateModelGenerator.blockStateCollector.accept(createDirectionalBlockState(block, modelId));
     }
 
     private void generateAllTextureBottomModelModelWithoutSuffixedPath(BlockStateModelGenerator blockStateModelGenerator, Block textureBlock, Block secondTextureLog, Block chairBlock, Model model) {

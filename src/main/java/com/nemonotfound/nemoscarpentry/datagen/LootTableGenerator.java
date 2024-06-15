@@ -106,6 +106,18 @@ public class LootTableGenerator extends FabricBlockLootTableProvider {
         this.addDrop(ModBlocks.SPRUCE_TABLE_THE_CLASSIC);
         this.addDrop(ModBlocks.WARPED_TABLE_THE_CLASSIC);
 
+        this.addDrop(ModBlocks.ACACIA_STANDING_TABLE);
+        this.addDrop(ModBlocks.BAMBOO_STANDING_TABLE);
+        this.addDrop(ModBlocks.BIRCH_STANDING_TABLE);
+        this.addDrop(ModBlocks.CHERRY_STANDING_TABLE);
+        this.addDrop(ModBlocks.CRIMSON_STANDING_TABLE);
+        this.addDrop(ModBlocks.DARK_OAK_STANDING_TABLE);
+        this.addDrop(ModBlocks.JUNGLE_STANDING_TABLE);
+        this.addDrop(ModBlocks.MANGROVE_STANDING_TABLE);
+        this.addDrop(ModBlocks.OAK_STANDING_TABLE);
+        this.addDrop(ModBlocks.SPRUCE_STANDING_TABLE);
+        this.addDrop(ModBlocks.WARPED_STANDING_TABLE);
+
         this.addDrop(ModBlocks.ACACIA_CHAIR);
         this.addDrop(ModBlocks.BAMBOO_CHAIR);
         this.addDrop(ModBlocks.BIRCH_CHAIR);

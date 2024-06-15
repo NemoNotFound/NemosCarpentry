@@ -8,6 +8,9 @@
   - Chair "Tommy"
   - Chair "Tommy" - Natural
   - Chair "Gregory"
+- Added Tables
+  - Coffee Table
+  - Standing Table
 - Added ItemGroups
   - Seats
   - Tables

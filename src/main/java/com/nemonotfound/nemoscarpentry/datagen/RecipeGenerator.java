@@ -197,11 +197,12 @@ public class RecipeGenerator extends FabricRecipeProvider {
         createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.WARPED_PLANKS, 2)),
                 ModItems.WARPED_CHAIR_LUKAS, 1, CarpentryTools.SAW.asString());
 
-        createTableTheClassicRecipes(exporter);
 
         createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.CHERRY_PLANKS, 2)),
                 ModItems.CHERRY_GLASS_DOOR_FRAME, 2, CarpentryTools.SAW.asString());
 
+        createTableTheClassicRecipes(exporter);
+        createStandingTableRecipes(exporter);
         createChairLukasNaturalRecipes(exporter);
         createCoffeeTableRecipes(exporter);
         createBarrelSeatRecipes(exporter);
@@ -233,6 +234,31 @@ public class RecipeGenerator extends FabricRecipeProvider {
                 ModBlocks.SPRUCE_TABLE_THE_CLASSIC, 1, CarpentryTools.SAW.asString());
         createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.WARPED_PLANKS, 1)),
                 ModBlocks.WARPED_TABLE_THE_CLASSIC, 1, CarpentryTools.SAW.asString());
+    }
+
+    private void createStandingTableRecipes(RecipeExporter exporter) {
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.ACACIA_LOG, 1)),
+                ModBlocks.ACACIA_STANDING_TABLE, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.BAMBOO_BLOCK, 1)),
+                ModBlocks.BAMBOO_STANDING_TABLE, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.BIRCH_LOG, 1)),
+                ModBlocks.BIRCH_STANDING_TABLE, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.CHERRY_LOG, 1)),
+                ModBlocks.CHERRY_STANDING_TABLE, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.CRIMSON_STEM, 1)),
+                ModBlocks.CRIMSON_STANDING_TABLE, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.DARK_OAK_LOG, 1)),
+                ModBlocks.DARK_OAK_STANDING_TABLE, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.JUNGLE_LOG, 1)),
+                ModBlocks.JUNGLE_STANDING_TABLE, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.MANGROVE_LOG, 1)),
+                ModBlocks.MANGROVE_STANDING_TABLE, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.OAK_LOG, 1)),
+                ModBlocks.OAK_STANDING_TABLE, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.SPRUCE_LOG, 1)),
+                ModBlocks.SPRUCE_STANDING_TABLE, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.WARPED_STEM, 1)),
+                ModBlocks.WARPED_STANDING_TABLE, 1, CarpentryTools.SAW.asString());
     }
 
     private void createChairLukasNaturalRecipes(RecipeExporter exporter) {
