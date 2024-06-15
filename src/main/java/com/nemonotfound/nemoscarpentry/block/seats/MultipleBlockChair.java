@@ -1,6 +1,5 @@
 package com.nemonotfound.nemoscarpentry.block.seats;
 
-import com.mojang.serialization.MapCodec;
 import com.nemonotfound.nemoscarpentry.block.enums.ChairPart;
 import com.nemonotfound.nemoscarpentry.property.ModProperties;
 import net.minecraft.block.*;
@@ -14,8 +13,6 @@ import net.minecraft.state.StateManager;
 import net.minecraft.state.property.DirectionProperty;
 import net.minecraft.state.property.EnumProperty;
 import net.minecraft.util.ActionResult;
-import net.minecraft.util.BlockMirror;
-import net.minecraft.util.BlockRotation;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
@@ -30,27 +27,22 @@ import static net.minecraft.util.math.Direction.UP;
 
 public class MultipleBlockChair extends SitableBlock implements Waterloggable {
 
-    private final VoxelShape northShape;
+    private final VoxelShape NORTH_SHAPE;
     private final VoxelShape EAST_SHAPE;
     private final VoxelShape SOUTH_SHAPE;
     private final VoxelShape WEST_SHAPE;
     private static final DirectionProperty FACING = HorizontalFacingBlock.FACING;
     public static final EnumProperty<ChairPart> PART = ModProperties.CHAIR_PART;
 
-    protected MultipleBlockChair(Settings settings, float height, VoxelShape northShape, VoxelShape EASR_SHAPE,
-                                 VoxelShape SOUTH_SHAPE, VoxelShape WEST_SHAPE) {
-        super(settings, height);
-        this.northShape = northShape;
-        this.EAST_SHAPE = EASR_SHAPE;
-        this.SOUTH_SHAPE = SOUTH_SHAPE;
-        this.WEST_SHAPE = WEST_SHAPE;
+    protected MultipleBlockChair(Settings settings, float height, VoxelShape northShape, VoxelShape eastShape,
+                                 VoxelShape southShape, VoxelShape westShape) {
+        super(settings, height, northShape, eastShape, southShape, westShape);
+        this.NORTH_SHAPE = northShape;
+        this.EAST_SHAPE = eastShape;
+        this.SOUTH_SHAPE = southShape;
+        this.WEST_SHAPE = westShape;
         this.setDefaultState(this.stateManager.getDefaultState().with(FACING, Direction.NORTH)
                 .with(WATERLOGGED, false).with(PART, ChairPart.LOWER));
-    }
-
-    @Override
-    protected MapCodec<? extends HorizontalFacingBlock> getCodec() {
-        return null;
     }
 
     @Override
@@ -69,7 +61,7 @@ public class MultipleBlockChair extends SitableBlock implements Waterloggable {
 
         switch (state.get(FACING)) {
             case NORTH -> {
-                return isLowerChairPart ? northShape : northShape.offset(0, -1, 0);
+                return isLowerChairPart ? NORTH_SHAPE : NORTH_SHAPE.offset(0, -1, 0);
             }
             case SOUTH -> {
                 return isLowerChairPart ? SOUTH_SHAPE : SOUTH_SHAPE.offset(0, -1, 0);
@@ -82,7 +74,7 @@ public class MultipleBlockChair extends SitableBlock implements Waterloggable {
             }
         }
 
-        return northShape;
+        return NORTH_SHAPE;
     }
 
     @Override
@@ -92,14 +84,6 @@ public class MultipleBlockChair extends SitableBlock implements Waterloggable {
         }
 
         return super.onUse(state, world, pos, player, hitResult);
-    }
-
-    @Override
-    public FluidState getFluidState(BlockState state) {
-        if (state.get(WATERLOGGED)) {
-            return Fluids.WATER.getStill(false);
-        }
-        return super.getFluidState(state);
     }
 
     @Override
@@ -144,16 +128,6 @@ public class MultipleBlockChair extends SitableBlock implements Waterloggable {
         boolean isSecondChairPartInWorldBorder = world.getWorldBorder().contains(blockPos);
 
         return canSecondChairPartBePlaced && isSecondChairPartInWorldBorder;
-    }
-
-    @Override
-    public BlockState rotate(BlockState state, BlockRotation rotation) {
-        return state.with(FACING, rotation.rotate(state.get(FACING)));
-    }
-
-    @Override
-    public BlockState mirror(BlockState state, BlockMirror mirror) {
-        return state.rotate(mirror.getRotation(state.get(FACING)));
     }
 
     @Override

@@ -169,17 +169,51 @@ public class ModelGenerator extends FabricModelProvider {
         generateBarrelSeatModel(blockStateModelGenerator, ModBlocks.SPRUCE_BARREL_SEAT, Blocks.SPRUCE_PLANKS, ModModels.BARREL_SEAT);
         generateBarrelSeatModel(blockStateModelGenerator, ModBlocks.WARPED_BARREL_SEAT, Blocks.WARPED_PLANKS, ModModels.BARREL_SEAT);
 
-        generateTextureBottomModelModel(blockStateModelGenerator, Blocks.ACACIA_LOG, Blocks.ACACIA_PLANKS, ModBlocks.ACACIA_STANDING_TABLE, ModModels.STANDING_TABLE);
-        generateTextureBottomModelModel(blockStateModelGenerator, Blocks.BAMBOO_BLOCK, Blocks.BAMBOO_PLANKS, ModBlocks.BAMBOO_STANDING_TABLE, ModModels.STANDING_TABLE);
-        generateTextureBottomModelModel(blockStateModelGenerator, Blocks.BIRCH_LOG, Blocks.BIRCH_PLANKS, ModBlocks.BIRCH_STANDING_TABLE, ModModels.STANDING_TABLE);
-        generateTextureBottomModelModel(blockStateModelGenerator, Blocks.CHERRY_LOG, Blocks.CHERRY_PLANKS, ModBlocks.CHERRY_STANDING_TABLE, ModModels.STANDING_TABLE);
-        generateTextureBottomModelModel(blockStateModelGenerator, Blocks.CRIMSON_STEM, Blocks.CRIMSON_PLANKS, ModBlocks.CRIMSON_STANDING_TABLE, ModModels.STANDING_TABLE);
-        generateTextureBottomModelModel(blockStateModelGenerator, Blocks.DARK_OAK_LOG, Blocks.DARK_OAK_PLANKS, ModBlocks.DARK_OAK_STANDING_TABLE, ModModels.STANDING_TABLE);
-        generateTextureBottomModelModel(blockStateModelGenerator, Blocks.JUNGLE_LOG, Blocks.JUNGLE_PLANKS, ModBlocks.JUNGLE_STANDING_TABLE, ModModels.STANDING_TABLE);
-        generateTextureBottomModelModel(blockStateModelGenerator, Blocks.MANGROVE_LOG, Blocks.MANGROVE_PLANKS, ModBlocks.MANGROVE_STANDING_TABLE, ModModels.STANDING_TABLE);
-        generateTextureBottomModelModel(blockStateModelGenerator, Blocks.OAK_LOG, Blocks.OAK_PLANKS, ModBlocks.OAK_STANDING_TABLE, ModModels.STANDING_TABLE);
-        generateTextureBottomModelModel(blockStateModelGenerator, Blocks.SPRUCE_LOG, Blocks.SPRUCE_PLANKS, ModBlocks.SPRUCE_STANDING_TABLE, ModModels.STANDING_TABLE);
-        generateTextureBottomModelModel(blockStateModelGenerator, Blocks.WARPED_STEM, Blocks.WARPED_PLANKS, ModBlocks.WARPED_STANDING_TABLE, ModModels.STANDING_TABLE);
+        generateAllTextureModel(blockStateModelGenerator, Blocks.ACACIA_LOG, Blocks.ACACIA_PLANKS, ModBlocks.ACACIA_STANDING_TABLE, ModModels.STANDING_TABLE);
+        generateAllTextureModel(blockStateModelGenerator, Blocks.BAMBOO_BLOCK, Blocks.BAMBOO_PLANKS, ModBlocks.BAMBOO_STANDING_TABLE, ModModels.STANDING_TABLE);
+        generateAllTextureModel(blockStateModelGenerator, Blocks.BIRCH_LOG, Blocks.BIRCH_PLANKS, ModBlocks.BIRCH_STANDING_TABLE, ModModels.STANDING_TABLE);
+        generateAllTextureModel(blockStateModelGenerator, Blocks.CHERRY_LOG, Blocks.CHERRY_PLANKS, ModBlocks.CHERRY_STANDING_TABLE, ModModels.STANDING_TABLE);
+        generateAllTextureModel(blockStateModelGenerator, Blocks.CRIMSON_STEM, Blocks.CRIMSON_PLANKS, ModBlocks.CRIMSON_STANDING_TABLE, ModModels.STANDING_TABLE);
+        generateAllTextureModel(blockStateModelGenerator, Blocks.DARK_OAK_LOG, Blocks.DARK_OAK_PLANKS, ModBlocks.DARK_OAK_STANDING_TABLE, ModModels.STANDING_TABLE);
+        generateAllTextureModel(blockStateModelGenerator, Blocks.JUNGLE_LOG, Blocks.JUNGLE_PLANKS, ModBlocks.JUNGLE_STANDING_TABLE, ModModels.STANDING_TABLE);
+        generateAllTextureModel(blockStateModelGenerator, Blocks.MANGROVE_LOG, Blocks.MANGROVE_PLANKS, ModBlocks.MANGROVE_STANDING_TABLE, ModModels.STANDING_TABLE);
+        generateAllTextureModel(blockStateModelGenerator, Blocks.OAK_LOG, Blocks.OAK_PLANKS, ModBlocks.OAK_STANDING_TABLE, ModModels.STANDING_TABLE);
+        generateAllTextureModel(blockStateModelGenerator, Blocks.SPRUCE_LOG, Blocks.SPRUCE_PLANKS, ModBlocks.SPRUCE_STANDING_TABLE, ModModels.STANDING_TABLE);
+        generateAllTextureModel(blockStateModelGenerator, Blocks.WARPED_STEM, Blocks.WARPED_PLANKS, ModBlocks.WARPED_STANDING_TABLE, ModModels.STANDING_TABLE);
+
+        generateTextureBottomModel(blockStateModelGenerator, Blocks.WHITE_WOOL, Blocks.GOLD_BLOCK, ModBlocks.WHITE_BARBER_CHAIR, ModModels.BARBER_CHAIR);
+        generateTextureBottomModel(blockStateModelGenerator, Blocks.LIGHT_GRAY_WOOL, Blocks.GOLD_BLOCK, ModBlocks.LIGHT_GRAY_BARBER_CHAIR, ModModels.BARBER_CHAIR);
+        generateTextureBottomModel(blockStateModelGenerator, Blocks.GRAY_WOOL, Blocks.GOLD_BLOCK, ModBlocks.GRAY_BARBER_CHAIR, ModModels.BARBER_CHAIR);
+        generateTextureBottomModel(blockStateModelGenerator, Blocks.BLACK_WOOL, Blocks.GOLD_BLOCK, ModBlocks.BLACK_BARBER_CHAIR, ModModels.BARBER_CHAIR);
+        generateTextureBottomModel(blockStateModelGenerator, Blocks.BROWN_WOOL, Blocks.GOLD_BLOCK, ModBlocks.BROWN_BARBER_CHAIR, ModModels.BARBER_CHAIR);
+        generateTextureBottomModel(blockStateModelGenerator, Blocks.RED_WOOL, Blocks.GOLD_BLOCK, ModBlocks.RED_BARBER_CHAIR, ModModels.BARBER_CHAIR);
+        generateTextureBottomModel(blockStateModelGenerator, Blocks.ORANGE_WOOL, Blocks.GOLD_BLOCK, ModBlocks.ORANGE_BARBER_CHAIR, ModModels.BARBER_CHAIR);
+        generateTextureBottomModel(blockStateModelGenerator, Blocks.YELLOW_WOOL, Blocks.GOLD_BLOCK, ModBlocks.YELLOW_BARBER_CHAIR, ModModels.BARBER_CHAIR);
+        generateTextureBottomModel(blockStateModelGenerator, Blocks.LIME_WOOL, Blocks.GOLD_BLOCK, ModBlocks.LIME_BARBER_CHAIR, ModModels.BARBER_CHAIR);
+        generateTextureBottomModel(blockStateModelGenerator, Blocks.GREEN_WOOL, Blocks.GOLD_BLOCK, ModBlocks.GREEN_BARBER_CHAIR, ModModels.BARBER_CHAIR);
+        generateTextureBottomModel(blockStateModelGenerator, Blocks.CYAN_WOOL, Blocks.GOLD_BLOCK, ModBlocks.CYAN_BARBER_CHAIR, ModModels.BARBER_CHAIR);
+        generateTextureBottomModel(blockStateModelGenerator, Blocks.LIGHT_BLUE_WOOL, Blocks.GOLD_BLOCK, ModBlocks.LIGHT_BLUE_BARBER_CHAIR, ModModels.BARBER_CHAIR);
+        generateTextureBottomModel(blockStateModelGenerator, Blocks.BLUE_WOOL, Blocks.GOLD_BLOCK, ModBlocks.BLUE_BARBER_CHAIR, ModModels.BARBER_CHAIR);
+        generateTextureBottomModel(blockStateModelGenerator, Blocks.PURPLE_WOOL, Blocks.GOLD_BLOCK, ModBlocks.PURPLE_BARBER_CHAIR, ModModels.BARBER_CHAIR);
+        generateTextureBottomModel(blockStateModelGenerator, Blocks.MAGENTA_WOOL, Blocks.GOLD_BLOCK, ModBlocks.MAGENTA_BARBER_CHAIR, ModModels.BARBER_CHAIR);
+        generateTextureBottomModel(blockStateModelGenerator, Blocks.PINK_WOOL, Blocks.GOLD_BLOCK, ModBlocks.PINK_BARBER_CHAIR, ModModels.BARBER_CHAIR);
+
+        generateTextureBottomModel(blockStateModelGenerator, Blocks.WHITE_WOOL, Blocks.IRON_BLOCK, ModBlocks.WHITE_BAR_CHAIR, ModModels.BAR_CHAIR);
+        generateTextureBottomModel(blockStateModelGenerator, Blocks.LIGHT_GRAY_WOOL, Blocks.IRON_BLOCK, ModBlocks.LIGHT_GRAY_BAR_CHAIR, ModModels.BAR_CHAIR);
+        generateTextureBottomModel(blockStateModelGenerator, Blocks.GRAY_WOOL, Blocks.IRON_BLOCK, ModBlocks.GRAY_BAR_CHAIR, ModModels.BAR_CHAIR);
+        generateTextureBottomModel(blockStateModelGenerator, Blocks.BLACK_WOOL, Blocks.IRON_BLOCK, ModBlocks.BLACK_BAR_CHAIR, ModModels.BAR_CHAIR);
+        generateTextureBottomModel(blockStateModelGenerator, Blocks.BROWN_WOOL, Blocks.IRON_BLOCK, ModBlocks.BROWN_BAR_CHAIR, ModModels.BAR_CHAIR);
+        generateTextureBottomModel(blockStateModelGenerator, Blocks.RED_WOOL, Blocks.IRON_BLOCK, ModBlocks.RED_BAR_CHAIR, ModModels.BAR_CHAIR);
+        generateTextureBottomModel(blockStateModelGenerator, Blocks.ORANGE_WOOL, Blocks.IRON_BLOCK, ModBlocks.ORANGE_BAR_CHAIR, ModModels.BAR_CHAIR);
+        generateTextureBottomModel(blockStateModelGenerator, Blocks.YELLOW_WOOL, Blocks.IRON_BLOCK, ModBlocks.YELLOW_BAR_CHAIR, ModModels.BAR_CHAIR);
+        generateTextureBottomModel(blockStateModelGenerator, Blocks.LIME_WOOL, Blocks.IRON_BLOCK, ModBlocks.LIME_BAR_CHAIR, ModModels.BAR_CHAIR);
+        generateTextureBottomModel(blockStateModelGenerator, Blocks.GREEN_WOOL, Blocks.IRON_BLOCK, ModBlocks.GREEN_BAR_CHAIR, ModModels.BAR_CHAIR);
+        generateTextureBottomModel(blockStateModelGenerator, Blocks.CYAN_WOOL, Blocks.IRON_BLOCK, ModBlocks.CYAN_BAR_CHAIR, ModModels.BAR_CHAIR);
+        generateTextureBottomModel(blockStateModelGenerator, Blocks.LIGHT_BLUE_WOOL, Blocks.IRON_BLOCK, ModBlocks.LIGHT_BLUE_BAR_CHAIR, ModModels.BAR_CHAIR);
+        generateTextureBottomModel(blockStateModelGenerator, Blocks.BLUE_WOOL, Blocks.IRON_BLOCK, ModBlocks.BLUE_BAR_CHAIR, ModModels.BAR_CHAIR);
+        generateTextureBottomModel(blockStateModelGenerator, Blocks.PURPLE_WOOL, Blocks.IRON_BLOCK, ModBlocks.PURPLE_BAR_CHAIR, ModModels.BAR_CHAIR);
+        generateTextureBottomModel(blockStateModelGenerator, Blocks.MAGENTA_WOOL, Blocks.IRON_BLOCK, ModBlocks.MAGENTA_BAR_CHAIR, ModModels.BAR_CHAIR);
+        generateTextureBottomModel(blockStateModelGenerator, Blocks.PINK_WOOL, Blocks.IRON_BLOCK, ModBlocks.PINK_BAR_CHAIR, ModModels.BAR_CHAIR);
     }
 
     private void generateLadderBlockModel(Block block, BlockStateModelGenerator blockStateModelGenerator) {
@@ -285,7 +319,7 @@ public class ModelGenerator extends FabricModelProvider {
         blockStateModelGenerator.blockStateCollector.accept(createDirectionalBlockState(chairBlock, chairModelId));
     }
 
-    private void generateTextureBottomModelModel(BlockStateModelGenerator blockStateModelGenerator, Block textureBlock, Block secondTextureLog, Block block, Model model) {
+    private void generateAllTextureModel(BlockStateModelGenerator blockStateModelGenerator, Block textureBlock, Block secondTextureLog, Block block, Model model) {
         TextureMap textureMap = TextureMap.all(textureBlock)
                 .put(TextureKey.TEXTURE, TextureMap.getId(secondTextureLog))
                 .put(TextureKey.PARTICLE, TextureMap.getId(textureBlock));
@@ -293,6 +327,15 @@ public class ModelGenerator extends FabricModelProvider {
 
         blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier
                 .create(block, BlockStateVariant.create().put(VariantSettings.MODEL, modelId)));
+    }
+
+    private void generateTextureBottomModel(BlockStateModelGenerator blockStateModelGenerator, Block textureBlock, Block secondTextureLog, Block block, Model model) {
+        TextureMap textureMap = TextureMap.texture(textureBlock)
+                .put(TextureKey.BOTTOM, TextureMap.getId(secondTextureLog))
+                .put(TextureKey.PARTICLE, TextureMap.getId(textureBlock));
+        Identifier modelId = model.upload(block, textureMap, blockStateModelGenerator.modelCollector);
+
+        blockStateModelGenerator.blockStateCollector.accept(createDirectionalBlockState(block, modelId));
     }
 
     private void generateAllTextureBottomModelModelWithSuffixedPath(BlockStateModelGenerator blockStateModelGenerator, Block textureBlock, Block secondTextureLog, Block block, Model model) {

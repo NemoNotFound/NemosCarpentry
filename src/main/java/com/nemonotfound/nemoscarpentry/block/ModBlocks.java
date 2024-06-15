@@ -246,6 +246,70 @@ public class ModBlocks {
             new GregoryChairBlock(AbstractBlock.Settings.copy(SPRUCE_PLANKS).nonOpaque()));
     public static final Block WARPED_CHAIR_GREGORY = registerBlock("warped_chair_gregory",
             new GregoryChairBlock(AbstractBlock.Settings.copy(WARPED_PLANKS).nonOpaque()));
+    public static final Block WHITE_BARBER_CHAIR = registerBlock("white_barber_chair",
+            new BarberChairBlock(AbstractBlock.Settings.copy(WHITE_WOOL).nonOpaque()));
+    public static final Block LIGHT_GRAY_BARBER_CHAIR = registerBlock("light_gray_barber_chair",
+            new BarberChairBlock(AbstractBlock.Settings.copy(LIGHT_GRAY_WOOL).nonOpaque()));
+    public static final Block GRAY_BARBER_CHAIR = registerBlock("gray_barber_chair",
+            new BarberChairBlock(AbstractBlock.Settings.copy(GRAY_WOOL).nonOpaque()));
+    public static final Block BLACK_BARBER_CHAIR = registerBlock("black_barber_chair",
+            new BarberChairBlock(AbstractBlock.Settings.copy(BLACK_WOOL).nonOpaque()));
+    public static final Block BROWN_BARBER_CHAIR = registerBlock("brown_barber_chair",
+            new BarberChairBlock(AbstractBlock.Settings.copy(BROWN_WOOL).nonOpaque()));
+    public static final Block RED_BARBER_CHAIR = registerBlock("red_barber_chair",
+            new BarberChairBlock(AbstractBlock.Settings.copy(RED_WOOL).nonOpaque()));
+    public static final Block ORANGE_BARBER_CHAIR = registerBlock("orange_barber_chair",
+            new BarberChairBlock(AbstractBlock.Settings.copy(ORANGE_WOOL).nonOpaque()));
+    public static final Block YELLOW_BARBER_CHAIR = registerBlock("yellow_barber_chair",
+            new BarberChairBlock(AbstractBlock.Settings.copy(YELLOW_WOOL).nonOpaque()));
+    public static final Block LIME_BARBER_CHAIR = registerBlock("lime_barber_chair",
+            new BarberChairBlock(AbstractBlock.Settings.copy(LIME_WOOL).nonOpaque()));
+    public static final Block GREEN_BARBER_CHAIR = registerBlock("green_barber_chair",
+            new BarberChairBlock(AbstractBlock.Settings.copy(GREEN_WOOL).nonOpaque()));
+    public static final Block CYAN_BARBER_CHAIR = registerBlock("cyan_barber_chair",
+            new BarberChairBlock(AbstractBlock.Settings.copy(CYAN_WOOL).nonOpaque()));
+    public static final Block LIGHT_BLUE_BARBER_CHAIR = registerBlock("light_blue_barber_chair",
+            new BarberChairBlock(AbstractBlock.Settings.copy(LIGHT_BLUE_WOOL).nonOpaque()));
+    public static final Block BLUE_BARBER_CHAIR = registerBlock("blue_barber_chair",
+            new BarberChairBlock(AbstractBlock.Settings.copy(BLUE_WOOL).nonOpaque()));
+    public static final Block PURPLE_BARBER_CHAIR = registerBlock("purple_barber_chair",
+            new BarberChairBlock(AbstractBlock.Settings.copy(PURPLE_WOOL).nonOpaque()));
+    public static final Block MAGENTA_BARBER_CHAIR = registerBlock("magenta_barber_chair",
+            new BarberChairBlock(AbstractBlock.Settings.copy(MAGENTA_WOOL).nonOpaque()));
+    public static final Block PINK_BARBER_CHAIR = registerBlock("pink_barber_chair",
+            new BarberChairBlock(AbstractBlock.Settings.copy(PINK_WOOL).nonOpaque()));
+    public static final Block WHITE_BAR_CHAIR = registerBlock("white_bar_chair",
+            new BarChairBlock(AbstractBlock.Settings.copy(WHITE_WOOL).nonOpaque()));
+    public static final Block LIGHT_GRAY_BAR_CHAIR = registerBlock("light_gray_bar_chair",
+            new BarChairBlock(AbstractBlock.Settings.copy(LIGHT_GRAY_WOOL).nonOpaque()));
+    public static final Block GRAY_BAR_CHAIR = registerBlock("gray_bar_chair",
+            new BarChairBlock(AbstractBlock.Settings.copy(GRAY_WOOL).nonOpaque()));
+    public static final Block BLACK_BAR_CHAIR = registerBlock("black_bar_chair",
+            new BarChairBlock(AbstractBlock.Settings.copy(BLACK_WOOL).nonOpaque()));
+    public static final Block BROWN_BAR_CHAIR = registerBlock("brown_bar_chair",
+            new BarChairBlock(AbstractBlock.Settings.copy(BROWN_WOOL).nonOpaque()));
+    public static final Block RED_BAR_CHAIR = registerBlock("red_bar_chair",
+            new BarChairBlock(AbstractBlock.Settings.copy(RED_WOOL).nonOpaque()));
+    public static final Block ORANGE_BAR_CHAIR = registerBlock("orange_bar_chair",
+            new BarChairBlock(AbstractBlock.Settings.copy(ORANGE_WOOL).nonOpaque()));
+    public static final Block YELLOW_BAR_CHAIR = registerBlock("yellow_bar_chair",
+            new BarChairBlock(AbstractBlock.Settings.copy(YELLOW_WOOL).nonOpaque()));
+    public static final Block LIME_BAR_CHAIR = registerBlock("lime_bar_chair",
+            new BarChairBlock(AbstractBlock.Settings.copy(LIME_WOOL).nonOpaque()));
+    public static final Block GREEN_BAR_CHAIR = registerBlock("green_bar_chair",
+            new BarChairBlock(AbstractBlock.Settings.copy(GREEN_WOOL).nonOpaque()));
+    public static final Block CYAN_BAR_CHAIR = registerBlock("cyan_bar_chair",
+            new BarChairBlock(AbstractBlock.Settings.copy(CYAN_WOOL).nonOpaque()));
+    public static final Block LIGHT_BLUE_BAR_CHAIR = registerBlock("light_blue_bar_chair",
+            new BarChairBlock(AbstractBlock.Settings.copy(LIGHT_BLUE_WOOL).nonOpaque()));
+    public static final Block BLUE_BAR_CHAIR = registerBlock("blue_bar_chair",
+            new BarChairBlock(AbstractBlock.Settings.copy(BLUE_WOOL).nonOpaque()));
+    public static final Block PURPLE_BAR_CHAIR = registerBlock("purple_bar_chair",
+            new BarChairBlock(AbstractBlock.Settings.copy(PURPLE_WOOL).nonOpaque()));
+    public static final Block MAGENTA_BAR_CHAIR = registerBlock("magenta_bar_chair",
+            new BarChairBlock(AbstractBlock.Settings.copy(MAGENTA_WOOL).nonOpaque()));
+    public static final Block PINK_BAR_CHAIR = registerBlock("pink_bar_chair",
+            new BarChairBlock(AbstractBlock.Settings.copy(PINK_WOOL).nonOpaque()));
     public static final Block ACACIA_LOG_SEAT = registerBlock("acacia_log_seat",
             new LogSeat(AbstractBlock.Settings.copy(ACACIA_PLANKS).nonOpaque()));
     public static final Block BIRCH_LOG_SEAT = registerBlock("birch_log_seat",

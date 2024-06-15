@@ -209,6 +209,8 @@ public class RecipeGenerator extends FabricRecipeProvider {
         createChairTommyRecipes(exporter);
         createChairTommyNaturalRecipes(exporter);
         createChairGregoryRecipes(exporter);
+        createBarberChairRecipes(exporter);
+        createBarChairRecipes(exporter);
     }
 
     private void createTableTheClassicRecipes(RecipeExporter exporter) {
@@ -409,6 +411,76 @@ public class RecipeGenerator extends FabricRecipeProvider {
                 ModItems.SPRUCE_CHAIR_GREGORY, 1, CarpentryTools.SAW.asString());
         createCarpentryRecipe(exporter, Pair.of(Blocks.WARPED_PLANKS, 1), Pair.of(ItemTags.WARPED_STEMS, 1),
                 ModItems.WARPED_CHAIR_GREGORY, 1, CarpentryTools.SAW.asString());
+    }
+
+    private void createBarberChairRecipes(RecipeExporter exporter) {
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.WHITE_WOOL, 1), Pair.of(Blocks.GOLD_BLOCK, 1)),
+                ModItems.WHITE_BARBER_CHAIR, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.LIGHT_GRAY_WOOL, 1), Pair.of(Blocks.GOLD_BLOCK, 1)),
+                ModItems.LIGHT_GRAY_BARBER_CHAIR, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.GRAY_WOOL, 1), Pair.of(Blocks.GOLD_BLOCK, 1)),
+                ModItems.GRAY_BARBER_CHAIR, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.BLACK_WOOL, 1), Pair.of(Blocks.GOLD_BLOCK, 1)),
+                ModItems.BLACK_BARBER_CHAIR, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.BROWN_WOOL, 1), Pair.of(Blocks.GOLD_BLOCK, 1)),
+                ModItems.BROWN_BARBER_CHAIR, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.RED_WOOL, 1), Pair.of(Blocks.GOLD_BLOCK, 1)),
+                ModItems.RED_BARBER_CHAIR, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.ORANGE_WOOL, 1), Pair.of(Blocks.GOLD_BLOCK, 1)),
+                ModItems.ORANGE_BARBER_CHAIR, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.YELLOW_WOOL, 1), Pair.of(Blocks.GOLD_BLOCK, 1)),
+                ModItems.YELLOW_BARBER_CHAIR, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.LIME_WOOL, 1), Pair.of(Blocks.GOLD_BLOCK, 1)),
+                ModItems.LIME_BARBER_CHAIR, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.GREEN_WOOL, 1), Pair.of(Blocks.GOLD_BLOCK, 1)),
+                ModItems.GREEN_BARBER_CHAIR, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.CYAN_WOOL, 1), Pair.of(Blocks.GOLD_BLOCK, 1)),
+                ModItems.CYAN_BARBER_CHAIR, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.LIGHT_BLUE_WOOL, 1), Pair.of(Blocks.GOLD_BLOCK, 1)),
+                ModItems.LIGHT_BLUE_BARBER_CHAIR, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.BLUE_WOOL, 1), Pair.of(Blocks.GOLD_BLOCK, 1)),
+                ModItems.BLUE_BARBER_CHAIR, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.PURPLE_WOOL, 1), Pair.of(Blocks.GOLD_BLOCK, 1)),
+                ModItems.PURPLE_BARBER_CHAIR, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.MAGENTA_WOOL, 1), Pair.of(Blocks.GOLD_BLOCK, 1)),
+                ModItems.MAGENTA_BARBER_CHAIR, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.PINK_WOOL, 1), Pair.of(Blocks.GOLD_BLOCK, 1)),
+                ModItems.PINK_BARBER_CHAIR, 1, CarpentryTools.SAW.asString());
+    }
+
+    private void createBarChairRecipes(RecipeExporter exporter) {
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.WHITE_WOOL, 1), Pair.of(Blocks.GOLD_BLOCK, 1)),
+                ModItems.WHITE_BAR_CHAIR, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.LIGHT_GRAY_WOOL, 1), Pair.of(Blocks.GOLD_BLOCK, 1)),
+                ModItems.LIGHT_GRAY_BAR_CHAIR, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.GRAY_WOOL, 1), Pair.of(Blocks.GOLD_BLOCK, 1)),
+                ModItems.GRAY_BAR_CHAIR, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.BLACK_WOOL, 1), Pair.of(Blocks.GOLD_BLOCK, 1)),
+                ModItems.BLACK_BAR_CHAIR, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.BROWN_WOOL, 1), Pair.of(Blocks.GOLD_BLOCK, 1)),
+                ModItems.BROWN_BAR_CHAIR, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.RED_WOOL, 1), Pair.of(Blocks.GOLD_BLOCK, 1)),
+                ModItems.RED_BAR_CHAIR, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.ORANGE_WOOL, 1), Pair.of(Blocks.GOLD_BLOCK, 1)),
+                ModItems.ORANGE_BAR_CHAIR, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.YELLOW_WOOL, 1), Pair.of(Blocks.GOLD_BLOCK, 1)),
+                ModItems.YELLOW_BAR_CHAIR, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.LIME_WOOL, 1), Pair.of(Blocks.GOLD_BLOCK, 1)),
+                ModItems.LIME_BAR_CHAIR, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.GREEN_WOOL, 1), Pair.of(Blocks.GOLD_BLOCK, 1)),
+                ModItems.GREEN_BAR_CHAIR, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.CYAN_WOOL, 1), Pair.of(Blocks.GOLD_BLOCK, 1)),
+                ModItems.CYAN_BAR_CHAIR, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.LIGHT_BLUE_WOOL, 1), Pair.of(Blocks.GOLD_BLOCK, 1)),
+                ModItems.LIGHT_BLUE_BAR_CHAIR, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.BLUE_WOOL, 1), Pair.of(Blocks.GOLD_BLOCK, 1)),
+                ModItems.BLUE_BAR_CHAIR, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.PURPLE_WOOL, 1), Pair.of(Blocks.GOLD_BLOCK, 1)),
+                ModItems.PURPLE_BAR_CHAIR, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.MAGENTA_WOOL, 1), Pair.of(Blocks.GOLD_BLOCK, 1)),
+                ModItems.MAGENTA_BAR_CHAIR, 1, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.PINK_WOOL, 1), Pair.of(Blocks.GOLD_BLOCK, 1)),
+                ModItems.PINK_BAR_CHAIR, 1, CarpentryTools.SAW.asString());
     }
 
     private void createSawRecipe(RecipeExporter exporter) {

@@ -53,6 +53,40 @@ public class EnglishLanguageProvider extends FabricLanguageProvider {
         translationBuilder.add(ModBlocks.SPRUCE_STANDING_TABLE, "Spruce Standing Table");
         translationBuilder.add(ModBlocks.WARPED_STANDING_TABLE, "Warped Standing Table");
 
+        translationBuilder.add(ModBlocks.WHITE_BARBER_CHAIR, "White Barber Chair");
+        translationBuilder.add(ModBlocks.LIGHT_GRAY_BARBER_CHAIR, "Light Gray Barber Chair");
+        translationBuilder.add(ModBlocks.GRAY_BARBER_CHAIR, "Gray Barber Chair");
+        translationBuilder.add(ModBlocks.BLACK_BARBER_CHAIR, "Black Barber Chair");
+        translationBuilder.add(ModBlocks.BROWN_BARBER_CHAIR, "Brown Barber Chair");
+        translationBuilder.add(ModBlocks.RED_BARBER_CHAIR, "Red Barber Chair");
+        translationBuilder.add(ModBlocks.ORANGE_BARBER_CHAIR, "Orange Barber Chair");
+        translationBuilder.add(ModBlocks.YELLOW_BARBER_CHAIR, "Yellow Barber Chair");
+        translationBuilder.add(ModBlocks.LIME_BARBER_CHAIR, "Lime Barber Chair");
+        translationBuilder.add(ModBlocks.GREEN_BARBER_CHAIR, "Green Barber Chair");
+        translationBuilder.add(ModBlocks.CYAN_BARBER_CHAIR, "Cyan Barber Chair");
+        translationBuilder.add(ModBlocks.LIGHT_BLUE_BARBER_CHAIR, "Light Blue Barber Chair");
+        translationBuilder.add(ModBlocks.BLUE_BARBER_CHAIR, "Blue Barber Chair");
+        translationBuilder.add(ModBlocks.PURPLE_BARBER_CHAIR, "Purple Barber Chair");
+        translationBuilder.add(ModBlocks.MAGENTA_BARBER_CHAIR, "Magenta Barber Chair");
+        translationBuilder.add(ModBlocks.PINK_BARBER_CHAIR, "Pink Barber Chair");
+
+        translationBuilder.add(ModBlocks.WHITE_BAR_CHAIR, "White Bar Chair");
+        translationBuilder.add(ModBlocks.LIGHT_GRAY_BAR_CHAIR, "Light Gray Bar Chair");
+        translationBuilder.add(ModBlocks.GRAY_BAR_CHAIR, "Gray Bar Chair");
+        translationBuilder.add(ModBlocks.BLACK_BAR_CHAIR, "Black Bar Chair");
+        translationBuilder.add(ModBlocks.BROWN_BAR_CHAIR, "Brown Bar Chair");
+        translationBuilder.add(ModBlocks.RED_BAR_CHAIR, "Red Bar Chair");
+        translationBuilder.add(ModBlocks.ORANGE_BAR_CHAIR, "Orange Bar Chair");
+        translationBuilder.add(ModBlocks.YELLOW_BAR_CHAIR, "Yellow Bar Chair");
+        translationBuilder.add(ModBlocks.LIME_BAR_CHAIR, "Lime Bar Chair");
+        translationBuilder.add(ModBlocks.GREEN_BAR_CHAIR, "Green Bar Chair");
+        translationBuilder.add(ModBlocks.CYAN_BAR_CHAIR, "Cyan Bar Chair");
+        translationBuilder.add(ModBlocks.LIGHT_BLUE_BAR_CHAIR, "Light Blue Bar Chair");
+        translationBuilder.add(ModBlocks.BLUE_BAR_CHAIR, "Blue Bar Chair");
+        translationBuilder.add(ModBlocks.PURPLE_BAR_CHAIR, "Purple Bar Chair");
+        translationBuilder.add(ModBlocks.MAGENTA_BAR_CHAIR, "Magenta Bar Chair");
+        translationBuilder.add(ModBlocks.PINK_BAR_CHAIR, "Pink Bar Chair");
+
         translationBuilder.add(ModBlocks.ACACIA_BARREL_SEAT, "Acacia Barrel Seats");
         translationBuilder.add(ModBlocks.BAMBOO_BARREL_SEAT, "Bamboo Barrel Seats");
         translationBuilder.add(ModBlocks.BIRCH_BARREL_SEAT, "Birch Barrel Seats");

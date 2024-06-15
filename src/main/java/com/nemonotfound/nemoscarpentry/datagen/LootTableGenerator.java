@@ -214,6 +214,40 @@ public class LootTableGenerator extends FabricBlockLootTableProvider {
         this.addDrop(ModBlocks.SPRUCE_CHAIR_GREGORY, this::chairDrops);
         this.addDrop(ModBlocks.WARPED_CHAIR_GREGORY, this::chairDrops);
 
+        this.addDrop(ModBlocks.WHITE_BARBER_CHAIR);
+        this.addDrop(ModBlocks.LIGHT_GRAY_BARBER_CHAIR);
+        this.addDrop(ModBlocks.GRAY_BARBER_CHAIR);
+        this.addDrop(ModBlocks.BLACK_BARBER_CHAIR);
+        this.addDrop(ModBlocks.BROWN_BARBER_CHAIR);
+        this.addDrop(ModBlocks.RED_BARBER_CHAIR);
+        this.addDrop(ModBlocks.ORANGE_BARBER_CHAIR);
+        this.addDrop(ModBlocks.YELLOW_BARBER_CHAIR);
+        this.addDrop(ModBlocks.LIME_BARBER_CHAIR);
+        this.addDrop(ModBlocks.GREEN_BARBER_CHAIR);
+        this.addDrop(ModBlocks.CYAN_BARBER_CHAIR);
+        this.addDrop(ModBlocks.LIGHT_BLUE_BARBER_CHAIR);
+        this.addDrop(ModBlocks.BLUE_BARBER_CHAIR);
+        this.addDrop(ModBlocks.PURPLE_BARBER_CHAIR);
+        this.addDrop(ModBlocks.MAGENTA_BARBER_CHAIR);
+        this.addDrop(ModBlocks.PINK_BARBER_CHAIR);
+
+        this.addDrop(ModBlocks.WHITE_BAR_CHAIR);
+        this.addDrop(ModBlocks.LIGHT_GRAY_BAR_CHAIR);
+        this.addDrop(ModBlocks.GRAY_BAR_CHAIR);
+        this.addDrop(ModBlocks.BLACK_BAR_CHAIR);
+        this.addDrop(ModBlocks.BROWN_BAR_CHAIR);
+        this.addDrop(ModBlocks.RED_BAR_CHAIR);
+        this.addDrop(ModBlocks.ORANGE_BAR_CHAIR);
+        this.addDrop(ModBlocks.YELLOW_BAR_CHAIR);
+        this.addDrop(ModBlocks.LIME_BAR_CHAIR);
+        this.addDrop(ModBlocks.GREEN_BAR_CHAIR);
+        this.addDrop(ModBlocks.CYAN_BAR_CHAIR);
+        this.addDrop(ModBlocks.LIGHT_BLUE_BAR_CHAIR);
+        this.addDrop(ModBlocks.BLUE_BAR_CHAIR);
+        this.addDrop(ModBlocks.PURPLE_BAR_CHAIR);
+        this.addDrop(ModBlocks.MAGENTA_BAR_CHAIR);
+        this.addDrop(ModBlocks.PINK_BAR_CHAIR);
+
         this.addDrop(ModBlocks.ACACIA_COFFEE_TABLE);
         this.addDrop(ModBlocks.BAMBOO_COFFEE_TABLE);
         this.addDrop(ModBlocks.BIRCH_COFFEE_TABLE);
