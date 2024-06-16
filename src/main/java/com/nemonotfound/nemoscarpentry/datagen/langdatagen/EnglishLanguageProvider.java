@@ -29,6 +29,18 @@ public class EnglishLanguageProvider extends FabricLanguageProvider {
         translationBuilder.add(ModBlocks.SPRUCE_TABLE_THE_CLASSIC, "Spruce Table \"The Classic\"");
         translationBuilder.add(ModBlocks.WARPED_TABLE_THE_CLASSIC, "Warped Table \"The Classic\"");
 
+        translationBuilder.add(ModBlocks.ACACIA_TABLE_PASCAL, "Acacia Table \"Pascal\"");
+        translationBuilder.add(ModBlocks.BAMBOO_TABLE_PASCAL, "Bamboo Table \"Pascal\"");
+        translationBuilder.add(ModBlocks.BIRCH_TABLE_PASCAL, "Birch Table \"Pascal\"");
+        translationBuilder.add(ModBlocks.CHERRY_TABLE_PASCAL, "Cherry Table \"Pascal\"");
+        translationBuilder.add(ModBlocks.CRIMSON_TABLE_PASCAL, "Crimson Table \"Pascal\"");
+        translationBuilder.add(ModBlocks.DARK_OAK_TABLE_PASCAL, "Dark_Oak Table \"Pascal\"");
+        translationBuilder.add(ModBlocks.JUNGLE_TABLE_PASCAL, "Jungle Table \"Pascal\"");
+        translationBuilder.add(ModBlocks.MANGROVE_TABLE_PASCAL, "Mangrove Table \"Pascal\"");
+        translationBuilder.add(ModBlocks.OAK_TABLE_PASCAL, "Oak Table \"Pascal\"");
+        translationBuilder.add(ModBlocks.SPRUCE_TABLE_PASCAL, "Spruce Table \"Pascal\"");
+        translationBuilder.add(ModBlocks.WARPED_TABLE_PASCAL, "Warped Table \"Pascal\"");
+
         translationBuilder.add(ModBlocks.ACACIA_COFFEE_TABLE, "Acacia Coffee Table");
         translationBuilder.add(ModBlocks.BAMBOO_COFFEE_TABLE, "Bamboo Coffee Table");
         translationBuilder.add(ModBlocks.BIRCH_COFFEE_TABLE, "Birch Coffee Table");

@@ -21,6 +21,7 @@ public class ModModels {
     public static final Model BARBER_CHAIR = block("seats/barber_chair", TextureKey.TEXTURE, TextureKey.BOTTOM, TextureKey.PARTICLE);
     public static final Model BAR_CHAIR = block("seats/bar_chair", TextureKey.TEXTURE, TextureKey.BOTTOM, TextureKey.PARTICLE);
     public static final Model TABLE_THE_CLASSIC = block("tables/table_the_classic", TextureKey.ALL, TextureKey.PARTICLE);
+    public static final Model TABLE_PASCAL = block("tables/table_pascal", TextureKey.TEXTURE, TextureKey.BOTTOM, TextureKey.PARTICLE);
     public static final Model STANDING_TABLE = block("tables/standing_table", TextureKey.ALL, TextureKey.TEXTURE, TextureKey.PARTICLE);
     public static final Model CHAIR = block("seats/chair", TextureKey.ALL, TextureKey.PARTICLE);
     public static final Model CHAIR_FELIX = block("seats/chair_felix", TextureKey.ALL, TextureKey.PARTICLE);

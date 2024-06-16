@@ -27,20 +27,20 @@ import static net.minecraft.util.math.Direction.UP;
 
 public class MultipleBlockChair extends SitableBlock implements Waterloggable {
 
-    private final VoxelShape NORTH_SHAPE;
-    private final VoxelShape EAST_SHAPE;
-    private final VoxelShape SOUTH_SHAPE;
-    private final VoxelShape WEST_SHAPE;
+    private final VoxelShape northShape;
+    private final VoxelShape eastShape;
+    private final VoxelShape southShape;
+    private final VoxelShape westShape;
     private static final DirectionProperty FACING = HorizontalFacingBlock.FACING;
     public static final EnumProperty<ChairPart> PART = ModProperties.CHAIR_PART;
 
     protected MultipleBlockChair(Settings settings, float height, VoxelShape northShape, VoxelShape eastShape,
                                  VoxelShape southShape, VoxelShape westShape) {
         super(settings, height, northShape, eastShape, southShape, westShape);
-        this.NORTH_SHAPE = northShape;
-        this.EAST_SHAPE = eastShape;
-        this.SOUTH_SHAPE = southShape;
-        this.WEST_SHAPE = westShape;
+        this.northShape = northShape;
+        this.eastShape = eastShape;
+        this.southShape = southShape;
+        this.westShape = westShape;
         this.setDefaultState(this.stateManager.getDefaultState().with(FACING, Direction.NORTH)
                 .with(WATERLOGGED, false).with(PART, ChairPart.LOWER));
     }
@@ -61,20 +61,20 @@ public class MultipleBlockChair extends SitableBlock implements Waterloggable {
 
         switch (state.get(FACING)) {
             case NORTH -> {
-                return isLowerChairPart ? NORTH_SHAPE : NORTH_SHAPE.offset(0, -1, 0);
+                return isLowerChairPart ? northShape : northShape.offset(0, -1, 0);
             }
             case SOUTH -> {
-                return isLowerChairPart ? SOUTH_SHAPE : SOUTH_SHAPE.offset(0, -1, 0);
+                return isLowerChairPart ? southShape : southShape.offset(0, -1, 0);
             }
             case EAST -> {
-                return isLowerChairPart ? EAST_SHAPE : EAST_SHAPE.offset(0, -1, 0);
+                return isLowerChairPart ? eastShape : eastShape.offset(0, -1, 0);
             }
             case WEST -> {
-                return isLowerChairPart ? WEST_SHAPE : WEST_SHAPE.offset(0, -1, 0);
+                return isLowerChairPart ? westShape : westShape.offset(0, -1, 0);
             }
         }
 
-        return NORTH_SHAPE;
+        return northShape;
     }
 
     @Override

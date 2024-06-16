@@ -13,10 +13,14 @@
 - Added Tables
   - Coffee Table
   - Standing Table
+  - Table "Pascal"
 - Added ItemGroups
   - Seats
   - Tables
   - Outdoor
+- Updated villages
+  - Replaced many stairs, with "Felix" chairs
+  - Added table "The Classic" to some houses
 
 ## Changes
 - Changed order of items in ItemGroups

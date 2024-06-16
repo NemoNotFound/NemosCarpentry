@@ -6,7 +6,7 @@
       "item": "minecraft:gray_wool"
     },
     {
-      "item": "minecraft:gold_block"
+      "item": "minecraft:iron_block"
     }
   ],
   "result": "nemos-carpentry:gray_bar_chair",

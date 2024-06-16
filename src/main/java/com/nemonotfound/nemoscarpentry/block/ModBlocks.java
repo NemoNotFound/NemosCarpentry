@@ -4,6 +4,7 @@ import com.nemonotfound.nemoscarpentry.block.seats.*;
 import com.nemonotfound.nemoscarpentry.block.tables.StandingTableBlock;
 import com.nemonotfound.nemoscarpentry.block.tables.CoffeeTableBlock;
 import com.nemonotfound.nemoscarpentry.block.tables.TableBlock;
+import com.nemonotfound.nemoscarpentry.block.tables.TablePascalBlock;
 import com.nemonotfound.nemoscarpentry.item.ModItemGroups;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.*;
@@ -70,6 +71,28 @@ public class ModBlocks {
             new TableBlock(AbstractBlock.Settings.copy(SPRUCE_PLANKS).nonOpaque()));
     public static final Block WARPED_TABLE_THE_CLASSIC = registerBlock("warped_table_the_classic",
             new TableBlock(AbstractBlock.Settings.copy(WARPED_PLANKS).nonOpaque()));
+    public static final Block ACACIA_TABLE_PASCAL = registerBlock("acacia_table_pascal",
+            new TablePascalBlock(AbstractBlock.Settings.copy(ACACIA_PLANKS).nonOpaque()));
+    public static final Block BAMBOO_TABLE_PASCAL = registerBlock("bamboo_table_pascal",
+            new TablePascalBlock(AbstractBlock.Settings.copy(BAMBOO_PLANKS).nonOpaque()));
+    public static final Block BIRCH_TABLE_PASCAL = registerBlock("birch_table_pascal",
+            new TablePascalBlock(AbstractBlock.Settings.copy(BIRCH_PLANKS).nonOpaque()));
+    public static final Block CHERRY_TABLE_PASCAL = registerBlock("cherry_table_pascal",
+            new TablePascalBlock(AbstractBlock.Settings.copy(CHERRY_PLANKS).nonOpaque()));
+    public static final Block CRIMSON_TABLE_PASCAL = registerBlock("crimson_table_pascal",
+            new TablePascalBlock(AbstractBlock.Settings.copy(CRIMSON_PLANKS).nonOpaque()));
+    public static final Block DARK_OAK_TABLE_PASCAL = registerBlock("dark_oak_table_pascal",
+            new TablePascalBlock(AbstractBlock.Settings.copy(DARK_OAK_PLANKS).nonOpaque()));
+    public static final Block JUNGLE_TABLE_PASCAL = registerBlock("jungle_table_pascal",
+            new TablePascalBlock(AbstractBlock.Settings.copy(JUNGLE_PLANKS).nonOpaque()));
+    public static final Block MANGROVE_TABLE_PASCAL = registerBlock("mangrove_table_pascal",
+            new TablePascalBlock(AbstractBlock.Settings.copy(MANGROVE_PLANKS).nonOpaque()));
+    public static final Block OAK_TABLE_PASCAL = registerBlock("oak_table_pascal",
+            new TablePascalBlock(AbstractBlock.Settings.copy(OAK_PLANKS).nonOpaque()));
+    public static final Block SPRUCE_TABLE_PASCAL = registerBlock("spruce_table_pascal",
+            new TablePascalBlock(AbstractBlock.Settings.copy(SPRUCE_PLANKS).nonOpaque()));
+    public static final Block WARPED_TABLE_PASCAL = registerBlock("warped_table_pascal",
+            new TablePascalBlock(AbstractBlock.Settings.copy(WARPED_PLANKS).nonOpaque()));
     public static final Block ACACIA_STANDING_TABLE = registerBlock("acacia_standing_table",
             new StandingTableBlock(AbstractBlock.Settings.copy(ACACIA_PLANKS).nonOpaque()));
     public static final Block BAMBOO_STANDING_TABLE = registerBlock("bamboo_standing_table",

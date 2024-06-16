@@ -31,10 +31,10 @@ import java.util.List;
 public abstract class SitableBlock extends HorizontalFacingBlock {
 
     public static final BooleanProperty WATERLOGGED = Properties.WATERLOGGED;
-    private final VoxelShape NORTH_SHAPE;
-    private final VoxelShape EAST_SHAPE;
-    private final VoxelShape SOUTH_SHAPE;
-    private final VoxelShape WEST_SHAPE;
+    private final VoxelShape northShape;
+    private final VoxelShape eastShape;
+    private final VoxelShape southShape;
+    private final VoxelShape westShape;
     protected ChairEntity chairEntity;
     public float height;
 
@@ -42,10 +42,10 @@ public abstract class SitableBlock extends HorizontalFacingBlock {
                         VoxelShape southShape, VoxelShape westShape) {
         super(settings);
         setDefaultState(this.getStateManager().getDefaultState().with(Properties.HORIZONTAL_FACING, Direction.NORTH));
-        this.NORTH_SHAPE = northShape;
-        this.EAST_SHAPE = eastShape;
-        this.SOUTH_SHAPE = southShape;
-        this.WEST_SHAPE = westShape;
+        this.northShape = northShape;
+        this.eastShape = eastShape;
+        this.southShape = southShape;
+        this.westShape = westShape;
         this.height = height;
     }
 
@@ -62,20 +62,20 @@ public abstract class SitableBlock extends HorizontalFacingBlock {
     private VoxelShape getShapeIndex(BlockState state) {
         switch (state.get(FACING)) {
             case NORTH -> {
-                return NORTH_SHAPE;
+                return northShape;
             }
             case SOUTH -> {
-                return SOUTH_SHAPE;
+                return southShape;
             }
             case EAST -> {
-                return EAST_SHAPE;
+                return eastShape;
             }
             case WEST -> {
-                return WEST_SHAPE;
+                return westShape;
             }
         }
 
-        return NORTH_SHAPE;
+        return northShape;
     }
 
     @Override

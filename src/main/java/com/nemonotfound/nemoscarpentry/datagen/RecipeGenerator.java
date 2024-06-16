@@ -211,6 +211,7 @@ public class RecipeGenerator extends FabricRecipeProvider {
         createChairGregoryRecipes(exporter);
         createBarberChairRecipes(exporter);
         createBarChairRecipes(exporter);
+        createTablePascalRecipes(exporter);
     }
 
     private void createTableTheClassicRecipes(RecipeExporter exporter) {
@@ -236,6 +237,31 @@ public class RecipeGenerator extends FabricRecipeProvider {
                 ModBlocks.SPRUCE_TABLE_THE_CLASSIC, 1, CarpentryTools.SAW.asString());
         createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.WARPED_PLANKS, 1)),
                 ModBlocks.WARPED_TABLE_THE_CLASSIC, 1, CarpentryTools.SAW.asString());
+    }
+
+    private void createTablePascalRecipes(RecipeExporter exporter) {
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.ACACIA_PLANKS, 1), Pair.of(Blocks.IRON_BLOCK, 1)),
+                ModBlocks.ACACIA_TABLE_PASCAL, 4, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.BAMBOO_PLANKS, 1), Pair.of(Blocks.IRON_BLOCK, 1)),
+                ModBlocks.BAMBOO_TABLE_PASCAL, 4, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.BIRCH_PLANKS, 1), Pair.of(Blocks.IRON_BLOCK, 1)),
+                ModBlocks.BIRCH_TABLE_PASCAL, 4, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.CHERRY_PLANKS, 1), Pair.of(Blocks.IRON_BLOCK, 1)),
+                ModBlocks.CHERRY_TABLE_PASCAL, 4, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.CRIMSON_PLANKS, 1), Pair.of(Blocks.IRON_BLOCK, 1)),
+                ModBlocks.CRIMSON_TABLE_PASCAL, 4, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.DARK_OAK_PLANKS, 1), Pair.of(Blocks.IRON_BLOCK, 1)),
+                ModBlocks.DARK_OAK_TABLE_PASCAL, 4, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.JUNGLE_PLANKS, 1), Pair.of(Blocks.IRON_BLOCK, 1)),
+                ModBlocks.JUNGLE_TABLE_PASCAL, 4, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.MANGROVE_PLANKS, 1), Pair.of(Blocks.IRON_BLOCK, 1)),
+                ModBlocks.MANGROVE_TABLE_PASCAL, 4, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.OAK_PLANKS, 1), Pair.of(Blocks.IRON_BLOCK, 1)),
+                ModBlocks.OAK_TABLE_PASCAL, 4, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.SPRUCE_PLANKS, 1), Pair.of(Blocks.IRON_BLOCK, 1)),
+                ModBlocks.SPRUCE_TABLE_PASCAL, 4, CarpentryTools.SAW.asString());
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.WARPED_PLANKS, 1), Pair.of(Blocks.IRON_BLOCK, 1)),
+                ModBlocks.WARPED_TABLE_PASCAL, 4, CarpentryTools.SAW.asString());
     }
 
     private void createStandingTableRecipes(RecipeExporter exporter) {
@@ -449,37 +475,37 @@ public class RecipeGenerator extends FabricRecipeProvider {
     }
 
     private void createBarChairRecipes(RecipeExporter exporter) {
-        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.WHITE_WOOL, 1), Pair.of(Blocks.GOLD_BLOCK, 1)),
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.WHITE_WOOL, 1), Pair.of(Blocks.IRON_BLOCK, 1)),
                 ModItems.WHITE_BAR_CHAIR, 1, CarpentryTools.SAW.asString());
-        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.LIGHT_GRAY_WOOL, 1), Pair.of(Blocks.GOLD_BLOCK, 1)),
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.LIGHT_GRAY_WOOL, 1), Pair.of(Blocks.IRON_BLOCK, 1)),
                 ModItems.LIGHT_GRAY_BAR_CHAIR, 1, CarpentryTools.SAW.asString());
-        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.GRAY_WOOL, 1), Pair.of(Blocks.GOLD_BLOCK, 1)),
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.GRAY_WOOL, 1), Pair.of(Blocks.IRON_BLOCK, 1)),
                 ModItems.GRAY_BAR_CHAIR, 1, CarpentryTools.SAW.asString());
-        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.BLACK_WOOL, 1), Pair.of(Blocks.GOLD_BLOCK, 1)),
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.BLACK_WOOL, 1), Pair.of(Blocks.IRON_BLOCK, 1)),
                 ModItems.BLACK_BAR_CHAIR, 1, CarpentryTools.SAW.asString());
-        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.BROWN_WOOL, 1), Pair.of(Blocks.GOLD_BLOCK, 1)),
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.BROWN_WOOL, 1), Pair.of(Blocks.IRON_BLOCK, 1)),
                 ModItems.BROWN_BAR_CHAIR, 1, CarpentryTools.SAW.asString());
-        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.RED_WOOL, 1), Pair.of(Blocks.GOLD_BLOCK, 1)),
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.RED_WOOL, 1), Pair.of(Blocks.IRON_BLOCK, 1)),
                 ModItems.RED_BAR_CHAIR, 1, CarpentryTools.SAW.asString());
-        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.ORANGE_WOOL, 1), Pair.of(Blocks.GOLD_BLOCK, 1)),
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.ORANGE_WOOL, 1), Pair.of(Blocks.IRON_BLOCK, 1)),
                 ModItems.ORANGE_BAR_CHAIR, 1, CarpentryTools.SAW.asString());
-        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.YELLOW_WOOL, 1), Pair.of(Blocks.GOLD_BLOCK, 1)),
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.YELLOW_WOOL, 1), Pair.of(Blocks.IRON_BLOCK, 1)),
                 ModItems.YELLOW_BAR_CHAIR, 1, CarpentryTools.SAW.asString());
-        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.LIME_WOOL, 1), Pair.of(Blocks.GOLD_BLOCK, 1)),
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.LIME_WOOL, 1), Pair.of(Blocks.IRON_BLOCK, 1)),
                 ModItems.LIME_BAR_CHAIR, 1, CarpentryTools.SAW.asString());
-        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.GREEN_WOOL, 1), Pair.of(Blocks.GOLD_BLOCK, 1)),
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.GREEN_WOOL, 1), Pair.of(Blocks.IRON_BLOCK, 1)),
                 ModItems.GREEN_BAR_CHAIR, 1, CarpentryTools.SAW.asString());
-        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.CYAN_WOOL, 1), Pair.of(Blocks.GOLD_BLOCK, 1)),
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.CYAN_WOOL, 1), Pair.of(Blocks.IRON_BLOCK, 1)),
                 ModItems.CYAN_BAR_CHAIR, 1, CarpentryTools.SAW.asString());
-        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.LIGHT_BLUE_WOOL, 1), Pair.of(Blocks.GOLD_BLOCK, 1)),
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.LIGHT_BLUE_WOOL, 1), Pair.of(Blocks.IRON_BLOCK, 1)),
                 ModItems.LIGHT_BLUE_BAR_CHAIR, 1, CarpentryTools.SAW.asString());
-        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.BLUE_WOOL, 1), Pair.of(Blocks.GOLD_BLOCK, 1)),
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.BLUE_WOOL, 1), Pair.of(Blocks.IRON_BLOCK, 1)),
                 ModItems.BLUE_BAR_CHAIR, 1, CarpentryTools.SAW.asString());
-        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.PURPLE_WOOL, 1), Pair.of(Blocks.GOLD_BLOCK, 1)),
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.PURPLE_WOOL, 1), Pair.of(Blocks.IRON_BLOCK, 1)),
                 ModItems.PURPLE_BAR_CHAIR, 1, CarpentryTools.SAW.asString());
-        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.MAGENTA_WOOL, 1), Pair.of(Blocks.GOLD_BLOCK, 1)),
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.MAGENTA_WOOL, 1), Pair.of(Blocks.IRON_BLOCK, 1)),
                 ModItems.MAGENTA_BAR_CHAIR, 1, CarpentryTools.SAW.asString());
-        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.PINK_WOOL, 1), Pair.of(Blocks.GOLD_BLOCK, 1)),
+        createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.PINK_WOOL, 1), Pair.of(Blocks.IRON_BLOCK, 1)),
                 ModItems.PINK_BAR_CHAIR, 1, CarpentryTools.SAW.asString());
     }
 

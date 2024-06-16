@@ -53,6 +53,17 @@ public class ModItems {
     public static final Item OAK_TABLE_THE_CLASSIC = registerBlockItem("oak_table_the_classic", ModBlocks.OAK_TABLE_THE_CLASSIC);
     public static final Item SPRUCE_TABLE_THE_CLASSIC = registerBlockItem("spruce_table_the_classic", ModBlocks.SPRUCE_TABLE_THE_CLASSIC);
     public static final Item WARPED_TABLE_THE_CLASSIC = registerBlockItem("warped_table_the_classic", ModBlocks.WARPED_TABLE_THE_CLASSIC);
+    public static final Item ACACIA_TABLE_PASCAL = registerBlockItem("acacia_table_pascal", ModBlocks.ACACIA_TABLE_PASCAL);
+    public static final Item BAMBOO_TABLE_PASCAL = registerBlockItem("bamboo_table_pascal", ModBlocks.BAMBOO_TABLE_PASCAL);
+    public static final Item BIRCH_TABLE_PASCAL = registerBlockItem("birch_table_pascal", ModBlocks.BIRCH_TABLE_PASCAL);
+    public static final Item CHERRY_TABLE_PASCAL = registerBlockItem("cherry_table_pascal", ModBlocks.CHERRY_TABLE_PASCAL);
+    public static final Item CRIMSON_TABLE_PASCAL = registerBlockItem("crimson_table_pascal", ModBlocks.CRIMSON_TABLE_PASCAL);
+    public static final Item DARK_OAK_TABLE_PASCAL = registerBlockItem("dark_oak_table_pascal", ModBlocks.DARK_OAK_TABLE_PASCAL);
+    public static final Item JUNGLE_TABLE_PASCAL = registerBlockItem("jungle_table_pascal", ModBlocks.JUNGLE_TABLE_PASCAL);
+    public static final Item MANGROVE_TABLE_PASCAL = registerBlockItem("mangrove_table_pascal", ModBlocks.MANGROVE_TABLE_PASCAL);
+    public static final Item OAK_TABLE_PASCAL = registerBlockItem("oak_table_pascal", ModBlocks.OAK_TABLE_PASCAL);
+    public static final Item SPRUCE_TABLE_PASCAL = registerBlockItem("spruce_table_pascal", ModBlocks.SPRUCE_TABLE_PASCAL);
+    public static final Item WARPED_TABLE_PASCAL = registerBlockItem("warped_table_pascal", ModBlocks.WARPED_TABLE_PASCAL);
     public static final Item ACACIA_STANDING_TABLE = registerBlockItem("acacia_standing_table", ModBlocks.ACACIA_STANDING_TABLE);
     public static final Item BAMBOO_STANDING_TABLE = registerBlockItem("bamboo_standing_table", ModBlocks.BAMBOO_STANDING_TABLE);
     public static final Item BIRCH_STANDING_TABLE = registerBlockItem("birch_standing_table", ModBlocks.BIRCH_STANDING_TABLE);
