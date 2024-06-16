@@ -241,27 +241,27 @@ public class RecipeGenerator extends FabricRecipeProvider {
 
     private void createTablePascalRecipes(RecipeExporter exporter) {
         createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.ACACIA_PLANKS, 1), Pair.of(Blocks.IRON_BLOCK, 1)),
-                ModBlocks.ACACIA_TABLE_PASCAL, 4, CarpentryTools.SAW.asString());
+                ModBlocks.ACACIA_COFFEE_TABLE_PASCAL, 4, CarpentryTools.SAW.asString());
         createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.BAMBOO_PLANKS, 1), Pair.of(Blocks.IRON_BLOCK, 1)),
-                ModBlocks.BAMBOO_TABLE_PASCAL, 4, CarpentryTools.SAW.asString());
+                ModBlocks.BAMBOO_COFFEE_TABLE_PASCAL, 4, CarpentryTools.SAW.asString());
         createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.BIRCH_PLANKS, 1), Pair.of(Blocks.IRON_BLOCK, 1)),
-                ModBlocks.BIRCH_TABLE_PASCAL, 4, CarpentryTools.SAW.asString());
+                ModBlocks.BIRCH_COFFEE_TABLE_PASCAL, 4, CarpentryTools.SAW.asString());
         createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.CHERRY_PLANKS, 1), Pair.of(Blocks.IRON_BLOCK, 1)),
-                ModBlocks.CHERRY_TABLE_PASCAL, 4, CarpentryTools.SAW.asString());
+                ModBlocks.CHERRY_COFFEE_TABLE_PASCAL, 4, CarpentryTools.SAW.asString());
         createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.CRIMSON_PLANKS, 1), Pair.of(Blocks.IRON_BLOCK, 1)),
-                ModBlocks.CRIMSON_TABLE_PASCAL, 4, CarpentryTools.SAW.asString());
+                ModBlocks.CRIMSON_COFFEE_TABLE_PASCAL, 4, CarpentryTools.SAW.asString());
         createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.DARK_OAK_PLANKS, 1), Pair.of(Blocks.IRON_BLOCK, 1)),
-                ModBlocks.DARK_OAK_TABLE_PASCAL, 4, CarpentryTools.SAW.asString());
+                ModBlocks.DARK_OAK_COFFEE_TABLE_PASCAL, 4, CarpentryTools.SAW.asString());
         createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.JUNGLE_PLANKS, 1), Pair.of(Blocks.IRON_BLOCK, 1)),
-                ModBlocks.JUNGLE_TABLE_PASCAL, 4, CarpentryTools.SAW.asString());
+                ModBlocks.JUNGLE_COFFEE_TABLE_PASCAL, 4, CarpentryTools.SAW.asString());
         createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.MANGROVE_PLANKS, 1), Pair.of(Blocks.IRON_BLOCK, 1)),
-                ModBlocks.MANGROVE_TABLE_PASCAL, 4, CarpentryTools.SAW.asString());
+                ModBlocks.MANGROVE_COFFEE_TABLE_PASCAL, 4, CarpentryTools.SAW.asString());
         createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.OAK_PLANKS, 1), Pair.of(Blocks.IRON_BLOCK, 1)),
-                ModBlocks.OAK_TABLE_PASCAL, 4, CarpentryTools.SAW.asString());
+                ModBlocks.OAK_COFFEE_TABLE_PASCAL, 4, CarpentryTools.SAW.asString());
         createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.SPRUCE_PLANKS, 1), Pair.of(Blocks.IRON_BLOCK, 1)),
-                ModBlocks.SPRUCE_TABLE_PASCAL, 4, CarpentryTools.SAW.asString());
+                ModBlocks.SPRUCE_COFFEE_TABLE_PASCAL, 4, CarpentryTools.SAW.asString());
         createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.WARPED_PLANKS, 1), Pair.of(Blocks.IRON_BLOCK, 1)),
-                ModBlocks.WARPED_TABLE_PASCAL, 4, CarpentryTools.SAW.asString());
+                ModBlocks.WARPED_COFFEE_TABLE_PASCAL, 4, CarpentryTools.SAW.asString());
     }
 
     private void createStandingTableRecipes(RecipeExporter exporter) {

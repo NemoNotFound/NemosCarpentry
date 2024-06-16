@@ -106,17 +106,17 @@ public class LootTableGenerator extends FabricBlockLootTableProvider {
         this.addDrop(ModBlocks.SPRUCE_TABLE_THE_CLASSIC);
         this.addDrop(ModBlocks.WARPED_TABLE_THE_CLASSIC);
 
-        this.addDrop(ModBlocks.ACACIA_TABLE_PASCAL);
-        this.addDrop(ModBlocks.BAMBOO_TABLE_PASCAL);
-        this.addDrop(ModBlocks.BIRCH_TABLE_PASCAL);
-        this.addDrop(ModBlocks.CHERRY_TABLE_PASCAL);
-        this.addDrop(ModBlocks.CRIMSON_TABLE_PASCAL);
-        this.addDrop(ModBlocks.DARK_OAK_TABLE_PASCAL);
-        this.addDrop(ModBlocks.JUNGLE_TABLE_PASCAL);
-        this.addDrop(ModBlocks.MANGROVE_TABLE_PASCAL);
-        this.addDrop(ModBlocks.OAK_TABLE_PASCAL);
-        this.addDrop(ModBlocks.SPRUCE_TABLE_PASCAL);
-        this.addDrop(ModBlocks.WARPED_TABLE_PASCAL);
+        this.addDrop(ModBlocks.ACACIA_COFFEE_TABLE_PASCAL);
+        this.addDrop(ModBlocks.BAMBOO_COFFEE_TABLE_PASCAL);
+        this.addDrop(ModBlocks.BIRCH_COFFEE_TABLE_PASCAL);
+        this.addDrop(ModBlocks.CHERRY_COFFEE_TABLE_PASCAL);
+        this.addDrop(ModBlocks.CRIMSON_COFFEE_TABLE_PASCAL);
+        this.addDrop(ModBlocks.DARK_OAK_COFFEE_TABLE_PASCAL);
+        this.addDrop(ModBlocks.JUNGLE_COFFEE_TABLE_PASCAL);
+        this.addDrop(ModBlocks.MANGROVE_COFFEE_TABLE_PASCAL);
+        this.addDrop(ModBlocks.OAK_COFFEE_TABLE_PASCAL);
+        this.addDrop(ModBlocks.SPRUCE_COFFEE_TABLE_PASCAL);
+        this.addDrop(ModBlocks.WARPED_COFFEE_TABLE_PASCAL);
 
         this.addDrop(ModBlocks.ACACIA_STANDING_TABLE);
         this.addDrop(ModBlocks.BAMBOO_STANDING_TABLE);

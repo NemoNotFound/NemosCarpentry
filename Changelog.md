@@ -13,7 +13,7 @@
 - Added Tables
   - Coffee Table
   - Standing Table
-  - Table "Pascal"
+  - Coffee Table "Pascal"
 - Added ItemGroups
   - Seats
   - Tables

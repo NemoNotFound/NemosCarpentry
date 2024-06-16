@@ -215,17 +215,17 @@ public class ModelGenerator extends FabricModelProvider {
         generateDirectionalTextureBottomModel(blockStateModelGenerator, Blocks.MAGENTA_WOOL, Blocks.IRON_BLOCK, ModBlocks.MAGENTA_BAR_CHAIR, ModModels.BAR_CHAIR);
         generateDirectionalTextureBottomModel(blockStateModelGenerator, Blocks.PINK_WOOL, Blocks.IRON_BLOCK, ModBlocks.PINK_BAR_CHAIR, ModModels.BAR_CHAIR);
 
-        generateDirectionalTextureBottomModel(blockStateModelGenerator, Blocks.ACACIA_PLANKS, Blocks.IRON_BLOCK, ModBlocks.ACACIA_TABLE_PASCAL, ModModels.TABLE_PASCAL);
-        generateDirectionalTextureBottomModel(blockStateModelGenerator, Blocks.BAMBOO_PLANKS, Blocks.IRON_BLOCK, ModBlocks.BAMBOO_TABLE_PASCAL, ModModels.TABLE_PASCAL);
-        generateDirectionalTextureBottomModel(blockStateModelGenerator, Blocks.BIRCH_PLANKS, Blocks.IRON_BLOCK, ModBlocks.BIRCH_TABLE_PASCAL, ModModels.TABLE_PASCAL);
-        generateDirectionalTextureBottomModel(blockStateModelGenerator, Blocks.CHERRY_PLANKS, Blocks.IRON_BLOCK, ModBlocks.CHERRY_TABLE_PASCAL, ModModels.TABLE_PASCAL);
-        generateDirectionalTextureBottomModel(blockStateModelGenerator, Blocks.CRIMSON_PLANKS, Blocks.IRON_BLOCK, ModBlocks.CRIMSON_TABLE_PASCAL, ModModels.TABLE_PASCAL);
-        generateDirectionalTextureBottomModel(blockStateModelGenerator, Blocks.DARK_OAK_PLANKS, Blocks.IRON_BLOCK, ModBlocks.DARK_OAK_TABLE_PASCAL, ModModels.TABLE_PASCAL);
-        generateDirectionalTextureBottomModel(blockStateModelGenerator, Blocks.JUNGLE_PLANKS, Blocks.IRON_BLOCK, ModBlocks.JUNGLE_TABLE_PASCAL, ModModels.TABLE_PASCAL);
-        generateDirectionalTextureBottomModel(blockStateModelGenerator, Blocks.MANGROVE_PLANKS, Blocks.IRON_BLOCK, ModBlocks.MANGROVE_TABLE_PASCAL, ModModels.TABLE_PASCAL);
-        generateDirectionalTextureBottomModel(blockStateModelGenerator, Blocks.OAK_PLANKS, Blocks.IRON_BLOCK, ModBlocks.OAK_TABLE_PASCAL, ModModels.TABLE_PASCAL);
-        generateDirectionalTextureBottomModel(blockStateModelGenerator, Blocks.SPRUCE_PLANKS, Blocks.IRON_BLOCK, ModBlocks.SPRUCE_TABLE_PASCAL, ModModels.TABLE_PASCAL);
-        generateDirectionalTextureBottomModel(blockStateModelGenerator, Blocks.WARPED_PLANKS, Blocks.IRON_BLOCK, ModBlocks.WARPED_TABLE_PASCAL, ModModels.TABLE_PASCAL);
+        generateDirectionalTextureBottomModel(blockStateModelGenerator, Blocks.ACACIA_PLANKS, Blocks.IRON_BLOCK, ModBlocks.ACACIA_COFFEE_TABLE_PASCAL, ModModels.COFFEE_TABLE_PASCAL);
+        generateDirectionalTextureBottomModel(blockStateModelGenerator, Blocks.BAMBOO_PLANKS, Blocks.IRON_BLOCK, ModBlocks.BAMBOO_COFFEE_TABLE_PASCAL, ModModels.COFFEE_TABLE_PASCAL);
+        generateDirectionalTextureBottomModel(blockStateModelGenerator, Blocks.BIRCH_PLANKS, Blocks.IRON_BLOCK, ModBlocks.BIRCH_COFFEE_TABLE_PASCAL, ModModels.COFFEE_TABLE_PASCAL);
+        generateDirectionalTextureBottomModel(blockStateModelGenerator, Blocks.CHERRY_PLANKS, Blocks.IRON_BLOCK, ModBlocks.CHERRY_COFFEE_TABLE_PASCAL, ModModels.COFFEE_TABLE_PASCAL);
+        generateDirectionalTextureBottomModel(blockStateModelGenerator, Blocks.CRIMSON_PLANKS, Blocks.IRON_BLOCK, ModBlocks.CRIMSON_COFFEE_TABLE_PASCAL, ModModels.COFFEE_TABLE_PASCAL);
+        generateDirectionalTextureBottomModel(blockStateModelGenerator, Blocks.DARK_OAK_PLANKS, Blocks.IRON_BLOCK, ModBlocks.DARK_OAK_COFFEE_TABLE_PASCAL, ModModels.COFFEE_TABLE_PASCAL);
+        generateDirectionalTextureBottomModel(blockStateModelGenerator, Blocks.JUNGLE_PLANKS, Blocks.IRON_BLOCK, ModBlocks.JUNGLE_COFFEE_TABLE_PASCAL, ModModels.COFFEE_TABLE_PASCAL);
+        generateDirectionalTextureBottomModel(blockStateModelGenerator, Blocks.MANGROVE_PLANKS, Blocks.IRON_BLOCK, ModBlocks.MANGROVE_COFFEE_TABLE_PASCAL, ModModels.COFFEE_TABLE_PASCAL);
+        generateDirectionalTextureBottomModel(blockStateModelGenerator, Blocks.OAK_PLANKS, Blocks.IRON_BLOCK, ModBlocks.OAK_COFFEE_TABLE_PASCAL, ModModels.COFFEE_TABLE_PASCAL);
+        generateDirectionalTextureBottomModel(blockStateModelGenerator, Blocks.SPRUCE_PLANKS, Blocks.IRON_BLOCK, ModBlocks.SPRUCE_COFFEE_TABLE_PASCAL, ModModels.COFFEE_TABLE_PASCAL);
+        generateDirectionalTextureBottomModel(blockStateModelGenerator, Blocks.WARPED_PLANKS, Blocks.IRON_BLOCK, ModBlocks.WARPED_COFFEE_TABLE_PASCAL, ModModels.COFFEE_TABLE_PASCAL);
     }
 
     private void generateLadderBlockModel(Block block, BlockStateModelGenerator blockStateModelGenerator) {

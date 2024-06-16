@@ -1,8 +1,0 @@
-{
-  "parent": "nemos-carpentry:block/tables/table_pascal",
-  "textures": {
-    "bottom": "minecraft:block/iron_block",
-    "particle": "minecraft:block/spruce_planks",
-    "texture": "minecraft:block/spruce_planks"
-  }
-}

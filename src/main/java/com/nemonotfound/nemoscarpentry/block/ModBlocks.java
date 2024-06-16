@@ -71,27 +71,27 @@ public class ModBlocks {
             new TableBlock(AbstractBlock.Settings.copy(SPRUCE_PLANKS).nonOpaque()));
     public static final Block WARPED_TABLE_THE_CLASSIC = registerBlock("warped_table_the_classic",
             new TableBlock(AbstractBlock.Settings.copy(WARPED_PLANKS).nonOpaque()));
-    public static final Block ACACIA_TABLE_PASCAL = registerBlock("acacia_table_pascal",
+    public static final Block ACACIA_COFFEE_TABLE_PASCAL = registerBlock("acacia_coffee_table_pascal",
             new TablePascalBlock(AbstractBlock.Settings.copy(ACACIA_PLANKS).nonOpaque()));
-    public static final Block BAMBOO_TABLE_PASCAL = registerBlock("bamboo_table_pascal",
+    public static final Block BAMBOO_COFFEE_TABLE_PASCAL = registerBlock("bamboo_coffee_table_pascal",
             new TablePascalBlock(AbstractBlock.Settings.copy(BAMBOO_PLANKS).nonOpaque()));
-    public static final Block BIRCH_TABLE_PASCAL = registerBlock("birch_table_pascal",
+    public static final Block BIRCH_COFFEE_TABLE_PASCAL = registerBlock("birch_coffee_table_pascal",
             new TablePascalBlock(AbstractBlock.Settings.copy(BIRCH_PLANKS).nonOpaque()));
-    public static final Block CHERRY_TABLE_PASCAL = registerBlock("cherry_table_pascal",
+    public static final Block CHERRY_COFFEE_TABLE_PASCAL = registerBlock("cherry_coffee_table_pascal",
             new TablePascalBlock(AbstractBlock.Settings.copy(CHERRY_PLANKS).nonOpaque()));
-    public static final Block CRIMSON_TABLE_PASCAL = registerBlock("crimson_table_pascal",
+    public static final Block CRIMSON_COFFEE_TABLE_PASCAL = registerBlock("crimson_coffee_table_pascal",
             new TablePascalBlock(AbstractBlock.Settings.copy(CRIMSON_PLANKS).nonOpaque()));
-    public static final Block DARK_OAK_TABLE_PASCAL = registerBlock("dark_oak_table_pascal",
+    public static final Block DARK_OAK_COFFEE_TABLE_PASCAL = registerBlock("dark_oak_coffee_table_pascal",
             new TablePascalBlock(AbstractBlock.Settings.copy(DARK_OAK_PLANKS).nonOpaque()));
-    public static final Block JUNGLE_TABLE_PASCAL = registerBlock("jungle_table_pascal",
+    public static final Block JUNGLE_COFFEE_TABLE_PASCAL = registerBlock("jungle_coffee_table_pascal",
             new TablePascalBlock(AbstractBlock.Settings.copy(JUNGLE_PLANKS).nonOpaque()));
-    public static final Block MANGROVE_TABLE_PASCAL = registerBlock("mangrove_table_pascal",
+    public static final Block MANGROVE_COFFEE_TABLE_PASCAL = registerBlock("mangrove_coffee_table_pascal",
             new TablePascalBlock(AbstractBlock.Settings.copy(MANGROVE_PLANKS).nonOpaque()));
-    public static final Block OAK_TABLE_PASCAL = registerBlock("oak_table_pascal",
+    public static final Block OAK_COFFEE_TABLE_PASCAL = registerBlock("oak_coffee_table_pascal",
             new TablePascalBlock(AbstractBlock.Settings.copy(OAK_PLANKS).nonOpaque()));
-    public static final Block SPRUCE_TABLE_PASCAL = registerBlock("spruce_table_pascal",
+    public static final Block SPRUCE_COFFEE_TABLE_PASCAL = registerBlock("spruce_coffee_table_pascal",
             new TablePascalBlock(AbstractBlock.Settings.copy(SPRUCE_PLANKS).nonOpaque()));
-    public static final Block WARPED_TABLE_PASCAL = registerBlock("warped_table_pascal",
+    public static final Block WARPED_COFFEE_TABLE_PASCAL = registerBlock("warped_coffee_table_pascal",
             new TablePascalBlock(AbstractBlock.Settings.copy(WARPED_PLANKS).nonOpaque()));
     public static final Block ACACIA_STANDING_TABLE = registerBlock("acacia_standing_table",
             new StandingTableBlock(AbstractBlock.Settings.copy(ACACIA_PLANKS).nonOpaque()));
