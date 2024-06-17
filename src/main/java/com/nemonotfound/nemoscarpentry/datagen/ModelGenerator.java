@@ -38,7 +38,7 @@ public class ModelGenerator extends FabricModelProvider {
         generateChairLukasModel(blockStateModelGenerator, Blocks.WARPED_PLANKS, Blocks.WARPED_STEM, ModBlocks.WARPED_CHAIR_LUKAS, ModModels.CHAIR_LUKAS);
 
         generateAllTextureBottomModelModelWithSuffixedPath(blockStateModelGenerator, Blocks.ACACIA_PLANKS, Blocks.ACACIA_LOG, ModBlocks.ACACIA_CHAIR_LUKAS_NATURAL, ModModels.CHAIR_LUKAS_NATURAL);
-        generateAllTextureBottomModelModelWithoutSuffixedPath(blockStateModelGenerator, Blocks.BAMBOO_PLANKS, Blocks.BAMBOO_BLOCK, ModBlocks.BAMBOO_CHAIR_LUKAS_NATURAL, ModModels.CHAIR_LUKAS_NATURAL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.BAMBOO_PLANKS, Blocks.BAMBOO_BLOCK, Blocks.BAMBOO_BLOCK, ModBlocks.BAMBOO_CHAIR_LUKAS_NATURAL, ModModels.CHAIR_LUKAS_NATURAL);
         generateAllTextureBottomModelModelWithSuffixedPath(blockStateModelGenerator, Blocks.BIRCH_PLANKS, Blocks.BIRCH_LOG, ModBlocks.BIRCH_CHAIR_LUKAS_NATURAL, ModModels.CHAIR_LUKAS_NATURAL);
         generateAllTextureBottomModelModelWithSuffixedPath(blockStateModelGenerator, Blocks.CHERRY_PLANKS, Blocks.CHERRY_LOG, ModBlocks.CHERRY_CHAIR_LUKAS_NATURAL, ModModels.CHAIR_LUKAS_NATURAL);
         generateAllTextureBottomModelModelWithSuffixedPath(blockStateModelGenerator, Blocks.CRIMSON_PLANKS, Blocks.CRIMSON_STEM, ModBlocks.CRIMSON_CHAIR_LUKAS_NATURAL, ModModels.CHAIR_LUKAS_NATURAL);
@@ -62,7 +62,7 @@ public class ModelGenerator extends FabricModelProvider {
         generateChairLukasModel(blockStateModelGenerator, Blocks.WARPED_PLANKS, Blocks.WARPED_STEM, ModBlocks.WARPED_CHAIR_TOMMY, ModModels.CHAIR_TOMMY);
 
         generateAllTextureBottomModelModelWithSuffixedPath(blockStateModelGenerator, Blocks.ACACIA_PLANKS, Blocks.ACACIA_LOG, ModBlocks.ACACIA_CHAIR_TOMMY_NATURAL, ModModels.CHAIR_TOMMY_NATURAL);
-        generateAllTextureBottomModelModelWithoutSuffixedPath(blockStateModelGenerator, Blocks.BAMBOO_PLANKS, Blocks.BAMBOO_BLOCK, ModBlocks.BAMBOO_CHAIR_TOMMY_NATURAL, ModModels.CHAIR_TOMMY_NATURAL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.BAMBOO_PLANKS, Blocks.BAMBOO_BLOCK, Blocks.BAMBOO_BLOCK, ModBlocks.BAMBOO_CHAIR_TOMMY_NATURAL, ModModels.CHAIR_TOMMY_NATURAL);
         generateAllTextureBottomModelModelWithSuffixedPath(blockStateModelGenerator, Blocks.BIRCH_PLANKS, Blocks.BIRCH_LOG, ModBlocks.BIRCH_CHAIR_TOMMY_NATURAL, ModModels.CHAIR_TOMMY_NATURAL);
         generateAllTextureBottomModelModelWithSuffixedPath(blockStateModelGenerator, Blocks.CHERRY_PLANKS, Blocks.CHERRY_LOG, ModBlocks.CHERRY_CHAIR_TOMMY_NATURAL, ModModels.CHAIR_TOMMY_NATURAL);
         generateAllTextureBottomModelModelWithSuffixedPath(blockStateModelGenerator, Blocks.CRIMSON_PLANKS, Blocks.CRIMSON_STEM, ModBlocks.CRIMSON_CHAIR_TOMMY_NATURAL, ModModels.CHAIR_TOMMY_NATURAL);
@@ -74,7 +74,7 @@ public class ModelGenerator extends FabricModelProvider {
         generateAllTextureBottomModelModelWithSuffixedPath(blockStateModelGenerator, Blocks.WARPED_PLANKS, Blocks.WARPED_STEM, ModBlocks.WARPED_CHAIR_TOMMY_NATURAL, ModModels.CHAIR_TOMMY_NATURAL);
 
         generateAllTextureBottomModelModelWithSuffixedPath(blockStateModelGenerator, Blocks.ACACIA_PLANKS, Blocks.ACACIA_LOG, ModBlocks.ACACIA_CHAIR_GREGORY, ModModels.CHAIR_GREGORY);
-        generateAllTextureBottomModelModelWithoutSuffixedPath(blockStateModelGenerator, Blocks.BAMBOO_PLANKS, Blocks.BAMBOO_BLOCK, ModBlocks.BAMBOO_CHAIR_GREGORY, ModModels.CHAIR_GREGORY);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.BAMBOO_PLANKS, Blocks.BAMBOO_BLOCK, Blocks.BAMBOO_BLOCK, ModBlocks.BAMBOO_CHAIR_GREGORY, ModModels.CHAIR_GREGORY);
         generateAllTextureBottomModelModelWithSuffixedPath(blockStateModelGenerator, Blocks.BIRCH_PLANKS, Blocks.BIRCH_LOG, ModBlocks.BIRCH_CHAIR_GREGORY, ModModels.CHAIR_GREGORY);
         generateAllTextureBottomModelModelWithSuffixedPath(blockStateModelGenerator, Blocks.CHERRY_PLANKS, Blocks.CHERRY_LOG, ModBlocks.CHERRY_CHAIR_GREGORY, ModModels.CHAIR_GREGORY);
         generateAllTextureBottomModelModelWithSuffixedPath(blockStateModelGenerator, Blocks.CRIMSON_PLANKS, Blocks.CRIMSON_STEM, ModBlocks.CRIMSON_CHAIR_GREGORY, ModModels.CHAIR_GREGORY);
@@ -226,6 +226,194 @@ public class ModelGenerator extends FabricModelProvider {
         generateDirectionalTextureBottomModel(blockStateModelGenerator, Blocks.OAK_PLANKS, Blocks.IRON_BLOCK, ModBlocks.OAK_COFFEE_TABLE_PASCAL, ModModels.COFFEE_TABLE_PASCAL);
         generateDirectionalTextureBottomModel(blockStateModelGenerator, Blocks.SPRUCE_PLANKS, Blocks.IRON_BLOCK, ModBlocks.SPRUCE_COFFEE_TABLE_PASCAL, ModModels.COFFEE_TABLE_PASCAL);
         generateDirectionalTextureBottomModel(blockStateModelGenerator, Blocks.WARPED_PLANKS, Blocks.IRON_BLOCK, ModBlocks.WARPED_COFFEE_TABLE_PASCAL, ModModels.COFFEE_TABLE_PASCAL);
+
+        generateDirectionalTextureBottomModel(blockStateModelGenerator, Blocks.ACACIA_PLANKS, Blocks.IRON_BLOCK, ModBlocks.ACACIA_CHAIR_PASCAL, ModModels.CHAIR_PASCAL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.ACACIA_PLANKS, Blocks.WHITE_WOOL, Blocks.IRON_BLOCK, ModBlocks.ACACIA_WHITE_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.ACACIA_PLANKS, Blocks.LIGHT_GRAY_WOOL, Blocks.IRON_BLOCK, ModBlocks.ACACIA_LIGHT_GRAY_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.ACACIA_PLANKS, Blocks.GRAY_WOOL, Blocks.IRON_BLOCK, ModBlocks.ACACIA_GRAY_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.ACACIA_PLANKS, Blocks.BLACK_WOOL, Blocks.IRON_BLOCK, ModBlocks.ACACIA_BLACK_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.ACACIA_PLANKS, Blocks.BROWN_WOOL, Blocks.IRON_BLOCK, ModBlocks.ACACIA_BROWN_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.ACACIA_PLANKS, Blocks.RED_WOOL, Blocks.IRON_BLOCK, ModBlocks.ACACIA_RED_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.ACACIA_PLANKS, Blocks.ORANGE_WOOL, Blocks.IRON_BLOCK, ModBlocks.ACACIA_ORANGE_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.ACACIA_PLANKS, Blocks.YELLOW_WOOL, Blocks.IRON_BLOCK, ModBlocks.ACACIA_YELLOW_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.ACACIA_PLANKS, Blocks.LIME_WOOL, Blocks.IRON_BLOCK, ModBlocks.ACACIA_LIME_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.ACACIA_PLANKS, Blocks.GREEN_WOOL, Blocks.IRON_BLOCK, ModBlocks.ACACIA_GREEN_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.ACACIA_PLANKS, Blocks.CYAN_WOOL, Blocks.IRON_BLOCK, ModBlocks.ACACIA_CYAN_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.ACACIA_PLANKS, Blocks.LIGHT_BLUE_WOOL, Blocks.IRON_BLOCK, ModBlocks.ACACIA_LIGHT_BLUE_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.ACACIA_PLANKS, Blocks.BLUE_WOOL, Blocks.IRON_BLOCK, ModBlocks.ACACIA_BLUE_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.ACACIA_PLANKS, Blocks.PURPLE_WOOL, Blocks.IRON_BLOCK, ModBlocks.ACACIA_PURPLE_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.ACACIA_PLANKS, Blocks.MAGENTA_WOOL, Blocks.IRON_BLOCK, ModBlocks.ACACIA_MAGENTA_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.ACACIA_PLANKS, Blocks.PINK_WOOL, Blocks.IRON_BLOCK, ModBlocks.ACACIA_PINK_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalTextureBottomModel(blockStateModelGenerator, Blocks.BAMBOO_PLANKS, Blocks.IRON_BLOCK, ModBlocks.BAMBOO_CHAIR_PASCAL, ModModels.CHAIR_PASCAL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.BAMBOO_PLANKS, Blocks.WHITE_WOOL, Blocks.IRON_BLOCK, ModBlocks.BAMBOO_WHITE_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.BAMBOO_PLANKS, Blocks.LIGHT_GRAY_WOOL, Blocks.IRON_BLOCK, ModBlocks.BAMBOO_LIGHT_GRAY_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.BAMBOO_PLANKS, Blocks.GRAY_WOOL, Blocks.IRON_BLOCK, ModBlocks.BAMBOO_GRAY_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.BAMBOO_PLANKS, Blocks.BLACK_WOOL, Blocks.IRON_BLOCK, ModBlocks.BAMBOO_BLACK_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.BAMBOO_PLANKS, Blocks.BROWN_WOOL, Blocks.IRON_BLOCK, ModBlocks.BAMBOO_BROWN_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.BAMBOO_PLANKS, Blocks.RED_WOOL, Blocks.IRON_BLOCK, ModBlocks.BAMBOO_RED_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.BAMBOO_PLANKS, Blocks.ORANGE_WOOL, Blocks.IRON_BLOCK, ModBlocks.BAMBOO_ORANGE_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.BAMBOO_PLANKS, Blocks.YELLOW_WOOL, Blocks.IRON_BLOCK, ModBlocks.BAMBOO_YELLOW_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.BAMBOO_PLANKS, Blocks.LIME_WOOL, Blocks.IRON_BLOCK, ModBlocks.BAMBOO_LIME_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.BAMBOO_PLANKS, Blocks.GREEN_WOOL, Blocks.IRON_BLOCK, ModBlocks.BAMBOO_GREEN_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.BAMBOO_PLANKS, Blocks.CYAN_WOOL, Blocks.IRON_BLOCK, ModBlocks.BAMBOO_CYAN_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.BAMBOO_PLANKS, Blocks.LIGHT_BLUE_WOOL, Blocks.IRON_BLOCK, ModBlocks.BAMBOO_LIGHT_BLUE_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.BAMBOO_PLANKS, Blocks.BLUE_WOOL, Blocks.IRON_BLOCK, ModBlocks.BAMBOO_BLUE_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.BAMBOO_PLANKS, Blocks.PURPLE_WOOL, Blocks.IRON_BLOCK, ModBlocks.BAMBOO_PURPLE_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.BAMBOO_PLANKS, Blocks.MAGENTA_WOOL, Blocks.IRON_BLOCK, ModBlocks.BAMBOO_MAGENTA_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.BAMBOO_PLANKS, Blocks.PINK_WOOL, Blocks.IRON_BLOCK, ModBlocks.BAMBOO_PINK_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalTextureBottomModel(blockStateModelGenerator, Blocks.BIRCH_PLANKS, Blocks.IRON_BLOCK, ModBlocks.BIRCH_CHAIR_PASCAL, ModModels.CHAIR_PASCAL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.BIRCH_PLANKS, Blocks.WHITE_WOOL, Blocks.IRON_BLOCK, ModBlocks.BIRCH_WHITE_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.BIRCH_PLANKS, Blocks.LIGHT_GRAY_WOOL, Blocks.IRON_BLOCK, ModBlocks.BIRCH_LIGHT_GRAY_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.BIRCH_PLANKS, Blocks.GRAY_WOOL, Blocks.IRON_BLOCK, ModBlocks.BIRCH_GRAY_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.BIRCH_PLANKS, Blocks.BLACK_WOOL, Blocks.IRON_BLOCK, ModBlocks.BIRCH_BLACK_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.BIRCH_PLANKS, Blocks.BROWN_WOOL, Blocks.IRON_BLOCK, ModBlocks.BIRCH_BROWN_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.BIRCH_PLANKS, Blocks.RED_WOOL, Blocks.IRON_BLOCK, ModBlocks.BIRCH_RED_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.BIRCH_PLANKS, Blocks.ORANGE_WOOL, Blocks.IRON_BLOCK, ModBlocks.BIRCH_ORANGE_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.BIRCH_PLANKS, Blocks.YELLOW_WOOL, Blocks.IRON_BLOCK, ModBlocks.BIRCH_YELLOW_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.BIRCH_PLANKS, Blocks.LIME_WOOL, Blocks.IRON_BLOCK, ModBlocks.BIRCH_LIME_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.BIRCH_PLANKS, Blocks.GREEN_WOOL, Blocks.IRON_BLOCK, ModBlocks.BIRCH_GREEN_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.BIRCH_PLANKS, Blocks.CYAN_WOOL, Blocks.IRON_BLOCK, ModBlocks.BIRCH_CYAN_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.BIRCH_PLANKS, Blocks.LIGHT_BLUE_WOOL, Blocks.IRON_BLOCK, ModBlocks.BIRCH_LIGHT_BLUE_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.BIRCH_PLANKS, Blocks.BLUE_WOOL, Blocks.IRON_BLOCK, ModBlocks.BIRCH_BLUE_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.BIRCH_PLANKS, Blocks.PURPLE_WOOL, Blocks.IRON_BLOCK, ModBlocks.BIRCH_PURPLE_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.BIRCH_PLANKS, Blocks.MAGENTA_WOOL, Blocks.IRON_BLOCK, ModBlocks.BIRCH_MAGENTA_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.BIRCH_PLANKS, Blocks.PINK_WOOL, Blocks.IRON_BLOCK, ModBlocks.BIRCH_PINK_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalTextureBottomModel(blockStateModelGenerator, Blocks.CHERRY_PLANKS, Blocks.IRON_BLOCK, ModBlocks.CHERRY_CHAIR_PASCAL, ModModels.CHAIR_PASCAL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.CHERRY_PLANKS, Blocks.WHITE_WOOL, Blocks.IRON_BLOCK, ModBlocks.CHERRY_WHITE_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.CHERRY_PLANKS, Blocks.LIGHT_GRAY_WOOL, Blocks.IRON_BLOCK, ModBlocks.CHERRY_LIGHT_GRAY_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.CHERRY_PLANKS, Blocks.GRAY_WOOL, Blocks.IRON_BLOCK, ModBlocks.CHERRY_GRAY_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.CHERRY_PLANKS, Blocks.BLACK_WOOL, Blocks.IRON_BLOCK, ModBlocks.CHERRY_BLACK_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.CHERRY_PLANKS, Blocks.BROWN_WOOL, Blocks.IRON_BLOCK, ModBlocks.CHERRY_BROWN_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.CHERRY_PLANKS, Blocks.RED_WOOL, Blocks.IRON_BLOCK, ModBlocks.CHERRY_RED_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.CHERRY_PLANKS, Blocks.ORANGE_WOOL, Blocks.IRON_BLOCK, ModBlocks.CHERRY_ORANGE_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.CHERRY_PLANKS, Blocks.YELLOW_WOOL, Blocks.IRON_BLOCK, ModBlocks.CHERRY_YELLOW_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.CHERRY_PLANKS, Blocks.LIME_WOOL, Blocks.IRON_BLOCK, ModBlocks.CHERRY_LIME_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.CHERRY_PLANKS, Blocks.GREEN_WOOL, Blocks.IRON_BLOCK, ModBlocks.CHERRY_GREEN_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.CHERRY_PLANKS, Blocks.CYAN_WOOL, Blocks.IRON_BLOCK, ModBlocks.CHERRY_CYAN_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.CHERRY_PLANKS, Blocks.LIGHT_BLUE_WOOL, Blocks.IRON_BLOCK, ModBlocks.CHERRY_LIGHT_BLUE_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.CHERRY_PLANKS, Blocks.BLUE_WOOL, Blocks.IRON_BLOCK, ModBlocks.CHERRY_BLUE_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.CHERRY_PLANKS, Blocks.PURPLE_WOOL, Blocks.IRON_BLOCK, ModBlocks.CHERRY_PURPLE_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.CHERRY_PLANKS, Blocks.MAGENTA_WOOL, Blocks.IRON_BLOCK, ModBlocks.CHERRY_MAGENTA_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.CHERRY_PLANKS, Blocks.PINK_WOOL, Blocks.IRON_BLOCK, ModBlocks.CHERRY_PINK_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalTextureBottomModel(blockStateModelGenerator, Blocks.CRIMSON_PLANKS, Blocks.IRON_BLOCK, ModBlocks.CRIMSON_CHAIR_PASCAL, ModModels.CHAIR_PASCAL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.CRIMSON_PLANKS, Blocks.WHITE_WOOL, Blocks.IRON_BLOCK, ModBlocks.CRIMSON_WHITE_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.CRIMSON_PLANKS, Blocks.LIGHT_GRAY_WOOL, Blocks.IRON_BLOCK, ModBlocks.CRIMSON_LIGHT_GRAY_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.CRIMSON_PLANKS, Blocks.GRAY_WOOL, Blocks.IRON_BLOCK, ModBlocks.CRIMSON_GRAY_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.CRIMSON_PLANKS, Blocks.BLACK_WOOL, Blocks.IRON_BLOCK, ModBlocks.CRIMSON_BLACK_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.CRIMSON_PLANKS, Blocks.BROWN_WOOL, Blocks.IRON_BLOCK, ModBlocks.CRIMSON_BROWN_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.CRIMSON_PLANKS, Blocks.RED_WOOL, Blocks.IRON_BLOCK, ModBlocks.CRIMSON_RED_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.CRIMSON_PLANKS, Blocks.ORANGE_WOOL, Blocks.IRON_BLOCK, ModBlocks.CRIMSON_ORANGE_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.CRIMSON_PLANKS, Blocks.YELLOW_WOOL, Blocks.IRON_BLOCK, ModBlocks.CRIMSON_YELLOW_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.CRIMSON_PLANKS, Blocks.LIME_WOOL, Blocks.IRON_BLOCK, ModBlocks.CRIMSON_LIME_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.CRIMSON_PLANKS, Blocks.GREEN_WOOL, Blocks.IRON_BLOCK, ModBlocks.CRIMSON_GREEN_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.CRIMSON_PLANKS, Blocks.CYAN_WOOL, Blocks.IRON_BLOCK, ModBlocks.CRIMSON_CYAN_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.CRIMSON_PLANKS, Blocks.LIGHT_BLUE_WOOL, Blocks.IRON_BLOCK, ModBlocks.CRIMSON_LIGHT_BLUE_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.CRIMSON_PLANKS, Blocks.BLUE_WOOL, Blocks.IRON_BLOCK, ModBlocks.CRIMSON_BLUE_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.CRIMSON_PLANKS, Blocks.PURPLE_WOOL, Blocks.IRON_BLOCK, ModBlocks.CRIMSON_PURPLE_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.CRIMSON_PLANKS, Blocks.MAGENTA_WOOL, Blocks.IRON_BLOCK, ModBlocks.CRIMSON_MAGENTA_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.CRIMSON_PLANKS, Blocks.PINK_WOOL, Blocks.IRON_BLOCK, ModBlocks.CRIMSON_PINK_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalTextureBottomModel(blockStateModelGenerator, Blocks.DARK_OAK_PLANKS, Blocks.IRON_BLOCK, ModBlocks.DARK_OAK_CHAIR_PASCAL, ModModels.CHAIR_PASCAL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.DARK_OAK_PLANKS, Blocks.WHITE_WOOL, Blocks.IRON_BLOCK, ModBlocks.DARK_OAK_WHITE_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.DARK_OAK_PLANKS, Blocks.LIGHT_GRAY_WOOL, Blocks.IRON_BLOCK, ModBlocks.DARK_OAK_LIGHT_GRAY_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.DARK_OAK_PLANKS, Blocks.GRAY_WOOL, Blocks.IRON_BLOCK, ModBlocks.DARK_OAK_GRAY_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.DARK_OAK_PLANKS, Blocks.BLACK_WOOL, Blocks.IRON_BLOCK, ModBlocks.DARK_OAK_BLACK_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.DARK_OAK_PLANKS, Blocks.BROWN_WOOL, Blocks.IRON_BLOCK, ModBlocks.DARK_OAK_BROWN_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.DARK_OAK_PLANKS, Blocks.RED_WOOL, Blocks.IRON_BLOCK, ModBlocks.DARK_OAK_RED_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.DARK_OAK_PLANKS, Blocks.ORANGE_WOOL, Blocks.IRON_BLOCK, ModBlocks.DARK_OAK_ORANGE_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.DARK_OAK_PLANKS, Blocks.YELLOW_WOOL, Blocks.IRON_BLOCK, ModBlocks.DARK_OAK_YELLOW_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.DARK_OAK_PLANKS, Blocks.LIME_WOOL, Blocks.IRON_BLOCK, ModBlocks.DARK_OAK_LIME_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.DARK_OAK_PLANKS, Blocks.GREEN_WOOL, Blocks.IRON_BLOCK, ModBlocks.DARK_OAK_GREEN_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.DARK_OAK_PLANKS, Blocks.CYAN_WOOL, Blocks.IRON_BLOCK, ModBlocks.DARK_OAK_CYAN_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.DARK_OAK_PLANKS, Blocks.LIGHT_BLUE_WOOL, Blocks.IRON_BLOCK, ModBlocks.DARK_OAK_LIGHT_BLUE_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.DARK_OAK_PLANKS, Blocks.BLUE_WOOL, Blocks.IRON_BLOCK, ModBlocks.DARK_OAK_BLUE_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.DARK_OAK_PLANKS, Blocks.PURPLE_WOOL, Blocks.IRON_BLOCK, ModBlocks.DARK_OAK_PURPLE_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.DARK_OAK_PLANKS, Blocks.MAGENTA_WOOL, Blocks.IRON_BLOCK, ModBlocks.DARK_OAK_MAGENTA_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.DARK_OAK_PLANKS, Blocks.PINK_WOOL, Blocks.IRON_BLOCK, ModBlocks.DARK_OAK_PINK_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalTextureBottomModel(blockStateModelGenerator, Blocks.JUNGLE_PLANKS, Blocks.IRON_BLOCK, ModBlocks.JUNGLE_CHAIR_PASCAL, ModModels.CHAIR_PASCAL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.JUNGLE_PLANKS, Blocks.WHITE_WOOL, Blocks.IRON_BLOCK, ModBlocks.JUNGLE_WHITE_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.JUNGLE_PLANKS, Blocks.LIGHT_GRAY_WOOL, Blocks.IRON_BLOCK, ModBlocks.JUNGLE_LIGHT_GRAY_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.JUNGLE_PLANKS, Blocks.GRAY_WOOL, Blocks.IRON_BLOCK, ModBlocks.JUNGLE_GRAY_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.JUNGLE_PLANKS, Blocks.BLACK_WOOL, Blocks.IRON_BLOCK, ModBlocks.JUNGLE_BLACK_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.JUNGLE_PLANKS, Blocks.BROWN_WOOL, Blocks.IRON_BLOCK, ModBlocks.JUNGLE_BROWN_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.JUNGLE_PLANKS, Blocks.RED_WOOL, Blocks.IRON_BLOCK, ModBlocks.JUNGLE_RED_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.JUNGLE_PLANKS, Blocks.ORANGE_WOOL, Blocks.IRON_BLOCK, ModBlocks.JUNGLE_ORANGE_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.JUNGLE_PLANKS, Blocks.YELLOW_WOOL, Blocks.IRON_BLOCK, ModBlocks.JUNGLE_YELLOW_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.JUNGLE_PLANKS, Blocks.LIME_WOOL, Blocks.IRON_BLOCK, ModBlocks.JUNGLE_LIME_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.JUNGLE_PLANKS, Blocks.GREEN_WOOL, Blocks.IRON_BLOCK, ModBlocks.JUNGLE_GREEN_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.JUNGLE_PLANKS, Blocks.CYAN_WOOL, Blocks.IRON_BLOCK, ModBlocks.JUNGLE_CYAN_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.JUNGLE_PLANKS, Blocks.LIGHT_BLUE_WOOL, Blocks.IRON_BLOCK, ModBlocks.JUNGLE_LIGHT_BLUE_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.JUNGLE_PLANKS, Blocks.BLUE_WOOL, Blocks.IRON_BLOCK, ModBlocks.JUNGLE_BLUE_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.JUNGLE_PLANKS, Blocks.PURPLE_WOOL, Blocks.IRON_BLOCK, ModBlocks.JUNGLE_PURPLE_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.JUNGLE_PLANKS, Blocks.MAGENTA_WOOL, Blocks.IRON_BLOCK, ModBlocks.JUNGLE_MAGENTA_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.JUNGLE_PLANKS, Blocks.PINK_WOOL, Blocks.IRON_BLOCK, ModBlocks.JUNGLE_PINK_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalTextureBottomModel(blockStateModelGenerator, Blocks.MANGROVE_PLANKS, Blocks.IRON_BLOCK, ModBlocks.MANGROVE_CHAIR_PASCAL, ModModels.CHAIR_PASCAL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.MANGROVE_PLANKS, Blocks.WHITE_WOOL, Blocks.IRON_BLOCK, ModBlocks.MANGROVE_WHITE_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.MANGROVE_PLANKS, Blocks.LIGHT_GRAY_WOOL, Blocks.IRON_BLOCK, ModBlocks.MANGROVE_LIGHT_GRAY_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.MANGROVE_PLANKS, Blocks.GRAY_WOOL, Blocks.IRON_BLOCK, ModBlocks.MANGROVE_GRAY_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.MANGROVE_PLANKS, Blocks.BLACK_WOOL, Blocks.IRON_BLOCK, ModBlocks.MANGROVE_BLACK_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.MANGROVE_PLANKS, Blocks.BROWN_WOOL, Blocks.IRON_BLOCK, ModBlocks.MANGROVE_BROWN_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.MANGROVE_PLANKS, Blocks.RED_WOOL, Blocks.IRON_BLOCK, ModBlocks.MANGROVE_RED_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.MANGROVE_PLANKS, Blocks.ORANGE_WOOL, Blocks.IRON_BLOCK, ModBlocks.MANGROVE_ORANGE_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.MANGROVE_PLANKS, Blocks.YELLOW_WOOL, Blocks.IRON_BLOCK, ModBlocks.MANGROVE_YELLOW_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.MANGROVE_PLANKS, Blocks.LIME_WOOL, Blocks.IRON_BLOCK, ModBlocks.MANGROVE_LIME_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.MANGROVE_PLANKS, Blocks.GREEN_WOOL, Blocks.IRON_BLOCK, ModBlocks.MANGROVE_GREEN_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.MANGROVE_PLANKS, Blocks.CYAN_WOOL, Blocks.IRON_BLOCK, ModBlocks.MANGROVE_CYAN_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.MANGROVE_PLANKS, Blocks.LIGHT_BLUE_WOOL, Blocks.IRON_BLOCK, ModBlocks.MANGROVE_LIGHT_BLUE_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.MANGROVE_PLANKS, Blocks.BLUE_WOOL, Blocks.IRON_BLOCK, ModBlocks.MANGROVE_BLUE_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.MANGROVE_PLANKS, Blocks.PURPLE_WOOL, Blocks.IRON_BLOCK, ModBlocks.MANGROVE_PURPLE_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.MANGROVE_PLANKS, Blocks.MAGENTA_WOOL, Blocks.IRON_BLOCK, ModBlocks.MANGROVE_MAGENTA_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.MANGROVE_PLANKS, Blocks.PINK_WOOL, Blocks.IRON_BLOCK, ModBlocks.MANGROVE_PINK_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalTextureBottomModel(blockStateModelGenerator, Blocks.OAK_PLANKS, Blocks.IRON_BLOCK, ModBlocks.OAK_CHAIR_PASCAL, ModModels.CHAIR_PASCAL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.OAK_PLANKS, Blocks.WHITE_WOOL, Blocks.IRON_BLOCK, ModBlocks.OAK_WHITE_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.OAK_PLANKS, Blocks.LIGHT_GRAY_WOOL, Blocks.IRON_BLOCK, ModBlocks.OAK_LIGHT_GRAY_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.OAK_PLANKS, Blocks.GRAY_WOOL, Blocks.IRON_BLOCK, ModBlocks.OAK_GRAY_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.OAK_PLANKS, Blocks.BLACK_WOOL, Blocks.IRON_BLOCK, ModBlocks.OAK_BLACK_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.OAK_PLANKS, Blocks.BROWN_WOOL, Blocks.IRON_BLOCK, ModBlocks.OAK_BROWN_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.OAK_PLANKS, Blocks.RED_WOOL, Blocks.IRON_BLOCK, ModBlocks.OAK_RED_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.OAK_PLANKS, Blocks.ORANGE_WOOL, Blocks.IRON_BLOCK, ModBlocks.OAK_ORANGE_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.OAK_PLANKS, Blocks.YELLOW_WOOL, Blocks.IRON_BLOCK, ModBlocks.OAK_YELLOW_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.OAK_PLANKS, Blocks.LIME_WOOL, Blocks.IRON_BLOCK, ModBlocks.OAK_LIME_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.OAK_PLANKS, Blocks.GREEN_WOOL, Blocks.IRON_BLOCK, ModBlocks.OAK_GREEN_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.OAK_PLANKS, Blocks.CYAN_WOOL, Blocks.IRON_BLOCK, ModBlocks.OAK_CYAN_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.OAK_PLANKS, Blocks.LIGHT_BLUE_WOOL, Blocks.IRON_BLOCK, ModBlocks.OAK_LIGHT_BLUE_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.OAK_PLANKS, Blocks.BLUE_WOOL, Blocks.IRON_BLOCK, ModBlocks.OAK_BLUE_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.OAK_PLANKS, Blocks.PURPLE_WOOL, Blocks.IRON_BLOCK, ModBlocks.OAK_PURPLE_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.OAK_PLANKS, Blocks.MAGENTA_WOOL, Blocks.IRON_BLOCK, ModBlocks.OAK_MAGENTA_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.OAK_PLANKS, Blocks.PINK_WOOL, Blocks.IRON_BLOCK, ModBlocks.OAK_PINK_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalTextureBottomModel(blockStateModelGenerator, Blocks.SPRUCE_PLANKS, Blocks.IRON_BLOCK, ModBlocks.SPRUCE_CHAIR_PASCAL, ModModels.CHAIR_PASCAL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.SPRUCE_PLANKS, Blocks.WHITE_WOOL, Blocks.IRON_BLOCK, ModBlocks.SPRUCE_WHITE_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.SPRUCE_PLANKS, Blocks.LIGHT_GRAY_WOOL, Blocks.IRON_BLOCK, ModBlocks.SPRUCE_LIGHT_GRAY_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.SPRUCE_PLANKS, Blocks.GRAY_WOOL, Blocks.IRON_BLOCK, ModBlocks.SPRUCE_GRAY_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.SPRUCE_PLANKS, Blocks.BLACK_WOOL, Blocks.IRON_BLOCK, ModBlocks.SPRUCE_BLACK_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.SPRUCE_PLANKS, Blocks.BROWN_WOOL, Blocks.IRON_BLOCK, ModBlocks.SPRUCE_BROWN_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.SPRUCE_PLANKS, Blocks.RED_WOOL, Blocks.IRON_BLOCK, ModBlocks.SPRUCE_RED_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.SPRUCE_PLANKS, Blocks.ORANGE_WOOL, Blocks.IRON_BLOCK, ModBlocks.SPRUCE_ORANGE_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.SPRUCE_PLANKS, Blocks.YELLOW_WOOL, Blocks.IRON_BLOCK, ModBlocks.SPRUCE_YELLOW_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.SPRUCE_PLANKS, Blocks.LIME_WOOL, Blocks.IRON_BLOCK, ModBlocks.SPRUCE_LIME_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.SPRUCE_PLANKS, Blocks.GREEN_WOOL, Blocks.IRON_BLOCK, ModBlocks.SPRUCE_GREEN_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.SPRUCE_PLANKS, Blocks.CYAN_WOOL, Blocks.IRON_BLOCK, ModBlocks.SPRUCE_CYAN_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.SPRUCE_PLANKS, Blocks.LIGHT_BLUE_WOOL, Blocks.IRON_BLOCK, ModBlocks.SPRUCE_LIGHT_BLUE_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.SPRUCE_PLANKS, Blocks.BLUE_WOOL, Blocks.IRON_BLOCK, ModBlocks.SPRUCE_BLUE_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.SPRUCE_PLANKS, Blocks.PURPLE_WOOL, Blocks.IRON_BLOCK, ModBlocks.SPRUCE_PURPLE_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.SPRUCE_PLANKS, Blocks.MAGENTA_WOOL, Blocks.IRON_BLOCK, ModBlocks.SPRUCE_MAGENTA_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.SPRUCE_PLANKS, Blocks.PINK_WOOL, Blocks.IRON_BLOCK, ModBlocks.SPRUCE_PINK_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalTextureBottomModel(blockStateModelGenerator, Blocks.WARPED_PLANKS, Blocks.IRON_BLOCK, ModBlocks.WARPED_CHAIR_PASCAL, ModModels.CHAIR_PASCAL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.WARPED_PLANKS, Blocks.WHITE_WOOL, Blocks.IRON_BLOCK, ModBlocks.WARPED_WHITE_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.WARPED_PLANKS, Blocks.LIGHT_GRAY_WOOL, Blocks.IRON_BLOCK, ModBlocks.WARPED_LIGHT_GRAY_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.WARPED_PLANKS, Blocks.GRAY_WOOL, Blocks.IRON_BLOCK, ModBlocks.WARPED_GRAY_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.WARPED_PLANKS, Blocks.BLACK_WOOL, Blocks.IRON_BLOCK, ModBlocks.WARPED_BLACK_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.WARPED_PLANKS, Blocks.BROWN_WOOL, Blocks.IRON_BLOCK, ModBlocks.WARPED_BROWN_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.WARPED_PLANKS, Blocks.RED_WOOL, Blocks.IRON_BLOCK, ModBlocks.WARPED_RED_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.WARPED_PLANKS, Blocks.ORANGE_WOOL, Blocks.IRON_BLOCK, ModBlocks.WARPED_ORANGE_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.WARPED_PLANKS, Blocks.YELLOW_WOOL, Blocks.IRON_BLOCK, ModBlocks.WARPED_YELLOW_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.WARPED_PLANKS, Blocks.LIME_WOOL, Blocks.IRON_BLOCK, ModBlocks.WARPED_LIME_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.WARPED_PLANKS, Blocks.GREEN_WOOL, Blocks.IRON_BLOCK, ModBlocks.WARPED_GREEN_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.WARPED_PLANKS, Blocks.CYAN_WOOL, Blocks.IRON_BLOCK, ModBlocks.WARPED_CYAN_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.WARPED_PLANKS, Blocks.LIGHT_BLUE_WOOL, Blocks.IRON_BLOCK, ModBlocks.WARPED_LIGHT_BLUE_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.WARPED_PLANKS, Blocks.BLUE_WOOL, Blocks.IRON_BLOCK, ModBlocks.WARPED_BLUE_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.WARPED_PLANKS, Blocks.PURPLE_WOOL, Blocks.IRON_BLOCK, ModBlocks.WARPED_PURPLE_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.WARPED_PLANKS, Blocks.MAGENTA_WOOL, Blocks.IRON_BLOCK, ModBlocks.WARPED_MAGENTA_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.WARPED_PLANKS, Blocks.PINK_WOOL, Blocks.IRON_BLOCK, ModBlocks.WARPED_PINK_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
     }
 
     private void generateLadderBlockModel(Block block, BlockStateModelGenerator blockStateModelGenerator) {
@@ -360,14 +548,15 @@ public class ModelGenerator extends FabricModelProvider {
         blockStateModelGenerator.blockStateCollector.accept(createDirectionalBlockState(block, modelId));
     }
 
-    private void generateAllTextureBottomModelModelWithoutSuffixedPath(BlockStateModelGenerator blockStateModelGenerator, Block textureBlock, Block secondTextureLog, Block chairBlock, Model model) {
-        TextureMap textureMap = TextureMap.all(textureBlock)
-                .put(TextureKey.TEXTURE, TextureMap.getId(secondTextureLog))
-                .put(TextureKey.BOTTOM, TextureMap.getId(secondTextureLog))
-                .put(TextureKey.PARTICLE, TextureMap.getId(textureBlock));
-        Identifier chairModelId = model.upload(chairBlock, textureMap, blockStateModelGenerator.modelCollector);
+    private void generateDirectionalAllTextureBottomModelModel(BlockStateModelGenerator blockStateModelGenerator,
+                                                               Block allBlock, Block textureBlock, Block bottomBlock, Block block, Model model) {
+        TextureMap textureMap = TextureMap.all(allBlock)
+                .put(TextureKey.TEXTURE, TextureMap.getId(textureBlock))
+                .put(TextureKey.BOTTOM, TextureMap.getId(bottomBlock))
+                .put(TextureKey.PARTICLE, TextureMap.getId(allBlock));
+        Identifier chairModelId = model.upload(block, textureMap, blockStateModelGenerator.modelCollector);
 
-        blockStateModelGenerator.blockStateCollector.accept(createDirectionalBlockState(chairBlock, chairModelId));
+        blockStateModelGenerator.blockStateCollector.accept(createDirectionalBlockState(block, chairModelId));
     }
 
     private void generateChairModel(BlockStateModelGenerator blockStateModelGenerator, Block block, Block textureBlock, Model model) {

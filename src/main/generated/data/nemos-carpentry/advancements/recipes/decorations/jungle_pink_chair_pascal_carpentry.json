@@ -1,0 +1,54 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_jungle_chair_pascal": {
+      "conditions": {
+        "items": [
+          {
+            "items": "nemos-carpentry:jungle_chair_pascal"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_jungle_pink_chair_pascal": {
+      "conditions": {
+        "items": [
+          {
+            "items": "nemos-carpentry:jungle_pink_chair_pascal"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_pink_wool": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:pink_wool"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:jungle_pink_chair_pascal_carpentry"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_jungle_chair_pascal",
+      "has_pink_wool",
+      "has_jungle_pink_chair_pascal"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:jungle_pink_chair_pascal_carpentry"
+    ]
+  }
+}

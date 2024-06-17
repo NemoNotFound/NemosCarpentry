@@ -1,5 +1,6 @@
 package com.nemonotfound.nemoscarpentry.block.seats;
 
+import com.nemonotfound.nemoscarpentry.block.seats.parents.SitableBlock;
 import com.nemonotfound.nemoscarpentry.entity.ModEntities;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;

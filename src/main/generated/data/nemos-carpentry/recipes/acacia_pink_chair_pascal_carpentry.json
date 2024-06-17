@@ -1,0 +1,14 @@
+{
+  "type": "nemos-carpentry:carpentry",
+  "count": 1,
+  "ingredients": [
+    {
+      "item": "nemos-carpentry:acacia_chair_pascal"
+    },
+    {
+      "item": "minecraft:pink_wool"
+    }
+  ],
+  "result": "nemos-carpentry:acacia_pink_chair_pascal",
+  "tool": "saw"
+}

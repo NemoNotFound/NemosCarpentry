@@ -1,0 +1,54 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_crimson_chair_pascal": {
+      "conditions": {
+        "items": [
+          {
+            "items": "nemos-carpentry:crimson_chair_pascal"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_crimson_orange_chair_pascal": {
+      "conditions": {
+        "items": [
+          {
+            "items": "nemos-carpentry:crimson_orange_chair_pascal"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_orange_wool": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:orange_wool"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:crimson_orange_chair_pascal_carpentry"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_crimson_chair_pascal",
+      "has_orange_wool",
+      "has_crimson_orange_chair_pascal"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:crimson_orange_chair_pascal_carpentry"
+    ]
+  }
+}

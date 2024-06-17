@@ -1,6 +1,7 @@
 package com.nemonotfound.nemoscarpentry.block.seats;
 
 import com.nemonotfound.nemoscarpentry.block.enums.BenchPart;
+import com.nemonotfound.nemoscarpentry.block.seats.parents.OldSitableBlock;
 import com.nemonotfound.nemoscarpentry.property.ModProperties;
 import net.minecraft.block.*;
 import net.minecraft.entity.LivingEntity;

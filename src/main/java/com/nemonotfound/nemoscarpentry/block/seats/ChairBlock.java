@@ -1,6 +1,7 @@
 package com.nemonotfound.nemoscarpentry.block.seats;
 
 
+import com.nemonotfound.nemoscarpentry.block.seats.parents.SitableBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.HorizontalFacingBlock;
 import net.minecraft.block.Waterloggable;

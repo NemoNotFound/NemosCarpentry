@@ -269,6 +269,380 @@ public class ModBlocks {
             new GregoryChairBlock(AbstractBlock.Settings.copy(SPRUCE_PLANKS).nonOpaque()));
     public static final Block WARPED_CHAIR_GREGORY = registerBlock("warped_chair_gregory",
             new GregoryChairBlock(AbstractBlock.Settings.copy(WARPED_PLANKS).nonOpaque()));
+    public static final Block ACACIA_CHAIR_PASCAL = registerBlock("acacia_chair_pascal",
+            new PascalChairBlock(AbstractBlock.Settings.copy(ACACIA_PLANKS).nonOpaque()));
+    public static final Block ACACIA_WHITE_CHAIR_PASCAL = registerBlock("acacia_white_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(ACACIA_PLANKS).nonOpaque()));
+    public static final Block ACACIA_LIGHT_GRAY_CHAIR_PASCAL = registerBlock("acacia_light_gray_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(ACACIA_PLANKS).nonOpaque()));
+    public static final Block ACACIA_GRAY_CHAIR_PASCAL = registerBlock("acacia_gray_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(ACACIA_PLANKS).nonOpaque()));
+    public static final Block ACACIA_BLACK_CHAIR_PASCAL = registerBlock("acacia_black_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(ACACIA_PLANKS).nonOpaque()));
+    public static final Block ACACIA_BROWN_CHAIR_PASCAL = registerBlock("acacia_brown_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(ACACIA_PLANKS).nonOpaque()));
+    public static final Block ACACIA_RED_CHAIR_PASCAL = registerBlock("acacia_red_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(ACACIA_PLANKS).nonOpaque()));
+    public static final Block ACACIA_ORANGE_CHAIR_PASCAL = registerBlock("acacia_orange_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(ACACIA_PLANKS).nonOpaque()));
+    public static final Block ACACIA_YELLOW_CHAIR_PASCAL = registerBlock("acacia_yellow_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(ACACIA_PLANKS).nonOpaque()));
+    public static final Block ACACIA_LIME_CHAIR_PASCAL = registerBlock("acacia_lime_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(ACACIA_PLANKS).nonOpaque()));
+    public static final Block ACACIA_GREEN_CHAIR_PASCAL = registerBlock("acacia_green_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(ACACIA_PLANKS).nonOpaque()));
+    public static final Block ACACIA_CYAN_CHAIR_PASCAL = registerBlock("acacia_cyan_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(ACACIA_PLANKS).nonOpaque()));
+    public static final Block ACACIA_LIGHT_BLUE_CHAIR_PASCAL = registerBlock("acacia_light_blue_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(ACACIA_PLANKS).nonOpaque()));
+    public static final Block ACACIA_BLUE_CHAIR_PASCAL = registerBlock("acacia_blue_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(ACACIA_PLANKS).nonOpaque()));
+    public static final Block ACACIA_PURPLE_CHAIR_PASCAL = registerBlock("acacia_purple_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(ACACIA_PLANKS).nonOpaque()));
+    public static final Block ACACIA_MAGENTA_CHAIR_PASCAL = registerBlock("acacia_magenta_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(ACACIA_PLANKS).nonOpaque()));
+    public static final Block ACACIA_PINK_CHAIR_PASCAL = registerBlock("acacia_pink_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(ACACIA_PLANKS).nonOpaque()));
+    public static final Block BAMBOO_CHAIR_PASCAL = registerBlock("bamboo_chair_pascal",
+            new PascalChairBlock(AbstractBlock.Settings.copy(BAMBOO_PLANKS).nonOpaque()));
+    public static final Block BAMBOO_WHITE_CHAIR_PASCAL = registerBlock("bamboo_white_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(BAMBOO_PLANKS).nonOpaque()));
+    public static final Block BAMBOO_LIGHT_GRAY_CHAIR_PASCAL = registerBlock("bamboo_light_gray_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(BAMBOO_PLANKS).nonOpaque()));
+    public static final Block BAMBOO_GRAY_CHAIR_PASCAL = registerBlock("bamboo_gray_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(BAMBOO_PLANKS).nonOpaque()));
+    public static final Block BAMBOO_BLACK_CHAIR_PASCAL = registerBlock("bamboo_black_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(BAMBOO_PLANKS).nonOpaque()));
+    public static final Block BAMBOO_BROWN_CHAIR_PASCAL = registerBlock("bamboo_brown_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(BAMBOO_PLANKS).nonOpaque()));
+    public static final Block BAMBOO_RED_CHAIR_PASCAL = registerBlock("bamboo_red_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(BAMBOO_PLANKS).nonOpaque()));
+    public static final Block BAMBOO_ORANGE_CHAIR_PASCAL = registerBlock("bamboo_orange_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(BAMBOO_PLANKS).nonOpaque()));
+    public static final Block BAMBOO_YELLOW_CHAIR_PASCAL = registerBlock("bamboo_yellow_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(BAMBOO_PLANKS).nonOpaque()));
+    public static final Block BAMBOO_LIME_CHAIR_PASCAL = registerBlock("bamboo_lime_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(BAMBOO_PLANKS).nonOpaque()));
+    public static final Block BAMBOO_GREEN_CHAIR_PASCAL = registerBlock("bamboo_green_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(BAMBOO_PLANKS).nonOpaque()));
+    public static final Block BAMBOO_CYAN_CHAIR_PASCAL = registerBlock("bamboo_cyan_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(BAMBOO_PLANKS).nonOpaque()));
+    public static final Block BAMBOO_LIGHT_BLUE_CHAIR_PASCAL = registerBlock("bamboo_light_blue_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(BAMBOO_PLANKS).nonOpaque()));
+    public static final Block BAMBOO_BLUE_CHAIR_PASCAL = registerBlock("bamboo_blue_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(BAMBOO_PLANKS).nonOpaque()));
+    public static final Block BAMBOO_PURPLE_CHAIR_PASCAL = registerBlock("bamboo_purple_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(BAMBOO_PLANKS).nonOpaque()));
+    public static final Block BAMBOO_MAGENTA_CHAIR_PASCAL = registerBlock("bamboo_magenta_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(BAMBOO_PLANKS).nonOpaque()));
+    public static final Block BAMBOO_PINK_CHAIR_PASCAL = registerBlock("bamboo_pink_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(BAMBOO_PLANKS).nonOpaque()));
+    public static final Block BIRCH_CHAIR_PASCAL = registerBlock("birch_chair_pascal",
+            new PascalChairBlock(AbstractBlock.Settings.copy(BIRCH_PLANKS).nonOpaque()));
+    public static final Block BIRCH_WHITE_CHAIR_PASCAL = registerBlock("birch_white_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(BIRCH_PLANKS).nonOpaque()));
+    public static final Block BIRCH_LIGHT_GRAY_CHAIR_PASCAL = registerBlock("birch_light_gray_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(BIRCH_PLANKS).nonOpaque()));
+    public static final Block BIRCH_GRAY_CHAIR_PASCAL = registerBlock("birch_gray_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(BIRCH_PLANKS).nonOpaque()));
+    public static final Block BIRCH_BLACK_CHAIR_PASCAL = registerBlock("birch_black_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(BIRCH_PLANKS).nonOpaque()));
+    public static final Block BIRCH_BROWN_CHAIR_PASCAL = registerBlock("birch_brown_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(BIRCH_PLANKS).nonOpaque()));
+    public static final Block BIRCH_RED_CHAIR_PASCAL = registerBlock("birch_red_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(BIRCH_PLANKS).nonOpaque()));
+    public static final Block BIRCH_ORANGE_CHAIR_PASCAL = registerBlock("birch_orange_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(BIRCH_PLANKS).nonOpaque()));
+    public static final Block BIRCH_YELLOW_CHAIR_PASCAL = registerBlock("birch_yellow_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(BIRCH_PLANKS).nonOpaque()));
+    public static final Block BIRCH_LIME_CHAIR_PASCAL = registerBlock("birch_lime_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(BIRCH_PLANKS).nonOpaque()));
+    public static final Block BIRCH_GREEN_CHAIR_PASCAL = registerBlock("birch_green_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(BIRCH_PLANKS).nonOpaque()));
+    public static final Block BIRCH_CYAN_CHAIR_PASCAL = registerBlock("birch_cyan_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(BIRCH_PLANKS).nonOpaque()));
+    public static final Block BIRCH_LIGHT_BLUE_CHAIR_PASCAL = registerBlock("birch_light_blue_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(BIRCH_PLANKS).nonOpaque()));
+    public static final Block BIRCH_BLUE_CHAIR_PASCAL = registerBlock("birch_blue_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(BIRCH_PLANKS).nonOpaque()));
+    public static final Block BIRCH_PURPLE_CHAIR_PASCAL = registerBlock("birch_purple_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(BIRCH_PLANKS).nonOpaque()));
+    public static final Block BIRCH_MAGENTA_CHAIR_PASCAL = registerBlock("birch_magenta_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(BIRCH_PLANKS).nonOpaque()));
+    public static final Block BIRCH_PINK_CHAIR_PASCAL = registerBlock("birch_pink_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(BIRCH_PLANKS).nonOpaque()));
+    public static final Block CHERRY_CHAIR_PASCAL = registerBlock("cherry_chair_pascal",
+            new PascalChairBlock(AbstractBlock.Settings.copy(CHERRY_PLANKS).nonOpaque()));
+    public static final Block CHERRY_WHITE_CHAIR_PASCAL = registerBlock("cherry_white_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(CHERRY_PLANKS).nonOpaque()));
+    public static final Block CHERRY_LIGHT_GRAY_CHAIR_PASCAL = registerBlock("cherry_light_gray_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(CHERRY_PLANKS).nonOpaque()));
+    public static final Block CHERRY_GRAY_CHAIR_PASCAL = registerBlock("cherry_gray_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(CHERRY_PLANKS).nonOpaque()));
+    public static final Block CHERRY_BLACK_CHAIR_PASCAL = registerBlock("cherry_black_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(CHERRY_PLANKS).nonOpaque()));
+    public static final Block CHERRY_BROWN_CHAIR_PASCAL = registerBlock("cherry_brown_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(CHERRY_PLANKS).nonOpaque()));
+    public static final Block CHERRY_RED_CHAIR_PASCAL = registerBlock("cherry_red_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(CHERRY_PLANKS).nonOpaque()));
+    public static final Block CHERRY_ORANGE_CHAIR_PASCAL = registerBlock("cherry_orange_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(CHERRY_PLANKS).nonOpaque()));
+    public static final Block CHERRY_YELLOW_CHAIR_PASCAL = registerBlock("cherry_yellow_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(CHERRY_PLANKS).nonOpaque()));
+    public static final Block CHERRY_LIME_CHAIR_PASCAL = registerBlock("cherry_lime_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(CHERRY_PLANKS).nonOpaque()));
+    public static final Block CHERRY_GREEN_CHAIR_PASCAL = registerBlock("cherry_green_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(CHERRY_PLANKS).nonOpaque()));
+    public static final Block CHERRY_CYAN_CHAIR_PASCAL = registerBlock("cherry_cyan_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(CHERRY_PLANKS).nonOpaque()));
+    public static final Block CHERRY_LIGHT_BLUE_CHAIR_PASCAL = registerBlock("cherry_light_blue_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(CHERRY_PLANKS).nonOpaque()));
+    public static final Block CHERRY_BLUE_CHAIR_PASCAL = registerBlock("cherry_blue_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(CHERRY_PLANKS).nonOpaque()));
+    public static final Block CHERRY_PURPLE_CHAIR_PASCAL = registerBlock("cherry_purple_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(CHERRY_PLANKS).nonOpaque()));
+    public static final Block CHERRY_MAGENTA_CHAIR_PASCAL = registerBlock("cherry_magenta_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(CHERRY_PLANKS).nonOpaque()));
+    public static final Block CHERRY_PINK_CHAIR_PASCAL = registerBlock("cherry_pink_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(CHERRY_PLANKS).nonOpaque()));
+    public static final Block CRIMSON_CHAIR_PASCAL = registerBlock("crimson_chair_pascal",
+            new PascalChairBlock(AbstractBlock.Settings.copy(CRIMSON_PLANKS).nonOpaque()));
+    public static final Block CRIMSON_WHITE_CHAIR_PASCAL = registerBlock("crimson_white_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(CRIMSON_PLANKS).nonOpaque()));
+    public static final Block CRIMSON_LIGHT_GRAY_CHAIR_PASCAL = registerBlock("crimson_light_gray_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(CRIMSON_PLANKS).nonOpaque()));
+    public static final Block CRIMSON_GRAY_CHAIR_PASCAL = registerBlock("crimson_gray_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(CRIMSON_PLANKS).nonOpaque()));
+    public static final Block CRIMSON_BLACK_CHAIR_PASCAL = registerBlock("crimson_black_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(CRIMSON_PLANKS).nonOpaque()));
+    public static final Block CRIMSON_BROWN_CHAIR_PASCAL = registerBlock("crimson_brown_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(CRIMSON_PLANKS).nonOpaque()));
+    public static final Block CRIMSON_RED_CHAIR_PASCAL = registerBlock("crimson_red_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(CRIMSON_PLANKS).nonOpaque()));
+    public static final Block CRIMSON_ORANGE_CHAIR_PASCAL = registerBlock("crimson_orange_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(CRIMSON_PLANKS).nonOpaque()));
+    public static final Block CRIMSON_YELLOW_CHAIR_PASCAL = registerBlock("crimson_yellow_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(CRIMSON_PLANKS).nonOpaque()));
+    public static final Block CRIMSON_LIME_CHAIR_PASCAL = registerBlock("crimson_lime_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(CRIMSON_PLANKS).nonOpaque()));
+    public static final Block CRIMSON_GREEN_CHAIR_PASCAL = registerBlock("crimson_green_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(CRIMSON_PLANKS).nonOpaque()));
+    public static final Block CRIMSON_CYAN_CHAIR_PASCAL = registerBlock("crimson_cyan_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(CRIMSON_PLANKS).nonOpaque()));
+    public static final Block CRIMSON_LIGHT_BLUE_CHAIR_PASCAL = registerBlock("crimson_light_blue_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(CRIMSON_PLANKS).nonOpaque()));
+    public static final Block CRIMSON_BLUE_CHAIR_PASCAL = registerBlock("crimson_blue_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(CRIMSON_PLANKS).nonOpaque()));
+    public static final Block CRIMSON_PURPLE_CHAIR_PASCAL = registerBlock("crimson_purple_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(CRIMSON_PLANKS).nonOpaque()));
+    public static final Block CRIMSON_MAGENTA_CHAIR_PASCAL = registerBlock("crimson_magenta_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(CRIMSON_PLANKS).nonOpaque()));
+    public static final Block CRIMSON_PINK_CHAIR_PASCAL = registerBlock("crimson_pink_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(CRIMSON_PLANKS).nonOpaque()));
+    public static final Block DARK_OAK_CHAIR_PASCAL = registerBlock("dark_oak_chair_pascal",
+            new PascalChairBlock(AbstractBlock.Settings.copy(DARK_OAK_PLANKS).nonOpaque()));
+    public static final Block DARK_OAK_WHITE_CHAIR_PASCAL = registerBlock("dark_oak_white_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(DARK_OAK_PLANKS).nonOpaque()));
+    public static final Block DARK_OAK_LIGHT_GRAY_CHAIR_PASCAL = registerBlock("dark_oak_light_gray_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(DARK_OAK_PLANKS).nonOpaque()));
+    public static final Block DARK_OAK_GRAY_CHAIR_PASCAL = registerBlock("dark_oak_gray_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(DARK_OAK_PLANKS).nonOpaque()));
+    public static final Block DARK_OAK_BLACK_CHAIR_PASCAL = registerBlock("dark_oak_black_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(DARK_OAK_PLANKS).nonOpaque()));
+    public static final Block DARK_OAK_BROWN_CHAIR_PASCAL = registerBlock("dark_oak_brown_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(DARK_OAK_PLANKS).nonOpaque()));
+    public static final Block DARK_OAK_RED_CHAIR_PASCAL = registerBlock("dark_oak_red_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(DARK_OAK_PLANKS).nonOpaque()));
+    public static final Block DARK_OAK_ORANGE_CHAIR_PASCAL = registerBlock("dark_oak_orange_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(DARK_OAK_PLANKS).nonOpaque()));
+    public static final Block DARK_OAK_YELLOW_CHAIR_PASCAL = registerBlock("dark_oak_yellow_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(DARK_OAK_PLANKS).nonOpaque()));
+    public static final Block DARK_OAK_LIME_CHAIR_PASCAL = registerBlock("dark_oak_lime_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(DARK_OAK_PLANKS).nonOpaque()));
+    public static final Block DARK_OAK_GREEN_CHAIR_PASCAL = registerBlock("dark_oak_green_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(DARK_OAK_PLANKS).nonOpaque()));
+    public static final Block DARK_OAK_CYAN_CHAIR_PASCAL = registerBlock("dark_oak_cyan_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(DARK_OAK_PLANKS).nonOpaque()));
+    public static final Block DARK_OAK_LIGHT_BLUE_CHAIR_PASCAL = registerBlock("dark_oak_light_blue_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(DARK_OAK_PLANKS).nonOpaque()));
+    public static final Block DARK_OAK_BLUE_CHAIR_PASCAL = registerBlock("dark_oak_blue_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(DARK_OAK_PLANKS).nonOpaque()));
+    public static final Block DARK_OAK_PURPLE_CHAIR_PASCAL = registerBlock("dark_oak_purple_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(DARK_OAK_PLANKS).nonOpaque()));
+    public static final Block DARK_OAK_MAGENTA_CHAIR_PASCAL = registerBlock("dark_oak_magenta_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(DARK_OAK_PLANKS).nonOpaque()));
+    public static final Block DARK_OAK_PINK_CHAIR_PASCAL = registerBlock("dark_oak_pink_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(DARK_OAK_PLANKS).nonOpaque()));
+    public static final Block JUNGLE_CHAIR_PASCAL = registerBlock("jungle_chair_pascal",
+            new PascalChairBlock(AbstractBlock.Settings.copy(JUNGLE_PLANKS).nonOpaque()));
+    public static final Block JUNGLE_WHITE_CHAIR_PASCAL = registerBlock("jungle_white_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(JUNGLE_PLANKS).nonOpaque()));
+    public static final Block JUNGLE_LIGHT_GRAY_CHAIR_PASCAL = registerBlock("jungle_light_gray_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(JUNGLE_PLANKS).nonOpaque()));
+    public static final Block JUNGLE_GRAY_CHAIR_PASCAL = registerBlock("jungle_gray_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(JUNGLE_PLANKS).nonOpaque()));
+    public static final Block JUNGLE_BLACK_CHAIR_PASCAL = registerBlock("jungle_black_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(JUNGLE_PLANKS).nonOpaque()));
+    public static final Block JUNGLE_BROWN_CHAIR_PASCAL = registerBlock("jungle_brown_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(JUNGLE_PLANKS).nonOpaque()));
+    public static final Block JUNGLE_RED_CHAIR_PASCAL = registerBlock("jungle_red_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(JUNGLE_PLANKS).nonOpaque()));
+    public static final Block JUNGLE_ORANGE_CHAIR_PASCAL = registerBlock("jungle_orange_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(JUNGLE_PLANKS).nonOpaque()));
+    public static final Block JUNGLE_YELLOW_CHAIR_PASCAL = registerBlock("jungle_yellow_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(JUNGLE_PLANKS).nonOpaque()));
+    public static final Block JUNGLE_LIME_CHAIR_PASCAL = registerBlock("jungle_lime_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(JUNGLE_PLANKS).nonOpaque()));
+    public static final Block JUNGLE_GREEN_CHAIR_PASCAL = registerBlock("jungle_green_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(JUNGLE_PLANKS).nonOpaque()));
+    public static final Block JUNGLE_CYAN_CHAIR_PASCAL = registerBlock("jungle_cyan_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(JUNGLE_PLANKS).nonOpaque()));
+    public static final Block JUNGLE_LIGHT_BLUE_CHAIR_PASCAL = registerBlock("jungle_light_blue_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(JUNGLE_PLANKS).nonOpaque()));
+    public static final Block JUNGLE_BLUE_CHAIR_PASCAL = registerBlock("jungle_blue_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(JUNGLE_PLANKS).nonOpaque()));
+    public static final Block JUNGLE_PURPLE_CHAIR_PASCAL = registerBlock("jungle_purple_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(JUNGLE_PLANKS).nonOpaque()));
+    public static final Block JUNGLE_MAGENTA_CHAIR_PASCAL = registerBlock("jungle_magenta_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(JUNGLE_PLANKS).nonOpaque()));
+    public static final Block JUNGLE_PINK_CHAIR_PASCAL = registerBlock("jungle_pink_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(JUNGLE_PLANKS).nonOpaque()));
+    public static final Block MANGROVE_CHAIR_PASCAL = registerBlock("mangrove_chair_pascal",
+            new PascalChairBlock(AbstractBlock.Settings.copy(MANGROVE_PLANKS).nonOpaque()));
+    public static final Block MANGROVE_WHITE_CHAIR_PASCAL = registerBlock("mangrove_white_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(MANGROVE_PLANKS).nonOpaque()));
+    public static final Block MANGROVE_LIGHT_GRAY_CHAIR_PASCAL = registerBlock("mangrove_light_gray_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(MANGROVE_PLANKS).nonOpaque()));
+    public static final Block MANGROVE_GRAY_CHAIR_PASCAL = registerBlock("mangrove_gray_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(MANGROVE_PLANKS).nonOpaque()));
+    public static final Block MANGROVE_BLACK_CHAIR_PASCAL = registerBlock("mangrove_black_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(MANGROVE_PLANKS).nonOpaque()));
+    public static final Block MANGROVE_BROWN_CHAIR_PASCAL = registerBlock("mangrove_brown_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(MANGROVE_PLANKS).nonOpaque()));
+    public static final Block MANGROVE_RED_CHAIR_PASCAL = registerBlock("mangrove_red_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(MANGROVE_PLANKS).nonOpaque()));
+    public static final Block MANGROVE_ORANGE_CHAIR_PASCAL = registerBlock("mangrove_orange_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(MANGROVE_PLANKS).nonOpaque()));
+    public static final Block MANGROVE_YELLOW_CHAIR_PASCAL = registerBlock("mangrove_yellow_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(MANGROVE_PLANKS).nonOpaque()));
+    public static final Block MANGROVE_LIME_CHAIR_PASCAL = registerBlock("mangrove_lime_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(MANGROVE_PLANKS).nonOpaque()));
+    public static final Block MANGROVE_GREEN_CHAIR_PASCAL = registerBlock("mangrove_green_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(MANGROVE_PLANKS).nonOpaque()));
+    public static final Block MANGROVE_CYAN_CHAIR_PASCAL = registerBlock("mangrove_cyan_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(MANGROVE_PLANKS).nonOpaque()));
+    public static final Block MANGROVE_LIGHT_BLUE_CHAIR_PASCAL = registerBlock("mangrove_light_blue_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(MANGROVE_PLANKS).nonOpaque()));
+    public static final Block MANGROVE_BLUE_CHAIR_PASCAL = registerBlock("mangrove_blue_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(MANGROVE_PLANKS).nonOpaque()));
+    public static final Block MANGROVE_PURPLE_CHAIR_PASCAL = registerBlock("mangrove_purple_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(MANGROVE_PLANKS).nonOpaque()));
+    public static final Block MANGROVE_MAGENTA_CHAIR_PASCAL = registerBlock("mangrove_magenta_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(MANGROVE_PLANKS).nonOpaque()));
+    public static final Block MANGROVE_PINK_CHAIR_PASCAL = registerBlock("mangrove_pink_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(MANGROVE_PLANKS).nonOpaque()));
+    public static final Block OAK_CHAIR_PASCAL = registerBlock("oak_chair_pascal",
+            new PascalChairBlock(AbstractBlock.Settings.copy(OAK_PLANKS).nonOpaque()));
+    public static final Block OAK_WHITE_CHAIR_PASCAL = registerBlock("oak_white_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(OAK_PLANKS).nonOpaque()));
+    public static final Block OAK_LIGHT_GRAY_CHAIR_PASCAL = registerBlock("oak_light_gray_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(OAK_PLANKS).nonOpaque()));
+    public static final Block OAK_GRAY_CHAIR_PASCAL = registerBlock("oak_gray_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(OAK_PLANKS).nonOpaque()));
+    public static final Block OAK_BLACK_CHAIR_PASCAL = registerBlock("oak_black_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(OAK_PLANKS).nonOpaque()));
+    public static final Block OAK_BROWN_CHAIR_PASCAL = registerBlock("oak_brown_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(OAK_PLANKS).nonOpaque()));
+    public static final Block OAK_RED_CHAIR_PASCAL = registerBlock("oak_red_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(OAK_PLANKS).nonOpaque()));
+    public static final Block OAK_ORANGE_CHAIR_PASCAL = registerBlock("oak_orange_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(OAK_PLANKS).nonOpaque()));
+    public static final Block OAK_YELLOW_CHAIR_PASCAL = registerBlock("oak_yellow_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(OAK_PLANKS).nonOpaque()));
+    public static final Block OAK_LIME_CHAIR_PASCAL = registerBlock("oak_lime_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(OAK_PLANKS).nonOpaque()));
+    public static final Block OAK_GREEN_CHAIR_PASCAL = registerBlock("oak_green_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(OAK_PLANKS).nonOpaque()));
+    public static final Block OAK_CYAN_CHAIR_PASCAL = registerBlock("oak_cyan_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(OAK_PLANKS).nonOpaque()));
+    public static final Block OAK_LIGHT_BLUE_CHAIR_PASCAL = registerBlock("oak_light_blue_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(OAK_PLANKS).nonOpaque()));
+    public static final Block OAK_BLUE_CHAIR_PASCAL = registerBlock("oak_blue_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(OAK_PLANKS).nonOpaque()));
+    public static final Block OAK_PURPLE_CHAIR_PASCAL = registerBlock("oak_purple_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(OAK_PLANKS).nonOpaque()));
+    public static final Block OAK_MAGENTA_CHAIR_PASCAL = registerBlock("oak_magenta_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(OAK_PLANKS).nonOpaque()));
+    public static final Block OAK_PINK_CHAIR_PASCAL = registerBlock("oak_pink_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(OAK_PLANKS).nonOpaque()));
+    public static final Block SPRUCE_CHAIR_PASCAL = registerBlock("spruce_chair_pascal",
+            new PascalChairBlock(AbstractBlock.Settings.copy(SPRUCE_PLANKS).nonOpaque()));
+    public static final Block SPRUCE_WHITE_CHAIR_PASCAL = registerBlock("spruce_white_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(SPRUCE_PLANKS).nonOpaque()));
+    public static final Block SPRUCE_LIGHT_GRAY_CHAIR_PASCAL = registerBlock("spruce_light_gray_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(SPRUCE_PLANKS).nonOpaque()));
+    public static final Block SPRUCE_GRAY_CHAIR_PASCAL = registerBlock("spruce_gray_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(SPRUCE_PLANKS).nonOpaque()));
+    public static final Block SPRUCE_BLACK_CHAIR_PASCAL = registerBlock("spruce_black_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(SPRUCE_PLANKS).nonOpaque()));
+    public static final Block SPRUCE_BROWN_CHAIR_PASCAL = registerBlock("spruce_brown_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(SPRUCE_PLANKS).nonOpaque()));
+    public static final Block SPRUCE_RED_CHAIR_PASCAL = registerBlock("spruce_red_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(SPRUCE_PLANKS).nonOpaque()));
+    public static final Block SPRUCE_ORANGE_CHAIR_PASCAL = registerBlock("spruce_orange_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(SPRUCE_PLANKS).nonOpaque()));
+    public static final Block SPRUCE_YELLOW_CHAIR_PASCAL = registerBlock("spruce_yellow_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(SPRUCE_PLANKS).nonOpaque()));
+    public static final Block SPRUCE_LIME_CHAIR_PASCAL = registerBlock("spruce_lime_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(SPRUCE_PLANKS).nonOpaque()));
+    public static final Block SPRUCE_GREEN_CHAIR_PASCAL = registerBlock("spruce_green_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(SPRUCE_PLANKS).nonOpaque()));
+    public static final Block SPRUCE_CYAN_CHAIR_PASCAL = registerBlock("spruce_cyan_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(SPRUCE_PLANKS).nonOpaque()));
+    public static final Block SPRUCE_LIGHT_BLUE_CHAIR_PASCAL = registerBlock("spruce_light_blue_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(SPRUCE_PLANKS).nonOpaque()));
+    public static final Block SPRUCE_BLUE_CHAIR_PASCAL = registerBlock("spruce_blue_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(SPRUCE_PLANKS).nonOpaque()));
+    public static final Block SPRUCE_PURPLE_CHAIR_PASCAL = registerBlock("spruce_purple_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(SPRUCE_PLANKS).nonOpaque()));
+    public static final Block SPRUCE_MAGENTA_CHAIR_PASCAL = registerBlock("spruce_magenta_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(SPRUCE_PLANKS).nonOpaque()));
+    public static final Block SPRUCE_PINK_CHAIR_PASCAL = registerBlock("spruce_pink_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(SPRUCE_PLANKS).nonOpaque()));
+    public static final Block WARPED_CHAIR_PASCAL = registerBlock("warped_chair_pascal",
+            new PascalChairBlock(AbstractBlock.Settings.copy(WARPED_PLANKS).nonOpaque()));
+    public static final Block WARPED_WHITE_CHAIR_PASCAL = registerBlock("warped_white_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(WARPED_PLANKS).nonOpaque()));
+    public static final Block WARPED_LIGHT_GRAY_CHAIR_PASCAL = registerBlock("warped_light_gray_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(WARPED_PLANKS).nonOpaque()));
+    public static final Block WARPED_GRAY_CHAIR_PASCAL = registerBlock("warped_gray_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(WARPED_PLANKS).nonOpaque()));
+    public static final Block WARPED_BLACK_CHAIR_PASCAL = registerBlock("warped_black_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(WARPED_PLANKS).nonOpaque()));
+    public static final Block WARPED_BROWN_CHAIR_PASCAL = registerBlock("warped_brown_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(WARPED_PLANKS).nonOpaque()));
+    public static final Block WARPED_RED_CHAIR_PASCAL = registerBlock("warped_red_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(WARPED_PLANKS).nonOpaque()));
+    public static final Block WARPED_ORANGE_CHAIR_PASCAL = registerBlock("warped_orange_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(WARPED_PLANKS).nonOpaque()));
+    public static final Block WARPED_YELLOW_CHAIR_PASCAL = registerBlock("warped_yellow_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(WARPED_PLANKS).nonOpaque()));
+    public static final Block WARPED_LIME_CHAIR_PASCAL = registerBlock("warped_lime_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(WARPED_PLANKS).nonOpaque()));
+    public static final Block WARPED_GREEN_CHAIR_PASCAL = registerBlock("warped_green_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(WARPED_PLANKS).nonOpaque()));
+    public static final Block WARPED_CYAN_CHAIR_PASCAL = registerBlock("warped_cyan_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(WARPED_PLANKS).nonOpaque()));
+    public static final Block WARPED_LIGHT_BLUE_CHAIR_PASCAL = registerBlock("warped_light_blue_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(WARPED_PLANKS).nonOpaque()));
+    public static final Block WARPED_BLUE_CHAIR_PASCAL = registerBlock("warped_blue_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(WARPED_PLANKS).nonOpaque()));
+    public static final Block WARPED_PURPLE_CHAIR_PASCAL = registerBlock("warped_purple_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(WARPED_PLANKS).nonOpaque()));
+    public static final Block WARPED_MAGENTA_CHAIR_PASCAL = registerBlock("warped_magenta_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(WARPED_PLANKS).nonOpaque()));
+    public static final Block WARPED_PINK_CHAIR_PASCAL = registerBlock("warped_pink_chair_pascal",
+            new PascalChairWoolBlock(AbstractBlock.Settings.copy(WARPED_PLANKS).nonOpaque()));
     public static final Block WHITE_BARBER_CHAIR = registerBlock("white_barber_chair",
             new BarberChairBlock(AbstractBlock.Settings.copy(WHITE_WOOL).nonOpaque()));
     public static final Block LIGHT_GRAY_BARBER_CHAIR = registerBlock("light_gray_barber_chair",

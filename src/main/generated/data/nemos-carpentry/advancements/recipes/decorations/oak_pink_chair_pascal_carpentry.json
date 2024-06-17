@@ -1,0 +1,54 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_oak_chair_pascal": {
+      "conditions": {
+        "items": [
+          {
+            "items": "nemos-carpentry:oak_chair_pascal"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_oak_pink_chair_pascal": {
+      "conditions": {
+        "items": [
+          {
+            "items": "nemos-carpentry:oak_pink_chair_pascal"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_pink_wool": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:pink_wool"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:oak_pink_chair_pascal_carpentry"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_oak_chair_pascal",
+      "has_pink_wool",
+      "has_oak_pink_chair_pascal"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:oak_pink_chair_pascal_carpentry"
+    ]
+  }
+}
