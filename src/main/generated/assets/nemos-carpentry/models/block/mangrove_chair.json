@@ -1,0 +1,7 @@
+{
+  "parent": "nemos-carpentry:block/seats/chair",
+  "textures": {
+    "all": "minecraft:block/mangrove_planks",
+    "particle": "minecraft:block/mangrove_planks"
+  }
+}

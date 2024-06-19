@@ -1,0 +1,14 @@
+{
+  "type": "nemos-carpentry:carpentry",
+  "count": 1,
+  "ingredients": [
+    {
+      "item": "nemos-carpentry:bamboo_chair_pascal"
+    },
+    {
+      "item": "minecraft:brown_wool"
+    }
+  ],
+  "result": "nemos-carpentry:bamboo_brown_chair_pascal",
+  "tool": "saw"
+}

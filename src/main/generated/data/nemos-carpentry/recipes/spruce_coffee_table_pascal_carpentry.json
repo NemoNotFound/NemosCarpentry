@@ -1,0 +1,14 @@
+{
+  "type": "nemos-carpentry:carpentry",
+  "count": 4,
+  "ingredients": [
+    {
+      "item": "minecraft:spruce_planks"
+    },
+    {
+      "item": "minecraft:iron_block"
+    }
+  ],
+  "result": "nemos-carpentry:spruce_coffee_table_pascal",
+  "tool": "saw"
+}

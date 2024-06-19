@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "block": "nemos-carpentry:dark_oak_gray_chair_pascal",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "part": "lower"
+              }
+            }
+          ],
+          "name": "nemos-carpentry:dark_oak_gray_chair_pascal"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_crimson_standing_table": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "nemos-carpentry:crimson_standing_table"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_crimson_stem": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:crimson_stem"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:crimson_standing_table_carpentry"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_crimson_stem",
+      "has_crimson_standing_table"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:crimson_standing_table_carpentry"
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "nemos-carpentry:block/seats/barber_chair",
+  "textures": {
+    "bottom": "minecraft:block/gold_block",
+    "particle": "minecraft:block/black_wool",
+    "texture": "minecraft:block/black_wool"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_oak_log": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:oak_log"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_oak_standing_table": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "nemos-carpentry:oak_standing_table"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:oak_standing_table_carpentry"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_oak_log",
+      "has_oak_standing_table"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:oak_standing_table_carpentry"
+    ]
+  }
+}

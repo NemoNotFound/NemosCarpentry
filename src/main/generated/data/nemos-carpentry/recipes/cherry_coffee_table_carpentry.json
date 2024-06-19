@@ -1,0 +1,14 @@
+{
+  "type": "nemos-carpentry:carpentry",
+  "count": 2,
+  "ingredients": [
+    {
+      "item": "minecraft:cherry_planks"
+    },
+    {
+      "tag": "minecraft:cherry_logs"
+    }
+  ],
+  "result": "nemos-carpentry:cherry_coffee_table",
+  "tool": "saw"
+}
