@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_oak_chair_lukas": {
+      "conditions": {
+        "items": [
+          {
+            "items": "nemos-carpentry:oak_chair_lukas"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_oak_planks": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:oak_planks"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:oak_chair_lukas_carpentry"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_oak_planks",
+      "has_oak_chair_lukas"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:oak_chair_lukas_carpentry"
+    ]
+  }
+}
