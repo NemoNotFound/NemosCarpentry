@@ -1,0 +1,11 @@
+{
+  "type": "nemos-carpentry:carpentry",
+  "count": 1,
+  "ingredients": [
+    {
+      "item": "minecraft:mangrove_log"
+    }
+  ],
+  "result": "nemos-carpentry:mangrove_standing_table",
+  "tool": "saw"
+}

@@ -1,0 +1,54 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_acacia_chair_gregory": {
+      "conditions": {
+        "items": [
+          {
+            "items": "nemos-carpentry:acacia_chair_gregory"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_acacia_planks": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:acacia_planks"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_logs": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#minecraft:acacia_logs"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:acacia_chair_gregory_carpentry"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_acacia_planks",
+      "has_logs",
+      "has_acacia_chair_gregory"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:acacia_chair_gregory_carpentry"
+    ]
+  }
+}

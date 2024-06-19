@@ -30,9 +30,6 @@
 		"java": ">=21",
 		"fabric-api": "*"
 	},
-	"mixins": [
-		"nemos-carpentry.mixins.json"
-	],
 	"suggests": {
 		"another-mod": "*"
 	},

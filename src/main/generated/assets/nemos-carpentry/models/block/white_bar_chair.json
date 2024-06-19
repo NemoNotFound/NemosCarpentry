@@ -1,0 +1,8 @@
+{
+  "parent": "nemos-carpentry:block/seats/bar_chair",
+  "textures": {
+    "bottom": "minecraft:block/iron_block",
+    "particle": "minecraft:block/white_wool",
+    "texture": "minecraft:block/white_wool"
+  }
+}

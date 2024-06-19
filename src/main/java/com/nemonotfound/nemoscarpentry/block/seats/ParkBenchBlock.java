@@ -1,7 +1,7 @@
 package com.nemonotfound.nemoscarpentry.block.seats;
 
-import com.mojang.serialization.MapCodec;
 import com.nemonotfound.nemoscarpentry.block.enums.BenchPart;
+import com.nemonotfound.nemoscarpentry.block.seats.parents.OldSitableBlock;
 import com.nemonotfound.nemoscarpentry.property.ModProperties;
 import net.minecraft.block.*;
 import net.minecraft.entity.LivingEntity;
@@ -13,8 +13,6 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.DirectionProperty;
 import net.minecraft.state.property.EnumProperty;
-import net.minecraft.util.BlockMirror;
-import net.minecraft.util.BlockRotation;
 import net.minecraft.util.function.BooleanBiFunction;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
@@ -29,7 +27,7 @@ import java.util.stream.Stream;
 
 import static net.minecraft.util.math.Direction.*;
 
-public class ParkBenchBlock extends SitableBlock implements Waterloggable {
+public class ParkBenchBlock extends OldSitableBlock implements Waterloggable {
 
     private static final DirectionProperty FACING = HorizontalFacingBlock.FACING;
     public static final EnumProperty<BenchPart> PART = ModProperties.BENCH_BLOCK_PART;
@@ -193,11 +191,6 @@ public class ParkBenchBlock extends SitableBlock implements Waterloggable {
     }
 
     @Override
-    protected MapCodec<? extends HorizontalFacingBlock> getCodec() {
-        return null;
-    }
-
-    @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView view, BlockPos pos, ShapeContext context) {
         return getShapeIndex(state);
     }
@@ -229,14 +222,6 @@ public class ParkBenchBlock extends SitableBlock implements Waterloggable {
     }
 
     @Override
-    public FluidState getFluidState(BlockState state) {
-        if (state.get(WATERLOGGED)) {
-            return Fluids.WATER.getStill(false);
-        }
-        return super.getFluidState(state);
-    }
-
-    @Override
     public BlockState getStateForNeighborUpdate(BlockState state, Direction direction, BlockState neighborState, WorldAccess world, BlockPos pos, BlockPos neighborPos) {
         if (state.get(WATERLOGGED)) {
             world.scheduleFluidTick(pos, Fluids.WATER, Fluids.WATER.getTickRate(world));
@@ -248,11 +233,6 @@ public class ParkBenchBlock extends SitableBlock implements Waterloggable {
         }
 
         return super.getStateForNeighborUpdate(state, direction, neighborState, world, pos, neighborPos);
-    }
-
-    @Override
-    public BlockRenderType getRenderType(BlockState state) {
-        return BlockRenderType.MODEL;
     }
 
     @Override
@@ -279,16 +259,6 @@ public class ParkBenchBlock extends SitableBlock implements Waterloggable {
         boolean isSecondBenchPartInWorldBorder = world.getWorldBorder().contains(blockPos);
 
         return canSecondBenchPartBePlaced && isSecondBenchPartInWorldBorder;
-    }
-
-    @Override
-    public BlockState rotate(BlockState state, BlockRotation rotation) {
-        return state.with(FACING, rotation.rotate(state.get(FACING)));
-    }
-
-    @Override
-    public BlockState mirror(BlockState state, BlockMirror mirror) {
-        return state.rotate(mirror.getRotation(state.get(FACING)));
     }
 
     @Override

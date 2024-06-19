@@ -1,0 +1,14 @@
+{
+  "type": "nemos-carpentry:carpentry",
+  "count": 1,
+  "ingredients": [
+    {
+      "item": "minecraft:jungle_planks"
+    },
+    {
+      "tag": "minecraft:jungle_logs"
+    }
+  ],
+  "result": "nemos-carpentry:jungle_chair_lukas_natural",
+  "tool": "saw"
+}

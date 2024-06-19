@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "nemos-carpentry:block/oak_standing_table"
+    }
+  }
+}

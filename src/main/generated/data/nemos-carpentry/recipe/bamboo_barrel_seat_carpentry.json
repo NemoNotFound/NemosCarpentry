@@ -1,0 +1,14 @@
+{
+  "type": "nemos-carpentry:carpentry",
+  "count": 1,
+  "ingredients": [
+    {
+      "item": "minecraft:bamboo_planks"
+    },
+    {
+      "item": "minecraft:iron_ingot"
+    }
+  ],
+  "result": "nemos-carpentry:bamboo_barrel_seat",
+  "tool": "saw"
+}

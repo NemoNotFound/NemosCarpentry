@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "nemos-carpentry:block/birch_magenta_chair_pascal",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "nemos-carpentry:block/birch_magenta_chair_pascal"
+    },
+    "facing=south": {
+      "model": "nemos-carpentry:block/birch_magenta_chair_pascal",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "nemos-carpentry:block/birch_magenta_chair_pascal",
+      "y": 270
+    }
+  }
+}
