@@ -615,7 +615,7 @@
 	],
 	"groups": [
 		{
-			"name": "Voxelshapes",
+			"name": "VoxelShapes",
 			"origin": [0, 0, 0],
 			"color": 0,
 			"nbt": "{}",

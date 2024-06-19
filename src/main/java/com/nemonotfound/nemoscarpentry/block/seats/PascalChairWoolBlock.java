@@ -65,6 +65,6 @@ public class PascalChairWoolBlock extends MultipleBlockChair implements Waterlog
             ).reduce((v1, v2) -> VoxelShapes.combineAndSimplify(v1, v2, BooleanBiFunction.OR)).get(), BooleanBiFunction.OR);
 
     public PascalChairWoolBlock(Settings settings) {
-        super(settings, 0.58f, NORTH_SHAPE, EAST_SHAPE, SOUTH_SHAPE, WEST_SHAPE);
+        super(settings, 0.48f, NORTH_SHAPE, EAST_SHAPE, SOUTH_SHAPE, WEST_SHAPE);
     }
 }

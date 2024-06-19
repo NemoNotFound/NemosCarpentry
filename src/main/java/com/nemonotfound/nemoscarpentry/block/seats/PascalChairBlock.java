@@ -53,6 +53,6 @@ public class PascalChairBlock extends MultipleBlockChair implements Waterloggabl
                     Block.createCuboidShape(14, 7, 1, 15, 21, 15), BooleanBiFunction.OR), BooleanBiFunction.OR);
 
     public PascalChairBlock(Settings settings) {
-        super(settings, 0.58f, NORTH_SHAPE, EAST_SHAPE, SOUTH_SHAPE, WEST_SHAPE);
+        super(settings, 0.46f, NORTH_SHAPE, EAST_SHAPE, SOUTH_SHAPE, WEST_SHAPE);
     }
 }

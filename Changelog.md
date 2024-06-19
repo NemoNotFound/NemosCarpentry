@@ -8,6 +8,7 @@
   - Chair "Tommy"
   - Chair "Tommy" - Natural
   - Chair "Gregory"
+  - Chair "Pascal"
   - Barber Chair
   - Bar Chair
 - Added Tables

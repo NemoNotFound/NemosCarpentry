@@ -426,10 +426,9 @@ public class ModelGenerator extends FabricModelProvider {
         Identifier identifier = Registries.BLOCK.getId(block);
         TextureMap textureMap = TextureMap.texture(textureBlock).put(TextureKey.SIDE, identifier
                         .withPath("block/dark_iron_block")).put(TextureKey.PARTICLE, TextureMap.getId(textureBlock));
-        Identifier modelId = model.upload(block, textureMap, blockStateModelGenerator.modelCollector);
+        model.upload(block, textureMap, blockStateModelGenerator.modelCollector);
 
-        blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier
-                .create(block, BlockStateVariant.create().put(VariantSettings.MODEL, modelId)));
+        blockStateModelGenerator.registerNorthDefaultHorizontalRotation(block);
     }
 
     private void generateBlockModel(BlockStateModelGenerator blockStateModelGenerator, Block block, Block textureBlock, Model model) {
