@@ -1,0 +1,14 @@
+{
+  "type": "nemos-carpentry:carpentry",
+  "count": 1,
+  "ingredients": [
+    {
+      "item": "minecraft:bamboo_planks"
+    },
+    {
+      "tag": "minecraft:bamboo_blocks"
+    }
+  ],
+  "result": "nemos-carpentry:bamboo_chair_lukas_natural",
+  "tool": "saw"
+}

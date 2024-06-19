@@ -1,0 +1,9 @@
+{
+  "parent": "nemos-carpentry:block/seats/chair_gregory",
+  "textures": {
+    "all": "minecraft:block/spruce_planks",
+    "bottom": "minecraft:block/spruce_log_top",
+    "particle": "minecraft:block/spruce_planks",
+    "texture": "minecraft:block/spruce_log"
+  }
+}

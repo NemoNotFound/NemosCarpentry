@@ -1,0 +1,14 @@
+{
+  "type": "nemos-carpentry:carpentry",
+  "count": 1,
+  "ingredients": [
+    {
+      "item": "nemos-carpentry:mangrove_chair_pascal"
+    },
+    {
+      "item": "minecraft:cyan_wool"
+    }
+  ],
+  "result": "nemos-carpentry:mangrove_cyan_chair_pascal",
+  "tool": "saw"
+}

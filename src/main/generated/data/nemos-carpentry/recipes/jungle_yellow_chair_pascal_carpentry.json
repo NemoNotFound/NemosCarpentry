@@ -1,0 +1,14 @@
+{
+  "type": "nemos-carpentry:carpentry",
+  "count": 1,
+  "ingredients": [
+    {
+      "item": "nemos-carpentry:jungle_chair_pascal"
+    },
+    {
+      "item": "minecraft:yellow_wool"
+    }
+  ],
+  "result": "nemos-carpentry:jungle_yellow_chair_pascal",
+  "tool": "saw"
+}

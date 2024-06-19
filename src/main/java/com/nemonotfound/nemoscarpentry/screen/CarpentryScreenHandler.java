@@ -23,6 +23,7 @@ import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.world.World;
 
+import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 
@@ -210,8 +211,8 @@ public class CarpentryScreenHandler extends ScreenHandler {
     }
 
     private boolean isItemSecondIngredient(List<Pair<Ingredient, Integer>> ingredientPairs, ItemStack secondIngredient) {
-        return ingredientPairs.size() >= 2 && ingredientPairs.get(1).getFirst()
-                .getMatchingStacks()[0].getItem().equals(secondIngredient.getItem());
+        return ingredientPairs.size() >= 2 && itemIsInMatchingStacks(ingredientPairs.get(1).getFirst()
+                .getMatchingStacks(), secondIngredient.getItem());
     }
 
     @Override
@@ -313,23 +314,26 @@ public class CarpentryScreenHandler extends ScreenHandler {
         CarpentryRecipe recipe = availableRecipes.get(index).value();
         List<Pair<Ingredient, Integer>> ingredientPairs = recipe.getIngredientPairs();
 
-        ItemStack firstIngredientItemStack = ingredientPairs.get(0).getFirst().getMatchingStacks()[0];
+        ItemStack[] firstIngredientMatchingStacks = ingredientPairs.get(0).getFirst().getMatchingStacks();
         ItemStack firstInputItemStack = this.inputSlotOne.getStack();
 
-        boolean hasFirstInputIngredient = firstInputItemStack.getItem() == firstIngredientItemStack.getItem()
+        boolean hasFirstInputIngredient = itemIsInMatchingStacks(firstIngredientMatchingStacks, firstInputItemStack.getItem())
                 && firstInputItemStack.getCount() >= ingredientPairs.get(0).getSecond();
         boolean hasSecondInputIngredient = true;
 
         if (ingredientPairs.size() > 1) {
             Ingredient secondIngredient = ingredientPairs.get(1).getFirst();
-            ItemStack secondIngredientItemStack = secondIngredient.getMatchingStacks()[0];
             ItemStack secondInputItemStack = this.inputSlotTwo.getStack();
 
-            hasSecondInputIngredient = secondInputItemStack.getItem() == secondIngredientItemStack.getItem() &&
+            hasSecondInputIngredient = itemIsInMatchingStacks(secondIngredient.getMatchingStacks(), secondInputItemStack.getItem()) &&
                     secondInputItemStack.getCount() >= ingredientPairs.get(1).getSecond();
         }
 
         return hasFirstInputIngredient && hasSecondInputIngredient;
+    }
+
+    private boolean itemIsInMatchingStacks(ItemStack[] matchingStacks, Item item) {
+        return Arrays.stream(matchingStacks).anyMatch(itemStack -> itemStack.getItem().equals(item));
     }
 
     private void addPlayerInventory(PlayerInventory playerInventory) {
@@ -346,7 +350,7 @@ public class CarpentryScreenHandler extends ScreenHandler {
         }
     }
 
-    void populateResult() {
+    private void populateResult() {
         if (hasAvailableRecipes() && this.isInBounds(this.selectedRecipe.get()) && canCraftSelectedRecipe()) {
             RecipeEntry<CarpentryRecipe> recipeEntry = this.availableRecipes.get(this.selectedRecipe.get());
             CarpentryRecipe recipe = recipeEntry.value();

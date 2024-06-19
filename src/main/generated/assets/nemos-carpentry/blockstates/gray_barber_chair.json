@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "nemos-carpentry:block/gray_barber_chair",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "nemos-carpentry:block/gray_barber_chair"
+    },
+    "facing=south": {
+      "model": "nemos-carpentry:block/gray_barber_chair",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "nemos-carpentry:block/gray_barber_chair",
+      "y": 270
+    }
+  }
+}

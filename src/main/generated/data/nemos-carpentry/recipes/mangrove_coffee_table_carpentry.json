@@ -1,0 +1,14 @@
+{
+  "type": "nemos-carpentry:carpentry",
+  "count": 2,
+  "ingredients": [
+    {
+      "item": "minecraft:mangrove_planks"
+    },
+    {
+      "tag": "minecraft:mangrove_logs"
+    }
+  ],
+  "result": "nemos-carpentry:mangrove_coffee_table",
+  "tool": "saw"
+}

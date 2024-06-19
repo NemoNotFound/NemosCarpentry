@@ -1,0 +1,14 @@
+{
+  "type": "nemos-carpentry:carpentry",
+  "count": 1,
+  "ingredients": [
+    {
+      "item": "minecraft:cherry_planks"
+    },
+    {
+      "item": "minecraft:iron_block"
+    }
+  ],
+  "result": "nemos-carpentry:cherry_chair_pascal",
+  "tool": "saw"
+}

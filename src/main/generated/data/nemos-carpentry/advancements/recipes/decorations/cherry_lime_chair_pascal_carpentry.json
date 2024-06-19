@@ -1,0 +1,54 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_cherry_chair_pascal": {
+      "conditions": {
+        "items": [
+          {
+            "items": "nemos-carpentry:cherry_chair_pascal"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_cherry_lime_chair_pascal": {
+      "conditions": {
+        "items": [
+          {
+            "items": "nemos-carpentry:cherry_lime_chair_pascal"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_lime_wool": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:lime_wool"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:cherry_lime_chair_pascal_carpentry"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_cherry_chair_pascal",
+      "has_lime_wool",
+      "has_cherry_lime_chair_pascal"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:cherry_lime_chair_pascal_carpentry"
+    ]
+  }
+}

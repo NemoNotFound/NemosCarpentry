@@ -1,0 +1,14 @@
+{
+  "type": "nemos-carpentry:carpentry",
+  "count": 1,
+  "ingredients": [
+    {
+      "item": "minecraft:blue_wool"
+    },
+    {
+      "item": "minecraft:gold_block"
+    }
+  ],
+  "result": "nemos-carpentry:blue_barber_chair",
+  "tool": "saw"
+}

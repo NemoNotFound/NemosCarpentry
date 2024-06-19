@@ -1,5 +1,5 @@
 {
-  "parent": "nemos-carpentry:item/seats/parents/park_bench_full",
+  "parent": "nemos-carpentry:item/seats/park_bench_full",
   "textures": {
     "layer0": "nemos-carpentry:item/warped_park_bench"
   }

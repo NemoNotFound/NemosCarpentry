@@ -1,0 +1,14 @@
+{
+  "type": "nemos-carpentry:carpentry",
+  "count": 1,
+  "ingredients": [
+    {
+      "item": "minecraft:light_gray_wool"
+    },
+    {
+      "item": "minecraft:iron_block"
+    }
+  ],
+  "result": "nemos-carpentry:light_gray_bar_chair",
+  "tool": "saw"
+}

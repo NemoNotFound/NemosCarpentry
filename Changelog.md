@@ -1,7 +1,31 @@
-# Changelog - v2.4.2
+# Changelog - v2.5
 
-## Fixes
-- Recipe for campfire and soul campfire works again with oak logs
+## Additions
+- Added Seats
+  - Chair "Lukas"
+  - Chair "Lukas" - Natural
+  - Barrel Seats
+  - Chair "Tommy"
+  - Chair "Tommy" - Natural
+  - Chair "Gregory"
+  - Chair "Pascal"
+  - Barber Chair
+  - Bar Chair
+- Added Tables
+  - Coffee Table
+  - Standing Table
+  - Coffee Table "Pascal"
+- Added ItemGroups
+  - Seats
+  - Tables
+  - Outdoor
+- Updated villages
+  - Replaced many stairs, with "Felix" chairs
+  - Added table "The Classic" to some houses
+
+## Changes
+- Changed order of items in ItemGroups
+- Sitting on a chair won't change the player's yaw anymore
 
 ### Downloads
 [CurseForge](https://www.curseforge.com/minecraft/mc-mods/nemos-carpentry) <br>
