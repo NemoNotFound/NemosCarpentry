@@ -1,0 +1,60 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_green_wool": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:green_wool"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_mangrove_chair_pascal": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "nemos-carpentry:mangrove_chair_pascal"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_mangrove_green_chair_pascal": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "nemos-carpentry:mangrove_green_chair_pascal"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:mangrove_green_chair_pascal_carpentry"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_mangrove_chair_pascal",
+      "has_green_wool",
+      "has_mangrove_green_chair_pascal"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:mangrove_green_chair_pascal_carpentry"
+    ]
+  }
+}

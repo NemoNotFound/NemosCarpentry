@@ -22,6 +22,7 @@ import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.world.World;
 
+import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 
@@ -100,11 +101,11 @@ public class CarpentryScreenHandler extends ScreenHandler {
                 super.onTakeItem(player, stack);
             }
 
-            private void takeStacksOfIngredients(DefaultedList<Ingredient> ingredients) {
+            private void takeStacksOfIngredients(List<Ingredient> ingredients) {
                 int firstIngredientCount = ingredients.get(0).getMatchingStacks()[0].getCount();
                 ItemStack itemStack = CarpentryScreenHandler.this.inputSlotOne.takeStack(firstIngredientCount);
 
-                if (ingredients.get(1).getMatchingStacks().length > 0) {
+                if (ingredients.size() > 1 && ingredients.get(1).getMatchingStacks().length > 0) {
                     int secondIngredientCount = ingredients.get(1).getMatchingStacks()[0].getCount();
                     CarpentryScreenHandler.this.inputSlotTwo.takeStack(secondIngredientCount);
                 }
@@ -175,7 +176,8 @@ public class CarpentryScreenHandler extends ScreenHandler {
             }
 
             //TODO: REFACTOR
-            if (this.world.getRecipeManager().getFirstMatch(NemosCarpentry.CARPENTRY, new SimpleInventory(this.slots.get(4).getStack()), this.world).isPresent() && isItemSecondIngredient(this.slots.get(4).getStack(), movingItemStack)) {
+            if (this.world.getRecipeManager().getFirstMatch(NemosCarpentry.CARPENTRY, new SimpleInventory(
+                    this.slots.get(4).getStack()), this.world).isPresent() && isMovingItemSecondIngredient(this.slots.get(4).getStack(), movingItemStack)) {
                 if (!this.insertItem(movingItemStack, 5, 6, false)) {
                     return ItemStack.EMPTY;
                 } //TODO:REFACTOR
@@ -199,13 +201,18 @@ public class CarpentryScreenHandler extends ScreenHandler {
         }
         return itemStack;
     }
+    
+    private boolean isMovingItemSecondIngredient(ItemStack firstIngredient, ItemStack secondIngredient) {
+        List<CarpentryRecipe> carpentryRecipe = this.world.getRecipeManager()
+                .getAllMatches(NemosCarpentry.CARPENTRY, new SimpleInventory(firstIngredient), this.world);
 
-    //TODO: REFACTOR
-    private boolean isItemSecondIngredient(ItemStack firstIngredient, ItemStack secondIngredient) {
-        return this.world.getRecipeManager().getAllMatches(NemosCarpentry.CARPENTRY, new SimpleInventory(firstIngredient),
-                        this.world).stream()
-                .anyMatch(recipe -> recipe.getIngredients().get(1).getMatchingStacks().length > 0 &&
-                        recipe.getIngredients().get(1).getMatchingStacks()[0].getItem().equals(secondIngredient.getItem()));
+        return carpentryRecipe.stream().anyMatch(recipe ->
+                isItemSecondIngredient(recipe.getIngredients(), secondIngredient));
+    }
+
+    private boolean isItemSecondIngredient(List<Ingredient> ingredientPairs, ItemStack secondIngredient) {
+        return ingredientPairs.size() >= 2 && itemIsInMatchingStacks(ingredientPairs.get(1)
+                .getMatchingStacks(), secondIngredient.getItem());
     }
 
     @Override
@@ -308,22 +315,26 @@ public class CarpentryScreenHandler extends ScreenHandler {
         DefaultedList<Ingredient> ingredients = recipe.getIngredients();
         Ingredient secondIngredient = ingredients.get(1);
 
-        ItemStack firstIngredientItemStack = ingredients.get(0).getMatchingStacks()[0];
+        ItemStack[] firstIngredientMatchingStacks = ingredients.get(0).getMatchingStacks();
         ItemStack firstInputItemStack = this.inputSlotOne.getStack();
 
-        boolean hasFirstInputIngredient = firstInputItemStack.getItem() == firstIngredientItemStack.getItem()
-                && firstInputItemStack.getCount() >= firstIngredientItemStack.getCount();
+        boolean hasFirstInputIngredient = itemIsInMatchingStacks(firstIngredientMatchingStacks, firstInputItemStack.getItem())
+                && firstInputItemStack.getCount() >= ingredients.get(0).getMatchingStacks()[0].getCount();
         boolean hasSecondInputIngredient = true;
 
         if (secondIngredient.getMatchingStacks().length > 0) {
             ItemStack secondIngredientItemStack = secondIngredient.getMatchingStacks()[0];
             ItemStack secondInputItemStack = this.inputSlotTwo.getStack();
 
-            hasSecondInputIngredient = secondInputItemStack.getItem() == secondIngredientItemStack.getItem() &&
+            hasSecondInputIngredient = itemIsInMatchingStacks(secondIngredient.getMatchingStacks(), secondInputItemStack.getItem()) &&
                     secondInputItemStack.getCount() >= secondIngredientItemStack.getCount();
         }
 
         return hasFirstInputIngredient && hasSecondInputIngredient;
+    }
+
+    private boolean itemIsInMatchingStacks(ItemStack[] matchingStacks, Item item) {
+        return Arrays.stream(matchingStacks).anyMatch(itemStack -> itemStack.getItem().equals(item));
     }
 
     private void addPlayerInventory(PlayerInventory playerInventory) {
@@ -340,7 +351,7 @@ public class CarpentryScreenHandler extends ScreenHandler {
         }
     }
 
-    void populateResult() {
+    private void populateResult() {
         if (hasAvailableRecipes() && this.isInBounds(this.selectedRecipe.get()) && canCraftSelectedRecipe()) {
             CarpentryRecipe recipe = this.availableRecipes.get(this.selectedRecipe.get());
             ItemStack itemStack = recipe.craft(this.input, this.world.getRegistryManager());

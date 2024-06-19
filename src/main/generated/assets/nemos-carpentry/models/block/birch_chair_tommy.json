@@ -1,0 +1,8 @@
+{
+  "parent": "nemos-carpentry:block/seats/chair_tommy",
+  "textures": {
+    "all": "minecraft:block/birch_planks",
+    "bottom": "minecraft:block/birch_log_top",
+    "particle": "minecraft:block/birch_planks"
+  }
+}

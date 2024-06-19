@@ -1,0 +1,14 @@
+{
+  "type": "nemos-carpentry:carpentry",
+  "count": 1,
+  "ingredients": [
+    {
+      "item": "nemos-carpentry:warped_chair_pascal"
+    },
+    {
+      "item": "minecraft:light_blue_wool"
+    }
+  ],
+  "result": "nemos-carpentry:warped_light_blue_chair_pascal",
+  "tool": "saw"
+}

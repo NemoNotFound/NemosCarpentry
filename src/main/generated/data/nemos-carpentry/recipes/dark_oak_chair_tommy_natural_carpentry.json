@@ -1,0 +1,14 @@
+{
+  "type": "nemos-carpentry:carpentry",
+  "count": 1,
+  "ingredients": [
+    {
+      "item": "minecraft:dark_oak_planks"
+    },
+    {
+      "tag": "minecraft:dark_oak_logs"
+    }
+  ],
+  "result": "nemos-carpentry:dark_oak_chair_tommy_natural",
+  "tool": "saw"
+}

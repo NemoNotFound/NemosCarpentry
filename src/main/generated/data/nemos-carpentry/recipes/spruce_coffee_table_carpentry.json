@@ -1,0 +1,14 @@
+{
+  "type": "nemos-carpentry:carpentry",
+  "count": 2,
+  "ingredients": [
+    {
+      "item": "minecraft:spruce_planks"
+    },
+    {
+      "tag": "minecraft:spruce_logs"
+    }
+  ],
+  "result": "nemos-carpentry:spruce_coffee_table",
+  "tool": "saw"
+}

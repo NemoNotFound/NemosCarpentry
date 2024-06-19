@@ -1,0 +1,9 @@
+{
+  "parent": "nemos-carpentry:block/seats/chair_lukas_natural",
+  "textures": {
+    "all": "minecraft:block/birch_planks",
+    "bottom": "minecraft:block/birch_log_top",
+    "particle": "minecraft:block/birch_planks",
+    "texture": "minecraft:block/birch_log"
+  }
+}

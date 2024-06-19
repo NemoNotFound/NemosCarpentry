@@ -1,0 +1,60 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_gray_wool": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:gray_wool"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_jungle_chair_pascal": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "nemos-carpentry:jungle_chair_pascal"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_jungle_gray_chair_pascal": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "nemos-carpentry:jungle_gray_chair_pascal"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:jungle_gray_chair_pascal_carpentry"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_jungle_chair_pascal",
+      "has_gray_wool",
+      "has_jungle_gray_chair_pascal"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:jungle_gray_chair_pascal_carpentry"
+    ]
+  }
+}

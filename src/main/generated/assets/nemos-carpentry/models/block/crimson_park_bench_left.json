@@ -1,5 +1,5 @@
 {
-  "parent": "nemos-carpentry:block/seats/parents/park_bench_left",
+  "parent": "nemos-carpentry:block/seats/park_bench_left",
   "textures": {
     "all": "nemos-carpentry:block/seats/crimson_park_bench_left",
     "particle": "minecraft:block/crimson_planks"

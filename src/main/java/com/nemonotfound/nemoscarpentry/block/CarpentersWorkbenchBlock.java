@@ -39,10 +39,11 @@ public class CarpentersWorkbenchBlock extends BlockWithEntity implements BlockEn
         if (state.getBlock() != newState.getBlock()) {
             BlockEntity blockEntity = world.getBlockEntity(pos);
 
-            if (blockEntity instanceof  CarpentersWorkbenchBlockEntity) {
+            if (blockEntity instanceof CarpentersWorkbenchBlockEntity) {
                 ItemScatterer.spawn(world, pos, (CarpentersWorkbenchBlockEntity) blockEntity);
                 world.updateComparators(pos, this);
             }
+
             super.onStateReplaced(state, world, pos, newState, moved);
         }
     }

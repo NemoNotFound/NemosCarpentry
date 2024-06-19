@@ -1,0 +1,14 @@
+{
+  "type": "nemos-carpentry:carpentry",
+  "count": 1,
+  "ingredients": [
+    {
+      "item": "minecraft:birch_planks"
+    },
+    {
+      "tag": "minecraft:birch_logs"
+    }
+  ],
+  "result": "nemos-carpentry:birch_chair_lukas_natural",
+  "tool": "saw"
+}
