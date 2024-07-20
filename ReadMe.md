@@ -11,6 +11,7 @@ Big thanks to [Lukas](https://x.com/LukasDZN_Design"), who created a few of the 
 
 [![Join my Discord](https://github.com/NemoNotFound/NemoNotFound/blob/master/resources/svg/join_discord_button.svg?raw=true)](https://discord.com/invite/yxs9dga)
 <br>
+<br>
 
 I love to create mods for Minecraft and wish to live off it one day, so I hope you like what I do. <br>
 Either way feel free to give me your feedback and suggestions, either on my Discord or the [discussions](https://github.com/NemoNotFound/NemosCarpentry/discussions/") :)
@@ -18,6 +19,7 @@ Either way feel free to give me your feedback and suggestions, either on my Disc
 For more information and the recipes check the [wiki](https://www.nemonotfound.com/minecraft-mods/nemos-carpentry/wiki").
 
 [![ko-fi donation](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/nemonotfound)
+<br>
 <br>
 
 # Downloads
