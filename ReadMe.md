@@ -1,6 +1,6 @@
 <div align="center">
 
-![Nemo's Carpentry](https://github.com/NemoNotFound/NemosCarpentry/blob/master/src/main/resources/assets/nemos-carpentry/title.png?raw=true)
+![Nemo's Carpentry](https://github.com/NemoNotFound/NemoNotFound/blob/master/resources/png/nemos-carpentry.png?raw=true)
 <br><br>
 
 Nemo's Carpentry brings some furniture to Minecraft, <br>
