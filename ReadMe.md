@@ -1,8 +1,7 @@
-<div align="center">
-
 ![Nemo's Carpentry](https://github.com/NemoNotFound/NemoNotFound/blob/master/resources/png/nemos-carpentry.png?raw=true)
 <br><br>
 
+# Description
 Nemo's Carpentry brings some furniture to Minecraft, <br>
 which can be crafted with the Carpenter's Workbench. <br>
 It's every carpenter's dream! <br> 
@@ -33,4 +32,3 @@ Use my code **Nemo404** to get a 25% discount on your first month with any of th
 By using my code, you'll also be supporting my work as a Minecraft modder, helping me to pursue this passion full-time. Thank you!
 
 [**![BisectHosting Minecraft Server](https://www.bisecthosting.com/partners/custom-banners/e6d95b5e-b7fb-47eb-ad78-4dc6071a6171.png)**](https://bisecthosting.com/Nemo404)
-</div>
