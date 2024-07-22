@@ -1,31 +1,8 @@
-# Changelog - v2.5
+# Changelog - v2.5.1
 
-## Additions
-- Added Seats
-  - Chair "Lukas"
-  - Chair "Lukas" - Natural
-  - Barrel Seats
-  - Chair "Tommy"
-  - Chair "Tommy" - Natural
-  - Chair "Gregory"
-  - Chair "Pascal"
-  - Barber Chair
-  - Bar Chair
-- Added Tables
-  - Coffee Table
-  - Standing Table
-  - Coffee Table "Pascal"
-- Added ItemGroups
-  - Seats
-  - Tables
-  - Outdoor
-- Updated villages
-  - Replaced many stairs, with "Felix" chairs
-  - Added table "The Classic" to some houses
-
-## Changes
-- Changed order of items in ItemGroups
-- Sitting on a chair won't change the player's yaw anymore
+## Fixed
+- Barrel Seat is named Barrel Seats
+- Bamboo and Crimson Ladder have wrong pixel
 
 ### Downloads
 [CurseForge](https://www.curseforge.com/minecraft/mc-mods/nemos-carpentry) <br>
