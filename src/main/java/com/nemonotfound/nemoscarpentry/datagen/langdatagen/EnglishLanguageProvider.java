@@ -287,17 +287,17 @@ public class EnglishLanguageProvider extends FabricLanguageProvider {
         translationBuilder.add(ModBlocks.MAGENTA_BAR_CHAIR, "Magenta Bar Chair");
         translationBuilder.add(ModBlocks.PINK_BAR_CHAIR, "Pink Bar Chair");
 
-        translationBuilder.add(ModBlocks.ACACIA_BARREL_SEAT, "Acacia Barrel Seats");
-        translationBuilder.add(ModBlocks.BAMBOO_BARREL_SEAT, "Bamboo Barrel Seats");
-        translationBuilder.add(ModBlocks.BIRCH_BARREL_SEAT, "Birch Barrel Seats");
-        translationBuilder.add(ModBlocks.CHERRY_BARREL_SEAT, "Cherry Barrel Seats");
-        translationBuilder.add(ModBlocks.CRIMSON_BARREL_SEAT, "Crimson Barrel Seats");
-        translationBuilder.add(ModBlocks.DARK_OAK_BARREL_SEAT, "Dark_Oak Barrel Seats");
-        translationBuilder.add(ModBlocks.JUNGLE_BARREL_SEAT, "Jungle Barrel Seats");
-        translationBuilder.add(ModBlocks.MANGROVE_BARREL_SEAT, "Mangrove Barrel Seats");
-        translationBuilder.add(ModBlocks.OAK_BARREL_SEAT, "Oak Barrel Seats");
-        translationBuilder.add(ModBlocks.SPRUCE_BARREL_SEAT, "Spruce Barrel Seats");
-        translationBuilder.add(ModBlocks.WARPED_BARREL_SEAT, "Warped Barrel Seats");
+        translationBuilder.add(ModBlocks.ACACIA_BARREL_SEAT, "Acacia Barrel Seat");
+        translationBuilder.add(ModBlocks.BAMBOO_BARREL_SEAT, "Bamboo Barrel Seat");
+        translationBuilder.add(ModBlocks.BIRCH_BARREL_SEAT, "Birch Barrel Seat");
+        translationBuilder.add(ModBlocks.CHERRY_BARREL_SEAT, "Cherry Barrel Seat");
+        translationBuilder.add(ModBlocks.CRIMSON_BARREL_SEAT, "Crimson Barrel Seat");
+        translationBuilder.add(ModBlocks.DARK_OAK_BARREL_SEAT, "Dark_Oak Barrel Seat");
+        translationBuilder.add(ModBlocks.JUNGLE_BARREL_SEAT, "Jungle Barrel Seat");
+        translationBuilder.add(ModBlocks.MANGROVE_BARREL_SEAT, "Mangrove Barrel Seat");
+        translationBuilder.add(ModBlocks.OAK_BARREL_SEAT, "Oak Barrel Seat");
+        translationBuilder.add(ModBlocks.SPRUCE_BARREL_SEAT, "Spruce Barrel Seat");
+        translationBuilder.add(ModBlocks.WARPED_BARREL_SEAT, "Warped Barrel Seat");
 
         translationBuilder.add(ModBlocks.ACACIA_CHAIR_TOMMY, "Acacia Chair \"Tommy\"");
         translationBuilder.add(ModBlocks.BAMBOO_CHAIR_TOMMY, "Bamboo Chair \"Tommy\"");
