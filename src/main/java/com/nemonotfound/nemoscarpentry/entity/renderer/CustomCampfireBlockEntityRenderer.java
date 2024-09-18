@@ -15,6 +15,7 @@ import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.RotationAxis;
 
+@Deprecated
 @Environment(value = EnvType.CLIENT)
 public class CustomCampfireBlockEntityRenderer implements BlockEntityRenderer<CustomCampfireBlockEntity> {
 

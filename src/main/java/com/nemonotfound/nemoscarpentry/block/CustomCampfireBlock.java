@@ -19,7 +19,6 @@ import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.stat.Stats;
 import net.minecraft.state.property.Properties;
-import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.util.ItemActionResult;
 import net.minecraft.util.ItemScatterer;
@@ -32,6 +31,7 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.Optional;
 
+@Deprecated
 public class CustomCampfireBlock extends CampfireBlock {
 
     public CustomCampfireBlock(boolean emitsParticles, int fireDamage, Settings settings) {
