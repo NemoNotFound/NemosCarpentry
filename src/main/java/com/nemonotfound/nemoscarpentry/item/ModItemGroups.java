@@ -23,7 +23,7 @@ public class ModItemGroups {
         registerNemosCarpentryItemGroup(ModItems.IRON_SAW);
         registerSeatsItemGroup(ModItems.OAK_CHAIR_FELIX);
         registerTablesItemGroup(ModItems.OAK_TABLE_THE_CLASSIC);
-        registerOutdoorItemGroup(ModItems.SPRUCE_CAMPFIRE);
+        registerOutdoorItemGroup(ModItems.SPRUCE_PARK_BENCH);
         modifyFunctionalItemGroup();
         modifyToolItemGroup();
     }
@@ -423,24 +423,6 @@ public class ModItemGroups {
                     entries.add(ModItems.OAK_COFFEE_TABLE_PASCAL);
                     entries.add(ModItems.SPRUCE_COFFEE_TABLE_PASCAL);
                     entries.add(ModItems.WARPED_COFFEE_TABLE_PASCAL);
-                    entries.add(ModItems.ACACIA_CAMPFIRE);
-                    entries.add(ModItems.ACACIA_SOUL_CAMPFIRE);
-                    entries.add(ModItems.BIRCH_CAMPFIRE);
-                    entries.add(ModItems.BIRCH_SOUL_CAMPFIRE);
-                    entries.add(ModItems.CHERRY_CAMPFIRE);
-                    entries.add(ModItems.CHERRY_SOUL_CAMPFIRE);
-                    entries.add(ModItems.CRIMSON_CAMPFIRE);
-                    entries.add(ModItems.CRIMSON_SOUL_CAMPFIRE);
-                    entries.add(ModItems.DARK_OAK_CAMPFIRE);
-                    entries.add(ModItems.DARK_OAK_SOUL_CAMPFIRE);
-                    entries.add(ModItems.JUNGLE_CAMPFIRE);
-                    entries.add(ModItems.JUNGLE_SOUL_CAMPFIRE);
-                    entries.add(ModItems.MANGROVE_CAMPFIRE);
-                    entries.add(ModItems.MANGROVE_SOUL_CAMPFIRE);
-                    entries.add(ModItems.SPRUCE_CAMPFIRE);
-                    entries.add(ModItems.SPRUCE_SOUL_CAMPFIRE);
-                    entries.add(ModItems.WARPED_CAMPFIRE);
-                    entries.add(ModItems.WARPED_SOUL_CAMPFIRE);
                 })
                 .build();
 
@@ -878,24 +860,6 @@ public class ModItemGroups {
                     entries.add(ModItems.OAK_LOG_SEAT);
                     entries.add(ModItems.SPRUCE_LOG_SEAT);
                     entries.add(ModItems.WARPED_STEM_SEAT);
-                    entries.add(ModItems.ACACIA_CAMPFIRE);
-                    entries.add(ModItems.ACACIA_SOUL_CAMPFIRE);
-                    entries.add(ModItems.BIRCH_CAMPFIRE);
-                    entries.add(ModItems.BIRCH_SOUL_CAMPFIRE);
-                    entries.add(ModItems.CHERRY_CAMPFIRE);
-                    entries.add(ModItems.CHERRY_SOUL_CAMPFIRE);
-                    entries.add(ModItems.CRIMSON_CAMPFIRE);
-                    entries.add(ModItems.CRIMSON_SOUL_CAMPFIRE);
-                    entries.add(ModItems.DARK_OAK_CAMPFIRE);
-                    entries.add(ModItems.DARK_OAK_SOUL_CAMPFIRE);
-                    entries.add(ModItems.JUNGLE_CAMPFIRE);
-                    entries.add(ModItems.JUNGLE_SOUL_CAMPFIRE);
-                    entries.add(ModItems.MANGROVE_CAMPFIRE);
-                    entries.add(ModItems.MANGROVE_SOUL_CAMPFIRE);
-                    entries.add(ModItems.SPRUCE_CAMPFIRE);
-                    entries.add(ModItems.SPRUCE_SOUL_CAMPFIRE);
-                    entries.add(ModItems.WARPED_CAMPFIRE);
-                    entries.add(ModItems.WARPED_SOUL_CAMPFIRE);
                 })
                 .build();
 
@@ -1288,24 +1252,6 @@ public class ModItemGroups {
             entries.add(ModItems.OAK_STANDING_TABLE);
             entries.add(ModItems.SPRUCE_STANDING_TABLE);
             entries.add(ModItems.WARPED_STANDING_TABLE);
-            entries.addBefore(Items.CAMPFIRE, ModItems.ACACIA_CAMPFIRE);
-            entries.addBefore(Items.CAMPFIRE, ModItems.ACACIA_SOUL_CAMPFIRE);
-            entries.addBefore(Items.CAMPFIRE, ModItems.BIRCH_CAMPFIRE);
-            entries.addBefore(Items.CAMPFIRE, ModItems.BIRCH_SOUL_CAMPFIRE);
-            entries.addBefore(Items.CAMPFIRE, ModItems.CHERRY_CAMPFIRE);
-            entries.addBefore(Items.CAMPFIRE, ModItems.CHERRY_SOUL_CAMPFIRE);
-            entries.addBefore(Items.CAMPFIRE, ModItems.CRIMSON_CAMPFIRE);
-            entries.addBefore(Items.CAMPFIRE, ModItems.CRIMSON_SOUL_CAMPFIRE);
-            entries.addBefore(Items.CAMPFIRE, ModItems.DARK_OAK_CAMPFIRE);
-            entries.addBefore(Items.CAMPFIRE, ModItems.DARK_OAK_SOUL_CAMPFIRE);
-            entries.addBefore(Items.CAMPFIRE, ModItems.JUNGLE_CAMPFIRE);
-            entries.addBefore(Items.CAMPFIRE, ModItems.JUNGLE_SOUL_CAMPFIRE);
-            entries.addBefore(Items.CAMPFIRE, ModItems.MANGROVE_CAMPFIRE);
-            entries.addBefore(Items.CAMPFIRE, ModItems.MANGROVE_SOUL_CAMPFIRE);
-            entries.addAfter(Items.SOUL_CAMPFIRE, ModItems.SPRUCE_CAMPFIRE);
-            entries.addAfter(ModItems.SPRUCE_CAMPFIRE, ModItems.SPRUCE_SOUL_CAMPFIRE);
-            entries.addAfter(ModItems.SPRUCE_SOUL_CAMPFIRE, ModItems.WARPED_CAMPFIRE);
-            entries.addAfter(ModItems.WARPED_CAMPFIRE, ModItems.WARPED_SOUL_CAMPFIRE);
         });
     }
 
