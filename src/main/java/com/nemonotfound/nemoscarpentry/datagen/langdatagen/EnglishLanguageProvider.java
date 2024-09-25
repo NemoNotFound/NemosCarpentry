@@ -290,7 +290,7 @@ public class EnglishLanguageProvider extends FabricLanguageProvider {
         translationBuilder.add(ModBlocks.BIRCH_BARREL_SEAT, "Birch Barrel Seat");
         translationBuilder.add(ModBlocks.CHERRY_BARREL_SEAT, "Cherry Barrel Seat");
         translationBuilder.add(ModBlocks.CRIMSON_BARREL_SEAT, "Crimson Barrel Seat");
-        translationBuilder.add(ModBlocks.DARK_OAK_BARREL_SEAT, "Dark_Oak Barrel Seat");
+        translationBuilder.add(ModBlocks.DARK_OAK_BARREL_SEAT, "Dark Oak Barrel Seat");
         translationBuilder.add(ModBlocks.JUNGLE_BARREL_SEAT, "Jungle Barrel Seat");
         translationBuilder.add(ModBlocks.MANGROVE_BARREL_SEAT, "Mangrove Barrel Seat");
         translationBuilder.add(ModBlocks.OAK_BARREL_SEAT, "Oak Barrel Seat");

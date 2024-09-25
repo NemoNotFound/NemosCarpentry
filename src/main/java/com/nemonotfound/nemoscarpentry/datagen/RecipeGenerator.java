@@ -6,7 +6,6 @@ import com.nemonotfound.nemoscarpentry.block.enums.CarpentryTools;
 import com.nemonotfound.nemoscarpentry.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
-import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
@@ -38,26 +37,6 @@ public class RecipeGenerator extends FabricRecipeProvider {
         createSawRecipe(exporter, ModItems.GOLDEN_SAW, Items.GOLD_INGOT);
         createSawRecipe(exporter, ModItems.DIAMOND_SAW, Items.DIAMOND);
         VanillaRecipeProvider.offerNetheriteUpgradeRecipe(exporter, ModItems.DIAMOND_SAW, RecipeCategory.TOOLS, ModItems.NETHERITE_SAW);
-
-        createCampfireRecipe(exporter, ModBlocks.ACACIA_CAMPFIRE, ItemTags.ACACIA_LOGS);
-        createCampfireRecipe(exporter, ModBlocks.BIRCH_CAMPFIRE, ItemTags.BIRCH_LOGS);
-        createCampfireRecipe(exporter, ModBlocks.CHERRY_CAMPFIRE, ItemTags.CHERRY_LOGS);
-        createCampfireRecipe(exporter, ModBlocks.CRIMSON_CAMPFIRE, ItemTags.CRIMSON_STEMS);
-        createCampfireRecipe(exporter, ModBlocks.DARK_OAK_CAMPFIRE, ItemTags.DARK_OAK_LOGS);
-        createCampfireRecipe(exporter, ModBlocks.JUNGLE_CAMPFIRE, ItemTags.JUNGLE_LOGS);
-        createCampfireRecipe(exporter, ModBlocks.MANGROVE_CAMPFIRE, ItemTags.MANGROVE_LOGS);
-        createCampfireRecipe(exporter, ModBlocks.SPRUCE_CAMPFIRE, ItemTags.SPRUCE_LOGS);
-        createCampfireRecipe(exporter, ModBlocks.WARPED_CAMPFIRE, ItemTags.WARPED_STEMS);
-
-        createSoulCampfireRecipe(exporter, ModBlocks.ACACIA_SOUL_CAMPFIRE, ItemTags.ACACIA_LOGS);
-        createSoulCampfireRecipe(exporter, ModBlocks.BIRCH_SOUL_CAMPFIRE, ItemTags.BIRCH_LOGS);
-        createSoulCampfireRecipe(exporter, ModBlocks.CHERRY_SOUL_CAMPFIRE, ItemTags.CHERRY_LOGS);
-        createSoulCampfireRecipe(exporter, ModBlocks.CRIMSON_SOUL_CAMPFIRE, ItemTags.CRIMSON_STEMS);
-        createSoulCampfireRecipe(exporter, ModBlocks.DARK_OAK_SOUL_CAMPFIRE, ItemTags.DARK_OAK_LOGS);
-        createSoulCampfireRecipe(exporter, ModBlocks.JUNGLE_SOUL_CAMPFIRE, ItemTags.JUNGLE_LOGS);
-        createSoulCampfireRecipe(exporter, ModBlocks.MANGROVE_SOUL_CAMPFIRE, ItemTags.MANGROVE_LOGS);
-        createSoulCampfireRecipe(exporter, ModBlocks.SPRUCE_SOUL_CAMPFIRE, ItemTags.SPRUCE_LOGS);
-        createSoulCampfireRecipe(exporter, ModBlocks.WARPED_SOUL_CAMPFIRE, ItemTags.WARPED_STEMS);
 
         createCarpentryRecipe(exporter, List.of(Pair.of(Blocks.ACACIA_PLANKS, 1)),
                 ModBlocks.ACACIA_LADDER, 2, CarpentryTools.SAW.asString());
@@ -901,23 +880,6 @@ public class RecipeGenerator extends FabricRecipeProvider {
                 .input('#', input).input('S', Items.STICK)
                 .pattern("#  ").pattern(" #S").pattern(" SS")
                 .criterion(FabricRecipeProvider.hasItem(input), VanillaRecipeProvider.conditionsFromItem(input))
-                .offerTo(exporter);
-    }
-
-    private void createCampfireRecipe(RecipeExporter exporter, Block result, TagKey<Item> log) {
-        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, result)
-                .input('L', log).input('S', Items.STICK).input('C', ItemTags.COALS)
-                .pattern(" S ").pattern("SCS").pattern("LLL")
-                .criterion("has_stick", VanillaRecipeProvider.conditionsFromItem(Items.STICK))
-                .criterion("has_coal", VanillaRecipeProvider.conditionsFromTag(ItemTags.COALS))
-                .offerTo(exporter);
-    }
-
-    private void createSoulCampfireRecipe(RecipeExporter exporter, Block result, TagKey<Item> log) {
-        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, result)
-                .input('L', log).input('S', Items.STICK).input('#', ItemTags.SOUL_FIRE_BASE_BLOCKS)
-                .pattern(" S ").pattern("S#S").pattern("LLL")
-                .criterion("has_soul_sand", VanillaRecipeProvider.conditionsFromTag(ItemTags.SOUL_FIRE_BASE_BLOCKS))
                 .offerTo(exporter);
     }
 

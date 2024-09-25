@@ -31,6 +31,7 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.Optional;
 
+@Deprecated
 public class CustomCampfireBlock extends CampfireBlock {
 
     public CustomCampfireBlock(boolean emitsParticles, int fireDamage, Settings settings) {
