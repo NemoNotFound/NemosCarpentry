@@ -32,6 +32,7 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.Optional;
 
+@Deprecated
 public class CustomCampfireBlockEntity extends BlockEntity implements Clearable {
 
     private final DefaultedList<ItemStack> itemsBeingCooked = DefaultedList.ofSize(4, ItemStack.EMPTY);
