@@ -1,13 +1,7 @@
-# Changelog - v2.5.2
-
-## Fixed
-- "Dark Oak Barrel" is called "Dark_Oak Barrel"
+# Changelog - v2.5.3
 
 ## Changes
-- Deprecated campfire variant
-  - Campfires are now part of Nemo's Campfires and will be removed from Nemo's Carpentry in the future.
-- Removed recipes for campfire variants
-- Removed campfires from item groups
+- Removed structure changes, since they didn't work properly  
 
 ### Downloads
 [CurseForge](https://www.curseforge.com/minecraft/mc-mods/nemos-carpentry) <br>
