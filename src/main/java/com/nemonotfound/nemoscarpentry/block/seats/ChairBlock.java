@@ -3,16 +3,13 @@ package com.nemonotfound.nemoscarpentry.block.seats;
 
 import com.nemonotfound.nemoscarpentry.block.seats.parents.SitableBlock;
 import net.minecraft.block.Block;
-import net.minecraft.block.HorizontalFacingBlock;
 import net.minecraft.block.Waterloggable;
-import net.minecraft.state.property.DirectionProperty;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
 
 public class ChairBlock extends SitableBlock implements Waterloggable {
 
-    private static final DirectionProperty FACING = HorizontalFacingBlock.FACING;
     private static final VoxelShape SOUTH_SHAPE = VoxelShapes.union(Block.createCuboidShape(1, 6, 1, 15, 8, 15),
             Block.createCuboidShape(1, 8, 1, 15, 16, 3),
             Block.createCuboidShape(12, 0, 12, 14, 6, 14),

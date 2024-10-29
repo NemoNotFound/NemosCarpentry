@@ -1,14 +1,16 @@
 {
   "type": "nemos-carpentry:carpentry",
-  "count": 1,
   "ingredients": [
-    {
-      "item": "minecraft:spruce_planks"
-    },
-    {
-      "item": "minecraft:iron_block"
-    }
+    "minecraft:spruce_planks",
+    "minecraft:iron_block"
   ],
-  "result": "nemos-carpentry:spruce_chair_pascal",
-  "tool": "saw"
+  "inputCounts": [
+    1,
+    1
+  ],
+  "requiresTool": true,
+  "result": {
+    "count": 1,
+    "id": "nemos-carpentry:spruce_chair_pascal"
+  }
 }

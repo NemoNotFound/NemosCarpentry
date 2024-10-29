@@ -1,11 +1,14 @@
 {
   "type": "nemos-carpentry:carpentry",
-  "count": 1,
   "ingredients": [
-    {
-      "item": "minecraft:jungle_log"
-    }
+    "minecraft:jungle_log"
   ],
-  "result": "nemos-carpentry:jungle_standing_table",
-  "tool": "saw"
+  "inputCounts": [
+    1
+  ],
+  "requiresTool": true,
+  "result": {
+    "count": 1,
+    "id": "nemos-carpentry:jungle_standing_table"
+  }
 }

@@ -3,7 +3,6 @@ package com.nemonotfound.nemoscarpentry;
 import com.nemonotfound.nemoscarpentry.block.ModBlocks;
 import com.nemonotfound.nemoscarpentry.entity.ModEntities;
 import com.nemonotfound.nemoscarpentry.entity.renderer.ChairEntityRenderer;
-import com.nemonotfound.nemoscarpentry.entity.renderer.CustomCampfireBlockEntityRenderer;
 import com.nemonotfound.nemoscarpentry.screen.CarpentryScreen;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.api.EnvType;
@@ -12,14 +11,15 @@ import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.minecraft.client.gui.screen.ingame.HandledScreens;
 import net.minecraft.client.render.RenderLayer;
-import net.minecraft.client.render.block.entity.BlockEntityRendererFactories;
+
+import static com.nemonotfound.nemoscarpentry.screen.ModScreenHandlerTypes.CARPENTRY_SCREEN_HANDLER;
 
 @Environment(EnvType.CLIENT)
 public class NemosCarpentryClient implements ClientModInitializer {
 
     @Override
     public void onInitializeClient() {
-        HandledScreens.register(NemosCarpentry.CARPENTRY_SCREEN_HANDLER, CarpentryScreen::new);
+        HandledScreens.register(CARPENTRY_SCREEN_HANDLER, CarpentryScreen::new);
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.DARK_OAK_LADDER, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.ACACIA_LADDER, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.BIRCH_LADDER, RenderLayer.getCutout());
@@ -315,6 +315,5 @@ public class NemosCarpentryClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.WARPED_COFFEE_TABLE, RenderLayer.getCutout());
 
         EntityRendererRegistry.register(ModEntities.CHAIR_ENTITY, ChairEntityRenderer::new);
-        BlockEntityRendererFactories.register(ModEntities.CUSTOM_CAMPFIRE_BLOCK_ENTITY, CustomCampfireBlockEntityRenderer::new);
     }
 }

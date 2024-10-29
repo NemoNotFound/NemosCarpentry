@@ -1,14 +1,16 @@
 {
   "type": "nemos-carpentry:carpentry",
-  "count": 1,
   "ingredients": [
-    {
-      "item": "minecraft:cherry_planks"
-    },
-    {
-      "tag": "minecraft:cherry_logs"
-    }
+    "minecraft:cherry_planks",
+    "#minecraft:cherry_logs"
   ],
-  "result": "nemos-carpentry:cherry_chair_tommy_natural",
-  "tool": "saw"
+  "inputCounts": [
+    1,
+    1
+  ],
+  "requiresTool": true,
+  "result": {
+    "count": 1,
+    "id": "nemos-carpentry:cherry_chair_tommy_natural"
+  }
 }

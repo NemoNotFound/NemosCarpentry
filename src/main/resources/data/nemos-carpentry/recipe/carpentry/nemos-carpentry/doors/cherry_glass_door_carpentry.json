@@ -1,14 +1,15 @@
 {
   "type": "nemos-carpentry:carpentry",
-  "count": 1,
   "ingredients": [
-    {
-      "item": "nemos-carpentry:cherry_glass_door_frame"
-    },
-    {
-      "item": "minecraft:glass_pane",
-      "itemCount": 2
-  }
+    "nemos-carpentry:cherry_glass_door_frame",
+    "minecraft:glass_pane"
   ],
-  "result": "nemos-carpentry:cherry_glass_door"
+  "inputCounts": [
+    1,
+    2
+  ],
+  "result": {
+    "count": 1,
+    "id": "nemos-carpentry:cherry_glass_door"
+  }
 }

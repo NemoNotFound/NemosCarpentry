@@ -1,14 +1,16 @@
 {
   "type": "nemos-carpentry:carpentry",
-  "count": 1,
   "ingredients": [
-    {
-      "item": "minecraft:warped_planks"
-    },
-    {
-      "tag": "minecraft:warped_stems"
-    }
+    "minecraft:warped_planks",
+    "#minecraft:warped_stems"
   ],
-  "result": "nemos-carpentry:warped_chair_lukas_natural",
-  "tool": "saw"
+  "inputCounts": [
+    1,
+    1
+  ],
+  "requiresTool": true,
+  "result": {
+    "count": 1,
+    "id": "nemos-carpentry:warped_chair_lukas_natural"
+  }
 }

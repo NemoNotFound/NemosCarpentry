@@ -11,6 +11,7 @@ import net.minecraft.nbt.NbtCompound;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.screen.NamedScreenHandlerFactory;
 import net.minecraft.screen.ScreenHandler;
+import net.minecraft.screen.ScreenHandlerContext;
 import net.minecraft.text.Text;
 import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.util.math.BlockPos;
@@ -21,7 +22,7 @@ public class CarpentersWorkbenchBlockEntity extends BlockEntity implements Named
     private final DefaultedList<ItemStack> inventory = DefaultedList.ofSize(4, ItemStack.EMPTY);
 
     public CarpentersWorkbenchBlockEntity(BlockPos pos, BlockState state) {
-        super(ModEntities.CARPENTERS_WORKBENCH_BLOCK_ENTITY, pos, state);
+        super(ModBlockEntityTypes.CARPENTERS_WORKBENCH_BLOCK_ENTITY, pos, state);
     }
 
     @Override
@@ -49,6 +50,6 @@ public class CarpentersWorkbenchBlockEntity extends BlockEntity implements Named
     @Nullable
     @Override
     public ScreenHandler createMenu(int syncId, PlayerInventory playerInventory, PlayerEntity player) {
-        return new CarpentryScreenHandler(syncId, playerInventory, this);
+        return new CarpentryScreenHandler(syncId, playerInventory, this, ScreenHandlerContext.create(this.world, this.pos));
     }
 }

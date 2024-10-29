@@ -1,14 +1,16 @@
 {
   "type": "nemos-carpentry:carpentry",
-  "count": 1,
   "ingredients": [
-    {
-      "item": "minecraft:yellow_wool"
-    },
-    {
-      "item": "minecraft:gold_block"
-    }
+    "minecraft:yellow_wool",
+    "minecraft:gold_block"
   ],
-  "result": "nemos-carpentry:yellow_barber_chair",
-  "tool": "saw"
+  "inputCounts": [
+    1,
+    1
+  ],
+  "requiresTool": true,
+  "result": {
+    "count": 1,
+    "id": "nemos-carpentry:yellow_barber_chair"
+  }
 }

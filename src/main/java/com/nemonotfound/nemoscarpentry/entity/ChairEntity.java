@@ -2,8 +2,10 @@ package com.nemonotfound.nemoscarpentry.entity;
 
 import com.google.common.collect.UnmodifiableIterator;
 import net.minecraft.entity.*;
+import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.data.DataTracker;
 import net.minecraft.nbt.NbtCompound;
+import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Box;
 import net.minecraft.util.math.Direction;
@@ -37,6 +39,11 @@ public class ChairEntity extends Entity {
         if (!this.getWorld().isClient && !this.hasPassengers()) {
             this.discard();
         }
+    }
+
+    @Override
+    public boolean damage(ServerWorld world, DamageSource source, float amount) {
+        return false;
     }
 
     @Override

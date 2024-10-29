@@ -1,11 +1,14 @@
 {
   "type": "nemos-carpentry:carpentry",
-  "count": 1,
   "ingredients": [
-    {
-      "item": "minecraft:jungle_planks"
-    }
+    "minecraft:jungle_planks"
   ],
-  "result": "nemos-carpentry:jungle_chair",
-  "tool": "saw"
+  "inputCounts": [
+    1
+  ],
+  "requiresTool": true,
+  "result": {
+    "count": 1,
+    "id": "nemos-carpentry:jungle_chair"
+  }
 }

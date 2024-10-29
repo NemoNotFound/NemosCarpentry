@@ -1,12 +1,14 @@
 {
   "type": "nemos-carpentry:carpentry",
-  "count": 1,
   "ingredients": [
-    {
-      "item": "minecraft:birch_planks",
-      "itemCount": 2
-    }
+    "minecraft:birch_planks"
   ],
-  "result": "nemos-carpentry:birch_park_bench",
-  "tool": "saw"
+  "inputCounts": [
+    2
+  ],
+  "requiresTool": true,
+  "result": {
+    "count": 1,
+    "id": "nemos-carpentry:birch_park_bench"
+  }
 }

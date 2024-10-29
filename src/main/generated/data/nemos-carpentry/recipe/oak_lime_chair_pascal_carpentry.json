@@ -1,14 +1,16 @@
 {
   "type": "nemos-carpentry:carpentry",
-  "count": 1,
   "ingredients": [
-    {
-      "item": "nemos-carpentry:oak_chair_pascal"
-    },
-    {
-      "item": "minecraft:lime_wool"
-    }
+    "nemos-carpentry:oak_chair_pascal",
+    "minecraft:lime_wool"
   ],
-  "result": "nemos-carpentry:oak_lime_chair_pascal",
-  "tool": "saw"
+  "inputCounts": [
+    1,
+    1
+  ],
+  "requiresTool": true,
+  "result": {
+    "count": 1,
+    "id": "nemos-carpentry:oak_lime_chair_pascal"
+  }
 }

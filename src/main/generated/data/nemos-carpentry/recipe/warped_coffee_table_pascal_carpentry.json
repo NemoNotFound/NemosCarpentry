@@ -1,14 +1,16 @@
 {
   "type": "nemos-carpentry:carpentry",
-  "count": 4,
   "ingredients": [
-    {
-      "item": "minecraft:warped_planks"
-    },
-    {
-      "item": "minecraft:iron_block"
-    }
+    "minecraft:warped_planks",
+    "minecraft:iron_block"
   ],
-  "result": "nemos-carpentry:warped_coffee_table_pascal",
-  "tool": "saw"
+  "inputCounts": [
+    1,
+    1
+  ],
+  "requiresTool": true,
+  "result": {
+    "count": 4,
+    "id": "nemos-carpentry:warped_coffee_table_pascal"
+  }
 }

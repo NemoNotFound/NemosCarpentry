@@ -1,14 +1,16 @@
 {
   "type": "nemos-carpentry:carpentry",
-  "count": 1,
   "ingredients": [
-    {
-      "item": "minecraft:dark_oak_planks"
-    },
-    {
-      "tag": "minecraft:dark_oak_logs"
-    }
+    "minecraft:dark_oak_planks",
+    "#minecraft:dark_oak_logs"
   ],
-  "result": "nemos-carpentry:dark_oak_chair_gregory",
-  "tool": "saw"
+  "inputCounts": [
+    1,
+    1
+  ],
+  "requiresTool": true,
+  "result": {
+    "count": 1,
+    "id": "nemos-carpentry:dark_oak_chair_gregory"
+  }
 }

@@ -1,14 +1,16 @@
 {
   "type": "nemos-carpentry:carpentry",
-  "count": 1,
   "ingredients": [
-    {
-      "item": "minecraft:mangrove_planks"
-    },
-    {
-      "item": "minecraft:iron_ingot"
-    }
+    "minecraft:mangrove_planks",
+    "minecraft:iron_ingot"
   ],
-  "result": "nemos-carpentry:mangrove_barrel_seat",
-  "tool": "saw"
+  "inputCounts": [
+    1,
+    1
+  ],
+  "requiresTool": true,
+  "result": {
+    "count": 1,
+    "id": "nemos-carpentry:mangrove_barrel_seat"
+  }
 }

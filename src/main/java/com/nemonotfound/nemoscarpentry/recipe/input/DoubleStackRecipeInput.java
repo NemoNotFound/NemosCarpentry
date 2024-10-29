@@ -14,7 +14,7 @@ public record DoubleStackRecipeInput(ItemStack item) implements RecipeInput {
     }
 
     @Override
-    public int getSize() {
+    public int size() {
         return 2;
     }
 }

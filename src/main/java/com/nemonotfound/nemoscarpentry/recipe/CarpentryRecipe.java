@@ -1,150 +1,154 @@
 package com.nemonotfound.nemoscarpentry.recipe;
 
-import com.mojang.datafixers.util.Pair;
 import com.mojang.serialization.Codec;
-import com.mojang.serialization.DataResult;
 import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
+import com.nemonotfound.nemoscarpentry.item.ModItems;
+import com.nemonotfound.nemoscarpentry.recipe.book.ModRecipeBookCategory;
+import com.nemonotfound.nemoscarpentry.recipe.display.CarpentersWorkbenchRecipeDisplay;
 import net.minecraft.item.ItemStack;
 import net.minecraft.network.RegistryByteBuf;
 import net.minecraft.network.codec.PacketCodec;
-import net.minecraft.recipe.Ingredient;
-import net.minecraft.recipe.Recipe;
-import net.minecraft.recipe.RecipeSerializer;
-import net.minecraft.recipe.RecipeType;
+import net.minecraft.network.codec.PacketCodecs;
+import net.minecraft.recipe.*;
+import net.minecraft.recipe.book.RecipeBookCategory;
+import net.minecraft.recipe.display.RecipeDisplay;
+import net.minecraft.recipe.display.SlotDisplay;
 import net.minecraft.recipe.input.SingleStackRecipeInput;
-import net.minecraft.registry.Registries;
 import net.minecraft.registry.RegistryWrapper;
-import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.world.World;
+import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
+import java.util.Optional;
 
 public class CarpentryRecipe implements Recipe<SingleStackRecipeInput> {
 
+    private final List<Ingredient> ingredients;
+    private final List<Integer> inputCounts;
+    private final boolean requiresTool;
     private final ItemStack result;
-    private final List<Pair<Ingredient, Integer>> ingredientPairs;
-    private final String tool;
+    @Nullable
+    private IngredientPlacement ingredientPlacement;
 
-    public CarpentryRecipe(ItemStack result, List<Pair<Ingredient, Integer>> ingredientPairs, String tool) {
+    public CarpentryRecipe(List<Ingredient> ingredients, List<Integer> inputCounts, boolean requiresTool, ItemStack result) {
+        this.ingredients = ingredients;
+        this.inputCounts = inputCounts;
+        this.requiresTool = requiresTool;
         this.result = result;
-        this.ingredientPairs = ingredientPairs;
-        this.tool = tool;
     }
 
     @Override
-    public boolean matches(SingleStackRecipeInput inventory, World world) {
-        return ingredientPairs.get(0).getFirst().test(inventory.getStackInSlot(0));
+    public RecipeSerializer<CarpentryRecipe> getSerializer() {
+        return ModRecipeSerializer.CARPENTRY;
     }
 
     @Override
-    public ItemStack craft(SingleStackRecipeInput inventory, RegistryWrapper.WrapperLookup lookup) {
+    public RecipeType<CarpentryRecipe> getType() {
+        return ModRecipeTypes.CARPENTRY;
+    }
+
+    @Override
+    public List<RecipeDisplay> getDisplays() {
+        List<SlotDisplay> ingredientSlotDisplays = this.ingredients.stream()
+                .map(Ingredient::toDisplay)
+                .toList();
+        Optional<SlotDisplay> optionalToolSlotDisplay = Optional.empty();
+
+        if (this.requiresTool) {
+            optionalToolSlotDisplay = Optional.of(new SlotDisplay.ItemSlotDisplay(ModItems.IRON_SAW));
+        }
+
+        return List.of(new CarpentersWorkbenchRecipeDisplay(ingredientSlotDisplays, optionalToolSlotDisplay,
+                this.createResultDisplay(), new SlotDisplay.ItemSlotDisplay(ModItems.CARPENTERS_WORKBENCH)));
+    }
+
+    public SlotDisplay createResultDisplay() {
+        return new SlotDisplay.StackSlotDisplay(this.getResult());
+    }
+
+    @Override
+    public RecipeBookCategory getRecipeBookCategory() {
+        return ModRecipeBookCategory.CARPENTERS_WORKBENCH;
+    }
+
+    @Override
+    public boolean matches(SingleStackRecipeInput singleStackRecipeInput, World world) {
+        return this.ingredients.get(0).test(singleStackRecipeInput.getStackInSlot(0));
+    }
+
+    @Override
+    public ItemStack craft(SingleStackRecipeInput singleStackRecipeInput, RegistryWrapper.WrapperLookup lookup) {
         return result.copy();
     }
 
-    public List<Pair<Ingredient, Integer>> getIngredientPairs() {
-        return ingredientPairs;
+    public List<Ingredient> getIngredients() {
+        return ingredients;
     }
 
-
-    @Override
-    public boolean fits(int width, int height) {
-        return true;
+    public List<Integer> getInputCounts() {
+        return inputCounts;
     }
 
-    @Override
-    public ItemStack getResult(RegistryWrapper.WrapperLookup registriesLookup) {
+    public boolean requiresTool() {
+        return this.requiresTool;
+    }
+
+    public ItemStack getResult() {
         return result;
     }
 
+    //TODO: MAKE AVAILABLE FOR DOUBLE
     @Override
-    public RecipeSerializer<?> getSerializer() {
-        return Serializer.INSTANCE;
-    }
-
-    @Override
-    public RecipeType<?> getType() {
-        return Type.INSTANCE;
-    }
-
-    public String getTool() {
-        return this.tool;
-    }
-
-    public static class Type implements RecipeType<CarpentryRecipe> {
-        public static final Type INSTANCE = new Type();
-        public static final String ID = "carpentry";
-    }
-
-    public static class Serializer implements RecipeSerializer<CarpentryRecipe> {
-
-        public static final Serializer INSTANCE = new Serializer();
-        public static final MapCodec<CarpentryRecipe> CODEC = RecordCodecBuilder.mapCodec(instance -> instance.group(
-                getResultStackCodec().forGetter(recipe -> recipe.result),
-                validateAmount(Codec.pair(Ingredient.DISALLOW_EMPTY_CODEC, Codec.INT.optionalFieldOf("itemCount", 1)
-                        .codec())).fieldOf("ingredients").forGetter(CarpentryRecipe::getIngredientPairs),
-                Codec.STRING.optionalFieldOf("tool", "none").forGetter((CarpentryRecipe recipe) -> recipe.tool)
-        ).apply(instance, CarpentryRecipe::new));
-        private final PacketCodec<RegistryByteBuf, CarpentryRecipe> packetCodec;
-        public static final String ID = "carpentry";
-        private static final int maxIngredients = 2;
-
-        public Serializer() {
-            this.packetCodec = PacketCodec.ofStatic(this::write, this::read);
+    public IngredientPlacement getIngredientPlacement() {
+        if (this.ingredientPlacement == null) {
+            this.ingredientPlacement = IngredientPlacement.forSingleSlot(this.ingredients.get(0));
         }
 
-        private static MapCodec<ItemStack> getResultStackCodec() {
-            return RecordCodecBuilder.mapCodec((instance) ->
-                    instance.group(Registries.ITEM.getCodec().fieldOf("result").forGetter(ItemStack::getItem),
-                            Codec.INT.fieldOf("count").forGetter(ItemStack::getCount)).apply(instance, ItemStack::new));
-        }
+        return this.ingredientPlacement;
+    }
 
-        private static Codec<List<Pair<Ingredient, Integer>>> validateAmount(Codec<Pair<Ingredient, Integer>> delegate) {
-            return delegate.listOf().validate(list -> list.size() > maxIngredients ? DataResult.error(() ->
-                            "Recipe has too many ingredients!") : DataResult.success(list))
-                    .validate(list -> list.isEmpty() ? DataResult.error(() -> "Recipe has no ingredients!") :
-                            DataResult.success(list));
+    @FunctionalInterface
+    public interface RecipeFactory<T extends CarpentryRecipe> {
+        T create(List<Ingredient> ingredients, List<Integer> inputCounts, boolean tool, ItemStack result);
+    }
+
+    public static class Serializer<T extends CarpentryRecipe> implements RecipeSerializer<T> {
+
+        private final MapCodec<T> codec;
+        private final PacketCodec<RegistryByteBuf, T> packetCodec;
+
+        protected Serializer(CarpentryRecipe.RecipeFactory<T> recipeFactory) {
+            this.codec = RecordCodecBuilder.mapCodec(
+                    instance -> instance.group(
+                                    Ingredient.CODEC.listOf(1, 2).fieldOf("ingredients").forGetter(CarpentryRecipe::getIngredients),
+                                    Codec.INT.listOf(1, 2).fieldOf("inputCounts").forGetter(CarpentryRecipe::getInputCounts),
+                                    Codec.BOOL.optionalFieldOf("requiresTool", false).forGetter(CarpentryRecipe::requiresTool),
+                                    ItemStack.VALIDATED_CODEC.fieldOf("result").forGetter(CarpentryRecipe::getResult)
+                            )
+                            .apply(instance, recipeFactory::create)
+            );
+            this.packetCodec = PacketCodec.tuple(
+                    Ingredient.PACKET_CODEC.collect(PacketCodecs.toList()),
+                    CarpentryRecipe::getIngredients,
+                    PacketCodecs.INTEGER.collect(PacketCodecs.toList()),
+                    CarpentryRecipe::getInputCounts,
+                    PacketCodecs.BOOL,
+                    CarpentryRecipe::requiresTool,
+                    ItemStack.PACKET_CODEC,
+                    CarpentryRecipe::getResult,
+                    recipeFactory::create
+            );
         }
 
         @Override
-        public MapCodec<CarpentryRecipe> codec() {
-            return CODEC;
+        public MapCodec<T> codec() {
+            return codec;
         }
 
         @Override
-        public PacketCodec<RegistryByteBuf, CarpentryRecipe> packetCodec() {
+        public PacketCodec<RegistryByteBuf, T> packetCodec() {
             return packetCodec;
-        }
-
-        public CarpentryRecipe read(RegistryByteBuf buf) {
-            DefaultedList<Pair<Ingredient, Integer>> ingredientPairs = DefaultedList.of();
-            int ingredientCount = buf.readInt();
-            Ingredient firstIngredient = Ingredient.PACKET_CODEC.decode(buf);
-            int firstIngredientCount = buf.readInt();
-            ingredientPairs.add(Pair.of(firstIngredient, firstIngredientCount));
-
-            if (ingredientCount == 2) {
-                Ingredient secondIngredient = Ingredient.PACKET_CODEC.decode(buf);
-                int secondIngredientCount = buf.readInt();
-
-                ingredientPairs.add(Pair.of(secondIngredient, secondIngredientCount));
-            }
-
-            ItemStack result = ItemStack.PACKET_CODEC.decode(buf);
-            String tool = buf.readString();
-
-            return new CarpentryRecipe(result, ingredientPairs, tool);
-        }
-
-        public void write(RegistryByteBuf buf, CarpentryRecipe recipe) {
-            List<Pair<Ingredient, Integer>> ingredientPairs = recipe.getIngredientPairs();
-            buf.writeInt(ingredientPairs.size());
-            for (Pair<Ingredient, Integer> ingredientPair : recipe.getIngredientPairs()) {
-                Ingredient.PACKET_CODEC.encode(buf, ingredientPair.getFirst());
-                buf.writeInt(ingredientPair.getSecond());
-            }
-            ItemStack.PACKET_CODEC.encode(buf, recipe.result);
-            buf.writeString(recipe.getTool());
         }
     }
 }

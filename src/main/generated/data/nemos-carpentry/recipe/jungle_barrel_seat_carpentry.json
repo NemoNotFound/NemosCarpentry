@@ -1,14 +1,16 @@
 {
   "type": "nemos-carpentry:carpentry",
-  "count": 1,
   "ingredients": [
-    {
-      "item": "minecraft:jungle_planks"
-    },
-    {
-      "item": "minecraft:iron_ingot"
-    }
+    "minecraft:jungle_planks",
+    "minecraft:iron_ingot"
   ],
-  "result": "nemos-carpentry:jungle_barrel_seat",
-  "tool": "saw"
+  "inputCounts": [
+    1,
+    1
+  ],
+  "requiresTool": true,
+  "result": {
+    "count": 1,
+    "id": "nemos-carpentry:jungle_barrel_seat"
+  }
 }

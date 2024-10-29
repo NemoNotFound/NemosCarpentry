@@ -1,14 +1,15 @@
 {
   "type": "nemos-carpentry:carpentry",
-  "count": 1,
   "ingredients": [
-    {
-      "item": "nemos-carpentry:warped_glass_door_frame"
-    },
-    {
-      "item": "minecraft:gray_stained_glass_pane",
-      "itemCount": 2
-  }
+    "nemos-carpentry:warped_glass_door_frame",
+    "minecraft:gray_stained_glass_pane"
   ],
-  "result": "nemos-carpentry:warped_gray_stained_glass_door"
+  "inputCounts": [
+    1,
+    2
+  ],
+  "result": {
+    "count": 1,
+    "id": "nemos-carpentry:warped_gray_stained_glass_door"
+  }
 }

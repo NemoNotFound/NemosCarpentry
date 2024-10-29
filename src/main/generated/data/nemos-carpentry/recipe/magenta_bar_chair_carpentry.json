@@ -1,14 +1,16 @@
 {
   "type": "nemos-carpentry:carpentry",
-  "count": 1,
   "ingredients": [
-    {
-      "item": "minecraft:magenta_wool"
-    },
-    {
-      "item": "minecraft:iron_block"
-    }
+    "minecraft:magenta_wool",
+    "minecraft:iron_block"
   ],
-  "result": "nemos-carpentry:magenta_bar_chair",
-  "tool": "saw"
+  "inputCounts": [
+    1,
+    1
+  ],
+  "requiresTool": true,
+  "result": {
+    "count": 1,
+    "id": "nemos-carpentry:magenta_bar_chair"
+  }
 }

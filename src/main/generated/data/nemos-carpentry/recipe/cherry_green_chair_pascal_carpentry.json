@@ -1,14 +1,16 @@
 {
   "type": "nemos-carpentry:carpentry",
-  "count": 1,
   "ingredients": [
-    {
-      "item": "nemos-carpentry:cherry_chair_pascal"
-    },
-    {
-      "item": "minecraft:green_wool"
-    }
+    "nemos-carpentry:cherry_chair_pascal",
+    "minecraft:green_wool"
   ],
-  "result": "nemos-carpentry:cherry_green_chair_pascal",
-  "tool": "saw"
+  "inputCounts": [
+    1,
+    1
+  ],
+  "requiresTool": true,
+  "result": {
+    "count": 1,
+    "id": "nemos-carpentry:cherry_green_chair_pascal"
+  }
 }

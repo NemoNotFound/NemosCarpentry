@@ -4,10 +4,9 @@ import com.nemonotfound.nemoscarpentry.block.seats.parents.SitableBlock;
 import com.nemonotfound.nemoscarpentry.entity.ModEntities;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
-import net.minecraft.block.HorizontalFacingBlock;
 import net.minecraft.block.Waterloggable;
 import net.minecraft.entity.Entity;
-import net.minecraft.state.property.DirectionProperty;
+import net.minecraft.entity.SpawnReason;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
@@ -16,7 +15,6 @@ import net.minecraft.world.World;
 
 public class LogSeat extends SitableBlock implements Waterloggable {
 
-    private static final DirectionProperty FACING = HorizontalFacingBlock.FACING;
     private static final VoxelShape SOUTH_SHAPE = Block.createCuboidShape(2, 0, 5, 14, 6, 11);
     private static final VoxelShape WEST_SHAPE = Block.createCuboidShape(5, 0, 2, 11, 6, 14);
     private static final VoxelShape NORTH_SHAPE = Block.createCuboidShape(2, 0, 5, 14, 6, 11);
@@ -33,7 +31,7 @@ public class LogSeat extends SitableBlock implements Waterloggable {
         double posZ = pos.getZ() + 0.5;
         double posY = pos.getY() + this.height;
         float yaw = entityToSit.getYaw();
-        this.chairEntity = ModEntities.CHAIR_ENTITY.create(world);
+        this.chairEntity = ModEntities.CHAIR_ENTITY.create(world, SpawnReason.DISPENSER);
 
         chairEntity.refreshPositionAndAngles(posX, posY, posZ, yaw, 0);
         chairEntity.setNoGravity(true);

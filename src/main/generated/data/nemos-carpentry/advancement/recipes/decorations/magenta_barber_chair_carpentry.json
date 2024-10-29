@@ -1,31 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_gold_block": {
-      "conditions": {
-        "items": [
-          {
-            "items": "minecraft:gold_block"
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
-    },
     "has_magenta_barber_chair": {
       "conditions": {
         "items": [
           {
             "items": "nemos-carpentry:magenta_barber_chair"
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
-    },
-    "has_magenta_wool": {
-      "conditions": {
-        "items": [
-          {
-            "items": "minecraft:magenta_wool"
           }
         ]
       },
@@ -41,8 +21,6 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_magenta_wool",
-      "has_gold_block",
       "has_magenta_barber_chair"
     ]
   ],

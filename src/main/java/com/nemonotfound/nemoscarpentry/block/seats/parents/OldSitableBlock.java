@@ -7,6 +7,7 @@ import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.HorizontalFacingBlock;
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.SpawnReason;
 import net.minecraft.entity.ai.pathing.NavigationType;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.fluid.FluidState;
@@ -101,7 +102,7 @@ public abstract class OldSitableBlock extends HorizontalFacingBlock {
 
         double posY = pos.getY() + this.height;
         float yaw = entityToSit.getYaw();
-        this.chairEntity = ModEntities.CHAIR_ENTITY.create(world);
+        this.chairEntity = ModEntities.CHAIR_ENTITY.create(world, SpawnReason.DISPENSER);
         chairEntity.refreshPositionAndAngles(posX, posY, posZ, yaw, 0);
         chairEntity.setNoGravity(true);
         chairEntity.setSilent(true);

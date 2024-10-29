@@ -1,14 +1,16 @@
 {
   "type": "nemos-carpentry:carpentry",
-  "count": 1,
   "ingredients": [
-    {
-      "item": "minecraft:lime_wool"
-    },
-    {
-      "item": "minecraft:iron_block"
-    }
+    "minecraft:lime_wool",
+    "minecraft:iron_block"
   ],
-  "result": "nemos-carpentry:lime_bar_chair",
-  "tool": "saw"
+  "inputCounts": [
+    1,
+    1
+  ],
+  "requiresTool": true,
+  "result": {
+    "count": 1,
+    "id": "nemos-carpentry:lime_bar_chair"
+  }
 }

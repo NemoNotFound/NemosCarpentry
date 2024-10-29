@@ -1,31 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_blue_wool": {
-      "conditions": {
-        "items": [
-          {
-            "items": "minecraft:blue_wool"
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
-    },
     "has_oak_blue_chair_pascal": {
       "conditions": {
         "items": [
           {
             "items": "nemos-carpentry:oak_blue_chair_pascal"
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
-    },
-    "has_oak_chair_pascal": {
-      "conditions": {
-        "items": [
-          {
-            "items": "nemos-carpentry:oak_chair_pascal"
           }
         ]
       },
@@ -41,8 +21,6 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_oak_chair_pascal",
-      "has_blue_wool",
       "has_oak_blue_chair_pascal"
     ]
   ],

@@ -3,9 +3,7 @@ package com.nemonotfound.nemoscarpentry.block.seats;
 
 import com.nemonotfound.nemoscarpentry.block.seats.parents.SitableBlock;
 import net.minecraft.block.Block;
-import net.minecraft.block.HorizontalFacingBlock;
 import net.minecraft.block.Waterloggable;
-import net.minecraft.state.property.DirectionProperty;
 import net.minecraft.util.function.BooleanBiFunction;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.shape.VoxelShape;
@@ -15,7 +13,6 @@ import java.util.stream.Stream;
 
 public class BarrelSeatBlock extends SitableBlock implements Waterloggable {
 
-    private static final DirectionProperty FACING = HorizontalFacingBlock.FACING;
     private static final VoxelShape NORTH_SHAPE = VoxelShapes.combineAndSimplify(Stream.of(
             Stream.of(
                     Block.createCuboidShape(4, 10, 14, 12, 12, 14.5),

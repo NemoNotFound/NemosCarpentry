@@ -3,7 +3,7 @@
 	"id": "nemos-carpentry",
 	"version": "${version}",
 	"name": "Nemo's Carpentry",
-	"description": "Adds the Woodcutter from Nemo's Woodcutter and some furniture to Minecraft!",
+	"description": "Adds some furniture to Minecraft!",
 	"authors": [
 		"NemoNotFound"
 	],
@@ -24,11 +24,14 @@
 			"com.nemonotfound.nemoscarpentry.NemosCarpentryClient"
 		]
 	},
+	"mixins": [
+		"nemos-carpentry.mixins.json"
+	],
 	"depends": {
-		"fabricloader": ">=0.16.5",
+		"fabricloader": ">=0.16.7",
 		"minecraft": [
-			"~1.21.1",
-			"~1.21"
+			"~1.21.3",
+			"~1.21.2"
 		],
 		"java": ">=21",
 		"fabric-api": "*"
@@ -36,5 +39,24 @@
 	"suggests": {
 		"another-mod": "*"
 	},
-	"accessWidener": "nemos-carpentry.accesswidener"
+	"accessWidener": "nemos-carpentry.accesswidener",
+	"custom": {
+		"loom:injected_interfaces": {
+			"net/minecraft/class_2602": [
+				"com/nemonotfound/nemoscarpentry/network/listener/ModClientPlayPacketListener"
+			],
+			"net/minecraft/class_634": [
+				"com/nemonotfound/nemoscarpentry/interfaces/ModRecipeManagerGetter"
+			],
+			"net/minecraft/class_638": [
+				"com/nemonotfound/nemoscarpentry/interfaces/ModRecipeManagerGetter"
+			],
+			"net/minecraft/class_8673": [
+				"com/nemonotfound/nemoscarpentry/interfaces/MinecraftClientGetter"
+			],
+			"net/minecraft/class_1863": [
+				"com/nemonotfound/nemoscarpentry/interfaces/CarpentryRecipeGetter"
+			]
+		}
+	}
 }

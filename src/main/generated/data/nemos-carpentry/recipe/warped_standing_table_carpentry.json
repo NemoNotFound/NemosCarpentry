@@ -1,11 +1,14 @@
 {
   "type": "nemos-carpentry:carpentry",
-  "count": 1,
   "ingredients": [
-    {
-      "item": "minecraft:warped_stem"
-    }
+    "minecraft:warped_stem"
   ],
-  "result": "nemos-carpentry:warped_standing_table",
-  "tool": "saw"
+  "inputCounts": [
+    1
+  ],
+  "requiresTool": true,
+  "result": {
+    "count": 1,
+    "id": "nemos-carpentry:warped_standing_table"
+  }
 }

@@ -11,26 +11,6 @@
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_birch_planks": {
-      "conditions": {
-        "items": [
-          {
-            "items": "minecraft:birch_planks"
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
-    },
-    "has_iron_ingot": {
-      "conditions": {
-        "items": [
-          {
-            "items": "minecraft:iron_ingot"
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
-    },
     "has_the_recipe": {
       "conditions": {
         "recipe": "minecraft:birch_barrel_seat_carpentry"
@@ -41,8 +21,6 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_birch_planks",
-      "has_iron_ingot",
       "has_birch_barrel_seat"
     ]
   ],

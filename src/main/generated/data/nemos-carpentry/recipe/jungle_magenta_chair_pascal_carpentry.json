@@ -1,14 +1,16 @@
 {
   "type": "nemos-carpentry:carpentry",
-  "count": 1,
   "ingredients": [
-    {
-      "item": "nemos-carpentry:jungle_chair_pascal"
-    },
-    {
-      "item": "minecraft:magenta_wool"
-    }
+    "nemos-carpentry:jungle_chair_pascal",
+    "minecraft:magenta_wool"
   ],
-  "result": "nemos-carpentry:jungle_magenta_chair_pascal",
-  "tool": "saw"
+  "inputCounts": [
+    1,
+    1
+  ],
+  "requiresTool": true,
+  "result": {
+    "count": 1,
+    "id": "nemos-carpentry:jungle_magenta_chair_pascal"
+  }
 }

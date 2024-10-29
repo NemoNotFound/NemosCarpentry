@@ -1,14 +1,16 @@
 {
   "type": "nemos-carpentry:carpentry",
-  "count": 1,
   "ingredients": [
-    {
-      "item": "minecraft:oak_planks"
-    },
-    {
-      "item": "minecraft:iron_block"
-    }
+    "minecraft:oak_planks",
+    "minecraft:iron_block"
   ],
-  "result": "nemos-carpentry:oak_chair_pascal",
-  "tool": "saw"
+  "inputCounts": [
+    1,
+    1
+  ],
+  "requiresTool": true,
+  "result": {
+    "count": 1,
+    "id": "nemos-carpentry:oak_chair_pascal"
+  }
 }

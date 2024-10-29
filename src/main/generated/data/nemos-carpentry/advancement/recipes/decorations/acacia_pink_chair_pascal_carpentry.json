@@ -1,31 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_acacia_chair_pascal": {
-      "conditions": {
-        "items": [
-          {
-            "items": "nemos-carpentry:acacia_chair_pascal"
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
-    },
     "has_acacia_pink_chair_pascal": {
       "conditions": {
         "items": [
           {
             "items": "nemos-carpentry:acacia_pink_chair_pascal"
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
-    },
-    "has_pink_wool": {
-      "conditions": {
-        "items": [
-          {
-            "items": "minecraft:pink_wool"
           }
         ]
       },
@@ -41,8 +21,6 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_acacia_chair_pascal",
-      "has_pink_wool",
       "has_acacia_pink_chair_pascal"
     ]
   ],
