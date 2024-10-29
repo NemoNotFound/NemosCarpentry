@@ -20,4 +20,9 @@ public class PlayerManagerMixin {
     private void onPlayerConnect(ClientConnection connection, ServerPlayerEntity player, ConnectedClientData clientData, CallbackInfo ci, @Local ServerPlayNetworkHandler serverPlayNetworkHandler, @Local ServerRecipeManager serverRecipeManager) {
         serverPlayNetworkHandler.sendPacket(new SynchronizeModRecipesS2CPacket(serverRecipeManager.nemo_sCarpentry$getCarpentryRecipeForSync()));
     }
+
+    @Inject(method = "onDataPacksReloaded", at = @At(value = "INVOKE", target = "Lnet/minecraft/server/network/ServerPlayNetworkHandler;sendPacket(Lnet/minecraft/network/packet/Packet;)V"))
+    private void onDataPacksReloaded(CallbackInfo ci, @Local ServerRecipeManager serverRecipeManager, @Local ServerPlayerEntity serverPlayerEntity) {
+        serverPlayerEntity.networkHandler.sendPacket(new SynchronizeModRecipesS2CPacket(serverRecipeManager.nemo_sCarpentry$getCarpentryRecipeForSync()));
+    }
 }

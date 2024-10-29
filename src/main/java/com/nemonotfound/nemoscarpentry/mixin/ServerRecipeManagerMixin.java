@@ -44,17 +44,17 @@ public abstract class ServerRecipeManagerMixin implements CarpentryRecipeGetter 
 
     @Inject(method = "initialize", at = @At("TAIL"))
     private void initialize(FeatureSet features, CallbackInfo ci) {
-        List<CarpentryRecipeDisplay.GroupEntry> woodcuttingRecipeEntries = new ArrayList<>();
+        List<CarpentryRecipeDisplay.GroupEntry> carpentryRecipeEntries = new ArrayList<>();
         this.preparedRecipes.recipes().forEach(
                 recipeEntry -> {
                     Recipe<?> recipe = recipeEntry.value();
                     if (recipe instanceof CarpentryRecipe carpentryRecipe) {
-                        woodcuttingRecipeEntries.add(new CarpentryRecipeDisplay.GroupEntry(carpentryRecipe.getIngredients(),
+                        carpentryRecipeEntries.add(new CarpentryRecipeDisplay.GroupEntry(carpentryRecipe.getIngredients(),
                                 carpentryRecipe.getInputCounts(), carpentryRecipe.requiresTool(), new CarpentryRecipeDisplay(carpentryRecipe.createResultDisplay(), Optional.of((RecipeEntry<CarpentryRecipe>) recipeEntry))));
                     }
                 }
         );
 
-        this.carpentryRecipes = new CarpentryRecipeDisplay.Grouping(woodcuttingRecipeEntries);
+        this.carpentryRecipes = new CarpentryRecipeDisplay.Grouping(carpentryRecipeEntries);
     }
 }

@@ -3,17 +3,19 @@
   "minVersion": "0.8",
   "package": "com.nemonotfound.nemoscarpentry.mixin",
   "compatibilityLevel": "JAVA_17",
-  "mixins": [],
+  "mixins": [
+    "PlayerManagerMixin",
+    "ServerRecipeManagerMixin",
+    "PlayStateFactoriesMixin",
+    "ClientWorldMixin"
+  ],
   "client": [
     "ClientPlayNetworkHandlerMixin",
     "ClientPlayPacketListenerMixin",
-    "ClientWorldMixin",
-    "ClientCommonNetworkHandlerMixin",
-    "ServerRecipeManagerMixin",
-    "PlayerManagerMixin",
-    "PlayStateFactoriesMixin"
+    "ClientCommonNetworkHandlerMixin"
   ],
-  "server": [],
+  "server": [
+  ],
   "injectors": {
     "defaultRequire": 1
   }
