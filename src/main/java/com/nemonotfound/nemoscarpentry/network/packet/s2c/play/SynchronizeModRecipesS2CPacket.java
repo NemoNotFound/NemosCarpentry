@@ -17,7 +17,7 @@ public record SynchronizeModRecipesS2CPacket(CarpentryRecipeDisplay.Grouping car
     );
 
     @Override
-    public PacketType<? extends Packet<ClientPlayPacketListener>> getPacketId() {
+    public PacketType<? extends Packet<ClientPlayPacketListener>> getPacketType() {
         return ModPlayPackets.UPDATE_RECIPES;
     }
 

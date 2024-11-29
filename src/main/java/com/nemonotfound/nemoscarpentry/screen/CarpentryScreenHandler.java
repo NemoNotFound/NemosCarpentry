@@ -226,7 +226,7 @@ public class CarpentryScreenHandler extends ScreenHandler {
     }
 
     private boolean isItemSecondIngredient(List<Ingredient> ingredients, ItemStack secondIngredient) {
-        return ingredients.size() == 2 && itemIsInMatchingStacks(ingredients.get(1).getMatchingItems(), secondIngredient.getItem());
+        return ingredients.size() == 2 && itemIsInMatchingStacks(ingredients.get(1).getMatchingItems().toList(), secondIngredient.getItem());
     }
 
     @Override
@@ -332,7 +332,7 @@ public class CarpentryScreenHandler extends ScreenHandler {
     private boolean hasRecipeIngredients(int index) {
         CarpentryRecipeDisplay.GroupEntry recipe = availableRecipes.entries().get(index);
         List<Ingredient> ingredients = recipe.ingredients();
-        List<RegistryEntry<Item>> firstIngredientMatchingItems = ingredients.get(0).getMatchingItems();
+        List<RegistryEntry<Item>> firstIngredientMatchingItems = ingredients.get(0).getMatchingItems().toList();
         List<Integer> inputCounts = recipe.inputCounts();
         ItemStack firstInputItemStack = this.inputSlotOne.getStack();
 
@@ -344,7 +344,7 @@ public class CarpentryScreenHandler extends ScreenHandler {
             Ingredient secondIngredient = ingredients.get(1);
             ItemStack secondInputItemStack = this.inputSlotTwo.getStack();
 
-            hasSecondInputIngredient = itemIsInMatchingStacks(secondIngredient.getMatchingItems(), secondInputItemStack.getItem()) &&
+            hasSecondInputIngredient = itemIsInMatchingStacks(secondIngredient.getMatchingItems().toList(), secondInputItemStack.getItem()) &&
                     secondInputItemStack.getCount() >= inputCounts.get(1);
         }
 

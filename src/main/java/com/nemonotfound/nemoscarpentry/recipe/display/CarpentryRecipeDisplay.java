@@ -27,7 +27,7 @@ public record CarpentryRecipeDisplay(SlotDisplay optionDisplay, Optional<RecipeE
                     GroupEntry::ingredients,
                     PacketCodecs.INTEGER.collect(PacketCodecs.toList()),
                     GroupEntry::inputCounts,
-                    PacketCodecs.BOOL,
+                    PacketCodecs.BOOLEAN,
                     GroupEntry::requiresTool,
                     CarpentryRecipeDisplay.codec(),
                     GroupEntry::recipe,

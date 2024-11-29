@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "nemos-carpentry:item/doors/crimson/crimson_brown_stained_glass_door"
-  }
-}

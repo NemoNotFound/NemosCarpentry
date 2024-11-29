@@ -4,11 +4,11 @@ import com.nemonotfound.nemoscarpentry.block.ModBlocks;
 import com.nemonotfound.nemoscarpentry.block.enums.BenchPart;
 import com.nemonotfound.nemoscarpentry.item.ModItems;
 import com.nemonotfound.nemoscarpentry.property.ModProperties;
+import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
-import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
-import net.minecraft.data.client.*;
+import net.minecraft.client.data.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.state.property.Properties;
 import net.minecraft.util.Identifier;
@@ -157,17 +157,17 @@ public class ModelGenerator extends FabricModelProvider {
         generateBlockModel(blockStateModelGenerator, Blocks.SPRUCE_PLANKS, Blocks.SPRUCE_LOG, ModBlocks.SPRUCE_COFFEE_TABLE, ModModels.COFFEE_TABLE);
         generateBlockModel(blockStateModelGenerator, Blocks.WARPED_PLANKS, Blocks.WARPED_STEM, ModBlocks.WARPED_COFFEE_TABLE, ModModels.COFFEE_TABLE);
 
-        generateBarrelSeatModel(blockStateModelGenerator, ModBlocks.ACACIA_BARREL_SEAT, Blocks.ACACIA_PLANKS, ModModels.BARREL_SEAT);
-        generateBarrelSeatModel(blockStateModelGenerator, ModBlocks.BAMBOO_BARREL_SEAT, Blocks.BAMBOO_PLANKS, ModModels.BARREL_SEAT);
-        generateBarrelSeatModel(blockStateModelGenerator, ModBlocks.BIRCH_BARREL_SEAT, Blocks.BIRCH_PLANKS, ModModels.BARREL_SEAT);
-        generateBarrelSeatModel(blockStateModelGenerator, ModBlocks.CHERRY_BARREL_SEAT, Blocks.CHERRY_PLANKS, ModModels.BARREL_SEAT);
-        generateBarrelSeatModel(blockStateModelGenerator, ModBlocks.CRIMSON_BARREL_SEAT, Blocks.CRIMSON_PLANKS, ModModels.BARREL_SEAT);
-        generateBarrelSeatModel(blockStateModelGenerator, ModBlocks.DARK_OAK_BARREL_SEAT, Blocks.DARK_OAK_PLANKS, ModModels.BARREL_SEAT);
-        generateBarrelSeatModel(blockStateModelGenerator, ModBlocks.JUNGLE_BARREL_SEAT, Blocks.JUNGLE_PLANKS, ModModels.BARREL_SEAT);
-        generateBarrelSeatModel(blockStateModelGenerator, ModBlocks.MANGROVE_BARREL_SEAT, Blocks.MANGROVE_PLANKS, ModModels.BARREL_SEAT);
-        generateBarrelSeatModel(blockStateModelGenerator, ModBlocks.OAK_BARREL_SEAT, Blocks.OAK_PLANKS, ModModels.BARREL_SEAT);
-        generateBarrelSeatModel(blockStateModelGenerator, ModBlocks.SPRUCE_BARREL_SEAT, Blocks.SPRUCE_PLANKS, ModModels.BARREL_SEAT);
-        generateBarrelSeatModel(blockStateModelGenerator, ModBlocks.WARPED_BARREL_SEAT, Blocks.WARPED_PLANKS, ModModels.BARREL_SEAT);
+        generateBarrelSeatModel(blockStateModelGenerator, ModBlocks.ACACIA_BARREL_SEAT, Blocks.ACACIA_PLANKS);
+        generateBarrelSeatModel(blockStateModelGenerator, ModBlocks.BAMBOO_BARREL_SEAT, Blocks.BAMBOO_PLANKS);
+        generateBarrelSeatModel(blockStateModelGenerator, ModBlocks.BIRCH_BARREL_SEAT, Blocks.BIRCH_PLANKS);
+        generateBarrelSeatModel(blockStateModelGenerator, ModBlocks.CHERRY_BARREL_SEAT, Blocks.CHERRY_PLANKS);
+        generateBarrelSeatModel(blockStateModelGenerator, ModBlocks.CRIMSON_BARREL_SEAT, Blocks.CRIMSON_PLANKS);
+        generateBarrelSeatModel(blockStateModelGenerator, ModBlocks.DARK_OAK_BARREL_SEAT, Blocks.DARK_OAK_PLANKS);
+        generateBarrelSeatModel(blockStateModelGenerator, ModBlocks.JUNGLE_BARREL_SEAT, Blocks.JUNGLE_PLANKS);
+        generateBarrelSeatModel(blockStateModelGenerator, ModBlocks.MANGROVE_BARREL_SEAT, Blocks.MANGROVE_PLANKS);
+        generateBarrelSeatModel(blockStateModelGenerator, ModBlocks.OAK_BARREL_SEAT, Blocks.OAK_PLANKS);
+        generateBarrelSeatModel(blockStateModelGenerator, ModBlocks.SPRUCE_BARREL_SEAT, Blocks.SPRUCE_PLANKS);
+        generateBarrelSeatModel(blockStateModelGenerator, ModBlocks.WARPED_BARREL_SEAT, Blocks.WARPED_PLANKS);
 
         generateAllTextureModel(blockStateModelGenerator, Blocks.ACACIA_LOG, Blocks.ACACIA_PLANKS, ModBlocks.ACACIA_STANDING_TABLE, ModModels.STANDING_TABLE);
         generateAllTextureModel(blockStateModelGenerator, Blocks.BAMBOO_BLOCK, Blocks.BAMBOO_PLANKS, ModBlocks.BAMBOO_STANDING_TABLE, ModModels.STANDING_TABLE);
@@ -414,19 +414,40 @@ public class ModelGenerator extends FabricModelProvider {
         generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.WARPED_PLANKS, Blocks.PURPLE_WOOL, Blocks.IRON_BLOCK, ModBlocks.WARPED_PURPLE_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
         generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.WARPED_PLANKS, Blocks.MAGENTA_WOOL, Blocks.IRON_BLOCK, ModBlocks.WARPED_MAGENTA_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
         generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.WARPED_PLANKS, Blocks.PINK_WOOL, Blocks.IRON_BLOCK, ModBlocks.WARPED_PINK_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+
+        generateLogSeatModel(blockStateModelGenerator, ModBlocks.ACACIA_LOG_SEAT);
+        generateLogSeatModel(blockStateModelGenerator, ModBlocks.BIRCH_LOG_SEAT);
+        generateLogSeatModel(blockStateModelGenerator, ModBlocks.CHERRY_LOG_SEAT);
+        generateLogSeatModel(blockStateModelGenerator, ModBlocks.CRIMSON_STEM_SEAT);
+        generateLogSeatModel(blockStateModelGenerator, ModBlocks.DARK_OAK_LOG_SEAT);
+        generateLogSeatModel(blockStateModelGenerator, ModBlocks.JUNGLE_LOG_SEAT);
+        generateLogSeatModel(blockStateModelGenerator, ModBlocks.MANGROVE_LOG_SEAT);
+        generateLogSeatModel(blockStateModelGenerator, ModBlocks.OAK_LOG_SEAT);
+        generateLogSeatModel(blockStateModelGenerator, ModBlocks.SPRUCE_LOG_SEAT);
+        generateLogSeatModel(blockStateModelGenerator, ModBlocks.WARPED_STEM_SEAT);
+    }
+
+    private void generateLogSeatModel(BlockStateModelGenerator blockStateModelGenerator, Block block) {
+        TextureMap textureMap = TextureMap.side(block)
+                .put(TextureKey.TOP, TextureMap.getId(block).withSuffixedPath("_top"))
+                .put(TextureKey.PARTICLE, TextureMap.getId(block));
+        ModModels.LOG_SEAT.upload(block, textureMap, blockStateModelGenerator.modelCollector);
+
+        blockStateModelGenerator.registerNorthDefaultHorizontalRotation(block);
     }
 
     private void generateLadderBlockModel(Block block, BlockStateModelGenerator blockStateModelGenerator) {
         TextureMap textureMap = TextureMap.texture(block).put(TextureKey.PARTICLE, TextureMap.getId(block));
         ModModels.LADDER.upload(block, textureMap, blockStateModelGenerator.modelCollector);
         blockStateModelGenerator.registerNorthDefaultHorizontalRotation(block);
+        blockStateModelGenerator.registerItemModel(block);
     }
 
-    private void generateBarrelSeatModel(BlockStateModelGenerator blockStateModelGenerator, Block block, Block textureBlock, Model model) {
+    private void generateBarrelSeatModel(BlockStateModelGenerator blockStateModelGenerator, Block block, Block textureBlock) {
         Identifier identifier = Registries.BLOCK.getId(block);
         TextureMap textureMap = TextureMap.texture(textureBlock).put(TextureKey.SIDE, identifier
                         .withPath("block/dark_iron_block")).put(TextureKey.PARTICLE, TextureMap.getId(textureBlock));
-        model.upload(block, textureMap, blockStateModelGenerator.modelCollector);
+        ModModels.BARREL_SEAT.upload(block, textureMap, blockStateModelGenerator.modelCollector);
 
         blockStateModelGenerator.registerNorthDefaultHorizontalRotation(block);
     }
@@ -593,36 +614,214 @@ public class ModelGenerator extends FabricModelProvider {
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
-        registerGeneratedBlockModel(ModBlocks.ACACIA_LADDER, itemModelGenerator);
-        registerGeneratedBlockModel(ModBlocks.BAMBOO_LADDER, itemModelGenerator);
-        registerGeneratedBlockModel(ModBlocks.BOUND_BAMBOO_LADDER, itemModelGenerator);
-        registerGeneratedBlockModel(ModBlocks.BIRCH_LADDER, itemModelGenerator);
-        registerGeneratedBlockModel(ModBlocks.CHERRY_LADDER, itemModelGenerator);
-        registerGeneratedBlockModel(ModBlocks.CRIMSON_LADDER, itemModelGenerator);
-        registerGeneratedBlockModel(ModBlocks.DARK_OAK_LADDER, itemModelGenerator);
-        registerGeneratedBlockModel(ModBlocks.JUNGLE_LADDER, itemModelGenerator);
-        registerGeneratedBlockModel(ModBlocks.MANGROVE_LADDER, itemModelGenerator);
-        registerGeneratedBlockModel(ModBlocks.SPRUCE_LADDER, itemModelGenerator);
-        registerGeneratedBlockModel(ModBlocks.WARPED_LADDER, itemModelGenerator);
+        itemModelGenerator.register(ModItems.ACACIA_BLACK_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ACACIA_BLUE_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ACACIA_BROWN_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ACACIA_CYAN_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ACACIA_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ACACIA_GLASS_DOOR_FRAME, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ACACIA_GRAY_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ACACIA_GREEN_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ACACIA_LIGHT_BLUE_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ACACIA_LIGHT_GRAY_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ACACIA_LIME_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ACACIA_MAGENTA_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ACACIA_ORANGE_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ACACIA_PINK_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ACACIA_PURPLE_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ACACIA_RED_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ACACIA_WHITE_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ACACIA_YELLOW_STAINED_GLASS_DOOR, Models.GENERATED);
 
-        itemModelGenerator.register(ModBlocks.ACACIA_CAMPFIRE.asItem(), Models.GENERATED);
-        itemModelGenerator.register(ModBlocks.BIRCH_CAMPFIRE.asItem(), Models.GENERATED);
-        itemModelGenerator.register(ModBlocks.CHERRY_CAMPFIRE.asItem(), Models.GENERATED);
-        itemModelGenerator.register(ModBlocks.CRIMSON_CAMPFIRE.asItem(), Models.GENERATED);
-        itemModelGenerator.register(ModBlocks.DARK_OAK_CAMPFIRE.asItem(), Models.GENERATED);
-        itemModelGenerator.register(ModBlocks.JUNGLE_CAMPFIRE.asItem(), Models.GENERATED);
-        itemModelGenerator.register(ModBlocks.MANGROVE_CAMPFIRE.asItem(), Models.GENERATED);
-        itemModelGenerator.register(ModBlocks.SPRUCE_CAMPFIRE.asItem(), Models.GENERATED);
-        itemModelGenerator.register(ModBlocks.WARPED_CAMPFIRE.asItem(), Models.GENERATED);
-        itemModelGenerator.register(ModBlocks.ACACIA_SOUL_CAMPFIRE.asItem(), Models.GENERATED);
-        itemModelGenerator.register(ModBlocks.BIRCH_SOUL_CAMPFIRE.asItem(), Models.GENERATED);
-        itemModelGenerator.register(ModBlocks.CHERRY_SOUL_CAMPFIRE.asItem(), Models.GENERATED);
-        itemModelGenerator.register(ModBlocks.CRIMSON_SOUL_CAMPFIRE.asItem(), Models.GENERATED);
-        itemModelGenerator.register(ModBlocks.DARK_OAK_SOUL_CAMPFIRE.asItem(), Models.GENERATED);
-        itemModelGenerator.register(ModBlocks.JUNGLE_SOUL_CAMPFIRE.asItem(), Models.GENERATED);
-        itemModelGenerator.register(ModBlocks.MANGROVE_SOUL_CAMPFIRE.asItem(), Models.GENERATED);
-        itemModelGenerator.register(ModBlocks.SPRUCE_SOUL_CAMPFIRE.asItem(), Models.GENERATED);
-        itemModelGenerator.register(ModBlocks.WARPED_SOUL_CAMPFIRE.asItem(), Models.GENERATED);
+        itemModelGenerator.register(ModItems.BAMBOO_BLACK_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BAMBOO_BLUE_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BAMBOO_BROWN_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BAMBOO_CYAN_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BAMBOO_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BAMBOO_GLASS_DOOR_FRAME, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BAMBOO_GRAY_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BAMBOO_GREEN_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BAMBOO_LIGHT_BLUE_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BAMBOO_LIGHT_GRAY_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BAMBOO_LIME_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BAMBOO_MAGENTA_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BAMBOO_ORANGE_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BAMBOO_PINK_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BAMBOO_PURPLE_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BAMBOO_RED_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BAMBOO_WHITE_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BAMBOO_YELLOW_STAINED_GLASS_DOOR, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.BIRCH_BLACK_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BIRCH_BLUE_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BIRCH_BROWN_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BIRCH_CYAN_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BIRCH_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BIRCH_GLASS_DOOR_FRAME, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BIRCH_GRAY_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BIRCH_GREEN_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BIRCH_LIGHT_BLUE_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BIRCH_LIGHT_GRAY_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BIRCH_LIME_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BIRCH_MAGENTA_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BIRCH_ORANGE_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BIRCH_PINK_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BIRCH_PURPLE_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BIRCH_RED_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BIRCH_WHITE_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BIRCH_YELLOW_STAINED_GLASS_DOOR, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.CHERRY_BLACK_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CHERRY_BLUE_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CHERRY_BROWN_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CHERRY_CYAN_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CHERRY_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CHERRY_GLASS_DOOR_FRAME, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CHERRY_GRAY_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CHERRY_GREEN_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CHERRY_LIGHT_BLUE_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CHERRY_LIGHT_GRAY_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CHERRY_LIME_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CHERRY_MAGENTA_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CHERRY_ORANGE_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CHERRY_PINK_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CHERRY_PURPLE_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CHERRY_RED_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CHERRY_WHITE_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CHERRY_YELLOW_STAINED_GLASS_DOOR, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.CRIMSON_BLACK_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CRIMSON_BLUE_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CRIMSON_BROWN_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CRIMSON_CYAN_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CRIMSON_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CRIMSON_GLASS_DOOR_FRAME, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CRIMSON_GRAY_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CRIMSON_GREEN_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CRIMSON_LIGHT_BLUE_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CRIMSON_LIGHT_GRAY_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CRIMSON_LIME_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CRIMSON_MAGENTA_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CRIMSON_ORANGE_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CRIMSON_PINK_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CRIMSON_PURPLE_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CRIMSON_RED_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CRIMSON_WHITE_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CRIMSON_YELLOW_STAINED_GLASS_DOOR, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.DARK_OAK_BLACK_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.DARK_OAK_BLUE_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.DARK_OAK_BROWN_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.DARK_OAK_CYAN_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.DARK_OAK_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.DARK_OAK_GLASS_DOOR_FRAME, Models.GENERATED);
+        itemModelGenerator.register(ModItems.DARK_OAK_GRAY_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.DARK_OAK_GREEN_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.DARK_OAK_LIGHT_BLUE_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.DARK_OAK_LIGHT_GRAY_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.DARK_OAK_LIME_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.DARK_OAK_MAGENTA_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.DARK_OAK_ORANGE_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.DARK_OAK_PINK_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.DARK_OAK_PURPLE_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.DARK_OAK_RED_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.DARK_OAK_WHITE_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.DARK_OAK_YELLOW_STAINED_GLASS_DOOR, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.JUNGLE_BLACK_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.JUNGLE_BLUE_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.JUNGLE_BROWN_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.JUNGLE_CYAN_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.JUNGLE_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.JUNGLE_GLASS_DOOR_FRAME, Models.GENERATED);
+        itemModelGenerator.register(ModItems.JUNGLE_GRAY_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.JUNGLE_GREEN_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.JUNGLE_LIGHT_BLUE_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.JUNGLE_LIGHT_GRAY_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.JUNGLE_LIME_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.JUNGLE_MAGENTA_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.JUNGLE_ORANGE_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.JUNGLE_PINK_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.JUNGLE_PURPLE_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.JUNGLE_RED_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.JUNGLE_WHITE_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.JUNGLE_YELLOW_STAINED_GLASS_DOOR, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.MANGROVE_BLACK_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.MANGROVE_BLUE_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.MANGROVE_BROWN_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.MANGROVE_CYAN_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.MANGROVE_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.MANGROVE_GLASS_DOOR_FRAME, Models.GENERATED);
+        itemModelGenerator.register(ModItems.MANGROVE_GRAY_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.MANGROVE_GREEN_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.MANGROVE_LIGHT_BLUE_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.MANGROVE_LIGHT_GRAY_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.MANGROVE_LIME_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.MANGROVE_MAGENTA_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.MANGROVE_ORANGE_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.MANGROVE_PINK_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.MANGROVE_PURPLE_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.MANGROVE_RED_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.MANGROVE_WHITE_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.MANGROVE_YELLOW_STAINED_GLASS_DOOR, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.OAK_BLACK_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.OAK_BLUE_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.OAK_BROWN_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.OAK_CYAN_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.OAK_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.OAK_GLASS_DOOR_FRAME, Models.GENERATED);
+        itemModelGenerator.register(ModItems.OAK_GRAY_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.OAK_GREEN_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.OAK_LIGHT_BLUE_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.OAK_LIGHT_GRAY_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.OAK_LIME_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.OAK_MAGENTA_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.OAK_ORANGE_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.OAK_PINK_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.OAK_PURPLE_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.OAK_RED_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.OAK_WHITE_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.OAK_YELLOW_STAINED_GLASS_DOOR, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.SPRUCE_BLACK_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SPRUCE_BLUE_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SPRUCE_BROWN_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SPRUCE_CYAN_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SPRUCE_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SPRUCE_GLASS_DOOR_FRAME, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SPRUCE_GRAY_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SPRUCE_GREEN_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SPRUCE_LIGHT_BLUE_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SPRUCE_LIGHT_GRAY_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SPRUCE_LIME_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SPRUCE_MAGENTA_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SPRUCE_ORANGE_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SPRUCE_PINK_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SPRUCE_PURPLE_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SPRUCE_RED_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SPRUCE_WHITE_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SPRUCE_YELLOW_STAINED_GLASS_DOOR, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.WARPED_BLACK_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.WARPED_BLUE_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.WARPED_BROWN_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.WARPED_CYAN_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.WARPED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.WARPED_GLASS_DOOR_FRAME, Models.GENERATED);
+        itemModelGenerator.register(ModItems.WARPED_GRAY_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.WARPED_GREEN_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.WARPED_LIGHT_BLUE_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.WARPED_LIGHT_GRAY_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.WARPED_LIME_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.WARPED_MAGENTA_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.WARPED_ORANGE_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.WARPED_PINK_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.WARPED_PURPLE_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.WARPED_RED_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.WARPED_WHITE_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.WARPED_YELLOW_STAINED_GLASS_DOOR, Models.GENERATED);
 
         itemModelGenerator.register(ModBlocks.ACACIA_PARK_BENCH.asItem(), ModModels.PARK_BENCH);
         itemModelGenerator.register(ModBlocks.BAMBOO_PARK_BENCH.asItem(), ModModels.PARK_BENCH);
@@ -642,9 +841,5 @@ public class ModelGenerator extends FabricModelProvider {
         itemModelGenerator.register(ModItems.GOLDEN_SAW, Models.HANDHELD);
         itemModelGenerator.register(ModItems.DIAMOND_SAW, Models.HANDHELD);
         itemModelGenerator.register(ModItems.NETHERITE_SAW, Models.HANDHELD);
-    }
-
-    private void registerGeneratedBlockModel(Block block, ItemModelGenerator itemModelGenerator) {
-        Models.GENERATED.upload(ModelIds.getItemModelId(block.asItem()), TextureMap.layer0(block), itemModelGenerator.writer);
     }
 }

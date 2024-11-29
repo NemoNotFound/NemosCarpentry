@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "nemos-carpentry:item/acacia_white_stained_glass_door"
+  }
+}

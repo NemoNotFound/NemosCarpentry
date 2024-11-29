@@ -1,0 +1,8 @@
+{
+  "parent": "nemos-carpentry:block/seats/log_seat",
+  "textures": {
+    "particle": "nemos-carpentry:block/warped_stem_seat",
+    "side": "nemos-carpentry:block/warped_stem_seat",
+    "top": "nemos-carpentry:block/warped_stem_seat_top"
+  }
+}

@@ -133,7 +133,7 @@ public class CarpentryRecipe implements Recipe<SingleStackRecipeInput> {
                     CarpentryRecipe::getIngredients,
                     PacketCodecs.INTEGER.collect(PacketCodecs.toList()),
                     CarpentryRecipe::getInputCounts,
-                    PacketCodecs.BOOL,
+                    PacketCodecs.BOOLEAN,
                     CarpentryRecipe::requiresTool,
                     ItemStack.PACKET_CODEC,
                     CarpentryRecipe::getResult,

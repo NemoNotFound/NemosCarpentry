@@ -1,7 +1,7 @@
 package com.nemonotfound.nemoscarpentry.datagen;
 
-import net.minecraft.data.client.Model;
-import net.minecraft.data.client.TextureKey;
+import net.minecraft.client.data.Model;
+import net.minecraft.client.data.TextureKey;
 import net.minecraft.util.Identifier;
 
 import java.util.Optional;
@@ -30,6 +30,7 @@ public class ModModels {
     public static final Model LADDER = block("ladders/ladder", TextureKey.TEXTURE, TextureKey.PARTICLE);
     public static final Model COFFEE_TABLE = block("tables/coffee_table", TextureKey.ALL, TextureKey.TEXTURE, TextureKey.BOTTOM, TextureKey.PARTICLE);
     public static final Model BARREL_SEAT = block("seats/barrel_seat", TextureKey.TEXTURE, TextureKey.SIDE, TextureKey.PARTICLE);
+    public static final Model LOG_SEAT = block("seats/log_seat", TextureKey.SIDE, TextureKey.TOP, TextureKey.PARTICLE);
 
     private static Model block(String parent, TextureKey... requiredTextureKeys) {
         return new Model(Optional.of(Identifier.of(MOD_ID, "block/" + parent)), Optional.empty(), requiredTextureKeys);

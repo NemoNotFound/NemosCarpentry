@@ -11,7 +11,7 @@ public class NemosCarpentryDataGenerator implements DataGeneratorEntrypoint {
     public void onInitializeDataGenerator(FabricDataGenerator fabricDataGenerator) {
         FabricDataGenerator.Pack pack = fabricDataGenerator.createPack();
 
-        pack.addProvider(RecipeGenerator::new);
+        pack.addProvider(ModRecipeProvider::new);
         pack.addProvider(LootTableGenerator::new);
         pack.addProvider(ModelGenerator::new);
         pack.addProvider(BlockTagGenerator::new);
