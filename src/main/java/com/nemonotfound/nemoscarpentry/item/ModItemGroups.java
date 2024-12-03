@@ -2,8 +2,9 @@ package com.nemonotfound.nemoscarpentry.item;
 
 import com.nemonotfound.nemoscarpentry.block.ModBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
-import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.item.*;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
@@ -13,7 +14,6 @@ import net.minecraft.util.Identifier;
 
 import static com.nemonotfound.nemoscarpentry.NemosCarpentry.MOD_ID;
 import static com.nemonotfound.nemoscarpentry.item.ModItems.*;
-import static net.minecraft.item.Items.register;
 
 public class ModItemGroups {
 
@@ -45,6 +45,7 @@ public class ModItemGroups {
                     entries.add(ModItems.BOUND_BAMBOO_LADDER);
                     entries.add(ModItems.BIRCH_LADDER);
                     entries.add(ModItems.CHERRY_LADDER);
+                    entries.add(ModItems.PALE_OAK_LADDER);
                     entries.add(ModItems.CRIMSON_LADDER);
                     entries.add(ModItems.DARK_OAK_LADDER);
                     entries.add(ModItems.JUNGLE_LADDER);
@@ -55,6 +56,7 @@ public class ModItemGroups {
                     entries.add(ModItems.BAMBOO_CHAIR);
                     entries.add(ModItems.BIRCH_CHAIR);
                     entries.add(ModItems.CHERRY_CHAIR);
+                    entries.add(ModItems.PALE_OAK_CHAIR);
                     entries.add(ModItems.CRIMSON_CHAIR);
                     entries.add(ModItems.DARK_OAK_CHAIR);
                     entries.add(ModItems.JUNGLE_CHAIR);
@@ -66,6 +68,7 @@ public class ModItemGroups {
                     entries.add(ModItems.BAMBOO_CHAIR_FELIX);
                     entries.add(ModItems.BIRCH_CHAIR_FELIX);
                     entries.add(ModItems.CHERRY_CHAIR_FELIX);
+                    entries.add(ModItems.PALE_OAK_CHAIR_FELIX);
                     entries.add(ModItems.CRIMSON_CHAIR_FELIX);
                     entries.add(ModItems.DARK_OAK_CHAIR_FELIX);
                     entries.add(ModItems.JUNGLE_CHAIR_FELIX);
@@ -77,6 +80,7 @@ public class ModItemGroups {
                     entries.add(ModItems.BAMBOO_CHAIR_LUKAS);
                     entries.add(ModItems.BIRCH_CHAIR_LUKAS);
                     entries.add(ModItems.CHERRY_CHAIR_LUKAS);
+                    entries.add(ModItems.PALE_OAK_CHAIR_LUKAS);
                     entries.add(ModItems.CRIMSON_CHAIR_LUKAS);
                     entries.add(ModItems.DARK_OAK_CHAIR_LUKAS);
                     entries.add(ModItems.JUNGLE_CHAIR_LUKAS);
@@ -88,6 +92,7 @@ public class ModItemGroups {
                     entries.add(ModItems.BAMBOO_CHAIR_LUKAS_NATURAL);
                     entries.add(ModItems.BIRCH_CHAIR_LUKAS_NATURAL);
                     entries.add(ModItems.CHERRY_CHAIR_LUKAS_NATURAL);
+                    entries.add(ModItems.PALE_OAK_CHAIR_LUKAS_NATURAL);
                     entries.add(ModItems.CRIMSON_CHAIR_LUKAS_NATURAL);
                     entries.add(ModItems.DARK_OAK_CHAIR_LUKAS_NATURAL);
                     entries.add(ModItems.JUNGLE_CHAIR_LUKAS_NATURAL);
@@ -99,6 +104,7 @@ public class ModItemGroups {
                     entries.add(ModItems.BAMBOO_CHAIR_TOMMY);
                     entries.add(ModItems.BIRCH_CHAIR_TOMMY);
                     entries.add(ModItems.CHERRY_CHAIR_TOMMY);
+                    entries.add(ModItems.PALE_OAK_CHAIR_TOMMY);
                     entries.add(ModItems.CRIMSON_CHAIR_TOMMY);
                     entries.add(ModItems.DARK_OAK_CHAIR_TOMMY);
                     entries.add(ModItems.JUNGLE_CHAIR_TOMMY);
@@ -110,6 +116,7 @@ public class ModItemGroups {
                     entries.add(ModItems.BAMBOO_CHAIR_TOMMY_NATURAL);
                     entries.add(ModItems.BIRCH_CHAIR_TOMMY_NATURAL);
                     entries.add(ModItems.CHERRY_CHAIR_TOMMY_NATURAL);
+                    entries.add(ModItems.PALE_OAK_CHAIR_TOMMY_NATURAL);
                     entries.add(ModItems.CRIMSON_CHAIR_TOMMY_NATURAL);
                     entries.add(ModItems.DARK_OAK_CHAIR_TOMMY_NATURAL);
                     entries.add(ModItems.JUNGLE_CHAIR_TOMMY_NATURAL);
@@ -121,6 +128,7 @@ public class ModItemGroups {
                     entries.add(ModItems.BAMBOO_CHAIR_GREGORY);
                     entries.add(ModItems.BIRCH_CHAIR_GREGORY);
                     entries.add(ModItems.CHERRY_CHAIR_GREGORY);
+                    entries.add(ModItems.PALE_OAK_CHAIR_GREGORY);
                     entries.add(ModItems.CRIMSON_CHAIR_GREGORY);
                     entries.add(ModItems.DARK_OAK_CHAIR_GREGORY);
                     entries.add(ModItems.JUNGLE_CHAIR_GREGORY);
@@ -196,6 +204,23 @@ public class ModItemGroups {
                     entries.add(ModBlocks.CHERRY_PURPLE_CHAIR_PASCAL);
                     entries.add(ModBlocks.CHERRY_MAGENTA_CHAIR_PASCAL);
                     entries.add(ModBlocks.CHERRY_PINK_CHAIR_PASCAL);
+                    entries.add(ModItems.PALE_OAK_CHAIR_PASCAL);
+                    entries.add(ModBlocks.PALE_OAK_WHITE_CHAIR_PASCAL);
+                    entries.add(ModBlocks.PALE_OAK_LIGHT_GRAY_CHAIR_PASCAL);
+                    entries.add(ModBlocks.PALE_OAK_GRAY_CHAIR_PASCAL);
+                    entries.add(ModBlocks.PALE_OAK_BLACK_CHAIR_PASCAL);
+                    entries.add(ModBlocks.PALE_OAK_BROWN_CHAIR_PASCAL);
+                    entries.add(ModBlocks.PALE_OAK_RED_CHAIR_PASCAL);
+                    entries.add(ModBlocks.PALE_OAK_ORANGE_CHAIR_PASCAL);
+                    entries.add(ModBlocks.PALE_OAK_YELLOW_CHAIR_PASCAL);
+                    entries.add(ModBlocks.PALE_OAK_LIME_CHAIR_PASCAL);
+                    entries.add(ModBlocks.PALE_OAK_GREEN_CHAIR_PASCAL);
+                    entries.add(ModBlocks.PALE_OAK_CYAN_CHAIR_PASCAL);
+                    entries.add(ModBlocks.PALE_OAK_LIGHT_BLUE_CHAIR_PASCAL);
+                    entries.add(ModBlocks.PALE_OAK_BLUE_CHAIR_PASCAL);
+                    entries.add(ModBlocks.PALE_OAK_PURPLE_CHAIR_PASCAL);
+                    entries.add(ModBlocks.PALE_OAK_MAGENTA_CHAIR_PASCAL);
+                    entries.add(ModBlocks.PALE_OAK_PINK_CHAIR_PASCAL);
                     entries.add(ModItems.CRIMSON_CHAIR_PASCAL);
                     entries.add(ModBlocks.CRIMSON_WHITE_CHAIR_PASCAL);
                     entries.add(ModBlocks.CRIMSON_LIGHT_GRAY_CHAIR_PASCAL);
@@ -351,6 +376,7 @@ public class ModItemGroups {
                     entries.add(ModItems.BAMBOO_PARK_BENCH);
                     entries.add(ModItems.BIRCH_PARK_BENCH);
                     entries.add(ModItems.CHERRY_PARK_BENCH);
+                    entries.add(ModItems.PALE_OAK_PARK_BENCH);
                     entries.add(ModItems.CRIMSON_PARK_BENCH);
                     entries.add(ModItems.DARK_OAK_PARK_BENCH);
                     entries.add(ModItems.JUNGLE_PARK_BENCH);
@@ -362,6 +388,7 @@ public class ModItemGroups {
                     entries.add(ModBlocks.BAMBOO_BARREL_SEAT);
                     entries.add(ModBlocks.BIRCH_BARREL_SEAT);
                     entries.add(ModBlocks.CHERRY_BARREL_SEAT);
+                    entries.add(ModBlocks.PALE_OAK_BARREL_SEAT);
                     entries.add(ModBlocks.CRIMSON_BARREL_SEAT);
                     entries.add(ModBlocks.DARK_OAK_BARREL_SEAT);
                     entries.add(ModBlocks.JUNGLE_BARREL_SEAT);
@@ -372,6 +399,7 @@ public class ModItemGroups {
                     entries.add(ModItems.ACACIA_LOG_SEAT);
                     entries.add(ModItems.BIRCH_LOG_SEAT);
                     entries.add(ModItems.CHERRY_LOG_SEAT);
+                    entries.add(ModItems.PALE_OAK_LOG_SEAT);
                     entries.add(ModItems.CRIMSON_STEM_SEAT);
                     entries.add(ModItems.DARK_OAK_LOG_SEAT);
                     entries.add(ModItems.JUNGLE_LOG_SEAT);
@@ -383,6 +411,7 @@ public class ModItemGroups {
                     entries.add(ModItems.BAMBOO_TABLE_THE_CLASSIC);
                     entries.add(ModItems.BIRCH_TABLE_THE_CLASSIC);
                     entries.add(ModItems.CHERRY_TABLE_THE_CLASSIC);
+                    entries.add(ModItems.PALE_OAK_TABLE_THE_CLASSIC);
                     entries.add(ModItems.CRIMSON_TABLE_THE_CLASSIC);
                     entries.add(ModItems.DARK_OAK_TABLE_THE_CLASSIC);
                     entries.add(ModItems.JUNGLE_TABLE_THE_CLASSIC);
@@ -394,6 +423,7 @@ public class ModItemGroups {
                     entries.add(ModItems.BAMBOO_STANDING_TABLE);
                     entries.add(ModItems.BIRCH_STANDING_TABLE);
                     entries.add(ModItems.CHERRY_STANDING_TABLE);
+                    entries.add(ModItems.PALE_OAK_STANDING_TABLE);
                     entries.add(ModItems.CRIMSON_STANDING_TABLE);
                     entries.add(ModItems.DARK_OAK_STANDING_TABLE);
                     entries.add(ModItems.JUNGLE_STANDING_TABLE);
@@ -405,6 +435,7 @@ public class ModItemGroups {
                     entries.add(ModItems.BAMBOO_COFFEE_TABLE);
                     entries.add(ModItems.BIRCH_COFFEE_TABLE);
                     entries.add(ModItems.CHERRY_COFFEE_TABLE);
+                    entries.add(ModItems.PALE_OAK_COFFEE_TABLE);
                     entries.add(ModItems.CRIMSON_COFFEE_TABLE);
                     entries.add(ModItems.DARK_OAK_COFFEE_TABLE);
                     entries.add(ModItems.JUNGLE_COFFEE_TABLE);
@@ -416,6 +447,7 @@ public class ModItemGroups {
                     entries.add(ModItems.BAMBOO_COFFEE_TABLE_PASCAL);
                     entries.add(ModItems.BIRCH_COFFEE_TABLE_PASCAL);
                     entries.add(ModItems.CHERRY_COFFEE_TABLE_PASCAL);
+                    entries.add(ModItems.PALE_OAK_COFFEE_TABLE_PASCAL);
                     entries.add(ModItems.CRIMSON_COFFEE_TABLE_PASCAL);
                     entries.add(ModItems.DARK_OAK_COFFEE_TABLE_PASCAL);
                     entries.add(ModItems.JUNGLE_COFFEE_TABLE_PASCAL);
@@ -427,6 +459,7 @@ public class ModItemGroups {
                     entries.add(BAMBOO_GLASS_DOOR_FRAME);
                     entries.add(BIRCH_GLASS_DOOR_FRAME);
                     entries.add(CHERRY_GLASS_DOOR_FRAME);
+                    entries.add(PALE_OAK_GLASS_DOOR_FRAME);
                     entries.add(CRIMSON_GLASS_DOOR_FRAME);
                     entries.add(DARK_OAK_GLASS_DOOR_FRAME);
                     entries.add(JUNGLE_GLASS_DOOR_FRAME);
@@ -438,6 +471,7 @@ public class ModItemGroups {
                     entries.add(BAMBOO_GLASS_DOOR);
                     entries.add(BIRCH_GLASS_DOOR);
                     entries.add(CHERRY_GLASS_DOOR);
+                    entries.add(PALE_OAK_GLASS_DOOR);
                     entries.add(CRIMSON_GLASS_DOOR);
                     entries.add(DARK_OAK_GLASS_DOOR);
                     entries.add(JUNGLE_GLASS_DOOR);
@@ -509,6 +543,22 @@ public class ModItemGroups {
                     entries.add(CHERRY_PURPLE_STAINED_GLASS_DOOR);
                     entries.add(CHERRY_MAGENTA_STAINED_GLASS_DOOR);
                     entries.add(CHERRY_PINK_STAINED_GLASS_DOOR);
+                    entries.add(PALE_OAK_WHITE_STAINED_GLASS_DOOR);
+                    entries.add(PALE_OAK_LIGHT_GRAY_STAINED_GLASS_DOOR);
+                    entries.add(PALE_OAK_GRAY_STAINED_GLASS_DOOR);
+                    entries.add(PALE_OAK_BLACK_STAINED_GLASS_DOOR);
+                    entries.add(PALE_OAK_BROWN_STAINED_GLASS_DOOR);
+                    entries.add(PALE_OAK_RED_STAINED_GLASS_DOOR);
+                    entries.add(PALE_OAK_ORANGE_STAINED_GLASS_DOOR);
+                    entries.add(PALE_OAK_YELLOW_STAINED_GLASS_DOOR);
+                    entries.add(PALE_OAK_LIME_STAINED_GLASS_DOOR);
+                    entries.add(PALE_OAK_GREEN_STAINED_GLASS_DOOR);
+                    entries.add(PALE_OAK_CYAN_STAINED_GLASS_DOOR);
+                    entries.add(PALE_OAK_LIGHT_BLUE_STAINED_GLASS_DOOR);
+                    entries.add(PALE_OAK_BLUE_STAINED_GLASS_DOOR);
+                    entries.add(PALE_OAK_PURPLE_STAINED_GLASS_DOOR);
+                    entries.add(PALE_OAK_MAGENTA_STAINED_GLASS_DOOR);
+                    entries.add(PALE_OAK_PINK_STAINED_GLASS_DOOR);
                     entries.add(CRIMSON_WHITE_STAINED_GLASS_DOOR);
                     entries.add(CRIMSON_LIGHT_GRAY_STAINED_GLASS_DOOR);
                     entries.add(CRIMSON_GRAY_STAINED_GLASS_DOOR);
@@ -637,6 +687,7 @@ public class ModItemGroups {
                     entries.add(ModItems.BAMBOO_CHAIR);
                     entries.add(ModItems.BIRCH_CHAIR);
                     entries.add(ModItems.CHERRY_CHAIR);
+                    entries.add(ModItems.PALE_OAK_CHAIR);
                     entries.add(ModItems.CRIMSON_CHAIR);
                     entries.add(ModItems.DARK_OAK_CHAIR);
                     entries.add(ModItems.JUNGLE_CHAIR);
@@ -648,6 +699,7 @@ public class ModItemGroups {
                     entries.add(ModItems.BAMBOO_CHAIR_FELIX);
                     entries.add(ModItems.BIRCH_CHAIR_FELIX);
                     entries.add(ModItems.CHERRY_CHAIR_FELIX);
+                    entries.add(ModItems.PALE_OAK_CHAIR_FELIX);
                     entries.add(ModItems.CRIMSON_CHAIR_FELIX);
                     entries.add(ModItems.DARK_OAK_CHAIR_FELIX);
                     entries.add(ModItems.JUNGLE_CHAIR_FELIX);
@@ -659,6 +711,7 @@ public class ModItemGroups {
                     entries.add(ModItems.BAMBOO_CHAIR_LUKAS);
                     entries.add(ModItems.BIRCH_CHAIR_LUKAS);
                     entries.add(ModItems.CHERRY_CHAIR_LUKAS);
+                    entries.add(ModItems.PALE_OAK_CHAIR_LUKAS);
                     entries.add(ModItems.CRIMSON_CHAIR_LUKAS);
                     entries.add(ModItems.DARK_OAK_CHAIR_LUKAS);
                     entries.add(ModItems.JUNGLE_CHAIR_LUKAS);
@@ -670,6 +723,7 @@ public class ModItemGroups {
                     entries.add(ModItems.BAMBOO_CHAIR_LUKAS_NATURAL);
                     entries.add(ModItems.BIRCH_CHAIR_LUKAS_NATURAL);
                     entries.add(ModItems.CHERRY_CHAIR_LUKAS_NATURAL);
+                    entries.add(ModItems.PALE_OAK_CHAIR_LUKAS_NATURAL);
                     entries.add(ModItems.CRIMSON_CHAIR_LUKAS_NATURAL);
                     entries.add(ModItems.DARK_OAK_CHAIR_LUKAS_NATURAL);
                     entries.add(ModItems.JUNGLE_CHAIR_LUKAS_NATURAL);
@@ -681,6 +735,7 @@ public class ModItemGroups {
                     entries.add(ModItems.BAMBOO_CHAIR_TOMMY);
                     entries.add(ModItems.BIRCH_CHAIR_TOMMY);
                     entries.add(ModItems.CHERRY_CHAIR_TOMMY);
+                    entries.add(ModItems.PALE_OAK_CHAIR_TOMMY);
                     entries.add(ModItems.CRIMSON_CHAIR_TOMMY);
                     entries.add(ModItems.DARK_OAK_CHAIR_TOMMY);
                     entries.add(ModItems.JUNGLE_CHAIR_TOMMY);
@@ -692,6 +747,7 @@ public class ModItemGroups {
                     entries.add(ModItems.BAMBOO_CHAIR_TOMMY_NATURAL);
                     entries.add(ModItems.BIRCH_CHAIR_TOMMY_NATURAL);
                     entries.add(ModItems.CHERRY_CHAIR_TOMMY_NATURAL);
+                    entries.add(ModItems.PALE_OAK_CHAIR_TOMMY_NATURAL);
                     entries.add(ModItems.CRIMSON_CHAIR_TOMMY_NATURAL);
                     entries.add(ModItems.DARK_OAK_CHAIR_TOMMY_NATURAL);
                     entries.add(ModItems.JUNGLE_CHAIR_TOMMY_NATURAL);
@@ -703,6 +759,7 @@ public class ModItemGroups {
                     entries.add(ModItems.BAMBOO_CHAIR_GREGORY);
                     entries.add(ModItems.BIRCH_CHAIR_GREGORY);
                     entries.add(ModItems.CHERRY_CHAIR_GREGORY);
+                    entries.add(ModItems.PALE_OAK_CHAIR_GREGORY);
                     entries.add(ModItems.CRIMSON_CHAIR_GREGORY);
                     entries.add(ModItems.DARK_OAK_CHAIR_GREGORY);
                     entries.add(ModItems.JUNGLE_CHAIR_GREGORY);
@@ -778,6 +835,23 @@ public class ModItemGroups {
                     entries.add(ModBlocks.CHERRY_PURPLE_CHAIR_PASCAL);
                     entries.add(ModBlocks.CHERRY_MAGENTA_CHAIR_PASCAL);
                     entries.add(ModBlocks.CHERRY_PINK_CHAIR_PASCAL);
+                    entries.add(ModItems.PALE_OAK_CHAIR_PASCAL);
+                    entries.add(ModBlocks.PALE_OAK_WHITE_CHAIR_PASCAL);
+                    entries.add(ModBlocks.PALE_OAK_LIGHT_GRAY_CHAIR_PASCAL);
+                    entries.add(ModBlocks.PALE_OAK_GRAY_CHAIR_PASCAL);
+                    entries.add(ModBlocks.PALE_OAK_BLACK_CHAIR_PASCAL);
+                    entries.add(ModBlocks.PALE_OAK_BROWN_CHAIR_PASCAL);
+                    entries.add(ModBlocks.PALE_OAK_RED_CHAIR_PASCAL);
+                    entries.add(ModBlocks.PALE_OAK_ORANGE_CHAIR_PASCAL);
+                    entries.add(ModBlocks.PALE_OAK_YELLOW_CHAIR_PASCAL);
+                    entries.add(ModBlocks.PALE_OAK_LIME_CHAIR_PASCAL);
+                    entries.add(ModBlocks.PALE_OAK_GREEN_CHAIR_PASCAL);
+                    entries.add(ModBlocks.PALE_OAK_CYAN_CHAIR_PASCAL);
+                    entries.add(ModBlocks.PALE_OAK_LIGHT_BLUE_CHAIR_PASCAL);
+                    entries.add(ModBlocks.PALE_OAK_BLUE_CHAIR_PASCAL);
+                    entries.add(ModBlocks.PALE_OAK_PURPLE_CHAIR_PASCAL);
+                    entries.add(ModBlocks.PALE_OAK_MAGENTA_CHAIR_PASCAL);
+                    entries.add(ModBlocks.PALE_OAK_PINK_CHAIR_PASCAL);
                     entries.add(ModItems.CRIMSON_CHAIR_PASCAL);
                     entries.add(ModBlocks.CRIMSON_WHITE_CHAIR_PASCAL);
                     entries.add(ModBlocks.CRIMSON_LIGHT_GRAY_CHAIR_PASCAL);
@@ -933,6 +1007,7 @@ public class ModItemGroups {
                     entries.add(ModItems.BAMBOO_PARK_BENCH);
                     entries.add(ModItems.BIRCH_PARK_BENCH);
                     entries.add(ModItems.CHERRY_PARK_BENCH);
+                    entries.add(ModItems.PALE_OAK_PARK_BENCH);
                     entries.add(ModItems.CRIMSON_PARK_BENCH);
                     entries.add(ModItems.DARK_OAK_PARK_BENCH);
                     entries.add(ModItems.JUNGLE_PARK_BENCH);
@@ -944,6 +1019,7 @@ public class ModItemGroups {
                     entries.add(ModBlocks.BAMBOO_BARREL_SEAT);
                     entries.add(ModBlocks.BIRCH_BARREL_SEAT);
                     entries.add(ModBlocks.CHERRY_BARREL_SEAT);
+                    entries.add(ModBlocks.PALE_OAK_BARREL_SEAT);
                     entries.add(ModBlocks.CRIMSON_BARREL_SEAT);
                     entries.add(ModBlocks.DARK_OAK_BARREL_SEAT);
                     entries.add(ModBlocks.JUNGLE_BARREL_SEAT);
@@ -954,6 +1030,7 @@ public class ModItemGroups {
                     entries.add(ModItems.ACACIA_LOG_SEAT);
                     entries.add(ModItems.BIRCH_LOG_SEAT);
                     entries.add(ModItems.CHERRY_LOG_SEAT);
+                    entries.add(ModItems.PALE_OAK_LOG_SEAT);
                     entries.add(ModItems.CRIMSON_STEM_SEAT);
                     entries.add(ModItems.DARK_OAK_LOG_SEAT);
                     entries.add(ModItems.JUNGLE_LOG_SEAT);
@@ -977,6 +1054,7 @@ public class ModItemGroups {
                     entries.add(ModItems.BAMBOO_TABLE_THE_CLASSIC);
                     entries.add(ModItems.BIRCH_TABLE_THE_CLASSIC);
                     entries.add(ModItems.CHERRY_TABLE_THE_CLASSIC);
+                    entries.add(ModItems.PALE_OAK_TABLE_THE_CLASSIC);
                     entries.add(ModItems.CRIMSON_TABLE_THE_CLASSIC);
                     entries.add(ModItems.DARK_OAK_TABLE_THE_CLASSIC);
                     entries.add(ModItems.JUNGLE_TABLE_THE_CLASSIC);
@@ -988,6 +1066,7 @@ public class ModItemGroups {
                     entries.add(ModItems.BAMBOO_COFFEE_TABLE);
                     entries.add(ModItems.BIRCH_COFFEE_TABLE);
                     entries.add(ModItems.CHERRY_COFFEE_TABLE);
+                    entries.add(ModItems.PALE_OAK_COFFEE_TABLE);
                     entries.add(ModItems.CRIMSON_COFFEE_TABLE);
                     entries.add(ModItems.DARK_OAK_COFFEE_TABLE);
                     entries.add(ModItems.JUNGLE_COFFEE_TABLE);
@@ -999,6 +1078,7 @@ public class ModItemGroups {
                     entries.add(ModItems.BAMBOO_COFFEE_TABLE_PASCAL);
                     entries.add(ModItems.BIRCH_COFFEE_TABLE_PASCAL);
                     entries.add(ModItems.CHERRY_COFFEE_TABLE_PASCAL);
+                    entries.add(ModItems.PALE_OAK_COFFEE_TABLE_PASCAL);
                     entries.add(ModItems.CRIMSON_COFFEE_TABLE_PASCAL);
                     entries.add(ModItems.DARK_OAK_COFFEE_TABLE_PASCAL);
                     entries.add(ModItems.JUNGLE_COFFEE_TABLE_PASCAL);
@@ -1010,6 +1090,7 @@ public class ModItemGroups {
                     entries.add(ModItems.BAMBOO_STANDING_TABLE);
                     entries.add(ModItems.BIRCH_STANDING_TABLE);
                     entries.add(ModItems.CHERRY_STANDING_TABLE);
+                    entries.add(ModItems.PALE_OAK_STANDING_TABLE);
                     entries.add(ModItems.CRIMSON_STANDING_TABLE);
                     entries.add(ModItems.DARK_OAK_STANDING_TABLE);
                     entries.add(ModItems.JUNGLE_STANDING_TABLE);
@@ -1034,6 +1115,7 @@ public class ModItemGroups {
                     entries.add(ModItems.BOUND_BAMBOO_LADDER);
                     entries.add(ModItems.BIRCH_LADDER);
                     entries.add(ModItems.CHERRY_LADDER);
+                    entries.add(ModItems.PALE_OAK_LADDER);
                     entries.add(ModItems.CRIMSON_LADDER);
                     entries.add(ModItems.DARK_OAK_LADDER);
                     entries.add(ModItems.JUNGLE_LADDER);
@@ -1044,6 +1126,7 @@ public class ModItemGroups {
                     entries.add(ModItems.BAMBOO_PARK_BENCH);
                     entries.add(ModItems.BIRCH_PARK_BENCH);
                     entries.add(ModItems.CHERRY_PARK_BENCH);
+                    entries.add(ModItems.PALE_OAK_PARK_BENCH);
                     entries.add(ModItems.CRIMSON_PARK_BENCH);
                     entries.add(ModItems.DARK_OAK_PARK_BENCH);
                     entries.add(ModItems.JUNGLE_PARK_BENCH);
@@ -1054,6 +1137,7 @@ public class ModItemGroups {
                     entries.add(ModItems.ACACIA_LOG_SEAT);
                     entries.add(ModItems.BIRCH_LOG_SEAT);
                     entries.add(ModItems.CHERRY_LOG_SEAT);
+                    entries.add(ModItems.PALE_OAK_LOG_SEAT);
                     entries.add(ModItems.CRIMSON_STEM_SEAT);
                     entries.add(ModItems.DARK_OAK_LOG_SEAT);
                     entries.add(ModItems.JUNGLE_LOG_SEAT);

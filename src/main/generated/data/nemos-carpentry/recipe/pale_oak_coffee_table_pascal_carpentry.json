@@ -1,0 +1,16 @@
+{
+  "type": "nemos-carpentry:carpentry",
+  "ingredients": [
+    "minecraft:pale_oak_planks",
+    "minecraft:iron_block"
+  ],
+  "inputCounts": [
+    1,
+    1
+  ],
+  "requiresTool": true,
+  "result": {
+    "count": 4,
+    "id": "nemos-carpentry:pale_oak_coffee_table_pascal"
+  }
+}

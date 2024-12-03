@@ -8,11 +8,7 @@ import com.nemonotfound.nemoscarpentry.property.ModProperties;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.minecraft.block.Block;
-import net.minecraft.item.Items;
 import net.minecraft.loot.LootTable;
-import net.minecraft.loot.entry.ItemEntry;
-import net.minecraft.loot.function.SetCountLootFunction;
-import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
 import net.minecraft.registry.RegistryWrapper;
 
 import java.util.concurrent.CompletableFuture;
@@ -32,6 +28,7 @@ public class LootTableGenerator extends FabricBlockLootTableProvider {
         this.addDrop(ModBlocks.CHERRY_LADDER);
         this.addDrop(ModBlocks.CRIMSON_LADDER);
         this.addDrop(ModBlocks.DARK_OAK_LADDER);
+        this.addDrop(ModBlocks.PALE_OAK_LADDER);
         this.addDrop(ModBlocks.JUNGLE_LADDER);
         this.addDrop(ModBlocks.MANGROVE_LADDER);
         this.addDrop(ModBlocks.SPRUCE_LADDER);
@@ -43,6 +40,7 @@ public class LootTableGenerator extends FabricBlockLootTableProvider {
         this.addDrop(ModBlocks.CHERRY_TABLE_THE_CLASSIC);
         this.addDrop(ModBlocks.CRIMSON_TABLE_THE_CLASSIC);
         this.addDrop(ModBlocks.DARK_OAK_TABLE_THE_CLASSIC);
+        this.addDrop(ModBlocks.PALE_OAK_TABLE_THE_CLASSIC);
         this.addDrop(ModBlocks.JUNGLE_TABLE_THE_CLASSIC);
         this.addDrop(ModBlocks.MANGROVE_TABLE_THE_CLASSIC);
         this.addDrop(ModBlocks.OAK_TABLE_THE_CLASSIC);
@@ -55,6 +53,7 @@ public class LootTableGenerator extends FabricBlockLootTableProvider {
         this.addDrop(ModBlocks.CHERRY_COFFEE_TABLE_PASCAL);
         this.addDrop(ModBlocks.CRIMSON_COFFEE_TABLE_PASCAL);
         this.addDrop(ModBlocks.DARK_OAK_COFFEE_TABLE_PASCAL);
+        this.addDrop(ModBlocks.PALE_OAK_COFFEE_TABLE_PASCAL);
         this.addDrop(ModBlocks.JUNGLE_COFFEE_TABLE_PASCAL);
         this.addDrop(ModBlocks.MANGROVE_COFFEE_TABLE_PASCAL);
         this.addDrop(ModBlocks.OAK_COFFEE_TABLE_PASCAL);
@@ -67,6 +66,7 @@ public class LootTableGenerator extends FabricBlockLootTableProvider {
         this.addDrop(ModBlocks.CHERRY_STANDING_TABLE);
         this.addDrop(ModBlocks.CRIMSON_STANDING_TABLE);
         this.addDrop(ModBlocks.DARK_OAK_STANDING_TABLE);
+        this.addDrop(ModBlocks.PALE_OAK_STANDING_TABLE);
         this.addDrop(ModBlocks.JUNGLE_STANDING_TABLE);
         this.addDrop(ModBlocks.MANGROVE_STANDING_TABLE);
         this.addDrop(ModBlocks.OAK_STANDING_TABLE);
@@ -79,6 +79,7 @@ public class LootTableGenerator extends FabricBlockLootTableProvider {
         this.addDrop(ModBlocks.CHERRY_CHAIR);
         this.addDrop(ModBlocks.CRIMSON_CHAIR);
         this.addDrop(ModBlocks.DARK_OAK_CHAIR);
+        this.addDrop(ModBlocks.PALE_OAK_CHAIR);
         this.addDrop(ModBlocks.JUNGLE_CHAIR);
         this.addDrop(ModBlocks.MANGROVE_CHAIR);
         this.addDrop(ModBlocks.OAK_CHAIR);
@@ -91,6 +92,7 @@ public class LootTableGenerator extends FabricBlockLootTableProvider {
         this.addDrop(ModBlocks.CHERRY_CHAIR_FELIX);
         this.addDrop(ModBlocks.CRIMSON_CHAIR_FELIX);
         this.addDrop(ModBlocks.DARK_OAK_CHAIR_FELIX);
+        this.addDrop(ModBlocks.PALE_OAK_CHAIR_FELIX);
         this.addDrop(ModBlocks.JUNGLE_CHAIR_FELIX);
         this.addDrop(ModBlocks.MANGROVE_CHAIR_FELIX);
         this.addDrop(ModBlocks.OAK_CHAIR_FELIX);
@@ -103,6 +105,7 @@ public class LootTableGenerator extends FabricBlockLootTableProvider {
         this.addDrop(ModBlocks.CHERRY_PARK_BENCH, this::benchDrops);
         this.addDrop(ModBlocks.CRIMSON_PARK_BENCH, this::benchDrops);
         this.addDrop(ModBlocks.DARK_OAK_PARK_BENCH, this::benchDrops);
+        this.addDrop(ModBlocks.PALE_OAK_PARK_BENCH, this::benchDrops);
         this.addDrop(ModBlocks.JUNGLE_PARK_BENCH, this::benchDrops);
         this.addDrop(ModBlocks.MANGROVE_PARK_BENCH, this::benchDrops);
         this.addDrop(ModBlocks.OAK_PARK_BENCH, this::benchDrops);
@@ -115,6 +118,7 @@ public class LootTableGenerator extends FabricBlockLootTableProvider {
         this.addDrop(ModBlocks.CHERRY_CHAIR_LUKAS, this::chairDrops);
         this.addDrop(ModBlocks.CRIMSON_CHAIR_LUKAS, this::chairDrops);
         this.addDrop(ModBlocks.DARK_OAK_CHAIR_LUKAS, this::chairDrops);
+        this.addDrop(ModBlocks.PALE_OAK_CHAIR_LUKAS, this::chairDrops);
         this.addDrop(ModBlocks.JUNGLE_CHAIR_LUKAS, this::chairDrops);
         this.addDrop(ModBlocks.MANGROVE_CHAIR_LUKAS, this::chairDrops);
         this.addDrop(ModBlocks.OAK_CHAIR_LUKAS, this::chairDrops);
@@ -127,6 +131,7 @@ public class LootTableGenerator extends FabricBlockLootTableProvider {
         this.addDrop(ModBlocks.CHERRY_CHAIR_LUKAS_NATURAL, this::chairDrops);
         this.addDrop(ModBlocks.CRIMSON_CHAIR_LUKAS_NATURAL, this::chairDrops);
         this.addDrop(ModBlocks.DARK_OAK_CHAIR_LUKAS_NATURAL, this::chairDrops);
+        this.addDrop(ModBlocks.PALE_OAK_CHAIR_LUKAS_NATURAL, this::chairDrops);
         this.addDrop(ModBlocks.JUNGLE_CHAIR_LUKAS_NATURAL, this::chairDrops);
         this.addDrop(ModBlocks.MANGROVE_CHAIR_LUKAS_NATURAL, this::chairDrops);
         this.addDrop(ModBlocks.OAK_CHAIR_LUKAS_NATURAL, this::chairDrops);
@@ -139,6 +144,7 @@ public class LootTableGenerator extends FabricBlockLootTableProvider {
         this.addDrop(ModBlocks.CHERRY_CHAIR_TOMMY, this::chairDrops);
         this.addDrop(ModBlocks.CRIMSON_CHAIR_TOMMY, this::chairDrops);
         this.addDrop(ModBlocks.DARK_OAK_CHAIR_TOMMY, this::chairDrops);
+        this.addDrop(ModBlocks.PALE_OAK_CHAIR_TOMMY, this::chairDrops);
         this.addDrop(ModBlocks.JUNGLE_CHAIR_TOMMY, this::chairDrops);
         this.addDrop(ModBlocks.MANGROVE_CHAIR_TOMMY, this::chairDrops);
         this.addDrop(ModBlocks.OAK_CHAIR_TOMMY, this::chairDrops);
@@ -151,6 +157,7 @@ public class LootTableGenerator extends FabricBlockLootTableProvider {
         this.addDrop(ModBlocks.CHERRY_CHAIR_TOMMY_NATURAL, this::chairDrops);
         this.addDrop(ModBlocks.CRIMSON_CHAIR_TOMMY_NATURAL, this::chairDrops);
         this.addDrop(ModBlocks.DARK_OAK_CHAIR_TOMMY_NATURAL, this::chairDrops);
+        this.addDrop(ModBlocks.PALE_OAK_CHAIR_TOMMY_NATURAL, this::chairDrops);
         this.addDrop(ModBlocks.JUNGLE_CHAIR_TOMMY_NATURAL, this::chairDrops);
         this.addDrop(ModBlocks.MANGROVE_CHAIR_TOMMY_NATURAL, this::chairDrops);
         this.addDrop(ModBlocks.OAK_CHAIR_TOMMY_NATURAL, this::chairDrops);
@@ -163,6 +170,7 @@ public class LootTableGenerator extends FabricBlockLootTableProvider {
         this.addDrop(ModBlocks.CHERRY_CHAIR_GREGORY, this::chairDrops);
         this.addDrop(ModBlocks.CRIMSON_CHAIR_GREGORY, this::chairDrops);
         this.addDrop(ModBlocks.DARK_OAK_CHAIR_GREGORY, this::chairDrops);
+        this.addDrop(ModBlocks.PALE_OAK_CHAIR_GREGORY, this::chairDrops);
         this.addDrop(ModBlocks.JUNGLE_CHAIR_GREGORY, this::chairDrops);
         this.addDrop(ModBlocks.MANGROVE_CHAIR_GREGORY, this::chairDrops);
         this.addDrop(ModBlocks.OAK_CHAIR_GREGORY, this::chairDrops);
@@ -271,6 +279,23 @@ public class LootTableGenerator extends FabricBlockLootTableProvider {
         this.addDrop(ModBlocks.DARK_OAK_PURPLE_CHAIR_PASCAL, this::chairDrops);
         this.addDrop(ModBlocks.DARK_OAK_MAGENTA_CHAIR_PASCAL, this::chairDrops);
         this.addDrop(ModBlocks.DARK_OAK_PINK_CHAIR_PASCAL, this::chairDrops);
+        this.addDrop(ModBlocks.PALE_OAK_CHAIR_PASCAL, this::chairDrops);
+        this.addDrop(ModBlocks.PALE_OAK_WHITE_CHAIR_PASCAL, this::chairDrops);
+        this.addDrop(ModBlocks.PALE_OAK_LIGHT_GRAY_CHAIR_PASCAL, this::chairDrops);
+        this.addDrop(ModBlocks.PALE_OAK_GRAY_CHAIR_PASCAL, this::chairDrops);
+        this.addDrop(ModBlocks.PALE_OAK_BLACK_CHAIR_PASCAL, this::chairDrops);
+        this.addDrop(ModBlocks.PALE_OAK_BROWN_CHAIR_PASCAL, this::chairDrops);
+        this.addDrop(ModBlocks.PALE_OAK_RED_CHAIR_PASCAL, this::chairDrops);
+        this.addDrop(ModBlocks.PALE_OAK_ORANGE_CHAIR_PASCAL, this::chairDrops);
+        this.addDrop(ModBlocks.PALE_OAK_YELLOW_CHAIR_PASCAL, this::chairDrops);
+        this.addDrop(ModBlocks.PALE_OAK_LIME_CHAIR_PASCAL, this::chairDrops);
+        this.addDrop(ModBlocks.PALE_OAK_GREEN_CHAIR_PASCAL, this::chairDrops);
+        this.addDrop(ModBlocks.PALE_OAK_CYAN_CHAIR_PASCAL, this::chairDrops);
+        this.addDrop(ModBlocks.PALE_OAK_LIGHT_BLUE_CHAIR_PASCAL, this::chairDrops);
+        this.addDrop(ModBlocks.PALE_OAK_BLUE_CHAIR_PASCAL, this::chairDrops);
+        this.addDrop(ModBlocks.PALE_OAK_PURPLE_CHAIR_PASCAL, this::chairDrops);
+        this.addDrop(ModBlocks.PALE_OAK_MAGENTA_CHAIR_PASCAL, this::chairDrops);
+        this.addDrop(ModBlocks.PALE_OAK_PINK_CHAIR_PASCAL, this::chairDrops);
         this.addDrop(ModBlocks.JUNGLE_CHAIR_PASCAL, this::chairDrops);
         this.addDrop(ModBlocks.JUNGLE_WHITE_CHAIR_PASCAL, this::chairDrops);
         this.addDrop(ModBlocks.JUNGLE_LIGHT_GRAY_CHAIR_PASCAL, this::chairDrops);
@@ -397,6 +422,7 @@ public class LootTableGenerator extends FabricBlockLootTableProvider {
         this.addDrop(ModBlocks.CHERRY_COFFEE_TABLE);
         this.addDrop(ModBlocks.CRIMSON_COFFEE_TABLE);
         this.addDrop(ModBlocks.DARK_OAK_COFFEE_TABLE);
+        this.addDrop(ModBlocks.PALE_OAK_COFFEE_TABLE);
         this.addDrop(ModBlocks.JUNGLE_COFFEE_TABLE);
         this.addDrop(ModBlocks.MANGROVE_COFFEE_TABLE);
         this.addDrop(ModBlocks.OAK_COFFEE_TABLE);
@@ -409,6 +435,7 @@ public class LootTableGenerator extends FabricBlockLootTableProvider {
         this.addDrop(ModBlocks.CHERRY_BARREL_SEAT);
         this.addDrop(ModBlocks.CRIMSON_BARREL_SEAT);
         this.addDrop(ModBlocks.DARK_OAK_BARREL_SEAT);
+        this.addDrop(ModBlocks.PALE_OAK_BARREL_SEAT);
         this.addDrop(ModBlocks.JUNGLE_BARREL_SEAT);
         this.addDrop(ModBlocks.MANGROVE_BARREL_SEAT);
         this.addDrop(ModBlocks.OAK_BARREL_SEAT);

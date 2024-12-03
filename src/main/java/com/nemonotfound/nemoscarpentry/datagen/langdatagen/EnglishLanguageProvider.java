@@ -119,6 +119,23 @@ public class EnglishLanguageProvider extends FabricLanguageProvider {
         translationBuilder.add(ModBlocks.DARK_OAK_PURPLE_CHAIR_PASCAL, "Dark Oak Purple Chair \"Pascal\"");
         translationBuilder.add(ModBlocks.DARK_OAK_MAGENTA_CHAIR_PASCAL, "Dark Oak Magenta Chair \"Pascal\"");
         translationBuilder.add(ModBlocks.DARK_OAK_PINK_CHAIR_PASCAL, "Dark Oak Pink Chair \"Pascal\"");
+        translationBuilder.add(ModBlocks.PALE_OAK_CHAIR_PASCAL, "Pale Oak Chair \"Pascal\"");
+        translationBuilder.add(ModBlocks.PALE_OAK_WHITE_CHAIR_PASCAL, "Pale Oak White Chair \"Pascal\"");
+        translationBuilder.add(ModBlocks.PALE_OAK_LIGHT_GRAY_CHAIR_PASCAL, "Pale Oak Light Gray Chair \"Pascal\"");
+        translationBuilder.add(ModBlocks.PALE_OAK_GRAY_CHAIR_PASCAL, "Pale Oak Gray Chair \"Pascal\"");
+        translationBuilder.add(ModBlocks.PALE_OAK_BLACK_CHAIR_PASCAL, "Pale Oak Black Chair \"Pascal\"");
+        translationBuilder.add(ModBlocks.PALE_OAK_BROWN_CHAIR_PASCAL, "Pale Oak Brown Chair \"Pascal\"");
+        translationBuilder.add(ModBlocks.PALE_OAK_RED_CHAIR_PASCAL, "Pale Oak Red Chair \"Pascal\"");
+        translationBuilder.add(ModBlocks.PALE_OAK_ORANGE_CHAIR_PASCAL, "Pale Oak Orange Chair \"Pascal\"");
+        translationBuilder.add(ModBlocks.PALE_OAK_YELLOW_CHAIR_PASCAL, "Pale Oak Yellow Chair \"Pascal\"");
+        translationBuilder.add(ModBlocks.PALE_OAK_LIME_CHAIR_PASCAL, "Pale Oak Lime Chair \"Pascal\"");
+        translationBuilder.add(ModBlocks.PALE_OAK_GREEN_CHAIR_PASCAL, "Pale Oak Green Chair \"Pascal\"");
+        translationBuilder.add(ModBlocks.PALE_OAK_CYAN_CHAIR_PASCAL, "Pale Oak Cyan Chair \"Pascal\"");
+        translationBuilder.add(ModBlocks.PALE_OAK_LIGHT_BLUE_CHAIR_PASCAL, "Pale Oak Light Blue Chair \"Pascal\"");
+        translationBuilder.add(ModBlocks.PALE_OAK_BLUE_CHAIR_PASCAL, "Pale Oak Blue Chair \"Pascal\"");
+        translationBuilder.add(ModBlocks.PALE_OAK_PURPLE_CHAIR_PASCAL, "Pale Oak Purple Chair \"Pascal\"");
+        translationBuilder.add(ModBlocks.PALE_OAK_MAGENTA_CHAIR_PASCAL, "Pale Oak Magenta Chair \"Pascal\"");
+        translationBuilder.add(ModBlocks.PALE_OAK_PINK_CHAIR_PASCAL, "Pale Oak Pink Chair \"Pascal\"");
         translationBuilder.add(ModBlocks.JUNGLE_CHAIR_PASCAL, "Jungle Chair \"Pascal\"");
         translationBuilder.add(ModBlocks.JUNGLE_WHITE_CHAIR_PASCAL, "Jungle White Chair \"Pascal\"");
         translationBuilder.add(ModBlocks.JUNGLE_LIGHT_GRAY_CHAIR_PASCAL, "Jungle Light Gray Chair \"Pascal\"");
@@ -211,6 +228,7 @@ public class EnglishLanguageProvider extends FabricLanguageProvider {
         translationBuilder.add(ModBlocks.CHERRY_TABLE_THE_CLASSIC, "Cherry Table \"The Classic\"");
         translationBuilder.add(ModBlocks.CRIMSON_TABLE_THE_CLASSIC, "Crimson Table \"The Classic\"");
         translationBuilder.add(ModBlocks.DARK_OAK_TABLE_THE_CLASSIC, "Dark Oak Table \"The Classic\"");
+        translationBuilder.add(ModBlocks.PALE_OAK_TABLE_THE_CLASSIC, "Pale Oak Table \"The Classic\"");
         translationBuilder.add(ModBlocks.JUNGLE_TABLE_THE_CLASSIC, "Jungle Table \"The Classic\"");
         translationBuilder.add(ModBlocks.MANGROVE_TABLE_THE_CLASSIC, "Mangrove Table \"The Classic\"");
         translationBuilder.add(ModBlocks.OAK_TABLE_THE_CLASSIC, "Oak Table \"The Classic\"");
@@ -223,6 +241,7 @@ public class EnglishLanguageProvider extends FabricLanguageProvider {
         translationBuilder.add(ModBlocks.CHERRY_COFFEE_TABLE_PASCAL, "Cherry Coffee Table \"Pascal\"");
         translationBuilder.add(ModBlocks.CRIMSON_COFFEE_TABLE_PASCAL, "Crimson Coffee Table \"Pascal\"");
         translationBuilder.add(ModBlocks.DARK_OAK_COFFEE_TABLE_PASCAL, "Dark Oak Coffee Table \"Pascal\"");
+        translationBuilder.add(ModBlocks.PALE_OAK_COFFEE_TABLE_PASCAL, "Pale Oak Coffee Table \"Pascal\"");
         translationBuilder.add(ModBlocks.JUNGLE_COFFEE_TABLE_PASCAL, "Jungle Coffee Table \"Pascal\"");
         translationBuilder.add(ModBlocks.MANGROVE_COFFEE_TABLE_PASCAL, "Mangrove Coffee Table \"Pascal\"");
         translationBuilder.add(ModBlocks.OAK_COFFEE_TABLE_PASCAL, "Oak Coffee Table \"Pascal\"");
@@ -235,6 +254,7 @@ public class EnglishLanguageProvider extends FabricLanguageProvider {
         translationBuilder.add(ModBlocks.CHERRY_COFFEE_TABLE, "Cherry Coffee Table");
         translationBuilder.add(ModBlocks.CRIMSON_COFFEE_TABLE, "Crimson Coffee Table");
         translationBuilder.add(ModBlocks.DARK_OAK_COFFEE_TABLE, "Dark Oak Coffee Table");
+        translationBuilder.add(ModBlocks.PALE_OAK_COFFEE_TABLE, "Pale Oak Coffee Table");
         translationBuilder.add(ModBlocks.JUNGLE_COFFEE_TABLE, "Jungle Coffee Table");
         translationBuilder.add(ModBlocks.MANGROVE_COFFEE_TABLE, "Mangrove Coffee Table");
         translationBuilder.add(ModBlocks.OAK_COFFEE_TABLE, "Oak Coffee Table");
@@ -247,6 +267,7 @@ public class EnglishLanguageProvider extends FabricLanguageProvider {
         translationBuilder.add(ModBlocks.CHERRY_STANDING_TABLE, "Cherry Standing Table");
         translationBuilder.add(ModBlocks.CRIMSON_STANDING_TABLE, "Crimson Standing Table");
         translationBuilder.add(ModBlocks.DARK_OAK_STANDING_TABLE, "Dark Oak Standing Table");
+        translationBuilder.add(ModBlocks.PALE_OAK_STANDING_TABLE, "Pale Oak Standing Table");
         translationBuilder.add(ModBlocks.JUNGLE_STANDING_TABLE, "Jungle Standing Table");
         translationBuilder.add(ModBlocks.MANGROVE_STANDING_TABLE, "Mangrove Standing Table");
         translationBuilder.add(ModBlocks.OAK_STANDING_TABLE, "Oak Standing Table");
@@ -293,6 +314,7 @@ public class EnglishLanguageProvider extends FabricLanguageProvider {
         translationBuilder.add(ModBlocks.CHERRY_BARREL_SEAT, "Cherry Barrel Seat");
         translationBuilder.add(ModBlocks.CRIMSON_BARREL_SEAT, "Crimson Barrel Seat");
         translationBuilder.add(ModBlocks.DARK_OAK_BARREL_SEAT, "Dark Oak Barrel Seat");
+        translationBuilder.add(ModBlocks.PALE_OAK_BARREL_SEAT, "Pale Oak Barrel Seat");
         translationBuilder.add(ModBlocks.JUNGLE_BARREL_SEAT, "Jungle Barrel Seat");
         translationBuilder.add(ModBlocks.MANGROVE_BARREL_SEAT, "Mangrove Barrel Seat");
         translationBuilder.add(ModBlocks.OAK_BARREL_SEAT, "Oak Barrel Seat");
@@ -305,6 +327,7 @@ public class EnglishLanguageProvider extends FabricLanguageProvider {
         translationBuilder.add(ModBlocks.CHERRY_CHAIR_TOMMY, "Cherry Chair \"Tommy\"");
         translationBuilder.add(ModBlocks.CRIMSON_CHAIR_TOMMY, "Crimson Chair \"Tommy\"");
         translationBuilder.add(ModBlocks.DARK_OAK_CHAIR_TOMMY, "Dark Oak Chair \"Tommy\"");
+        translationBuilder.add(ModBlocks.PALE_OAK_CHAIR_TOMMY, "Pale Oak Chair \"Tommy\"");
         translationBuilder.add(ModBlocks.JUNGLE_CHAIR_TOMMY, "Jungle Chair \"Tommy\"");
         translationBuilder.add(ModBlocks.MANGROVE_CHAIR_TOMMY, "Mangrove Chair \"Tommy\"");
         translationBuilder.add(ModBlocks.OAK_CHAIR_TOMMY, "Oak Chair \"Tommy\"");
@@ -317,6 +340,7 @@ public class EnglishLanguageProvider extends FabricLanguageProvider {
         translationBuilder.add(ModBlocks.CHERRY_CHAIR_TOMMY_NATURAL, "Cherry Chair \"Tommy\" - Natural");
         translationBuilder.add(ModBlocks.CRIMSON_CHAIR_TOMMY_NATURAL, "Crimson Chair \"Tommy\" - Natural");
         translationBuilder.add(ModBlocks.DARK_OAK_CHAIR_TOMMY_NATURAL, "Dark Oak Chair \"Tommy\" - Natural");
+        translationBuilder.add(ModBlocks.PALE_OAK_CHAIR_TOMMY_NATURAL, "Pale Oak Chair \"Tommy\" - Natural");
         translationBuilder.add(ModBlocks.JUNGLE_CHAIR_TOMMY_NATURAL, "Jungle Chair \"Tommy\" - Natural");
         translationBuilder.add(ModBlocks.MANGROVE_CHAIR_TOMMY_NATURAL, "Mangrove Chair \"Tommy\" - Natural");
         translationBuilder.add(ModBlocks.OAK_CHAIR_TOMMY_NATURAL, "Oak Chair \"Tommy\" - Natural");
@@ -329,6 +353,7 @@ public class EnglishLanguageProvider extends FabricLanguageProvider {
         translationBuilder.add(ModBlocks.CHERRY_CHAIR_GREGORY, "Cherry Chair \"Gregory\"");
         translationBuilder.add(ModBlocks.CRIMSON_CHAIR_GREGORY, "Crimson Chair \"Gregory\"");
         translationBuilder.add(ModBlocks.DARK_OAK_CHAIR_GREGORY, "Dark Oak Chair \"Gregory\"");
+        translationBuilder.add(ModBlocks.PALE_OAK_CHAIR_GREGORY, "Pale Oak Chair \"Gregory\"");
         translationBuilder.add(ModBlocks.JUNGLE_CHAIR_GREGORY, "Jungle Chair \"Gregory\"");
         translationBuilder.add(ModBlocks.MANGROVE_CHAIR_GREGORY, "Mangrove Chair \"Gregory\"");
         translationBuilder.add(ModBlocks.OAK_CHAIR_GREGORY, "Oak Chair \"Gregory\"");

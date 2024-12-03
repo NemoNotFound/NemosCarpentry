@@ -1,0 +1,15 @@
+{
+  "type": "nemos-carpentry:carpentry",
+  "ingredients": [
+    "nemos-carpentry:pale_oak_glass_door_frame",
+    "minecraft:red_stained_glass_pane"
+  ],
+  "inputCounts": [
+    1,
+    2
+  ],
+  "result": {
+    "count": 1,
+    "id": "nemos-carpentry:pale_oak_red_stained_glass_door"
+  }
+}

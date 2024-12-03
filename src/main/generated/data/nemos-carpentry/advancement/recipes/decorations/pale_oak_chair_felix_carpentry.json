@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_pale_oak_chair_felix": {
+      "conditions": {
+        "items": [
+          {
+            "items": "nemos-carpentry:pale_oak_chair_felix"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:pale_oak_chair_felix_carpentry"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_pale_oak_chair_felix"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:pale_oak_chair_felix_carpentry"
+    ]
+  }
+}

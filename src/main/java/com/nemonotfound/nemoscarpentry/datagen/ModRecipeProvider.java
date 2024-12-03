@@ -49,6 +49,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 createCarpentryRecipe(List.of(Blocks.CHERRY_PLANKS), List.of(1), ModBlocks.CHERRY_LADDER, 2, true);
                 createCarpentryRecipe(List.of(Blocks.CRIMSON_PLANKS), List.of(1), ModBlocks.CRIMSON_LADDER, 2, true);
                 createCarpentryRecipe(List.of(Blocks.DARK_OAK_PLANKS), List.of(1), ModBlocks.DARK_OAK_LADDER, 2, true);
+                createCarpentryRecipe(List.of(Blocks.PALE_OAK_PLANKS), List.of(1), ModBlocks.PALE_OAK_LADDER, 2, true);
                 createCarpentryRecipe(List.of(Blocks.JUNGLE_PLANKS), List.of(1), ModBlocks.JUNGLE_LADDER, 2, true);
                 createCarpentryRecipe(List.of(Blocks.MANGROVE_PLANKS), List.of(1), ModBlocks.MANGROVE_LADDER, 2, true);
                 createCarpentryRecipe(List.of(Blocks.OAK_PLANKS), List.of(1), Blocks.LADDER, 2, true);
@@ -61,6 +62,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 createCarpentryRecipe(List.of(Blocks.CHERRY_PLANKS), List.of(1), ModBlocks.CHERRY_CHAIR, 1, true);
                 createCarpentryRecipe(List.of(Blocks.CRIMSON_PLANKS), List.of(1), ModBlocks.CRIMSON_CHAIR, 1, true);
                 createCarpentryRecipe(List.of(Blocks.DARK_OAK_PLANKS), List.of(1), ModBlocks.DARK_OAK_CHAIR, 1, true);
+                createCarpentryRecipe(List.of(Blocks.PALE_OAK_PLANKS), List.of(1), ModBlocks.PALE_OAK_CHAIR, 1, true);
                 createCarpentryRecipe(List.of(Blocks.JUNGLE_PLANKS), List.of(1), ModBlocks.JUNGLE_CHAIR, 1, true);
                 createCarpentryRecipe(List.of(Blocks.MANGROVE_PLANKS), List.of(1), ModBlocks.MANGROVE_CHAIR, 1, true);
                 createCarpentryRecipe(List.of(Blocks.OAK_PLANKS), List.of(1), ModBlocks.OAK_CHAIR, 1, true);
@@ -73,6 +75,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 createCarpentryRecipe(List.of(Blocks.CHERRY_PLANKS), List.of(1), ModBlocks.CHERRY_CHAIR_FELIX, 1, true);
                 createCarpentryRecipe(List.of(Blocks.CRIMSON_PLANKS), List.of(1), ModBlocks.CRIMSON_CHAIR_FELIX, 1, true);
                 createCarpentryRecipe(List.of(Blocks.DARK_OAK_PLANKS), List.of(1), ModBlocks.DARK_OAK_CHAIR_FELIX, 1, true);
+                createCarpentryRecipe(List.of(Blocks.PALE_OAK_PLANKS), List.of(1), ModBlocks.PALE_OAK_CHAIR_FELIX, 1, true);
                 createCarpentryRecipe(List.of(Blocks.JUNGLE_PLANKS), List.of(1), ModBlocks.JUNGLE_CHAIR_FELIX, 1, true);
                 createCarpentryRecipe(List.of(Blocks.MANGROVE_PLANKS), List.of(1), ModBlocks.MANGROVE_CHAIR_FELIX, 1, true);
                 createCarpentryRecipe(List.of(Blocks.OAK_PLANKS), List.of(1), ModBlocks.OAK_CHAIR_FELIX, 1, true);
@@ -84,6 +87,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 createCarpentryRecipe(List.of(Blocks.CHERRY_LOG), List.of(1), ModBlocks.CHERRY_LOG_SEAT, 2, true);
                 createCarpentryRecipe(List.of(Blocks.CRIMSON_STEM), List.of(1), ModBlocks.CRIMSON_STEM_SEAT, 2, true);
                 createCarpentryRecipe(List.of(Blocks.DARK_OAK_LOG), List.of(1), ModBlocks.DARK_OAK_LOG_SEAT, 2, true);
+                createCarpentryRecipe(List.of(Blocks.PALE_OAK_LOG), List.of(1), ModBlocks.PALE_OAK_LOG_SEAT, 2, true);
                 createCarpentryRecipe(List.of(Blocks.JUNGLE_LOG), List.of(1), ModBlocks.JUNGLE_LOG_SEAT, 2, true);
                 createCarpentryRecipe(List.of(Blocks.MANGROVE_LOG), List.of(1), ModBlocks.MANGROVE_LOG_SEAT, 2, true);
                 createCarpentryRecipe(List.of(Blocks.OAK_LOG), List.of(1), ModBlocks.OAK_LOG_SEAT, 2, true);
@@ -96,6 +100,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 createCarpentryRecipe(List.of(Blocks.CHERRY_PLANKS), List.of(2), ModBlocks.CHERRY_PARK_BENCH, 1, true);
                 createCarpentryRecipe(List.of(Blocks.CRIMSON_PLANKS), List.of(2), ModBlocks.CRIMSON_PARK_BENCH, 1, true);
                 createCarpentryRecipe(List.of(Blocks.DARK_OAK_PLANKS), List.of(2), ModBlocks.DARK_OAK_PARK_BENCH, 1, true);
+                createCarpentryRecipe(List.of(Blocks.PALE_OAK_PLANKS), List.of(2), ModBlocks.PALE_OAK_PARK_BENCH, 1, true);
                 createCarpentryRecipe(List.of(Blocks.JUNGLE_PLANKS), List.of(2), ModBlocks.JUNGLE_PARK_BENCH, 1, true);
                 createCarpentryRecipe(List.of(Blocks.MANGROVE_PLANKS), List.of(2), ModBlocks.MANGROVE_PARK_BENCH, 1, true);
                 createCarpentryRecipe(List.of(Blocks.OAK_PLANKS), List.of(2), ModBlocks.OAK_PARK_BENCH, 1, true);
@@ -108,6 +113,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 createCarpentryRecipe(List.of(Blocks.CHERRY_PLANKS), List.of(2), ModItems.CHERRY_CHAIR_LUKAS, 1, true);
                 createCarpentryRecipe(List.of(Blocks.CRIMSON_PLANKS), List.of(2), ModItems.CRIMSON_CHAIR_LUKAS, 1, true);
                 createCarpentryRecipe(List.of(Blocks.DARK_OAK_PLANKS), List.of(2), ModItems.DARK_OAK_CHAIR_LUKAS, 1, true);
+                createCarpentryRecipe(List.of(Blocks.PALE_OAK_PLANKS), List.of(2), ModItems.PALE_OAK_CHAIR_LUKAS, 1, true);
                 createCarpentryRecipe(List.of(Blocks.JUNGLE_PLANKS), List.of(2), ModItems.JUNGLE_CHAIR_LUKAS, 1, true);
                 createCarpentryRecipe(List.of(Blocks.MANGROVE_PLANKS), List.of(2), ModItems.MANGROVE_CHAIR_LUKAS, 1, true);
                 createCarpentryRecipe(List.of(Blocks.OAK_PLANKS), List.of(2), ModItems.OAK_CHAIR_LUKAS, 1, true);
@@ -137,6 +143,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 createCarpentryRecipe(List.of(Blocks.CHERRY_PLANKS), List.of(1), ModBlocks.CHERRY_TABLE_THE_CLASSIC, 1, true);
                 createCarpentryRecipe(List.of(Blocks.CRIMSON_PLANKS), List.of(1), ModBlocks.CRIMSON_TABLE_THE_CLASSIC, 1, true);
                 createCarpentryRecipe(List.of(Blocks.DARK_OAK_PLANKS), List.of(1), ModBlocks.DARK_OAK_TABLE_THE_CLASSIC, 1, true);
+                createCarpentryRecipe(List.of(Blocks.PALE_OAK_PLANKS), List.of(1), ModBlocks.PALE_OAK_TABLE_THE_CLASSIC, 1, true);
                 createCarpentryRecipe(List.of(Blocks.JUNGLE_PLANKS), List.of(1), ModBlocks.JUNGLE_TABLE_THE_CLASSIC, 1, true);
                 createCarpentryRecipe(List.of(Blocks.MANGROVE_PLANKS), List.of(1), ModBlocks.MANGROVE_TABLE_THE_CLASSIC, 1, true);
                 createCarpentryRecipe(List.of(Blocks.OAK_PLANKS), List.of(1), ModBlocks.OAK_TABLE_THE_CLASSIC, 1, true);
@@ -151,6 +158,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 createCarpentryRecipe(List.of(Blocks.CHERRY_PLANKS, Blocks.IRON_BLOCK), List.of(1, 1), ModBlocks.CHERRY_COFFEE_TABLE_PASCAL, 4, true);
                 createCarpentryRecipe(List.of(Blocks.CRIMSON_PLANKS, Blocks.IRON_BLOCK), List.of(1, 1), ModBlocks.CRIMSON_COFFEE_TABLE_PASCAL, 4, true);
                 createCarpentryRecipe(List.of(Blocks.DARK_OAK_PLANKS, Blocks.IRON_BLOCK), List.of(1, 1), ModBlocks.DARK_OAK_COFFEE_TABLE_PASCAL, 4, true);
+                createCarpentryRecipe(List.of(Blocks.PALE_OAK_PLANKS, Blocks.IRON_BLOCK), List.of(1, 1), ModBlocks.PALE_OAK_COFFEE_TABLE_PASCAL, 4, true);
                 createCarpentryRecipe(List.of(Blocks.JUNGLE_PLANKS, Blocks.IRON_BLOCK), List.of(1, 1), ModBlocks.JUNGLE_COFFEE_TABLE_PASCAL, 4, true);
                 createCarpentryRecipe(List.of(Blocks.MANGROVE_PLANKS, Blocks.IRON_BLOCK), List.of(1, 1), ModBlocks.MANGROVE_COFFEE_TABLE_PASCAL, 4, true);
                 createCarpentryRecipe(List.of(Blocks.OAK_PLANKS, Blocks.IRON_BLOCK), List.of(1, 1), ModBlocks.OAK_COFFEE_TABLE_PASCAL, 4, true);
@@ -165,6 +173,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 createCarpentryRecipe(List.of(Blocks.CHERRY_LOG), List.of(1), ModBlocks.CHERRY_STANDING_TABLE, 1, true);
                 createCarpentryRecipe(List.of(Blocks.CRIMSON_STEM), List.of(1), ModBlocks.CRIMSON_STANDING_TABLE, 1, true);
                 createCarpentryRecipe(List.of(Blocks.DARK_OAK_LOG), List.of(1), ModBlocks.DARK_OAK_STANDING_TABLE, 1, true);
+                createCarpentryRecipe(List.of(Blocks.PALE_OAK_LOG), List.of(1), ModBlocks.PALE_OAK_STANDING_TABLE, 1, true);
                 createCarpentryRecipe(List.of(Blocks.JUNGLE_LOG), List.of(1), ModBlocks.JUNGLE_STANDING_TABLE, 1, true);
                 createCarpentryRecipe(List.of(Blocks.MANGROVE_LOG), List.of(1), ModBlocks.MANGROVE_STANDING_TABLE, 1, true);
                 createCarpentryRecipe(List.of(Blocks.OAK_LOG), List.of(1), ModBlocks.OAK_STANDING_TABLE, 1, true);
@@ -179,6 +188,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 createCarpentryRecipe(Blocks.CHERRY_PLANKS, ItemTags.CHERRY_LOGS, List.of(1, 1), ModItems.CHERRY_CHAIR_LUKAS_NATURAL, 1, true);
                 createCarpentryRecipe(Blocks.CRIMSON_PLANKS, ItemTags.CRIMSON_STEMS, List.of(1, 1), ModItems.CRIMSON_CHAIR_LUKAS_NATURAL, 1, true);
                 createCarpentryRecipe(Blocks.DARK_OAK_PLANKS, ItemTags.DARK_OAK_LOGS, List.of(1, 1), ModItems.DARK_OAK_CHAIR_LUKAS_NATURAL, 1, true);
+                createCarpentryRecipe(Blocks.PALE_OAK_PLANKS, ItemTags.PALE_OAK_LOGS, List.of(1, 1), ModItems.PALE_OAK_CHAIR_LUKAS_NATURAL, 1, true);
                 createCarpentryRecipe(Blocks.JUNGLE_PLANKS, ItemTags.JUNGLE_LOGS, List.of(1, 1), ModItems.JUNGLE_CHAIR_LUKAS_NATURAL, 1, true);
                 createCarpentryRecipe(Blocks.MANGROVE_PLANKS, ItemTags.MANGROVE_LOGS, List.of(1, 1), ModItems.MANGROVE_CHAIR_LUKAS_NATURAL, 1, true);
                 createCarpentryRecipe(Blocks.OAK_PLANKS, ItemTags.OAK_LOGS, List.of(1, 1), ModItems.OAK_CHAIR_LUKAS_NATURAL, 1, true);
@@ -193,6 +203,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 createCarpentryRecipe(List.of(Blocks.CHERRY_PLANKS), List.of(2), ModItems.CHERRY_CHAIR_TOMMY, 1, true);
                 createCarpentryRecipe(List.of(Blocks.CRIMSON_PLANKS), List.of(2), ModItems.CRIMSON_CHAIR_TOMMY, 1, true);
                 createCarpentryRecipe(List.of(Blocks.DARK_OAK_PLANKS), List.of(2), ModItems.DARK_OAK_CHAIR_TOMMY, 1, true);
+                createCarpentryRecipe(List.of(Blocks.PALE_OAK_PLANKS), List.of(2), ModItems.PALE_OAK_CHAIR_TOMMY, 1, true);
                 createCarpentryRecipe(List.of(Blocks.JUNGLE_PLANKS), List.of(2), ModItems.JUNGLE_CHAIR_TOMMY, 1, true);
                 createCarpentryRecipe(List.of(Blocks.MANGROVE_PLANKS), List.of(2), ModItems.MANGROVE_CHAIR_TOMMY, 1, true);
                 createCarpentryRecipe(List.of(Blocks.OAK_PLANKS), List.of(2), ModItems.OAK_CHAIR_TOMMY, 1, true);
@@ -207,6 +218,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 createCarpentryRecipe(Blocks.CHERRY_PLANKS, ItemTags.CHERRY_LOGS, List.of(1, 1), ModItems.CHERRY_CHAIR_TOMMY_NATURAL, 1, true);
                 createCarpentryRecipe(Blocks.CRIMSON_PLANKS, ItemTags.CRIMSON_STEMS, List.of(1, 1), ModItems.CRIMSON_CHAIR_TOMMY_NATURAL, 1, true);
                 createCarpentryRecipe(Blocks.DARK_OAK_PLANKS, ItemTags.DARK_OAK_LOGS, List.of(1, 1), ModItems.DARK_OAK_CHAIR_TOMMY_NATURAL, 1, true);
+                createCarpentryRecipe(Blocks.PALE_OAK_PLANKS, ItemTags.PALE_OAK_LOGS, List.of(1, 1), ModItems.PALE_OAK_CHAIR_TOMMY_NATURAL, 1, true);
                 createCarpentryRecipe(Blocks.JUNGLE_PLANKS, ItemTags.JUNGLE_LOGS, List.of(1, 1), ModItems.JUNGLE_CHAIR_TOMMY_NATURAL, 1, true);
                 createCarpentryRecipe(Blocks.MANGROVE_PLANKS, ItemTags.MANGROVE_LOGS, List.of(1, 1), ModItems.MANGROVE_CHAIR_TOMMY_NATURAL, 1, true);
                 createCarpentryRecipe(Blocks.OAK_PLANKS, ItemTags.OAK_LOGS, List.of(1, 1), ModItems.OAK_CHAIR_TOMMY_NATURAL, 1, true);
@@ -221,6 +233,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 createCarpentryRecipe(Blocks.CHERRY_PLANKS, ItemTags.CHERRY_LOGS, List.of(1, 1), ModItems.CHERRY_COFFEE_TABLE, 2, true);
                 createCarpentryRecipe(Blocks.CRIMSON_PLANKS, ItemTags.CRIMSON_STEMS, List.of(1, 1), ModItems.CRIMSON_COFFEE_TABLE, 2, true);
                 createCarpentryRecipe(Blocks.DARK_OAK_PLANKS, ItemTags.DARK_OAK_LOGS, List.of(1, 1), ModItems.DARK_OAK_COFFEE_TABLE, 2, true);
+                createCarpentryRecipe(Blocks.PALE_OAK_PLANKS, ItemTags.PALE_OAK_LOGS, List.of(1, 1), ModItems.PALE_OAK_COFFEE_TABLE, 2, true);
                 createCarpentryRecipe(Blocks.JUNGLE_PLANKS, ItemTags.JUNGLE_LOGS, List.of(1, 1), ModItems.JUNGLE_COFFEE_TABLE, 2, true);
                 createCarpentryRecipe(Blocks.MANGROVE_PLANKS, ItemTags.MANGROVE_LOGS, List.of(1, 1), ModItems.MANGROVE_COFFEE_TABLE, 2, true);
                 createCarpentryRecipe(Blocks.OAK_PLANKS, ItemTags.OAK_LOGS, List.of(1, 1), ModItems.OAK_COFFEE_TABLE, 2, true);
@@ -229,28 +242,18 @@ public class ModRecipeProvider extends FabricRecipeProvider {
             }
 
             private void createBarrelSeatRecipes() {
-                createCarpentryRecipe(List.of(Blocks.ACACIA_PLANKS, Items.IRON_INGOT), List.of(1, 1), ModItems.ACACIA_BARREL_SEAT, 1, true)
-                ;
-                createCarpentryRecipe(List.of(Blocks.BAMBOO_PLANKS, Items.IRON_INGOT), List.of(1, 1), ModItems.BAMBOO_BARREL_SEAT, 1, true)
-                ;
-                createCarpentryRecipe(List.of(Blocks.BIRCH_PLANKS, Items.IRON_INGOT), List.of(1, 1), ModItems.BIRCH_BARREL_SEAT, 1, true)
-                ;
-                createCarpentryRecipe(List.of(Blocks.CHERRY_PLANKS, Items.IRON_INGOT), List.of(1, 1), ModItems.CHERRY_BARREL_SEAT, 1, true)
-                ;
-                createCarpentryRecipe(List.of(Blocks.CRIMSON_PLANKS, Items.IRON_INGOT), List.of(1, 1), ModItems.CRIMSON_BARREL_SEAT, 1, true)
-                ;
-                createCarpentryRecipe(List.of(Blocks.DARK_OAK_PLANKS, Items.IRON_INGOT), List.of(1, 1), ModItems.DARK_OAK_BARREL_SEAT, 1, true)
-                ;
-                createCarpentryRecipe(List.of(Blocks.JUNGLE_PLANKS, Items.IRON_INGOT), List.of(1, 1), ModItems.JUNGLE_BARREL_SEAT, 1, true)
-                ;
-                createCarpentryRecipe(List.of(Blocks.MANGROVE_PLANKS, Items.IRON_INGOT), List.of(1, 1), ModItems.MANGROVE_BARREL_SEAT, 1, true)
-                ;
-                createCarpentryRecipe(List.of(Blocks.OAK_PLANKS, Items.IRON_INGOT), List.of(1, 1), ModItems.OAK_BARREL_SEAT, 1, true)
-                ;
-                createCarpentryRecipe(List.of(Blocks.SPRUCE_PLANKS, Items.IRON_INGOT), List.of(1, 1), ModItems.SPRUCE_BARREL_SEAT, 1, true)
-                ;
-                createCarpentryRecipe(List.of(Blocks.WARPED_PLANKS, Items.IRON_INGOT), List.of(1, 1), ModItems.WARPED_BARREL_SEAT, 1, true)
-                ;
+                createCarpentryRecipe(List.of(Blocks.ACACIA_PLANKS, Items.IRON_INGOT), List.of(1, 1), ModItems.ACACIA_BARREL_SEAT, 1, true);
+                createCarpentryRecipe(List.of(Blocks.BAMBOO_PLANKS, Items.IRON_INGOT), List.of(1, 1), ModItems.BAMBOO_BARREL_SEAT, 1, true);
+                createCarpentryRecipe(List.of(Blocks.BIRCH_PLANKS, Items.IRON_INGOT), List.of(1, 1), ModItems.BIRCH_BARREL_SEAT, 1, true);
+                createCarpentryRecipe(List.of(Blocks.CHERRY_PLANKS, Items.IRON_INGOT), List.of(1, 1), ModItems.CHERRY_BARREL_SEAT, 1, true);
+                createCarpentryRecipe(List.of(Blocks.CRIMSON_PLANKS, Items.IRON_INGOT), List.of(1, 1), ModItems.CRIMSON_BARREL_SEAT, 1, true);
+                createCarpentryRecipe(List.of(Blocks.DARK_OAK_PLANKS, Items.IRON_INGOT), List.of(1, 1), ModItems.DARK_OAK_BARREL_SEAT, 1, true);
+                createCarpentryRecipe(List.of(Blocks.PALE_OAK_PLANKS, Items.IRON_INGOT), List.of(1, 1), ModItems.PALE_OAK_BARREL_SEAT, 1, true);
+                createCarpentryRecipe(List.of(Blocks.JUNGLE_PLANKS, Items.IRON_INGOT), List.of(1, 1), ModItems.JUNGLE_BARREL_SEAT, 1, true);
+                createCarpentryRecipe(List.of(Blocks.MANGROVE_PLANKS, Items.IRON_INGOT), List.of(1, 1), ModItems.MANGROVE_BARREL_SEAT, 1, true);
+                createCarpentryRecipe(List.of(Blocks.OAK_PLANKS, Items.IRON_INGOT), List.of(1, 1), ModItems.OAK_BARREL_SEAT, 1, true);
+                createCarpentryRecipe(List.of(Blocks.SPRUCE_PLANKS, Items.IRON_INGOT), List.of(1, 1), ModItems.SPRUCE_BARREL_SEAT, 1, true);
+                createCarpentryRecipe(List.of(Blocks.WARPED_PLANKS, Items.IRON_INGOT), List.of(1, 1), ModItems.WARPED_BARREL_SEAT, 1, true);
             }
 
             private void createChairGregoryRecipes() {
@@ -260,6 +263,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 createCarpentryRecipe(Blocks.CHERRY_PLANKS, ItemTags.CHERRY_LOGS, List.of(1, 1), ModItems.CHERRY_CHAIR_GREGORY, 1, true);
                 createCarpentryRecipe(Blocks.CRIMSON_PLANKS, ItemTags.CRIMSON_STEMS, List.of(1, 1), ModItems.CRIMSON_CHAIR_GREGORY, 1, true);
                 createCarpentryRecipe(Blocks.DARK_OAK_PLANKS, ItemTags.DARK_OAK_LOGS, List.of(1, 1), ModItems.DARK_OAK_CHAIR_GREGORY, 1, true);
+                createCarpentryRecipe(Blocks.PALE_OAK_PLANKS, ItemTags.PALE_OAK_LOGS, List.of(1, 1), ModItems.PALE_OAK_CHAIR_GREGORY, 1, true);
                 createCarpentryRecipe(Blocks.JUNGLE_PLANKS, ItemTags.JUNGLE_LOGS, List.of(1, 1), ModItems.JUNGLE_CHAIR_GREGORY, 1, true);
                 createCarpentryRecipe(Blocks.MANGROVE_PLANKS, ItemTags.MANGROVE_LOGS, List.of(1, 1), ModItems.MANGROVE_CHAIR_GREGORY, 1, true);
                 createCarpentryRecipe(Blocks.OAK_PLANKS, ItemTags.OAK_LOGS, List.of(1, 1), ModItems.OAK_CHAIR_GREGORY, 1, true);
@@ -268,450 +272,248 @@ public class ModRecipeProvider extends FabricRecipeProvider {
             }
 
             private void createBarberChairRecipes() {
-                createCarpentryRecipe(List.of(Blocks.WHITE_WOOL, Blocks.GOLD_BLOCK), List.of(1, 1), ModItems.WHITE_BARBER_CHAIR, 1, true)
-                ;
-                createCarpentryRecipe(List.of(Blocks.LIGHT_GRAY_WOOL, Blocks.GOLD_BLOCK), List.of(1, 1), ModItems.LIGHT_GRAY_BARBER_CHAIR, 1, true)
-                ;
-                createCarpentryRecipe(List.of(Blocks.GRAY_WOOL, Blocks.GOLD_BLOCK), List.of(1, 1), ModItems.GRAY_BARBER_CHAIR, 1, true)
-                ;
-                createCarpentryRecipe(List.of(Blocks.BLACK_WOOL, Blocks.GOLD_BLOCK), List.of(1, 1), ModItems.BLACK_BARBER_CHAIR, 1, true)
-                ;
-                createCarpentryRecipe(List.of(Blocks.BROWN_WOOL, Blocks.GOLD_BLOCK), List.of(1, 1), ModItems.BROWN_BARBER_CHAIR, 1, true)
-                ;
-                createCarpentryRecipe(List.of(Blocks.RED_WOOL, Blocks.GOLD_BLOCK), List.of(1, 1), ModItems.RED_BARBER_CHAIR, 1, true)
-                ;
-                createCarpentryRecipe(List.of(Blocks.ORANGE_WOOL, Blocks.GOLD_BLOCK), List.of(1, 1), ModItems.ORANGE_BARBER_CHAIR, 1, true)
-                ;
-                createCarpentryRecipe(List.of(Blocks.YELLOW_WOOL, Blocks.GOLD_BLOCK), List.of(1, 1), ModItems.YELLOW_BARBER_CHAIR, 1, true)
-                ;
-                createCarpentryRecipe(List.of(Blocks.LIME_WOOL, Blocks.GOLD_BLOCK), List.of(1, 1), ModItems.LIME_BARBER_CHAIR, 1, true)
-                ;
-                createCarpentryRecipe(List.of(Blocks.GREEN_WOOL, Blocks.GOLD_BLOCK), List.of(1, 1), ModItems.GREEN_BARBER_CHAIR, 1, true)
-                ;
-                createCarpentryRecipe(List.of(Blocks.CYAN_WOOL, Blocks.GOLD_BLOCK), List.of(1, 1), ModItems.CYAN_BARBER_CHAIR, 1, true)
-                ;
-                createCarpentryRecipe(List.of(Blocks.LIGHT_BLUE_WOOL, Blocks.GOLD_BLOCK), List.of(1, 1), ModItems.LIGHT_BLUE_BARBER_CHAIR, 1, true)
-                ;
-                createCarpentryRecipe(List.of(Blocks.BLUE_WOOL, Blocks.GOLD_BLOCK), List.of(1, 1), ModItems.BLUE_BARBER_CHAIR, 1, true)
-                ;
-                createCarpentryRecipe(List.of(Blocks.PURPLE_WOOL, Blocks.GOLD_BLOCK), List.of(1, 1), ModItems.PURPLE_BARBER_CHAIR, 1, true)
-                ;
-                createCarpentryRecipe(List.of(Blocks.MAGENTA_WOOL, Blocks.GOLD_BLOCK), List.of(1, 1), ModItems.MAGENTA_BARBER_CHAIR, 1, true)
-                ;
-                createCarpentryRecipe(List.of(Blocks.PINK_WOOL, Blocks.GOLD_BLOCK), List.of(1, 1), ModItems.PINK_BARBER_CHAIR, 1, true)
-                ;
+                createCarpentryRecipe(List.of(Blocks.WHITE_WOOL, Blocks.GOLD_BLOCK), List.of(1, 1), ModItems.WHITE_BARBER_CHAIR, 1, true);
+                createCarpentryRecipe(List.of(Blocks.LIGHT_GRAY_WOOL, Blocks.GOLD_BLOCK), List.of(1, 1), ModItems.LIGHT_GRAY_BARBER_CHAIR, 1, true);
+                createCarpentryRecipe(List.of(Blocks.GRAY_WOOL, Blocks.GOLD_BLOCK), List.of(1, 1), ModItems.GRAY_BARBER_CHAIR, 1, true);
+                createCarpentryRecipe(List.of(Blocks.BLACK_WOOL, Blocks.GOLD_BLOCK), List.of(1, 1), ModItems.BLACK_BARBER_CHAIR, 1, true);
+                createCarpentryRecipe(List.of(Blocks.BROWN_WOOL, Blocks.GOLD_BLOCK), List.of(1, 1), ModItems.BROWN_BARBER_CHAIR, 1, true);
+                createCarpentryRecipe(List.of(Blocks.RED_WOOL, Blocks.GOLD_BLOCK), List.of(1, 1), ModItems.RED_BARBER_CHAIR, 1, true);
+                createCarpentryRecipe(List.of(Blocks.ORANGE_WOOL, Blocks.GOLD_BLOCK), List.of(1, 1), ModItems.ORANGE_BARBER_CHAIR, 1, true);
+                createCarpentryRecipe(List.of(Blocks.YELLOW_WOOL, Blocks.GOLD_BLOCK), List.of(1, 1), ModItems.YELLOW_BARBER_CHAIR, 1, true);
+                createCarpentryRecipe(List.of(Blocks.LIME_WOOL, Blocks.GOLD_BLOCK), List.of(1, 1), ModItems.LIME_BARBER_CHAIR, 1, true);
+                createCarpentryRecipe(List.of(Blocks.GREEN_WOOL, Blocks.GOLD_BLOCK), List.of(1, 1), ModItems.GREEN_BARBER_CHAIR, 1, true);
+                createCarpentryRecipe(List.of(Blocks.CYAN_WOOL, Blocks.GOLD_BLOCK), List.of(1, 1), ModItems.CYAN_BARBER_CHAIR, 1, true);
+                createCarpentryRecipe(List.of(Blocks.LIGHT_BLUE_WOOL, Blocks.GOLD_BLOCK), List.of(1, 1), ModItems.LIGHT_BLUE_BARBER_CHAIR, 1, true);
+                createCarpentryRecipe(List.of(Blocks.BLUE_WOOL, Blocks.GOLD_BLOCK), List.of(1, 1), ModItems.BLUE_BARBER_CHAIR, 1, true);
+                createCarpentryRecipe(List.of(Blocks.PURPLE_WOOL, Blocks.GOLD_BLOCK), List.of(1, 1), ModItems.PURPLE_BARBER_CHAIR, 1, true);
+                createCarpentryRecipe(List.of(Blocks.MAGENTA_WOOL, Blocks.GOLD_BLOCK), List.of(1, 1), ModItems.MAGENTA_BARBER_CHAIR, 1, true);
+                createCarpentryRecipe(List.of(Blocks.PINK_WOOL, Blocks.GOLD_BLOCK), List.of(1, 1), ModItems.PINK_BARBER_CHAIR, 1, true);
             }
 
             private void createBarChairRecipes() {
-                createCarpentryRecipe(List.of(Blocks.WHITE_WOOL, Blocks.IRON_BLOCK), List.of(1, 1), ModItems.WHITE_BAR_CHAIR, 1, true)
-                ;
-                createCarpentryRecipe(List.of(Blocks.LIGHT_GRAY_WOOL, Blocks.IRON_BLOCK), List.of(1, 1), ModItems.LIGHT_GRAY_BAR_CHAIR, 1, true)
-                ;
-                createCarpentryRecipe(List.of(Blocks.GRAY_WOOL, Blocks.IRON_BLOCK), List.of(1, 1), ModItems.GRAY_BAR_CHAIR, 1, true)
-                ;
-                createCarpentryRecipe(List.of(Blocks.BLACK_WOOL, Blocks.IRON_BLOCK), List.of(1, 1), ModItems.BLACK_BAR_CHAIR, 1, true)
-                ;
-                createCarpentryRecipe(List.of(Blocks.BROWN_WOOL, Blocks.IRON_BLOCK), List.of(1, 1), ModItems.BROWN_BAR_CHAIR, 1, true)
-                ;
-                createCarpentryRecipe(List.of(Blocks.RED_WOOL, Blocks.IRON_BLOCK), List.of(1, 1), ModItems.RED_BAR_CHAIR, 1, true)
-                ;
-                createCarpentryRecipe(List.of(Blocks.ORANGE_WOOL, Blocks.IRON_BLOCK), List.of(1, 1), ModItems.ORANGE_BAR_CHAIR, 1, true)
-                ;
-                createCarpentryRecipe(List.of(Blocks.YELLOW_WOOL, Blocks.IRON_BLOCK), List.of(1, 1), ModItems.YELLOW_BAR_CHAIR, 1, true)
-                ;
-                createCarpentryRecipe(List.of(Blocks.LIME_WOOL, Blocks.IRON_BLOCK), List.of(1, 1), ModItems.LIME_BAR_CHAIR, 1, true)
-                ;
-                createCarpentryRecipe(List.of(Blocks.GREEN_WOOL, Blocks.IRON_BLOCK), List.of(1, 1), ModItems.GREEN_BAR_CHAIR, 1, true)
-                ;
-                createCarpentryRecipe(List.of(Blocks.CYAN_WOOL, Blocks.IRON_BLOCK), List.of(1, 1), ModItems.CYAN_BAR_CHAIR, 1, true)
-                ;
-                createCarpentryRecipe(List.of(Blocks.LIGHT_BLUE_WOOL, Blocks.IRON_BLOCK), List.of(1, 1), ModItems.LIGHT_BLUE_BAR_CHAIR, 1, true)
-                ;
-                createCarpentryRecipe(List.of(Blocks.BLUE_WOOL, Blocks.IRON_BLOCK), List.of(1, 1), ModItems.BLUE_BAR_CHAIR, 1, true)
-                ;
-                createCarpentryRecipe(List.of(Blocks.PURPLE_WOOL, Blocks.IRON_BLOCK), List.of(1, 1), ModItems.PURPLE_BAR_CHAIR, 1, true)
-                ;
-                createCarpentryRecipe(List.of(Blocks.MAGENTA_WOOL, Blocks.IRON_BLOCK), List.of(1, 1), ModItems.MAGENTA_BAR_CHAIR, 1, true)
-                ;
-                createCarpentryRecipe(List.of(Blocks.PINK_WOOL, Blocks.IRON_BLOCK), List.of(1, 1), ModItems.PINK_BAR_CHAIR, 1, true)
-                ;
+                createCarpentryRecipe(List.of(Blocks.WHITE_WOOL, Blocks.IRON_BLOCK), List.of(1, 1), ModItems.WHITE_BAR_CHAIR, 1, true);
+                createCarpentryRecipe(List.of(Blocks.LIGHT_GRAY_WOOL, Blocks.IRON_BLOCK), List.of(1, 1), ModItems.LIGHT_GRAY_BAR_CHAIR, 1, true);
+                createCarpentryRecipe(List.of(Blocks.GRAY_WOOL, Blocks.IRON_BLOCK), List.of(1, 1), ModItems.GRAY_BAR_CHAIR, 1, true);
+                createCarpentryRecipe(List.of(Blocks.BLACK_WOOL, Blocks.IRON_BLOCK), List.of(1, 1), ModItems.BLACK_BAR_CHAIR, 1, true);
+                createCarpentryRecipe(List.of(Blocks.BROWN_WOOL, Blocks.IRON_BLOCK), List.of(1, 1), ModItems.BROWN_BAR_CHAIR, 1, true);
+                createCarpentryRecipe(List.of(Blocks.RED_WOOL, Blocks.IRON_BLOCK), List.of(1, 1), ModItems.RED_BAR_CHAIR, 1, true);
+                createCarpentryRecipe(List.of(Blocks.ORANGE_WOOL, Blocks.IRON_BLOCK), List.of(1, 1), ModItems.ORANGE_BAR_CHAIR, 1, true);
+                createCarpentryRecipe(List.of(Blocks.YELLOW_WOOL, Blocks.IRON_BLOCK), List.of(1, 1), ModItems.YELLOW_BAR_CHAIR, 1, true);
+                createCarpentryRecipe(List.of(Blocks.LIME_WOOL, Blocks.IRON_BLOCK), List.of(1, 1), ModItems.LIME_BAR_CHAIR, 1, true);
+                createCarpentryRecipe(List.of(Blocks.GREEN_WOOL, Blocks.IRON_BLOCK), List.of(1, 1), ModItems.GREEN_BAR_CHAIR, 1, true);
+                createCarpentryRecipe(List.of(Blocks.CYAN_WOOL, Blocks.IRON_BLOCK), List.of(1, 1), ModItems.CYAN_BAR_CHAIR, 1, true);
+                createCarpentryRecipe(List.of(Blocks.LIGHT_BLUE_WOOL, Blocks.IRON_BLOCK), List.of(1, 1), ModItems.LIGHT_BLUE_BAR_CHAIR, 1, true);
+                createCarpentryRecipe(List.of(Blocks.BLUE_WOOL, Blocks.IRON_BLOCK), List.of(1, 1), ModItems.BLUE_BAR_CHAIR, 1, true);
+                createCarpentryRecipe(List.of(Blocks.PURPLE_WOOL, Blocks.IRON_BLOCK), List.of(1, 1), ModItems.PURPLE_BAR_CHAIR, 1, true);
+                createCarpentryRecipe(List.of(Blocks.MAGENTA_WOOL, Blocks.IRON_BLOCK), List.of(1, 1), ModItems.MAGENTA_BAR_CHAIR, 1, true);
+                createCarpentryRecipe(List.of(Blocks.PINK_WOOL, Blocks.IRON_BLOCK), List.of(1, 1), ModItems.PINK_BAR_CHAIR, 1, true);
             }
 
             private void createPascalChairRecipes() {
-                createCarpentryRecipe(List.of(Blocks.ACACIA_PLANKS, Blocks.IRON_BLOCK), List.of(1, 1), ModItems.ACACIA_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.ACACIA_CHAIR_PASCAL, Blocks.WHITE_WOOL), List.of(1, 1), ModItems.ACACIA_WHITE_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.ACACIA_CHAIR_PASCAL, Blocks.LIGHT_GRAY_WOOL), List.of(1, 1), ModItems.ACACIA_LIGHT_GRAY_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.ACACIA_CHAIR_PASCAL, Blocks.GRAY_WOOL), List.of(1, 1), ModItems.ACACIA_GRAY_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.ACACIA_CHAIR_PASCAL, Blocks.BLACK_WOOL), List.of(1, 1), ModItems.ACACIA_BLACK_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.ACACIA_CHAIR_PASCAL, Blocks.BROWN_WOOL), List.of(1, 1), ModItems.ACACIA_BROWN_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.ACACIA_CHAIR_PASCAL, Blocks.RED_WOOL), List.of(1, 1), ModItems.ACACIA_RED_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.ACACIA_CHAIR_PASCAL, Blocks.ORANGE_WOOL), List.of(1, 1), ModItems.ACACIA_ORANGE_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.ACACIA_CHAIR_PASCAL, Blocks.YELLOW_WOOL), List.of(1, 1), ModItems.ACACIA_YELLOW_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.ACACIA_CHAIR_PASCAL, Blocks.LIME_WOOL), List.of(1, 1), ModItems.ACACIA_LIME_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.ACACIA_CHAIR_PASCAL, Blocks.GREEN_WOOL), List.of(1, 1), ModItems.ACACIA_GREEN_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.ACACIA_CHAIR_PASCAL, Blocks.CYAN_WOOL), List.of(1, 1), ModItems.ACACIA_CYAN_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.ACACIA_CHAIR_PASCAL, Blocks.LIGHT_BLUE_WOOL), List.of(1, 1), ModItems.ACACIA_LIGHT_BLUE_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.ACACIA_CHAIR_PASCAL, Blocks.BLUE_WOOL), List.of(1, 1), ModItems.ACACIA_BLUE_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.ACACIA_CHAIR_PASCAL, Blocks.PURPLE_WOOL), List.of(1, 1), ModItems.ACACIA_PURPLE_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.ACACIA_CHAIR_PASCAL, Blocks.MAGENTA_WOOL), List.of(1, 1), ModItems.ACACIA_MAGENTA_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.ACACIA_CHAIR_PASCAL, Blocks.PINK_WOOL), List.of(1, 1), ModItems.ACACIA_PINK_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(Blocks.BAMBOO_PLANKS, Blocks.IRON_BLOCK), List.of(1, 1), ModItems.BAMBOO_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.BAMBOO_CHAIR_PASCAL, Blocks.WHITE_WOOL), List.of(1, 1), ModItems.BAMBOO_WHITE_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.BAMBOO_CHAIR_PASCAL, Blocks.LIGHT_GRAY_WOOL), List.of(1, 1), ModItems.BAMBOO_LIGHT_GRAY_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.BAMBOO_CHAIR_PASCAL, Blocks.GRAY_WOOL), List.of(1, 1), ModItems.BAMBOO_GRAY_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.BAMBOO_CHAIR_PASCAL, Blocks.BLACK_WOOL), List.of(1, 1), ModItems.BAMBOO_BLACK_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.BAMBOO_CHAIR_PASCAL, Blocks.BROWN_WOOL), List.of(1, 1), ModItems.BAMBOO_BROWN_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.BAMBOO_CHAIR_PASCAL, Blocks.RED_WOOL), List.of(1, 1), ModItems.BAMBOO_RED_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.BAMBOO_CHAIR_PASCAL, Blocks.ORANGE_WOOL), List.of(1, 1), ModItems.BAMBOO_ORANGE_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.BAMBOO_CHAIR_PASCAL, Blocks.YELLOW_WOOL), List.of(1, 1), ModItems.BAMBOO_YELLOW_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.BAMBOO_CHAIR_PASCAL, Blocks.LIME_WOOL), List.of(1, 1), ModItems.BAMBOO_LIME_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.BAMBOO_CHAIR_PASCAL, Blocks.GREEN_WOOL), List.of(1, 1), ModItems.BAMBOO_GREEN_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.BAMBOO_CHAIR_PASCAL, Blocks.CYAN_WOOL), List.of(1, 1), ModItems.BAMBOO_CYAN_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.BAMBOO_CHAIR_PASCAL, Blocks.LIGHT_BLUE_WOOL), List.of(1, 1), ModItems.BAMBOO_LIGHT_BLUE_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.BAMBOO_CHAIR_PASCAL, Blocks.BLUE_WOOL), List.of(1, 1), ModItems.BAMBOO_BLUE_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.BAMBOO_CHAIR_PASCAL, Blocks.PURPLE_WOOL), List.of(1, 1), ModItems.BAMBOO_PURPLE_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.BAMBOO_CHAIR_PASCAL, Blocks.MAGENTA_WOOL), List.of(1, 1), ModItems.BAMBOO_MAGENTA_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.BAMBOO_CHAIR_PASCAL, Blocks.PINK_WOOL), List.of(1, 1), ModItems.BAMBOO_PINK_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(Blocks.BIRCH_PLANKS, Blocks.IRON_BLOCK), List.of(1, 1), ModItems.BIRCH_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.BIRCH_CHAIR_PASCAL, Blocks.WHITE_WOOL), List.of(1, 1), ModItems.BIRCH_WHITE_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.BIRCH_CHAIR_PASCAL, Blocks.LIGHT_GRAY_WOOL), List.of(1, 1), ModItems.BIRCH_LIGHT_GRAY_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.BIRCH_CHAIR_PASCAL, Blocks.GRAY_WOOL), List.of(1, 1), ModItems.BIRCH_GRAY_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.BIRCH_CHAIR_PASCAL, Blocks.BLACK_WOOL), List.of(1, 1), ModItems.BIRCH_BLACK_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.BIRCH_CHAIR_PASCAL, Blocks.BROWN_WOOL), List.of(1, 1), ModItems.BIRCH_BROWN_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.BIRCH_CHAIR_PASCAL, Blocks.RED_WOOL), List.of(1, 1), ModItems.BIRCH_RED_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.BIRCH_CHAIR_PASCAL, Blocks.ORANGE_WOOL), List.of(1, 1), ModItems.BIRCH_ORANGE_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.BIRCH_CHAIR_PASCAL, Blocks.YELLOW_WOOL), List.of(1, 1), ModItems.BIRCH_YELLOW_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.BIRCH_CHAIR_PASCAL, Blocks.LIME_WOOL), List.of(1, 1), ModItems.BIRCH_LIME_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.BIRCH_CHAIR_PASCAL, Blocks.GREEN_WOOL), List.of(1, 1), ModItems.BIRCH_GREEN_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.BIRCH_CHAIR_PASCAL, Blocks.CYAN_WOOL), List.of(1, 1), ModItems.BIRCH_CYAN_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.BIRCH_CHAIR_PASCAL, Blocks.LIGHT_BLUE_WOOL), List.of(1, 1), ModItems.BIRCH_LIGHT_BLUE_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.BIRCH_CHAIR_PASCAL, Blocks.BLUE_WOOL), List.of(1, 1), ModItems.BIRCH_BLUE_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.BIRCH_CHAIR_PASCAL, Blocks.PURPLE_WOOL), List.of(1, 1), ModItems.BIRCH_PURPLE_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.BIRCH_CHAIR_PASCAL, Blocks.MAGENTA_WOOL), List.of(1, 1), ModItems.BIRCH_MAGENTA_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.BIRCH_CHAIR_PASCAL, Blocks.PINK_WOOL), List.of(1, 1), ModItems.BIRCH_PINK_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(Blocks.CHERRY_PLANKS, Blocks.IRON_BLOCK), List.of(1, 1), ModItems.CHERRY_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.CHERRY_CHAIR_PASCAL, Blocks.WHITE_WOOL), List.of(1, 1), ModItems.CHERRY_WHITE_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.CHERRY_CHAIR_PASCAL, Blocks.LIGHT_GRAY_WOOL), List.of(1, 1), ModItems.CHERRY_LIGHT_GRAY_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.CHERRY_CHAIR_PASCAL, Blocks.GRAY_WOOL), List.of(1, 1), ModItems.CHERRY_GRAY_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.CHERRY_CHAIR_PASCAL, Blocks.BLACK_WOOL), List.of(1, 1), ModItems.CHERRY_BLACK_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.CHERRY_CHAIR_PASCAL, Blocks.BROWN_WOOL), List.of(1, 1), ModItems.CHERRY_BROWN_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.CHERRY_CHAIR_PASCAL, Blocks.RED_WOOL), List.of(1, 1), ModItems.CHERRY_RED_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.CHERRY_CHAIR_PASCAL, Blocks.ORANGE_WOOL), List.of(1, 1), ModItems.CHERRY_ORANGE_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.CHERRY_CHAIR_PASCAL, Blocks.YELLOW_WOOL), List.of(1, 1), ModItems.CHERRY_YELLOW_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.CHERRY_CHAIR_PASCAL, Blocks.LIME_WOOL), List.of(1, 1), ModItems.CHERRY_LIME_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.CHERRY_CHAIR_PASCAL, Blocks.GREEN_WOOL), List.of(1, 1), ModItems.CHERRY_GREEN_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.CHERRY_CHAIR_PASCAL, Blocks.CYAN_WOOL), List.of(1, 1), ModItems.CHERRY_CYAN_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.CHERRY_CHAIR_PASCAL, Blocks.LIGHT_BLUE_WOOL), List.of(1, 1), ModItems.CHERRY_LIGHT_BLUE_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.CHERRY_CHAIR_PASCAL, Blocks.BLUE_WOOL), List.of(1, 1), ModItems.CHERRY_BLUE_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.CHERRY_CHAIR_PASCAL, Blocks.PURPLE_WOOL), List.of(1, 1), ModItems.CHERRY_PURPLE_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.CHERRY_CHAIR_PASCAL, Blocks.MAGENTA_WOOL), List.of(1, 1), ModItems.CHERRY_MAGENTA_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.CHERRY_CHAIR_PASCAL, Blocks.PINK_WOOL), List.of(1, 1), ModItems.CHERRY_PINK_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(Blocks.CRIMSON_PLANKS, Blocks.IRON_BLOCK), List.of(1, 1), ModItems.CRIMSON_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.CRIMSON_CHAIR_PASCAL, Blocks.WHITE_WOOL), List.of(1, 1), ModItems.CRIMSON_WHITE_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.CRIMSON_CHAIR_PASCAL, Blocks.LIGHT_GRAY_WOOL), List.of(1, 1), ModItems.CRIMSON_LIGHT_GRAY_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.CRIMSON_CHAIR_PASCAL, Blocks.GRAY_WOOL), List.of(1, 1), ModItems.CRIMSON_GRAY_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.CRIMSON_CHAIR_PASCAL, Blocks.BLACK_WOOL), List.of(1, 1), ModItems.CRIMSON_BLACK_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.CRIMSON_CHAIR_PASCAL, Blocks.BROWN_WOOL), List.of(1, 1), ModItems.CRIMSON_BROWN_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.CRIMSON_CHAIR_PASCAL, Blocks.RED_WOOL), List.of(1, 1), ModItems.CRIMSON_RED_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.CRIMSON_CHAIR_PASCAL, Blocks.ORANGE_WOOL), List.of(1, 1), ModItems.CRIMSON_ORANGE_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.CRIMSON_CHAIR_PASCAL, Blocks.YELLOW_WOOL), List.of(1, 1), ModItems.CRIMSON_YELLOW_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.CRIMSON_CHAIR_PASCAL, Blocks.LIME_WOOL), List.of(1, 1), ModItems.CRIMSON_LIME_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.CRIMSON_CHAIR_PASCAL, Blocks.GREEN_WOOL), List.of(1, 1), ModItems.CRIMSON_GREEN_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.CRIMSON_CHAIR_PASCAL, Blocks.CYAN_WOOL), List.of(1, 1), ModItems.CRIMSON_CYAN_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.CRIMSON_CHAIR_PASCAL, Blocks.LIGHT_BLUE_WOOL), List.of(1, 1), ModItems.CRIMSON_LIGHT_BLUE_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.CRIMSON_CHAIR_PASCAL, Blocks.BLUE_WOOL), List.of(1, 1), ModItems.CRIMSON_BLUE_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.CRIMSON_CHAIR_PASCAL, Blocks.PURPLE_WOOL), List.of(1, 1), ModItems.CRIMSON_PURPLE_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.CRIMSON_CHAIR_PASCAL, Blocks.MAGENTA_WOOL), List.of(1, 1), ModItems.CRIMSON_MAGENTA_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.CRIMSON_CHAIR_PASCAL, Blocks.PINK_WOOL), List.of(1, 1), ModItems.CRIMSON_PINK_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(Blocks.DARK_OAK_PLANKS, Blocks.IRON_BLOCK), List.of(1, 1), ModItems.DARK_OAK_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.DARK_OAK_CHAIR_PASCAL, Blocks.WHITE_WOOL), List.of(1, 1), ModItems.DARK_OAK_WHITE_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.DARK_OAK_CHAIR_PASCAL, Blocks.LIGHT_GRAY_WOOL), List.of(1, 1), ModItems.DARK_OAK_LIGHT_GRAY_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.DARK_OAK_CHAIR_PASCAL, Blocks.GRAY_WOOL), List.of(1, 1), ModItems.DARK_OAK_GRAY_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.DARK_OAK_CHAIR_PASCAL, Blocks.BLACK_WOOL), List.of(1, 1), ModItems.DARK_OAK_BLACK_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.DARK_OAK_CHAIR_PASCAL, Blocks.BROWN_WOOL), List.of(1, 1), ModItems.DARK_OAK_BROWN_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.DARK_OAK_CHAIR_PASCAL, Blocks.RED_WOOL), List.of(1, 1), ModItems.DARK_OAK_RED_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.DARK_OAK_CHAIR_PASCAL, Blocks.ORANGE_WOOL), List.of(1, 1), ModItems.DARK_OAK_ORANGE_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.DARK_OAK_CHAIR_PASCAL, Blocks.YELLOW_WOOL), List.of(1, 1), ModItems.DARK_OAK_YELLOW_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.DARK_OAK_CHAIR_PASCAL, Blocks.LIME_WOOL), List.of(1, 1), ModItems.DARK_OAK_LIME_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.DARK_OAK_CHAIR_PASCAL, Blocks.GREEN_WOOL), List.of(1, 1), ModItems.DARK_OAK_GREEN_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.DARK_OAK_CHAIR_PASCAL, Blocks.CYAN_WOOL), List.of(1, 1), ModItems.DARK_OAK_CYAN_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.DARK_OAK_CHAIR_PASCAL, Blocks.LIGHT_BLUE_WOOL), List.of(1, 1), ModItems.DARK_OAK_LIGHT_BLUE_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.DARK_OAK_CHAIR_PASCAL, Blocks.BLUE_WOOL), List.of(1, 1), ModItems.DARK_OAK_BLUE_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.DARK_OAK_CHAIR_PASCAL, Blocks.PURPLE_WOOL), List.of(1, 1), ModItems.DARK_OAK_PURPLE_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.DARK_OAK_CHAIR_PASCAL, Blocks.MAGENTA_WOOL), List.of(1, 1), ModItems.DARK_OAK_MAGENTA_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.DARK_OAK_CHAIR_PASCAL, Blocks.PINK_WOOL), List.of(1, 1), ModItems.DARK_OAK_PINK_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(Blocks.JUNGLE_PLANKS, Blocks.IRON_BLOCK), List.of(1, 1), ModItems.JUNGLE_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.JUNGLE_CHAIR_PASCAL, Blocks.WHITE_WOOL), List.of(1, 1), ModItems.JUNGLE_WHITE_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.JUNGLE_CHAIR_PASCAL, Blocks.LIGHT_GRAY_WOOL), List.of(1, 1), ModItems.JUNGLE_LIGHT_GRAY_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.JUNGLE_CHAIR_PASCAL, Blocks.GRAY_WOOL), List.of(1, 1), ModItems.JUNGLE_GRAY_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.JUNGLE_CHAIR_PASCAL, Blocks.BLACK_WOOL), List.of(1, 1), ModItems.JUNGLE_BLACK_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.JUNGLE_CHAIR_PASCAL, Blocks.BROWN_WOOL), List.of(1, 1), ModItems.JUNGLE_BROWN_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.JUNGLE_CHAIR_PASCAL, Blocks.RED_WOOL), List.of(1, 1), ModItems.JUNGLE_RED_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.JUNGLE_CHAIR_PASCAL, Blocks.ORANGE_WOOL), List.of(1, 1), ModItems.JUNGLE_ORANGE_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.JUNGLE_CHAIR_PASCAL, Blocks.YELLOW_WOOL), List.of(1, 1), ModItems.JUNGLE_YELLOW_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.JUNGLE_CHAIR_PASCAL, Blocks.LIME_WOOL), List.of(1, 1), ModItems.JUNGLE_LIME_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.JUNGLE_CHAIR_PASCAL, Blocks.GREEN_WOOL), List.of(1, 1), ModItems.JUNGLE_GREEN_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.JUNGLE_CHAIR_PASCAL, Blocks.CYAN_WOOL), List.of(1, 1), ModItems.JUNGLE_CYAN_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.JUNGLE_CHAIR_PASCAL, Blocks.LIGHT_BLUE_WOOL), List.of(1, 1), ModItems.JUNGLE_LIGHT_BLUE_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.JUNGLE_CHAIR_PASCAL, Blocks.BLUE_WOOL), List.of(1, 1), ModItems.JUNGLE_BLUE_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.JUNGLE_CHAIR_PASCAL, Blocks.PURPLE_WOOL), List.of(1, 1), ModItems.JUNGLE_PURPLE_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.JUNGLE_CHAIR_PASCAL, Blocks.MAGENTA_WOOL), List.of(1, 1), ModItems.JUNGLE_MAGENTA_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.JUNGLE_CHAIR_PASCAL, Blocks.PINK_WOOL), List.of(1, 1), ModItems.JUNGLE_PINK_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(Blocks.MANGROVE_PLANKS, Blocks.IRON_BLOCK), List.of(1, 1), ModItems.MANGROVE_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.MANGROVE_CHAIR_PASCAL, Blocks.WHITE_WOOL), List.of(1, 1), ModItems.MANGROVE_WHITE_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.MANGROVE_CHAIR_PASCAL, Blocks.LIGHT_GRAY_WOOL), List.of(1, 1), ModItems.MANGROVE_LIGHT_GRAY_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.MANGROVE_CHAIR_PASCAL, Blocks.GRAY_WOOL), List.of(1, 1), ModItems.MANGROVE_GRAY_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.MANGROVE_CHAIR_PASCAL, Blocks.BLACK_WOOL), List.of(1, 1), ModItems.MANGROVE_BLACK_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.MANGROVE_CHAIR_PASCAL, Blocks.BROWN_WOOL), List.of(1, 1), ModItems.MANGROVE_BROWN_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.MANGROVE_CHAIR_PASCAL, Blocks.RED_WOOL), List.of(1, 1), ModItems.MANGROVE_RED_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.MANGROVE_CHAIR_PASCAL, Blocks.ORANGE_WOOL), List.of(1, 1), ModItems.MANGROVE_ORANGE_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.MANGROVE_CHAIR_PASCAL, Blocks.YELLOW_WOOL), List.of(1, 1), ModItems.MANGROVE_YELLOW_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.MANGROVE_CHAIR_PASCAL, Blocks.LIME_WOOL), List.of(1, 1), ModItems.MANGROVE_LIME_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.MANGROVE_CHAIR_PASCAL, Blocks.GREEN_WOOL), List.of(1, 1), ModItems.MANGROVE_GREEN_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.MANGROVE_CHAIR_PASCAL, Blocks.CYAN_WOOL), List.of(1, 1), ModItems.MANGROVE_CYAN_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.MANGROVE_CHAIR_PASCAL, Blocks.LIGHT_BLUE_WOOL), List.of(1, 1), ModItems.MANGROVE_LIGHT_BLUE_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.MANGROVE_CHAIR_PASCAL, Blocks.BLUE_WOOL), List.of(1, 1), ModItems.MANGROVE_BLUE_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.MANGROVE_CHAIR_PASCAL, Blocks.PURPLE_WOOL), List.of(1, 1), ModItems.MANGROVE_PURPLE_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.MANGROVE_CHAIR_PASCAL, Blocks.MAGENTA_WOOL), List.of(1, 1), ModItems.MANGROVE_MAGENTA_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.MANGROVE_CHAIR_PASCAL, Blocks.PINK_WOOL), List.of(1, 1), ModItems.MANGROVE_PINK_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(Blocks.OAK_PLANKS, Blocks.IRON_BLOCK), List.of(1, 1), ModItems.OAK_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.OAK_CHAIR_PASCAL, Blocks.WHITE_WOOL), List.of(1, 1), ModItems.OAK_WHITE_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.OAK_CHAIR_PASCAL, Blocks.LIGHT_GRAY_WOOL), List.of(1, 1), ModItems.OAK_LIGHT_GRAY_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.OAK_CHAIR_PASCAL, Blocks.GRAY_WOOL), List.of(1, 1), ModItems.OAK_GRAY_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.OAK_CHAIR_PASCAL, Blocks.BLACK_WOOL), List.of(1, 1), ModItems.OAK_BLACK_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.OAK_CHAIR_PASCAL, Blocks.BROWN_WOOL), List.of(1, 1), ModItems.OAK_BROWN_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.OAK_CHAIR_PASCAL, Blocks.RED_WOOL), List.of(1, 1), ModItems.OAK_RED_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.OAK_CHAIR_PASCAL, Blocks.ORANGE_WOOL), List.of(1, 1), ModItems.OAK_ORANGE_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.OAK_CHAIR_PASCAL, Blocks.YELLOW_WOOL), List.of(1, 1), ModItems.OAK_YELLOW_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.OAK_CHAIR_PASCAL, Blocks.LIME_WOOL), List.of(1, 1), ModItems.OAK_LIME_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.OAK_CHAIR_PASCAL, Blocks.GREEN_WOOL), List.of(1, 1), ModItems.OAK_GREEN_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.OAK_CHAIR_PASCAL, Blocks.CYAN_WOOL), List.of(1, 1), ModItems.OAK_CYAN_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.OAK_CHAIR_PASCAL, Blocks.LIGHT_BLUE_WOOL), List.of(1, 1), ModItems.OAK_LIGHT_BLUE_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.OAK_CHAIR_PASCAL, Blocks.BLUE_WOOL), List.of(1, 1), ModItems.OAK_BLUE_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.OAK_CHAIR_PASCAL, Blocks.PURPLE_WOOL), List.of(1, 1), ModItems.OAK_PURPLE_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.OAK_CHAIR_PASCAL, Blocks.MAGENTA_WOOL), List.of(1, 1), ModItems.OAK_MAGENTA_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.OAK_CHAIR_PASCAL, Blocks.PINK_WOOL), List.of(1, 1), ModItems.OAK_PINK_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(Blocks.SPRUCE_PLANKS, Blocks.IRON_BLOCK), List.of(1, 1), ModItems.SPRUCE_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.SPRUCE_CHAIR_PASCAL, Blocks.WHITE_WOOL), List.of(1, 1), ModItems.SPRUCE_WHITE_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.SPRUCE_CHAIR_PASCAL, Blocks.LIGHT_GRAY_WOOL), List.of(1, 1), ModItems.SPRUCE_LIGHT_GRAY_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.SPRUCE_CHAIR_PASCAL, Blocks.GRAY_WOOL), List.of(1, 1), ModItems.SPRUCE_GRAY_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.SPRUCE_CHAIR_PASCAL, Blocks.BLACK_WOOL), List.of(1, 1), ModItems.SPRUCE_BLACK_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.SPRUCE_CHAIR_PASCAL, Blocks.BROWN_WOOL), List.of(1, 1), ModItems.SPRUCE_BROWN_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.SPRUCE_CHAIR_PASCAL, Blocks.RED_WOOL), List.of(1, 1), ModItems.SPRUCE_RED_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.SPRUCE_CHAIR_PASCAL, Blocks.ORANGE_WOOL), List.of(1, 1), ModItems.SPRUCE_ORANGE_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.SPRUCE_CHAIR_PASCAL, Blocks.YELLOW_WOOL), List.of(1, 1), ModItems.SPRUCE_YELLOW_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.SPRUCE_CHAIR_PASCAL, Blocks.LIME_WOOL), List.of(1, 1), ModItems.SPRUCE_LIME_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.SPRUCE_CHAIR_PASCAL, Blocks.GREEN_WOOL), List.of(1, 1), ModItems.SPRUCE_GREEN_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.SPRUCE_CHAIR_PASCAL, Blocks.CYAN_WOOL), List.of(1, 1), ModItems.SPRUCE_CYAN_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.SPRUCE_CHAIR_PASCAL, Blocks.LIGHT_BLUE_WOOL), List.of(1, 1), ModItems.SPRUCE_LIGHT_BLUE_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.SPRUCE_CHAIR_PASCAL, Blocks.BLUE_WOOL), List.of(1, 1), ModItems.SPRUCE_BLUE_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.SPRUCE_CHAIR_PASCAL, Blocks.PURPLE_WOOL), List.of(1, 1), ModItems.SPRUCE_PURPLE_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.SPRUCE_CHAIR_PASCAL, Blocks.MAGENTA_WOOL), List.of(1, 1), ModItems.SPRUCE_MAGENTA_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.SPRUCE_CHAIR_PASCAL, Blocks.PINK_WOOL), List.of(1, 1), ModItems.SPRUCE_PINK_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(Blocks.WARPED_PLANKS, Blocks.IRON_BLOCK), List.of(1, 1), ModItems.WARPED_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.WARPED_CHAIR_PASCAL, Blocks.WHITE_WOOL), List.of(1, 1), ModItems.WARPED_WHITE_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.WARPED_CHAIR_PASCAL, Blocks.LIGHT_GRAY_WOOL), List.of(1, 1), ModItems.WARPED_LIGHT_GRAY_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.WARPED_CHAIR_PASCAL, Blocks.GRAY_WOOL), List.of(1, 1), ModItems.WARPED_GRAY_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.WARPED_CHAIR_PASCAL, Blocks.BLACK_WOOL), List.of(1, 1), ModItems.WARPED_BLACK_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.WARPED_CHAIR_PASCAL, Blocks.BROWN_WOOL), List.of(1, 1), ModItems.WARPED_BROWN_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.WARPED_CHAIR_PASCAL, Blocks.RED_WOOL), List.of(1, 1), ModItems.WARPED_RED_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.WARPED_CHAIR_PASCAL, Blocks.ORANGE_WOOL), List.of(1, 1), ModItems.WARPED_ORANGE_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.WARPED_CHAIR_PASCAL, Blocks.YELLOW_WOOL), List.of(1, 1), ModItems.WARPED_YELLOW_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.WARPED_CHAIR_PASCAL, Blocks.LIME_WOOL), List.of(1, 1), ModItems.WARPED_LIME_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.WARPED_CHAIR_PASCAL, Blocks.GREEN_WOOL), List.of(1, 1), ModItems.WARPED_GREEN_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.WARPED_CHAIR_PASCAL, Blocks.CYAN_WOOL), List.of(1, 1), ModItems.WARPED_CYAN_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.WARPED_CHAIR_PASCAL, Blocks.LIGHT_BLUE_WOOL), List.of(1, 1), ModItems.WARPED_LIGHT_BLUE_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.WARPED_CHAIR_PASCAL, Blocks.BLUE_WOOL), List.of(1, 1), ModItems.WARPED_BLUE_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.WARPED_CHAIR_PASCAL, Blocks.PURPLE_WOOL), List.of(1, 1), ModItems.WARPED_PURPLE_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.WARPED_CHAIR_PASCAL, Blocks.MAGENTA_WOOL), List.of(1, 1), ModItems.WARPED_MAGENTA_CHAIR_PASCAL, 1, true)
-                ;
-                createCarpentryRecipe(List.of(ModBlocks.WARPED_CHAIR_PASCAL, Blocks.PINK_WOOL), List.of(1, 1), ModItems.WARPED_PINK_CHAIR_PASCAL, 1, true)
-                ;
+                createCarpentryRecipe(List.of(Blocks.ACACIA_PLANKS, Blocks.IRON_BLOCK), List.of(1, 1), ModItems.ACACIA_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.ACACIA_CHAIR_PASCAL, Blocks.WHITE_WOOL), List.of(1, 1), ModItems.ACACIA_WHITE_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.ACACIA_CHAIR_PASCAL, Blocks.LIGHT_GRAY_WOOL), List.of(1, 1), ModItems.ACACIA_LIGHT_GRAY_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.ACACIA_CHAIR_PASCAL, Blocks.GRAY_WOOL), List.of(1, 1), ModItems.ACACIA_GRAY_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.ACACIA_CHAIR_PASCAL, Blocks.BLACK_WOOL), List.of(1, 1), ModItems.ACACIA_BLACK_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.ACACIA_CHAIR_PASCAL, Blocks.BROWN_WOOL), List.of(1, 1), ModItems.ACACIA_BROWN_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.ACACIA_CHAIR_PASCAL, Blocks.RED_WOOL), List.of(1, 1), ModItems.ACACIA_RED_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.ACACIA_CHAIR_PASCAL, Blocks.ORANGE_WOOL), List.of(1, 1), ModItems.ACACIA_ORANGE_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.ACACIA_CHAIR_PASCAL, Blocks.YELLOW_WOOL), List.of(1, 1), ModItems.ACACIA_YELLOW_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.ACACIA_CHAIR_PASCAL, Blocks.LIME_WOOL), List.of(1, 1), ModItems.ACACIA_LIME_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.ACACIA_CHAIR_PASCAL, Blocks.GREEN_WOOL), List.of(1, 1), ModItems.ACACIA_GREEN_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.ACACIA_CHAIR_PASCAL, Blocks.CYAN_WOOL), List.of(1, 1), ModItems.ACACIA_CYAN_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.ACACIA_CHAIR_PASCAL, Blocks.LIGHT_BLUE_WOOL), List.of(1, 1), ModItems.ACACIA_LIGHT_BLUE_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.ACACIA_CHAIR_PASCAL, Blocks.BLUE_WOOL), List.of(1, 1), ModItems.ACACIA_BLUE_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.ACACIA_CHAIR_PASCAL, Blocks.PURPLE_WOOL), List.of(1, 1), ModItems.ACACIA_PURPLE_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.ACACIA_CHAIR_PASCAL, Blocks.MAGENTA_WOOL), List.of(1, 1), ModItems.ACACIA_MAGENTA_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.ACACIA_CHAIR_PASCAL, Blocks.PINK_WOOL), List.of(1, 1), ModItems.ACACIA_PINK_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(Blocks.BAMBOO_PLANKS, Blocks.IRON_BLOCK), List.of(1, 1), ModItems.BAMBOO_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.BAMBOO_CHAIR_PASCAL, Blocks.WHITE_WOOL), List.of(1, 1), ModItems.BAMBOO_WHITE_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.BAMBOO_CHAIR_PASCAL, Blocks.LIGHT_GRAY_WOOL), List.of(1, 1), ModItems.BAMBOO_LIGHT_GRAY_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.BAMBOO_CHAIR_PASCAL, Blocks.GRAY_WOOL), List.of(1, 1), ModItems.BAMBOO_GRAY_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.BAMBOO_CHAIR_PASCAL, Blocks.BLACK_WOOL), List.of(1, 1), ModItems.BAMBOO_BLACK_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.BAMBOO_CHAIR_PASCAL, Blocks.BROWN_WOOL), List.of(1, 1), ModItems.BAMBOO_BROWN_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.BAMBOO_CHAIR_PASCAL, Blocks.RED_WOOL), List.of(1, 1), ModItems.BAMBOO_RED_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.BAMBOO_CHAIR_PASCAL, Blocks.ORANGE_WOOL), List.of(1, 1), ModItems.BAMBOO_ORANGE_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.BAMBOO_CHAIR_PASCAL, Blocks.YELLOW_WOOL), List.of(1, 1), ModItems.BAMBOO_YELLOW_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.BAMBOO_CHAIR_PASCAL, Blocks.LIME_WOOL), List.of(1, 1), ModItems.BAMBOO_LIME_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.BAMBOO_CHAIR_PASCAL, Blocks.GREEN_WOOL), List.of(1, 1), ModItems.BAMBOO_GREEN_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.BAMBOO_CHAIR_PASCAL, Blocks.CYAN_WOOL), List.of(1, 1), ModItems.BAMBOO_CYAN_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.BAMBOO_CHAIR_PASCAL, Blocks.LIGHT_BLUE_WOOL), List.of(1, 1), ModItems.BAMBOO_LIGHT_BLUE_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.BAMBOO_CHAIR_PASCAL, Blocks.BLUE_WOOL), List.of(1, 1), ModItems.BAMBOO_BLUE_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.BAMBOO_CHAIR_PASCAL, Blocks.PURPLE_WOOL), List.of(1, 1), ModItems.BAMBOO_PURPLE_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.BAMBOO_CHAIR_PASCAL, Blocks.MAGENTA_WOOL), List.of(1, 1), ModItems.BAMBOO_MAGENTA_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.BAMBOO_CHAIR_PASCAL, Blocks.PINK_WOOL), List.of(1, 1), ModItems.BAMBOO_PINK_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(Blocks.BIRCH_PLANKS, Blocks.IRON_BLOCK), List.of(1, 1), ModItems.BIRCH_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.BIRCH_CHAIR_PASCAL, Blocks.WHITE_WOOL), List.of(1, 1), ModItems.BIRCH_WHITE_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.BIRCH_CHAIR_PASCAL, Blocks.LIGHT_GRAY_WOOL), List.of(1, 1), ModItems.BIRCH_LIGHT_GRAY_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.BIRCH_CHAIR_PASCAL, Blocks.GRAY_WOOL), List.of(1, 1), ModItems.BIRCH_GRAY_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.BIRCH_CHAIR_PASCAL, Blocks.BLACK_WOOL), List.of(1, 1), ModItems.BIRCH_BLACK_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.BIRCH_CHAIR_PASCAL, Blocks.BROWN_WOOL), List.of(1, 1), ModItems.BIRCH_BROWN_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.BIRCH_CHAIR_PASCAL, Blocks.RED_WOOL), List.of(1, 1), ModItems.BIRCH_RED_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.BIRCH_CHAIR_PASCAL, Blocks.ORANGE_WOOL), List.of(1, 1), ModItems.BIRCH_ORANGE_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.BIRCH_CHAIR_PASCAL, Blocks.YELLOW_WOOL), List.of(1, 1), ModItems.BIRCH_YELLOW_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.BIRCH_CHAIR_PASCAL, Blocks.LIME_WOOL), List.of(1, 1), ModItems.BIRCH_LIME_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.BIRCH_CHAIR_PASCAL, Blocks.GREEN_WOOL), List.of(1, 1), ModItems.BIRCH_GREEN_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.BIRCH_CHAIR_PASCAL, Blocks.CYAN_WOOL), List.of(1, 1), ModItems.BIRCH_CYAN_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.BIRCH_CHAIR_PASCAL, Blocks.LIGHT_BLUE_WOOL), List.of(1, 1), ModItems.BIRCH_LIGHT_BLUE_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.BIRCH_CHAIR_PASCAL, Blocks.BLUE_WOOL), List.of(1, 1), ModItems.BIRCH_BLUE_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.BIRCH_CHAIR_PASCAL, Blocks.PURPLE_WOOL), List.of(1, 1), ModItems.BIRCH_PURPLE_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.BIRCH_CHAIR_PASCAL, Blocks.MAGENTA_WOOL), List.of(1, 1), ModItems.BIRCH_MAGENTA_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.BIRCH_CHAIR_PASCAL, Blocks.PINK_WOOL), List.of(1, 1), ModItems.BIRCH_PINK_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(Blocks.CHERRY_PLANKS, Blocks.IRON_BLOCK), List.of(1, 1), ModItems.CHERRY_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.CHERRY_CHAIR_PASCAL, Blocks.WHITE_WOOL), List.of(1, 1), ModItems.CHERRY_WHITE_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.CHERRY_CHAIR_PASCAL, Blocks.LIGHT_GRAY_WOOL), List.of(1, 1), ModItems.CHERRY_LIGHT_GRAY_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.CHERRY_CHAIR_PASCAL, Blocks.GRAY_WOOL), List.of(1, 1), ModItems.CHERRY_GRAY_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.CHERRY_CHAIR_PASCAL, Blocks.BLACK_WOOL), List.of(1, 1), ModItems.CHERRY_BLACK_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.CHERRY_CHAIR_PASCAL, Blocks.BROWN_WOOL), List.of(1, 1), ModItems.CHERRY_BROWN_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.CHERRY_CHAIR_PASCAL, Blocks.RED_WOOL), List.of(1, 1), ModItems.CHERRY_RED_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.CHERRY_CHAIR_PASCAL, Blocks.ORANGE_WOOL), List.of(1, 1), ModItems.CHERRY_ORANGE_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.CHERRY_CHAIR_PASCAL, Blocks.YELLOW_WOOL), List.of(1, 1), ModItems.CHERRY_YELLOW_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.CHERRY_CHAIR_PASCAL, Blocks.LIME_WOOL), List.of(1, 1), ModItems.CHERRY_LIME_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.CHERRY_CHAIR_PASCAL, Blocks.GREEN_WOOL), List.of(1, 1), ModItems.CHERRY_GREEN_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.CHERRY_CHAIR_PASCAL, Blocks.CYAN_WOOL), List.of(1, 1), ModItems.CHERRY_CYAN_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.CHERRY_CHAIR_PASCAL, Blocks.LIGHT_BLUE_WOOL), List.of(1, 1), ModItems.CHERRY_LIGHT_BLUE_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.CHERRY_CHAIR_PASCAL, Blocks.BLUE_WOOL), List.of(1, 1), ModItems.CHERRY_BLUE_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.CHERRY_CHAIR_PASCAL, Blocks.PURPLE_WOOL), List.of(1, 1), ModItems.CHERRY_PURPLE_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.CHERRY_CHAIR_PASCAL, Blocks.MAGENTA_WOOL), List.of(1, 1), ModItems.CHERRY_MAGENTA_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.CHERRY_CHAIR_PASCAL, Blocks.PINK_WOOL), List.of(1, 1), ModItems.CHERRY_PINK_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(Blocks.CRIMSON_PLANKS, Blocks.IRON_BLOCK), List.of(1, 1), ModItems.CRIMSON_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.CRIMSON_CHAIR_PASCAL, Blocks.WHITE_WOOL), List.of(1, 1), ModItems.CRIMSON_WHITE_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.CRIMSON_CHAIR_PASCAL, Blocks.LIGHT_GRAY_WOOL), List.of(1, 1), ModItems.CRIMSON_LIGHT_GRAY_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.CRIMSON_CHAIR_PASCAL, Blocks.GRAY_WOOL), List.of(1, 1), ModItems.CRIMSON_GRAY_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.CRIMSON_CHAIR_PASCAL, Blocks.BLACK_WOOL), List.of(1, 1), ModItems.CRIMSON_BLACK_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.CRIMSON_CHAIR_PASCAL, Blocks.BROWN_WOOL), List.of(1, 1), ModItems.CRIMSON_BROWN_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.CRIMSON_CHAIR_PASCAL, Blocks.RED_WOOL), List.of(1, 1), ModItems.CRIMSON_RED_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.CRIMSON_CHAIR_PASCAL, Blocks.ORANGE_WOOL), List.of(1, 1), ModItems.CRIMSON_ORANGE_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.CRIMSON_CHAIR_PASCAL, Blocks.YELLOW_WOOL), List.of(1, 1), ModItems.CRIMSON_YELLOW_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.CRIMSON_CHAIR_PASCAL, Blocks.LIME_WOOL), List.of(1, 1), ModItems.CRIMSON_LIME_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.CRIMSON_CHAIR_PASCAL, Blocks.GREEN_WOOL), List.of(1, 1), ModItems.CRIMSON_GREEN_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.CRIMSON_CHAIR_PASCAL, Blocks.CYAN_WOOL), List.of(1, 1), ModItems.CRIMSON_CYAN_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.CRIMSON_CHAIR_PASCAL, Blocks.LIGHT_BLUE_WOOL), List.of(1, 1), ModItems.CRIMSON_LIGHT_BLUE_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.CRIMSON_CHAIR_PASCAL, Blocks.BLUE_WOOL), List.of(1, 1), ModItems.CRIMSON_BLUE_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.CRIMSON_CHAIR_PASCAL, Blocks.PURPLE_WOOL), List.of(1, 1), ModItems.CRIMSON_PURPLE_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.CRIMSON_CHAIR_PASCAL, Blocks.MAGENTA_WOOL), List.of(1, 1), ModItems.CRIMSON_MAGENTA_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.CRIMSON_CHAIR_PASCAL, Blocks.PINK_WOOL), List.of(1, 1), ModItems.CRIMSON_PINK_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(Blocks.DARK_OAK_PLANKS, Blocks.IRON_BLOCK), List.of(1, 1), ModItems.DARK_OAK_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.DARK_OAK_CHAIR_PASCAL, Blocks.WHITE_WOOL), List.of(1, 1), ModItems.DARK_OAK_WHITE_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.DARK_OAK_CHAIR_PASCAL, Blocks.LIGHT_GRAY_WOOL), List.of(1, 1), ModItems.DARK_OAK_LIGHT_GRAY_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.DARK_OAK_CHAIR_PASCAL, Blocks.GRAY_WOOL), List.of(1, 1), ModItems.DARK_OAK_GRAY_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.DARK_OAK_CHAIR_PASCAL, Blocks.BLACK_WOOL), List.of(1, 1), ModItems.DARK_OAK_BLACK_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.DARK_OAK_CHAIR_PASCAL, Blocks.BROWN_WOOL), List.of(1, 1), ModItems.DARK_OAK_BROWN_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.DARK_OAK_CHAIR_PASCAL, Blocks.RED_WOOL), List.of(1, 1), ModItems.DARK_OAK_RED_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.DARK_OAK_CHAIR_PASCAL, Blocks.ORANGE_WOOL), List.of(1, 1), ModItems.DARK_OAK_ORANGE_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.DARK_OAK_CHAIR_PASCAL, Blocks.YELLOW_WOOL), List.of(1, 1), ModItems.DARK_OAK_YELLOW_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.DARK_OAK_CHAIR_PASCAL, Blocks.LIME_WOOL), List.of(1, 1), ModItems.DARK_OAK_LIME_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.DARK_OAK_CHAIR_PASCAL, Blocks.GREEN_WOOL), List.of(1, 1), ModItems.DARK_OAK_GREEN_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.DARK_OAK_CHAIR_PASCAL, Blocks.CYAN_WOOL), List.of(1, 1), ModItems.DARK_OAK_CYAN_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.DARK_OAK_CHAIR_PASCAL, Blocks.LIGHT_BLUE_WOOL), List.of(1, 1), ModItems.DARK_OAK_LIGHT_BLUE_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.DARK_OAK_CHAIR_PASCAL, Blocks.BLUE_WOOL), List.of(1, 1), ModItems.DARK_OAK_BLUE_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.DARK_OAK_CHAIR_PASCAL, Blocks.PURPLE_WOOL), List.of(1, 1), ModItems.DARK_OAK_PURPLE_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.DARK_OAK_CHAIR_PASCAL, Blocks.MAGENTA_WOOL), List.of(1, 1), ModItems.DARK_OAK_MAGENTA_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.DARK_OAK_CHAIR_PASCAL, Blocks.PINK_WOOL), List.of(1, 1), ModItems.DARK_OAK_PINK_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(Blocks.PALE_OAK_PLANKS, Blocks.IRON_BLOCK), List.of(1, 1), ModItems.PALE_OAK_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.PALE_OAK_CHAIR_PASCAL, Blocks.WHITE_WOOL), List.of(1, 1), ModItems.PALE_OAK_WHITE_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.PALE_OAK_CHAIR_PASCAL, Blocks.LIGHT_GRAY_WOOL), List.of(1, 1), ModItems.PALE_OAK_LIGHT_GRAY_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.PALE_OAK_CHAIR_PASCAL, Blocks.GRAY_WOOL), List.of(1, 1), ModItems.PALE_OAK_GRAY_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.PALE_OAK_CHAIR_PASCAL, Blocks.BLACK_WOOL), List.of(1, 1), ModItems.PALE_OAK_BLACK_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.PALE_OAK_CHAIR_PASCAL, Blocks.BROWN_WOOL), List.of(1, 1), ModItems.PALE_OAK_BROWN_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.PALE_OAK_CHAIR_PASCAL, Blocks.RED_WOOL), List.of(1, 1), ModItems.PALE_OAK_RED_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.PALE_OAK_CHAIR_PASCAL, Blocks.ORANGE_WOOL), List.of(1, 1), ModItems.PALE_OAK_ORANGE_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.PALE_OAK_CHAIR_PASCAL, Blocks.YELLOW_WOOL), List.of(1, 1), ModItems.PALE_OAK_YELLOW_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.PALE_OAK_CHAIR_PASCAL, Blocks.LIME_WOOL), List.of(1, 1), ModItems.PALE_OAK_LIME_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.PALE_OAK_CHAIR_PASCAL, Blocks.GREEN_WOOL), List.of(1, 1), ModItems.PALE_OAK_GREEN_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.PALE_OAK_CHAIR_PASCAL, Blocks.CYAN_WOOL), List.of(1, 1), ModItems.PALE_OAK_CYAN_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.PALE_OAK_CHAIR_PASCAL, Blocks.LIGHT_BLUE_WOOL), List.of(1, 1), ModItems.PALE_OAK_LIGHT_BLUE_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.PALE_OAK_CHAIR_PASCAL, Blocks.BLUE_WOOL), List.of(1, 1), ModItems.PALE_OAK_BLUE_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.PALE_OAK_CHAIR_PASCAL, Blocks.PURPLE_WOOL), List.of(1, 1), ModItems.PALE_OAK_PURPLE_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.PALE_OAK_CHAIR_PASCAL, Blocks.MAGENTA_WOOL), List.of(1, 1), ModItems.PALE_OAK_MAGENTA_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.PALE_OAK_CHAIR_PASCAL, Blocks.PINK_WOOL), List.of(1, 1), ModItems.PALE_OAK_PINK_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(Blocks.JUNGLE_PLANKS, Blocks.IRON_BLOCK), List.of(1, 1), ModItems.JUNGLE_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.JUNGLE_CHAIR_PASCAL, Blocks.WHITE_WOOL), List.of(1, 1), ModItems.JUNGLE_WHITE_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.JUNGLE_CHAIR_PASCAL, Blocks.LIGHT_GRAY_WOOL), List.of(1, 1), ModItems.JUNGLE_LIGHT_GRAY_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.JUNGLE_CHAIR_PASCAL, Blocks.GRAY_WOOL), List.of(1, 1), ModItems.JUNGLE_GRAY_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.JUNGLE_CHAIR_PASCAL, Blocks.BLACK_WOOL), List.of(1, 1), ModItems.JUNGLE_BLACK_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.JUNGLE_CHAIR_PASCAL, Blocks.BROWN_WOOL), List.of(1, 1), ModItems.JUNGLE_BROWN_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.JUNGLE_CHAIR_PASCAL, Blocks.RED_WOOL), List.of(1, 1), ModItems.JUNGLE_RED_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.JUNGLE_CHAIR_PASCAL, Blocks.ORANGE_WOOL), List.of(1, 1), ModItems.JUNGLE_ORANGE_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.JUNGLE_CHAIR_PASCAL, Blocks.YELLOW_WOOL), List.of(1, 1), ModItems.JUNGLE_YELLOW_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.JUNGLE_CHAIR_PASCAL, Blocks.LIME_WOOL), List.of(1, 1), ModItems.JUNGLE_LIME_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.JUNGLE_CHAIR_PASCAL, Blocks.GREEN_WOOL), List.of(1, 1), ModItems.JUNGLE_GREEN_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.JUNGLE_CHAIR_PASCAL, Blocks.CYAN_WOOL), List.of(1, 1), ModItems.JUNGLE_CYAN_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.JUNGLE_CHAIR_PASCAL, Blocks.LIGHT_BLUE_WOOL), List.of(1, 1), ModItems.JUNGLE_LIGHT_BLUE_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.JUNGLE_CHAIR_PASCAL, Blocks.BLUE_WOOL), List.of(1, 1), ModItems.JUNGLE_BLUE_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.JUNGLE_CHAIR_PASCAL, Blocks.PURPLE_WOOL), List.of(1, 1), ModItems.JUNGLE_PURPLE_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.JUNGLE_CHAIR_PASCAL, Blocks.MAGENTA_WOOL), List.of(1, 1), ModItems.JUNGLE_MAGENTA_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.JUNGLE_CHAIR_PASCAL, Blocks.PINK_WOOL), List.of(1, 1), ModItems.JUNGLE_PINK_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(Blocks.MANGROVE_PLANKS, Blocks.IRON_BLOCK), List.of(1, 1), ModItems.MANGROVE_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.MANGROVE_CHAIR_PASCAL, Blocks.WHITE_WOOL), List.of(1, 1), ModItems.MANGROVE_WHITE_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.MANGROVE_CHAIR_PASCAL, Blocks.LIGHT_GRAY_WOOL), List.of(1, 1), ModItems.MANGROVE_LIGHT_GRAY_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.MANGROVE_CHAIR_PASCAL, Blocks.GRAY_WOOL), List.of(1, 1), ModItems.MANGROVE_GRAY_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.MANGROVE_CHAIR_PASCAL, Blocks.BLACK_WOOL), List.of(1, 1), ModItems.MANGROVE_BLACK_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.MANGROVE_CHAIR_PASCAL, Blocks.BROWN_WOOL), List.of(1, 1), ModItems.MANGROVE_BROWN_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.MANGROVE_CHAIR_PASCAL, Blocks.RED_WOOL), List.of(1, 1), ModItems.MANGROVE_RED_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.MANGROVE_CHAIR_PASCAL, Blocks.ORANGE_WOOL), List.of(1, 1), ModItems.MANGROVE_ORANGE_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.MANGROVE_CHAIR_PASCAL, Blocks.YELLOW_WOOL), List.of(1, 1), ModItems.MANGROVE_YELLOW_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.MANGROVE_CHAIR_PASCAL, Blocks.LIME_WOOL), List.of(1, 1), ModItems.MANGROVE_LIME_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.MANGROVE_CHAIR_PASCAL, Blocks.GREEN_WOOL), List.of(1, 1), ModItems.MANGROVE_GREEN_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.MANGROVE_CHAIR_PASCAL, Blocks.CYAN_WOOL), List.of(1, 1), ModItems.MANGROVE_CYAN_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.MANGROVE_CHAIR_PASCAL, Blocks.LIGHT_BLUE_WOOL), List.of(1, 1), ModItems.MANGROVE_LIGHT_BLUE_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.MANGROVE_CHAIR_PASCAL, Blocks.BLUE_WOOL), List.of(1, 1), ModItems.MANGROVE_BLUE_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.MANGROVE_CHAIR_PASCAL, Blocks.PURPLE_WOOL), List.of(1, 1), ModItems.MANGROVE_PURPLE_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.MANGROVE_CHAIR_PASCAL, Blocks.MAGENTA_WOOL), List.of(1, 1), ModItems.MANGROVE_MAGENTA_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.MANGROVE_CHAIR_PASCAL, Blocks.PINK_WOOL), List.of(1, 1), ModItems.MANGROVE_PINK_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(Blocks.OAK_PLANKS, Blocks.IRON_BLOCK), List.of(1, 1), ModItems.OAK_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.OAK_CHAIR_PASCAL, Blocks.WHITE_WOOL), List.of(1, 1), ModItems.OAK_WHITE_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.OAK_CHAIR_PASCAL, Blocks.LIGHT_GRAY_WOOL), List.of(1, 1), ModItems.OAK_LIGHT_GRAY_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.OAK_CHAIR_PASCAL, Blocks.GRAY_WOOL), List.of(1, 1), ModItems.OAK_GRAY_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.OAK_CHAIR_PASCAL, Blocks.BLACK_WOOL), List.of(1, 1), ModItems.OAK_BLACK_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.OAK_CHAIR_PASCAL, Blocks.BROWN_WOOL), List.of(1, 1), ModItems.OAK_BROWN_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.OAK_CHAIR_PASCAL, Blocks.RED_WOOL), List.of(1, 1), ModItems.OAK_RED_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.OAK_CHAIR_PASCAL, Blocks.ORANGE_WOOL), List.of(1, 1), ModItems.OAK_ORANGE_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.OAK_CHAIR_PASCAL, Blocks.YELLOW_WOOL), List.of(1, 1), ModItems.OAK_YELLOW_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.OAK_CHAIR_PASCAL, Blocks.LIME_WOOL), List.of(1, 1), ModItems.OAK_LIME_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.OAK_CHAIR_PASCAL, Blocks.GREEN_WOOL), List.of(1, 1), ModItems.OAK_GREEN_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.OAK_CHAIR_PASCAL, Blocks.CYAN_WOOL), List.of(1, 1), ModItems.OAK_CYAN_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.OAK_CHAIR_PASCAL, Blocks.LIGHT_BLUE_WOOL), List.of(1, 1), ModItems.OAK_LIGHT_BLUE_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.OAK_CHAIR_PASCAL, Blocks.BLUE_WOOL), List.of(1, 1), ModItems.OAK_BLUE_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.OAK_CHAIR_PASCAL, Blocks.PURPLE_WOOL), List.of(1, 1), ModItems.OAK_PURPLE_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.OAK_CHAIR_PASCAL, Blocks.MAGENTA_WOOL), List.of(1, 1), ModItems.OAK_MAGENTA_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.OAK_CHAIR_PASCAL, Blocks.PINK_WOOL), List.of(1, 1), ModItems.OAK_PINK_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(Blocks.SPRUCE_PLANKS, Blocks.IRON_BLOCK), List.of(1, 1), ModItems.SPRUCE_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.SPRUCE_CHAIR_PASCAL, Blocks.WHITE_WOOL), List.of(1, 1), ModItems.SPRUCE_WHITE_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.SPRUCE_CHAIR_PASCAL, Blocks.LIGHT_GRAY_WOOL), List.of(1, 1), ModItems.SPRUCE_LIGHT_GRAY_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.SPRUCE_CHAIR_PASCAL, Blocks.GRAY_WOOL), List.of(1, 1), ModItems.SPRUCE_GRAY_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.SPRUCE_CHAIR_PASCAL, Blocks.BLACK_WOOL), List.of(1, 1), ModItems.SPRUCE_BLACK_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.SPRUCE_CHAIR_PASCAL, Blocks.BROWN_WOOL), List.of(1, 1), ModItems.SPRUCE_BROWN_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.SPRUCE_CHAIR_PASCAL, Blocks.RED_WOOL), List.of(1, 1), ModItems.SPRUCE_RED_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.SPRUCE_CHAIR_PASCAL, Blocks.ORANGE_WOOL), List.of(1, 1), ModItems.SPRUCE_ORANGE_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.SPRUCE_CHAIR_PASCAL, Blocks.YELLOW_WOOL), List.of(1, 1), ModItems.SPRUCE_YELLOW_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.SPRUCE_CHAIR_PASCAL, Blocks.LIME_WOOL), List.of(1, 1), ModItems.SPRUCE_LIME_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.SPRUCE_CHAIR_PASCAL, Blocks.GREEN_WOOL), List.of(1, 1), ModItems.SPRUCE_GREEN_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.SPRUCE_CHAIR_PASCAL, Blocks.CYAN_WOOL), List.of(1, 1), ModItems.SPRUCE_CYAN_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.SPRUCE_CHAIR_PASCAL, Blocks.LIGHT_BLUE_WOOL), List.of(1, 1), ModItems.SPRUCE_LIGHT_BLUE_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.SPRUCE_CHAIR_PASCAL, Blocks.BLUE_WOOL), List.of(1, 1), ModItems.SPRUCE_BLUE_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.SPRUCE_CHAIR_PASCAL, Blocks.PURPLE_WOOL), List.of(1, 1), ModItems.SPRUCE_PURPLE_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.SPRUCE_CHAIR_PASCAL, Blocks.MAGENTA_WOOL), List.of(1, 1), ModItems.SPRUCE_MAGENTA_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.SPRUCE_CHAIR_PASCAL, Blocks.PINK_WOOL), List.of(1, 1), ModItems.SPRUCE_PINK_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(Blocks.WARPED_PLANKS, Blocks.IRON_BLOCK), List.of(1, 1), ModItems.WARPED_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.WARPED_CHAIR_PASCAL, Blocks.WHITE_WOOL), List.of(1, 1), ModItems.WARPED_WHITE_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.WARPED_CHAIR_PASCAL, Blocks.LIGHT_GRAY_WOOL), List.of(1, 1), ModItems.WARPED_LIGHT_GRAY_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.WARPED_CHAIR_PASCAL, Blocks.GRAY_WOOL), List.of(1, 1), ModItems.WARPED_GRAY_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.WARPED_CHAIR_PASCAL, Blocks.BLACK_WOOL), List.of(1, 1), ModItems.WARPED_BLACK_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.WARPED_CHAIR_PASCAL, Blocks.BROWN_WOOL), List.of(1, 1), ModItems.WARPED_BROWN_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.WARPED_CHAIR_PASCAL, Blocks.RED_WOOL), List.of(1, 1), ModItems.WARPED_RED_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.WARPED_CHAIR_PASCAL, Blocks.ORANGE_WOOL), List.of(1, 1), ModItems.WARPED_ORANGE_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.WARPED_CHAIR_PASCAL, Blocks.YELLOW_WOOL), List.of(1, 1), ModItems.WARPED_YELLOW_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.WARPED_CHAIR_PASCAL, Blocks.LIME_WOOL), List.of(1, 1), ModItems.WARPED_LIME_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.WARPED_CHAIR_PASCAL, Blocks.GREEN_WOOL), List.of(1, 1), ModItems.WARPED_GREEN_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.WARPED_CHAIR_PASCAL, Blocks.CYAN_WOOL), List.of(1, 1), ModItems.WARPED_CYAN_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.WARPED_CHAIR_PASCAL, Blocks.LIGHT_BLUE_WOOL), List.of(1, 1), ModItems.WARPED_LIGHT_BLUE_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.WARPED_CHAIR_PASCAL, Blocks.BLUE_WOOL), List.of(1, 1), ModItems.WARPED_BLUE_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.WARPED_CHAIR_PASCAL, Blocks.PURPLE_WOOL), List.of(1, 1), ModItems.WARPED_PURPLE_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.WARPED_CHAIR_PASCAL, Blocks.MAGENTA_WOOL), List.of(1, 1), ModItems.WARPED_MAGENTA_CHAIR_PASCAL, 1, true);
+                createCarpentryRecipe(List.of(ModBlocks.WARPED_CHAIR_PASCAL, Blocks.PINK_WOOL), List.of(1, 1), ModItems.WARPED_PINK_CHAIR_PASCAL, 1, true);
 
             }
 

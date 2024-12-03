@@ -23,6 +23,7 @@ import static net.minecraft.block.Blocks.*;
 public class ModBlocks {
 
     public static final Block DARK_OAK_LADDER = register("dark_oak_ladder", LadderBlock::new, AbstractBlock.Settings.copy(LADDER));
+    public static final Block PALE_OAK_LADDER = register("pale_oak_ladder", LadderBlock::new, AbstractBlock.Settings.copy(LADDER));
     public static final Block ACACIA_LADDER = register("acacia_ladder", LadderBlock::new, AbstractBlock.Settings.copy(LADDER));
     public static final Block BIRCH_LADDER = register("birch_ladder", LadderBlock::new, AbstractBlock.Settings.copy(LADDER));
     public static final Block SPRUCE_LADDER = register("spruce_ladder", LadderBlock::new, AbstractBlock.Settings.copy(LADDER));
@@ -39,6 +40,7 @@ public class ModBlocks {
     public static final Block CHERRY_TABLE_THE_CLASSIC = register("cherry_table_the_classic", TableBlock::new, AbstractBlock.Settings.copy(CHERRY_PLANKS).nonOpaque());
     public static final Block CRIMSON_TABLE_THE_CLASSIC = register("crimson_table_the_classic", TableBlock::new, AbstractBlock.Settings.copy(CRIMSON_PLANKS).nonOpaque());
     public static final Block DARK_OAK_TABLE_THE_CLASSIC = register("dark_oak_table_the_classic", TableBlock::new, AbstractBlock.Settings.copy(DARK_OAK_PLANKS).nonOpaque());
+    public static final Block PALE_OAK_TABLE_THE_CLASSIC = register("pale_oak_table_the_classic", TableBlock::new, AbstractBlock.Settings.copy(PALE_OAK_PLANKS).nonOpaque());
     public static final Block JUNGLE_TABLE_THE_CLASSIC = register("jungle_table_the_classic", TableBlock::new, AbstractBlock.Settings.copy(JUNGLE_PLANKS).nonOpaque());
     public static final Block MANGROVE_TABLE_THE_CLASSIC = register("mangrove_table_the_classic", TableBlock::new, AbstractBlock.Settings.copy(MANGROVE_PLANKS).nonOpaque());
     public static final Block OAK_TABLE_THE_CLASSIC = register("oak_table_the_classic", TableBlock::new, AbstractBlock.Settings.copy(OAK_PLANKS).nonOpaque());
@@ -50,6 +52,7 @@ public class ModBlocks {
     public static final Block CHERRY_COFFEE_TABLE_PASCAL = register("cherry_coffee_table_pascal", TablePascalBlock::new, AbstractBlock.Settings.copy(CHERRY_PLANKS).nonOpaque());
     public static final Block CRIMSON_COFFEE_TABLE_PASCAL = register("crimson_coffee_table_pascal", TablePascalBlock::new, AbstractBlock.Settings.copy(CRIMSON_PLANKS).nonOpaque());
     public static final Block DARK_OAK_COFFEE_TABLE_PASCAL = register("dark_oak_coffee_table_pascal", TablePascalBlock::new, AbstractBlock.Settings.copy(DARK_OAK_PLANKS).nonOpaque());
+    public static final Block PALE_OAK_COFFEE_TABLE_PASCAL = register("pale_oak_coffee_table_pascal", TablePascalBlock::new, AbstractBlock.Settings.copy(PALE_OAK_PLANKS).nonOpaque());
     public static final Block JUNGLE_COFFEE_TABLE_PASCAL = register("jungle_coffee_table_pascal", TablePascalBlock::new, AbstractBlock.Settings.copy(JUNGLE_PLANKS).nonOpaque());
     public static final Block MANGROVE_COFFEE_TABLE_PASCAL = register("mangrove_coffee_table_pascal", TablePascalBlock::new, AbstractBlock.Settings.copy(MANGROVE_PLANKS).nonOpaque());
     public static final Block OAK_COFFEE_TABLE_PASCAL = register("oak_coffee_table_pascal", TablePascalBlock::new, AbstractBlock.Settings.copy(OAK_PLANKS).nonOpaque());
@@ -61,6 +64,7 @@ public class ModBlocks {
     public static final Block CHERRY_STANDING_TABLE = register("cherry_standing_table", StandingTableBlock::new, AbstractBlock.Settings.copy(CHERRY_PLANKS).nonOpaque());
     public static final Block CRIMSON_STANDING_TABLE = register("crimson_standing_table", StandingTableBlock::new, AbstractBlock.Settings.copy(CRIMSON_PLANKS).nonOpaque());
     public static final Block DARK_OAK_STANDING_TABLE = register("dark_oak_standing_table", StandingTableBlock::new, AbstractBlock.Settings.copy(DARK_OAK_PLANKS).nonOpaque());
+    public static final Block PALE_OAK_STANDING_TABLE = register("pale_oak_standing_table", StandingTableBlock::new, AbstractBlock.Settings.copy(PALE_OAK_PLANKS).nonOpaque());
     public static final Block JUNGLE_STANDING_TABLE = register("jungle_standing_table", StandingTableBlock::new, AbstractBlock.Settings.copy(JUNGLE_PLANKS).nonOpaque());
     public static final Block MANGROVE_STANDING_TABLE = register("mangrove_standing_table", StandingTableBlock::new, AbstractBlock.Settings.copy(MANGROVE_PLANKS).nonOpaque());
     public static final Block OAK_STANDING_TABLE = register("oak_standing_table", StandingTableBlock::new, AbstractBlock.Settings.copy(OAK_PLANKS).nonOpaque());
@@ -72,6 +76,7 @@ public class ModBlocks {
     public static final Block CHERRY_CHAIR = register("cherry_chair", ChairBlock::new, AbstractBlock.Settings.copy(CHERRY_PLANKS).nonOpaque());
     public static final Block CRIMSON_CHAIR = register("crimson_chair", ChairBlock::new, AbstractBlock.Settings.copy(CRIMSON_PLANKS).nonOpaque());
     public static final Block DARK_OAK_CHAIR = register("dark_oak_chair", ChairBlock::new, AbstractBlock.Settings.copy(DARK_OAK_PLANKS).nonOpaque());
+    public static final Block PALE_OAK_CHAIR = register("pale_oak_chair", ChairBlock::new, AbstractBlock.Settings.copy(PALE_OAK_PLANKS).nonOpaque());
     public static final Block JUNGLE_CHAIR = register("jungle_chair", ChairBlock::new, AbstractBlock.Settings.copy(JUNGLE_PLANKS).nonOpaque());
     public static final Block MANGROVE_CHAIR = register("mangrove_chair", ChairBlock::new, AbstractBlock.Settings.copy(MANGROVE_PLANKS).nonOpaque());
     public static final Block OAK_CHAIR = register("oak_chair", ChairBlock::new, AbstractBlock.Settings.copy(OAK_PLANKS).nonOpaque());
@@ -83,6 +88,7 @@ public class ModBlocks {
     public static final Block CHERRY_CHAIR_FELIX = register("cherry_chair_felix", FelixChairBlock::new, AbstractBlock.Settings.copy(CHERRY_PLANKS).nonOpaque());
     public static final Block CRIMSON_CHAIR_FELIX = register("crimson_chair_felix", FelixChairBlock::new, AbstractBlock.Settings.copy(CRIMSON_PLANKS).nonOpaque());
     public static final Block DARK_OAK_CHAIR_FELIX = register("dark_oak_chair_felix", FelixChairBlock::new, AbstractBlock.Settings.copy(DARK_OAK_PLANKS).nonOpaque());
+    public static final Block PALE_OAK_CHAIR_FELIX = register("pale_oak_chair_felix", FelixChairBlock::new, AbstractBlock.Settings.copy(PALE_OAK_PLANKS).nonOpaque());
     public static final Block JUNGLE_CHAIR_FELIX = register("jungle_chair_felix", FelixChairBlock::new, AbstractBlock.Settings.copy(JUNGLE_PLANKS).nonOpaque());
     public static final Block MANGROVE_CHAIR_FELIX = register("mangrove_chair_felix", FelixChairBlock::new, AbstractBlock.Settings.copy(MANGROVE_PLANKS).nonOpaque());
     public static final Block OAK_CHAIR_FELIX = register("oak_chair_felix", FelixChairBlock::new, AbstractBlock.Settings.copy(OAK_PLANKS).nonOpaque());
@@ -94,6 +100,7 @@ public class ModBlocks {
     public static final Block CHERRY_CHAIR_LUKAS = register("cherry_chair_lukas", LukasChairBlock::new, AbstractBlock.Settings.copy(CHERRY_PLANKS).nonOpaque());
     public static final Block CRIMSON_CHAIR_LUKAS = register("crimson_chair_lukas", LukasChairBlock::new, AbstractBlock.Settings.copy(CRIMSON_PLANKS).nonOpaque());
     public static final Block DARK_OAK_CHAIR_LUKAS = register("dark_oak_chair_lukas", LukasChairBlock::new, AbstractBlock.Settings.copy(DARK_OAK_PLANKS).nonOpaque());
+    public static final Block PALE_OAK_CHAIR_LUKAS = register("pale_oak_chair_lukas", LukasChairBlock::new, AbstractBlock.Settings.copy(PALE_OAK_PLANKS).nonOpaque());
     public static final Block JUNGLE_CHAIR_LUKAS = register("jungle_chair_lukas", LukasChairBlock::new, AbstractBlock.Settings.copy(JUNGLE_PLANKS).nonOpaque());
     public static final Block MANGROVE_CHAIR_LUKAS = register("mangrove_chair_lukas", LukasChairBlock::new, AbstractBlock.Settings.copy(MANGROVE_PLANKS).nonOpaque());
     public static final Block OAK_CHAIR_LUKAS = register("oak_chair_lukas", LukasChairBlock::new, AbstractBlock.Settings.copy(OAK_PLANKS).nonOpaque());
@@ -105,6 +112,7 @@ public class ModBlocks {
     public static final Block CHERRY_CHAIR_LUKAS_NATURAL = register("cherry_chair_lukas_natural", LukasChairBlock::new, AbstractBlock.Settings.copy(CHERRY_PLANKS).nonOpaque());
     public static final Block CRIMSON_CHAIR_LUKAS_NATURAL = register("crimson_chair_lukas_natural", LukasChairBlock::new, AbstractBlock.Settings.copy(CRIMSON_PLANKS).nonOpaque());
     public static final Block DARK_OAK_CHAIR_LUKAS_NATURAL = register("dark_oak_chair_lukas_natural", LukasChairBlock::new, AbstractBlock.Settings.copy(DARK_OAK_PLANKS).nonOpaque());
+    public static final Block PALE_OAK_CHAIR_LUKAS_NATURAL = register("pale_oak_chair_lukas_natural", LukasChairBlock::new, AbstractBlock.Settings.copy(PALE_OAK_PLANKS).nonOpaque());
     public static final Block JUNGLE_CHAIR_LUKAS_NATURAL = register("jungle_chair_lukas_natural", LukasChairBlock::new, AbstractBlock.Settings.copy(JUNGLE_PLANKS).nonOpaque());
     public static final Block MANGROVE_CHAIR_LUKAS_NATURAL = register("mangrove_chair_lukas_natural", LukasChairBlock::new, AbstractBlock.Settings.copy(MANGROVE_PLANKS).nonOpaque());
     public static final Block OAK_CHAIR_LUKAS_NATURAL = register("oak_chair_lukas_natural", LukasChairBlock::new, AbstractBlock.Settings.copy(OAK_PLANKS).nonOpaque());
@@ -116,6 +124,7 @@ public class ModBlocks {
     public static final Block CHERRY_CHAIR_TOMMY = register("cherry_chair_tommy", TommyChairBlock::new, AbstractBlock.Settings.copy(CHERRY_PLANKS).nonOpaque());
     public static final Block CRIMSON_CHAIR_TOMMY = register("crimson_chair_tommy", TommyChairBlock::new, AbstractBlock.Settings.copy(CRIMSON_PLANKS).nonOpaque());
     public static final Block DARK_OAK_CHAIR_TOMMY = register("dark_oak_chair_tommy", TommyChairBlock::new, AbstractBlock.Settings.copy(DARK_OAK_PLANKS).nonOpaque());
+    public static final Block PALE_OAK_CHAIR_TOMMY = register("pale_oak_chair_tommy", TommyChairBlock::new, AbstractBlock.Settings.copy(PALE_OAK_PLANKS).nonOpaque());
     public static final Block JUNGLE_CHAIR_TOMMY = register("jungle_chair_tommy", TommyChairBlock::new, AbstractBlock.Settings.copy(JUNGLE_PLANKS).nonOpaque());
     public static final Block MANGROVE_CHAIR_TOMMY = register("mangrove_chair_tommy", TommyChairBlock::new, AbstractBlock.Settings.copy(MANGROVE_PLANKS).nonOpaque());
     public static final Block OAK_CHAIR_TOMMY = register("oak_chair_tommy", TommyChairBlock::new, AbstractBlock.Settings.copy(OAK_PLANKS).nonOpaque());
@@ -127,6 +136,7 @@ public class ModBlocks {
     public static final Block CHERRY_CHAIR_TOMMY_NATURAL = register("cherry_chair_tommy_natural", TommyChairBlock::new, AbstractBlock.Settings.copy(CHERRY_PLANKS).nonOpaque());
     public static final Block CRIMSON_CHAIR_TOMMY_NATURAL = register("crimson_chair_tommy_natural", TommyChairBlock::new, AbstractBlock.Settings.copy(CRIMSON_PLANKS).nonOpaque());
     public static final Block DARK_OAK_CHAIR_TOMMY_NATURAL = register("dark_oak_chair_tommy_natural", TommyChairBlock::new, AbstractBlock.Settings.copy(DARK_OAK_PLANKS).nonOpaque());
+    public static final Block PALE_OAK_CHAIR_TOMMY_NATURAL = register("pale_oak_chair_tommy_natural", TommyChairBlock::new, AbstractBlock.Settings.copy(PALE_OAK_PLANKS).nonOpaque());
     public static final Block JUNGLE_CHAIR_TOMMY_NATURAL = register("jungle_chair_tommy_natural", TommyChairBlock::new, AbstractBlock.Settings.copy(JUNGLE_PLANKS).nonOpaque());
     public static final Block MANGROVE_CHAIR_TOMMY_NATURAL = register("mangrove_chair_tommy_natural", TommyChairBlock::new, AbstractBlock.Settings.copy(MANGROVE_PLANKS).nonOpaque());
     public static final Block OAK_CHAIR_TOMMY_NATURAL = register("oak_chair_tommy_natural", TommyChairBlock::new, AbstractBlock.Settings.copy(OAK_PLANKS).nonOpaque());
@@ -138,6 +148,7 @@ public class ModBlocks {
     public static final Block CHERRY_CHAIR_GREGORY = register("cherry_chair_gregory", GregoryChairBlock::new, AbstractBlock.Settings.copy(CHERRY_PLANKS).nonOpaque());
     public static final Block CRIMSON_CHAIR_GREGORY = register("crimson_chair_gregory", GregoryChairBlock::new, AbstractBlock.Settings.copy(CRIMSON_PLANKS).nonOpaque());
     public static final Block DARK_OAK_CHAIR_GREGORY = register("dark_oak_chair_gregory", GregoryChairBlock::new, AbstractBlock.Settings.copy(DARK_OAK_PLANKS).nonOpaque());
+    public static final Block PALE_OAK_CHAIR_GREGORY = register("pale_oak_chair_gregory", GregoryChairBlock::new, AbstractBlock.Settings.copy(PALE_OAK_PLANKS).nonOpaque());
     public static final Block JUNGLE_CHAIR_GREGORY = register("jungle_chair_gregory", GregoryChairBlock::new, AbstractBlock.Settings.copy(JUNGLE_PLANKS).nonOpaque());
     public static final Block MANGROVE_CHAIR_GREGORY = register("mangrove_chair_gregory", GregoryChairBlock::new, AbstractBlock.Settings.copy(MANGROVE_PLANKS).nonOpaque());
     public static final Block OAK_CHAIR_GREGORY = register("oak_chair_gregory", GregoryChairBlock::new, AbstractBlock.Settings.copy(OAK_PLANKS).nonOpaque());
@@ -245,6 +256,23 @@ public class ModBlocks {
     public static final Block DARK_OAK_PURPLE_CHAIR_PASCAL = register("dark_oak_purple_chair_pascal", PascalChairWoolBlock::new, AbstractBlock.Settings.copy(DARK_OAK_PLANKS).nonOpaque());
     public static final Block DARK_OAK_MAGENTA_CHAIR_PASCAL = register("dark_oak_magenta_chair_pascal", PascalChairWoolBlock::new, AbstractBlock.Settings.copy(DARK_OAK_PLANKS).nonOpaque());
     public static final Block DARK_OAK_PINK_CHAIR_PASCAL = register("dark_oak_pink_chair_pascal", PascalChairWoolBlock::new, AbstractBlock.Settings.copy(DARK_OAK_PLANKS).nonOpaque());
+    public static final Block PALE_OAK_CHAIR_PASCAL = register("pale_oak_chair_pascal", PascalChairBlock::new, AbstractBlock.Settings.copy(PALE_OAK_PLANKS).nonOpaque());
+    public static final Block PALE_OAK_WHITE_CHAIR_PASCAL = register("pale_oak_white_chair_pascal", PascalChairWoolBlock::new, AbstractBlock.Settings.copy(PALE_OAK_PLANKS).nonOpaque());
+    public static final Block PALE_OAK_LIGHT_GRAY_CHAIR_PASCAL = register("pale_oak_light_gray_chair_pascal", PascalChairWoolBlock::new, AbstractBlock.Settings.copy(PALE_OAK_PLANKS).nonOpaque());
+    public static final Block PALE_OAK_GRAY_CHAIR_PASCAL = register("pale_oak_gray_chair_pascal", PascalChairWoolBlock::new, AbstractBlock.Settings.copy(PALE_OAK_PLANKS).nonOpaque());
+    public static final Block PALE_OAK_BLACK_CHAIR_PASCAL = register("pale_oak_black_chair_pascal", PascalChairWoolBlock::new, AbstractBlock.Settings.copy(PALE_OAK_PLANKS).nonOpaque());
+    public static final Block PALE_OAK_BROWN_CHAIR_PASCAL = register("pale_oak_brown_chair_pascal", PascalChairWoolBlock::new, AbstractBlock.Settings.copy(PALE_OAK_PLANKS).nonOpaque());
+    public static final Block PALE_OAK_RED_CHAIR_PASCAL = register("pale_oak_red_chair_pascal", PascalChairWoolBlock::new, AbstractBlock.Settings.copy(PALE_OAK_PLANKS).nonOpaque());
+    public static final Block PALE_OAK_ORANGE_CHAIR_PASCAL = register("pale_oak_orange_chair_pascal", PascalChairWoolBlock::new, AbstractBlock.Settings.copy(PALE_OAK_PLANKS).nonOpaque());
+    public static final Block PALE_OAK_YELLOW_CHAIR_PASCAL = register("pale_oak_yellow_chair_pascal", PascalChairWoolBlock::new, AbstractBlock.Settings.copy(PALE_OAK_PLANKS).nonOpaque());
+    public static final Block PALE_OAK_LIME_CHAIR_PASCAL = register("pale_oak_lime_chair_pascal", PascalChairWoolBlock::new, AbstractBlock.Settings.copy(PALE_OAK_PLANKS).nonOpaque());
+    public static final Block PALE_OAK_GREEN_CHAIR_PASCAL = register("pale_oak_green_chair_pascal", PascalChairWoolBlock::new, AbstractBlock.Settings.copy(PALE_OAK_PLANKS).nonOpaque());
+    public static final Block PALE_OAK_CYAN_CHAIR_PASCAL = register("pale_oak_cyan_chair_pascal", PascalChairWoolBlock::new, AbstractBlock.Settings.copy(PALE_OAK_PLANKS).nonOpaque());
+    public static final Block PALE_OAK_LIGHT_BLUE_CHAIR_PASCAL = register("pale_oak_light_blue_chair_pascal", PascalChairWoolBlock::new, AbstractBlock.Settings.copy(PALE_OAK_PLANKS).nonOpaque());
+    public static final Block PALE_OAK_BLUE_CHAIR_PASCAL = register("pale_oak_blue_chair_pascal", PascalChairWoolBlock::new, AbstractBlock.Settings.copy(PALE_OAK_PLANKS).nonOpaque());
+    public static final Block PALE_OAK_PURPLE_CHAIR_PASCAL = register("pale_oak_purple_chair_pascal", PascalChairWoolBlock::new, AbstractBlock.Settings.copy(PALE_OAK_PLANKS).nonOpaque());
+    public static final Block PALE_OAK_MAGENTA_CHAIR_PASCAL = register("pale_oak_magenta_chair_pascal", PascalChairWoolBlock::new, AbstractBlock.Settings.copy(PALE_OAK_PLANKS).nonOpaque());
+    public static final Block PALE_OAK_PINK_CHAIR_PASCAL = register("pale_oak_pink_chair_pascal", PascalChairWoolBlock::new, AbstractBlock.Settings.copy(PALE_OAK_PLANKS).nonOpaque());
     public static final Block JUNGLE_CHAIR_PASCAL = register("jungle_chair_pascal", PascalChairBlock::new, AbstractBlock.Settings.copy(JUNGLE_PLANKS).nonOpaque());
     public static final Block JUNGLE_WHITE_CHAIR_PASCAL = register("jungle_white_chair_pascal", PascalChairWoolBlock::new, AbstractBlock.Settings.copy(JUNGLE_PLANKS).nonOpaque());
     public static final Block JUNGLE_LIGHT_GRAY_CHAIR_PASCAL = register("jungle_light_gray_chair_pascal", PascalChairWoolBlock::new, AbstractBlock.Settings.copy(JUNGLE_PLANKS).nonOpaque());
@@ -367,6 +395,7 @@ public class ModBlocks {
     public static final Block CHERRY_LOG_SEAT = register("cherry_log_seat",  LogSeat::new, AbstractBlock.Settings.copy(CHERRY_PLANKS).nonOpaque());
     public static final Block CRIMSON_STEM_SEAT = register("crimson_stem_seat",  LogSeat::new, AbstractBlock.Settings.copy(CRIMSON_PLANKS).nonOpaque());
     public static final Block DARK_OAK_LOG_SEAT = register("dark_oak_log_seat",  LogSeat::new, AbstractBlock.Settings.copy(DARK_OAK_PLANKS).nonOpaque());
+    public static final Block PALE_OAK_LOG_SEAT = register("pale_oak_log_seat",  LogSeat::new, AbstractBlock.Settings.copy(PALE_OAK_PLANKS).nonOpaque());
     public static final Block JUNGLE_LOG_SEAT = register("jungle_log_seat",  LogSeat::new, AbstractBlock.Settings.copy(JUNGLE_PLANKS).nonOpaque());
     public static final Block MANGROVE_LOG_SEAT = register("mangrove_log_seat",  LogSeat::new, AbstractBlock.Settings.copy(MANGROVE_PLANKS).nonOpaque());
     public static final Block OAK_LOG_SEAT = register("oak_log_seat",  LogSeat::new, AbstractBlock.Settings.copy(OAK_PLANKS).nonOpaque());
@@ -378,6 +407,7 @@ public class ModBlocks {
     public static final Block CHERRY_PARK_BENCH = register("cherry_park_bench",  ParkBenchBlock::new, AbstractBlock.Settings.copy(CHERRY_PLANKS).nonOpaque());
     public static final Block CRIMSON_PARK_BENCH = register("crimson_park_bench",  ParkBenchBlock::new, AbstractBlock.Settings.copy(CRIMSON_PLANKS).nonOpaque());
     public static final Block DARK_OAK_PARK_BENCH = register("dark_oak_park_bench",  ParkBenchBlock::new, AbstractBlock.Settings.copy(DARK_OAK_PLANKS).nonOpaque());
+    public static final Block PALE_OAK_PARK_BENCH = register("pale_oak_park_bench",  ParkBenchBlock::new, AbstractBlock.Settings.copy(PALE_OAK_PLANKS).nonOpaque());
     public static final Block JUNGLE_PARK_BENCH = register("jungle_park_bench",  ParkBenchBlock::new, AbstractBlock.Settings.copy(JUNGLE_PLANKS).nonOpaque());
     public static final Block MANGROVE_PARK_BENCH = register("mangrove_park_bench",  ParkBenchBlock::new, AbstractBlock.Settings.copy(MANGROVE_PLANKS).nonOpaque());
     public static final Block OAK_PARK_BENCH = register("oak_park_bench",  ParkBenchBlock::new, AbstractBlock.Settings.copy(OAK_PLANKS).nonOpaque());
@@ -389,6 +419,7 @@ public class ModBlocks {
     public static final Block CHERRY_BARREL_SEAT = register("cherry_barrel_seat",  BarrelSeatBlock::new, AbstractBlock.Settings.copy(CHERRY_PLANKS).nonOpaque());
     public static final Block CRIMSON_BARREL_SEAT = register("crimson_barrel_seat",  BarrelSeatBlock::new, AbstractBlock.Settings.copy(CRIMSON_PLANKS).nonOpaque());
     public static final Block DARK_OAK_BARREL_SEAT = register("dark_oak_barrel_seat",  BarrelSeatBlock::new, AbstractBlock.Settings.copy(DARK_OAK_PLANKS).nonOpaque());
+    public static final Block PALE_OAK_BARREL_SEAT = register("pale_oak_barrel_seat",  BarrelSeatBlock::new, AbstractBlock.Settings.copy(PALE_OAK_PLANKS).nonOpaque());
     public static final Block JUNGLE_BARREL_SEAT = register("jungle_barrel_seat",  BarrelSeatBlock::new, AbstractBlock.Settings.copy(JUNGLE_PLANKS).nonOpaque());
     public static final Block MANGROVE_BARREL_SEAT = register("mangrove_barrel_seat",  BarrelSeatBlock::new, AbstractBlock.Settings.copy(MANGROVE_PLANKS).nonOpaque());
     public static final Block OAK_BARREL_SEAT = register("oak_barrel_seat",  BarrelSeatBlock::new, AbstractBlock.Settings.copy(OAK_PLANKS).nonOpaque());
@@ -401,6 +432,7 @@ public class ModBlocks {
     public static final Block CHERRY_GLASS_DOOR = register("cherry_glass_door", (settings) -> new DoorBlock(BlockSetType.CHERRY, settings), AbstractBlock.Settings.create().mapColor(CHERRY_PLANKS.getDefaultMapColor()).instrument(NoteBlockInstrument.BASS).strength(3.0f).nonOpaque().burnable().pistonBehavior(PistonBehavior.DESTROY));
     public static final Block CRIMSON_GLASS_DOOR = register("crimson_glass_door", (settings) -> new DoorBlock(BlockSetType.CRIMSON, settings), AbstractBlock.Settings.create().mapColor(CRIMSON_PLANKS.getDefaultMapColor()).instrument(NoteBlockInstrument.BASS).strength(3.0f).nonOpaque().burnable().pistonBehavior(PistonBehavior.DESTROY));
     public static final Block DARK_OAK_GLASS_DOOR = register("dark_oak_glass_door", (settings) -> new DoorBlock(BlockSetType.DARK_OAK, settings), AbstractBlock.Settings.create().mapColor(DARK_OAK_PLANKS.getDefaultMapColor()).instrument(NoteBlockInstrument.BASS).strength(3.0f).nonOpaque().burnable().pistonBehavior(PistonBehavior.DESTROY));
+    public static final Block PALE_OAK_GLASS_DOOR = register("pale_oak_glass_door", (settings) -> new DoorBlock(BlockSetType.PALE_OAK, settings), AbstractBlock.Settings.create().mapColor(PALE_OAK_PLANKS.getDefaultMapColor()).instrument(NoteBlockInstrument.BASS).strength(3.0f).nonOpaque().burnable().pistonBehavior(PistonBehavior.DESTROY));
     public static final Block JUNGLE_GLASS_DOOR = register("jungle_glass_door", (settings) -> new DoorBlock(BlockSetType.JUNGLE, settings), AbstractBlock.Settings.create().mapColor(JUNGLE_PLANKS.getDefaultMapColor()).instrument(NoteBlockInstrument.BASS).strength(3.0f).nonOpaque().burnable().pistonBehavior(PistonBehavior.DESTROY));
     public static final Block MANGROVE_GLASS_DOOR = register("mangrove_glass_door", (settings) -> new DoorBlock(BlockSetType.MANGROVE, settings), AbstractBlock.Settings.create().mapColor(MANGROVE_PLANKS.getDefaultMapColor()).instrument(NoteBlockInstrument.BASS).strength(3.0f).nonOpaque().burnable().pistonBehavior(PistonBehavior.DESTROY));
     public static final Block OAK_GLASS_DOOR = register("oak_glass_door", (settings) -> new DoorBlock(BlockSetType.OAK, settings), AbstractBlock.Settings.create().mapColor(OAK_PLANKS.getDefaultMapColor()).instrument(NoteBlockInstrument.BASS).strength(3.0f).nonOpaque().burnable().pistonBehavior(PistonBehavior.DESTROY));
@@ -502,6 +534,22 @@ public class ModBlocks {
     public static final Block DARK_OAK_PURPLE_STAINED_GLASS_DOOR = register("dark_oak_purple_stained_glass_door", (settings) -> new DoorBlock(BlockSetType.DARK_OAK, settings), AbstractBlock.Settings.create().mapColor(DARK_OAK_PLANKS.getDefaultMapColor()).instrument(NoteBlockInstrument.BASS).strength(3.0f).nonOpaque().burnable().pistonBehavior(PistonBehavior.DESTROY));
     public static final Block DARK_OAK_MAGENTA_STAINED_GLASS_DOOR = register("dark_oak_magenta_stained_glass_door", (settings) -> new DoorBlock(BlockSetType.DARK_OAK, settings), AbstractBlock.Settings.create().mapColor(DARK_OAK_PLANKS.getDefaultMapColor()).instrument(NoteBlockInstrument.BASS).strength(3.0f).nonOpaque().burnable().pistonBehavior(PistonBehavior.DESTROY));
     public static final Block DARK_OAK_PINK_STAINED_GLASS_DOOR = register("dark_oak_pink_stained_glass_door", (settings) -> new DoorBlock(BlockSetType.DARK_OAK, settings), AbstractBlock.Settings.create().mapColor(DARK_OAK_PLANKS.getDefaultMapColor()).instrument(NoteBlockInstrument.BASS).strength(3.0f).nonOpaque().burnable().pistonBehavior(PistonBehavior.DESTROY));
+    public static final Block PALE_OAK_WHITE_STAINED_GLASS_DOOR = register("pale_oak_white_stained_glass_door", (settings) -> new DoorBlock(BlockSetType.PALE_OAK, settings), AbstractBlock.Settings.create().mapColor(PALE_OAK_PLANKS.getDefaultMapColor()).instrument(NoteBlockInstrument.BASS).strength(3.0f).nonOpaque().burnable().pistonBehavior(PistonBehavior.DESTROY));
+    public static final Block PALE_OAK_LIGHT_GRAY_STAINED_GLASS_DOOR = register("pale_oak_light_gray_stained_glass_door", (settings) -> new DoorBlock(BlockSetType.PALE_OAK, settings), AbstractBlock.Settings.create().mapColor(PALE_OAK_PLANKS.getDefaultMapColor()).instrument(NoteBlockInstrument.BASS).strength(3.0f).nonOpaque().burnable().pistonBehavior(PistonBehavior.DESTROY));
+    public static final Block PALE_OAK_GRAY_STAINED_GLASS_DOOR = register("pale_oak_gray_stained_glass_door", (settings) -> new DoorBlock(BlockSetType.PALE_OAK, settings), AbstractBlock.Settings.create().mapColor(PALE_OAK_PLANKS.getDefaultMapColor()).instrument(NoteBlockInstrument.BASS).strength(3.0f).nonOpaque().burnable().pistonBehavior(PistonBehavior.DESTROY));
+    public static final Block PALE_OAK_BLACK_STAINED_GLASS_DOOR = register("pale_oak_black_stained_glass_door", (settings) -> new DoorBlock(BlockSetType.PALE_OAK, settings), AbstractBlock.Settings.create().mapColor(PALE_OAK_PLANKS.getDefaultMapColor()).instrument(NoteBlockInstrument.BASS).strength(3.0f).nonOpaque().burnable().pistonBehavior(PistonBehavior.DESTROY));
+    public static final Block PALE_OAK_BROWN_STAINED_GLASS_DOOR = register("pale_oak_brown_stained_glass_door", (settings) -> new DoorBlock(BlockSetType.PALE_OAK, settings), AbstractBlock.Settings.create().mapColor(PALE_OAK_PLANKS.getDefaultMapColor()).instrument(NoteBlockInstrument.BASS).strength(3.0f).nonOpaque().burnable().pistonBehavior(PistonBehavior.DESTROY));
+    public static final Block PALE_OAK_RED_STAINED_GLASS_DOOR = register("pale_oak_red_stained_glass_door", (settings) -> new DoorBlock(BlockSetType.PALE_OAK, settings), AbstractBlock.Settings.create().mapColor(PALE_OAK_PLANKS.getDefaultMapColor()).instrument(NoteBlockInstrument.BASS).strength(3.0f).nonOpaque().burnable().pistonBehavior(PistonBehavior.DESTROY));
+    public static final Block PALE_OAK_ORANGE_STAINED_GLASS_DOOR = register("pale_oak_orange_stained_glass_door", (settings) -> new DoorBlock(BlockSetType.PALE_OAK, settings), AbstractBlock.Settings.create().mapColor(PALE_OAK_PLANKS.getDefaultMapColor()).instrument(NoteBlockInstrument.BASS).strength(3.0f).nonOpaque().burnable().pistonBehavior(PistonBehavior.DESTROY));
+    public static final Block PALE_OAK_YELLOW_STAINED_GLASS_DOOR = register("pale_oak_yellow_stained_glass_door", (settings) -> new DoorBlock(BlockSetType.PALE_OAK, settings), AbstractBlock.Settings.create().mapColor(PALE_OAK_PLANKS.getDefaultMapColor()).instrument(NoteBlockInstrument.BASS).strength(3.0f).nonOpaque().burnable().pistonBehavior(PistonBehavior.DESTROY));
+    public static final Block PALE_OAK_LIME_STAINED_GLASS_DOOR = register("pale_oak_lime_stained_glass_door", (settings) -> new DoorBlock(BlockSetType.PALE_OAK, settings), AbstractBlock.Settings.create().mapColor(PALE_OAK_PLANKS.getDefaultMapColor()).instrument(NoteBlockInstrument.BASS).strength(3.0f).nonOpaque().burnable().pistonBehavior(PistonBehavior.DESTROY));
+    public static final Block PALE_OAK_GREEN_STAINED_GLASS_DOOR = register("pale_oak_green_stained_glass_door", (settings) -> new DoorBlock(BlockSetType.PALE_OAK, settings), AbstractBlock.Settings.create().mapColor(PALE_OAK_PLANKS.getDefaultMapColor()).instrument(NoteBlockInstrument.BASS).strength(3.0f).nonOpaque().burnable().pistonBehavior(PistonBehavior.DESTROY));
+    public static final Block PALE_OAK_CYAN_STAINED_GLASS_DOOR = register("pale_oak_cyan_stained_glass_door", (settings) -> new DoorBlock(BlockSetType.PALE_OAK, settings), AbstractBlock.Settings.create().mapColor(PALE_OAK_PLANKS.getDefaultMapColor()).instrument(NoteBlockInstrument.BASS).strength(3.0f).nonOpaque().burnable().pistonBehavior(PistonBehavior.DESTROY));
+    public static final Block PALE_OAK_LIGHT_BLUE_STAINED_GLASS_DOOR = register("pale_oak_light_blue_stained_glass_door", (settings) -> new DoorBlock(BlockSetType.PALE_OAK, settings), AbstractBlock.Settings.create().mapColor(PALE_OAK_PLANKS.getDefaultMapColor()).instrument(NoteBlockInstrument.BASS).strength(3.0f).nonOpaque().burnable().pistonBehavior(PistonBehavior.DESTROY));
+    public static final Block PALE_OAK_BLUE_STAINED_GLASS_DOOR = register("pale_oak_blue_stained_glass_door", (settings) -> new DoorBlock(BlockSetType.PALE_OAK, settings), AbstractBlock.Settings.create().mapColor(PALE_OAK_PLANKS.getDefaultMapColor()).instrument(NoteBlockInstrument.BASS).strength(3.0f).nonOpaque().burnable().pistonBehavior(PistonBehavior.DESTROY));
+    public static final Block PALE_OAK_PURPLE_STAINED_GLASS_DOOR = register("pale_oak_purple_stained_glass_door", (settings) -> new DoorBlock(BlockSetType.PALE_OAK, settings), AbstractBlock.Settings.create().mapColor(PALE_OAK_PLANKS.getDefaultMapColor()).instrument(NoteBlockInstrument.BASS).strength(3.0f).nonOpaque().burnable().pistonBehavior(PistonBehavior.DESTROY));
+    public static final Block PALE_OAK_MAGENTA_STAINED_GLASS_DOOR = register("pale_oak_magenta_stained_glass_door", (settings) -> new DoorBlock(BlockSetType.PALE_OAK, settings), AbstractBlock.Settings.create().mapColor(PALE_OAK_PLANKS.getDefaultMapColor()).instrument(NoteBlockInstrument.BASS).strength(3.0f).nonOpaque().burnable().pistonBehavior(PistonBehavior.DESTROY));
+    public static final Block PALE_OAK_PINK_STAINED_GLASS_DOOR = register("pale_oak_pink_stained_glass_door", (settings) -> new DoorBlock(BlockSetType.PALE_OAK, settings), AbstractBlock.Settings.create().mapColor(PALE_OAK_PLANKS.getDefaultMapColor()).instrument(NoteBlockInstrument.BASS).strength(3.0f).nonOpaque().burnable().pistonBehavior(PistonBehavior.DESTROY));
     public static final Block JUNGLE_WHITE_STAINED_GLASS_DOOR = register("jungle_white_stained_glass_door", (settings) -> new DoorBlock(BlockSetType.JUNGLE, settings), AbstractBlock.Settings.create().mapColor(JUNGLE_PLANKS.getDefaultMapColor()).instrument(NoteBlockInstrument.BASS).strength(3.0f).nonOpaque().burnable().pistonBehavior(PistonBehavior.DESTROY));
     public static final Block JUNGLE_LIGHT_GRAY_STAINED_GLASS_DOOR = register("jungle_light_gray_stained_glass_door", (settings) -> new DoorBlock(BlockSetType.JUNGLE, settings), AbstractBlock.Settings.create().mapColor(JUNGLE_PLANKS.getDefaultMapColor()).instrument(NoteBlockInstrument.BASS).strength(3.0f).nonOpaque().burnable().pistonBehavior(PistonBehavior.DESTROY));
     public static final Block JUNGLE_GRAY_STAINED_GLASS_DOOR = register("jungle_gray_stained_glass_door", (settings) -> new DoorBlock(BlockSetType.JUNGLE, settings), AbstractBlock.Settings.create().mapColor(JUNGLE_PLANKS.getDefaultMapColor()).instrument(NoteBlockInstrument.BASS).strength(3.0f).nonOpaque().burnable().pistonBehavior(PistonBehavior.DESTROY));
@@ -588,6 +636,7 @@ public class ModBlocks {
     public static final Block CHERRY_COFFEE_TABLE = register("cherry_coffee_table", CoffeeTableBlock::new, AbstractBlock.Settings.copy(CHERRY_PLANKS).nonOpaque());
     public static final Block CRIMSON_COFFEE_TABLE = register("crimson_coffee_table", CoffeeTableBlock::new, AbstractBlock.Settings.copy(CRIMSON_PLANKS).nonOpaque());
     public static final Block DARK_OAK_COFFEE_TABLE = register("dark_oak_coffee_table", CoffeeTableBlock::new, AbstractBlock.Settings.copy(DARK_OAK_PLANKS).nonOpaque());
+    public static final Block PALE_OAK_COFFEE_TABLE = register("pale_oak_coffee_table", CoffeeTableBlock::new, AbstractBlock.Settings.copy(PALE_OAK_PLANKS).nonOpaque());
     public static final Block JUNGLE_COFFEE_TABLE = register("jungle_coffee_table", CoffeeTableBlock::new, AbstractBlock.Settings.copy(JUNGLE_PLANKS).nonOpaque());
     public static final Block MANGROVE_COFFEE_TABLE = register("mangrove_coffee_table", CoffeeTableBlock::new, AbstractBlock.Settings.copy(MANGROVE_PLANKS).nonOpaque());
     public static final Block OAK_COFFEE_TABLE = register("oak_coffee_table", CoffeeTableBlock::new, AbstractBlock.Settings.copy(OAK_PLANKS).nonOpaque());

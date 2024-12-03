@@ -31,6 +31,7 @@ public class ModelGenerator extends FabricModelProvider {
         generateChairLukasModel(blockStateModelGenerator, Blocks.CHERRY_PLANKS, Blocks.CHERRY_LOG, ModBlocks.CHERRY_CHAIR_LUKAS, ModModels.CHAIR_LUKAS);
         generateChairLukasModel(blockStateModelGenerator, Blocks.CRIMSON_PLANKS, Blocks.CRIMSON_STEM, ModBlocks.CRIMSON_CHAIR_LUKAS, ModModels.CHAIR_LUKAS);
         generateChairLukasModel(blockStateModelGenerator, Blocks.DARK_OAK_PLANKS, Blocks.DARK_OAK_LOG, ModBlocks.DARK_OAK_CHAIR_LUKAS, ModModels.CHAIR_LUKAS);
+        generateChairLukasModel(blockStateModelGenerator, Blocks.PALE_OAK_PLANKS, Blocks.PALE_OAK_LOG, ModBlocks.PALE_OAK_CHAIR_LUKAS, ModModels.CHAIR_LUKAS);
         generateChairLukasModel(blockStateModelGenerator, Blocks.JUNGLE_PLANKS, Blocks.JUNGLE_LOG, ModBlocks.JUNGLE_CHAIR_LUKAS, ModModels.CHAIR_LUKAS);
         generateChairLukasModel(blockStateModelGenerator, Blocks.MANGROVE_PLANKS, Blocks.MANGROVE_LOG, ModBlocks.MANGROVE_CHAIR_LUKAS, ModModels.CHAIR_LUKAS);
         generateChairLukasModel(blockStateModelGenerator, Blocks.OAK_PLANKS, Blocks.OAK_LOG, ModBlocks.OAK_CHAIR_LUKAS, ModModels.CHAIR_LUKAS);
@@ -43,6 +44,7 @@ public class ModelGenerator extends FabricModelProvider {
         generateAllTextureBottomModelModelWithSuffixedPath(blockStateModelGenerator, Blocks.CHERRY_PLANKS, Blocks.CHERRY_LOG, ModBlocks.CHERRY_CHAIR_LUKAS_NATURAL, ModModels.CHAIR_LUKAS_NATURAL);
         generateAllTextureBottomModelModelWithSuffixedPath(blockStateModelGenerator, Blocks.CRIMSON_PLANKS, Blocks.CRIMSON_STEM, ModBlocks.CRIMSON_CHAIR_LUKAS_NATURAL, ModModels.CHAIR_LUKAS_NATURAL);
         generateAllTextureBottomModelModelWithSuffixedPath(blockStateModelGenerator, Blocks.DARK_OAK_PLANKS, Blocks.DARK_OAK_LOG, ModBlocks.DARK_OAK_CHAIR_LUKAS_NATURAL, ModModels.CHAIR_LUKAS_NATURAL);
+        generateAllTextureBottomModelModelWithSuffixedPath(blockStateModelGenerator, Blocks.PALE_OAK_PLANKS, Blocks.PALE_OAK_LOG, ModBlocks.PALE_OAK_CHAIR_LUKAS_NATURAL, ModModels.CHAIR_LUKAS_NATURAL);
         generateAllTextureBottomModelModelWithSuffixedPath(blockStateModelGenerator, Blocks.JUNGLE_PLANKS, Blocks.JUNGLE_LOG, ModBlocks.JUNGLE_CHAIR_LUKAS_NATURAL, ModModels.CHAIR_LUKAS_NATURAL);
         generateAllTextureBottomModelModelWithSuffixedPath(blockStateModelGenerator, Blocks.MANGROVE_PLANKS, Blocks.MANGROVE_LOG, ModBlocks.MANGROVE_CHAIR_LUKAS_NATURAL, ModModels.CHAIR_LUKAS_NATURAL);
         generateAllTextureBottomModelModelWithSuffixedPath(blockStateModelGenerator, Blocks.OAK_PLANKS, Blocks.OAK_LOG, ModBlocks.OAK_CHAIR_LUKAS_NATURAL, ModModels.CHAIR_LUKAS_NATURAL);
@@ -55,6 +57,7 @@ public class ModelGenerator extends FabricModelProvider {
         generateChairLukasModel(blockStateModelGenerator, Blocks.CHERRY_PLANKS, Blocks.CHERRY_LOG, ModBlocks.CHERRY_CHAIR_TOMMY, ModModels.CHAIR_TOMMY);
         generateChairLukasModel(blockStateModelGenerator, Blocks.CRIMSON_PLANKS, Blocks.CRIMSON_STEM, ModBlocks.CRIMSON_CHAIR_TOMMY, ModModels.CHAIR_TOMMY);
         generateChairLukasModel(blockStateModelGenerator, Blocks.DARK_OAK_PLANKS, Blocks.DARK_OAK_LOG, ModBlocks.DARK_OAK_CHAIR_TOMMY, ModModels.CHAIR_TOMMY);
+        generateChairLukasModel(blockStateModelGenerator, Blocks.PALE_OAK_PLANKS, Blocks.PALE_OAK_LOG, ModBlocks.PALE_OAK_CHAIR_TOMMY, ModModels.CHAIR_TOMMY);
         generateChairLukasModel(blockStateModelGenerator, Blocks.JUNGLE_PLANKS, Blocks.JUNGLE_LOG, ModBlocks.JUNGLE_CHAIR_TOMMY, ModModels.CHAIR_TOMMY);
         generateChairLukasModel(blockStateModelGenerator, Blocks.MANGROVE_PLANKS, Blocks.MANGROVE_LOG, ModBlocks.MANGROVE_CHAIR_TOMMY, ModModels.CHAIR_TOMMY);
         generateChairLukasModel(blockStateModelGenerator, Blocks.OAK_PLANKS, Blocks.OAK_LOG, ModBlocks.OAK_CHAIR_TOMMY, ModModels.CHAIR_TOMMY);
@@ -67,6 +70,7 @@ public class ModelGenerator extends FabricModelProvider {
         generateAllTextureBottomModelModelWithSuffixedPath(blockStateModelGenerator, Blocks.CHERRY_PLANKS, Blocks.CHERRY_LOG, ModBlocks.CHERRY_CHAIR_TOMMY_NATURAL, ModModels.CHAIR_TOMMY_NATURAL);
         generateAllTextureBottomModelModelWithSuffixedPath(blockStateModelGenerator, Blocks.CRIMSON_PLANKS, Blocks.CRIMSON_STEM, ModBlocks.CRIMSON_CHAIR_TOMMY_NATURAL, ModModels.CHAIR_TOMMY_NATURAL);
         generateAllTextureBottomModelModelWithSuffixedPath(blockStateModelGenerator, Blocks.DARK_OAK_PLANKS, Blocks.DARK_OAK_LOG, ModBlocks.DARK_OAK_CHAIR_TOMMY_NATURAL, ModModels.CHAIR_TOMMY_NATURAL);
+        generateAllTextureBottomModelModelWithSuffixedPath(blockStateModelGenerator, Blocks.PALE_OAK_PLANKS, Blocks.PALE_OAK_LOG, ModBlocks.PALE_OAK_CHAIR_TOMMY_NATURAL, ModModels.CHAIR_TOMMY_NATURAL);
         generateAllTextureBottomModelModelWithSuffixedPath(blockStateModelGenerator, Blocks.JUNGLE_PLANKS, Blocks.JUNGLE_LOG, ModBlocks.JUNGLE_CHAIR_TOMMY_NATURAL, ModModels.CHAIR_TOMMY_NATURAL);
         generateAllTextureBottomModelModelWithSuffixedPath(blockStateModelGenerator, Blocks.MANGROVE_PLANKS, Blocks.MANGROVE_LOG, ModBlocks.MANGROVE_CHAIR_TOMMY_NATURAL, ModModels.CHAIR_TOMMY_NATURAL);
         generateAllTextureBottomModelModelWithSuffixedPath(blockStateModelGenerator, Blocks.OAK_PLANKS, Blocks.OAK_LOG, ModBlocks.OAK_CHAIR_TOMMY_NATURAL, ModModels.CHAIR_TOMMY_NATURAL);
@@ -79,6 +83,7 @@ public class ModelGenerator extends FabricModelProvider {
         generateAllTextureBottomModelModelWithSuffixedPath(blockStateModelGenerator, Blocks.CHERRY_PLANKS, Blocks.CHERRY_LOG, ModBlocks.CHERRY_CHAIR_GREGORY, ModModels.CHAIR_GREGORY);
         generateAllTextureBottomModelModelWithSuffixedPath(blockStateModelGenerator, Blocks.CRIMSON_PLANKS, Blocks.CRIMSON_STEM, ModBlocks.CRIMSON_CHAIR_GREGORY, ModModels.CHAIR_GREGORY);
         generateAllTextureBottomModelModelWithSuffixedPath(blockStateModelGenerator, Blocks.DARK_OAK_PLANKS, Blocks.DARK_OAK_LOG, ModBlocks.DARK_OAK_CHAIR_GREGORY, ModModels.CHAIR_GREGORY);
+        generateAllTextureBottomModelModelWithSuffixedPath(blockStateModelGenerator, Blocks.PALE_OAK_PLANKS, Blocks.PALE_OAK_LOG, ModBlocks.PALE_OAK_CHAIR_GREGORY, ModModels.CHAIR_GREGORY);
         generateAllTextureBottomModelModelWithSuffixedPath(blockStateModelGenerator, Blocks.JUNGLE_PLANKS, Blocks.JUNGLE_LOG, ModBlocks.JUNGLE_CHAIR_GREGORY, ModModels.CHAIR_GREGORY);
         generateAllTextureBottomModelModelWithSuffixedPath(blockStateModelGenerator, Blocks.MANGROVE_PLANKS, Blocks.MANGROVE_LOG, ModBlocks.MANGROVE_CHAIR_GREGORY, ModModels.CHAIR_GREGORY);
         generateAllTextureBottomModelModelWithSuffixedPath(blockStateModelGenerator, Blocks.OAK_PLANKS, Blocks.OAK_LOG, ModBlocks.OAK_CHAIR_GREGORY, ModModels.CHAIR_GREGORY);
@@ -91,6 +96,7 @@ public class ModelGenerator extends FabricModelProvider {
         generateParkBenchModel(blockStateModelGenerator, "cherry", Blocks.CHERRY_PLANKS, ModBlocks.CHERRY_PARK_BENCH);
         generateParkBenchModel(blockStateModelGenerator, "crimson", Blocks.CRIMSON_PLANKS, ModBlocks.CRIMSON_PARK_BENCH);
         generateParkBenchModel(blockStateModelGenerator, "dark_oak", Blocks.DARK_OAK_PLANKS, ModBlocks.DARK_OAK_PARK_BENCH);
+        generateParkBenchModel(blockStateModelGenerator, "pale_oak", Blocks.PALE_OAK_PLANKS, ModBlocks.PALE_OAK_PARK_BENCH);
         generateParkBenchModel(blockStateModelGenerator, "jungle", Blocks.JUNGLE_PLANKS, ModBlocks.JUNGLE_PARK_BENCH);
         generateParkBenchModel(blockStateModelGenerator, "mangrove", Blocks.MANGROVE_PLANKS, ModBlocks.MANGROVE_PARK_BENCH);
         generateParkBenchModel(blockStateModelGenerator, "oak", Blocks.OAK_PLANKS, ModBlocks.OAK_PARK_BENCH);
@@ -103,6 +109,7 @@ public class ModelGenerator extends FabricModelProvider {
         generateBlockModel(blockStateModelGenerator, ModBlocks.CHERRY_TABLE_THE_CLASSIC, Blocks.CHERRY_PLANKS, ModModels.TABLE_THE_CLASSIC);
         generateBlockModel(blockStateModelGenerator, ModBlocks.CRIMSON_TABLE_THE_CLASSIC, Blocks.CRIMSON_PLANKS, ModModels.TABLE_THE_CLASSIC);
         generateBlockModel(blockStateModelGenerator, ModBlocks.DARK_OAK_TABLE_THE_CLASSIC, Blocks.DARK_OAK_PLANKS, ModModels.TABLE_THE_CLASSIC);
+        generateBlockModel(blockStateModelGenerator, ModBlocks.PALE_OAK_TABLE_THE_CLASSIC, Blocks.PALE_OAK_PLANKS, ModModels.TABLE_THE_CLASSIC);
         generateBlockModel(blockStateModelGenerator, ModBlocks.JUNGLE_TABLE_THE_CLASSIC, Blocks.JUNGLE_PLANKS, ModModels.TABLE_THE_CLASSIC);
         generateBlockModel(blockStateModelGenerator, ModBlocks.MANGROVE_TABLE_THE_CLASSIC, Blocks.MANGROVE_PLANKS, ModModels.TABLE_THE_CLASSIC);
         generateBlockModel(blockStateModelGenerator, ModBlocks.OAK_TABLE_THE_CLASSIC, Blocks.OAK_PLANKS, ModModels.TABLE_THE_CLASSIC);
@@ -115,6 +122,7 @@ public class ModelGenerator extends FabricModelProvider {
         generateChairModel(blockStateModelGenerator, ModBlocks.CHERRY_CHAIR, Blocks.CHERRY_PLANKS, ModModels.CHAIR);
         generateChairModel(blockStateModelGenerator, ModBlocks.CRIMSON_CHAIR, Blocks.CRIMSON_PLANKS, ModModels.CHAIR);
         generateChairModel(blockStateModelGenerator, ModBlocks.DARK_OAK_CHAIR, Blocks.DARK_OAK_PLANKS, ModModels.CHAIR);
+        generateChairModel(blockStateModelGenerator, ModBlocks.PALE_OAK_CHAIR, Blocks.PALE_OAK_PLANKS, ModModels.CHAIR);
         generateChairModel(blockStateModelGenerator, ModBlocks.JUNGLE_CHAIR, Blocks.JUNGLE_PLANKS, ModModels.CHAIR);
         generateChairModel(blockStateModelGenerator, ModBlocks.MANGROVE_CHAIR, Blocks.MANGROVE_PLANKS, ModModels.CHAIR);
         generateChairModel(blockStateModelGenerator, ModBlocks.OAK_CHAIR, Blocks.OAK_PLANKS, ModModels.CHAIR);
@@ -127,6 +135,7 @@ public class ModelGenerator extends FabricModelProvider {
         generateChairModel(blockStateModelGenerator, ModBlocks.CHERRY_CHAIR_FELIX, Blocks.CHERRY_PLANKS, ModModels.CHAIR_FELIX);
         generateChairModel(blockStateModelGenerator, ModBlocks.CRIMSON_CHAIR_FELIX, Blocks.CRIMSON_PLANKS, ModModels.CHAIR_FELIX);
         generateChairModel(blockStateModelGenerator, ModBlocks.DARK_OAK_CHAIR_FELIX, Blocks.DARK_OAK_PLANKS, ModModels.CHAIR_FELIX);
+        generateChairModel(blockStateModelGenerator, ModBlocks.PALE_OAK_CHAIR_FELIX, Blocks.PALE_OAK_PLANKS, ModModels.CHAIR_FELIX);
         generateChairModel(blockStateModelGenerator, ModBlocks.JUNGLE_CHAIR_FELIX, Blocks.JUNGLE_PLANKS, ModModels.CHAIR_FELIX);
         generateChairModel(blockStateModelGenerator, ModBlocks.MANGROVE_CHAIR_FELIX, Blocks.MANGROVE_PLANKS, ModModels.CHAIR_FELIX);
         generateChairModel(blockStateModelGenerator, ModBlocks.OAK_CHAIR_FELIX, Blocks.OAK_PLANKS, ModModels.CHAIR_FELIX);
@@ -140,6 +149,7 @@ public class ModelGenerator extends FabricModelProvider {
         generateLadderBlockModel(ModBlocks.CHERRY_LADDER, blockStateModelGenerator);
         generateLadderBlockModel(ModBlocks.CRIMSON_LADDER, blockStateModelGenerator);
         generateLadderBlockModel(ModBlocks.DARK_OAK_LADDER, blockStateModelGenerator);
+        generateLadderBlockModel(ModBlocks.PALE_OAK_LADDER, blockStateModelGenerator);
         generateLadderBlockModel(ModBlocks.JUNGLE_LADDER, blockStateModelGenerator);
         generateLadderBlockModel(ModBlocks.MANGROVE_LADDER, blockStateModelGenerator);
         generateLadderBlockModel(ModBlocks.SPRUCE_LADDER, blockStateModelGenerator);
@@ -151,6 +161,7 @@ public class ModelGenerator extends FabricModelProvider {
         generateBlockModel(blockStateModelGenerator, Blocks.CHERRY_PLANKS, Blocks.CHERRY_LOG, ModBlocks.CHERRY_COFFEE_TABLE, ModModels.COFFEE_TABLE);
         generateBlockModel(blockStateModelGenerator, Blocks.CRIMSON_PLANKS, Blocks.CRIMSON_STEM, ModBlocks.CRIMSON_COFFEE_TABLE, ModModels.COFFEE_TABLE);
         generateBlockModel(blockStateModelGenerator, Blocks.DARK_OAK_PLANKS, Blocks.DARK_OAK_LOG, ModBlocks.DARK_OAK_COFFEE_TABLE, ModModels.COFFEE_TABLE);
+        generateBlockModel(blockStateModelGenerator, Blocks.PALE_OAK_PLANKS, Blocks.PALE_OAK_LOG, ModBlocks.PALE_OAK_COFFEE_TABLE, ModModels.COFFEE_TABLE);
         generateBlockModel(blockStateModelGenerator, Blocks.JUNGLE_PLANKS, Blocks.JUNGLE_LOG, ModBlocks.JUNGLE_COFFEE_TABLE, ModModels.COFFEE_TABLE);
         generateBlockModel(blockStateModelGenerator, Blocks.MANGROVE_PLANKS, Blocks.MANGROVE_LOG, ModBlocks.MANGROVE_COFFEE_TABLE, ModModels.COFFEE_TABLE);
         generateBlockModel(blockStateModelGenerator, Blocks.OAK_PLANKS, Blocks.OAK_LOG, ModBlocks.OAK_COFFEE_TABLE, ModModels.COFFEE_TABLE);
@@ -163,6 +174,7 @@ public class ModelGenerator extends FabricModelProvider {
         generateBarrelSeatModel(blockStateModelGenerator, ModBlocks.CHERRY_BARREL_SEAT, Blocks.CHERRY_PLANKS);
         generateBarrelSeatModel(blockStateModelGenerator, ModBlocks.CRIMSON_BARREL_SEAT, Blocks.CRIMSON_PLANKS);
         generateBarrelSeatModel(blockStateModelGenerator, ModBlocks.DARK_OAK_BARREL_SEAT, Blocks.DARK_OAK_PLANKS);
+        generateBarrelSeatModel(blockStateModelGenerator, ModBlocks.PALE_OAK_BARREL_SEAT, Blocks.PALE_OAK_PLANKS);
         generateBarrelSeatModel(blockStateModelGenerator, ModBlocks.JUNGLE_BARREL_SEAT, Blocks.JUNGLE_PLANKS);
         generateBarrelSeatModel(blockStateModelGenerator, ModBlocks.MANGROVE_BARREL_SEAT, Blocks.MANGROVE_PLANKS);
         generateBarrelSeatModel(blockStateModelGenerator, ModBlocks.OAK_BARREL_SEAT, Blocks.OAK_PLANKS);
@@ -175,6 +187,7 @@ public class ModelGenerator extends FabricModelProvider {
         generateAllTextureModel(blockStateModelGenerator, Blocks.CHERRY_LOG, Blocks.CHERRY_PLANKS, ModBlocks.CHERRY_STANDING_TABLE, ModModels.STANDING_TABLE);
         generateAllTextureModel(blockStateModelGenerator, Blocks.CRIMSON_STEM, Blocks.CRIMSON_PLANKS, ModBlocks.CRIMSON_STANDING_TABLE, ModModels.STANDING_TABLE);
         generateAllTextureModel(blockStateModelGenerator, Blocks.DARK_OAK_LOG, Blocks.DARK_OAK_PLANKS, ModBlocks.DARK_OAK_STANDING_TABLE, ModModels.STANDING_TABLE);
+        generateAllTextureModel(blockStateModelGenerator, Blocks.PALE_OAK_LOG, Blocks.PALE_OAK_PLANKS, ModBlocks.PALE_OAK_STANDING_TABLE, ModModels.STANDING_TABLE);
         generateAllTextureModel(blockStateModelGenerator, Blocks.JUNGLE_LOG, Blocks.JUNGLE_PLANKS, ModBlocks.JUNGLE_STANDING_TABLE, ModModels.STANDING_TABLE);
         generateAllTextureModel(blockStateModelGenerator, Blocks.MANGROVE_LOG, Blocks.MANGROVE_PLANKS, ModBlocks.MANGROVE_STANDING_TABLE, ModModels.STANDING_TABLE);
         generateAllTextureModel(blockStateModelGenerator, Blocks.OAK_LOG, Blocks.OAK_PLANKS, ModBlocks.OAK_STANDING_TABLE, ModModels.STANDING_TABLE);
@@ -221,6 +234,7 @@ public class ModelGenerator extends FabricModelProvider {
         generateDirectionalTextureBottomModel(blockStateModelGenerator, Blocks.CHERRY_PLANKS, Blocks.IRON_BLOCK, ModBlocks.CHERRY_COFFEE_TABLE_PASCAL, ModModels.COFFEE_TABLE_PASCAL);
         generateDirectionalTextureBottomModel(blockStateModelGenerator, Blocks.CRIMSON_PLANKS, Blocks.IRON_BLOCK, ModBlocks.CRIMSON_COFFEE_TABLE_PASCAL, ModModels.COFFEE_TABLE_PASCAL);
         generateDirectionalTextureBottomModel(blockStateModelGenerator, Blocks.DARK_OAK_PLANKS, Blocks.IRON_BLOCK, ModBlocks.DARK_OAK_COFFEE_TABLE_PASCAL, ModModels.COFFEE_TABLE_PASCAL);
+        generateDirectionalTextureBottomModel(blockStateModelGenerator, Blocks.PALE_OAK_PLANKS, Blocks.IRON_BLOCK, ModBlocks.PALE_OAK_COFFEE_TABLE_PASCAL, ModModels.COFFEE_TABLE_PASCAL);
         generateDirectionalTextureBottomModel(blockStateModelGenerator, Blocks.JUNGLE_PLANKS, Blocks.IRON_BLOCK, ModBlocks.JUNGLE_COFFEE_TABLE_PASCAL, ModModels.COFFEE_TABLE_PASCAL);
         generateDirectionalTextureBottomModel(blockStateModelGenerator, Blocks.MANGROVE_PLANKS, Blocks.IRON_BLOCK, ModBlocks.MANGROVE_COFFEE_TABLE_PASCAL, ModModels.COFFEE_TABLE_PASCAL);
         generateDirectionalTextureBottomModel(blockStateModelGenerator, Blocks.OAK_PLANKS, Blocks.IRON_BLOCK, ModBlocks.OAK_COFFEE_TABLE_PASCAL, ModModels.COFFEE_TABLE_PASCAL);
@@ -329,6 +343,23 @@ public class ModelGenerator extends FabricModelProvider {
         generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.DARK_OAK_PLANKS, Blocks.PURPLE_WOOL, Blocks.IRON_BLOCK, ModBlocks.DARK_OAK_PURPLE_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
         generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.DARK_OAK_PLANKS, Blocks.MAGENTA_WOOL, Blocks.IRON_BLOCK, ModBlocks.DARK_OAK_MAGENTA_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
         generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.DARK_OAK_PLANKS, Blocks.PINK_WOOL, Blocks.IRON_BLOCK, ModBlocks.DARK_OAK_PINK_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalTextureBottomModel(blockStateModelGenerator, Blocks.PALE_OAK_PLANKS, Blocks.IRON_BLOCK, ModBlocks.PALE_OAK_CHAIR_PASCAL, ModModels.CHAIR_PASCAL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.PALE_OAK_PLANKS, Blocks.WHITE_WOOL, Blocks.IRON_BLOCK, ModBlocks.PALE_OAK_WHITE_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.PALE_OAK_PLANKS, Blocks.LIGHT_GRAY_WOOL, Blocks.IRON_BLOCK, ModBlocks.PALE_OAK_LIGHT_GRAY_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.PALE_OAK_PLANKS, Blocks.GRAY_WOOL, Blocks.IRON_BLOCK, ModBlocks.PALE_OAK_GRAY_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.PALE_OAK_PLANKS, Blocks.BLACK_WOOL, Blocks.IRON_BLOCK, ModBlocks.PALE_OAK_BLACK_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.PALE_OAK_PLANKS, Blocks.BROWN_WOOL, Blocks.IRON_BLOCK, ModBlocks.PALE_OAK_BROWN_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.PALE_OAK_PLANKS, Blocks.RED_WOOL, Blocks.IRON_BLOCK, ModBlocks.PALE_OAK_RED_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.PALE_OAK_PLANKS, Blocks.ORANGE_WOOL, Blocks.IRON_BLOCK, ModBlocks.PALE_OAK_ORANGE_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.PALE_OAK_PLANKS, Blocks.YELLOW_WOOL, Blocks.IRON_BLOCK, ModBlocks.PALE_OAK_YELLOW_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.PALE_OAK_PLANKS, Blocks.LIME_WOOL, Blocks.IRON_BLOCK, ModBlocks.PALE_OAK_LIME_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.PALE_OAK_PLANKS, Blocks.GREEN_WOOL, Blocks.IRON_BLOCK, ModBlocks.PALE_OAK_GREEN_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.PALE_OAK_PLANKS, Blocks.CYAN_WOOL, Blocks.IRON_BLOCK, ModBlocks.PALE_OAK_CYAN_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.PALE_OAK_PLANKS, Blocks.LIGHT_BLUE_WOOL, Blocks.IRON_BLOCK, ModBlocks.PALE_OAK_LIGHT_BLUE_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.PALE_OAK_PLANKS, Blocks.BLUE_WOOL, Blocks.IRON_BLOCK, ModBlocks.PALE_OAK_BLUE_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.PALE_OAK_PLANKS, Blocks.PURPLE_WOOL, Blocks.IRON_BLOCK, ModBlocks.PALE_OAK_PURPLE_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.PALE_OAK_PLANKS, Blocks.MAGENTA_WOOL, Blocks.IRON_BLOCK, ModBlocks.PALE_OAK_MAGENTA_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
+        generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.PALE_OAK_PLANKS, Blocks.PINK_WOOL, Blocks.IRON_BLOCK, ModBlocks.PALE_OAK_PINK_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
         generateDirectionalTextureBottomModel(blockStateModelGenerator, Blocks.JUNGLE_PLANKS, Blocks.IRON_BLOCK, ModBlocks.JUNGLE_CHAIR_PASCAL, ModModels.CHAIR_PASCAL);
         generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.JUNGLE_PLANKS, Blocks.WHITE_WOOL, Blocks.IRON_BLOCK, ModBlocks.JUNGLE_WHITE_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
         generateDirectionalAllTextureBottomModelModel(blockStateModelGenerator, Blocks.JUNGLE_PLANKS, Blocks.LIGHT_GRAY_WOOL, Blocks.IRON_BLOCK, ModBlocks.JUNGLE_LIGHT_GRAY_CHAIR_PASCAL, ModModels.CHAIR_PASCAL_WITH_WOOL);
@@ -420,6 +451,7 @@ public class ModelGenerator extends FabricModelProvider {
         generateLogSeatModel(blockStateModelGenerator, ModBlocks.CHERRY_LOG_SEAT);
         generateLogSeatModel(blockStateModelGenerator, ModBlocks.CRIMSON_STEM_SEAT);
         generateLogSeatModel(blockStateModelGenerator, ModBlocks.DARK_OAK_LOG_SEAT);
+        generateLogSeatModel(blockStateModelGenerator, ModBlocks.PALE_OAK_LOG_SEAT);
         generateLogSeatModel(blockStateModelGenerator, ModBlocks.JUNGLE_LOG_SEAT);
         generateLogSeatModel(blockStateModelGenerator, ModBlocks.MANGROVE_LOG_SEAT);
         generateLogSeatModel(blockStateModelGenerator, ModBlocks.OAK_LOG_SEAT);
@@ -728,6 +760,25 @@ public class ModelGenerator extends FabricModelProvider {
         itemModelGenerator.register(ModItems.DARK_OAK_WHITE_STAINED_GLASS_DOOR, Models.GENERATED);
         itemModelGenerator.register(ModItems.DARK_OAK_YELLOW_STAINED_GLASS_DOOR, Models.GENERATED);
 
+        itemModelGenerator.register(ModItems.PALE_OAK_BLACK_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.PALE_OAK_BLUE_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.PALE_OAK_BROWN_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.PALE_OAK_CYAN_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.PALE_OAK_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.PALE_OAK_GLASS_DOOR_FRAME, Models.GENERATED);
+        itemModelGenerator.register(ModItems.PALE_OAK_GRAY_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.PALE_OAK_GREEN_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.PALE_OAK_LIGHT_BLUE_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.PALE_OAK_LIGHT_GRAY_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.PALE_OAK_LIME_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.PALE_OAK_MAGENTA_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.PALE_OAK_ORANGE_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.PALE_OAK_PINK_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.PALE_OAK_PURPLE_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.PALE_OAK_RED_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.PALE_OAK_WHITE_STAINED_GLASS_DOOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.PALE_OAK_YELLOW_STAINED_GLASS_DOOR, Models.GENERATED);
+
         itemModelGenerator.register(ModItems.JUNGLE_BLACK_STAINED_GLASS_DOOR, Models.GENERATED);
         itemModelGenerator.register(ModItems.JUNGLE_BLUE_STAINED_GLASS_DOOR, Models.GENERATED);
         itemModelGenerator.register(ModItems.JUNGLE_BROWN_STAINED_GLASS_DOOR, Models.GENERATED);
@@ -829,6 +880,7 @@ public class ModelGenerator extends FabricModelProvider {
         itemModelGenerator.register(ModBlocks.CHERRY_PARK_BENCH.asItem(), ModModels.PARK_BENCH);
         itemModelGenerator.register(ModBlocks.CRIMSON_PARK_BENCH.asItem(), ModModels.PARK_BENCH);
         itemModelGenerator.register(ModBlocks.DARK_OAK_PARK_BENCH.asItem(), ModModels.PARK_BENCH);
+        itemModelGenerator.register(ModBlocks.PALE_OAK_PARK_BENCH.asItem(), ModModels.PARK_BENCH);
         itemModelGenerator.register(ModBlocks.JUNGLE_PARK_BENCH.asItem(), ModModels.PARK_BENCH);
         itemModelGenerator.register(ModBlocks.MANGROVE_PARK_BENCH.asItem(), ModModels.PARK_BENCH);
         itemModelGenerator.register(ModBlocks.OAK_PARK_BENCH.asItem(), ModModels.PARK_BENCH);

@@ -1,0 +1,9 @@
+{
+  "parent": "nemos-carpentry:block/seats/chair_pascal_with_wool",
+  "textures": {
+    "all": "minecraft:block/pale_oak_planks",
+    "bottom": "minecraft:block/iron_block",
+    "particle": "minecraft:block/pale_oak_planks",
+    "texture": "minecraft:block/white_wool"
+  }
+}

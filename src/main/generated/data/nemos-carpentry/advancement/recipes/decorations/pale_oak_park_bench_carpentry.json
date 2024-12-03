@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_pale_oak_park_bench": {
+      "conditions": {
+        "items": [
+          {
+            "items": "nemos-carpentry:pale_oak_park_bench"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:pale_oak_park_bench_carpentry"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_pale_oak_park_bench"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:pale_oak_park_bench_carpentry"
+    ]
+  }
+}
