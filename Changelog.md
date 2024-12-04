@@ -5,6 +5,7 @@
   - The campfire variants are now part of Nemo's Campfires
 
 ## Additions
+- Added pale oak variants
 
 ## Changes
 - Removed blocks/items from vanilla creative mode tabs
