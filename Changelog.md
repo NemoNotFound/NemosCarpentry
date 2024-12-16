@@ -1,11 +1,5 @@
 # Changelog - v3.0.1
 
-## Breaking Changes
-- Campfires got removed
-  - The campfire variants are now part of Nemo's Campfires
-
-## Additions
-- Added pale oak variants
-
-## Changes
-- Removed blocks/items from vanilla creative mode tabs
+## Fixes
+- Using carpenter's workbench can cause crashes on servers
+- recipes give command causes crashes
