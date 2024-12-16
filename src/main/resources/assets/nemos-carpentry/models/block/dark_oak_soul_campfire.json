@@ -1,9 +1,0 @@
-{
-  "parent": "nemos-carpentry:block/template_campfire_variant",
-  "textures": {
-    "fire": "minecraft:block/soul_campfire_fire",
-    "lit_log": "nemos-carpentry:block/dark_oak_soul_campfire_log_lit",
-    "particle": "nemos-carpentry:block/dark_oak_campfire_log",
-    "log": "nemos-carpentry:block/dark_oak_campfire_log"
-  }
-}

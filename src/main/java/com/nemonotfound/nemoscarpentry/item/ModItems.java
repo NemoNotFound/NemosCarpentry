@@ -1,17 +1,12 @@
 package com.nemonotfound.nemoscarpentry.item;
 
 import com.nemonotfound.nemoscarpentry.block.ModBlocks;
-import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Items;
-import net.minecraft.registry.Registries;
-import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
 
-import java.util.Arrays;
 import java.util.function.Function;
 
 import static com.nemonotfound.nemoscarpentry.NemosCarpentry.MOD_ID;
@@ -397,24 +392,6 @@ public static final Item WOODEN_SAW = register("wooden_saw", (settings) -> new S
     public static final Item OAK_BARREL_SEAT = Items.register(ModBlocks.OAK_BARREL_SEAT);
     public static final Item SPRUCE_BARREL_SEAT = Items.register(ModBlocks.SPRUCE_BARREL_SEAT);
     public static final Item WARPED_BARREL_SEAT = Items.register(ModBlocks.WARPED_BARREL_SEAT);
-    public static final Item ACACIA_CAMPFIRE = Items.register(ModBlocks.ACACIA_CAMPFIRE);
-    public static final Item BIRCH_CAMPFIRE = Items.register(ModBlocks.BIRCH_CAMPFIRE);
-    public static final Item CHERRY_CAMPFIRE = Items.register(ModBlocks.CHERRY_CAMPFIRE);
-    public static final Item CRIMSON_CAMPFIRE = Items.register(ModBlocks.CRIMSON_CAMPFIRE);
-    public static final Item DARK_OAK_CAMPFIRE = Items.register(ModBlocks.DARK_OAK_CAMPFIRE);
-    public static final Item JUNGLE_CAMPFIRE = Items.register(ModBlocks.JUNGLE_CAMPFIRE);
-    public static final Item MANGROVE_CAMPFIRE = Items.register(ModBlocks.MANGROVE_CAMPFIRE);
-    public static final Item SPRUCE_CAMPFIRE = Items.register(ModBlocks.SPRUCE_CAMPFIRE);
-    public static final Item WARPED_CAMPFIRE = Items.register(ModBlocks.WARPED_CAMPFIRE);
-    public static final Item ACACIA_SOUL_CAMPFIRE = Items.register(ModBlocks.ACACIA_SOUL_CAMPFIRE);
-    public static final Item BIRCH_SOUL_CAMPFIRE = Items.register(ModBlocks.BIRCH_SOUL_CAMPFIRE);
-    public static final Item CHERRY_SOUL_CAMPFIRE = Items.register(ModBlocks.CHERRY_SOUL_CAMPFIRE);
-    public static final Item CRIMSON_SOUL_CAMPFIRE = Items.register(ModBlocks.CRIMSON_SOUL_CAMPFIRE);
-    public static final Item DARK_OAK_SOUL_CAMPFIRE = Items.register(ModBlocks.DARK_OAK_SOUL_CAMPFIRE);
-    public static final Item JUNGLE_SOUL_CAMPFIRE = Items.register(ModBlocks.JUNGLE_SOUL_CAMPFIRE);
-    public static final Item MANGROVE_SOUL_CAMPFIRE = Items.register(ModBlocks.MANGROVE_SOUL_CAMPFIRE);
-    public static final Item SPRUCE_SOUL_CAMPFIRE = Items.register(ModBlocks.SPRUCE_SOUL_CAMPFIRE);
-    public static final Item WARPED_SOUL_CAMPFIRE = Items.register(ModBlocks.WARPED_SOUL_CAMPFIRE);
     public static final Item ACACIA_GLASS_DOOR_FRAME = register("acacia_glass_door_frame", Item::new, new Item.Settings());
     public static final Item BAMBOO_GLASS_DOOR_FRAME = register("bamboo_glass_door_frame", Item::new, new Item.Settings());
     public static final Item BIRCH_GLASS_DOOR_FRAME = register("birch_glass_door_frame", Item::new, new Item.Settings());
@@ -625,15 +602,6 @@ public static final Item WOODEN_SAW = register("wooden_saw", (settings) -> new S
     public static final Item WARPED_MAGENTA_STAINED_GLASS_DOOR = Items.register(ModBlocks.WARPED_MAGENTA_STAINED_GLASS_DOOR);
     public static final Item WARPED_PINK_STAINED_GLASS_DOOR = Items.register(ModBlocks.WARPED_PINK_STAINED_GLASS_DOOR);
 
-
-    @SafeVarargs
-    private static Item registerItem(String path, Item item, RegistryKey<ItemGroup>... itemGroups) {
-        Item registeredItem = Registry.register(Registries.ITEM, Identifier.of(MOD_ID, path), item);
-        Arrays.stream(itemGroups).forEach(itemGroup -> ItemGroupEvents.modifyEntriesEvent(itemGroup)
-                .register(content -> content.add(item)));
-
-        return registeredItem;
-    }
 
     private static Item register(String id, Function<Item.Settings, Item> factory, Item.Settings settings) {
         return Items.register(keyOf(id), factory, settings);

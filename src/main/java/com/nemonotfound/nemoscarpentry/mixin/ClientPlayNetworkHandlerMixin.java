@@ -1,7 +1,9 @@
 package com.nemonotfound.nemoscarpentry.mixin;
 
 import com.nemonotfound.nemoscarpentry.client.recipebook.ClientModRecipeManager;
+import com.nemonotfound.nemoscarpentry.interfaces.MinecraftClientGetter;
 import com.nemonotfound.nemoscarpentry.interfaces.ModRecipeManagerGetter;
+import com.nemonotfound.nemoscarpentry.network.listener.ModClientPlayPacketListener;
 import com.nemonotfound.nemoscarpentry.network.packet.s2c.play.SynchronizeModRecipesS2CPacket;
 import com.nemonotfound.nemoscarpentry.recipe.display.CarpentryRecipeDisplay;
 import net.minecraft.client.MinecraftClient;
@@ -15,7 +17,7 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;
 
 @Mixin(ClientPlayNetworkHandler.class)
-public abstract class ClientPlayNetworkHandlerMixin extends ClientCommonNetworkHandler implements ClientPlayPacketListener, ModRecipeManagerGetter {
+public abstract class ClientPlayNetworkHandlerMixin extends ClientCommonNetworkHandler implements ClientPlayPacketListener, ModClientPlayPacketListener, ModRecipeManagerGetter {
 
     @Unique
     private ClientModRecipeManager modRecipeManager = new ClientModRecipeManager(CarpentryRecipeDisplay.Grouping.empty());
@@ -31,7 +33,7 @@ public abstract class ClientPlayNetworkHandlerMixin extends ClientCommonNetworkH
 
     @Override
     public void nemo_sCarpentry$onSynchronizeModRecipes(SynchronizeModRecipesS2CPacket packet) {
-        MinecraftClient client = this.nemo_sCarpentry$getMinecraftClient();
+        MinecraftClient client = ((MinecraftClientGetter) this).nemo_sCarpentry$getMinecraftClient();
         NetworkThreadUtils.forceMainThread(packet, this, client);
         this.modRecipeManager = new ClientModRecipeManager(packet.carpentryRecipes());
     }

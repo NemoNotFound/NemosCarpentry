@@ -1,6 +1,7 @@
 package com.nemonotfound.nemoscarpentry.mixin;
 
 import com.llamalad7.mixinextras.sugar.Local;
+import com.nemonotfound.nemoscarpentry.interfaces.CarpentryRecipeGetter;
 import com.nemonotfound.nemoscarpentry.network.packet.s2c.play.SynchronizeModRecipesS2CPacket;
 import net.minecraft.network.ClientConnection;
 import net.minecraft.recipe.ServerRecipeManager;
@@ -18,11 +19,11 @@ public class PlayerManagerMixin {
 
     @Inject(method = "onPlayerConnect", at = @At(value = "INVOKE", target = "Lnet/minecraft/server/PlayerManager;sendCommandTree(Lnet/minecraft/server/network/ServerPlayerEntity;)V"))
     private void onPlayerConnect(ClientConnection connection, ServerPlayerEntity player, ConnectedClientData clientData, CallbackInfo ci, @Local ServerPlayNetworkHandler serverPlayNetworkHandler, @Local ServerRecipeManager serverRecipeManager) {
-        serverPlayNetworkHandler.sendPacket(new SynchronizeModRecipesS2CPacket(serverRecipeManager.nemo_sCarpentry$getCarpentryRecipeForSync()));
+        serverPlayNetworkHandler.sendPacket(new SynchronizeModRecipesS2CPacket(((CarpentryRecipeGetter) serverRecipeManager).nemo_sCarpentry$getCarpentryRecipeForSync()));
     }
 
     @Inject(method = "onDataPacksReloaded", at = @At(value = "INVOKE", target = "Lnet/minecraft/server/network/ServerPlayNetworkHandler;sendPacket(Lnet/minecraft/network/packet/Packet;)V"))
     private void onDataPacksReloaded(CallbackInfo ci, @Local ServerRecipeManager serverRecipeManager, @Local ServerPlayerEntity serverPlayerEntity) {
-        serverPlayerEntity.networkHandler.sendPacket(new SynchronizeModRecipesS2CPacket(serverRecipeManager.nemo_sCarpentry$getCarpentryRecipeForSync()));
+        serverPlayerEntity.networkHandler.sendPacket(new SynchronizeModRecipesS2CPacket(((CarpentryRecipeGetter) serverRecipeManager).nemo_sCarpentry$getCarpentryRecipeForSync()));
     }
 }

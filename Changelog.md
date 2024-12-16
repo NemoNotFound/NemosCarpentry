@@ -1,8 +1,11 @@
-# Changelog - v2.5.3
+# Changelog - v3.0.1
+
+## Breaking Changes
+- Campfires got removed
+  - The campfire variants are now part of Nemo's Campfires
+
+## Additions
+- Added pale oak variants
 
 ## Changes
-- Removed structure changes, since they didn't work properly  
-
-### Downloads
-[CurseForge](https://www.curseforge.com/minecraft/mc-mods/nemos-carpentry) <br>
-[Modrinth](https://modrinth.com/mod/nemos-carpentry)
+- Removed blocks/items from vanilla creative mode tabs

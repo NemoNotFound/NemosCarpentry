@@ -6,6 +6,7 @@ import com.nemonotfound.nemoscarpentry.item.ModItemGroups;
 import com.nemonotfound.nemoscarpentry.recipe.ModRecipeSerializer;
 import com.nemonotfound.nemoscarpentry.recipe.ModRecipeTypes;
 import com.nemonotfound.nemoscarpentry.recipe.book.ModRecipeBookCategory;
+import com.nemonotfound.nemoscarpentry.recipe.display.ModRecipeDisplays;
 import com.nemonotfound.nemoscarpentry.screen.ModScreenHandlerTypes;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
@@ -19,6 +20,7 @@ public class NemosCarpentry implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		log.info("Thank you for using Nemo's Carpentry!");
+		ModRecipeDisplays.registerRecipeDisplays();
 		ModScreenHandlerTypes.registerScreenHandlerTypes();
 		ModRecipeTypes.registerRecipeTypes();
 		ModRecipeSerializer.registerRecipeSerializer();
