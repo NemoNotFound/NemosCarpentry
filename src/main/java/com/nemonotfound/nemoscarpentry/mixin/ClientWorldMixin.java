@@ -16,6 +16,6 @@ public class ClientWorldMixin implements ModRecipeManagerGetter {
 
     @Override
     public ClientModRecipeManager nemo_sCarpentry$getModRecipeManager() {
-        return networkHandler.nemo_sCarpentry$getModRecipeManager();
+        return ((ModRecipeManagerGetter) networkHandler).nemo_sCarpentry$getModRecipeManager();
     }
 }

@@ -1,4 +1,4 @@
-# Changelog - v3.0
+# Changelog - v3.0.1
 
 ## Breaking Changes
 - Campfires got removed

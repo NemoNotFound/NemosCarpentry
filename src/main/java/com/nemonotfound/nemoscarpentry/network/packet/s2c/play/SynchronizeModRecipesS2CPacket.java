@@ -1,5 +1,6 @@
 package com.nemonotfound.nemoscarpentry.network.packet.s2c.play;
 
+import com.nemonotfound.nemoscarpentry.network.listener.ModClientPlayPacketListener;
 import com.nemonotfound.nemoscarpentry.network.packet.ModPlayPackets;
 import com.nemonotfound.nemoscarpentry.recipe.display.CarpentryRecipeDisplay;
 import net.minecraft.network.RegistryByteBuf;
@@ -23,6 +24,6 @@ public record SynchronizeModRecipesS2CPacket(CarpentryRecipeDisplay.Grouping car
 
     @Override
     public void apply(ClientPlayPacketListener clientPlayPacketListener) {
-        clientPlayPacketListener.nemo_sCarpentry$onSynchronizeModRecipes(this);
+        ((ModClientPlayPacketListener) clientPlayPacketListener).nemo_sCarpentry$onSynchronizeModRecipes(this);
     }
 }

@@ -1,12 +1,11 @@
 package com.nemonotfound.nemoscarpentry.screen;
 
-import com.mojang.datafixers.util.Pair;
+import com.nemonotfound.nemoscarpentry.interfaces.CarpentryRecipeGetter;
+import com.nemonotfound.nemoscarpentry.interfaces.ModRecipeManagerGetter;
 import com.nemonotfound.nemoscarpentry.item.SawItem;
 import com.nemonotfound.nemoscarpentry.recipe.CarpentryRecipe;
-import com.nemonotfound.nemoscarpentry.recipe.ModRecipeTypes;
 import com.nemonotfound.nemoscarpentry.recipe.display.CarpentryRecipeDisplay;
 import com.nemonotfound.nemoscarpentry.screen.slots.ToolSlot;
-import net.minecraft.client.world.ClientWorld;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
@@ -23,7 +22,6 @@ import net.minecraft.screen.Property;
 import net.minecraft.screen.ScreenHandler;
 import net.minecraft.screen.ScreenHandlerContext;
 import net.minecraft.screen.slot.Slot;
-import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.world.World;
@@ -216,10 +214,10 @@ public class CarpentryScreenHandler extends ScreenHandler {
     private CarpentryRecipeDisplay.Grouping getCarpentryRecipesForItemStack(ItemStack itemStack) {
         CarpentryRecipeDisplay.Grouping carpentryRecipes = CarpentryRecipeDisplay.Grouping.empty();
 
-        if (this.world instanceof ServerWorld serverWorld) {
-            carpentryRecipes = serverWorld.getRecipeManager().nemo_sCarpentry$getCarpentryRecipes().filter(itemStack);
-        } else if (this.world instanceof ClientWorld clientWorld) {
-            carpentryRecipes = clientWorld.nemo_sCarpentry$getModRecipeManager().getCarpentryRecipes().filter(itemStack);
+        if (!this.world.isClient()) {
+            carpentryRecipes = ((CarpentryRecipeGetter) this.world.getRecipeManager()).nemo_sCarpentry$getCarpentryRecipes().filter(itemStack);
+        } else if (this.world.isClient()) {
+            carpentryRecipes = ((ModRecipeManagerGetter) this.world).nemo_sCarpentry$getModRecipeManager().getCarpentryRecipes().filter(itemStack);
         }
 
         return carpentryRecipes;

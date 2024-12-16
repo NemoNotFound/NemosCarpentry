@@ -38,24 +38,5 @@
 	"suggests": {
 		"another-mod": "*"
 	},
-	"accessWidener": "nemos-carpentry.accesswidener",
-	"custom": {
-		"loom:injected_interfaces": {
-			"net/minecraft/class_2602": [
-				"com/nemonotfound/nemoscarpentry/network/listener/ModClientPlayPacketListener"
-			],
-			"net/minecraft/class_634": [
-				"com/nemonotfound/nemoscarpentry/interfaces/ModRecipeManagerGetter"
-			],
-			"net/minecraft/class_638": [
-				"com/nemonotfound/nemoscarpentry/interfaces/ModRecipeManagerGetter"
-			],
-			"net/minecraft/class_8673": [
-				"com/nemonotfound/nemoscarpentry/interfaces/MinecraftClientGetter"
-			],
-			"net/minecraft/class_1863": [
-				"com/nemonotfound/nemoscarpentry/interfaces/CarpentryRecipeGetter"
-			]
-		}
-	}
+	"accessWidener": "nemos-carpentry.accesswidener"
 }
