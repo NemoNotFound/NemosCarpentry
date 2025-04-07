@@ -17,6 +17,7 @@ public class NemosCarpentryDataGenerator implements DataGeneratorEntrypoint {
 
         pack.addProvider(ModRecipeProvider::new);
         pack.addProvider(LootTableGenerator::new);
+        //TODO: Fix
         //pack.addProvider(ModelGenerator::new);
         pack.addProvider(BlockTagGenerator::new);
         pack.addProvider(EnglishLanguageProvider::new);
