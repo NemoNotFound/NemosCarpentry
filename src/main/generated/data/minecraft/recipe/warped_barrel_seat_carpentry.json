@@ -1,0 +1,15 @@
+{
+  "type": "nemos-carpentry:carpentry",
+  "ingredients": [
+    "minecraft:warped_planks",
+    "minecraft:iron_ingot"
+  ],
+  "inputCounts": [
+    1,
+    1
+  ],
+  "result": {
+    "count": 1,
+    "id": "nemos-carpentry:warped_barrel_seat"
+  }
+}

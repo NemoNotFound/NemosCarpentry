@@ -1,0 +1,13 @@
+{
+  "type": "nemos-carpentry:carpentry",
+  "ingredients": [
+    "minecraft:crimson_planks"
+  ],
+  "inputCounts": [
+    1
+  ],
+  "result": {
+    "count": 1,
+    "id": "nemos-carpentry:crimson_table_the_classic"
+  }
+}

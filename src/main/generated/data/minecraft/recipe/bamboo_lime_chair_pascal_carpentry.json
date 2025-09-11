@@ -1,0 +1,15 @@
+{
+  "type": "nemos-carpentry:carpentry",
+  "ingredients": [
+    "nemos-carpentry:bamboo_chair_pascal",
+    "minecraft:lime_wool"
+  ],
+  "inputCounts": [
+    1,
+    1
+  ],
+  "result": {
+    "count": 1,
+    "id": "nemos-carpentry:bamboo_lime_chair_pascal"
+  }
+}

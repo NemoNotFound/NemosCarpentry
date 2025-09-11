@@ -1,0 +1,13 @@
+{
+  "type": "nemos-carpentry:carpentry",
+  "ingredients": [
+    "minecraft:jungle_log"
+  ],
+  "inputCounts": [
+    1
+  ],
+  "result": {
+    "count": 1,
+    "id": "nemos-carpentry:jungle_standing_table"
+  }
+}

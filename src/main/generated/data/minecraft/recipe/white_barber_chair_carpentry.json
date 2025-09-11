@@ -1,0 +1,15 @@
+{
+  "type": "nemos-carpentry:carpentry",
+  "ingredients": [
+    "minecraft:white_wool",
+    "minecraft:gold_block"
+  ],
+  "inputCounts": [
+    1,
+    1
+  ],
+  "result": {
+    "count": 1,
+    "id": "nemos-carpentry:white_barber_chair"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "type": "nemos-carpentry:carpentry",
+  "ingredients": [
+    "minecraft:purple_wool",
+    "minecraft:iron_block"
+  ],
+  "inputCounts": [
+    1,
+    1
+  ],
+  "result": {
+    "count": 1,
+    "id": "nemos-carpentry:purple_bar_chair"
+  }
+}

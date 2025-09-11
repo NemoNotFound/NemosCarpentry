@@ -1,0 +1,13 @@
+{
+  "type": "nemos-carpentry:carpentry",
+  "ingredients": [
+    "minecraft:birch_planks"
+  ],
+  "inputCounts": [
+    2
+  ],
+  "result": {
+    "count": 1,
+    "id": "nemos-carpentry:birch_park_bench"
+  }
+}

@@ -14,12 +14,6 @@ import static com.nemonotfound.nemos.carpentry.NemosCarpentry.MOD_ID;
 public class ModItems {
 
     public static final Item CARPENTERS_WORKBENCH = Items.register(ModBlocks.CARPENTERS_WORKBENCH);
-public static final Item WOODEN_SAW = register("wooden_saw", (settings) -> new SawItem(SawItem.WOOD, settings), new Item.Settings());
-    public static final Item STONE_SAW = register("stone_saw", (settings) -> new SawItem(SawItem.STONE, settings), new Item.Settings());
-    public static final Item IRON_SAW = register("iron_saw", (settings) -> new SawItem(SawItem.IRON, settings), new Item.Settings());
-    public static final Item GOLDEN_SAW = register("golden_saw", (settings) -> new SawItem(SawItem.GOLD, settings), new Item.Settings());
-    public static final Item DIAMOND_SAW = register("diamond_saw", (settings) -> new SawItem(SawItem.DIAMOND, settings), new Item.Settings());
-    public static final Item NETHERITE_SAW = register("netherite_saw", (settings) -> new SawItem(SawItem.NETHERITE, settings), new Item.Settings());
     public static final Item ACACIA_LADDER = Items.register(ModBlocks.ACACIA_LADDER);
     public static final Item BAMBOO_LADDER = Items.register(ModBlocks.BAMBOO_LADDER);
     public static final Item BOUND_BAMBOO_LADDER = Items.register(ModBlocks.BOUND_BAMBOO_LADDER);

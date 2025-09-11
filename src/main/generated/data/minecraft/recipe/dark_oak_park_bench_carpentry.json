@@ -1,0 +1,13 @@
+{
+  "type": "nemos-carpentry:carpentry",
+  "ingredients": [
+    "minecraft:dark_oak_planks"
+  ],
+  "inputCounts": [
+    2
+  ],
+  "result": {
+    "count": 1,
+    "id": "nemos-carpentry:dark_oak_park_bench"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "type": "nemos-carpentry:carpentry",
+  "ingredients": [
+    "minecraft:warped_planks",
+    "minecraft:iron_block"
+  ],
+  "inputCounts": [
+    1,
+    1
+  ],
+  "result": {
+    "count": 4,
+    "id": "nemos-carpentry:warped_coffee_table_pascal"
+  }
+}

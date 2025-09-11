@@ -20,21 +20,18 @@ import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
-import java.util.Optional;
 
 public class CarpentryRecipe implements Recipe<SingleStackRecipeInput> {
 
     private final List<Ingredient> ingredients;
     private final List<Integer> inputCounts;
-    private final boolean requiresTool;
     private final ItemStack result;
     @Nullable
     private IngredientPlacement ingredientPlacement;
 
-    public CarpentryRecipe(List<Ingredient> ingredients, List<Integer> inputCounts, boolean requiresTool, ItemStack result) {
+    public CarpentryRecipe(List<Ingredient> ingredients, List<Integer> inputCounts, ItemStack result) {
         this.ingredients = ingredients;
         this.inputCounts = inputCounts;
-        this.requiresTool = requiresTool;
         this.result = result;
     }
 
@@ -53,14 +50,14 @@ public class CarpentryRecipe implements Recipe<SingleStackRecipeInput> {
         List<SlotDisplay> ingredientSlotDisplays = this.ingredients.stream()
                 .map(Ingredient::toDisplay)
                 .toList();
-        Optional<SlotDisplay> optionalToolSlotDisplay = Optional.empty();
 
-        if (this.requiresTool) {
-            optionalToolSlotDisplay = Optional.of(new SlotDisplay.ItemSlotDisplay(ModItems.IRON_SAW));
-        }
-
-        return List.of(new CarpentersWorkbenchRecipeDisplay(ingredientSlotDisplays, optionalToolSlotDisplay,
-                this.createResultDisplay(), new SlotDisplay.ItemSlotDisplay(ModItems.CARPENTERS_WORKBENCH)));
+        return List.of(
+                new CarpentersWorkbenchRecipeDisplay(
+                        ingredientSlotDisplays,
+                        this.createResultDisplay(),
+                        new SlotDisplay.ItemSlotDisplay(ModItems.CARPENTERS_WORKBENCH)
+                )
+        );
     }
 
     public SlotDisplay createResultDisplay() {
@@ -90,10 +87,6 @@ public class CarpentryRecipe implements Recipe<SingleStackRecipeInput> {
         return inputCounts;
     }
 
-    public boolean requiresTool() {
-        return this.requiresTool;
-    }
-
     public ItemStack getResult() {
         return result;
     }
@@ -110,7 +103,7 @@ public class CarpentryRecipe implements Recipe<SingleStackRecipeInput> {
 
     @FunctionalInterface
     public interface RecipeFactory<T extends CarpentryRecipe> {
-        T create(List<Ingredient> ingredients, List<Integer> inputCounts, boolean tool, ItemStack result);
+        T create(List<Ingredient> ingredients, List<Integer> inputCounts, ItemStack result);
     }
 
     public static class Serializer<T extends CarpentryRecipe> implements RecipeSerializer<T> {
@@ -123,7 +116,6 @@ public class CarpentryRecipe implements Recipe<SingleStackRecipeInput> {
                     instance -> instance.group(
                                     Ingredient.CODEC.listOf(1, 2).fieldOf("ingredients").forGetter(CarpentryRecipe::getIngredients),
                                     Codec.INT.listOf(1, 2).fieldOf("inputCounts").forGetter(CarpentryRecipe::getInputCounts),
-                                    Codec.BOOL.optionalFieldOf("requiresTool", false).forGetter(CarpentryRecipe::requiresTool),
                                     ItemStack.VALIDATED_CODEC.fieldOf("result").forGetter(CarpentryRecipe::getResult)
                             )
                             .apply(instance, recipeFactory::create)
@@ -133,8 +125,6 @@ public class CarpentryRecipe implements Recipe<SingleStackRecipeInput> {
                     CarpentryRecipe::getIngredients,
                     PacketCodecs.INTEGER.collect(PacketCodecs.toList()),
                     CarpentryRecipe::getInputCounts,
-                    PacketCodecs.BOOLEAN,
-                    CarpentryRecipe::requiresTool,
                     ItemStack.PACKET_CODEC,
                     CarpentryRecipe::getResult,
                     recipeFactory::create

@@ -1,0 +1,13 @@
+{
+  "type": "nemos-carpentry:carpentry",
+  "ingredients": [
+    "minecraft:warped_stem"
+  ],
+  "inputCounts": [
+    1
+  ],
+  "result": {
+    "count": 2,
+    "id": "nemos-carpentry:warped_stem_seat"
+  }
+}

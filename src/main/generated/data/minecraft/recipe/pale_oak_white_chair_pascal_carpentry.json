@@ -1,0 +1,15 @@
+{
+  "type": "nemos-carpentry:carpentry",
+  "ingredients": [
+    "nemos-carpentry:pale_oak_chair_pascal",
+    "minecraft:white_wool"
+  ],
+  "inputCounts": [
+    1,
+    1
+  ],
+  "result": {
+    "count": 1,
+    "id": "nemos-carpentry:pale_oak_white_chair_pascal"
+  }
+}

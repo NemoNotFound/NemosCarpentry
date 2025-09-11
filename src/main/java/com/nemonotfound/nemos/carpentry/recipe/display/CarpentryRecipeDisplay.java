@@ -19,7 +19,7 @@ public record CarpentryRecipeDisplay(SlotDisplay optionDisplay, Optional<RecipeE
                 CarpentryRecipeDisplay::optionDisplay, display -> new CarpentryRecipeDisplay(display, Optional.empty()));
     }
 
-    public record GroupEntry(List<Ingredient> ingredients, List<Integer> inputCounts, boolean requiresTool, CarpentryRecipeDisplay recipe) {
+    public record GroupEntry(List<Ingredient> ingredients, List<Integer> inputCounts, CarpentryRecipeDisplay recipe) {
 
         public static PacketCodec<RegistryByteBuf, GroupEntry> codec() {
             return PacketCodec.tuple(
@@ -27,8 +27,6 @@ public record CarpentryRecipeDisplay(SlotDisplay optionDisplay, Optional<RecipeE
                     GroupEntry::ingredients,
                     PacketCodecs.INTEGER.collect(PacketCodecs.toList()),
                     GroupEntry::inputCounts,
-                    PacketCodecs.BOOLEAN,
-                    GroupEntry::requiresTool,
                     CarpentryRecipeDisplay.codec(),
                     GroupEntry::recipe,
                     GroupEntry::new

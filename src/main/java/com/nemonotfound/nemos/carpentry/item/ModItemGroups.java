@@ -22,7 +22,7 @@ public class ModItemGroups {
             getItemGroup(NEMOS_CARPENTRY_GROUP_ID);
 
     public static void registerItemGroups() {
-        registerNemosCarpentryItemGroup(ModItems.IRON_SAW);
+        registerNemosCarpentryItemGroup(CARPENTERS_WORKBENCH);
         registerSeatsItemGroup(ModItems.OAK_CHAIR_FELIX);
         registerTablesItemGroup(ModItems.OAK_TABLE_THE_CLASSIC);
         registerOutdoorItemGroup(ModItems.SPRUCE_PARK_BENCH);
@@ -34,12 +34,6 @@ public class ModItemGroups {
                 .displayName(Text.literal("Nemo's Carpentry"))
                 .entries((context, entries) -> {
                     entries.add(ModItems.CARPENTERS_WORKBENCH);
-                    entries.add(ModItems.WOODEN_SAW);
-                    entries.add(ModItems.STONE_SAW);
-                    entries.add(ModItems.IRON_SAW);
-                    entries.add(ModItems.GOLDEN_SAW);
-                    entries.add(ModItems.DIAMOND_SAW);
-                    entries.add(ModItems.NETHERITE_SAW);
                     entries.add(ModItems.ACACIA_LADDER);
                     entries.add(ModItems.BAMBOO_LADDER);
                     entries.add(ModItems.BOUND_BAMBOO_LADDER);

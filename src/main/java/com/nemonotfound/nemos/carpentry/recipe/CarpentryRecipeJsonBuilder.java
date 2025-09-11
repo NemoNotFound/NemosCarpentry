@@ -28,24 +28,22 @@ public class CarpentryRecipeJsonBuilder implements CraftingRecipeJsonBuilder {
     private final List<Integer> inputCounts;
     private final Item output;
     private final int count;
-    private final boolean requiresTool;
     private final Map<String, AdvancementCriterion<?>> criteria = new LinkedHashMap<>();
 
     public CarpentryRecipeJsonBuilder(RecipeCategory category, CarpentryRecipe.RecipeFactory<?> recipeFactory,
                                       List<Ingredient> ingredients, List<Integer> inputCounts, ItemConvertible output,
-                                      int count, boolean requiresTool) {
+                                      int count) {
         this.category = category;
         this.recipeFactory = recipeFactory;
         this.ingredients = ingredients;
         this.inputCounts = inputCounts;
         this.output = output.asItem();
         this.count = count;
-        this.requiresTool = requiresTool;
     }
 
     public static CarpentryRecipeJsonBuilder createCarpentry(RecipeCategory category, List<Ingredient> ingredients,
-                                                             List<Integer> inputCounts, ItemConvertible output, int count, boolean requiresTool) {
-        return new CarpentryRecipeJsonBuilder(category, CarpentryRecipe::new, ingredients, inputCounts, output, count, requiresTool);
+                                                             List<Integer> inputCounts, ItemConvertible output, int count) {
+        return new CarpentryRecipeJsonBuilder(category, CarpentryRecipe::new, ingredients, inputCounts, output, count);
     }
 
     @Override
@@ -73,7 +71,7 @@ public class CarpentryRecipeJsonBuilder implements CraftingRecipeJsonBuilder {
                 .criteriaMerger(AdvancementRequirements.CriterionMerger.OR);
         this.criteria.forEach(builder::criterion);
         CarpentryRecipe carpentryRecipe = this.recipeFactory
-                .create(this.ingredients, this.inputCounts, this.requiresTool, new ItemStack(this.output, this.count));
+                .create(this.ingredients, this.inputCounts,  new ItemStack(this.output, this.count));
         exporter.accept(recipeKey, carpentryRecipe, builder.build(recipeKey.getValue().withPrefixedPath("recipes/" + this.category.getName() + "/")));
     }
 

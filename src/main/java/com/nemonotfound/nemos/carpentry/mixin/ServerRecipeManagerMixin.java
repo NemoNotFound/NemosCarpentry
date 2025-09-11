@@ -50,7 +50,7 @@ public abstract class ServerRecipeManagerMixin implements CarpentryRecipeGetter 
                     Recipe<?> recipe = recipeEntry.value();
                     if (recipe instanceof CarpentryRecipe carpentryRecipe) {
                         carpentryRecipeEntries.add(new CarpentryRecipeDisplay.GroupEntry(carpentryRecipe.getIngredients(),
-                                carpentryRecipe.getInputCounts(), carpentryRecipe.requiresTool(), new CarpentryRecipeDisplay(carpentryRecipe.createResultDisplay(), Optional.of((RecipeEntry<CarpentryRecipe>) recipeEntry))));
+                                carpentryRecipe.getInputCounts(), new CarpentryRecipeDisplay(carpentryRecipe.createResultDisplay(), Optional.of((RecipeEntry<CarpentryRecipe>) recipeEntry))));
                     }
                 }
         );

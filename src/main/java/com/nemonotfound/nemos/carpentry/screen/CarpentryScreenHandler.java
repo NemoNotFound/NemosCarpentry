@@ -1,12 +1,10 @@
 package com.nemonotfound.nemos.carpentry.screen;
 
+import com.nemonotfound.nemos.carpentry.block.ModBlocks;
 import com.nemonotfound.nemos.carpentry.interfaces.CarpentryRecipeGetter;
 import com.nemonotfound.nemos.carpentry.interfaces.ModRecipeManagerGetter;
-import com.nemonotfound.nemos.carpentry.item.SawItem;
 import com.nemonotfound.nemos.carpentry.recipe.CarpentryRecipe;
 import com.nemonotfound.nemos.carpentry.recipe.display.CarpentryRecipeDisplay;
-import com.nemonotfound.nemos.carpentry.screen.slots.ToolSlot;
-import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.CraftingResultInventory;
@@ -34,7 +32,6 @@ import static com.nemonotfound.nemos.carpentry.screen.ModScreenHandlerTypes.CARP
 public class CarpentryScreenHandler extends ScreenHandler {
 
     private final ScreenHandlerContext context;
-    final Inventory inventory;
     private final World world;
     private final Property selectedRecipe = Property.create();
     private ItemStack inputStack = ItemStack.EMPTY;
@@ -44,8 +41,7 @@ public class CarpentryScreenHandler extends ScreenHandler {
     final Slot inputSlotOne;
     final Slot inputSlotTwo;
     final Slot outputSlot;
-    Runnable contentsChangedListener = () -> {
-    };
+    Runnable contentsChangedListener = () -> {};
     public final Inventory input = new SimpleInventory(2) {
 
         @Override
@@ -58,21 +54,13 @@ public class CarpentryScreenHandler extends ScreenHandler {
     final CraftingResultInventory output = new CraftingResultInventory();
 
     public CarpentryScreenHandler(int syncId, PlayerInventory playerInventory) {
-        this(syncId, playerInventory, new SimpleInventory(4), ScreenHandlerContext.EMPTY);
+        this(syncId, playerInventory, ScreenHandlerContext.EMPTY);
     }
 
-    public CarpentryScreenHandler(int syncId, PlayerInventory playerInventory, Inventory inventory, final ScreenHandlerContext context) {
+    public CarpentryScreenHandler(int syncId, PlayerInventory playerInventory, final ScreenHandlerContext context) {
         super(CARPENTRY_SCREEN_HANDLER, syncId);
-        checkSize(inventory, 4);
-        this.inventory = inventory;
-        inventory.onOpen(playerInventory.player);
         this.world = playerInventory.player.getWorld();
         this.context = context;
-
-        this.addSlot(new ToolSlot(inventory, 0, -20, 14));
-        this.addSlot(new ToolSlot(inventory, 1, -20, 37));
-        this.addSlot(new ToolSlot(inventory, 2, -20, 60));
-        this.addSlot(new ToolSlot(inventory, 3, -20, 83));
 
         inputSlotOne = this.addSlot(new Slot(input, 0, 20, 19));
         inputSlotTwo = this.addSlot(new Slot(input, 1, 20, 47));
@@ -85,17 +73,14 @@ public class CarpentryScreenHandler extends ScreenHandler {
 
             @Override
             public void onTakeItem(PlayerEntity player, ItemStack stack) {
-                CarpentryRecipeDisplay.GroupEntry recipeGroupEntry = availableRecipes.entries().get(selectedRecipe.get());
                 stack.onCraftByPlayer(player, stack.getCount());
+                CarpentryScreenHandler.this.output.unlockLastRecipe(player, this.getInputStacks());
+                var recipeGroupEntry = availableRecipes.entries().get(selectedRecipe.get());
 
                 takeStacksOfIngredients(recipeGroupEntry.inputCounts());
 
-                if (recipeGroupEntry.requiresTool() && getOptionalSawSlot().isPresent()) {
-                    getOptionalSawSlot().get().getStack().damage(1, player, EquipmentSlot.MAINHAND);
-                }
-
                 context.run((world, pos) -> {
-                    long l = world.getTime();
+                    var l = world.getTime();
                     if (CarpentryScreenHandler.this.lastTakeTime != l) {
                         world.playSound(null, player.getBlockPos(), SoundEvents.UI_STONECUTTER_TAKE_RESULT,
                                 SoundCategory.BLOCKS, 1.0f, 1.0f);
@@ -120,28 +105,8 @@ public class CarpentryScreenHandler extends ScreenHandler {
                 }
             }
 
-            @Override
-            public boolean canTakeItems(PlayerEntity playerEntity) {
-                CarpentryRecipeDisplay.GroupEntry recipeGroupEntry = availableRecipes.entries().get(selectedRecipe.get());
-                if (recipeGroupEntry.requiresTool() && getOptionalSawSlot().isEmpty()) {
-                    long l = world.getTime();
-
-                    if (CarpentryScreenHandler.this.lastTakeTime != l) {
-                        world.playSound(null, playerEntity.getBlockPos(), SoundEvents.UI_STONECUTTER_SELECT_RECIPE, SoundCategory.BLOCKS, 1.0f, 4.0f);
-                        CarpentryScreenHandler.this.lastTakeTime = l;
-                    }
-
-                    return false;
-                }
-
-                return super.canTakeItems(playerEntity);
-            }
-
-            private Optional<Slot> getOptionalSawSlot() {
-                return CarpentryScreenHandler.this.slots.stream()
-                        .filter(slot -> slot instanceof ToolSlot)
-                        .filter(slot -> slot.getStack().getItem() instanceof SawItem)
-                        .findFirst();
+            private List<ItemStack> getInputStacks() {
+                return List.of(CarpentryScreenHandler.this.inputSlotOne.getStack(), CarpentryScreenHandler.this.inputSlotTwo.getStack());
             }
         });
 
@@ -160,34 +125,28 @@ public class CarpentryScreenHandler extends ScreenHandler {
             ItemStack movingItemStack = movingSlot.getStack();
             Item item = movingItemStack.getItem();
             itemStack = movingItemStack.copy();
-            boolean isToolSlot = movingSlot instanceof ToolSlot;
 
-            if (movingItemStack.getItem() instanceof SawItem && !isToolSlot) {
-                if (!this.insertItem(movingItemStack, 0, 4, false)) {
-                    return ItemStack.EMPTY;
-                }
-            }
-            if (slotIndex == 6) {
+            if (slotIndex == 2) {
                 item.onCraft(movingItemStack, player.getWorld());
-                if (!this.insertItem(movingItemStack, 7, 43, true)) {
+                if (!this.insertItem(movingItemStack, 3, 39, true)) {
                     return ItemStack.EMPTY;
                 }
                 movingSlot.onQuickTransfer(movingItemStack, itemStack);
             }
-            if (slotIndex == 4 || slotIndex == 5 || isToolSlot) {
-                if (!this.insertItem(movingItemStack, 7, 43, false)) {
+            if (slotIndex == 0 || slotIndex == 1) {
+                if (!this.insertItem(movingItemStack, 3, 39, false)) {
                     return ItemStack.EMPTY;
                 }
             }
 
             //TODO: REFACTOR
-            if (!getCarpentryRecipesForItemStack(this.slots.get(4).getStack()).isEmpty() && isMovingItemSecondIngredient(this.slots.get(4).getStack(), movingItemStack)) {
-                if (!this.insertItem(movingItemStack, 5, 6, false)) {
+            if (!getCarpentryRecipesForItemStack(this.slots.get(0).getStack()).isEmpty() && isMovingItemSecondIngredient(this.slots.get(0).getStack(), movingItemStack)) {
+                if (!this.insertItem(movingItemStack, 1, 2, false)) {
                     return ItemStack.EMPTY;
                 } //TODO:REFACTOR
-            } else if ((!getCarpentryRecipesForItemStack(movingItemStack).isEmpty() ? !this.insertItem(movingItemStack, 4, 5, false) :
-                    (slotIndex >= 7 && slotIndex < 34 ? !this.insertItem(movingItemStack, 34, 43, false) :
-                            slotIndex >= 34 && slotIndex < 43 && !this.insertItem(movingItemStack, 7, 34, false)))) {
+            } else if ((!getCarpentryRecipesForItemStack(movingItemStack).isEmpty() ? !this.insertItem(movingItemStack, 0, 1, false) :
+                    (slotIndex >= 3 && slotIndex < 30 ? !this.insertItem(movingItemStack, 30, 39, false) :
+                            slotIndex >= 30 && slotIndex < 39 && !this.insertItem(movingItemStack, 3, 30, false)))) {
                 return ItemStack.EMPTY;
             }
 
@@ -229,7 +188,7 @@ public class CarpentryScreenHandler extends ScreenHandler {
 
     @Override
     public boolean canUse(PlayerEntity player) {
-        return this.inventory.canPlayerUse(player);
+        return CarpentryScreenHandler.canUse(context, player, ModBlocks.CARPENTERS_WORKBENCH);
     }
 
     @Override

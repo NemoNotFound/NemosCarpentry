@@ -1,0 +1,13 @@
+{
+  "type": "nemos-carpentry:carpentry",
+  "ingredients": [
+    "minecraft:birch_log"
+  ],
+  "inputCounts": [
+    1
+  ],
+  "result": {
+    "count": 1,
+    "id": "nemos-carpentry:birch_standing_table"
+  }
+}

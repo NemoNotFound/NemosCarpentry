@@ -1,37 +1,36 @@
 package com.nemonotfound.nemos.carpentry.block;
 
 import com.mojang.serialization.MapCodec;
-import com.nemonotfound.nemos.carpentry.entity.CarpentersWorkbenchBlockEntity;
-import net.minecraft.block.BlockEntityProvider;
+import com.nemonotfound.nemos.carpentry.screen.CarpentryScreenHandler;
+import net.minecraft.block.Block;
 import net.minecraft.block.BlockRenderType;
 import net.minecraft.block.BlockState;
-import net.minecraft.block.BlockWithEntity;
-import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.screen.NamedScreenHandlerFactory;
+import net.minecraft.screen.ScreenHandlerContext;
+import net.minecraft.screen.SimpleNamedScreenHandlerFactory;
+import net.minecraft.stat.Stats;
+import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
-public class CarpentersWorkbenchBlock extends BlockWithEntity implements BlockEntityProvider {
+import static com.nemonotfound.nemos.carpentry.NemosCarpentry.MOD_ID;
+
+public class CarpentersWorkbenchBlock extends Block {
 
     public static final MapCodec<CarpentersWorkbenchBlock> CODEC = createCodec(CarpentersWorkbenchBlock::new);
+    private static final Text TITLE = Text.translatable(MOD_ID + ".container.carpenters_workbench");
 
     public CarpentersWorkbenchBlock(Settings settings) {
         super(settings);
     }
 
     @Override
-    protected MapCodec<? extends BlockWithEntity> getCodec() {
+    protected MapCodec<? extends Block> getCodec() {
         return CODEC;
-    }
-
-    @Nullable
-    @Override
-    public BlockEntity createBlockEntity(BlockPos pos, BlockState state) {
-        return new CarpentersWorkbenchBlockEntity(pos, state);
     }
 
     @Override
@@ -42,13 +41,17 @@ public class CarpentersWorkbenchBlock extends BlockWithEntity implements BlockEn
     @Override
     protected ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, BlockHitResult hit) {
         if (!world.isClient) {
-            NamedScreenHandlerFactory screenHandlerFactory = (CarpentersWorkbenchBlockEntity) world.getBlockEntity(pos);
-
-            if (screenHandlerFactory != null) {
-                player.openHandledScreen(screenHandlerFactory);
-            }
+            player.openHandledScreen(createScreenHandlerFactory(state, world, pos));
+            player.incrementStat(Stats.USED.getOrCreateStat(this.asItem()));
         }
 
         return ActionResult.SUCCESS;
+    }
+
+    @Nullable
+    protected NamedScreenHandlerFactory createScreenHandlerFactory(BlockState state, World world, BlockPos pos) {
+        return new SimpleNamedScreenHandlerFactory(
+                (syncId, playerInventory, player) ->
+                        new CarpentryScreenHandler(syncId, playerInventory, ScreenHandlerContext.create(world, pos)), TITLE);
     }
 }

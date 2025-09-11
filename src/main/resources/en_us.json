@@ -1,6 +1,4 @@
 {
-  "block.nemos-carpentry.woodcutter": "Woodcutter",
-  "container.woodcutter": "Woodcutter",
   "block.nemos-carpentry.dark_oak_ladder": "Dark Oak Ladder",
   "block.nemos-carpentry.pale_oak_ladder": "Pale Oak Ladder",
   "block.nemos-carpentry.acacia_ladder": "Acacia Ladder",
@@ -271,12 +269,6 @@
   "block.nemos-carpentry.warped_magenta_stained_glass_door": "Warped Magenta Stained Glass Door",
   "block.nemos-carpentry.warped_pink_stained_glass_door": "Warped Pink Stained Glass Door",
 
-  "item.nemos-carpentry.wooden_saw": "Wooden Saw",
-  "item.nemos-carpentry.stone_saw": "Stone Saw",
-  "item.nemos-carpentry.iron_saw": "Iron Saw",
-  "item.nemos-carpentry.golden_saw": "Golden Saw",
-  "item.nemos-carpentry.diamond_saw": "Diamond Saw",
-  "item.nemos-carpentry.netherite_saw": "Netherite Saw",
   "item.nemos-carpentry.acacia_glass_door_frame": "Acacia Glass Door Frame",
   "item.nemos-carpentry.bamboo_glass_door_frame": "Bamboo Glass Door Frame",
   "item.nemos-carpentry.birch_glass_door_frame": "Birch Glass Door Frame",
@@ -290,7 +282,7 @@
   "item.nemos-carpentry.spruce_glass_door_frame": "Spruce Glass Door Frame",
   "item.nemos-carpentry.warped_glass_door_frame": "Warped Glass Door Frame",
 
-  "container.carpenters_workbench": "Carpenter's Workbench",
+  "nemos-carpentry.container.carpenters_workbench": "Carpenter's Workbench",
 
   "block.nemos-carpentry.acacia_chair_lukas": "Acacia Chair \"Lukas\"",
   "block.nemos-carpentry.bamboo_chair_lukas": "Bamboo Chair \"Lukas\"",

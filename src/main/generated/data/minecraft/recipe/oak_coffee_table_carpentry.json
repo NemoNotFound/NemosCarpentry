@@ -1,0 +1,15 @@
+{
+  "type": "nemos-carpentry:carpentry",
+  "ingredients": [
+    "minecraft:oak_planks",
+    "#minecraft:oak_logs"
+  ],
+  "inputCounts": [
+    1,
+    1
+  ],
+  "result": {
+    "count": 2,
+    "id": "nemos-carpentry:oak_coffee_table"
+  }
+}

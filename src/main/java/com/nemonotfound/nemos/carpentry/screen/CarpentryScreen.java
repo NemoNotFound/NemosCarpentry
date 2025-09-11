@@ -4,9 +4,9 @@ import com.nemonotfound.nemos.carpentry.recipe.display.CarpentryRecipeDisplay;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.client.MinecraftClient;
+import net.minecraft.client.gl.RenderPipelines;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.gui.screen.ingame.HandledScreen;
-import net.minecraft.client.render.RenderLayer;
 import net.minecraft.client.sound.PositionedSoundInstance;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.recipe.display.SlotDisplay;
@@ -29,7 +29,6 @@ public class CarpentryScreen extends HandledScreen<CarpentryScreenHandler> {
     private static final Identifier RECIPE_HIGHLIGHTED_TEXTURE = Identifier.of(MOD_ID, "container/carpenters_workbench/recipe_highlighted");
     private static final Identifier RECIPE_DISABLED_TEXTURE = Identifier.of(MOD_ID, "container/carpenters_workbench/recipe_disabled");
     private static final Identifier RECIPE_TEXTURE = Identifier.of(MOD_ID, "container/carpenters_workbench/recipe");
-    private static final Identifier HOTBAR_OFFHAND_LEFT_TEXTURE = Identifier.ofVanilla("hud/hotbar_offhand_left");
 
     private float scrollAmount;
     private int scrollOffset;
@@ -44,9 +43,8 @@ public class CarpentryScreen extends HandledScreen<CarpentryScreenHandler> {
 
     @Override
     protected void drawBackground(DrawContext context, float delta, int mouseX, int mouseY) {
-        context.drawTexture(RenderLayer::getGuiTextured, TEXTURE, x, y, 0.0F, 0.0F, this.backgroundWidth, this.backgroundHeight, 256, 256);
+        context.drawTexture(RenderPipelines.GUI_TEXTURED, TEXTURE, x, y, 0.0F, 0.0F, this.backgroundWidth, this.backgroundHeight, 256, 256);
         drawScroll(context);
-        drawToolSlots(context);
 
         this.renderRecipeBackground(context, mouseX, mouseY, x + 52, y + 14, scrollOffset + 12);
         this.renderRecipeIcons(context, x + 52, y + 14, scrollOffset + 12);
@@ -89,6 +87,7 @@ public class CarpentryScreen extends HandledScreen<CarpentryScreenHandler> {
                 this.mouseClicked = true;
             }
         }
+
         return super.mouseClicked(mouseX, mouseY, button);
     }
 
@@ -157,7 +156,7 @@ public class CarpentryScreen extends HandledScreen<CarpentryScreenHandler> {
             int m = y + l * 18 + 2;
 
             if (!this.handler.canCraftRecipe(i)) {
-                context.drawGuiTexture(RenderLayer::getGuiTextured, RECIPE_DISABLED_TEXTURE, k, m - 1, 16, 18);
+                context.drawGuiTexture(RenderPipelines.GUI_TEXTURED, RECIPE_DISABLED_TEXTURE, k, m - 1, 16, 18);
             } else {
                 renderRecipeBackgroundForCraftableRecipe(context, i, mouseX, mouseY, k, m);
             }
@@ -167,7 +166,7 @@ public class CarpentryScreen extends HandledScreen<CarpentryScreenHandler> {
     private void renderRecipeBackgroundForCraftableRecipe(DrawContext context, int i, int mouseX, int mouseY, int k, int m) {
         Identifier identifier = i == this.handler.getSelectedRecipe() ? RECIPE_SELECTED_TEXTURE :
                 (mouseX >= k && mouseY >= m && mouseX < k + 16 && mouseY < m + 18 ? RECIPE_HIGHLIGHTED_TEXTURE : RECIPE_TEXTURE);
-        context.drawGuiTexture(RenderLayer::getGuiTextured, identifier, k, m - 1, 16, 18);
+        context.drawGuiTexture(RenderPipelines.GUI_TEXTURED, identifier, k, m - 1, 16, 18);
     }
 
     //TODO: REFACTOR
@@ -188,14 +187,7 @@ public class CarpentryScreen extends HandledScreen<CarpentryScreenHandler> {
     private void drawScroll(DrawContext context) {
         int yPosAfterScrolling = (int) (41.0f * this.scrollAmount);
         Identifier identifier = this.shouldScroll() ? SCROLLER_TEXTURE : SCROLLER_DISABLED_TEXTURE;
-        context.drawGuiTexture(RenderLayer::getGuiTextured, identifier, x + 119, y + 15 + yPosAfterScrolling, 12, 15);
-    }
-
-    private void drawToolSlots(DrawContext context) {
-        context.drawGuiTexture(RenderLayer::getGuiTextured, HOTBAR_OFFHAND_LEFT_TEXTURE, x - 23, y + 10, 29, 24);
-        context.drawGuiTexture(RenderLayer::getGuiTextured, HOTBAR_OFFHAND_LEFT_TEXTURE, x - 23, y + 33, 29, 24);
-        context.drawGuiTexture(RenderLayer::getGuiTextured, HOTBAR_OFFHAND_LEFT_TEXTURE, x - 23, y + 56, 29, 24);
-        context.drawGuiTexture(RenderLayer::getGuiTextured, HOTBAR_OFFHAND_LEFT_TEXTURE, x - 23, y + 79, 29, 24);
+        context.drawGuiTexture(RenderPipelines.GUI_TEXTURED, identifier, x + 119, y + 15 + yPosAfterScrolling, 12, 15);
     }
 
     private boolean shouldScroll() {

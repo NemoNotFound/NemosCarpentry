@@ -1,5 +1,10 @@
-# Changelog - v3.0.1
+# Changelog - v4.0
+
+## Removals
+- Removed saw item
 
 ## Fixes
-- Using carpenter's workbench can cause crashes on servers
-- recipes give command causes crashes
+- Glass doors can't be opened by villagers
+
+## Changes
+- Recipes don't require the saw item anymore

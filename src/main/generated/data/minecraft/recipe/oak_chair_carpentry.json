@@ -1,0 +1,13 @@
+{
+  "type": "nemos-carpentry:carpentry",
+  "ingredients": [
+    "minecraft:oak_planks"
+  ],
+  "inputCounts": [
+    1
+  ],
+  "result": {
+    "count": 1,
+    "id": "nemos-carpentry:oak_chair"
+  }
+}

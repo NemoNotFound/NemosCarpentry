@@ -1,6 +1,5 @@
 package com.nemonotfound.nemos.carpentry;
 
-import com.nemonotfound.nemos.carpentry.entity.ModBlockEntityTypes;
 import com.nemonotfound.nemos.carpentry.entity.ModEntities;
 import com.nemonotfound.nemos.carpentry.item.ModItemGroups;
 import com.nemonotfound.nemos.carpentry.recipe.ModRecipeSerializer;
@@ -27,6 +26,5 @@ public class NemosCarpentry implements ModInitializer {
 		ModItemGroups.registerItemGroups();
 		ModEntities.registerEntities();
 		ModRecipeBookCategory.registerRecipeBookCategories();
-		ModBlockEntityTypes.registerBlockEntityTypes();
 	}
 }

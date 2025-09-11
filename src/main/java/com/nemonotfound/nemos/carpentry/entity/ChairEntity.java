@@ -4,8 +4,9 @@ import com.google.common.collect.UnmodifiableIterator;
 import net.minecraft.entity.*;
 import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.data.DataTracker;
-import net.minecraft.nbt.NbtCompound;
 import net.minecraft.server.world.ServerWorld;
+import net.minecraft.storage.ReadView;
+import net.minecraft.storage.WriteView;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Box;
 import net.minecraft.util.math.Direction;
@@ -25,16 +26,6 @@ public class ChairEntity extends Entity {
     }
 
     @Override
-    protected void readCustomDataFromNbt(NbtCompound nbt) {
-
-    }
-
-    @Override
-    protected void writeCustomDataToNbt(NbtCompound nbt) {
-
-    }
-
-    @Override
     public void tick() {
         if (!this.getWorld().isClient && !this.hasPassengers()) {
             this.discard();
@@ -49,6 +40,16 @@ public class ChairEntity extends Entity {
     @Override
     public boolean shouldRender(double x, double y, double z) {
         return false;
+    }
+
+    @Override
+    protected void readCustomData(ReadView view) {
+
+    }
+
+    @Override
+    protected void writeCustomData(WriteView view) {
+
     }
 
     @Override
