@@ -1,10 +1,10 @@
-# Changelog - v4.0
+# Changelog – v4.0
 
 ## Removals
-- Removed saw item
+- Removed the saw item
 
 ## Fixes
-- Glass doors can't be opened by villagers
+- Fixed an issue where villagers could open glass doors
 
 ## Changes
-- Recipes don't require the saw item anymore
+- Recipes no longer require the saw item
