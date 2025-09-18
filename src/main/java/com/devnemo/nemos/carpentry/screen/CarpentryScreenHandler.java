@@ -33,7 +33,7 @@ public class CarpentryScreenHandler extends ScreenHandler {
 
     private final ScreenHandlerContext context;
     private final World world;
-    private final Property selectedRecipe = Property.create();
+    private final Property selectedRecipeIndex = Property.create();
     private ItemStack inputStack = ItemStack.EMPTY;
     private ItemStack secondInputStack = ItemStack.EMPTY;
     private CarpentryRecipeDisplay.Grouping availableRecipes = CarpentryRecipeDisplay.Grouping.empty();
@@ -75,7 +75,7 @@ public class CarpentryScreenHandler extends ScreenHandler {
             public void onTakeItem(PlayerEntity player, ItemStack stack) {
                 stack.onCraftByPlayer(player, stack.getCount());
                 CarpentryScreenHandler.this.output.unlockLastRecipe(player, this.getInputStacks());
-                var recipeGroupEntry = availableRecipes.entries().get(selectedRecipe.get());
+                var recipeGroupEntry = availableRecipes.entries().get(selectedRecipeIndex.get());
 
                 takeStacksOfIngredients(recipeGroupEntry.inputCounts());
 
@@ -101,7 +101,7 @@ public class CarpentryScreenHandler extends ScreenHandler {
                 }
 
                 if (!itemStack.isEmpty()) {
-                    CarpentryScreenHandler.this.populateResult(CarpentryScreenHandler.this.selectedRecipe.get());
+                    CarpentryScreenHandler.this.populateResult(CarpentryScreenHandler.this.selectedRecipeIndex.get());
                 }
             }
 
@@ -112,8 +112,7 @@ public class CarpentryScreenHandler extends ScreenHandler {
 
         addPlayerInventory(playerInventory);
         addPlayerHotbar(playerInventory);
-        this.selectedRecipe.set(-1);
-        this.addProperty(this.selectedRecipe);
+        this.addProperty(this.selectedRecipeIndex);
     }
 
     //TODO: REFACTOR
@@ -195,9 +194,9 @@ public class CarpentryScreenHandler extends ScreenHandler {
     public boolean onButtonClick(PlayerEntity player, int index) {
         if (this.isInBounds(index)) {
             if (canCraftRecipe(index)) {
-                this.selectedRecipe.set(index);
+                this.selectedRecipeIndex.set(index);
             } else {
-                this.selectedRecipe.set(-1);
+                this.selectedRecipeIndex.set(-1);
             }
             this.populateResult(index);
         }
@@ -237,7 +236,7 @@ public class CarpentryScreenHandler extends ScreenHandler {
     }
 
     private void updateInput(ItemStack itemStack) {
-        this.selectedRecipe.set(-1);
+        this.selectedRecipeIndex.set(-1);
         this.outputSlot.setStackNoCallbacks(ItemStack.EMPTY);
 
         if (!itemStack.isEmpty()) {
@@ -247,8 +246,8 @@ public class CarpentryScreenHandler extends ScreenHandler {
         }
     }
 
-    public int getSelectedRecipe() {
-        return this.selectedRecipe.get();
+    public int getSelectedRecipeIndex() {
+        return this.selectedRecipeIndex.get();
     }
 
     public CarpentryRecipeDisplay.Grouping getAvailableRecipes() {
@@ -277,7 +276,7 @@ public class CarpentryScreenHandler extends ScreenHandler {
     public boolean canCraftSelectedRecipe() {
         boolean hasRecipes = !this.availableRecipes.isEmpty();
         boolean hasFirstInputSlotStack = this.inputSlotOne.hasStack();
-        int selectedRecipeIndex = selectedRecipe.get();
+        int selectedRecipeIndex = this.selectedRecipeIndex.get();
 
         if (!hasRecipes || !hasFirstInputSlotStack || selectedRecipeIndex == -1) {
             return false;
