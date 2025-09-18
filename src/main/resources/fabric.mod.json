@@ -15,13 +15,13 @@
 	"environment": "*",
 	"entrypoints": {
 		"fabric-datagen": [
-          "com.nemonotfound.nemos.carpentry.NemosCarpentryDataGenerator"
+          "com.devnemo.nemos.carpentry.NemosCarpentryDataGenerator"
 		],
 		"main": [
-          "com.nemonotfound.nemos.carpentry.NemosCarpentry"
+          "com.devnemo.nemos.carpentry.NemosCarpentry"
 		],
 		"client": [
-          "com.nemonotfound.nemos.carpentry.NemosCarpentryClient"
+          "com.devnemo.nemos.carpentry.NemosCarpentryClient"
 		]
 	},
 	"mixins": [
