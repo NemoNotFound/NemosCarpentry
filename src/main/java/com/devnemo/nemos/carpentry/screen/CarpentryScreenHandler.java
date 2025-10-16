@@ -59,7 +59,7 @@ public class CarpentryScreenHandler extends ScreenHandler {
 
     public CarpentryScreenHandler(int syncId, PlayerInventory playerInventory, final ScreenHandlerContext context) {
         super(CARPENTRY_SCREEN_HANDLER, syncId);
-        this.world = playerInventory.player.getWorld();
+        this.world = playerInventory.player.getEntityWorld();
         this.context = context;
 
         inputSlotOne = this.addSlot(new Slot(input, 0, 20, 19));
@@ -126,7 +126,7 @@ public class CarpentryScreenHandler extends ScreenHandler {
             itemStack = movingItemStack.copy();
 
             if (slotIndex == 2) {
-                item.onCraft(movingItemStack, player.getWorld());
+                item.onCraft(movingItemStack, player.getEntityWorld());
                 if (!this.insertItem(movingItemStack, 3, 39, true)) {
                     return ItemStack.EMPTY;
                 }

@@ -43,7 +43,7 @@ public class LogSeat extends SitableBlock implements Waterloggable {
             entityToSit.setYaw(yaw);
             entityToSit.setBodyYaw(yaw);
             entityToSit.setHeadYaw(yaw);
-            entityToSit.startRiding(chairEntity, true);
+            entityToSit.startRiding(chairEntity);
 
             return ActionResult.SUCCESS;
         }

@@ -40,7 +40,7 @@ public class CarpentersWorkbenchBlock extends Block {
 
     @Override
     protected ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, BlockHitResult hit) {
-        if (!world.isClient) {
+        if (!world.isClient()) {
             player.openHandledScreen(createScreenHandlerFactory(state, world, pos));
             player.incrementStat(Stats.USED.getOrCreateStat(this.asItem()));
         }

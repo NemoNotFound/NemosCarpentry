@@ -5,6 +5,7 @@ import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gl.RenderPipelines;
+import net.minecraft.client.gui.Click;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.gui.screen.ingame.HandledScreen;
 import net.minecraft.client.sound.PositionedSoundInstance;
@@ -62,7 +63,7 @@ public class CarpentryScreen extends HandledScreen<CarpentryScreenHandler> {
 
     //TODO: REFACTOR
     @Override
-    public boolean mouseClicked(double mouseX, double mouseY, int button) {
+    public boolean mouseClicked(Click click, boolean bl) {
         this.mouseClicked = false;
         if (hasAvailableRecipes) {
             int firstRecipeX = this.x + RELATIVE_RECIPE_X;
@@ -72,8 +73,8 @@ public class CarpentryScreen extends HandledScreen<CarpentryScreenHandler> {
 
             for (int recipeIndex = this.firstVisibleRecipeIndex; recipeIndex < lastVisibleRecipeIndex; ++recipeIndex) {
                 int visibleRecipeIndex = recipeIndex - this.firstVisibleRecipeIndex;
-                double mouseDistanceToRecipeX = mouseX - (double) (firstRecipeX + visibleRecipeIndex % 4 * 16);
-                double mouseDistanceToRecipeY = mouseY - (double) (firstRecipeY + visibleRecipeIndex / 4 * 18);
+                double mouseDistanceToRecipeX = click.x() - (double) (firstRecipeX + visibleRecipeIndex % 4 * 16);
+                double mouseDistanceToRecipeY = click.y() - (double) (firstRecipeY + visibleRecipeIndex / 4 * 18);
 
                 if (mouseDistanceToRecipeX >= 0.0 && mouseDistanceToRecipeY >= 0.0 && mouseDistanceToRecipeX < RECIPES_IMAGE_SIZE_WIDTH && mouseDistanceToRecipeY < RECIPES_IMAGE_SIZE_HEIGHT && (this.handler).onButtonClick(this.client.player, recipeIndex)) {
                     if (this.handler.getAvailableRecipeCount() > recipeIndex) {
@@ -90,16 +91,16 @@ public class CarpentryScreen extends HandledScreen<CarpentryScreenHandler> {
             firstRecipeX = this.x + 119;
             firstRecipeY = this.y + 9;
 
-            if (mouseX >= (double) firstRecipeX && mouseX < (double) (firstRecipeX + 12) && mouseY >= (double) firstRecipeY && mouseY < (double) (firstRecipeY + 54)) {
+            if (click.x() >= (double) firstRecipeX && click.x() < (double) (firstRecipeX + 12) && click.y() >= (double) firstRecipeY && click.y() < (double) (firstRecipeY + 54)) {
                 this.mouseClicked = true;
             }
         }
 
-        return super.mouseClicked(mouseX, mouseY, button);
+        return super.mouseClicked(click, bl);
     }
 
     @Override
-    protected boolean isClickOutsideBounds(double mouseX, double mouseY, int left, int top, int button) {
+    protected boolean isClickOutsideBounds(double mouseX, double mouseY, int left, int top) {
         return mouseX < (double) left - 22 ||
                 mouseY < (double) top ||
                 mouseX >= (double) (left + this.backgroundWidth) ||
@@ -108,16 +109,17 @@ public class CarpentryScreen extends HandledScreen<CarpentryScreenHandler> {
 
     //TODO: REFACTOR
     @Override
-    public boolean mouseDragged(double mouseX, double mouseY, int button, double deltaX, double deltaY) {
+    public boolean mouseDragged(Click click, double offsetX, double offsetY) {
         if (this.mouseClicked && this.shouldScroll()) {
             int i = this.y + 14;
             int j = i + 54;
-            this.scrollAmount = ((float) mouseY - (float) i - 7.5f) / ((float) (j - i) - 15.0f);
+            this.scrollAmount = ((float) click.y() - (float) i - 7.5f) / ((float) (j - i) - 15.0f);
             this.scrollAmount = MathHelper.clamp(this.scrollAmount, 0.0f, 1.0f);
             this.firstVisibleRecipeIndex = (int) ((double) (this.scrollAmount * (float) this.getMaxScroll()) + 0.5) * 4;
             return true;
         }
-        return super.mouseDragged(mouseX, mouseY, button, deltaX, deltaY);
+
+        return super.mouseDragged(click, offsetX, offsetY);
     }
 
     //TODO: REFACTOR

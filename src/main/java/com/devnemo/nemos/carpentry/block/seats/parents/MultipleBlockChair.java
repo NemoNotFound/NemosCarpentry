@@ -139,7 +139,7 @@ public class MultipleBlockChair extends SitableBlock implements Waterloggable {
     public void onPlaced(World world, BlockPos pos, BlockState state, LivingEntity placer, ItemStack itemStack) {
         super.onPlaced(world, pos, state, placer, itemStack);
 
-        if (!world.isClient) {
+        if (!world.isClient()) {
             BlockPos blockPos = pos.offset(UP);
             world.setBlockState(blockPos, getNewBlockState(world, blockPos, state), Block.NOTIFY_ALL);
             world.updateNeighbors(pos, Blocks.AIR);
@@ -164,7 +164,7 @@ public class MultipleBlockChair extends SitableBlock implements Waterloggable {
 
     @Override
     public BlockState onBreak(World world, BlockPos pos, BlockState state, PlayerEntity player) {
-        if (!world.isClient && player.isCreative()) {
+        if (!world.isClient() && player.isCreative()) {
             ChairPart chairPart = state.get(PART);
             if (chairPart.equals(ChairPart.UPPER)) {
                 breakOtherChairPart(world, pos, player, chairPart);

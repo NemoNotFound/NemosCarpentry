@@ -111,7 +111,7 @@ public abstract class SitableBlock extends HorizontalFacingBlock {
 
     @Override
     public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, BlockHitResult hit) {
-        if (world.isClient) {
+        if (world.isClient()) {
             return ActionResult.CONSUME;
         }
 
@@ -173,7 +173,7 @@ public abstract class SitableBlock extends HorizontalFacingBlock {
             entityToSit.setYaw(yaw);
             entityToSit.setBodyYaw(yaw);
             entityToSit.setHeadYaw(yaw);
-            entityToSit.startRiding(chairEntity, true);
+            entityToSit.startRiding(chairEntity);
 
             return ActionResult.SUCCESS;
         }

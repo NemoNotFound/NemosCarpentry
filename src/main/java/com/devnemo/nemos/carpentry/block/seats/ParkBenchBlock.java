@@ -271,7 +271,7 @@ public class ParkBenchBlock extends OldSitableBlock implements Waterloggable {
     public void onPlaced(World world, BlockPos pos, BlockState state, LivingEntity placer, ItemStack itemStack) {
         super.onPlaced(world, pos, state, placer, itemStack);
 
-        if (!world.isClient) {
+        if (!world.isClient()) {
             BlockPos blockPos = pos.offset(getDirectionToOtherBenchHalf(state.get(FACING), BenchPart.LEFT));
             world.setBlockState(blockPos, state.with(PART, BenchPart.RIGHT), Block.NOTIFY_ALL);
             world.updateNeighbors(pos, Blocks.AIR);
@@ -281,7 +281,7 @@ public class ParkBenchBlock extends OldSitableBlock implements Waterloggable {
 
     @Override
     public BlockState onBreak(World world, BlockPos pos, BlockState state, PlayerEntity player) {
-        if (!world.isClient && player.isCreative()) {
+        if (!world.isClient() && player.isCreative()) {
             BenchPart benchPart = state.get(PART);
             if (benchPart.equals(BenchPart.RIGHT)) {
                 breakOtherBenchPart(world, pos, state, player, benchPart);

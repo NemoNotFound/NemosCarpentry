@@ -34,7 +34,7 @@ public abstract class ClientPlayNetworkHandlerMixin extends ClientCommonNetworkH
     @Override
     public void nemo_sCarpentry$onSynchronizeModRecipes(SynchronizeModRecipesS2CPacket packet) {
         MinecraftClient client = ((MinecraftClientGetter) this).nemo_sCarpentry$getMinecraftClient();
-        NetworkThreadUtils.forceMainThread(packet, this, client);
+        NetworkThreadUtils.forceMainThread(packet, this, client.getPacketApplyBatcher());
         this.modRecipeManager = new ClientModRecipeManager(packet.carpentryRecipes());
     }
 }

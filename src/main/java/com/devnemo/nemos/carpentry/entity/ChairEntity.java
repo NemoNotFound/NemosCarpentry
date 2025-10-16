@@ -27,7 +27,7 @@ public class ChairEntity extends Entity {
 
     @Override
     public void tick() {
-        if (!this.getWorld().isClient && !this.hasPassengers()) {
+        if (!this.getEntityWorld().isClient() && !this.hasPassengers()) {
             this.discard();
         }
     }
@@ -72,10 +72,10 @@ public class ChairEntity extends Entity {
                 for(int var11 = 0; var11 < var10; ++var11) {
                     int[] js = var9[var11];
                     mutable.set(blockPos.getX() + js[0], blockPos.getY() + 0.3, blockPos.getZ() + js[1]);
-                    double d = this.getWorld().getDismountHeight(mutable);
+                    double d = this.getEntityWorld().getDismountHeight(mutable);
                     if (Dismounting.canDismountInBlock(d)) {
                         Vec3d vec3d = Vec3d.ofCenter(mutable, d);
-                        if (Dismounting.canPlaceEntityAt(this.getWorld(), passenger, box.offset(vec3d))) {
+                        if (Dismounting.canPlaceEntityAt(this.getEntityWorld(), passenger, box.offset(vec3d))) {
                             passenger.setPose(entityPose);
                             return vec3d;
                         }
