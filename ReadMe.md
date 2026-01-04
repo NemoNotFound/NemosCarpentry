@@ -22,7 +22,7 @@ Join my Discord to meet new people and stay up to date with all of my mods!
 ## Support Me
 
 I love to create mods for Minecraft and wish to live off it one day, so I hope you like what I do. <br>
-Either way feel free to give me your feedback and suggestions, either on my Discord or the [discussions](https://github.com/NemoNotFound/NemosQuartz/discussions/) :)
+Either way feel free to give me your feedback and suggestions, either on my Discord or the [discussions](https://github.com/NemoNotFound/NemosCarpentry/discussions/) :)
 
 [![ko-fi donation](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.nemonotfound.com)
 
