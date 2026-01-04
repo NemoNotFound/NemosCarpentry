@@ -1,33 +1,33 @@
-![Nemo's Carpentry](https://github.com/NemoNotFound/NemoNotFound/blob/master/resources/png/nemos-carpentry.png?raw=true)
-<br><br>
+# Nemo's Carpentry
 
-# Description
-Nemo's Carpentry brings some furniture to Minecraft, <br>
-which can be crafted with the Carpenter's Workbench. <br>
-It's every carpenter's dream! <br> 
-At least, so I tell myself...<br><br>
-Big thanks to [Lukas](https://x.com/LukasDZN_Design), who created a few of the models.<br>
+## Description
 
-[![Join my Discord](https://github.com/NemoNotFound/NemoNotFound/blob/master/resources/svg/join_discord_button.svg?raw=true)](https://discord.com/invite/yxs9dga)
-<br>
-<br>
+Nemo's Carpentry brings some furniture to Minecraft,        
+which can be crafted with the Carpenter's Workbench.        
+It's every carpenter's dream!       
+At least, so I tell myself...       
 
-I love to create mods for Minecraft and wish to live off it one day, so I hope you like what I do. <br>
-Either way feel free to give me your feedback and suggestions, either on my Discord or the [discussions](https://github.com/NemoNotFound/NemosCarpentry/discussions/) :)
-<br>
-For more information and the recipes check the [wiki](https://www.nemonotfound.com/minecraft-mods/nemos-carpentry/wiki).
+Big thanks to [Lukas](https://x.com/LukasDZN_Design), who created a few of the models.
 
-[![ko-fi donation](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/nemonotfound)
-<br>
-<br>
-
-# Downloads
+## Downloads
 - [CurseForge](https://curseforge.com/minecraft/mc-mods/nemos-carpentry)
 - [Modrinth](https://modrinth.com/mod/nemos-carpentry)
-<br>
-<br>
 
-# Get a Minecraft Server
+## Join my Discord!
+
+Join my Discord to meet new people and stay up to date with all of my mods!
+
+[![Join my Discord](https://github.com/NemoNotFound/NemoNotFound/blob/master/resources/svg/join_discord_button.svg?raw=true)](https://discord.com/invite/yxs9dga)
+
+## Support Me
+
+I love to create mods for Minecraft and wish to live off it one day, so I hope you like what I do. <br>
+Either way feel free to give me your feedback and suggestions, either on my Discord or the [discussions](https://github.com/NemoNotFound/NemosQuartz/discussions/) :)
+
+[![ko-fi donation](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.nemonotfound.com)
+
+## Get a Minecraft Server
+
 Looking for a Minecraft Server? Check out [BisectHosting](https://bisecthosting.com/Nemo404)! <br>
 Use my code **Nemo404** to get a 25% discount on your first month with any of their gaming servers. <br><br>
 By using my code, you'll also be supporting my work as a Minecraft modder, helping me to pursue this passion full-time. Thank you!
